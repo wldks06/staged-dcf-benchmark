@@ -1,0 +1,46 @@
+answers_ver02_qwen3-8b_think_calc_s0_ver03_L2345_20261015-005624  [grade_ver05, tolerance=plan, include_thinking=True, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 89.0%
+Final answers correct: 67/104
+Final-answer marker: exact 98, missing 6 (missing = final scored zero)
+Hit the token limit: 0 []
+Thinking never finished: 3 ['UNP-2019-05', 'VZ-2019-08', 'SHW-2022-05']
+
+Final answers correct by tier and level:
+  basic@2019 L3    6/13  =  46.2%
+  basic@2022 L3    5/13  =  38.5%
+  complex@2019 L3    4/13  =  30.8%
+  complex@2022 L3    5/13  =  38.5%
+  half@2019 L4   12/13  =  92.3%
+  half@2019 L5   13/13  = 100.0%
+  half@2022 L4   10/13  =  76.9%
+  half@2022 L5   12/13  =  92.3%
+
+Used basic shares (final wrong AND matched the basic-share value): 1/78   (also matched but final correct, not counted: 26)
+   PPL-2019-08
+
+By tier:
+  basic@2019                                719/880  =  81.7%
+  basic@2022                                766/906  =  84.5%
+  complex@2019                              720/924  =  77.9%
+  complex@2022                              772/952  =  81.1%
+  half@2019                                 913/923  =  98.9%
+  half@2022                                 893/945  =  94.5%
+
+By level:
+  3                                        2977/3662 =  81.3%
+  4                                         981/1021 =  96.1%
+  5                                         825/847  =  97.4%
+
+By step:
+  Step 2. Project the future                750/768  =  97.7%
+  Step 3. Compute free cash flow           1935/2070 =  93.5%
+  Step 4. Discount to today                1500/1712 =  87.6%
+  Step 5. Value and decide                  598/980  =  61.0%
+
+By kind:
+  final                                     670/1040 =  64.4%
+  middle                                   1448/1520 =  95.3%
+  step                                     2665/2970 =  89.7%
+
+Excluded items: {'target already in prompt': 41, 'rounding not auto-graded': 104, 'zero target not auto-graded': 9}

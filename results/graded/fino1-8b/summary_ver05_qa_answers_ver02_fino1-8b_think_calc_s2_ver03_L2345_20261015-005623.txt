@@ -1,0 +1,45 @@
+answers_ver02_fino1-8b_think_calc_s2_ver03_L2345_20261015-005623  [grade_ver05, tolerance=qa, include_thinking=False, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 11.9%
+Final answers correct: 3/104
+Final-answer marker: Final Response heading 95, exact 9 (missing = final scored zero)
+Hit the token limit: 0 []
+
+Final answers correct by tier and level:
+  basic@2019 L3    1/13  =   7.7%
+  basic@2022 L3    0/13  =   0.0%
+  complex@2019 L3    0/13  =   0.0%
+  complex@2022 L3    0/13  =   0.0%
+  half@2019 L4    1/13  =   7.7%
+  half@2019 L5    0/13  =   0.0%
+  half@2022 L4    1/13  =   7.7%
+  half@2022 L5    0/13  =   0.0%
+
+Used basic shares (final wrong AND matched the basic-share value): 1/78
+   ORLY-2022-07
+
+By tier:
+  basic@2019                                113/880  =  12.8%
+  basic@2022                                111/906  =  12.3%
+  complex@2019                              105/924  =  11.4%
+  complex@2022                              131/952  =  13.8%
+  half@2019                                 112/923  =  12.1%
+  half@2022                                 108/945  =  11.4%
+
+By level:
+  3                                         460/3662 =  12.6%
+  4                                         164/1021 =  16.1%
+  5                                          56/847  =   6.6%
+
+By step:
+  Step 2. Project the future                 80/768  =  10.4%
+  Step 3. Compute free cash flow            400/2070 =  19.3%
+  Step 4. Discount to today                 168/1712 =   9.8%
+  Step 5. Value and decide                   32/980  =   3.3%
+
+By kind:
+  final                                      30/1040 =   2.9%
+  middle                                    240/1520 =  15.8%
+  step                                      410/2970 =  13.8%
+
+Excluded items: {'target already in prompt': 41, 'rounding not auto-graded': 104, 'zero target not auto-graded': 9}

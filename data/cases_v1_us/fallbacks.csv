@@ -1,0 +1,1451 @@
+ticker,valuation_date,fallback
+ABT,2019-12-31,revenue:2016:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+ABT,2019-12-31,revenue:2017:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+ABT,2019-12-31,revenue:2018:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+ABT,2019-12-31,da:2016:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+ABT,2019-12-31,da:2017:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+ABT,2019-12-31,da:2018:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+ABT,2019-12-31,payables:2016:fallback_1:AccountsPayableTradeCurrent
+ABT,2019-12-31,payables:2017:fallback_1:AccountsPayableTradeCurrent
+ABT,2019-12-31,payables:2018:fallback_1:AccountsPayableTradeCurrent
+ABT,2019-12-31,debt_total:2018:fallback_3:LongTermDebtNoncurrent + LongTermDebtCurrent + ShortTermBorrowings
+ABT,2019-12-31,lease_liability:2018:pre_asc842_assumed_zero
+ABT,2019-12-31,preferred:2018:tag_absent_assumed_zero
+AEP,2019-12-31,da:2016:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+AEP,2019-12-31,da:2017:fallback_5:Depreciation
+AEP,2019-12-31,da:2018:fallback_5:Depreciation
+AEP,2019-12-31,inventory:2016:fallback_4:OtherInventorySupplies
+AEP,2019-12-31,inventory:2017:fallback_4:OtherInventorySupplies
+AEP,2019-12-31,inventory:2018:fallback_4:OtherInventorySupplies
+AEP,2019-12-31,debt_total:2018:fallback_3:LongTermDebtNoncurrent + LongTermDebtCurrent + ShortTermBorrowings
+AEP,2019-12-31,lease_liability:2018:pre_asc842_assumed_zero
+AEP,2019-12-31,preferred:2018:tag_absent_assumed_zero
+AMGN,2019-12-31,pretax_income:2016:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+AMGN,2019-12-31,pretax_income:2017:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+AMGN,2019-12-31,pretax_income:2018:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+AMGN,2019-12-31,interest_expense:2016:fallback_3:InterestExpenseDebt
+AMGN,2019-12-31,interest_expense:2017:fallback_3:InterestExpenseDebt
+AMGN,2019-12-31,interest_expense:2018:fallback_3:InterestExpenseDebt
+AMGN,2019-12-31,da:2016:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+AMGN,2019-12-31,st_investments:2018:fallback_2:AvailableForSaleSecuritiesDebtSecuritiesCurrent
+AMGN,2019-12-31,debt_total:2018:fallback_3:LongTermDebtNoncurrent + LongTermDebtCurrent
+AMGN,2019-12-31,lease_liability:2018:pre_asc842_assumed_zero
+AMGN,2019-12-31,preferred:2018:tag_absent_assumed_zero
+AMGN,2019-12-31,minority_interest:2018:tag_absent_assumed_zero
+AMZN,2019-12-31,revenue:2016:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+AMZN,2019-12-31,revenue:2017:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+AMZN,2019-12-31,revenue:2018:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+AMZN,2019-12-31,pretax_income:2016:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+AMZN,2019-12-31,pretax_income:2017:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+AMZN,2019-12-31,pretax_income:2018:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+AMZN,2019-12-31,capex:2016:fallback_1:PaymentsToAcquireProductiveAssets
+AMZN,2019-12-31,capex:2017:fallback_1:PaymentsToAcquireProductiveAssets
+AMZN,2019-12-31,capex:2018:fallback_1:PaymentsToAcquireProductiveAssets
+AMZN,2019-12-31,st_investments:2018:fallback_1:MarketableSecuritiesCurrent
+AMZN,2019-12-31,debt_total:2018:fallback_3:LongTermDebtNoncurrent + LongTermDebtCurrent
+AMZN,2019-12-31,lease_liability:2018:pre_asc842_assumed_zero
+AMZN,2019-12-31,minority_interest:2018:tag_absent_assumed_zero
+APH,2019-12-31,revenue:2016:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+APH,2019-12-31,revenue:2017:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+APH,2019-12-31,revenue:2018:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+APH,2019-12-31,debt_total:2018:fallback_4:LongTermDebtAndCapitalLeaseObligations + LongTermDebtAndCapitalLeaseObligationsCurrent
+APH,2019-12-31,lease_liability:2018:pre_asc842_assumed_zero
+APH,2019-12-31,preferred:2018:tag_absent_assumed_zero
+BKNG,2019-12-31,pretax_income:2016:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+BKNG,2019-12-31,pretax_income:2017:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+BKNG,2019-12-31,pretax_income:2018:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+BKNG,2019-12-31,da:2016:fallback_1:DepreciationAndAmortization
+BKNG,2019-12-31,da:2017:fallback_1:DepreciationAndAmortization
+BKNG,2019-12-31,da:2018:fallback_1:DepreciationAndAmortization
+BKNG,2019-12-31,sbc:2016:fallback_1:AllocatedShareBasedCompensationExpense
+BKNG,2019-12-31,sbc:2017:fallback_1:AllocatedShareBasedCompensationExpense
+BKNG,2019-12-31,sbc:2018:fallback_1:AllocatedShareBasedCompensationExpense
+BKNG,2019-12-31,inventory:2016:tag_absent_assumed_zero
+BKNG,2019-12-31,inventory:2017:tag_absent_assumed_zero
+BKNG,2019-12-31,inventory:2018:tag_absent_assumed_zero
+BKNG,2019-12-31,st_investments:2018:fallback_2:AvailableForSaleSecuritiesDebtSecuritiesCurrent
+BKNG,2019-12-31,debt_total:2018:fallback_3:LongTermDebtNoncurrent
+BKNG,2019-12-31,lease_liability:2018:pre_asc842_assumed_zero
+BKNG,2019-12-31,preferred:2018:tag_absent_assumed_zero
+BKNG,2019-12-31,minority_interest:2018:tag_absent_assumed_zero
+CHTR,2019-12-31,interest_expense:2016:fallback_5:InterestPaidNet
+CHTR,2019-12-31,interest_expense:2017:fallback_5:InterestPaidNet
+CHTR,2019-12-31,interest_expense:2018:fallback_5:InterestPaidNet
+CHTR,2019-12-31,da:2016:fallback_2:DepreciationAmortizationAndAccretionNet
+CHTR,2019-12-31,da:2017:fallback_2:DepreciationAmortizationAndAccretionNet
+CHTR,2019-12-31,da:2018:fallback_2:DepreciationAmortizationAndAccretionNet
+CHTR,2019-12-31,inventory:2016:tag_absent_assumed_zero
+CHTR,2019-12-31,inventory:2017:tag_absent_assumed_zero
+CHTR,2019-12-31,inventory:2018:tag_absent_assumed_zero
+CHTR,2019-12-31,payables:2016:fallback_1:AccountsPayableTradeCurrent
+CHTR,2019-12-31,payables:2017:fallback_1:AccountsPayableTradeCurrent
+CHTR,2019-12-31,payables:2018:fallback_1:AccountsPayableTradeCurrent
+CHTR,2019-12-31,st_investments:2018:tag_absent_assumed_zero
+CHTR,2019-12-31,debt_total:2018:fallback_3:LongTermDebtNoncurrent + LongTermDebtCurrent
+CHTR,2019-12-31,lease_liability:2018:pre_asc842_assumed_zero
+CHTR,2019-12-31,shares_basic:2018:fallback_2:WeightedAverageNumberOfSharesOutstandingBasic
+CMCSA,2019-12-31,da:2016:fallback_1:DepreciationAndAmortization
+CMCSA,2019-12-31,da:2017:fallback_1:DepreciationAndAmortization
+CMCSA,2019-12-31,da:2018:fallback_1:DepreciationAndAmortization
+CMCSA,2019-12-31,inventory:2016:tag_absent_assumed_zero
+CMCSA,2019-12-31,inventory:2017:tag_absent_assumed_zero
+CMCSA,2019-12-31,inventory:2018:tag_absent_assumed_zero
+CMCSA,2019-12-31,debt_total:2018:fallback_2:LongTermDebtAndCapitalLeaseObligations + DebtCurrent
+CMCSA,2019-12-31,lease_liability:2018:pre_asc842_assumed_zero
+CMCSA,2019-12-31,shares_basic:2018:fallback_2:WeightedAverageNumberOfSharesOutstandingBasic
+CNP,2019-12-31,interest_expense:2016:fallback_2:InterestAndDebtExpense
+CNP,2019-12-31,interest_expense:2017:fallback_2:InterestAndDebtExpense
+CNP,2019-12-31,interest_expense:2018:fallback_2:InterestAndDebtExpense
+CNP,2019-12-31,capex:2016:fallback_1:PaymentsToAcquireProductiveAssets
+CNP,2019-12-31,capex:2017:fallback_1:PaymentsToAcquireProductiveAssets
+CNP,2019-12-31,capex:2018:fallback_1:PaymentsToAcquireProductiveAssets
+CNP,2019-12-31,inventory:2016:tag_absent_assumed_zero
+CNP,2019-12-31,inventory:2017:tag_absent_assumed_zero
+CNP,2019-12-31,inventory:2018:tag_absent_assumed_zero
+CNP,2019-12-31,st_investments:2018:fallback_1:MarketableSecuritiesCurrent
+CNP,2019-12-31,debt_total:2018:fallback_1:LongTermDebtNoncurrent + DebtCurrent
+CNP,2019-12-31,lease_liability:2018:pre_asc842_assumed_zero
+CNP,2019-12-31,preferred:2018:tag_absent_assumed_zero
+CNP,2019-12-31,minority_interest:2018:tag_absent_assumed_zero
+DVN,2019-12-31,pretax_income:2016:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+DVN,2019-12-31,pretax_income:2017:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+DVN,2019-12-31,pretax_income:2018:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+DVN,2019-12-31,interest_expense:2016:fallback_2:InterestAndDebtExpense
+DVN,2019-12-31,interest_expense:2017:fallback_2:InterestAndDebtExpense
+DVN,2019-12-31,interest_expense:2018:fallback_2:InterestAndDebtExpense
+DVN,2019-12-31,ebit:2016:fallback_1:@pretax_income + @interest_expense
+DVN,2019-12-31,ebit:2017:fallback_1:@pretax_income + @interest_expense
+DVN,2019-12-31,ebit:2018:fallback_1:@pretax_income + @interest_expense
+DVN,2019-12-31,inventory:2016:tag_absent_assumed_zero
+DVN,2019-12-31,inventory:2017:tag_absent_assumed_zero
+DVN,2019-12-31,inventory:2018:tag_absent_assumed_zero
+DVN,2019-12-31,payables:2016:fallback_1:AccountsPayableTradeCurrent
+DVN,2019-12-31,payables:2017:fallback_1:AccountsPayableTradeCurrent
+DVN,2019-12-31,payables:2018:fallback_1:AccountsPayableTradeCurrent
+DVN,2019-12-31,st_investments:2018:tag_absent_assumed_zero
+DVN,2019-12-31,lease_liability:2018:pre_asc842_assumed_zero
+DVN,2019-12-31,preferred:2018:tag_absent_assumed_zero
+DVN,2019-12-31,minority_interest:2018:tag_absent_assumed_zero
+ECL,2019-12-31,revenue:2016:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+ECL,2019-12-31,revenue:2017:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+ECL,2019-12-31,revenue:2018:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+ECL,2019-12-31,pretax_income:2016:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+ECL,2019-12-31,pretax_income:2017:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+ECL,2019-12-31,pretax_income:2018:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+ECL,2019-12-31,da:2016:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+ECL,2019-12-31,da:2017:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+ECL,2019-12-31,da:2018:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+ECL,2019-12-31,st_investments:2018:tag_absent_assumed_zero
+ECL,2019-12-31,debt_total:2018:fallback_2:LongTermDebtAndCapitalLeaseObligations + DebtCurrent
+ECL,2019-12-31,lease_liability:2018:pre_asc842_assumed_zero
+ECL,2019-12-31,preferred:2018:tag_absent_assumed_zero
+FE,2019-12-31,capex:2016:fallback_1:PaymentsToAcquireProductiveAssets
+FE,2019-12-31,capex:2017:fallback_1:PaymentsToAcquireProductiveAssets
+FE,2019-12-31,capex:2018:fallback_1:PaymentsToAcquireProductiveAssets
+FE,2019-12-31,st_investments:2018:tag_absent_assumed_zero
+FE,2019-12-31,debt_total:2018:fallback_4:LongTermDebtAndCapitalLeaseObligations + LongTermDebtAndCapitalLeaseObligationsCurrent + ShortTermBorrowings
+FE,2019-12-31,lease_liability:2018:pre_asc842_assumed_zero
+FE,2019-12-31,preferred:2018:tag_absent_assumed_zero
+FE,2019-12-31,minority_interest:2018:tag_absent_assumed_zero
+IBM,2019-12-31,ebit:2016:fallback_1:@pretax_income + @interest_expense
+IBM,2019-12-31,ebit:2017:fallback_1:@pretax_income + @interest_expense
+IBM,2019-12-31,ebit:2018:fallback_1:@pretax_income + @interest_expense
+IBM,2019-12-31,da:2016:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+IBM,2019-12-31,da:2017:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+IBM,2019-12-31,da:2018:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+IBM,2019-12-31,st_investments:2018:fallback_2:AvailableForSaleSecuritiesDebtSecuritiesCurrent
+IBM,2019-12-31,debt_total:2018:fallback_1:LongTermDebtNoncurrent + DebtCurrent
+IBM,2019-12-31,lease_liability:2018:pre_asc842_assumed_zero
+IBM,2019-12-31,preferred:2018:tag_absent_assumed_zero
+INTC,2019-12-31,revenue:2016:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+INTC,2019-12-31,revenue:2017:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+INTC,2019-12-31,revenue:2018:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+INTC,2019-12-31,da:2016:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+INTC,2019-12-31,da:2017:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+INTC,2019-12-31,da:2018:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+INTC,2019-12-31,st_investments:2018:fallback_2:AvailableForSaleSecuritiesDebtSecuritiesCurrent
+INTC,2019-12-31,debt_total:2018:fallback_1:LongTermDebtNoncurrent + DebtCurrent
+INTC,2019-12-31,lease_liability:2018:pre_asc842_assumed_zero
+INTC,2019-12-31,minority_interest:2018:tag_absent_assumed_zero
+JNJ,2019-12-31,revenue:2016:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+JNJ,2019-12-31,revenue:2017:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+JNJ,2019-12-31,revenue:2018:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+JNJ,2019-12-31,pretax_income:2016:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+JNJ,2019-12-31,pretax_income:2017:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+JNJ,2019-12-31,pretax_income:2018:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+JNJ,2019-12-31,ebit:2016:fallback_1:@pretax_income + @interest_expense
+JNJ,2019-12-31,ebit:2017:fallback_1:@pretax_income + @interest_expense
+JNJ,2019-12-31,ebit:2018:fallback_1:@pretax_income + @interest_expense
+JNJ,2019-12-31,st_investments:2018:fallback_1:MarketableSecuritiesCurrent
+JNJ,2019-12-31,debt_total:2018:fallback_1:LongTermDebtNoncurrent + DebtCurrent
+JNJ,2019-12-31,lease_liability:2018:pre_asc842_assumed_zero
+JNJ,2019-12-31,minority_interest:2018:tag_absent_assumed_zero
+JNJ,2019-12-31,book_equity:2018:fallback_1:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest
+KMI,2019-12-31,interest_expense:2016:fallback_5:InterestPaidNet
+KMI,2019-12-31,interest_expense:2017:fallback_5:InterestPaidNet
+KMI,2019-12-31,interest_expense:2018:fallback_5:InterestPaidNet
+KMI,2019-12-31,shares_diluted:2018:fallback_1:WeightedAverageNumberOfShareOutstandingBasicAndDiluted
+KMI,2019-12-31,st_investments:2018:tag_absent_assumed_zero
+KMI,2019-12-31,lease_liability:2018:pre_asc842_assumed_zero
+KO,2019-12-31,payables:2016:fallback_1:AccountsPayableTradeCurrent
+KO,2019-12-31,payables:2017:fallback_1:AccountsPayableTradeCurrent
+KO,2019-12-31,payables:2018:fallback_1:AccountsPayableTradeCurrent
+KO,2019-12-31,st_investments:2018:fallback_1:MarketableSecuritiesCurrent
+KO,2019-12-31,debt_total:2018:fallback_3:LongTermDebtNoncurrent + LongTermDebtCurrent + NotesAndLoansPayableCurrent
+KO,2019-12-31,lease_liability:2018:pre_asc842_assumed_zero
+KO,2019-12-31,preferred:2018:tag_absent_assumed_zero
+LMT,2019-12-31,da:2016:fallback_1:DepreciationAndAmortization
+LMT,2019-12-31,da:2017:fallback_1:DepreciationAndAmortization
+LMT,2019-12-31,da:2018:fallback_1:DepreciationAndAmortization
+LMT,2019-12-31,capex:2016:fallback_1:PaymentsToAcquireProductiveAssets
+LMT,2019-12-31,capex:2017:fallback_1:PaymentsToAcquireProductiveAssets
+LMT,2019-12-31,capex:2018:fallback_1:PaymentsToAcquireProductiveAssets
+LMT,2019-12-31,receivables:2016:fallback_2:ReceivablesNetCurrent
+LMT,2019-12-31,receivables:2017:fallback_2:ReceivablesNetCurrent
+LMT,2019-12-31,receivables:2018:fallback_2:ReceivablesNetCurrent
+LMT,2019-12-31,inventory:2016:fallback_1:InventoryNetOfAllowancesCustomerAdvancesAndProgressBillings
+LMT,2019-12-31,inventory:window:mixed_tags_across_years
+LMT,2019-12-31,st_investments:2018:tag_absent_assumed_zero
+LMT,2019-12-31,debt_total:2018:fallback_1:LongTermDebtNoncurrent + DebtCurrent
+LMT,2019-12-31,lease_liability:2018:pre_asc842_assumed_zero
+LMT,2019-12-31,preferred:2018:tag_absent_assumed_zero
+LYB,2019-12-31,payables:2016:fallback_1:AccountsPayableTradeCurrent
+LYB,2019-12-31,payables:2017:fallback_1:AccountsPayableTradeCurrent
+LYB,2019-12-31,payables:2018:fallback_1:AccountsPayableTradeCurrent
+LYB,2019-12-31,debt_total:2018:fallback_4:LongTermDebtAndCapitalLeaseObligations + LongTermDebtAndCapitalLeaseObligationsCurrent + ShortTermBorrowings
+LYB,2019-12-31,lease_liability:2018:pre_asc842_assumed_zero
+LYB,2019-12-31,preferred:2018:tag_absent_assumed_zero
+LYB,2019-12-31,shares_diluted:2018:fallback_2:NetIncomeLoss / EarningsPerShareDiluted
+MAR,2019-12-31,da:2016:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+MAR,2019-12-31,da:2017:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+MAR,2019-12-31,da:2018:fallback_5:Depreciation
+MAR,2019-12-31,receivables:2016:fallback_1:AccountsNotesAndLoansReceivableNetCurrent
+MAR,2019-12-31,receivables:2017:fallback_1:AccountsNotesAndLoansReceivableNetCurrent
+MAR,2019-12-31,receivables:2018:fallback_1:AccountsNotesAndLoansReceivableNetCurrent
+MAR,2019-12-31,inventory:2016:tag_absent_assumed_zero
+MAR,2019-12-31,inventory:2017:tag_absent_assumed_zero
+MAR,2019-12-31,inventory:2018:tag_absent_assumed_zero
+MAR,2019-12-31,payables:2016:fallback_1:AccountsPayableTradeCurrent
+MAR,2019-12-31,payables:2017:fallback_1:AccountsPayableTradeCurrent
+MAR,2019-12-31,payables:2018:fallback_1:AccountsPayableTradeCurrent
+MAR,2019-12-31,st_investments:2018:tag_absent_assumed_zero
+MAR,2019-12-31,debt_total:2018:fallback_4:LongTermDebtAndCapitalLeaseObligations + LongTermDebtAndCapitalLeaseObligationsCurrent
+MAR,2019-12-31,lease_liability:2018:pre_asc842_assumed_zero
+MAR,2019-12-31,preferred:2018:tag_absent_assumed_zero
+MAR,2019-12-31,minority_interest:2018:tag_absent_assumed_zero
+MCD,2019-12-31,pretax_income:2016:fallback_2:IncomeLossFromContinuingOperationsBeforeIncomeTaxesDomestic + IncomeLossFromContinuingOperationsBeforeIncomeTaxesForeign
+MCD,2019-12-31,pretax_income:2017:fallback_2:IncomeLossFromContinuingOperationsBeforeIncomeTaxesDomestic + IncomeLossFromContinuingOperationsBeforeIncomeTaxesForeign
+MCD,2019-12-31,pretax_income:2018:fallback_2:IncomeLossFromContinuingOperationsBeforeIncomeTaxesDomestic + IncomeLossFromContinuingOperationsBeforeIncomeTaxesForeign
+MCD,2019-12-31,da:2016:fallback_1:DepreciationAndAmortization
+MCD,2019-12-31,da:2017:fallback_1:DepreciationAndAmortization
+MCD,2019-12-31,da:2018:fallback_1:DepreciationAndAmortization
+MCD,2019-12-31,receivables:2016:fallback_1:AccountsNotesAndLoansReceivableNetCurrent
+MCD,2019-12-31,receivables:2017:fallback_1:AccountsNotesAndLoansReceivableNetCurrent
+MCD,2019-12-31,receivables:2018:fallback_1:AccountsNotesAndLoansReceivableNetCurrent
+MCD,2019-12-31,st_investments:2018:tag_absent_assumed_zero
+MCD,2019-12-31,debt_total:2018:fallback_3:LongTermDebtNoncurrent
+MCD,2019-12-31,lease_liability:2018:pre_asc842_assumed_zero
+MCD,2019-12-31,minority_interest:2018:tag_absent_assumed_zero
+MDLZ,2019-12-31,pretax_income:2016:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+MDLZ,2019-12-31,pretax_income:2017:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+MDLZ,2019-12-31,pretax_income:2018:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+MDLZ,2019-12-31,interest_expense:2016:fallback_3:InterestExpenseDebt
+MDLZ,2019-12-31,interest_expense:2017:fallback_3:InterestExpenseDebt
+MDLZ,2019-12-31,interest_expense:2018:fallback_3:InterestExpenseDebt
+MDLZ,2019-12-31,da:2016:fallback_1:DepreciationAndAmortization
+MDLZ,2019-12-31,da:2017:fallback_1:DepreciationAndAmortization
+MDLZ,2019-12-31,da:2018:fallback_1:DepreciationAndAmortization
+MDLZ,2019-12-31,cash:2018:fallback_2:CashAndCashEquivalentsAtCarryingValueIncludingDiscontinuedOperations
+MDLZ,2019-12-31,st_investments:2018:tag_absent_assumed_zero
+MDLZ,2019-12-31,debt_total:2018:fallback_4:LongTermDebtAndCapitalLeaseObligations + LongTermDebtAndCapitalLeaseObligationsCurrent + ShortTermBorrowings
+MDLZ,2019-12-31,lease_liability:2018:pre_asc842_assumed_zero
+MDLZ,2019-12-31,preferred:2018:tag_absent_assumed_zero
+META,2019-12-31,revenue:2016:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+META,2019-12-31,revenue:2017:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+META,2019-12-31,revenue:2018:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+META,2019-12-31,da:2018:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+META,2019-12-31,inventory:2016:tag_absent_assumed_zero
+META,2019-12-31,inventory:2017:tag_absent_assumed_zero
+META,2019-12-31,inventory:2018:tag_absent_assumed_zero
+META,2019-12-31,st_investments:2018:fallback_2:AvailableForSaleSecuritiesDebtSecuritiesCurrent
+META,2019-12-31,lease_liability:2018:pre_asc842_assumed_zero
+META,2019-12-31,preferred:2018:tag_absent_assumed_zero
+META,2019-12-31,minority_interest:2018:tag_absent_assumed_zero
+META,2019-12-31,shares_basic:2018:fallback_2:WeightedAverageNumberOfSharesOutstandingBasic
+META,2019-12-31,debt_total:2018:no_borrowing_tags_assumed_zero
+MMM,2019-12-31,cash:2018:fallback_1:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents
+MMM,2019-12-31,st_investments:2018:fallback_1:MarketableSecuritiesCurrent
+MMM,2019-12-31,debt_total:2018:fallback_1:LongTermDebtNoncurrent + DebtCurrent
+MMM,2019-12-31,lease_liability:2018:pre_asc842_assumed_zero
+MMM,2019-12-31,preferred:2018:tag_absent_assumed_zero
+MO,2019-12-31,revenue:2016:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+MO,2019-12-31,revenue:2017:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+MO,2019-12-31,revenue:2018:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+MO,2019-12-31,receivables:2016:fallback_2:ReceivablesNetCurrent
+MO,2019-12-31,receivables:2017:fallback_2:ReceivablesNetCurrent
+MO,2019-12-31,receivables:2018:fallback_2:ReceivablesNetCurrent
+MO,2019-12-31,st_investments:2018:tag_absent_assumed_zero
+MO,2019-12-31,debt_total:2018:fallback_3:LongTermDebtNoncurrent + LongTermDebtCurrent + ShortTermBorrowings
+MO,2019-12-31,lease_liability:2018:pre_asc842_assumed_zero
+MO,2019-12-31,preferred:2018:tag_absent_assumed_zero
+MRK,2019-12-31,ebit:2016:fallback_1:@pretax_income + @interest_expense
+MRK,2019-12-31,ebit:2017:fallback_1:@pretax_income + @interest_expense
+MRK,2019-12-31,ebit:2018:fallback_1:@pretax_income + @interest_expense
+MRK,2019-12-31,da:2017:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+MRK,2019-12-31,capex:2016:fallback_1:PaymentsToAcquireProductiveAssets
+MRK,2019-12-31,capex:2017:fallback_1:PaymentsToAcquireProductiveAssets
+MRK,2019-12-31,capex:2018:fallback_1:PaymentsToAcquireProductiveAssets
+MRK,2019-12-31,st_investments:2018:fallback_1:MarketableSecuritiesCurrent
+MRK,2019-12-31,debt_total:2018:fallback_1:LongTermDebtNoncurrent + DebtCurrent
+MRK,2019-12-31,lease_liability:2018:pre_asc842_assumed_zero
+MRK,2019-12-31,preferred:2018:tag_absent_assumed_zero
+ORLY,2019-12-31,revenue:2016:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+ORLY,2019-12-31,revenue:2017:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+ORLY,2019-12-31,revenue:2018:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+ORLY,2019-12-31,pretax_income:2016:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+ORLY,2019-12-31,pretax_income:2017:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+ORLY,2019-12-31,pretax_income:2018:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+ORLY,2019-12-31,interest_expense:2016:fallback_3:InterestExpenseDebt
+ORLY,2019-12-31,interest_expense:2017:fallback_3:InterestExpenseDebt
+ORLY,2019-12-31,interest_expense:2018:fallback_3:InterestExpenseDebt
+ORLY,2019-12-31,st_investments:2018:tag_absent_assumed_zero
+ORLY,2019-12-31,debt_total:2018:fallback_3:LongTermDebtNoncurrent
+ORLY,2019-12-31,lease_liability:2018:pre_asc842_assumed_zero
+ORLY,2019-12-31,minority_interest:2018:tag_absent_assumed_zero
+PEP,2019-12-31,capex:2016:fallback_1:PaymentsToAcquireProductiveAssets
+PEP,2019-12-31,capex:2017:fallback_1:PaymentsToAcquireProductiveAssets
+PEP,2019-12-31,capex:2018:fallback_1:PaymentsToAcquireProductiveAssets
+PEP,2019-12-31,receivables:2016:fallback_1:AccountsNotesAndLoansReceivableNetCurrent
+PEP,2019-12-31,receivables:2017:fallback_1:AccountsNotesAndLoansReceivableNetCurrent
+PEP,2019-12-31,receivables:2018:fallback_1:AccountsNotesAndLoansReceivableNetCurrent
+PEP,2019-12-31,debt_total:2018:fallback_1:LongTermDebtNoncurrent + DebtCurrent
+PEP,2019-12-31,lease_liability:2018:pre_asc842_assumed_zero
+PFE,2019-12-31,revenue:2016:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+PFE,2019-12-31,revenue:2017:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+PFE,2019-12-31,revenue:2018:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+PFE,2019-12-31,ebit:2016:fallback_1:@pretax_income + @interest_expense
+PFE,2019-12-31,ebit:2017:fallback_1:@pretax_income + @interest_expense
+PFE,2019-12-31,ebit:2018:fallback_1:@pretax_income + @interest_expense
+PFE,2019-12-31,debt_total:2018:fallback_1:LongTermDebtNoncurrent + DebtCurrent
+PFE,2019-12-31,lease_liability:2018:pre_asc842_assumed_zero
+PM,2019-12-31,revenue:2016:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+PM,2019-12-31,revenue:2017:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+PM,2019-12-31,revenue:2018:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+PM,2019-12-31,pretax_income:2016:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+PM,2019-12-31,pretax_income:2017:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+PM,2019-12-31,pretax_income:2018:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+PM,2019-12-31,da:2016:fallback_1:DepreciationAndAmortization
+PM,2019-12-31,da:2017:fallback_1:DepreciationAndAmortization
+PM,2019-12-31,da:2018:fallback_1:DepreciationAndAmortization
+PM,2019-12-31,st_investments:2018:tag_absent_assumed_zero
+PM,2019-12-31,debt_total:2018:fallback_4:LongTermDebtAndCapitalLeaseObligations + LongTermDebtAndCapitalLeaseObligationsCurrent + ShortTermBorrowings
+PM,2019-12-31,lease_liability:2018:pre_asc842_assumed_zero
+PM,2019-12-31,preferred:2018:tag_absent_assumed_zero
+PPG,2019-12-31,revenue:2016:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+PPG,2019-12-31,revenue:2017:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+PPG,2019-12-31,revenue:2018:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+PPG,2019-12-31,da:2016:fallback_1:DepreciationAndAmortization
+PPG,2019-12-31,da:2017:fallback_1:DepreciationAndAmortization
+PPG,2019-12-31,da:2018:fallback_1:DepreciationAndAmortization
+PPG,2019-12-31,payables:2016:fallback_1:AccountsPayableTradeCurrent
+PPG,2019-12-31,payables:2017:fallback_1:AccountsPayableTradeCurrent
+PPG,2019-12-31,payables:2018:fallback_1:AccountsPayableTradeCurrent
+PPG,2019-12-31,debt_total:2018:fallback_1:LongTermDebtNoncurrent + DebtCurrent
+PPG,2019-12-31,lease_liability:2018:pre_asc842_assumed_zero
+PPG,2019-12-31,preferred:2018:tag_absent_assumed_zero
+PPL,2019-12-31,da:2016:fallback_4:Depreciation + AdjustmentForAmortization
+PPL,2019-12-31,da:2017:fallback_4:Depreciation + AdjustmentForAmortization
+PPL,2019-12-31,da:2018:fallback_4:Depreciation + AdjustmentForAmortization
+PPL,2019-12-31,st_investments:2018:tag_absent_assumed_zero
+PPL,2019-12-31,debt_total:2018:fallback_3:LongTermDebtNoncurrent + LongTermDebtCurrent + ShortTermBorrowings
+PPL,2019-12-31,lease_liability:2018:pre_asc842_assumed_zero
+PPL,2019-12-31,preferred:2018:tag_absent_assumed_zero
+PPL,2019-12-31,minority_interest:2018:tag_absent_assumed_zero
+RTX,2019-12-31,capex:2016:fallback_1:PaymentsToAcquireProductiveAssets
+RTX,2019-12-31,capex:2017:fallback_1:PaymentsToAcquireProductiveAssets
+RTX,2019-12-31,capex:2018:fallback_1:PaymentsToAcquireProductiveAssets
+RTX,2019-12-31,receivables:2016:fallback_2:ReceivablesNetCurrent
+RTX,2019-12-31,receivables:2017:fallback_2:ReceivablesNetCurrent
+RTX,2019-12-31,receivables:2018:fallback_2:ReceivablesNetCurrent
+RTX,2019-12-31,st_investments:2018:tag_absent_assumed_zero
+RTX,2019-12-31,debt_total:2018:fallback_4:LongTermDebtAndCapitalLeaseObligations + LongTermDebtAndCapitalLeaseObligationsCurrent + ShortTermBorrowings
+RTX,2019-12-31,lease_liability:2018:pre_asc842_assumed_zero
+SCCO,2019-12-31,revenue:2016:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+SCCO,2019-12-31,revenue:2017:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+SCCO,2019-12-31,revenue:2018:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+SCCO,2019-12-31,pretax_income:2016:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+SCCO,2019-12-31,pretax_income:2017:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+SCCO,2019-12-31,pretax_income:2018:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+SCCO,2019-12-31,interest_expense:2016:fallback_5:InterestPaidNet
+SCCO,2019-12-31,interest_expense:2017:fallback_5:InterestPaidNet
+SCCO,2019-12-31,interest_expense:2018:fallback_5:InterestPaidNet
+SCCO,2019-12-31,shares_diluted:2018:fallback_1:WeightedAverageNumberOfShareOutstandingBasicAndDiluted
+SCCO,2019-12-31,debt_total:2018:fallback_3:LongTermDebtNoncurrent
+SCCO,2019-12-31,lease_liability:2018:pre_asc842_assumed_zero
+SCCO,2019-12-31,preferred:2018:tag_absent_assumed_zero
+SHW,2019-12-31,pretax_income:2016:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+SHW,2019-12-31,pretax_income:2017:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+SHW,2019-12-31,pretax_income:2018:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+SHW,2019-12-31,da:2016:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+SHW,2019-12-31,da:2017:fallback_4:Depreciation + AdjustmentForAmortization
+SHW,2019-12-31,da:2018:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+SHW,2019-12-31,capex:2016:fallback_1:PaymentsToAcquireProductiveAssets
+SHW,2019-12-31,capex:2017:fallback_1:PaymentsToAcquireProductiveAssets
+SHW,2019-12-31,capex:2018:fallback_1:PaymentsToAcquireProductiveAssets
+SHW,2019-12-31,st_investments:2018:tag_absent_assumed_zero
+SHW,2019-12-31,debt_total:2018:fallback_3:LongTermDebtNoncurrent + LongTermDebtCurrent + ShortTermBorrowings
+SHW,2019-12-31,lease_liability:2018:pre_asc842_assumed_zero
+SHW,2019-12-31,preferred:2018:tag_absent_assumed_zero
+SHW,2019-12-31,minority_interest:2018:tag_absent_assumed_zero
+SLB,2019-12-31,revenue:2016:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+SLB,2019-12-31,revenue:2017:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+SLB,2019-12-31,revenue:2018:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+SLB,2019-12-31,receivables:2016:fallback_2:ReceivablesNetCurrent
+SLB,2019-12-31,receivables:2017:fallback_2:ReceivablesNetCurrent
+SLB,2019-12-31,receivables:2018:fallback_2:ReceivablesNetCurrent
+SLB,2019-12-31,payables:2016:fallback_1:AccountsPayableTradeCurrent
+SLB,2019-12-31,payables:2017:fallback_1:AccountsPayableTradeCurrent
+SLB,2019-12-31,payables:2018:fallback_1:AccountsPayableTradeCurrent
+SLB,2019-12-31,cash:2018:fallback_4:Cash
+SLB,2019-12-31,debt_total:2018:fallback_3:LongTermDebtNoncurrent
+SLB,2019-12-31,preferred:2018:tag_absent_assumed_zero
+T,2019-12-31,capex:2016:fallback_1:PaymentsToAcquireProductiveAssets
+T,2019-12-31,capex:2017:fallback_1:PaymentsToAcquireProductiveAssets
+T,2019-12-31,capex:2018:fallback_1:PaymentsToAcquireProductiveAssets
+T,2019-12-31,sbc:2016:fallback_1:AllocatedShareBasedCompensationExpense
+T,2019-12-31,sbc:2017:fallback_1:AllocatedShareBasedCompensationExpense
+T,2019-12-31,sbc:2018:fallback_1:AllocatedShareBasedCompensationExpense
+T,2019-12-31,st_investments:2018:tag_absent_assumed_zero
+T,2019-12-31,debt_total:2018:fallback_2:LongTermDebtAndCapitalLeaseObligations + DebtCurrent
+T,2019-12-31,lease_liability:2018:pre_asc842_assumed_zero
+T,2019-12-31,preferred:2018:tag_absent_assumed_zero
+T,2019-12-31,book_equity:2018:fallback_1:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest
+TXN,2019-12-31,revenue:2016:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+TXN,2019-12-31,revenue:2017:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+TXN,2019-12-31,revenue:2018:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+TXN,2019-12-31,interest_expense:2016:fallback_2:InterestAndDebtExpense
+TXN,2019-12-31,interest_expense:2017:fallback_2:InterestAndDebtExpense
+TXN,2019-12-31,interest_expense:2018:fallback_2:InterestAndDebtExpense
+TXN,2019-12-31,da:2016:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+TXN,2019-12-31,da:2017:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+TXN,2019-12-31,da:2018:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+TXN,2019-12-31,debt_total:2018:fallback_3:LongTermDebtNoncurrent + LongTermDebtCurrent + CommercialPaper
+TXN,2019-12-31,lease_liability:2018:pre_asc842_assumed_zero
+TXN,2019-12-31,minority_interest:2018:tag_absent_assumed_zero
+UNP,2019-12-31,pretax_income:2016:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+UNP,2019-12-31,pretax_income:2017:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+UNP,2019-12-31,pretax_income:2018:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+UNP,2019-12-31,da:2016:fallback_5:Depreciation
+UNP,2019-12-31,da:2017:fallback_5:Depreciation
+UNP,2019-12-31,da:2018:fallback_5:Depreciation
+UNP,2019-12-31,inventory:2016:fallback_3:MaterialsSuppliesAndOther
+UNP,2019-12-31,inventory:2017:fallback_3:MaterialsSuppliesAndOther
+UNP,2019-12-31,inventory:2018:fallback_3:MaterialsSuppliesAndOther
+UNP,2019-12-31,st_investments:2018:tag_absent_assumed_zero
+UNP,2019-12-31,debt_total:2018:fallback_4:LongTermDebtAndCapitalLeaseObligations + LongTermDebtAndCapitalLeaseObligationsCurrent + CommercialPaper
+UNP,2019-12-31,lease_liability:2018:pre_asc842_assumed_zero
+UNP,2019-12-31,preferred:2018:tag_absent_assumed_zero
+UNP,2019-12-31,minority_interest:2018:tag_absent_assumed_zero
+UPS,2019-12-31,revenue:2016:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+UPS,2019-12-31,revenue:2017:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+UPS,2019-12-31,revenue:2018:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+UPS,2019-12-31,pretax_income:2016:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+UPS,2019-12-31,pretax_income:2017:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+UPS,2019-12-31,pretax_income:2018:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+UPS,2019-12-31,da:2016:fallback_1:DepreciationAndAmortization
+UPS,2019-12-31,da:2017:fallback_1:DepreciationAndAmortization
+UPS,2019-12-31,da:2018:fallback_1:DepreciationAndAmortization
+UPS,2019-12-31,st_investments:2018:fallback_1:MarketableSecuritiesCurrent
+UPS,2019-12-31,debt_total:2018:fallback_1:LongTermDebtNoncurrent + DebtCurrent
+UPS,2019-12-31,lease_liability:2018:pre_asc842_assumed_zero
+UPS,2019-12-31,preferred:2018:tag_absent_assumed_zero
+UPS,2019-12-31,shares_basic:2018:fallback_2:WeightedAverageNumberOfSharesOutstandingBasic
+VLO,2019-12-31,revenue:2016:fallback_3:RevenueFromContractWithCustomerIncludingAssessedTax
+VLO,2019-12-31,revenue:2017:fallback_3:RevenueFromContractWithCustomerIncludingAssessedTax
+VLO,2019-12-31,revenue:2018:fallback_3:RevenueFromContractWithCustomerIncludingAssessedTax
+VLO,2019-12-31,da:2016:fallback_2:DepreciationAmortizationAndAccretionNet
+VLO,2019-12-31,da:2017:fallback_2:DepreciationAmortizationAndAccretionNet
+VLO,2019-12-31,da:2018:fallback_2:DepreciationAmortizationAndAccretionNet
+VLO,2019-12-31,capex:2016:fallback_1:PaymentsToAcquireProductiveAssets
+VLO,2019-12-31,capex:2017:fallback_1:PaymentsToAcquireProductiveAssets
+VLO,2019-12-31,capex:2018:fallback_1:PaymentsToAcquireProductiveAssets
+VLO,2019-12-31,receivables:2016:fallback_2:ReceivablesNetCurrent
+VLO,2019-12-31,receivables:2017:fallback_2:ReceivablesNetCurrent
+VLO,2019-12-31,receivables:2018:fallback_2:ReceivablesNetCurrent
+VLO,2019-12-31,st_investments:2018:tag_absent_assumed_zero
+VLO,2019-12-31,lease_liability:2018:pre_asc842_assumed_zero
+VLO,2019-12-31,preferred:2018:tag_absent_assumed_zero
+VZ,2019-12-31,da:2016:fallback_1:DepreciationAndAmortization
+VZ,2019-12-31,da:2017:fallback_1:DepreciationAndAmortization
+VZ,2019-12-31,da:2018:fallback_1:DepreciationAndAmortization
+VZ,2019-12-31,capex:2016:fallback_1:PaymentsToAcquireProductiveAssets
+VZ,2019-12-31,capex:2017:fallback_1:PaymentsToAcquireProductiveAssets
+VZ,2019-12-31,capex:2018:fallback_1:PaymentsToAcquireProductiveAssets
+VZ,2019-12-31,st_investments:2018:tag_absent_assumed_zero
+VZ,2019-12-31,lease_liability:2018:pre_asc842_assumed_zero
+VZ,2019-12-31,book_equity:2018:fallback_1:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest
+XOM,2019-12-31,ebit:2016:fallback_1:@pretax_income + @interest_expense
+XOM,2019-12-31,ebit:2017:fallback_1:@pretax_income + @interest_expense
+XOM,2019-12-31,ebit:2018:fallback_1:@pretax_income + @interest_expense
+XOM,2019-12-31,inventory:2016:fallback_2:EnergyRelatedInventory + InventoryPartsAndComponentsNetOfReserves
+XOM,2019-12-31,inventory:2017:fallback_2:EnergyRelatedInventory + InventoryPartsAndComponentsNetOfReserves
+XOM,2019-12-31,inventory:2018:fallback_2:EnergyRelatedInventory + InventoryPartsAndComponentsNetOfReserves
+XOM,2019-12-31,payables:2016:fallback_1:AccountsPayableTradeCurrent
+XOM,2019-12-31,payables:2017:fallback_1:AccountsPayableTradeCurrent
+XOM,2019-12-31,payables:2018:fallback_1:AccountsPayableTradeCurrent
+XOM,2019-12-31,st_investments:2018:tag_absent_assumed_zero
+XOM,2019-12-31,debt_total:2018:fallback_2:LongTermDebtAndCapitalLeaseObligations + DebtCurrent
+XOM,2019-12-31,lease_liability:2018:pre_asc842_assumed_zero
+XOM,2019-12-31,preferred:2018:tag_absent_assumed_zero
+XOM,2019-12-31,shares_diluted:2018:fallback_2:NetIncomeLoss / EarningsPerShareDiluted
+ABBV,2022-12-31,da:2019:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+ABBV,2022-12-31,da:2020:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+ABBV,2022-12-31,da:2021:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+ABBV,2022-12-31,debt_total:2021:fallback_4:LongTermDebtAndCapitalLeaseObligations + LongTermDebtAndCapitalLeaseObligationsCurrent + ShortTermBorrowings
+ABBV,2022-12-31,preferred:2021:tag_absent_assumed_zero
+ANET,2022-12-31,revenue:2019:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+ANET,2022-12-31,revenue:2020:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+ANET,2022-12-31,revenue:2021:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+ANET,2022-12-31,capex:2019:fallback_1:PaymentsToAcquireProductiveAssets
+ANET,2022-12-31,capex:2020:fallback_1:PaymentsToAcquireProductiveAssets
+ANET,2022-12-31,capex:2021:fallback_1:PaymentsToAcquireProductiveAssets
+ANET,2022-12-31,st_investments:2021:fallback_2:AvailableForSaleSecuritiesDebtSecuritiesCurrent
+ANET,2022-12-31,minority_interest:2021:tag_absent_assumed_zero
+ANET,2022-12-31,debt_total:2021:no_borrowing_tags_assumed_zero
+APH,2022-12-31,revenue:2019:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+APH,2022-12-31,revenue:2020:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+APH,2022-12-31,revenue:2021:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+APH,2022-12-31,debt_total:2021:fallback_4:LongTermDebtAndCapitalLeaseObligations + LongTermDebtAndCapitalLeaseObligationsCurrent
+APH,2022-12-31,preferred:2021:tag_absent_assumed_zero
+CAT,2022-12-31,pretax_income:2019:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+CAT,2022-12-31,pretax_income:2020:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+CAT,2022-12-31,pretax_income:2021:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+CAT,2022-12-31,interest_expense:2019:fallback_5:InterestPaidNet
+CAT,2022-12-31,interest_expense:2020:fallback_5:InterestPaidNet
+CAT,2022-12-31,interest_expense:2021:fallback_5:InterestPaidNet
+CAT,2022-12-31,da:2020:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+CAT,2022-12-31,sbc:2019:fallback_1:AllocatedShareBasedCompensationExpense
+CAT,2022-12-31,sbc:2020:fallback_1:AllocatedShareBasedCompensationExpense
+CAT,2022-12-31,sbc:2021:fallback_1:AllocatedShareBasedCompensationExpense
+CAT,2022-12-31,st_investments:2021:tag_absent_assumed_zero
+CAT,2022-12-31,debt_total:2021:fallback_3:LongTermDebtNoncurrent + ShortTermBorrowings
+CAT,2022-12-31,lease_liability:2021:fallback_1:OperatingLeaseLiabilityNoncurrent + OperatingLeaseLiabilityCurrent
+CAT,2022-12-31,preferred:2021:tag_absent_assumed_zero
+CAT,2022-12-31,book_equity:2021:fallback_1:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest
+CMCSA,2022-12-31,inventory:2019:tag_absent_assumed_zero
+CMCSA,2022-12-31,inventory:2020:tag_absent_assumed_zero
+CMCSA,2022-12-31,inventory:2021:tag_absent_assumed_zero
+CMCSA,2022-12-31,debt_total:2021:fallback_4:LongTermDebtAndCapitalLeaseObligations + LongTermDebtAndCapitalLeaseObligationsCurrent
+CMCSA,2022-12-31,shares_basic:2021:fallback_2:WeightedAverageNumberOfSharesOutstandingBasic
+EBAY,2022-12-31,revenue:2019:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+EBAY,2022-12-31,revenue:2020:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+EBAY,2022-12-31,revenue:2021:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+EBAY,2022-12-31,da:2019:fallback_1:DepreciationAndAmortization
+EBAY,2022-12-31,da:2020:fallback_1:DepreciationAndAmortization
+EBAY,2022-12-31,da:2021:fallback_1:DepreciationAndAmortization
+EBAY,2022-12-31,inventory:2019:tag_absent_assumed_zero
+EBAY,2022-12-31,inventory:2020:tag_absent_assumed_zero
+EBAY,2022-12-31,inventory:2021:tag_absent_assumed_zero
+EBAY,2022-12-31,preferred:2021:tag_absent_assumed_zero
+EBAY,2022-12-31,minority_interest:2021:tag_absent_assumed_zero
+ECL,2022-12-31,revenue:2019:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+ECL,2022-12-31,revenue:2020:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+ECL,2022-12-31,revenue:2021:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+ECL,2022-12-31,da:2019:fallback_4:Depreciation + AdjustmentForAmortization
+ECL,2022-12-31,da:2020:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+ECL,2022-12-31,da:2021:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+ECL,2022-12-31,st_investments:2021:tag_absent_assumed_zero
+ECL,2022-12-31,debt_total:2021:fallback_2:LongTermDebtAndCapitalLeaseObligations + DebtCurrent
+ECL,2022-12-31,preferred:2021:tag_absent_assumed_zero
+ETR,2022-12-31,revenue:2019:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+ETR,2022-12-31,revenue:2020:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+ETR,2022-12-31,revenue:2021:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+ETR,2022-12-31,da:2019:fallback_2:DepreciationAmortizationAndAccretionNet
+ETR,2022-12-31,da:2020:fallback_2:DepreciationAmortizationAndAccretionNet
+ETR,2022-12-31,da:2021:fallback_2:DepreciationAmortizationAndAccretionNet
+ETR,2022-12-31,capex:2019:fallback_2:PaymentsToAcquireOtherPropertyPlantAndEquipment
+ETR,2022-12-31,capex:2020:fallback_2:PaymentsToAcquireOtherPropertyPlantAndEquipment
+ETR,2022-12-31,capex:2021:fallback_2:PaymentsToAcquireOtherPropertyPlantAndEquipment
+ETR,2022-12-31,inventory:2019:tag_absent_assumed_zero
+ETR,2022-12-31,inventory:2020:tag_absent_assumed_zero
+ETR,2022-12-31,inventory:2021:tag_absent_assumed_zero
+ETR,2022-12-31,st_investments:2021:tag_absent_assumed_zero
+ETR,2022-12-31,debt_total:2021:fallback_3:LongTermDebtNoncurrent + LongTermDebtCurrent + ShortTermBorrowings
+ETR,2022-12-31,lease_liability:2021:tag_absent_assumed_zero
+IBM,2022-12-31,ebit:2019:fallback_1:@pretax_income + @interest_expense
+IBM,2022-12-31,ebit:2020:fallback_1:@pretax_income + @interest_expense
+IBM,2022-12-31,ebit:2021:fallback_1:@pretax_income + @interest_expense
+IBM,2022-12-31,da:2019:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+IBM,2022-12-31,da:2020:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+IBM,2022-12-31,da:2021:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+IBM,2022-12-31,st_investments:2021:tag_absent_assumed_zero
+IBM,2022-12-31,debt_total:2021:fallback_3:LongTermDebtNoncurrent + ShortTermBorrowings
+IBM,2022-12-31,preferred:2021:tag_absent_assumed_zero
+INTC,2022-12-31,revenue:2019:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+INTC,2022-12-31,revenue:2020:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+INTC,2022-12-31,revenue:2021:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+INTC,2022-12-31,da:2019:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+INTC,2022-12-31,da:2020:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+INTC,2022-12-31,da:2021:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+INTC,2022-12-31,cash:2021:fallback_1:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents
+INTC,2022-12-31,st_investments:2021:fallback_2:AvailableForSaleSecuritiesDebtSecuritiesCurrent
+INTC,2022-12-31,debt_total:2021:fallback_1:LongTermDebtNoncurrent + DebtCurrent
+INTC,2022-12-31,minority_interest:2021:tag_absent_assumed_zero
+JNJ,2022-12-31,revenue:2019:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+JNJ,2022-12-31,revenue:2020:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+JNJ,2022-12-31,revenue:2021:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+JNJ,2022-12-31,ebit:2019:fallback_1:@pretax_income + @interest_expense
+JNJ,2022-12-31,ebit:2020:fallback_1:@pretax_income + @interest_expense
+JNJ,2022-12-31,ebit:2021:fallback_1:@pretax_income + @interest_expense
+JNJ,2022-12-31,st_investments:2021:fallback_1:MarketableSecuritiesCurrent
+JNJ,2022-12-31,debt_total:2021:fallback_1:LongTermDebtNoncurrent + DebtCurrent
+JNJ,2022-12-31,minority_interest:2021:tag_absent_assumed_zero
+JNJ,2022-12-31,book_equity:2021:fallback_1:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest
+KO,2022-12-31,payables:2019:fallback_1:AccountsPayableTradeCurrent
+KO,2022-12-31,payables:2020:fallback_1:AccountsPayableTradeCurrent
+KO,2022-12-31,payables:2021:fallback_1:AccountsPayableTradeCurrent
+KO,2022-12-31,st_investments:2021:tag_absent_assumed_zero
+KO,2022-12-31,debt_total:2021:fallback_3:LongTermDebtNoncurrent + LongTermDebtCurrent + ShortTermBorrowings
+KO,2022-12-31,preferred:2021:tag_absent_assumed_zero
+LIN,2022-12-31,revenue:2019:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+LIN,2022-12-31,revenue:2020:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+LIN,2022-12-31,revenue:2021:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+LIN,2022-12-31,pretax_income:2019:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+LIN,2022-12-31,pretax_income:2020:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+LIN,2022-12-31,pretax_income:2021:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+LIN,2022-12-31,interest_expense:2019:fallback_2:InterestAndDebtExpense
+LIN,2022-12-31,interest_expense:2020:fallback_2:InterestAndDebtExpense
+LIN,2022-12-31,interest_expense:2021:fallback_2:InterestAndDebtExpense
+LIN,2022-12-31,da:2019:fallback_1:DepreciationAndAmortization
+LIN,2022-12-31,da:2020:fallback_1:DepreciationAndAmortization
+LIN,2022-12-31,da:2021:fallback_1:DepreciationAndAmortization
+LIN,2022-12-31,st_investments:2021:tag_absent_assumed_zero
+LIN,2022-12-31,preferred:2021:tag_absent_assumed_zero
+LLY,2022-12-31,ebit:2019:fallback_1:@pretax_income + @interest_expense
+LLY,2022-12-31,ebit:2020:fallback_1:@pretax_income + @interest_expense
+LLY,2022-12-31,ebit:2021:fallback_1:@pretax_income + @interest_expense
+LLY,2022-12-31,capex:2019:fallback_2:PaymentsToAcquireOtherPropertyPlantAndEquipment
+LLY,2022-12-31,capex:2020:fallback_2:PaymentsToAcquireOtherPropertyPlantAndEquipment
+LLY,2022-12-31,capex:2021:fallback_2:PaymentsToAcquireOtherPropertyPlantAndEquipment
+LLY,2022-12-31,preferred:2021:tag_absent_assumed_zero
+LMT,2022-12-31,da:2019:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+LMT,2022-12-31,da:2020:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+LMT,2022-12-31,da:2021:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+LMT,2022-12-31,capex:2019:fallback_1:PaymentsToAcquireProductiveAssets
+LMT,2022-12-31,capex:2020:fallback_1:PaymentsToAcquireProductiveAssets
+LMT,2022-12-31,capex:2021:fallback_1:PaymentsToAcquireProductiveAssets
+LMT,2022-12-31,receivables:2019:fallback_2:ReceivablesNetCurrent
+LMT,2022-12-31,receivables:2020:fallback_2:ReceivablesNetCurrent
+LMT,2022-12-31,receivables:2021:fallback_2:ReceivablesNetCurrent
+LMT,2022-12-31,st_investments:2021:tag_absent_assumed_zero
+LMT,2022-12-31,debt_total:2021:fallback_1:LongTermDebtNoncurrent + DebtCurrent
+LMT,2022-12-31,preferred:2021:tag_absent_assumed_zero
+MCD,2022-12-31,pretax_income:2019:fallback_2:IncomeLossFromContinuingOperationsBeforeIncomeTaxesDomestic + IncomeLossFromContinuingOperationsBeforeIncomeTaxesForeign
+MCD,2022-12-31,pretax_income:2020:fallback_2:IncomeLossFromContinuingOperationsBeforeIncomeTaxesDomestic + IncomeLossFromContinuingOperationsBeforeIncomeTaxesForeign
+MCD,2022-12-31,pretax_income:2021:fallback_2:IncomeLossFromContinuingOperationsBeforeIncomeTaxesDomestic + IncomeLossFromContinuingOperationsBeforeIncomeTaxesForeign
+MCD,2022-12-31,da:2019:fallback_1:DepreciationAndAmortization
+MCD,2022-12-31,da:2020:fallback_1:DepreciationAndAmortization
+MCD,2022-12-31,da:2021:fallback_1:DepreciationAndAmortization
+MCD,2022-12-31,receivables:2019:fallback_1:AccountsNotesAndLoansReceivableNetCurrent
+MCD,2022-12-31,receivables:2020:fallback_1:AccountsNotesAndLoansReceivableNetCurrent
+MCD,2022-12-31,receivables:2021:fallback_1:AccountsNotesAndLoansReceivableNetCurrent
+MCD,2022-12-31,st_investments:2021:tag_absent_assumed_zero
+MCD,2022-12-31,debt_total:2021:fallback_3:LongTermDebtNoncurrent + LongTermDebtCurrent
+MCD,2022-12-31,minority_interest:2021:tag_absent_assumed_zero
+MDLZ,2022-12-31,pretax_income:2019:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+MDLZ,2022-12-31,pretax_income:2020:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+MDLZ,2022-12-31,pretax_income:2021:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+MDLZ,2022-12-31,interest_expense:2019:fallback_3:InterestExpenseDebt
+MDLZ,2022-12-31,interest_expense:2020:fallback_3:InterestExpenseDebt
+MDLZ,2022-12-31,interest_expense:2021:fallback_3:InterestExpenseDebt
+MDLZ,2022-12-31,da:2019:fallback_1:DepreciationAndAmortization
+MDLZ,2022-12-31,da:2020:fallback_1:DepreciationAndAmortization
+MDLZ,2022-12-31,da:2021:fallback_1:DepreciationAndAmortization
+MDLZ,2022-12-31,cash:2021:fallback_1:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents
+MDLZ,2022-12-31,st_investments:2021:tag_absent_assumed_zero
+MDLZ,2022-12-31,debt_total:2021:fallback_4:LongTermDebtAndCapitalLeaseObligations + LongTermDebtAndCapitalLeaseObligationsCurrent + ShortTermBorrowings
+MDLZ,2022-12-31,preferred:2021:tag_absent_assumed_zero
+META,2022-12-31,revenue:2019:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+META,2022-12-31,revenue:2020:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+META,2022-12-31,revenue:2021:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+META,2022-12-31,da:2019:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+META,2022-12-31,da:2020:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+META,2022-12-31,inventory:2019:tag_absent_assumed_zero
+META,2022-12-31,inventory:2020:tag_absent_assumed_zero
+META,2022-12-31,inventory:2021:tag_absent_assumed_zero
+META,2022-12-31,payables:2019:fallback_1:AccountsPayableTradeCurrent
+META,2022-12-31,payables:2020:fallback_1:AccountsPayableTradeCurrent
+META,2022-12-31,payables:2021:fallback_1:AccountsPayableTradeCurrent
+META,2022-12-31,st_investments:2021:fallback_2:AvailableForSaleSecuritiesDebtSecuritiesCurrent
+META,2022-12-31,preferred:2021:tag_absent_assumed_zero
+META,2022-12-31,minority_interest:2021:tag_absent_assumed_zero
+META,2022-12-31,shares_basic:2021:fallback_2:WeightedAverageNumberOfSharesOutstandingBasic
+META,2022-12-31,debt_total:2021:no_borrowing_tags_assumed_zero
+MO,2022-12-31,revenue:2019:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+MO,2022-12-31,revenue:2020:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+MO,2022-12-31,revenue:2021:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+MO,2022-12-31,receivables:2019:fallback_2:ReceivablesNetCurrent
+MO,2022-12-31,receivables:2020:fallback_2:ReceivablesNetCurrent
+MO,2022-12-31,receivables:2021:fallback_2:ReceivablesNetCurrent
+MO,2022-12-31,st_investments:2021:tag_absent_assumed_zero
+MO,2022-12-31,debt_total:2021:fallback_3:LongTermDebtNoncurrent + LongTermDebtCurrent + ShortTermBorrowings
+MO,2022-12-31,lease_liability:2021:tag_absent_assumed_zero
+MO,2022-12-31,preferred:2021:tag_absent_assumed_zero
+MRK,2022-12-31,ebit:2019:fallback_1:@pretax_income + @interest_expense
+MRK,2022-12-31,ebit:2020:fallback_1:@pretax_income + @interest_expense
+MRK,2022-12-31,ebit:2021:fallback_1:@pretax_income + @interest_expense
+MRK,2022-12-31,da:2020:fallback_4:Depreciation + AdjustmentForAmortization
+MRK,2022-12-31,da:2021:fallback_4:Depreciation + AdjustmentForAmortization
+MRK,2022-12-31,capex:2019:fallback_1:PaymentsToAcquireProductiveAssets
+MRK,2022-12-31,capex:2020:fallback_1:PaymentsToAcquireProductiveAssets
+MRK,2022-12-31,capex:2021:fallback_1:PaymentsToAcquireProductiveAssets
+MRK,2022-12-31,st_investments:2021:tag_absent_assumed_zero
+MRK,2022-12-31,preferred:2021:tag_absent_assumed_zero
+NEM,2022-12-31,revenue:2019:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+NEM,2022-12-31,revenue:2020:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+NEM,2022-12-31,revenue:2021:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+NEM,2022-12-31,interest_expense:2019:fallback_5:InterestPaidNet
+NEM,2022-12-31,interest_expense:2020:fallback_5:InterestPaidNet
+NEM,2022-12-31,interest_expense:2021:fallback_5:InterestPaidNet
+NEM,2022-12-31,ebit:2019:fallback_1:@pretax_income + @interest_expense
+NEM,2022-12-31,ebit:2020:fallback_1:@pretax_income + @interest_expense
+NEM,2022-12-31,ebit:2021:fallback_1:@pretax_income + @interest_expense
+NEM,2022-12-31,capex:2019:fallback_1:PaymentsToAcquireProductiveAssets
+NEM,2022-12-31,capex:2020:fallback_1:PaymentsToAcquireProductiveAssets
+NEM,2022-12-31,capex:2021:fallback_1:PaymentsToAcquireProductiveAssets
+NEM,2022-12-31,sbc:2019:fallback_1:AllocatedShareBasedCompensationExpense
+NEM,2022-12-31,sbc:2020:fallback_1:AllocatedShareBasedCompensationExpense
+NEM,2022-12-31,sbc:2021:fallback_1:AllocatedShareBasedCompensationExpense
+NEM,2022-12-31,inventory:2019:tag_absent_assumed_zero
+NEM,2022-12-31,inventory:2020:tag_absent_assumed_zero
+NEM,2022-12-31,inventory:2021:tag_absent_assumed_zero
+NEM,2022-12-31,debt_total:2021:fallback_3:LongTermDebtNoncurrent + LongTermDebtCurrent
+NEM,2022-12-31,preferred:2021:tag_absent_assumed_zero
+NOC,2022-12-31,interest_expense:2019:fallback_2:InterestAndDebtExpense
+NOC,2022-12-31,interest_expense:2020:fallback_2:InterestAndDebtExpense
+NOC,2022-12-31,interest_expense:2021:fallback_2:InterestAndDebtExpense
+NOC,2022-12-31,st_investments:2021:tag_absent_assumed_zero
+NOC,2022-12-31,debt_total:2021:fallback_3:LongTermDebtNoncurrent + LongTermDebtCurrent
+NOC,2022-12-31,minority_interest:2021:tag_absent_assumed_zero
+NRG,2022-12-31,da:2019:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+NRG,2022-12-31,da:2020:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+NRG,2022-12-31,da:2021:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+NRG,2022-12-31,st_investments:2021:tag_absent_assumed_zero
+NRG,2022-12-31,debt_total:2021:fallback_4:LongTermDebtAndCapitalLeaseObligations + LongTermDebtAndCapitalLeaseObligationsCurrent
+NRG,2022-12-31,preferred:2021:tag_absent_assumed_zero
+NRG,2022-12-31,minority_interest:2021:tag_absent_assumed_zero
+NRG,2022-12-31,book_equity:2021:fallback_1:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest
+ORLY,2022-12-31,revenue:2019:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+ORLY,2022-12-31,revenue:2020:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+ORLY,2022-12-31,revenue:2021:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+ORLY,2022-12-31,interest_expense:2019:fallback_3:InterestExpenseDebt
+ORLY,2022-12-31,interest_expense:2020:fallback_3:InterestExpenseDebt
+ORLY,2022-12-31,interest_expense:2021:fallback_3:InterestExpenseDebt
+ORLY,2022-12-31,st_investments:2021:tag_absent_assumed_zero
+ORLY,2022-12-31,debt_total:2021:fallback_3:LongTermDebtNoncurrent
+ORLY,2022-12-31,minority_interest:2021:tag_absent_assumed_zero
+PEP,2022-12-31,capex:2019:fallback_1:PaymentsToAcquireProductiveAssets
+PEP,2022-12-31,capex:2020:fallback_1:PaymentsToAcquireProductiveAssets
+PEP,2022-12-31,capex:2021:fallback_1:PaymentsToAcquireProductiveAssets
+PEP,2022-12-31,receivables:2019:fallback_1:AccountsNotesAndLoansReceivableNetCurrent
+PEP,2022-12-31,receivables:2020:fallback_1:AccountsNotesAndLoansReceivableNetCurrent
+PEP,2022-12-31,receivables:2021:fallback_1:AccountsNotesAndLoansReceivableNetCurrent
+PEP,2022-12-31,debt_total:2021:fallback_1:LongTermDebtNoncurrent + DebtCurrent
+PEP,2022-12-31,preferred:2021:tag_absent_assumed_zero
+PFE,2022-12-31,revenue:2019:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+PFE,2022-12-31,revenue:2020:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+PFE,2022-12-31,revenue:2021:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+PFE,2022-12-31,ebit:2019:fallback_1:@pretax_income + @interest_expense
+PFE,2022-12-31,ebit:2020:fallback_1:@pretax_income + @interest_expense
+PFE,2022-12-31,ebit:2021:fallback_1:@pretax_income + @interest_expense
+PFE,2022-12-31,st_investments:2021:fallback_2:AvailableForSaleSecuritiesDebtSecuritiesCurrent
+PFE,2022-12-31,debt_total:2021:fallback_1:LongTermDebtNoncurrent + DebtCurrent
+PM,2022-12-31,revenue:2019:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+PM,2022-12-31,revenue:2020:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+PM,2022-12-31,revenue:2021:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+PM,2022-12-31,pretax_income:2019:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+PM,2022-12-31,pretax_income:2020:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+PM,2022-12-31,pretax_income:2021:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+PM,2022-12-31,da:2019:fallback_1:DepreciationAndAmortization
+PM,2022-12-31,da:2020:fallback_1:DepreciationAndAmortization
+PM,2022-12-31,da:2021:fallback_1:DepreciationAndAmortization
+PM,2022-12-31,st_investments:2021:tag_absent_assumed_zero
+PM,2022-12-31,debt_total:2021:fallback_4:LongTermDebtAndCapitalLeaseObligations + LongTermDebtAndCapitalLeaseObligationsCurrent + ShortTermBorrowings
+PM,2022-12-31,preferred:2021:tag_absent_assumed_zero
+SCCO,2022-12-31,revenue:2019:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+SCCO,2022-12-31,revenue:2020:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+SCCO,2022-12-31,revenue:2021:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+SCCO,2022-12-31,pretax_income:2019:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+SCCO,2022-12-31,pretax_income:2020:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+SCCO,2022-12-31,pretax_income:2021:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+SCCO,2022-12-31,interest_expense:2019:fallback_5:InterestPaidNet
+SCCO,2022-12-31,interest_expense:2020:fallback_5:InterestPaidNet
+SCCO,2022-12-31,interest_expense:2021:fallback_5:InterestPaidNet
+SCCO,2022-12-31,debt_total:2021:fallback_3:LongTermDebtNoncurrent + LongTermDebtCurrent
+SCCO,2022-12-31,preferred:2021:tag_absent_assumed_zero
+SHW,2022-12-31,revenue:2019:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+SHW,2022-12-31,revenue:2020:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+SHW,2022-12-31,revenue:2021:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+SHW,2022-12-31,da:2019:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+SHW,2022-12-31,da:2020:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+SHW,2022-12-31,da:2021:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+SHW,2022-12-31,capex:2019:fallback_1:PaymentsToAcquireProductiveAssets
+SHW,2022-12-31,capex:2020:fallback_1:PaymentsToAcquireProductiveAssets
+SHW,2022-12-31,capex:2021:fallback_1:PaymentsToAcquireProductiveAssets
+SHW,2022-12-31,st_investments:2021:tag_absent_assumed_zero
+SHW,2022-12-31,debt_total:2021:fallback_3:LongTermDebtNoncurrent + LongTermDebtCurrent + ShortTermBorrowings
+SHW,2022-12-31,preferred:2021:tag_absent_assumed_zero
+SHW,2022-12-31,minority_interest:2021:tag_absent_assumed_zero
+SLB,2022-12-31,revenue:2019:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+SLB,2022-12-31,revenue:2020:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+SLB,2022-12-31,revenue:2021:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+SLB,2022-12-31,receivables:2019:fallback_2:ReceivablesNetCurrent
+SLB,2022-12-31,receivables:2020:fallback_2:ReceivablesNetCurrent
+SLB,2022-12-31,receivables:2021:fallback_2:ReceivablesNetCurrent
+SLB,2022-12-31,payables:2019:fallback_1:AccountsPayableTradeCurrent
+SLB,2022-12-31,payables:2020:fallback_1:AccountsPayableTradeCurrent
+SLB,2022-12-31,payables:2021:fallback_1:AccountsPayableTradeCurrent
+SLB,2022-12-31,cash:2021:fallback_4:Cash
+SLB,2022-12-31,debt_total:2021:fallback_3:LongTermDebtNoncurrent
+SLB,2022-12-31,preferred:2021:tag_absent_assumed_zero
+T,2022-12-31,da:2019:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+T,2022-12-31,da:2020:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+T,2022-12-31,da:2021:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+T,2022-12-31,capex:2019:fallback_1:PaymentsToAcquireProductiveAssets
+T,2022-12-31,capex:2020:fallback_1:PaymentsToAcquireProductiveAssets
+T,2022-12-31,capex:2021:fallback_1:PaymentsToAcquireProductiveAssets
+T,2022-12-31,sbc:2019:fallback_1:AllocatedShareBasedCompensationExpense
+T,2022-12-31,sbc:2020:fallback_1:AllocatedShareBasedCompensationExpense
+T,2022-12-31,sbc:2021:fallback_1:AllocatedShareBasedCompensationExpense
+T,2022-12-31,inventory:2021:tag_absent_assumed_zero
+T,2022-12-31,st_investments:2021:tag_absent_assumed_zero
+T,2022-12-31,debt_total:2021:fallback_2:LongTermDebtAndCapitalLeaseObligations + DebtCurrent
+T,2022-12-31,preferred:2021:tag_absent_assumed_zero
+T,2022-12-31,book_equity:2021:fallback_1:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest
+TMUS,2022-12-31,revenue:2019:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+TMUS,2022-12-31,revenue:2020:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+TMUS,2022-12-31,revenue:2021:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+TMUS,2022-12-31,interest_expense:2019:fallback_3:InterestExpenseDebt
+TMUS,2022-12-31,interest_expense:2020:fallback_3:InterestExpenseDebt
+TMUS,2022-12-31,interest_expense:2021:fallback_3:InterestExpenseDebt
+TMUS,2022-12-31,da:2020:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+TMUS,2022-12-31,da:2021:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+TMUS,2022-12-31,payables:2019:fallback_1:AccountsPayableTradeCurrent
+TMUS,2022-12-31,payables:2020:fallback_1:AccountsPayableTradeCurrent
+TMUS,2022-12-31,payables:2021:fallback_1:AccountsPayableTradeCurrent
+TMUS,2022-12-31,st_investments:2021:tag_absent_assumed_zero
+TMUS,2022-12-31,debt_total:2021:fallback_3:LongTermDebtNoncurrent + LongTermDebtCurrent + ShortTermBorrowings
+TMUS,2022-12-31,preferred:2021:tag_absent_assumed_zero
+TMUS,2022-12-31,minority_interest:2021:tag_absent_assumed_zero
+TXN,2022-12-31,revenue:2019:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+TXN,2022-12-31,revenue:2020:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+TXN,2022-12-31,revenue:2021:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+TXN,2022-12-31,interest_expense:2019:fallback_2:InterestAndDebtExpense
+TXN,2022-12-31,interest_expense:2020:fallback_2:InterestAndDebtExpense
+TXN,2022-12-31,interest_expense:2021:fallback_2:InterestAndDebtExpense
+TXN,2022-12-31,da:2019:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+TXN,2022-12-31,da:2020:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+TXN,2022-12-31,da:2021:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+TXN,2022-12-31,debt_total:2021:fallback_3:LongTermDebtNoncurrent + LongTermDebtCurrent + CommercialPaper
+TXN,2022-12-31,minority_interest:2021:tag_absent_assumed_zero
+UNP,2022-12-31,revenue:2019:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+UNP,2022-12-31,revenue:2020:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+UNP,2022-12-31,revenue:2021:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+UNP,2022-12-31,da:2019:fallback_5:Depreciation
+UNP,2022-12-31,da:2020:fallback_5:Depreciation
+UNP,2022-12-31,da:2021:fallback_5:Depreciation
+UNP,2022-12-31,inventory:2019:fallback_3:MaterialsSuppliesAndOther
+UNP,2022-12-31,inventory:2020:fallback_3:MaterialsSuppliesAndOther
+UNP,2022-12-31,inventory:2021:fallback_3:MaterialsSuppliesAndOther
+UNP,2022-12-31,st_investments:2021:tag_absent_assumed_zero
+UNP,2022-12-31,debt_total:2021:fallback_4:LongTermDebtAndCapitalLeaseObligations + LongTermDebtAndCapitalLeaseObligationsCurrent + CommercialPaper
+UNP,2022-12-31,preferred:2021:tag_absent_assumed_zero
+UNP,2022-12-31,minority_interest:2021:tag_absent_assumed_zero
+UPS,2022-12-31,revenue:2019:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+UPS,2022-12-31,revenue:2020:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+UPS,2022-12-31,revenue:2021:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+UPS,2022-12-31,da:2019:fallback_1:DepreciationAndAmortization
+UPS,2022-12-31,da:2020:fallback_1:DepreciationAndAmortization
+UPS,2022-12-31,da:2021:fallback_1:DepreciationAndAmortization
+UPS,2022-12-31,st_investments:2021:fallback_1:MarketableSecuritiesCurrent
+UPS,2022-12-31,debt_total:2021:fallback_3:LongTermDebtNoncurrent + LongTermDebtCurrent
+UPS,2022-12-31,preferred:2021:tag_absent_assumed_zero
+UPS,2022-12-31,shares_basic:2021:fallback_2:WeightedAverageNumberOfSharesOutstandingBasic
+VZ,2022-12-31,da:2019:fallback_1:DepreciationAndAmortization
+VZ,2022-12-31,da:2020:fallback_1:DepreciationAndAmortization
+VZ,2022-12-31,da:2021:fallback_1:DepreciationAndAmortization
+VZ,2022-12-31,capex:2019:fallback_3:PaymentsToAcquireOtherProductiveAssets
+VZ,2022-12-31,capex:2020:fallback_3:PaymentsToAcquireOtherProductiveAssets
+VZ,2022-12-31,capex:2021:fallback_3:PaymentsToAcquireOtherProductiveAssets
+VZ,2022-12-31,st_investments:2021:tag_absent_assumed_zero
+VZ,2022-12-31,book_equity:2021:fallback_1:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest
+WMB,2022-12-31,receivables:2019:fallback_2:ReceivablesNetCurrent
+WMB,2022-12-31,receivables:2020:fallback_2:ReceivablesNetCurrent
+WMB,2022-12-31,receivables:2021:fallback_2:ReceivablesNetCurrent
+WMB,2022-12-31,st_investments:2021:tag_absent_assumed_zero
+WMB,2022-12-31,debt_total:2021:fallback_4:LongTermDebtAndCapitalLeaseObligations + LongTermDebtAndCapitalLeaseObligationsCurrent
+WMB,2022-12-31,lease_liability:2021:fallback_1:OperatingLeaseLiabilityNoncurrent + OperatingLeaseLiabilityCurrent
+YUM,2022-12-31,interest_expense:2019:fallback_3:InterestExpenseDebt
+YUM,2022-12-31,interest_expense:2020:fallback_3:InterestExpenseDebt
+YUM,2022-12-31,interest_expense:2021:fallback_3:InterestExpenseDebt
+YUM,2022-12-31,receivables:2019:fallback_1:AccountsNotesAndLoansReceivableNetCurrent
+YUM,2022-12-31,receivables:2020:fallback_1:AccountsNotesAndLoansReceivableNetCurrent
+YUM,2022-12-31,receivables:2021:fallback_1:AccountsNotesAndLoansReceivableNetCurrent
+YUM,2022-12-31,inventory:2019:tag_absent_assumed_zero
+YUM,2022-12-31,inventory:2020:tag_absent_assumed_zero
+YUM,2022-12-31,inventory:2021:tag_absent_assumed_zero
+YUM,2022-12-31,payables:2019:fallback_2:AccountsPayableAndAccruedLiabilitiesCurrent
+YUM,2022-12-31,payables:2020:fallback_2:AccountsPayableAndAccruedLiabilitiesCurrent
+YUM,2022-12-31,payables:2021:fallback_2:AccountsPayableAndAccruedLiabilitiesCurrent
+YUM,2022-12-31,st_investments:2021:tag_absent_assumed_zero
+YUM,2022-12-31,debt_total:2021:fallback_2:LongTermDebtAndCapitalLeaseObligations + DebtCurrent
+YUM,2022-12-31,lease_liability:2021:fallback_2:LesseeOperatingLeaseLiabilityPaymentsDue + -LesseeOperatingLeaseLiabilityUndiscountedExcessAmount
+YUM,2022-12-31,preferred:2021:tag_absent_assumed_zero
+YUM,2022-12-31,minority_interest:2021:tag_absent_assumed_zero
+YUM,2022-12-31,book_equity:2021:fallback_1:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest
+ABBV,2025-12-31,da:2022:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+ABBV,2025-12-31,da:2023:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+ABBV,2025-12-31,da:2024:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+ABBV,2025-12-31,debt_total:2024:fallback_4:LongTermDebtAndCapitalLeaseObligations + LongTermDebtAndCapitalLeaseObligationsCurrent
+ABBV,2025-12-31,preferred:2024:tag_absent_assumed_zero
+AMD,2025-12-31,revenue:2022:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+AMD,2025-12-31,revenue:2023:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+AMD,2025-12-31,revenue:2024:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+AMD,2025-12-31,da:2022:fallback_4:Depreciation + AdjustmentForAmortization
+AMD,2025-12-31,da:2023:fallback_4:Depreciation + AdjustmentForAmortization
+AMD,2025-12-31,da:2024:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+AMD,2025-12-31,preferred:2024:tag_absent_assumed_zero
+AMD,2025-12-31,minority_interest:2024:tag_absent_assumed_zero
+ANET,2025-12-31,revenue:2022:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+ANET,2025-12-31,revenue:2023:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+ANET,2025-12-31,revenue:2024:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+ANET,2025-12-31,capex:2022:fallback_1:PaymentsToAcquireProductiveAssets
+ANET,2025-12-31,capex:2023:fallback_1:PaymentsToAcquireProductiveAssets
+ANET,2025-12-31,capex:2024:fallback_1:PaymentsToAcquireProductiveAssets
+ANET,2025-12-31,st_investments:2024:fallback_2:AvailableForSaleSecuritiesDebtSecuritiesCurrent
+ANET,2025-12-31,minority_interest:2024:tag_absent_assumed_zero
+ANET,2025-12-31,debt_total:2024:no_borrowing_tags_assumed_zero
+APH,2025-12-31,revenue:2022:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+APH,2025-12-31,revenue:2023:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+APH,2025-12-31,revenue:2024:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+APH,2025-12-31,interest_expense:2022:fallback_1:InterestExpenseNonoperating
+APH,2025-12-31,interest_expense:2023:fallback_1:InterestExpenseNonoperating
+APH,2025-12-31,interest_expense:2024:fallback_1:InterestExpenseNonoperating
+APH,2025-12-31,debt_total:2024:fallback_4:LongTermDebtAndCapitalLeaseObligations + LongTermDebtAndCapitalLeaseObligationsCurrent
+APH,2025-12-31,preferred:2024:tag_absent_assumed_zero
+BKNG,2025-12-31,interest_expense:2022:fallback_1:InterestExpenseNonoperating
+BKNG,2025-12-31,interest_expense:2023:fallback_1:InterestExpenseNonoperating
+BKNG,2025-12-31,interest_expense:2024:fallback_1:InterestExpenseNonoperating
+BKNG,2025-12-31,sbc:2022:fallback_1:AllocatedShareBasedCompensationExpense
+BKNG,2025-12-31,sbc:2023:fallback_1:AllocatedShareBasedCompensationExpense
+BKNG,2025-12-31,sbc:2024:fallback_1:AllocatedShareBasedCompensationExpense
+BKNG,2025-12-31,receivables:2022:fallback_3:AccountsAndOtherReceivablesNetCurrent
+BKNG,2025-12-31,receivables:2023:fallback_3:AccountsAndOtherReceivablesNetCurrent
+BKNG,2025-12-31,receivables:2024:fallback_3:AccountsAndOtherReceivablesNetCurrent
+BKNG,2025-12-31,inventory:2022:tag_absent_assumed_zero
+BKNG,2025-12-31,inventory:2023:tag_absent_assumed_zero
+BKNG,2025-12-31,inventory:2024:tag_absent_assumed_zero
+BKNG,2025-12-31,debt_total:2024:fallback_3:LongTermDebtNoncurrent + LongTermDebtCurrent
+BKNG,2025-12-31,preferred:2024:tag_absent_assumed_zero
+BKNG,2025-12-31,minority_interest:2024:tag_absent_assumed_zero
+CAT,2025-12-31,pretax_income:2022:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+CAT,2025-12-31,pretax_income:2023:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+CAT,2025-12-31,pretax_income:2024:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+CAT,2025-12-31,interest_expense:2022:fallback_5:InterestPaidNet
+CAT,2025-12-31,interest_expense:2023:fallback_5:InterestPaidNet
+CAT,2025-12-31,interest_expense:2024:fallback_5:InterestPaidNet
+CAT,2025-12-31,da:2022:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+CAT,2025-12-31,da:2023:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+CAT,2025-12-31,da:2024:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+CAT,2025-12-31,sbc:2022:fallback_1:AllocatedShareBasedCompensationExpense
+CAT,2025-12-31,sbc:2023:fallback_1:AllocatedShareBasedCompensationExpense
+CAT,2025-12-31,sbc:2024:fallback_1:AllocatedShareBasedCompensationExpense
+CAT,2025-12-31,st_investments:2024:tag_absent_assumed_zero
+CAT,2025-12-31,debt_total:2024:fallback_3:LongTermDebtNoncurrent + ShortTermBorrowings
+CAT,2025-12-31,preferred:2024:tag_absent_assumed_zero
+CAT,2025-12-31,book_equity:2024:fallback_1:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest
+CEG,2025-12-31,pretax_income:2022:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+CEG,2025-12-31,pretax_income:2023:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+CEG,2025-12-31,pretax_income:2024:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+CEG,2025-12-31,interest_expense:2022:fallback_1:InterestExpenseNonoperating
+CEG,2025-12-31,interest_expense:2023:fallback_1:InterestExpenseNonoperating
+CEG,2025-12-31,interest_expense:2024:fallback_1:InterestExpenseNonoperating
+CEG,2025-12-31,da:2022:fallback_2:DepreciationAmortizationAndAccretionNet
+CEG,2025-12-31,da:2023:fallback_2:DepreciationAmortizationAndAccretionNet
+CEG,2025-12-31,da:2024:fallback_2:DepreciationAmortizationAndAccretionNet
+CEG,2025-12-31,sbc:2022:fallback_1:AllocatedShareBasedCompensationExpense
+CEG,2025-12-31,sbc:2023:fallback_1:AllocatedShareBasedCompensationExpense
+CEG,2025-12-31,sbc:2024:fallback_1:AllocatedShareBasedCompensationExpense
+CEG,2025-12-31,inventory:2022:tag_absent_assumed_zero
+CEG,2025-12-31,inventory:2023:tag_absent_assumed_zero
+CEG,2025-12-31,inventory:2024:tag_absent_assumed_zero
+CEG,2025-12-31,st_investments:2024:tag_absent_assumed_zero
+CEG,2025-12-31,debt_total:2024:fallback_3:LongTermDebtNoncurrent + LongTermDebtCurrent + ShortTermBorrowings
+CEG,2025-12-31,preferred:2024:tag_absent_assumed_zero
+CMCSA,2025-12-31,revenue:2022:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+CMCSA,2025-12-31,revenue:2023:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+CMCSA,2025-12-31,revenue:2024:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+CMCSA,2025-12-31,interest_expense:2022:fallback_1:InterestExpenseNonoperating
+CMCSA,2025-12-31,interest_expense:2023:fallback_1:InterestExpenseNonoperating
+CMCSA,2025-12-31,interest_expense:2024:fallback_1:InterestExpenseNonoperating
+CMCSA,2025-12-31,inventory:2022:tag_absent_assumed_zero
+CMCSA,2025-12-31,inventory:2023:tag_absent_assumed_zero
+CMCSA,2025-12-31,inventory:2024:tag_absent_assumed_zero
+CMCSA,2025-12-31,debt_total:2024:fallback_2:LongTermDebtAndCapitalLeaseObligations + DebtCurrent
+CMCSA,2025-12-31,shares_basic:2024:fallback_2:WeightedAverageNumberOfSharesOutstandingBasic
+CRH,2025-12-31,revenue:2022:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+CRH,2025-12-31,revenue:2023:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+CRH,2025-12-31,revenue:2024:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+CRH,2025-12-31,interest_expense:2022:fallback_1:InterestExpenseNonoperating
+CRH,2025-12-31,interest_expense:2023:fallback_1:InterestExpenseNonoperating
+CRH,2025-12-31,interest_expense:2024:fallback_1:InterestExpenseNonoperating
+CRH,2025-12-31,receivables:2022:fallback_3:AccountsAndOtherReceivablesNetCurrent
+CRH,2025-12-31,receivables:2023:fallback_3:AccountsAndOtherReceivablesNetCurrent
+CRH,2025-12-31,receivables:2024:fallback_3:AccountsAndOtherReceivablesNetCurrent
+CRH,2025-12-31,st_investments:2024:tag_absent_assumed_zero
+CRH,2025-12-31,debt_total:2024:fallback_1:LongTermDebtNoncurrent + DebtCurrent
+CVX,2025-12-31,pretax_income:2022:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+CVX,2025-12-31,pretax_income:2023:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+CVX,2025-12-31,pretax_income:2024:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+CVX,2025-12-31,interest_expense:2022:fallback_3:InterestExpenseDebt
+CVX,2025-12-31,interest_expense:2023:fallback_3:InterestExpenseDebt
+CVX,2025-12-31,interest_expense:2024:fallback_3:InterestExpenseDebt
+CVX,2025-12-31,ebit:2022:fallback_1:@pretax_income + @interest_expense
+CVX,2025-12-31,ebit:2023:fallback_1:@pretax_income + @interest_expense
+CVX,2025-12-31,ebit:2024:fallback_1:@pretax_income + @interest_expense
+CVX,2025-12-31,capex:2022:fallback_1:PaymentsToAcquireProductiveAssets
+CVX,2025-12-31,capex:2023:fallback_1:PaymentsToAcquireProductiveAssets
+CVX,2025-12-31,capex:2024:fallback_1:PaymentsToAcquireProductiveAssets
+CVX,2025-12-31,cash:2024:fallback_1:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents
+CVX,2025-12-31,st_investments:2024:fallback_1:MarketableSecuritiesCurrent
+CVX,2025-12-31,debt_total:2024:fallback_2:LongTermDebtAndCapitalLeaseObligations + DebtCurrent
+ECL,2025-12-31,revenue:2022:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+ECL,2025-12-31,revenue:2023:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+ECL,2025-12-31,revenue:2024:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+ECL,2025-12-31,da:2022:fallback_4:Depreciation + AdjustmentForAmortization
+ECL,2025-12-31,da:2023:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+ECL,2025-12-31,da:2024:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+ECL,2025-12-31,st_investments:2024:tag_absent_assumed_zero
+ECL,2025-12-31,debt_total:2024:fallback_2:LongTermDebtAndCapitalLeaseObligations + DebtCurrent
+ECL,2025-12-31,preferred:2024:tag_absent_assumed_zero
+EOG,2025-12-31,capex:2022:fallback_2:PaymentsToAcquireOtherPropertyPlantAndEquipment
+EOG,2025-12-31,capex:2023:fallback_2:PaymentsToAcquireOtherPropertyPlantAndEquipment
+EOG,2025-12-31,capex:2024:fallback_2:PaymentsToAcquireOtherPropertyPlantAndEquipment
+EOG,2025-12-31,st_investments:2024:tag_absent_assumed_zero
+EOG,2025-12-31,debt_total:2024:fallback_3:LongTermDebtNoncurrent + LongTermDebtCurrent
+EOG,2025-12-31,preferred:2024:tag_absent_assumed_zero
+EOG,2025-12-31,minority_interest:2024:tag_absent_assumed_zero
+ETN,2025-12-31,revenue:2022:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+ETN,2025-12-31,revenue:2023:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+ETN,2025-12-31,revenue:2024:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+ETN,2025-12-31,interest_expense:2022:fallback_4:InterestExpenseOperating
+ETN,2025-12-31,interest_expense:2023:fallback_4:InterestExpenseOperating
+ETN,2025-12-31,interest_expense:2024:fallback_4:InterestExpenseOperating
+ETN,2025-12-31,ebit:2022:fallback_1:@pretax_income + @interest_expense
+ETN,2025-12-31,ebit:2023:fallback_1:@pretax_income + @interest_expense
+ETN,2025-12-31,ebit:2024:fallback_1:@pretax_income + @interest_expense
+ETN,2025-12-31,receivables:2022:fallback_2:ReceivablesNetCurrent
+ETN,2025-12-31,receivables:2023:fallback_2:ReceivablesNetCurrent
+ETN,2025-12-31,receivables:2024:fallback_2:ReceivablesNetCurrent
+ETN,2025-12-31,debt_total:2024:fallback_4:LongTermDebtAndCapitalLeaseObligations + LongTermDebtAndCapitalLeaseObligationsCurrent + ShortTermBorrowings
+ETN,2025-12-31,preferred:2024:tag_absent_assumed_zero
+GE,2025-12-31,interest_expense:2022:fallback_5:InterestPaidNet
+GE,2025-12-31,interest_expense:2023:fallback_5:InterestPaidNet
+GE,2025-12-31,interest_expense:2024:fallback_5:InterestPaidNet
+GE,2025-12-31,ebit:2022:fallback_1:@pretax_income + @interest_expense
+GE,2025-12-31,ebit:2023:fallback_1:@pretax_income + @interest_expense
+GE,2025-12-31,ebit:2024:fallback_1:@pretax_income + @interest_expense
+GE,2025-12-31,da:2022:fallback_2:DepreciationAmortizationAndAccretionNet
+GE,2025-12-31,da:2023:fallback_2:DepreciationAmortizationAndAccretionNet
+GE,2025-12-31,da:2024:fallback_2:DepreciationAmortizationAndAccretionNet
+GE,2025-12-31,capex:2022:fallback_1:PaymentsToAcquireProductiveAssets
+GE,2025-12-31,capex:2023:fallback_1:PaymentsToAcquireProductiveAssets
+GE,2025-12-31,capex:2024:fallback_1:PaymentsToAcquireProductiveAssets
+GE,2025-12-31,sbc:2022:fallback_1:AllocatedShareBasedCompensationExpense
+GE,2025-12-31,sbc:2023:fallback_1:AllocatedShareBasedCompensationExpense
+GE,2025-12-31,sbc:2024:fallback_1:AllocatedShareBasedCompensationExpense
+GE,2025-12-31,receivables:2022:fallback_2:ReceivablesNetCurrent
+GE,2025-12-31,receivables:2023:fallback_2:ReceivablesNetCurrent
+GE,2025-12-31,receivables:2024:fallback_2:ReceivablesNetCurrent
+GE,2025-12-31,payables:2022:fallback_1:AccountsPayableTradeCurrent
+GE,2025-12-31,payables:2023:fallback_1:AccountsPayableTradeCurrent
+GE,2025-12-31,payables:2024:fallback_1:AccountsPayableTradeCurrent
+GE,2025-12-31,cash:2024:fallback_1:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents
+GE,2025-12-31,st_investments:2024:tag_absent_assumed_zero
+GOOGL,2025-12-31,revenue:2022:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+GOOGL,2025-12-31,revenue:2023:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+GOOGL,2025-12-31,revenue:2024:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+GOOGL,2025-12-31,interest_expense:2022:fallback_1:InterestExpenseNonoperating
+GOOGL,2025-12-31,interest_expense:2023:fallback_1:InterestExpenseNonoperating
+GOOGL,2025-12-31,interest_expense:2024:fallback_1:InterestExpenseNonoperating
+GOOGL,2025-12-31,da:2022:fallback_5:Depreciation
+GOOGL,2025-12-31,da:2023:fallback_5:Depreciation
+GOOGL,2025-12-31,da:2024:fallback_5:Depreciation
+GOOGL,2025-12-31,inventory:2023:tag_absent_assumed_zero
+GOOGL,2025-12-31,inventory:2024:tag_absent_assumed_zero
+GOOGL,2025-12-31,st_investments:2024:fallback_1:MarketableSecuritiesCurrent
+GOOGL,2025-12-31,debt_total:2024:fallback_3:LongTermDebtNoncurrent + LongTermDebtCurrent + CommercialPaper
+GOOGL,2025-12-31,preferred:2024:tag_absent_assumed_zero
+GOOGL,2025-12-31,minority_interest:2024:tag_absent_assumed_zero
+GOOGL,2025-12-31,shares_basic:2024:fallback_1:CommonStockSharesOutstanding
+IBM,2025-12-31,ebit:2022:fallback_1:@pretax_income + @interest_expense
+IBM,2025-12-31,ebit:2023:fallback_1:@pretax_income + @interest_expense
+IBM,2025-12-31,ebit:2024:fallback_1:@pretax_income + @interest_expense
+IBM,2025-12-31,da:2022:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+IBM,2025-12-31,da:2023:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+IBM,2025-12-31,da:2024:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+IBM,2025-12-31,st_investments:2024:tag_absent_assumed_zero
+IBM,2025-12-31,debt_total:2024:fallback_3:LongTermDebtNoncurrent + ShortTermBorrowings
+IBM,2025-12-31,preferred:2024:tag_absent_assumed_zero
+JNJ,2025-12-31,revenue:2022:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+JNJ,2025-12-31,revenue:2023:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+JNJ,2025-12-31,revenue:2024:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+JNJ,2025-12-31,interest_expense:2022:fallback_1:InterestExpenseNonoperating
+JNJ,2025-12-31,interest_expense:2023:fallback_1:InterestExpenseNonoperating
+JNJ,2025-12-31,interest_expense:2024:fallback_1:InterestExpenseNonoperating
+JNJ,2025-12-31,ebit:2022:fallback_1:@pretax_income + @interest_expense
+JNJ,2025-12-31,ebit:2023:fallback_1:@pretax_income + @interest_expense
+JNJ,2025-12-31,ebit:2024:fallback_1:@pretax_income + @interest_expense
+JNJ,2025-12-31,st_investments:2024:fallback_1:MarketableSecuritiesCurrent
+JNJ,2025-12-31,debt_total:2024:fallback_1:LongTermDebtNoncurrent + DebtCurrent
+JNJ,2025-12-31,minority_interest:2024:tag_absent_assumed_zero
+JNJ,2025-12-31,book_equity:2024:fallback_1:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest
+KO,2025-12-31,payables:2022:fallback_1:AccountsPayableTradeCurrent
+KO,2025-12-31,payables:2023:fallback_1:AccountsPayableTradeCurrent
+KO,2025-12-31,payables:2024:fallback_1:AccountsPayableTradeCurrent
+KO,2025-12-31,st_investments:2024:tag_absent_assumed_zero
+KO,2025-12-31,debt_total:2024:fallback_4:LongTermDebtAndCapitalLeaseObligations + LongTermDebtAndCapitalLeaseObligationsCurrent + CommercialPaper
+KO,2025-12-31,preferred:2024:tag_absent_assumed_zero
+LIN,2025-12-31,revenue:2022:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+LIN,2025-12-31,revenue:2023:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+LIN,2025-12-31,revenue:2024:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+LIN,2025-12-31,pretax_income:2022:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+LIN,2025-12-31,pretax_income:2023:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+LIN,2025-12-31,pretax_income:2024:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+LIN,2025-12-31,interest_expense:2022:fallback_1:InterestExpenseNonoperating
+LIN,2025-12-31,interest_expense:2023:fallback_1:InterestExpenseNonoperating
+LIN,2025-12-31,interest_expense:2024:fallback_1:InterestExpenseNonoperating
+LIN,2025-12-31,da:2022:fallback_1:DepreciationAndAmortization
+LIN,2025-12-31,da:2023:fallback_1:DepreciationAndAmortization
+LIN,2025-12-31,da:2024:fallback_1:DepreciationAndAmortization
+LIN,2025-12-31,sbc:2022:fallback_1:AllocatedShareBasedCompensationExpense
+LIN,2025-12-31,sbc:2023:fallback_1:AllocatedShareBasedCompensationExpense
+LIN,2025-12-31,sbc:2024:fallback_1:AllocatedShareBasedCompensationExpense
+LIN,2025-12-31,st_investments:2024:tag_absent_assumed_zero
+LIN,2025-12-31,preferred:2024:tag_absent_assumed_zero
+LLY,2025-12-31,interest_expense:2022:fallback_1:InterestExpenseNonoperating
+LLY,2025-12-31,interest_expense:2023:fallback_1:InterestExpenseNonoperating
+LLY,2025-12-31,interest_expense:2024:fallback_1:InterestExpenseNonoperating
+LLY,2025-12-31,ebit:2022:fallback_1:@pretax_income + @interest_expense
+LLY,2025-12-31,ebit:2023:fallback_1:@pretax_income + @interest_expense
+LLY,2025-12-31,ebit:2024:fallback_1:@pretax_income + @interest_expense
+LLY,2025-12-31,capex:2022:fallback_2:PaymentsToAcquireOtherPropertyPlantAndEquipment
+LLY,2025-12-31,capex:2023:fallback_2:PaymentsToAcquireOtherPropertyPlantAndEquipment
+LLY,2025-12-31,capex:2024:fallback_2:PaymentsToAcquireOtherPropertyPlantAndEquipment
+LLY,2025-12-31,preferred:2024:tag_absent_assumed_zero
+MAR,2025-12-31,interest_expense:2022:fallback_1:InterestExpenseNonoperating
+MAR,2025-12-31,interest_expense:2023:fallback_1:InterestExpenseNonoperating
+MAR,2025-12-31,interest_expense:2024:fallback_1:InterestExpenseNonoperating
+MAR,2025-12-31,da:2022:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+MAR,2025-12-31,da:2023:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+MAR,2025-12-31,da:2024:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+MAR,2025-12-31,receivables:2022:fallback_1:AccountsNotesAndLoansReceivableNetCurrent
+MAR,2025-12-31,receivables:2023:fallback_1:AccountsNotesAndLoansReceivableNetCurrent
+MAR,2025-12-31,receivables:2024:fallback_1:AccountsNotesAndLoansReceivableNetCurrent
+MAR,2025-12-31,inventory:2022:tag_absent_assumed_zero
+MAR,2025-12-31,inventory:2023:tag_absent_assumed_zero
+MAR,2025-12-31,inventory:2024:tag_absent_assumed_zero
+MAR,2025-12-31,payables:2022:fallback_1:AccountsPayableTradeCurrent
+MAR,2025-12-31,payables:2023:fallback_1:AccountsPayableTradeCurrent
+MAR,2025-12-31,payables:2024:fallback_1:AccountsPayableTradeCurrent
+MAR,2025-12-31,st_investments:2024:tag_absent_assumed_zero
+MAR,2025-12-31,debt_total:2024:fallback_4:LongTermDebtAndCapitalLeaseObligations + LongTermDebtAndCapitalLeaseObligationsCurrent
+MAR,2025-12-31,preferred:2024:tag_absent_assumed_zero
+MAR,2025-12-31,minority_interest:2024:tag_absent_assumed_zero
+MCD,2025-12-31,pretax_income:2022:fallback_2:IncomeLossFromContinuingOperationsBeforeIncomeTaxesDomestic + IncomeLossFromContinuingOperationsBeforeIncomeTaxesForeign
+MCD,2025-12-31,pretax_income:2023:fallback_2:IncomeLossFromContinuingOperationsBeforeIncomeTaxesDomestic + IncomeLossFromContinuingOperationsBeforeIncomeTaxesForeign
+MCD,2025-12-31,pretax_income:2024:fallback_2:IncomeLossFromContinuingOperationsBeforeIncomeTaxesDomestic + IncomeLossFromContinuingOperationsBeforeIncomeTaxesForeign
+MCD,2025-12-31,da:2022:fallback_1:DepreciationAndAmortization
+MCD,2025-12-31,da:2023:fallback_1:DepreciationAndAmortization
+MCD,2025-12-31,da:2024:fallback_1:DepreciationAndAmortization
+MCD,2025-12-31,receivables:2022:fallback_1:AccountsNotesAndLoansReceivableNetCurrent
+MCD,2025-12-31,receivables:2023:fallback_1:AccountsNotesAndLoansReceivableNetCurrent
+MCD,2025-12-31,receivables:2024:fallback_1:AccountsNotesAndLoansReceivableNetCurrent
+MCD,2025-12-31,st_investments:2024:tag_absent_assumed_zero
+MCD,2025-12-31,debt_total:2024:fallback_1:LongTermDebtNoncurrent + DebtCurrent
+MCD,2025-12-31,lease_liability:2024:fallback_2:LesseeOperatingLeaseLiabilityPaymentsDue + -LesseeOperatingLeaseLiabilityUndiscountedExcessAmount
+MCD,2025-12-31,minority_interest:2024:tag_absent_assumed_zero
+MELI,2025-12-31,interest_expense:2022:fallback_5:InterestPaidNet
+MELI,2025-12-31,interest_expense:2023:fallback_5:InterestPaidNet
+MELI,2025-12-31,interest_expense:2024:fallback_5:InterestPaidNet
+MELI,2025-12-31,da:2022:fallback_1:DepreciationAndAmortization
+MELI,2025-12-31,da:2023:fallback_1:DepreciationAndAmortization
+MELI,2025-12-31,da:2024:fallback_1:DepreciationAndAmortization
+MELI,2025-12-31,capex:2022:fallback_1:PaymentsToAcquireProductiveAssets
+MELI,2025-12-31,capex:2023:fallback_1:PaymentsToAcquireProductiveAssets
+MELI,2025-12-31,capex:2024:fallback_1:PaymentsToAcquireProductiveAssets
+MELI,2025-12-31,payables:2022:fallback_2:AccountsPayableAndAccruedLiabilitiesCurrent
+MELI,2025-12-31,payables:2023:fallback_2:AccountsPayableAndAccruedLiabilitiesCurrent
+MELI,2025-12-31,payables:2024:fallback_2:AccountsPayableAndAccruedLiabilitiesCurrent
+MELI,2025-12-31,debt_total:2024:fallback_4:LongTermDebtAndCapitalLeaseObligations + LongTermDebtAndCapitalLeaseObligationsCurrent
+MELI,2025-12-31,preferred:2024:tag_absent_assumed_zero
+MELI,2025-12-31,minority_interest:2024:tag_absent_assumed_zero
+META,2025-12-31,revenue:2022:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+META,2025-12-31,revenue:2023:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+META,2025-12-31,revenue:2024:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+META,2025-12-31,interest_expense:2022:fallback_1:InterestExpenseNonoperating
+META,2025-12-31,interest_expense:2023:fallback_1:InterestExpenseNonoperating
+META,2025-12-31,interest_expense:2024:fallback_1:InterestExpenseNonoperating
+META,2025-12-31,da:2023:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+META,2025-12-31,da:2024:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+META,2025-12-31,inventory:2022:tag_absent_assumed_zero
+META,2025-12-31,inventory:2023:tag_absent_assumed_zero
+META,2025-12-31,inventory:2024:tag_absent_assumed_zero
+META,2025-12-31,payables:2022:fallback_1:AccountsPayableTradeCurrent
+META,2025-12-31,payables:2023:fallback_1:AccountsPayableTradeCurrent
+META,2025-12-31,payables:2024:fallback_1:AccountsPayableTradeCurrent
+META,2025-12-31,st_investments:2024:fallback_1:MarketableSecuritiesCurrent
+META,2025-12-31,debt_total:2024:fallback_3:LongTermDebtNoncurrent
+META,2025-12-31,preferred:2024:tag_absent_assumed_zero
+META,2025-12-31,minority_interest:2024:tag_absent_assumed_zero
+META,2025-12-31,shares_basic:2024:fallback_2:WeightedAverageNumberOfSharesOutstandingBasic
+MNST,2025-12-31,revenue:2022:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+MNST,2025-12-31,revenue:2023:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+MNST,2025-12-31,revenue:2024:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+MNST,2025-12-31,interest_expense:2022:fallback_5:InterestPaidNet
+MNST,2025-12-31,interest_expense:2023:fallback_5:InterestPaidNet
+MNST,2025-12-31,interest_expense:2024:fallback_5:InterestPaidNet
+MNST,2025-12-31,debt_total:2024:fallback_3:LongTermDebtNoncurrent
+MNST,2025-12-31,preferred:2024:tag_absent_assumed_zero
+MNST,2025-12-31,minority_interest:2024:tag_absent_assumed_zero
+MO,2025-12-31,revenue:2022:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+MO,2025-12-31,revenue:2023:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+MO,2025-12-31,revenue:2024:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+MO,2025-12-31,interest_expense:2022:fallback_1:InterestExpenseNonoperating
+MO,2025-12-31,interest_expense:2023:fallback_1:InterestExpenseNonoperating
+MO,2025-12-31,interest_expense:2024:fallback_1:InterestExpenseNonoperating
+MO,2025-12-31,receivables:2022:fallback_2:ReceivablesNetCurrent
+MO,2025-12-31,receivables:2023:fallback_2:ReceivablesNetCurrent
+MO,2025-12-31,receivables:2024:fallback_2:ReceivablesNetCurrent
+MO,2025-12-31,st_investments:2024:tag_absent_assumed_zero
+MO,2025-12-31,debt_total:2024:fallback_3:LongTermDebtNoncurrent + LongTermDebtCurrent + ShortTermBorrowings
+MO,2025-12-31,lease_liability:2024:tag_absent_assumed_zero
+MO,2025-12-31,preferred:2024:tag_absent_assumed_zero
+MRK,2025-12-31,interest_expense:2022:fallback_1:InterestExpenseNonoperating
+MRK,2025-12-31,interest_expense:2023:fallback_1:InterestExpenseNonoperating
+MRK,2025-12-31,interest_expense:2024:fallback_1:InterestExpenseNonoperating
+MRK,2025-12-31,ebit:2022:fallback_1:@pretax_income + @interest_expense
+MRK,2025-12-31,ebit:2023:fallback_1:@pretax_income + @interest_expense
+MRK,2025-12-31,ebit:2024:fallback_1:@pretax_income + @interest_expense
+MRK,2025-12-31,da:2022:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+MRK,2025-12-31,da:2023:fallback_4:Depreciation + AdjustmentForAmortization
+MRK,2025-12-31,da:2024:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+MRK,2025-12-31,st_investments:2024:fallback_1:MarketableSecuritiesCurrent
+MRK,2025-12-31,preferred:2024:tag_absent_assumed_zero
+NRG,2025-12-31,interest_expense:2022:fallback_1:InterestExpenseNonoperating
+NRG,2025-12-31,interest_expense:2023:fallback_1:InterestExpenseNonoperating
+NRG,2025-12-31,interest_expense:2024:fallback_1:InterestExpenseNonoperating
+NRG,2025-12-31,da:2022:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+NRG,2025-12-31,st_investments:2024:tag_absent_assumed_zero
+NRG,2025-12-31,debt_total:2024:fallback_4:LongTermDebtAndCapitalLeaseObligations + LongTermDebtAndCapitalLeaseObligationsCurrent
+NRG,2025-12-31,minority_interest:2024:tag_absent_assumed_zero
+NRG,2025-12-31,book_equity:2024:fallback_1:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest
+ORLY,2025-12-31,revenue:2022:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+ORLY,2025-12-31,revenue:2023:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+ORLY,2025-12-31,revenue:2024:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+ORLY,2025-12-31,interest_expense:2022:fallback_3:InterestExpenseDebt
+ORLY,2025-12-31,interest_expense:2023:fallback_3:InterestExpenseDebt
+ORLY,2025-12-31,interest_expense:2024:fallback_3:InterestExpenseDebt
+ORLY,2025-12-31,st_investments:2024:tag_absent_assumed_zero
+ORLY,2025-12-31,debt_total:2024:fallback_3:LongTermDebtNoncurrent
+ORLY,2025-12-31,minority_interest:2024:tag_absent_assumed_zero
+PEP,2025-12-31,capex:2022:fallback_1:PaymentsToAcquireProductiveAssets
+PEP,2025-12-31,capex:2023:fallback_1:PaymentsToAcquireProductiveAssets
+PEP,2025-12-31,capex:2024:fallback_1:PaymentsToAcquireProductiveAssets
+PEP,2025-12-31,receivables:2022:fallback_1:AccountsNotesAndLoansReceivableNetCurrent
+PEP,2025-12-31,receivables:2023:fallback_1:AccountsNotesAndLoansReceivableNetCurrent
+PEP,2025-12-31,receivables:2024:fallback_1:AccountsNotesAndLoansReceivableNetCurrent
+PEP,2025-12-31,debt_total:2024:fallback_1:LongTermDebtNoncurrent + DebtCurrent
+PEP,2025-12-31,preferred:2024:tag_absent_assumed_zero
+PM,2025-12-31,revenue:2022:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+PM,2025-12-31,revenue:2023:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+PM,2025-12-31,revenue:2024:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+PM,2025-12-31,pretax_income:2022:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+PM,2025-12-31,pretax_income:2023:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+PM,2025-12-31,pretax_income:2024:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+PM,2025-12-31,interest_expense:2022:fallback_1:InterestExpenseNonoperating
+PM,2025-12-31,interest_expense:2023:fallback_1:InterestExpenseNonoperating
+PM,2025-12-31,interest_expense:2024:fallback_1:InterestExpenseNonoperating
+PM,2025-12-31,st_investments:2024:tag_absent_assumed_zero
+PM,2025-12-31,debt_total:2024:fallback_4:LongTermDebtAndCapitalLeaseObligations + LongTermDebtAndCapitalLeaseObligationsCurrent + ShortTermBorrowings
+PM,2025-12-31,preferred:2024:tag_absent_assumed_zero
+PPL,2025-12-31,da:2022:fallback_4:Depreciation + AdjustmentForAmortization
+PPL,2025-12-31,da:2023:fallback_4:Depreciation + AdjustmentForAmortization
+PPL,2025-12-31,da:2024:fallback_4:Depreciation + AdjustmentForAmortization
+PPL,2025-12-31,st_investments:2024:tag_absent_assumed_zero
+PPL,2025-12-31,debt_total:2024:fallback_3:LongTermDebtNoncurrent + LongTermDebtCurrent + ShortTermBorrowings
+PPL,2025-12-31,lease_liability:2024:fallback_1:OperatingLeaseLiabilityNoncurrent + OperatingLeaseLiabilityCurrent
+PPL,2025-12-31,preferred:2024:tag_absent_assumed_zero
+PPL,2025-12-31,minority_interest:2024:tag_absent_assumed_zero
+PPL,2025-12-31,book_equity:2024:fallback_1:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest
+RTX,2025-12-31,receivables:2022:fallback_2:ReceivablesNetCurrent
+RTX,2025-12-31,receivables:2023:fallback_2:ReceivablesNetCurrent
+RTX,2025-12-31,receivables:2024:fallback_2:ReceivablesNetCurrent
+RTX,2025-12-31,st_investments:2024:fallback_1:MarketableSecuritiesCurrent
+RTX,2025-12-31,debt_total:2024:fallback_4:LongTermDebtAndCapitalLeaseObligations + LongTermDebtAndCapitalLeaseObligationsCurrent + ShortTermBorrowings
+SCCO,2025-12-31,revenue:2022:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+SCCO,2025-12-31,revenue:2023:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+SCCO,2025-12-31,revenue:2024:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+SCCO,2025-12-31,pretax_income:2022:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+SCCO,2025-12-31,pretax_income:2023:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+SCCO,2025-12-31,pretax_income:2024:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+SCCO,2025-12-31,interest_expense:2022:fallback_5:InterestPaidNet
+SCCO,2025-12-31,interest_expense:2023:fallback_5:InterestPaidNet
+SCCO,2025-12-31,interest_expense:2024:fallback_5:InterestPaidNet
+SCCO,2025-12-31,debt_total:2024:fallback_3:LongTermDebtNoncurrent + LongTermDebtCurrent
+SCCO,2025-12-31,preferred:2024:tag_absent_assumed_zero
+SHW,2025-12-31,revenue:2022:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+SHW,2025-12-31,revenue:2023:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+SHW,2025-12-31,revenue:2024:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+SHW,2025-12-31,interest_expense:2022:fallback_1:InterestExpenseNonoperating
+SHW,2025-12-31,interest_expense:2023:fallback_1:InterestExpenseNonoperating
+SHW,2025-12-31,interest_expense:2024:fallback_1:InterestExpenseNonoperating
+SHW,2025-12-31,ebit:2022:fallback_1:@pretax_income + @interest_expense
+SHW,2025-12-31,ebit:2023:fallback_1:@pretax_income + @interest_expense
+SHW,2025-12-31,ebit:2024:fallback_1:@pretax_income + @interest_expense
+SHW,2025-12-31,da:2022:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+SHW,2025-12-31,da:2023:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+SHW,2025-12-31,da:2024:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+SHW,2025-12-31,capex:2022:fallback_1:PaymentsToAcquireProductiveAssets
+SHW,2025-12-31,capex:2023:fallback_1:PaymentsToAcquireProductiveAssets
+SHW,2025-12-31,capex:2024:fallback_1:PaymentsToAcquireProductiveAssets
+SHW,2025-12-31,st_investments:2024:tag_absent_assumed_zero
+SHW,2025-12-31,debt_total:2024:fallback_3:LongTermDebtNoncurrent + LongTermDebtCurrent + ShortTermBorrowings
+SHW,2025-12-31,preferred:2024:tag_absent_assumed_zero
+SHW,2025-12-31,minority_interest:2024:tag_absent_assumed_zero
+SLB,2025-12-31,revenue:2022:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+SLB,2025-12-31,revenue:2023:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+SLB,2025-12-31,revenue:2024:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+SLB,2025-12-31,ebit:2022:fallback_1:@pretax_income + @interest_expense
+SLB,2025-12-31,ebit:2023:fallback_1:@pretax_income + @interest_expense
+SLB,2025-12-31,ebit:2024:fallback_1:@pretax_income + @interest_expense
+SLB,2025-12-31,receivables:2022:fallback_2:ReceivablesNetCurrent
+SLB,2025-12-31,receivables:2023:fallback_2:ReceivablesNetCurrent
+SLB,2025-12-31,receivables:2024:fallback_2:ReceivablesNetCurrent
+SLB,2025-12-31,payables:2022:fallback_1:AccountsPayableTradeCurrent
+SLB,2025-12-31,payables:2023:fallback_1:AccountsPayableTradeCurrent
+SLB,2025-12-31,payables:2024:fallback_1:AccountsPayableTradeCurrent
+SLB,2025-12-31,cash:2024:fallback_3:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsIncludingDisposalGroupAndDiscontinuedOperations
+SLB,2025-12-31,debt_total:2024:fallback_3:LongTermDebtNoncurrent
+SLB,2025-12-31,preferred:2024:tag_absent_assumed_zero
+TMO,2025-12-31,revenue:2022:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+TMO,2025-12-31,revenue:2023:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+TMO,2025-12-31,revenue:2024:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+TMO,2025-12-31,pretax_income:2022:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+TMO,2025-12-31,pretax_income:2023:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+TMO,2025-12-31,pretax_income:2024:fallback_1:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments
+TMO,2025-12-31,interest_expense:2022:fallback_1:InterestExpenseNonoperating
+TMO,2025-12-31,interest_expense:2023:fallback_1:InterestExpenseNonoperating
+TMO,2025-12-31,interest_expense:2024:fallback_1:InterestExpenseNonoperating
+TMO,2025-12-31,da:2022:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+TMO,2025-12-31,da:2023:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+TMO,2025-12-31,da:2024:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+TMO,2025-12-31,debt_total:2024:fallback_2:LongTermDebtAndCapitalLeaseObligations + DebtCurrent
+TMO,2025-12-31,preferred:2024:tag_absent_assumed_zero
+TMUS,2025-12-31,revenue:2022:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+TMUS,2025-12-31,revenue:2023:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+TMUS,2025-12-31,revenue:2024:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+TMUS,2025-12-31,interest_expense:2022:fallback_5:InterestPaidNet
+TMUS,2025-12-31,interest_expense:2023:fallback_5:InterestPaidNet
+TMUS,2025-12-31,interest_expense:2024:fallback_5:InterestPaidNet
+TMUS,2025-12-31,da:2022:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+TMUS,2025-12-31,da:2023:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+TMUS,2025-12-31,da:2024:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+TMUS,2025-12-31,payables:2022:fallback_1:AccountsPayableTradeCurrent
+TMUS,2025-12-31,payables:2023:fallback_1:AccountsPayableTradeCurrent
+TMUS,2025-12-31,payables:2024:fallback_1:AccountsPayableTradeCurrent
+TMUS,2025-12-31,st_investments:2024:tag_absent_assumed_zero
+TMUS,2025-12-31,debt_total:2024:fallback_3:LongTermDebtNoncurrent + ShortTermBorrowings
+TMUS,2025-12-31,preferred:2024:tag_absent_assumed_zero
+TMUS,2025-12-31,minority_interest:2024:tag_absent_assumed_zero
+TXN,2025-12-31,revenue:2022:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+TXN,2025-12-31,revenue:2023:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+TXN,2025-12-31,revenue:2024:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+TXN,2025-12-31,interest_expense:2022:fallback_2:InterestAndDebtExpense
+TXN,2025-12-31,interest_expense:2023:fallback_2:InterestAndDebtExpense
+TXN,2025-12-31,interest_expense:2024:fallback_2:InterestAndDebtExpense
+TXN,2025-12-31,da:2022:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+TXN,2025-12-31,da:2023:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+TXN,2025-12-31,da:2024:fallback_5:Depreciation
+TXN,2025-12-31,debt_total:2024:fallback_3:LongTermDebtNoncurrent + LongTermDebtCurrent + CommercialPaper
+TXN,2025-12-31,minority_interest:2024:tag_absent_assumed_zero
+UNP,2025-12-31,revenue:2022:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+UNP,2025-12-31,revenue:2023:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+UNP,2025-12-31,revenue:2024:fallback_1:RevenueFromContractWithCustomerExcludingAssessedTax
+UNP,2025-12-31,interest_expense:2022:fallback_1:InterestExpenseNonoperating
+UNP,2025-12-31,interest_expense:2023:fallback_1:InterestExpenseNonoperating
+UNP,2025-12-31,interest_expense:2024:fallback_1:InterestExpenseNonoperating
+UNP,2025-12-31,da:2022:fallback_5:Depreciation
+UNP,2025-12-31,da:2023:fallback_5:Depreciation
+UNP,2025-12-31,da:2024:fallback_5:Depreciation
+UNP,2025-12-31,sbc:2022:fallback_1:AllocatedShareBasedCompensationExpense
+UNP,2025-12-31,sbc:2023:fallback_1:AllocatedShareBasedCompensationExpense
+UNP,2025-12-31,sbc:2024:fallback_1:AllocatedShareBasedCompensationExpense
+UNP,2025-12-31,inventory:2022:fallback_3:MaterialsSuppliesAndOther
+UNP,2025-12-31,inventory:2023:fallback_3:MaterialsSuppliesAndOther
+UNP,2025-12-31,inventory:2024:fallback_3:MaterialsSuppliesAndOther
+UNP,2025-12-31,st_investments:2024:tag_absent_assumed_zero
+UNP,2025-12-31,debt_total:2024:fallback_4:LongTermDebtAndCapitalLeaseObligations + LongTermDebtAndCapitalLeaseObligationsCurrent + CommercialPaper
+UNP,2025-12-31,preferred:2024:tag_absent_assumed_zero
+UNP,2025-12-31,minority_interest:2024:tag_absent_assumed_zero
+VZ,2025-12-31,interest_expense:2022:fallback_1:InterestExpenseNonoperating
+VZ,2025-12-31,interest_expense:2023:fallback_1:InterestExpenseNonoperating
+VZ,2025-12-31,interest_expense:2024:fallback_1:InterestExpenseNonoperating
+VZ,2025-12-31,da:2022:fallback_1:DepreciationAndAmortization
+VZ,2025-12-31,da:2023:fallback_1:DepreciationAndAmortization
+VZ,2025-12-31,da:2024:fallback_3:Depreciation + AmortizationOfIntangibleAssets
+VZ,2025-12-31,capex:2022:fallback_3:PaymentsToAcquireOtherProductiveAssets
+VZ,2025-12-31,capex:2023:fallback_3:PaymentsToAcquireOtherProductiveAssets
+VZ,2025-12-31,capex:2024:fallback_3:PaymentsToAcquireOtherProductiveAssets
+VZ,2025-12-31,receivables:2022:fallback_1:AccountsNotesAndLoansReceivableNetCurrent
+VZ,2025-12-31,receivables:2023:fallback_1:AccountsNotesAndLoansReceivableNetCurrent
+VZ,2025-12-31,receivables:2024:fallback_1:AccountsNotesAndLoansReceivableNetCurrent
+VZ,2025-12-31,st_investments:2024:tag_absent_assumed_zero
+VZ,2025-12-31,book_equity:2024:fallback_1:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest
+WEC,2025-12-31,interest_expense:2022:fallback_1:InterestExpenseNonoperating
+WEC,2025-12-31,interest_expense:2023:fallback_1:InterestExpenseNonoperating
+WEC,2025-12-31,interest_expense:2024:fallback_1:InterestExpenseNonoperating
+WEC,2025-12-31,capex:2022:fallback_2:PaymentsToAcquireOtherPropertyPlantAndEquipment
+WEC,2025-12-31,capex:2023:fallback_2:PaymentsToAcquireOtherPropertyPlantAndEquipment
+WEC,2025-12-31,capex:2024:fallback_2:PaymentsToAcquireOtherPropertyPlantAndEquipment
+WEC,2025-12-31,sbc:2022:fallback_1:AllocatedShareBasedCompensationExpense
+WEC,2025-12-31,sbc:2023:fallback_1:AllocatedShareBasedCompensationExpense
+WEC,2025-12-31,sbc:2024:fallback_1:AllocatedShareBasedCompensationExpense
+WEC,2025-12-31,inventory:2022:fallback_2:EnergyRelatedInventory
+WEC,2025-12-31,inventory:2023:fallback_2:EnergyRelatedInventory
+WEC,2025-12-31,inventory:2024:fallback_2:EnergyRelatedInventory
+WEC,2025-12-31,st_investments:2024:tag_absent_assumed_zero
+WEC,2025-12-31,debt_total:2024:fallback_3:LongTermDebtNoncurrent + LongTermDebtCurrent + ShortTermBorrowings
+WEC,2025-12-31,minority_interest:2024:tag_absent_assumed_zero
+WEC,2025-12-31,book_equity:2024:fallback_1:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest
+WMB,2025-12-31,interest_expense:2022:fallback_1:InterestExpenseNonoperating
+WMB,2025-12-31,interest_expense:2023:fallback_1:InterestExpenseNonoperating
+WMB,2025-12-31,interest_expense:2024:fallback_1:InterestExpenseNonoperating
+WMB,2025-12-31,receivables:2022:fallback_2:ReceivablesNetCurrent
+WMB,2025-12-31,receivables:2023:fallback_2:ReceivablesNetCurrent
+WMB,2025-12-31,receivables:2024:fallback_2:ReceivablesNetCurrent
+WMB,2025-12-31,cash:2024:fallback_1:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents
+WMB,2025-12-31,st_investments:2024:tag_absent_assumed_zero
+XOM,2025-12-31,ebit:2022:fallback_1:@pretax_income + @interest_expense
+XOM,2025-12-31,ebit:2023:fallback_1:@pretax_income + @interest_expense
+XOM,2025-12-31,ebit:2024:fallback_1:@pretax_income + @interest_expense
+XOM,2025-12-31,inventory:2022:fallback_2:EnergyRelatedInventory + InventoryPartsAndComponentsNetOfReserves
+XOM,2025-12-31,inventory:2023:fallback_2:EnergyRelatedInventory + InventoryPartsAndComponentsNetOfReserves
+XOM,2025-12-31,inventory:2024:fallback_2:EnergyRelatedInventory + InventoryPartsAndComponentsNetOfReserves
+XOM,2025-12-31,payables:2022:fallback_1:AccountsPayableTradeCurrent
+XOM,2025-12-31,payables:2023:fallback_1:AccountsPayableTradeCurrent
+XOM,2025-12-31,payables:2024:fallback_1:AccountsPayableTradeCurrent
+XOM,2025-12-31,st_investments:2024:tag_absent_assumed_zero
+XOM,2025-12-31,debt_total:2024:fallback_2:LongTermDebtAndCapitalLeaseObligations + DebtCurrent
+XOM,2025-12-31,preferred:2024:tag_absent_assumed_zero
+XOM,2025-12-31,shares_diluted:2024:fallback_2:NetIncomeLoss / EarningsPerShareDiluted

@@ -1,0 +1,885 @@
+SELF-TEST [qa] PASSED: perfect answers score 100% | trap/alternative hits on perfect answers: 0 (must be 0)
+SELF-TEST [plan] PASSED: perfect answers score 100% | trap/alternative hits on perfect answers: 0 (must be 0)
+Final answers correct: 87/184
+Final-answer marker: answer tag 100, missing 34, other case 20, Final Response heading 11, answer tag in thinking 11, boxed 6, exact 2 (missing = final scored zero)
+Final answers correct: 91/184
+Final-answer marker: answer tag 100, missing 34, other case 20, Final Response heading 11, answer tag in thinking 11, boxed 6, exact 2 (missing = final scored zero)
+Final answers correct: 91/184
+Final answers correct: 6/104
+Final-answer marker: answer tag 59, missing 20, other case 14, answer tag in thinking 6, exact 4, boxed in thinking 1 (missing = final scored zero)
+Final answers correct: 9/104
+Final-answer marker: answer tag 59, missing 20, other case 14, answer tag in thinking 6, exact 4, boxed in thinking 1 (missing = final scored zero)
+Final answers correct: 9/104
+Final answers correct: 2/20
+Final-answer marker: answer tag 11, missing 5, other case 2, boxed 1, exact 1 (missing = final scored zero)
+Final answers correct: 3/20
+Final-answer marker: answer tag 11, missing 5, other case 2, boxed 1, exact 1 (missing = final scored zero)
+Final answers correct: 3/20
+Final answers correct: 88/184
+Final-answer marker: answer tag 113, missing 27, other case 19, Final Response heading 10, answer tag in thinking 7, boxed 5, exact 2, boxed in thinking 1 (missing = final scored zero)
+Final answers correct: 94/184
+Final-answer marker: answer tag 113, missing 27, other case 19, Final Response heading 10, answer tag in thinking 7, boxed 5, exact 2, boxed in thinking 1 (missing = final scored zero)
+Final answers correct: 94/184
+Final answers correct: 11/104
+Final-answer marker: answer tag 59, missing 21, other case 8, boxed 8, answer tag in thinking 6, exact 1, boxed in thinking 1 (missing = final scored zero)
+Final answers correct: 12/104
+Final-answer marker: answer tag 59, missing 21, other case 8, boxed 8, answer tag in thinking 6, exact 1, boxed in thinking 1 (missing = final scored zero)
+Final answers correct: 12/104
+Final answers correct: 0/20
+Final-answer marker: answer tag 9, missing 5, boxed 2, exact 1, other case 1, Final Response heading 1, answer tag in thinking 1 (missing = final scored zero)
+Final answers correct: 0/20
+Final-answer marker: answer tag 9, missing 5, boxed 2, exact 1, other case 1, Final Response heading 1, answer tag in thinking 1 (missing = final scored zero)
+Final answers correct: 0/20
+Final answers correct: 88/184
+Final-answer marker: answer tag 111, other case 29, missing 19, Final Response heading 9, answer tag in thinking 7, exact 4, boxed 4, boxed in thinking 1 (missing = final scored zero)
+Final answers correct: 97/184
+Final-answer marker: answer tag 111, other case 29, missing 19, Final Response heading 9, answer tag in thinking 7, exact 4, boxed 4, boxed in thinking 1 (missing = final scored zero)
+Final answers correct: 97/184
+Final answers correct: 9/104
+Final-answer marker: answer tag 59, missing 23, exact 8, other case 5, boxed 4, Final Response heading 3, answer tag in thinking 2 (missing = final scored zero)
+Final answers correct: 10/104
+Final-answer marker: answer tag 59, missing 23, exact 8, other case 5, boxed 4, Final Response heading 3, answer tag in thinking 2 (missing = final scored zero)
+Final answers correct: 10/104
+Final answers correct: 2/20
+Final-answer marker: answer tag 12, missing 5, other case 1, answer tag in thinking 1, boxed in thinking 1 (missing = final scored zero)
+Final answers correct: 2/20
+Final-answer marker: answer tag 12, missing 5, other case 1, answer tag in thinking 1, boxed in thinking 1 (missing = final scored zero)
+Final answers correct: 2/20
+Final answers correct: 81/184
+Final-answer marker: answer tag 86, other case 39, Final Response heading 26, exact 15, missing 15, boxed in thinking 2, boxed 1 (missing = final scored zero)
+Final answers correct: 92/184
+Final-answer marker: answer tag 86, other case 39, Final Response heading 26, exact 15, missing 15, boxed in thinking 2, boxed 1 (missing = final scored zero)
+Final answers correct: 92/184
+Final answers correct: 8/104
+Final-answer marker: answer tag 50, other case 28, missing 16, exact 7, Final Response heading 2, boxed 1 (missing = final scored zero)
+Final answers correct: 10/104
+Final-answer marker: answer tag 50, other case 28, missing 16, exact 7, Final Response heading 2, boxed 1 (missing = final scored zero)
+Final answers correct: 10/104
+Final answers correct: 1/20
+Final-answer marker: answer tag 6, missing 6, other case 3, boxed in thinking 2, exact 2, Final Response heading 1 (missing = final scored zero)
+Final answers correct: 1/20
+Final-answer marker: answer tag 6, missing 6, other case 3, boxed in thinking 2, exact 2, Final Response heading 1 (missing = final scored zero)
+Final answers correct: 1/20
+Final answers correct: 83/184
+Final-answer marker: answer tag 96, other case 35, Final Response heading 20, missing 16, exact 14, boxed 2, boxed in thinking 1 (missing = final scored zero)
+Final answers correct: 91/184
+Final-answer marker: answer tag 96, other case 35, Final Response heading 20, missing 16, exact 14, boxed 2, boxed in thinking 1 (missing = final scored zero)
+Final answers correct: 91/184
+Final answers correct: 5/104
+Final-answer marker: answer tag 49, other case 23, missing 18, Final Response heading 6, exact 5, boxed 3 (missing = final scored zero)
+Final answers correct: 9/104
+Final-answer marker: answer tag 49, other case 23, missing 18, Final Response heading 6, exact 5, boxed 3 (missing = final scored zero)
+Final answers correct: 9/104
+Final answers correct: 2/20
+Final-answer marker: missing 6, answer tag 5, other case 5, exact 4 (missing = final scored zero)
+Final answers correct: 3/20
+Final-answer marker: missing 6, answer tag 5, other case 5, exact 4 (missing = final scored zero)
+Final answers correct: 3/20
+Final answers correct: 93/184
+Final-answer marker: answer tag 79, other case 44, Final Response heading 36, missing 14, exact 6, boxed 4, boxed in thinking 1 (missing = final scored zero)
+Final answers correct: 98/184
+Final-answer marker: answer tag 79, other case 44, Final Response heading 36, missing 14, exact 6, boxed 4, boxed in thinking 1 (missing = final scored zero)
+Final answers correct: 98/184
+Final answers correct: 8/104
+Final-answer marker: answer tag 40, other case 25, missing 16, exact 9, Final Response heading 7, boxed 5, boxed in thinking 2 (missing = final scored zero)
+Final answers correct: 12/104
+Final-answer marker: answer tag 40, other case 25, missing 16, exact 9, Final Response heading 7, boxed 5, boxed in thinking 2 (missing = final scored zero)
+Final answers correct: 12/104
+Final answers correct: 1/20
+Final-answer marker: answer tag 11, other case 4, missing 3, Final Response heading 1, exact 1 (missing = final scored zero)
+Final answers correct: 3/20
+Final-answer marker: answer tag 11, other case 4, missing 3, Final Response heading 1, exact 1 (missing = final scored zero)
+Final answers correct: 3/20
+Final answers correct: 77/184
+Final-answer marker: exact 150, Final Response heading 32, missing 1, other case 1 (missing = final scored zero)
+Final answers correct: 90/184
+Final-answer marker: exact 150, Final Response heading 32, missing 1, other case 1 (missing = final scored zero)
+Final answers correct: 90/184
+Final answers correct: 6/104
+Final-answer marker: exact 74, Final Response heading 25, other case 5 (missing = final scored zero)
+Final answers correct: 8/104
+Final-answer marker: exact 74, Final Response heading 25, other case 5 (missing = final scored zero)
+Final answers correct: 8/104
+Final answers correct: 0/20
+Final-answer marker: exact 15, Final Response heading 5 (missing = final scored zero)
+Final answers correct: 0/20
+Final-answer marker: exact 15, Final Response heading 5 (missing = final scored zero)
+Final answers correct: 0/20
+Final answers correct: 68/184
+Final-answer marker: exact 159, Final Response heading 23, other case 2 (missing = final scored zero)
+Final answers correct: 85/184
+Final-answer marker: exact 159, Final Response heading 23, other case 2 (missing = final scored zero)
+Final answers correct: 85/184
+Final answers correct: 7/104
+Final-answer marker: exact 81, Final Response heading 20, other case 3 (missing = final scored zero)
+Final answers correct: 7/104
+Final-answer marker: exact 81, Final Response heading 20, other case 3 (missing = final scored zero)
+Final answers correct: 7/104
+Final answers correct: 0/20
+Final-answer marker: exact 17, Final Response heading 2, missing 1 (missing = final scored zero)
+Final answers correct: 0/20
+Final-answer marker: exact 17, Final Response heading 2, missing 1 (missing = final scored zero)
+Final answers correct: 0/20
+Final answers correct: 68/184
+Final-answer marker: exact 150, Final Response heading 32, other case 2 (missing = final scored zero)
+Final answers correct: 86/184
+Final-answer marker: exact 150, Final Response heading 32, other case 2 (missing = final scored zero)
+Final answers correct: 86/184
+Final answers correct: 4/104
+Final-answer marker: exact 78, Final Response heading 22, other case 3, missing 1 (missing = final scored zero)
+Final answers correct: 4/104
+Final-answer marker: exact 78, Final Response heading 22, other case 3, missing 1 (missing = final scored zero)
+Final answers correct: 4/104
+Final answers correct: 1/20
+Final-answer marker: exact 14, Final Response heading 6 (missing = final scored zero)
+Final answers correct: 1/20
+Final-answer marker: exact 14, Final Response heading 6 (missing = final scored zero)
+Final answers correct: 1/20
+Final answers correct: 70/184
+Final-answer marker: exact 158, Final Response heading 25, other case 1 (missing = final scored zero)
+Final answers correct: 89/184
+Final-answer marker: exact 158, Final Response heading 25, other case 1 (missing = final scored zero)
+Final answers correct: 89/184
+Final answers correct: 3/104
+Final-answer marker: exact 79, Final Response heading 25 (missing = final scored zero)
+Final answers correct: 4/104
+Final-answer marker: exact 79, Final Response heading 25 (missing = final scored zero)
+Final answers correct: 4/104
+Final answers correct: 0/20
+Final-answer marker: exact 15, Final Response heading 5 (missing = final scored zero)
+Final answers correct: 0/20
+Final-answer marker: exact 15, Final Response heading 5 (missing = final scored zero)
+Final answers correct: 0/20
+Final answers correct: 72/184
+Final-answer marker: exact 158, Final Response heading 24, other case 2 (missing = final scored zero)
+Final answers correct: 89/184
+Final-answer marker: exact 158, Final Response heading 24, other case 2 (missing = final scored zero)
+Final answers correct: 89/184
+Final answers correct: 4/104
+Final-answer marker: exact 80, Final Response heading 23, other case 1 (missing = final scored zero)
+Final answers correct: 5/104
+Final-answer marker: exact 80, Final Response heading 23, other case 1 (missing = final scored zero)
+Final answers correct: 5/104
+Final answers correct: 1/20
+Final-answer marker: exact 12, Final Response heading 8 (missing = final scored zero)
+Final answers correct: 1/20
+Final-answer marker: exact 12, Final Response heading 8 (missing = final scored zero)
+Final answers correct: 1/20
+Final answers correct: 77/184
+Final-answer marker: exact 163, Final Response heading 21 (missing = final scored zero)
+Final answers correct: 90/184
+Final-answer marker: exact 163, Final Response heading 21 (missing = final scored zero)
+Final answers correct: 90/184
+Final answers correct: 6/104
+Final-answer marker: exact 85, Final Response heading 17, other case 2 (missing = final scored zero)
+Final answers correct: 6/104
+Final-answer marker: exact 85, Final Response heading 17, other case 2 (missing = final scored zero)
+Final answers correct: 6/104
+Final answers correct: 0/20
+Final-answer marker: exact 15, Final Response heading 4, other case 1 (missing = final scored zero)
+Final answers correct: 0/20
+Final-answer marker: exact 15, Final Response heading 4, other case 1 (missing = final scored zero)
+Final answers correct: 0/20
+Final answers correct: 66/184
+Final-answer marker: exact 159, Final Response heading 23, other case 2 (missing = final scored zero)
+Final answers correct: 85/184
+Final-answer marker: exact 159, Final Response heading 23, other case 2 (missing = final scored zero)
+Final answers correct: 85/184
+Final answers correct: 4/104
+Final-answer marker: exact 92, Final Response heading 11, other case 1 (missing = final scored zero)
+Final answers correct: 6/104
+Final-answer marker: exact 92, Final Response heading 11, other case 1 (missing = final scored zero)
+Final answers correct: 6/104
+Final answers correct: 1/20
+Final-answer marker: exact 17, Final Response heading 2, missing 1 (missing = final scored zero)
+Final answers correct: 1/20
+Final-answer marker: exact 17, Final Response heading 2, missing 1 (missing = final scored zero)
+Final answers correct: 1/20
+Final answers correct: 61/184
+Final-answer marker: exact 167, Final Response heading 17 (missing = final scored zero)
+Final answers correct: 77/184
+Final-answer marker: exact 167, Final Response heading 17 (missing = final scored zero)
+Final answers correct: 77/184
+Final answers correct: 0/104
+Final-answer marker: exact 94, Final Response heading 9, other case 1 (missing = final scored zero)
+Final answers correct: 0/104
+Final-answer marker: exact 94, Final Response heading 9, other case 1 (missing = final scored zero)
+Final answers correct: 0/104
+Final answers correct: 1/20
+Final-answer marker: exact 18, Final Response heading 1, other case 1 (missing = final scored zero)
+Final answers correct: 2/20
+Final-answer marker: exact 18, Final Response heading 1, other case 1 (missing = final scored zero)
+Final answers correct: 2/20
+Final answers correct: 71/184
+Final-answer marker: exact 167, Final Response heading 16, other case 1 (missing = final scored zero)
+Final answers correct: 89/184
+Final-answer marker: exact 167, Final Response heading 16, other case 1 (missing = final scored zero)
+Final answers correct: 89/184
+Final answers correct: 3/104
+Final-answer marker: exact 94, Final Response heading 10 (missing = final scored zero)
+Final answers correct: 5/104
+Final-answer marker: exact 94, Final Response heading 10 (missing = final scored zero)
+Final answers correct: 5/104
+Final answers correct: 1/20
+Final-answer marker: exact 19, Final Response heading 1 (missing = final scored zero)
+Final answers correct: 1/20
+Final-answer marker: exact 19, Final Response heading 1 (missing = final scored zero)
+Final answers correct: 1/20
+Final answers correct: 60/184
+Final-answer marker: exact 172, Final Response heading 10, other case 2 (missing = final scored zero)
+Final answers correct: 78/184
+Final-answer marker: exact 172, Final Response heading 10, other case 2 (missing = final scored zero)
+Final answers correct: 78/184
+Final answers correct: 3/104
+Final-answer marker: exact 104 (missing = final scored zero)
+Final answers correct: 3/104
+Final-answer marker: exact 104 (missing = final scored zero)
+Final answers correct: 3/104
+Final answers correct: 0/20
+Final-answer marker: exact 19, missing 1 (missing = final scored zero)
+Final answers correct: 0/20
+Final-answer marker: exact 19, missing 1 (missing = final scored zero)
+Final answers correct: 0/20
+Final answers correct: 61/184
+Final-answer marker: exact 169, Final Response heading 13, other case 2 (missing = final scored zero)
+Final answers correct: 80/184
+Final-answer marker: exact 169, Final Response heading 13, other case 2 (missing = final scored zero)
+Final answers correct: 80/184
+Final answers correct: 6/104
+Final-answer marker: exact 100, Final Response heading 2, other case 2 (missing = final scored zero)
+Final answers correct: 9/104
+Final-answer marker: exact 100, Final Response heading 2, other case 2 (missing = final scored zero)
+Final answers correct: 9/104
+Final answers correct: 0/20
+Final-answer marker: exact 19, Final Response heading 1 (missing = final scored zero)
+Final answers correct: 0/20
+Final-answer marker: exact 19, Final Response heading 1 (missing = final scored zero)
+Final answers correct: 0/20
+Final answers correct: 65/184
+Final-answer marker: exact 173, Final Response heading 10, other case 1 (missing = final scored zero)
+Final answers correct: 83/184
+Final-answer marker: exact 173, Final Response heading 10, other case 1 (missing = final scored zero)
+Final answers correct: 83/184
+Final answers correct: 3/104
+Final-answer marker: exact 99, Final Response heading 4, other case 1 (missing = final scored zero)
+Final answers correct: 3/104
+Final-answer marker: exact 99, Final Response heading 4, other case 1 (missing = final scored zero)
+Final answers correct: 3/104
+Final answers correct: 0/20
+Final-answer marker: exact 19, other case 1 (missing = final scored zero)
+Final answers correct: 0/20
+Final-answer marker: exact 19, other case 1 (missing = final scored zero)
+Final answers correct: 0/20
+Final answers correct: 56/184
+Final-answer marker: other case 59, exact 43, boxed in thinking 28, missing 19, boxed 19, Final Response heading 16 (missing = final scored zero)
+Final answers correct: 74/184
+Final-answer marker: other case 59, exact 43, boxed in thinking 28, missing 19, boxed 19, Final Response heading 16 (missing = final scored zero)
+Final answers correct: 74/184
+Final answers correct: 2/104
+Final-answer marker: other case 37, missing 22, exact 17, Final Response heading 11, boxed in thinking 9, boxed 7, answer tag 1 (missing = final scored zero)
+Final answers correct: 2/104
+Final-answer marker: other case 37, missing 22, exact 17, Final Response heading 11, boxed in thinking 9, boxed 7, answer tag 1 (missing = final scored zero)
+Final answers correct: 2/104
+Final answers correct: 0/20
+Final-answer marker: other case 8, boxed 3, missing 3, boxed in thinking 2, Final Response heading 2, exact 2 (missing = final scored zero)
+Final answers correct: 1/20
+Final-answer marker: other case 8, boxed 3, missing 3, boxed in thinking 2, Final Response heading 2, exact 2 (missing = final scored zero)
+Final answers correct: 1/20
+Final answers correct: 49/184
+Final-answer marker: exact 56, other case 54, missing 28, boxed in thinking 19, boxed 14, Final Response heading 13 (missing = final scored zero)
+Final answers correct: 69/184
+Final-answer marker: exact 56, other case 54, missing 28, boxed in thinking 19, boxed 14, Final Response heading 13 (missing = final scored zero)
+Final answers correct: 69/184
+Final answers correct: 2/104
+Final-answer marker: other case 34, exact 22, missing 20, boxed 11, boxed in thinking 11, Final Response heading 6 (missing = final scored zero)
+Final answers correct: 2/104
+Final-answer marker: other case 34, exact 22, missing 20, boxed 11, boxed in thinking 11, Final Response heading 6 (missing = final scored zero)
+Final answers correct: 2/104
+Final answers correct: 1/20
+Final-answer marker: other case 11, missing 4, exact 2, answer tag 1, Final Response heading 1, boxed 1 (missing = final scored zero)
+Final answers correct: 1/20
+Final-answer marker: other case 11, missing 4, exact 2, answer tag 1, Final Response heading 1, boxed 1 (missing = final scored zero)
+Final answers correct: 1/20
+Final answers correct: 59/184
+Final-answer marker: other case 65, exact 42, missing 25, boxed 20, boxed in thinking 19, Final Response heading 13 (missing = final scored zero)
+Final answers correct: 76/184
+Final-answer marker: other case 65, exact 42, missing 25, boxed 20, boxed in thinking 19, Final Response heading 13 (missing = final scored zero)
+Final answers correct: 76/184
+Final answers correct: 6/104
+Final-answer marker: other case 40, missing 27, exact 19, boxed in thinking 8, boxed 5, Final Response heading 5 (missing = final scored zero)
+Final answers correct: 7/104
+Final-answer marker: other case 40, missing 27, exact 19, boxed in thinking 8, boxed 5, Final Response heading 5 (missing = final scored zero)
+Final answers correct: 7/104
+Final answers correct: 0/20
+Final-answer marker: other case 6, missing 4, exact 3, boxed 3, Final Response heading 2, answer tag 1, boxed in thinking 1 (missing = final scored zero)
+Final answers correct: 1/20
+Final-answer marker: other case 6, missing 4, exact 3, boxed 3, Final Response heading 2, answer tag 1, boxed in thinking 1 (missing = final scored zero)
+Final answers correct: 1/20
+Final answers correct: 57/184
+Final-answer marker: other case 124, exact 30, Final Response heading 13, boxed in thinking 8, boxed 7, missing 2 (missing = final scored zero)
+Final answers correct: 80/184
+Final-answer marker: other case 124, exact 30, Final Response heading 13, boxed in thinking 8, boxed 7, missing 2 (missing = final scored zero)
+Final answers correct: 80/184
+Final answers correct: 3/104
+Final-answer marker: other case 43, exact 27, Final Response heading 20, boxed in thinking 9, missing 3, boxed 2 (missing = final scored zero)
+Final answers correct: 5/104
+Final-answer marker: other case 43, exact 27, Final Response heading 20, boxed in thinking 9, missing 3, boxed 2 (missing = final scored zero)
+Final answers correct: 5/104
+Final answers correct: 0/20
+Final-answer marker: other case 11, exact 5, Final Response heading 2, missing 1, boxed in thinking 1 (missing = final scored zero)
+Final answers correct: 0/20
+Final-answer marker: other case 11, exact 5, Final Response heading 2, missing 1, boxed in thinking 1 (missing = final scored zero)
+Final answers correct: 0/20
+Final answers correct: 63/184
+Final-answer marker: other case 123, exact 26, boxed in thinking 13, Final Response heading 12, boxed 7, missing 3 (missing = final scored zero)
+Final answers correct: 79/184
+Final-answer marker: other case 123, exact 26, boxed in thinking 13, Final Response heading 12, boxed 7, missing 3 (missing = final scored zero)
+Final answers correct: 79/184
+Final answers correct: 1/104
+Final-answer marker: other case 44, exact 32, Final Response heading 17, boxed in thinking 5, boxed 3, missing 3 (missing = final scored zero)
+Final answers correct: 2/104
+Final-answer marker: other case 44, exact 32, Final Response heading 17, boxed in thinking 5, boxed 3, missing 3 (missing = final scored zero)
+Final answers correct: 2/104
+Final answers correct: 2/20
+Final-answer marker: exact 7, boxed in thinking 4, other case 4, Final Response heading 2, boxed 2, missing 1 (missing = final scored zero)
+Final answers correct: 2/20
+Final-answer marker: exact 7, boxed in thinking 4, other case 4, Final Response heading 2, boxed 2, missing 1 (missing = final scored zero)
+Final answers correct: 2/20
+Final answers correct: 66/184
+Final-answer marker: other case 133, exact 28, Final Response heading 10, boxed in thinking 7, boxed 5, missing 1 (missing = final scored zero)
+Final answers correct: 79/184
+Final-answer marker: other case 133, exact 28, Final Response heading 10, boxed in thinking 7, boxed 5, missing 1 (missing = final scored zero)
+Final answers correct: 79/184
+Final answers correct: 4/104
+Final-answer marker: other case 44, exact 27, Final Response heading 13, boxed in thinking 10, boxed 6, missing 4 (missing = final scored zero)
+Final answers correct: 5/104
+Final-answer marker: other case 44, exact 27, Final Response heading 13, boxed in thinking 10, boxed 6, missing 4 (missing = final scored zero)
+Final answers correct: 5/104
+Final answers correct: 0/20
+Final-answer marker: other case 10, exact 4, Final Response heading 3, missing 2, boxed 1 (missing = final scored zero)
+Final answers correct: 0/20
+Final-answer marker: other case 10, exact 4, Final Response heading 3, missing 2, boxed 1 (missing = final scored zero)
+Final answers correct: 0/20
+Final answers correct: 24/184
+Final-answer marker: Final Response heading 133, exact 51 (missing = final scored zero)
+Final answers correct: 38/184
+Final-answer marker: Final Response heading 133, exact 51 (missing = final scored zero)
+Final answers correct: 38/184
+Final answers correct: 1/104
+Final-answer marker: Final Response heading 99, exact 5 (missing = final scored zero)
+Final answers correct: 1/104
+Final-answer marker: Final Response heading 99, exact 5 (missing = final scored zero)
+Final answers correct: 1/104
+Final answers correct: 2/20
+Final-answer marker: Final Response heading 18, exact 2 (missing = final scored zero)
+Final answers correct: 2/20
+Final-answer marker: Final Response heading 18, exact 2 (missing = final scored zero)
+Final answers correct: 2/20
+Final answers correct: 28/184
+Final-answer marker: Final Response heading 133, exact 51 (missing = final scored zero)
+Final answers correct: 40/184
+Final-answer marker: Final Response heading 133, exact 51 (missing = final scored zero)
+Final answers correct: 40/184
+Final answers correct: 1/104
+Final-answer marker: Final Response heading 94, exact 9, missing 1 (missing = final scored zero)
+Final answers correct: 1/104
+Final-answer marker: Final Response heading 94, exact 9, missing 1 (missing = final scored zero)
+Final answers correct: 1/104
+Final answers correct: 0/20
+Final-answer marker: Final Response heading 17, exact 2, missing 1 (missing = final scored zero)
+Final answers correct: 0/20
+Final-answer marker: Final Response heading 17, exact 2, missing 1 (missing = final scored zero)
+Final answers correct: 0/20
+Final answers correct: 32/184
+Final-answer marker: Final Response heading 140, exact 44 (missing = final scored zero)
+Final answers correct: 43/184
+Final-answer marker: Final Response heading 140, exact 44 (missing = final scored zero)
+Final answers correct: 43/184
+Final answers correct: 3/104
+Final-answer marker: Final Response heading 95, exact 9 (missing = final scored zero)
+Final answers correct: 3/104
+Final-answer marker: Final Response heading 95, exact 9 (missing = final scored zero)
+Final answers correct: 3/104
+Final answers correct: 1/20
+Final-answer marker: Final Response heading 20 (missing = final scored zero)
+Final answers correct: 1/20
+Final-answer marker: Final Response heading 20 (missing = final scored zero)
+Final answers correct: 1/20
+Final answers correct: 26/184
+Final-answer marker: Final Response heading 151, exact 33 (missing = final scored zero)
+Final answers correct: 43/184
+Final-answer marker: Final Response heading 151, exact 33 (missing = final scored zero)
+Final answers correct: 43/184
+Final answers correct: 1/104
+Final-answer marker: Final Response heading 101, exact 3 (missing = final scored zero)
+Final answers correct: 4/104
+Final-answer marker: Final Response heading 101, exact 3 (missing = final scored zero)
+Final answers correct: 4/104
+Final answers correct: 0/20
+Final-answer marker: Final Response heading 19, exact 1 (missing = final scored zero)
+Final answers correct: 0/20
+Final-answer marker: Final Response heading 19, exact 1 (missing = final scored zero)
+Final answers correct: 0/20
+Final answers correct: 34/184
+Final-answer marker: Final Response heading 138, exact 46 (missing = final scored zero)
+Final answers correct: 46/184
+Final-answer marker: Final Response heading 138, exact 46 (missing = final scored zero)
+Final answers correct: 46/184
+Final answers correct: 1/104
+Final-answer marker: Final Response heading 98, exact 6 (missing = final scored zero)
+Final answers correct: 2/104
+Final-answer marker: Final Response heading 98, exact 6 (missing = final scored zero)
+Final answers correct: 2/104
+Final answers correct: 1/20
+Final-answer marker: Final Response heading 19, exact 1 (missing = final scored zero)
+Final answers correct: 2/20
+Final-answer marker: Final Response heading 19, exact 1 (missing = final scored zero)
+Final answers correct: 2/20
+Final answers correct: 25/184
+Final-answer marker: Final Response heading 147, exact 36, missing 1 (missing = final scored zero)
+Final answers correct: 37/184
+Final-answer marker: Final Response heading 147, exact 36, missing 1 (missing = final scored zero)
+Final answers correct: 37/184
+Final answers correct: 3/104
+Final-answer marker: Final Response heading 98, exact 6 (missing = final scored zero)
+Final answers correct: 4/104
+Final-answer marker: Final Response heading 98, exact 6 (missing = final scored zero)
+Final answers correct: 4/104
+Final answers correct: 1/20
+Final-answer marker: Final Response heading 20 (missing = final scored zero)
+Final answers correct: 1/20
+Final-answer marker: Final Response heading 20 (missing = final scored zero)
+Final answers correct: 1/20
+Final answers correct: 37/184
+Final-answer marker: exact 156, missing 27, other case 1 (missing = final scored zero)
+Final answers correct: 50/184
+Final-answer marker: exact 156, missing 27, other case 1 (missing = final scored zero)
+Final answers correct: 50/184
+Final answers correct: 1/104
+Final-answer marker: exact 80, missing 17, other case 7 (missing = final scored zero)
+Final answers correct: 1/104
+Final-answer marker: exact 80, missing 17, other case 7 (missing = final scored zero)
+Final answers correct: 1/104
+Final answers correct: 0/20
+Final-answer marker: exact 12, missing 8 (missing = final scored zero)
+Final answers correct: 0/20
+Final-answer marker: exact 12, missing 8 (missing = final scored zero)
+Final answers correct: 0/20
+Final answers correct: 29/184
+Final-answer marker: exact 173, missing 11 (missing = final scored zero)
+Final answers correct: 47/184
+Final-answer marker: exact 173, missing 11 (missing = final scored zero)
+Final answers correct: 47/184
+Final answers correct: 1/104
+Final-answer marker: exact 94, missing 10 (missing = final scored zero)
+Final answers correct: 2/104
+Final-answer marker: exact 94, missing 10 (missing = final scored zero)
+Final answers correct: 2/104
+Final answers correct: 0/20
+Final-answer marker: exact 19, missing 1 (missing = final scored zero)
+Final answers correct: 0/20
+Final-answer marker: exact 19, missing 1 (missing = final scored zero)
+Final answers correct: 0/20
+Final answers correct: 78/184
+Final-answer marker: exact 152, other case 18, missing 14 (missing = final scored zero)
+Final answers correct: 84/184
+Final-answer marker: exact 152, other case 18, missing 14 (missing = final scored zero)
+Final answers correct: 84/184
+Final answers correct: 2/104
+Final-answer marker: exact 69, other case 18, missing 17 (missing = final scored zero)
+Final answers correct: 3/104
+Final-answer marker: exact 69, other case 18, missing 17 (missing = final scored zero)
+Final answers correct: 3/104
+Final answers correct: 1/20
+Final-answer marker: exact 14, other case 3, missing 3 (missing = final scored zero)
+Final answers correct: 1/20
+Final-answer marker: exact 14, other case 3, missing 3 (missing = final scored zero)
+Final answers correct: 1/20
+Final answers correct: 73/184
+Final-answer marker: exact 144, other case 37, missing 3 (missing = final scored zero)
+Final answers correct: 84/184
+Final-answer marker: exact 144, other case 37, missing 3 (missing = final scored zero)
+Final answers correct: 84/184
+Final answers correct: 6/104
+Final-answer marker: exact 65, other case 39 (missing = final scored zero)
+Final answers correct: 7/104
+Final-answer marker: exact 65, other case 39 (missing = final scored zero)
+Final answers correct: 7/104
+Final answers correct: 0/20
+Final-answer marker: exact 12, other case 8 (missing = final scored zero)
+Final answers correct: 0/20
+Final-answer marker: exact 12, other case 8 (missing = final scored zero)
+Final answers correct: 0/20
+Final answers correct: 131/184
+Final-answer marker: exact 147, missing 33, other case 4 (missing = final scored zero)
+Final answers correct: 138/184
+Final-answer marker: exact 147, missing 33, other case 4 (missing = final scored zero)
+Final answers correct: 138/184
+Final answers correct: 55/104
+Final-answer marker: exact 69, missing 35 (missing = final scored zero)
+Final answers correct: 56/104
+Final-answer marker: exact 69, missing 35 (missing = final scored zero)
+Final answers correct: 56/104
+Final answers correct: 8/20
+Final-answer marker: exact 12, missing 8 (missing = final scored zero)
+Final answers correct: 8/20
+Final-answer marker: exact 12, missing 8 (missing = final scored zero)
+Final answers correct: 8/20
+Final answers correct: 125/184
+Final-answer marker: exact 152, missing 32 (missing = final scored zero)
+Final answers correct: 132/184
+Final-answer marker: exact 152, missing 32 (missing = final scored zero)
+Final answers correct: 132/184
+Final answers correct: 50/104
+Final-answer marker: exact 64, missing 40 (missing = final scored zero)
+Final answers correct: 52/104
+Final-answer marker: exact 64, missing 40 (missing = final scored zero)
+Final answers correct: 52/104
+Final answers correct: 12/20
+Final-answer marker: exact 14, missing 6 (missing = final scored zero)
+Final answers correct: 12/20
+Final-answer marker: exact 14, missing 6 (missing = final scored zero)
+Final answers correct: 12/20
+Final answers correct: 122/184
+Final-answer marker: exact 143, missing 37, other case 4 (missing = final scored zero)
+Final answers correct: 129/184
+Final-answer marker: exact 143, missing 37, other case 4 (missing = final scored zero)
+Final answers correct: 129/184
+Final answers correct: 148/184
+Final-answer marker: exact 168, other case 15, missing 1 (missing = final scored zero)
+Final answers correct: 156/184
+Final-answer marker: exact 168, other case 15, missing 1 (missing = final scored zero)
+Final answers correct: 156/184
+Final answers correct: 76/104
+Final-answer marker: exact 104 (missing = final scored zero)
+Final answers correct: 81/104
+Final-answer marker: exact 104 (missing = final scored zero)
+Final answers correct: 81/104
+Final answers correct: 14/20
+Final-answer marker: exact 20 (missing = final scored zero)
+Final answers correct: 14/20
+Final-answer marker: exact 20 (missing = final scored zero)
+Final answers correct: 14/20
+Final answers correct: 139/184
+Final-answer marker: exact 170, other case 12, missing 2 (missing = final scored zero)
+Final answers correct: 146/184
+Final-answer marker: exact 170, other case 12, missing 2 (missing = final scored zero)
+Final answers correct: 146/184
+Final answers correct: 75/104
+Final-answer marker: exact 104 (missing = final scored zero)
+Final answers correct: 78/104
+Final-answer marker: exact 104 (missing = final scored zero)
+Final answers correct: 78/104
+Final answers correct: 14/20
+Final-answer marker: exact 20 (missing = final scored zero)
+Final answers correct: 14/20
+Final-answer marker: exact 20 (missing = final scored zero)
+Final answers correct: 14/20
+Final answers correct: 145/184
+Final-answer marker: exact 170, other case 13, missing 1 (missing = final scored zero)
+Final answers correct: 154/184
+Final-answer marker: exact 170, other case 13, missing 1 (missing = final scored zero)
+Final answers correct: 154/184
+Final answers correct: 74/104
+Final-answer marker: exact 103, other case 1 (missing = final scored zero)
+Final answers correct: 81/104
+Final-answer marker: exact 103, other case 1 (missing = final scored zero)
+Final answers correct: 81/104
+Final answers correct: 14/20
+Final-answer marker: exact 20 (missing = final scored zero)
+Final answers correct: 15/20
+Final-answer marker: exact 20 (missing = final scored zero)
+Final answers correct: 15/20
+Final answers correct: 134/184
+Final-answer marker: exact 172, missing 9, other case 3 (missing = final scored zero)
+Final answers correct: 145/184
+Final-answer marker: exact 172, missing 9, other case 3 (missing = final scored zero)
+Final answers correct: 145/184
+Final answers correct: 64/104
+Final-answer marker: exact 98, missing 6 (missing = final scored zero)
+Final answers correct: 67/104
+Final-answer marker: exact 98, missing 6 (missing = final scored zero)
+Final answers correct: 67/104
+Final answers correct: 129/184
+Final-answer marker: exact 172, other case 5, Final Response heading 4, missing 2, boxed 1 (missing = final scored zero)
+Final answers correct: 141/184
+Final-answer marker: exact 172, other case 5, Final Response heading 4, missing 2, boxed 1 (missing = final scored zero)
+Final answers correct: 141/184
+Final answers correct: 63/104
+Final-answer marker: exact 103, missing 1 (missing = final scored zero)
+Final answers correct: 69/104
+Final-answer marker: exact 103, missing 1 (missing = final scored zero)
+Final answers correct: 69/104
+Final answers correct: 9/20
+Final-answer marker: exact 20 (missing = final scored zero)
+Final answers correct: 10/20
+Final-answer marker: exact 20 (missing = final scored zero)
+Final answers correct: 10/20
+Final answers correct: 129/184
+Final-answer marker: exact 177, missing 4, other case 3 (missing = final scored zero)
+Final answers correct: 145/184
+Final-answer marker: exact 177, missing 4, other case 3 (missing = final scored zero)
+Final answers correct: 145/184
+Final answers correct: 66/104
+Final-answer marker: exact 101, missing 3 (missing = final scored zero)
+Final answers correct: 69/104
+Final-answer marker: exact 101, missing 3 (missing = final scored zero)
+Final answers correct: 69/104
+Final answers correct: 11/20
+Final-answer marker: exact 20 (missing = final scored zero)
+Final answers correct: 13/20
+Final-answer marker: exact 20 (missing = final scored zero)
+Final answers correct: 13/20
+Final answers correct: 130/184
+Final-answer marker: exact 176, other case 6, missing 2 (missing = final scored zero)
+Final answers correct: 139/184
+Final-answer marker: exact 176, other case 6, missing 2 (missing = final scored zero)
+Final answers correct: 139/184
+Final answers correct: 67/104
+Final-answer marker: exact 103, missing 1 (missing = final scored zero)
+Final answers correct: 72/104
+Final-answer marker: exact 103, missing 1 (missing = final scored zero)
+Final answers correct: 72/104
+Final answers correct: 14/20
+Final-answer marker: exact 20 (missing = final scored zero)
+Final answers correct: 14/20
+Final-answer marker: exact 20 (missing = final scored zero)
+Final answers correct: 14/20
+Final answers correct: 15/24
+Final-answer marker: exact 24 (missing = final scored zero)
+Final answers correct: 15/24
+Final-answer marker: exact 24 (missing = final scored zero)
+Final answers correct: 15/24
+Final answers correct: 93/160
+Final-answer marker: exact 152, missing 7, Final Response heading 1 (missing = final scored zero)
+Final answers correct: 96/160
+Final-answer marker: exact 152, missing 7, Final Response heading 1 (missing = final scored zero)
+Final answers correct: 96/160
+Final answers correct: 12/24
+Final-answer marker: exact 16, other case 8 (missing = final scored zero)
+Final answers correct: 15/24
+Final-answer marker: exact 16, other case 8 (missing = final scored zero)
+Final answers correct: 15/24
+Final answers correct: 62/160
+Final-answer marker: exact 121, other case 39 (missing = final scored zero)
+Final answers correct: 69/160
+Final-answer marker: exact 121, other case 39 (missing = final scored zero)
+Final answers correct: 69/160
+Final answers correct: 16/16
+Final-answer marker: exact 12, other case 4 (missing = final scored zero)
+Final answers correct: 16/16
+Final-answer marker: exact 12, other case 4 (missing = final scored zero)
+Final answers correct: 16/16
+Final answers correct: 4/8
+Final-answer marker: exact 8 (missing = final scored zero)
+Final answers correct: 6/8
+Final-answer marker: exact 8 (missing = final scored zero)
+Final answers correct: 6/8
+Final answers correct: 77/80
+Final-answer marker: exact 69, other case 11 (missing = final scored zero)
+Final answers correct: 80/80
+Final-answer marker: exact 69, other case 11 (missing = final scored zero)
+Final answers correct: 80/80
+Final answers correct: 15/20
+Final-answer marker: exact 19, other case 1 (missing = final scored zero)
+Final answers correct: 16/20
+Final-answer marker: exact 19, other case 1 (missing = final scored zero)
+Final answers correct: 16/20
+Final answers correct: 18/20
+Final-answer marker: exact 18, other case 2 (missing = final scored zero)
+Final answers correct: 20/20
+Final-answer marker: exact 18, other case 2 (missing = final scored zero)
+Final answers correct: 20/20
+Final answers correct: 38/40
+Final-answer marker: exact 39, other case 1 (missing = final scored zero)
+Final answers correct: 38/40
+Final-answer marker: exact 39, other case 1 (missing = final scored zero)
+Final answers correct: 38/40
+# Combined results
+
+Modes: `qa` = rubric tolerances; `plan` = plan Section 8 tolerances; `_think` = thinking text counted for middle/step items.
+Cells are final answers correct / graded. `fell_for_trap` and `used_basic_shares` count only answers whose final was wrong.
+
+| mode | config | questions | final_correct | final_pct | rubric_pct | fell_for_trap | used_basic_shares | basic L2 | basic L3 | complex L3 | half L4 | half L5 | trap L2 | basic@2019 L3 | basic@2022 L3 | basic@2025 L3 | complex@2019 L3 | complex@2022 L3 | complex@2025 L3 | half@2019 L4 | half@2019 L5 | half@2022 L4 | half@2022 L5 | half@2025 L4 | half@2025 L5 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| plan | Qwen2.5-32B-Instruct | 184 | 111/184 | 60.3 | 52.9 | 0/42 | 1/74 | 53/56 | 2/28 | 1/20 | 4/20 | 15/20 | 36/40 |  |  |  |  |  |  |  |  |  |  |  |  |
+| plan | Qwen2.5-7B-Instruct | 184 | 84/184 | 45.7 | 36.1 | 3/42 | 1/74 | 50/56 | 0/28 | 0/20 | 2/20 | 0/20 | 32/40 |  |  |  |  |  |  |  |  |  |  |  |  |
+| plan | Qwen3-32B_think | 184 | 176/184 | 95.7 | 86.3 | 0/42 | 0/74 | 56/56 | 25/28 | 17/20 | 19/20 | 19/20 | 40/40 |  |  |  |  |  |  |  |  |  |  |  |  |
+| plan | ver02_dianjin-7b_think_calc_s0 | 308 | 103/308 | 33.4 | 24.5 | 3/42 | 2/167 | 54/56 | 1/28 | 0/20 | 2/20 | 3/20 | 31/40 | 1/13 | 0/13 | 1/5 | 0/13 | 1/13 | 0/5 | 0/13 | 3/13 | 1/13 | 3/13 | 1/5 | 1/5 |
+| plan | ver02_dianjin-7b_think_calc_s1 | 308 | 106/308 | 34.4 | 24.6 | 4/42 | 4/167 | 52/56 | 2/28 | 0/20 | 5/20 | 3/20 | 32/40 | 1/13 | 0/13 | 0/5 | 1/13 | 0/13 | 0/5 | 2/13 | 3/13 | 2/13 | 3/13 | 0/5 | 0/5 |
+| plan | ver02_dianjin-7b_think_calc_s2 | 308 | 109/308 | 35.4 | 25.6 | 4/42 | 2/167 | 52/56 | 1/28 | 0/20 | 2/20 | 8/20 | 34/40 | 0/13 | 0/13 | 1/5 | 0/13 | 1/13 | 0/5 | 4/13 | 3/13 | 1/13 | 1/13 | 1/5 | 0/5 |
+| plan | ver02_dianjin-7b_think_s0 | 308 | 103/308 | 33.4 | 23.8 | 4/42 | 0/167 | 55/56 | 0/28 | 1/20 | 1/20 | 3/20 | 32/40 | 2/13 | 0/13 | 0/5 | 2/13 | 1/13 | 0/5 | 2/13 | 1/13 | 0/13 | 2/13 | 0/5 | 1/5 |
+| plan | ver02_dianjin-7b_think_s1 | 308 | 103/308 | 33.4 | 25.6 | 4/42 | 4/167 | 52/56 | 0/28 | 0/20 | 0/20 | 6/20 | 33/40 | 2/13 | 0/13 | 0/5 | 0/13 | 1/13 | 0/5 | 1/13 | 2/13 | 2/13 | 1/13 | 1/5 | 2/5 |
+| plan | ver02_dianjin-7b_think_s2 | 308 | 113/308 | 36.7 | 26.3 | 4/42 | 1/167 | 53/56 | 0/28 | 1/20 | 2/20 | 8/20 | 34/40 | 1/13 | 1/13 | 0/5 | 1/13 | 1/13 | 1/5 | 0/13 | 4/13 | 1/13 | 3/13 | 0/5 | 2/5 |
+| plan | ver02_fin-o1-14b_think_calc_s0 | 308 | 98/308 | 31.8 | 38.5 | 2/42 | 3/167 | 50/56 | 0/28 | 0/20 | 2/20 | 3/20 | 35/40 | 0/13 | 0/13 | 0/5 | 1/13 | 0/13 | 0/5 | 1/13 | 3/13 | 2/13 | 1/13 | 0/5 | 0/5 |
+| plan | ver02_fin-o1-14b_think_calc_s1 | 308 | 92/308 | 29.9 | 35.3 | 4/42 | 2/167 | 48/56 | 0/28 | 1/20 | 2/20 | 0/20 | 34/40 | 1/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 3/13 | 0/13 | 1/13 | 2/13 | 0/5 | 0/5 |
+| plan | ver02_fin-o1-14b_think_calc_s2 | 308 | 91/308 | 29.5 | 36.6 | 4/42 | 2/167 | 47/56 | 0/28 | 1/20 | 4/20 | 0/20 | 34/40 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 2/13 | 1/13 | 1/13 | 0/13 | 1/5 | 0/5 |
+| plan | ver02_fin-o1-14b_think_s0 | 308 | 93/308 | 30.2 | 34.0 | 5/42 | 0/167 | 52/56 | 2/28 | 0/20 | 0/20 | 3/20 | 32/40 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 1/13 | 1/13 | 1/13 | 1/13 | 0/5 | 0/5 |
+| plan | ver02_fin-o1-14b_think_s1 | 308 | 95/308 | 30.8 | 32.7 | 2/42 | 1/167 | 50/56 | 1/28 | 1/20 | 3/20 | 1/20 | 33/40 | 1/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 2/13 | 0/13 | 1/13 | 1/13 | 1/5 | 0/5 |
+| plan | ver02_fin-o1-14b_think_s2 | 308 | 96/308 | 31.2 | 33.2 | 2/42 | 3/167 | 51/56 | 1/28 | 1/20 | 1/20 | 1/20 | 35/40 | 0/13 | 1/13 | 0/5 | 0/13 | 0/13 | 0/5 | 2/13 | 1/13 | 1/13 | 1/13 | 0/5 | 0/5 |
+| plan | ver02_fin-o1-8b_think_calc_s0 | 308 | 92/308 | 29.9 | 34.2 | 2/42 | 3/167 | 47/56 | 1/28 | 2/20 | 1/20 | 0/20 | 34/40 | 0/13 | 0/13 | 0/5 | 1/13 | 1/13 | 0/5 | 1/13 | 1/13 | 0/13 | 2/13 | 1/5 | 0/5 |
+| plan | ver02_fin-o1-8b_think_calc_s1 | 308 | 79/308 | 25.6 | 33.9 | 4/42 | 1/167 | 46/56 | 1/28 | 1/20 | 0/20 | 1/20 | 28/40 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/13 | 0/13 | 1/5 | 1/5 |
+| plan | ver02_fin-o1-8b_think_calc_s2 | 308 | 95/308 | 30.8 | 36.8 | 2/42 | 4/167 | 46/56 | 1/28 | 2/20 | 3/20 | 2/20 | 35/40 | 1/13 | 0/13 | 0/5 | 0/13 | 1/13 | 0/5 | 1/13 | 1/13 | 1/13 | 0/13 | 1/5 | 0/5 |
+| plan | ver02_fin-o1-8b_think_s0 | 308 | 81/308 | 26.3 | 34.6 | 5/42 | 3/167 | 43/56 | 1/28 | 3/20 | 1/20 | 1/20 | 29/40 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 1/13 | 0/13 | 2/13 | 0/13 | 0/5 | 0/5 |
+| plan | ver02_fin-o1-8b_think_s1 | 308 | 89/308 | 28.9 | 35.0 | 2/42 | 3/167 | 46/56 | 0/28 | 2/20 | 2/20 | 0/20 | 30/40 | 0/13 | 2/13 | 0/5 | 1/13 | 1/13 | 0/5 | 1/13 | 1/13 | 1/13 | 2/13 | 0/5 | 0/5 |
+| plan | ver02_fin-o1-8b_think_s2 | 308 | 86/308 | 27.9 | 33.7 | 2/42 | 4/167 | 47/56 | 1/28 | 1/20 | 1/20 | 0/20 | 33/40 | 0/13 | 0/13 | 0/5 | 0/13 | 2/13 | 0/5 | 0/13 | 0/13 | 1/13 | 0/13 | 0/5 | 0/5 |
+| plan | ver02_fin-r1_think_calc_s0 | 308 | 77/308 | 25.0 | 26.6 | 4/42 | 2/167 | 40/56 | 1/28 | 1/20 | 1/20 | 3/20 | 28/40 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 1/13 | 0/13 | 1/13 | 0/13 | 0/5 | 1/5 |
+| plan | ver02_fin-r1_think_calc_s1 | 308 | 72/308 | 23.4 | 26.3 | 2/42 | 2/167 | 39/56 | 0/28 | 1/20 | 0/20 | 0/20 | 29/40 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 0/13 | 1/13 | 1/13 | 0/13 | 1/5 | 0/5 |
+| plan | ver02_fin-r1_think_calc_s2 | 308 | 84/308 | 27.3 | 27.6 | 5/42 | 3/167 | 43/56 | 1/28 | 1/20 | 2/20 | 3/20 | 26/40 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 1/13 | 3/13 | 2/13 | 1/13 | 0/5 | 1/5 |
+| plan | ver02_fin-r1_think_s0 | 308 | 85/308 | 27.6 | 34.2 | 3/42 | 1/167 | 46/56 | 1/28 | 1/20 | 0/20 | 3/20 | 29/40 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 1/13 | 1/13 | 2/13 | 1/13 | 0/5 | 0/5 |
+| plan | ver02_fin-r1_think_s1 | 308 | 83/308 | 26.9 | 33.3 | 4/42 | 1/167 | 46/56 | 0/28 | 0/20 | 3/20 | 0/20 | 30/40 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 0/13 | 1/13 | 1/13 | 0/13 | 2/5 | 0/5 |
+| plan | ver02_fin-r1_think_s2 | 308 | 84/308 | 27.3 | 33.4 | 5/42 | 3/167 | 47/56 | 1/28 | 0/20 | 0/20 | 1/20 | 30/40 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 0/13 | 1/13 | 3/13 | 1/13 | 0/5 | 0/5 |
+| plan | ver02_fino1-8b_think_calc_s0 | 308 | 41/308 | 13.3 | 20.6 | 2/42 | 3/167 | 22/56 | 0/28 | 1/20 | 0/20 | 0/20 | 15/40 | 0/13 | 0/13 | 1/5 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 1/13 | 0/13 | 1/5 | 0/5 |
+| plan | ver02_fino1-8b_think_calc_s1 | 308 | 41/308 | 13.3 | 19.3 | 3/42 | 2/167 | 20/56 | 0/28 | 2/20 | 3/20 | 1/20 | 14/40 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 1/13 | 0/13 | 0/5 | 0/5 |
+| plan | ver02_fino1-8b_think_calc_s2 | 308 | 47/308 | 15.3 | 20.2 | 7/42 | 3/167 | 24/56 | 1/28 | 1/20 | 2/20 | 1/20 | 14/40 | 1/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 1/13 | 0/13 | 1/13 | 0/13 | 0/5 | 1/5 |
+| plan | ver02_fino1-8b_think_s0 | 308 | 47/308 | 15.3 | 21.0 | 4/42 | 2/167 | 28/56 | 0/28 | 1/20 | 1/20 | 0/20 | 13/40 | 1/13 | 0/13 | 0/5 | 2/13 | 0/13 | 0/5 | 0/13 | 0/13 | 1/13 | 0/13 | 0/5 | 0/5 |
+| plan | ver02_fino1-8b_think_s1 | 308 | 50/308 | 16.2 | 22.1 | 3/42 | 2/167 | 24/56 | 0/28 | 2/20 | 2/20 | 0/20 | 18/40 | 0/13 | 0/13 | 0/5 | 1/13 | 0/13 | 0/5 | 1/13 | 0/13 | 0/13 | 0/13 | 1/5 | 1/5 |
+| plan | ver02_fino1-8b_think_s2 | 308 | 42/308 | 13.6 | 22.1 | 4/42 | 3/167 | 21/56 | 0/28 | 1/20 | 1/20 | 0/20 | 14/40 | 1/13 | 0/13 | 0/5 | 1/13 | 0/13 | 0/5 | 0/13 | 0/13 | 2/13 | 0/13 | 1/5 | 0/5 |
+| plan | ver02_llama31-8b_calc_s0 | 308 | 51/308 | 16.6 | 21.7 | 4/42 | 2/167 | 31/56 | 0/28 | 0/20 | 0/20 | 0/20 | 19/40 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 1/13 | 0/13 | 0/5 | 0/5 |
+| plan | ver02_llama31-8b_s0 | 308 | 49/308 | 15.9 | 29.4 | 2/42 | 2/167 | 29/56 | 0/28 | 1/20 | 0/20 | 0/20 | 17/40 | 0/13 | 0/13 | 0/5 | 1/13 | 0/13 | 0/5 | 0/13 | 1/13 | 0/13 | 0/13 | 0/5 | 0/5 |
+| plan | ver02_qwen25-7b_calc_s0 | 308 | 88/308 | 28.6 | 29.3 | 1/42 | 2/167 | 49/56 | 0/28 | 1/20 | 1/20 | 2/20 | 31/40 | 1/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 0/13 | 2/13 | 0/13 | 0/13 | 1/5 | 0/5 |
+| plan | ver02_qwen25-7b_s0 | 308 | 91/308 | 29.5 | 30.8 | 4/42 | 2/167 | 51/56 | 0/28 | 0/20 | 3/20 | 1/20 | 29/40 | 0/13 | 0/13 | 0/5 | 0/13 | 1/13 | 0/5 | 3/13 | 1/13 | 2/13 | 0/13 | 0/5 | 0/5 |
+| plan | ver02_qwen3-14b_think_calc_s0 | 308 | 202/308 | 65.6 | 62.1 | 0/42 | 0/167 | 56/56 | 6/28 | 4/20 | 16/20 | 16/20 | 40/40 | 3/13 | 4/13 | 0/5 | 3/13 | 4/13 | 1/5 | 10/13 | 10/13 | 12/13 | 10/13 | 4/5 | 3/5 |
+| plan | ver02_qwen3-14b_think_calc_s1 | 308 | 196/308 | 63.6 | 61.5 | 0/42 | 0/167 | 56/56 | 4/28 | 4/20 | 16/20 | 12/20 | 40/40 | 4/13 | 3/13 | 1/5 | 4/13 | 1/13 | 1/5 | 9/13 | 12/13 | 11/13 | 8/13 | 5/5 | 5/5 |
+| plan | ver02_qwen3-14b_think_calc_s2 | 184 | 129/184 | 70.1 | 60.2 | 1/42 | 0/74 | 56/56 | 3/28 | 2/20 | 14/20 | 15/20 | 39/40 |  |  |  |  |  |  |  |  |  |  |  |  |
+| plan | ver02_qwen3-14b_think_s0 | 308 | 251/308 | 81.5 | 76.2 | 1/42 | 2/167 | 56/56 | 12/28 | 16/20 | 19/20 | 14/20 | 39/40 | 11/13 | 9/13 | 3/5 | 9/13 | 11/13 | 3/5 | 12/13 | 6/13 | 13/13 | 10/13 | 4/5 | 4/5 |
+| plan | ver02_qwen3-14b_think_s1 | 308 | 238/308 | 77.3 | 73.6 | 1/42 | 3/167 | 56/56 | 14/28 | 9/20 | 16/20 | 12/20 | 39/40 | 10/13 | 9/13 | 3/5 | 6/13 | 11/13 | 3/5 | 11/13 | 9/13 | 13/13 | 9/13 | 5/5 | 3/5 |
+| plan | ver02_qwen3-14b_think_s2 | 308 | 250/308 | 81.2 | 74.8 | 0/42 | 3/167 | 56/56 | 14/28 | 13/20 | 18/20 | 13/20 | 40/40 | 10/13 | 11/13 | 2/5 | 7/13 | 11/13 | 4/5 | 13/13 | 7/13 | 12/13 | 10/13 | 5/5 | 4/5 |
+| plan | ver02_qwen3-8b_think_calc_s0 | 288 | 212/288 | 73.6 | 66.4 | 0/42 | 1/152 | 56/56 | 11/28 | 6/20 | 14/20 | 18/20 | 40/40 | 6/13 | 5/13 |  | 4/13 | 5/13 |  | 12/13 | 13/13 | 10/13 | 12/13 |  |  |
+| plan | ver02_qwen3-8b_think_s0 | 308 | 220/308 | 71.4 | 66.8 | 0/42 | 2/167 | 56/56 | 8/28 | 6/20 | 15/20 | 16/20 | 40/40 | 7/13 | 5/13 | 1/5 | 5/13 | 8/13 | 0/5 | 10/13 | 13/13 | 9/13 | 12/13 | 4/5 | 5/5 |
+| plan | ver02_qwen3-8b_think_s1 | 308 | 227/308 | 73.7 | 66.8 | 0/42 | 4/167 | 56/56 | 7/28 | 8/20 | 15/20 | 19/20 | 40/40 | 8/13 | 9/13 | 2/5 | 5/13 | 9/13 | 2/5 | 7/13 | 12/13 | 10/13 | 9/13 | 5/5 | 4/5 |
+| plan | ver02_qwen3-8b_think_s2 | 308 | 225/308 | 73.1 | 67.8 | 0/42 | 3/167 | 56/56 | 8/28 | 9/20 | 11/20 | 15/20 | 40/40 | 7/13 | 5/13 | 5/5 | 8/13 | 5/13 | 1/5 | 13/13 | 11/13 | 12/13 | 11/13 | 4/5 | 4/5 |
+| plan_think | Qwen2.5-32B-Instruct | 184 | 111/184 | 60.3 | 52.9 | 0/42 | 1/74 | 53/56 | 2/28 | 1/20 | 4/20 | 15/20 | 36/40 |  |  |  |  |  |  |  |  |  |  |  |  |
+| plan_think | Qwen2.5-7B-Instruct | 184 | 84/184 | 45.7 | 36.1 | 3/42 | 1/74 | 50/56 | 0/28 | 0/20 | 2/20 | 0/20 | 32/40 |  |  |  |  |  |  |  |  |  |  |  |  |
+| plan_think | Qwen3-32B_think | 184 | 176/184 | 95.7 | 97.0 | 0/42 | 0/74 | 56/56 | 25/28 | 17/20 | 19/20 | 19/20 | 40/40 |  |  |  |  |  |  |  |  |  |  |  |  |
+| plan_think | ver02_dianjin-7b_think_calc_s0 | 308 | 103/308 | 33.4 | 50.2 | 3/42 | 2/167 | 54/56 | 1/28 | 0/20 | 2/20 | 3/20 | 31/40 | 1/13 | 0/13 | 1/5 | 0/13 | 1/13 | 0/5 | 0/13 | 3/13 | 1/13 | 3/13 | 1/5 | 1/5 |
+| plan_think | ver02_dianjin-7b_think_calc_s1 | 308 | 106/308 | 34.4 | 49.7 | 4/42 | 4/167 | 52/56 | 2/28 | 0/20 | 5/20 | 3/20 | 32/40 | 1/13 | 0/13 | 0/5 | 1/13 | 0/13 | 0/5 | 2/13 | 3/13 | 2/13 | 3/13 | 0/5 | 0/5 |
+| plan_think | ver02_dianjin-7b_think_calc_s2 | 308 | 109/308 | 35.4 | 50.9 | 4/42 | 2/167 | 52/56 | 1/28 | 0/20 | 2/20 | 8/20 | 34/40 | 0/13 | 0/13 | 1/5 | 0/13 | 1/13 | 0/5 | 4/13 | 3/13 | 1/13 | 1/13 | 1/5 | 0/5 |
+| plan_think | ver02_dianjin-7b_think_s0 | 308 | 103/308 | 33.4 | 48.9 | 4/42 | 0/167 | 55/56 | 0/28 | 1/20 | 1/20 | 3/20 | 32/40 | 2/13 | 0/13 | 0/5 | 2/13 | 1/13 | 0/5 | 2/13 | 1/13 | 0/13 | 2/13 | 0/5 | 1/5 |
+| plan_think | ver02_dianjin-7b_think_s1 | 308 | 103/308 | 33.4 | 50.2 | 4/42 | 4/167 | 52/56 | 0/28 | 0/20 | 0/20 | 6/20 | 33/40 | 2/13 | 0/13 | 0/5 | 0/13 | 1/13 | 0/5 | 1/13 | 2/13 | 2/13 | 1/13 | 1/5 | 2/5 |
+| plan_think | ver02_dianjin-7b_think_s2 | 308 | 113/308 | 36.7 | 51.6 | 4/42 | 1/167 | 53/56 | 0/28 | 1/20 | 2/20 | 8/20 | 34/40 | 1/13 | 1/13 | 0/5 | 1/13 | 1/13 | 1/5 | 0/13 | 4/13 | 1/13 | 3/13 | 0/5 | 2/5 |
+| plan_think | ver02_fin-o1-14b_think_calc_s0 | 308 | 98/308 | 31.8 | 38.5 | 2/42 | 3/167 | 50/56 | 0/28 | 0/20 | 2/20 | 3/20 | 35/40 | 0/13 | 0/13 | 0/5 | 1/13 | 0/13 | 0/5 | 1/13 | 3/13 | 2/13 | 1/13 | 0/5 | 0/5 |
+| plan_think | ver02_fin-o1-14b_think_calc_s1 | 308 | 92/308 | 29.9 | 35.3 | 4/42 | 2/167 | 48/56 | 0/28 | 1/20 | 2/20 | 0/20 | 34/40 | 1/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 3/13 | 0/13 | 1/13 | 2/13 | 0/5 | 0/5 |
+| plan_think | ver02_fin-o1-14b_think_calc_s2 | 308 | 91/308 | 29.5 | 36.6 | 4/42 | 2/167 | 47/56 | 0/28 | 1/20 | 4/20 | 0/20 | 34/40 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 2/13 | 1/13 | 1/13 | 0/13 | 1/5 | 0/5 |
+| plan_think | ver02_fin-o1-14b_think_s0 | 308 | 93/308 | 30.2 | 34.0 | 5/42 | 0/167 | 52/56 | 2/28 | 0/20 | 0/20 | 3/20 | 32/40 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 1/13 | 1/13 | 1/13 | 1/13 | 0/5 | 0/5 |
+| plan_think | ver02_fin-o1-14b_think_s1 | 308 | 95/308 | 30.8 | 32.7 | 2/42 | 1/167 | 50/56 | 1/28 | 1/20 | 3/20 | 1/20 | 33/40 | 1/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 2/13 | 0/13 | 1/13 | 1/13 | 1/5 | 0/5 |
+| plan_think | ver02_fin-o1-14b_think_s2 | 308 | 96/308 | 31.2 | 33.2 | 2/42 | 3/167 | 51/56 | 1/28 | 1/20 | 1/20 | 1/20 | 35/40 | 0/13 | 1/13 | 0/5 | 0/13 | 0/13 | 0/5 | 2/13 | 1/13 | 1/13 | 1/13 | 0/5 | 0/5 |
+| plan_think | ver02_fin-o1-8b_think_calc_s0 | 308 | 92/308 | 29.9 | 34.2 | 2/42 | 3/167 | 47/56 | 1/28 | 2/20 | 1/20 | 0/20 | 34/40 | 0/13 | 0/13 | 0/5 | 1/13 | 1/13 | 0/5 | 1/13 | 1/13 | 0/13 | 2/13 | 1/5 | 0/5 |
+| plan_think | ver02_fin-o1-8b_think_calc_s1 | 308 | 79/308 | 25.6 | 33.9 | 4/42 | 1/167 | 46/56 | 1/28 | 1/20 | 0/20 | 1/20 | 28/40 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/13 | 0/13 | 1/5 | 1/5 |
+| plan_think | ver02_fin-o1-8b_think_calc_s2 | 308 | 95/308 | 30.8 | 36.8 | 2/42 | 4/167 | 46/56 | 1/28 | 2/20 | 3/20 | 2/20 | 35/40 | 1/13 | 0/13 | 0/5 | 0/13 | 1/13 | 0/5 | 1/13 | 1/13 | 1/13 | 0/13 | 1/5 | 0/5 |
+| plan_think | ver02_fin-o1-8b_think_s0 | 308 | 81/308 | 26.3 | 34.6 | 5/42 | 3/167 | 43/56 | 1/28 | 3/20 | 1/20 | 1/20 | 29/40 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 1/13 | 0/13 | 2/13 | 0/13 | 0/5 | 0/5 |
+| plan_think | ver02_fin-o1-8b_think_s1 | 308 | 89/308 | 28.9 | 35.0 | 2/42 | 3/167 | 46/56 | 0/28 | 2/20 | 2/20 | 0/20 | 30/40 | 0/13 | 2/13 | 0/5 | 1/13 | 1/13 | 0/5 | 1/13 | 1/13 | 1/13 | 2/13 | 0/5 | 0/5 |
+| plan_think | ver02_fin-o1-8b_think_s2 | 308 | 86/308 | 27.9 | 33.7 | 2/42 | 4/167 | 47/56 | 1/28 | 1/20 | 1/20 | 0/20 | 33/40 | 0/13 | 0/13 | 0/5 | 0/13 | 2/13 | 0/5 | 0/13 | 0/13 | 1/13 | 0/13 | 0/5 | 0/5 |
+| plan_think | ver02_fin-r1_think_calc_s0 | 308 | 77/308 | 25.0 | 33.9 | 4/42 | 2/167 | 40/56 | 1/28 | 1/20 | 1/20 | 3/20 | 28/40 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 1/13 | 0/13 | 1/13 | 0/13 | 0/5 | 1/5 |
+| plan_think | ver02_fin-r1_think_calc_s1 | 308 | 72/308 | 23.4 | 32.4 | 2/42 | 2/167 | 39/56 | 0/28 | 1/20 | 0/20 | 0/20 | 29/40 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 0/13 | 1/13 | 1/13 | 0/13 | 1/5 | 0/5 |
+| plan_think | ver02_fin-r1_think_calc_s2 | 308 | 84/308 | 27.3 | 34.6 | 5/42 | 3/167 | 43/56 | 1/28 | 1/20 | 2/20 | 3/20 | 26/40 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 1/13 | 3/13 | 2/13 | 1/13 | 0/5 | 1/5 |
+| plan_think | ver02_fin-r1_think_s0 | 308 | 85/308 | 27.6 | 37.9 | 3/42 | 1/167 | 46/56 | 1/28 | 1/20 | 0/20 | 3/20 | 29/40 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 1/13 | 1/13 | 2/13 | 1/13 | 0/5 | 0/5 |
+| plan_think | ver02_fin-r1_think_s1 | 308 | 83/308 | 26.9 | 38.0 | 4/42 | 1/167 | 46/56 | 0/28 | 0/20 | 3/20 | 0/20 | 30/40 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 0/13 | 1/13 | 1/13 | 0/13 | 2/5 | 0/5 |
+| plan_think | ver02_fin-r1_think_s2 | 308 | 84/308 | 27.3 | 36.4 | 5/42 | 3/167 | 47/56 | 1/28 | 0/20 | 0/20 | 1/20 | 30/40 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 0/13 | 1/13 | 3/13 | 1/13 | 0/5 | 0/5 |
+| plan_think | ver02_fino1-8b_think_calc_s0 | 308 | 41/308 | 13.3 | 20.6 | 2/42 | 3/167 | 22/56 | 0/28 | 1/20 | 0/20 | 0/20 | 15/40 | 0/13 | 0/13 | 1/5 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 1/13 | 0/13 | 1/5 | 0/5 |
+| plan_think | ver02_fino1-8b_think_calc_s1 | 308 | 41/308 | 13.3 | 19.4 | 3/42 | 2/167 | 20/56 | 0/28 | 2/20 | 3/20 | 1/20 | 14/40 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 1/13 | 0/13 | 0/5 | 0/5 |
+| plan_think | ver02_fino1-8b_think_calc_s2 | 308 | 47/308 | 15.3 | 20.2 | 7/42 | 3/167 | 24/56 | 1/28 | 1/20 | 2/20 | 1/20 | 14/40 | 1/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 1/13 | 0/13 | 1/13 | 0/13 | 0/5 | 1/5 |
+| plan_think | ver02_fino1-8b_think_s0 | 308 | 47/308 | 15.3 | 21.0 | 4/42 | 2/167 | 28/56 | 0/28 | 1/20 | 1/20 | 0/20 | 13/40 | 1/13 | 0/13 | 0/5 | 2/13 | 0/13 | 0/5 | 0/13 | 0/13 | 1/13 | 0/13 | 0/5 | 0/5 |
+| plan_think | ver02_fino1-8b_think_s1 | 308 | 50/308 | 16.2 | 22.1 | 3/42 | 2/167 | 24/56 | 0/28 | 2/20 | 2/20 | 0/20 | 18/40 | 0/13 | 0/13 | 0/5 | 1/13 | 0/13 | 0/5 | 1/13 | 0/13 | 0/13 | 0/13 | 1/5 | 1/5 |
+| plan_think | ver02_fino1-8b_think_s2 | 308 | 42/308 | 13.6 | 22.1 | 4/42 | 3/167 | 21/56 | 0/28 | 1/20 | 1/20 | 0/20 | 14/40 | 1/13 | 0/13 | 0/5 | 1/13 | 0/13 | 0/5 | 0/13 | 0/13 | 2/13 | 0/13 | 1/5 | 0/5 |
+| plan_think | ver02_llama31-8b_calc_s0 | 308 | 51/308 | 16.6 | 21.7 | 4/42 | 2/167 | 31/56 | 0/28 | 0/20 | 0/20 | 0/20 | 19/40 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 1/13 | 0/13 | 0/5 | 0/5 |
+| plan_think | ver02_llama31-8b_s0 | 308 | 49/308 | 15.9 | 29.4 | 2/42 | 2/167 | 29/56 | 0/28 | 1/20 | 0/20 | 0/20 | 17/40 | 0/13 | 0/13 | 0/5 | 1/13 | 0/13 | 0/5 | 0/13 | 1/13 | 0/13 | 0/13 | 0/5 | 0/5 |
+| plan_think | ver02_qwen25-7b_calc_s0 | 308 | 88/308 | 28.6 | 29.3 | 1/42 | 2/167 | 49/56 | 0/28 | 1/20 | 1/20 | 2/20 | 31/40 | 1/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 0/13 | 2/13 | 0/13 | 0/13 | 1/5 | 0/5 |
+| plan_think | ver02_qwen25-7b_s0 | 308 | 91/308 | 29.5 | 30.8 | 4/42 | 2/167 | 51/56 | 0/28 | 0/20 | 3/20 | 1/20 | 29/40 | 0/13 | 0/13 | 0/5 | 0/13 | 1/13 | 0/5 | 3/13 | 1/13 | 2/13 | 0/13 | 0/5 | 0/5 |
+| plan_think | ver02_qwen3-14b_think_calc_s0 | 308 | 202/308 | 65.6 | 89.4 | 0/42 | 0/167 | 56/56 | 6/28 | 4/20 | 16/20 | 16/20 | 40/40 | 3/13 | 4/13 | 0/5 | 3/13 | 4/13 | 1/5 | 10/13 | 10/13 | 12/13 | 10/13 | 4/5 | 3/5 |
+| plan_think | ver02_qwen3-14b_think_calc_s1 | 308 | 196/308 | 63.6 | 86.5 | 0/42 | 0/167 | 56/56 | 4/28 | 4/20 | 16/20 | 12/20 | 40/40 | 4/13 | 3/13 | 1/5 | 4/13 | 1/13 | 1/5 | 9/13 | 12/13 | 11/13 | 8/13 | 5/5 | 5/5 |
+| plan_think | ver02_qwen3-14b_think_calc_s2 | 184 | 129/184 | 70.1 | 86.4 | 1/42 | 0/74 | 56/56 | 3/28 | 2/20 | 14/20 | 15/20 | 39/40 |  |  |  |  |  |  |  |  |  |  |  |  |
+| plan_think | ver02_qwen3-14b_think_s0 | 308 | 251/308 | 81.5 | 93.2 | 1/42 | 2/167 | 56/56 | 12/28 | 16/20 | 19/20 | 14/20 | 39/40 | 11/13 | 9/13 | 3/5 | 9/13 | 11/13 | 3/5 | 12/13 | 6/13 | 13/13 | 10/13 | 4/5 | 4/5 |
+| plan_think | ver02_qwen3-14b_think_s1 | 308 | 238/308 | 77.3 | 90.2 | 1/42 | 3/167 | 56/56 | 14/28 | 9/20 | 16/20 | 12/20 | 39/40 | 10/13 | 9/13 | 3/5 | 6/13 | 11/13 | 3/5 | 11/13 | 9/13 | 13/13 | 9/13 | 5/5 | 3/5 |
+| plan_think | ver02_qwen3-14b_think_s2 | 308 | 250/308 | 81.2 | 92.3 | 0/42 | 3/167 | 56/56 | 14/28 | 13/20 | 18/20 | 13/20 | 40/40 | 10/13 | 11/13 | 2/5 | 7/13 | 11/13 | 4/5 | 13/13 | 7/13 | 12/13 | 10/13 | 5/5 | 4/5 |
+| plan_think | ver02_qwen3-8b_think_calc_s0 | 288 | 212/288 | 73.6 | 86.3 | 0/42 | 1/152 | 56/56 | 11/28 | 6/20 | 14/20 | 18/20 | 40/40 | 6/13 | 5/13 |  | 4/13 | 5/13 |  | 12/13 | 13/13 | 10/13 | 12/13 |  |  |
+| plan_think | ver02_qwen3-8b_think_s0 | 308 | 220/308 | 71.4 | 85.2 | 0/42 | 2/167 | 56/56 | 8/28 | 6/20 | 15/20 | 16/20 | 40/40 | 7/13 | 5/13 | 1/5 | 5/13 | 8/13 | 0/5 | 10/13 | 13/13 | 9/13 | 12/13 | 4/5 | 5/5 |
+| plan_think | ver02_qwen3-8b_think_s1 | 308 | 227/308 | 73.7 | 87.1 | 0/42 | 4/167 | 56/56 | 7/28 | 8/20 | 15/20 | 19/20 | 40/40 | 8/13 | 9/13 | 2/5 | 5/13 | 9/13 | 2/5 | 7/13 | 12/13 | 10/13 | 9/13 | 5/5 | 4/5 |
+| plan_think | ver02_qwen3-8b_think_s2 | 308 | 225/308 | 73.1 | 87.0 | 0/42 | 3/167 | 56/56 | 8/28 | 9/20 | 11/20 | 15/20 | 40/40 | 7/13 | 5/13 | 5/5 | 8/13 | 5/13 | 1/5 | 13/13 | 11/13 | 12/13 | 11/13 | 4/5 | 4/5 |
+| qa | Qwen2.5-32B-Instruct | 184 | 108/184 | 58.7 | 45.4 | 0/42 | 1/74 | 53/56 | 2/28 | 1/20 | 4/20 | 12/20 | 36/40 |  |  |  |  |  |  |  |  |  |  |  |  |
+| qa | Qwen2.5-7B-Instruct | 184 | 74/184 | 40.2 | 28.3 | 3/42 | 1/74 | 43/56 | 0/28 | 0/20 | 2/20 | 0/20 | 29/40 |  |  |  |  |  |  |  |  |  |  |  |  |
+| qa | Qwen3-32B_think | 184 | 168/184 | 91.3 | 83.7 | 0/42 | 0/74 | 53/56 | 23/28 | 14/20 | 19/20 | 19/20 | 40/40 |  |  |  |  |  |  |  |  |  |  |  |  |
+| qa | ver02_dianjin-7b_think_calc_s0 | 308 | 95/308 | 30.8 | 20.8 | 3/42 | 2/167 | 50/56 | 1/28 | 0/20 | 2/20 | 3/20 | 31/40 | 1/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 0/13 | 1/13 | 1/13 | 3/13 | 1/5 | 1/5 |
+| qa | ver02_dianjin-7b_think_calc_s1 | 308 | 99/308 | 32.1 | 20.8 | 3/42 | 2/167 | 48/56 | 1/28 | 0/20 | 5/20 | 2/20 | 32/40 | 0/13 | 0/13 | 0/5 | 1/13 | 0/13 | 0/5 | 2/13 | 3/13 | 2/13 | 3/13 | 0/5 | 0/5 |
+| qa | ver02_dianjin-7b_think_calc_s2 | 308 | 99/308 | 32.1 | 22.0 | 4/42 | 1/167 | 44/56 | 1/28 | 0/20 | 2/20 | 7/20 | 34/40 | 0/13 | 0/13 | 1/5 | 0/13 | 0/13 | 0/5 | 4/13 | 3/13 | 1/13 | 1/13 | 1/5 | 0/5 |
+| qa | ver02_dianjin-7b_think_s0 | 308 | 90/308 | 29.2 | 19.7 | 5/42 | 1/167 | 49/56 | 0/28 | 0/20 | 1/20 | 2/20 | 29/40 | 1/13 | 0/13 | 0/5 | 1/13 | 1/13 | 0/5 | 2/13 | 1/13 | 0/13 | 2/13 | 0/5 | 1/5 |
+| qa | ver02_dianjin-7b_think_s1 | 308 | 90/308 | 29.2 | 21.2 | 4/42 | 3/167 | 48/56 | 0/28 | 0/20 | 0/20 | 3/20 | 32/40 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 1/13 | 2/13 | 2/13 | 0/13 | 1/5 | 1/5 |
+| qa | ver02_dianjin-7b_think_s2 | 308 | 102/308 | 33.1 | 22.2 | 4/42 | 4/167 | 51/56 | 0/28 | 0/20 | 2/20 | 7/20 | 33/40 | 1/13 | 1/13 | 0/5 | 1/13 | 0/13 | 0/5 | 0/13 | 2/13 | 1/13 | 2/13 | 0/5 | 1/5 |
+| qa | ver02_fin-o1-14b_think_calc_s0 | 308 | 83/308 | 26.9 | 30.6 | 3/42 | 2/167 | 39/56 | 0/28 | 0/20 | 2/20 | 3/20 | 33/40 | 0/13 | 0/13 | 0/5 | 1/13 | 0/13 | 0/5 | 1/13 | 1/13 | 2/13 | 1/13 | 0/5 | 0/5 |
+| qa | ver02_fin-o1-14b_think_calc_s1 | 308 | 75/308 | 24.4 | 27.7 | 5/42 | 0/167 | 35/56 | 0/28 | 0/20 | 2/20 | 0/20 | 31/40 | 1/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 3/13 | 0/13 | 1/13 | 2/13 | 0/5 | 0/5 |
+| qa | ver02_fin-o1-14b_think_calc_s2 | 308 | 73/308 | 23.7 | 28.1 | 5/42 | 2/167 | 34/56 | 0/28 | 0/20 | 4/20 | 0/20 | 30/40 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 2/13 | 1/13 | 1/13 | 0/13 | 1/5 | 0/5 |
+| qa | ver02_fin-o1-14b_think_s0 | 308 | 73/308 | 23.7 | 25.6 | 6/42 | 0/167 | 38/56 | 1/28 | 0/20 | 0/20 | 3/20 | 28/40 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 1/13 | 1/13 | 1/13 | 0/13 | 0/5 | 0/5 |
+| qa | ver02_fin-o1-14b_think_s1 | 308 | 77/308 | 25.0 | 24.3 | 3/42 | 0/167 | 37/56 | 1/28 | 0/20 | 3/20 | 0/20 | 31/40 | 1/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 2/13 | 0/13 | 1/13 | 0/13 | 1/5 | 0/5 |
+| qa | ver02_fin-o1-14b_think_s2 | 308 | 83/308 | 26.9 | 24.8 | 4/42 | 3/167 | 42/56 | 1/28 | 0/20 | 1/20 | 0/20 | 33/40 | 0/13 | 1/13 | 0/5 | 0/13 | 0/13 | 0/5 | 2/13 | 1/13 | 1/13 | 1/13 | 0/5 | 0/5 |
+| qa | ver02_fin-o1-8b_think_calc_s0 | 308 | 71/308 | 23.1 | 26.2 | 4/42 | 0/167 | 33/56 | 1/28 | 2/20 | 1/20 | 0/20 | 29/40 | 0/13 | 0/13 | 0/5 | 0/13 | 1/13 | 0/5 | 1/13 | 1/13 | 0/13 | 1/13 | 1/5 | 0/5 |
+| qa | ver02_fin-o1-8b_think_calc_s1 | 308 | 62/308 | 20.1 | 25.6 | 5/42 | 1/167 | 33/56 | 1/28 | 0/20 | 0/20 | 1/20 | 26/40 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/13 | 0/13 | 1/5 | 0/5 |
+| qa | ver02_fin-o1-8b_think_calc_s2 | 308 | 75/308 | 24.4 | 27.9 | 4/42 | 0/167 | 34/56 | 0/28 | 1/20 | 3/20 | 2/20 | 31/40 | 0/13 | 0/13 | 0/5 | 0/13 | 1/13 | 0/5 | 1/13 | 0/13 | 1/13 | 0/13 | 1/5 | 0/5 |
+| qa | ver02_fin-o1-8b_think_s0 | 308 | 63/308 | 20.5 | 26.6 | 7/42 | 1/167 | 30/56 | 0/28 | 2/20 | 1/20 | 1/20 | 26/40 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 1/13 | 0/13 | 2/13 | 0/13 | 0/5 | 0/5 |
+| qa | ver02_fin-o1-8b_think_s1 | 308 | 67/308 | 21.8 | 26.1 | 3/42 | 4/167 | 33/56 | 0/28 | 0/20 | 2/20 | 0/20 | 26/40 | 0/13 | 1/13 | 0/5 | 0/13 | 1/13 | 0/5 | 1/13 | 1/13 | 1/13 | 1/13 | 0/5 | 0/5 |
+| qa | ver02_fin-o1-8b_think_s2 | 308 | 68/308 | 22.1 | 25.4 | 4/42 | 3/167 | 35/56 | 1/28 | 0/20 | 1/20 | 0/20 | 28/40 | 0/13 | 0/13 | 0/5 | 0/13 | 2/13 | 0/5 | 0/13 | 0/13 | 1/13 | 0/13 | 0/5 | 0/5 |
+| qa | ver02_fin-r1_think_calc_s0 | 308 | 58/308 | 18.8 | 18.8 | 5/42 | 1/167 | 28/56 | 1/28 | 1/20 | 1/20 | 2/20 | 23/40 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 1/13 | 0/13 | 1/13 | 0/13 | 0/5 | 0/5 |
+| qa | ver02_fin-r1_think_calc_s1 | 308 | 52/308 | 16.9 | 18.7 | 4/42 | 0/167 | 25/56 | 0/28 | 1/20 | 0/20 | 0/20 | 23/40 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 0/13 | 1/13 | 1/13 | 0/13 | 1/5 | 0/5 |
+| qa | ver02_fin-r1_think_calc_s2 | 308 | 65/308 | 21.1 | 20.3 | 3/42 | 6/167 | 31/56 | 0/28 | 0/20 | 2/20 | 2/20 | 24/40 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 1/13 | 3/13 | 2/13 | 0/13 | 0/5 | 0/5 |
+| qa | ver02_fin-r1_think_s0 | 308 | 60/308 | 19.5 | 24.1 | 5/42 | 1/167 | 32/56 | 1/28 | 0/20 | 0/20 | 1/20 | 23/40 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 1/13 | 0/13 | 2/13 | 0/13 | 0/5 | 0/5 |
+| qa | ver02_fin-r1_think_s1 | 308 | 66/308 | 21.4 | 23.9 | 4/42 | 2/167 | 32/56 | 0/28 | 0/20 | 3/20 | 0/20 | 28/40 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 1/13 | 0/13 | 2/5 | 0/5 |
+| qa | ver02_fin-r1_think_s2 | 308 | 70/308 | 22.7 | 24.7 | 5/42 | 3/167 | 37/56 | 1/28 | 0/20 | 0/20 | 1/20 | 27/40 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 0/13 | 1/13 | 3/13 | 0/13 | 0/5 | 0/5 |
+| qa | ver02_fino1-8b_think_calc_s0 | 308 | 27/308 | 8.8 | 14.2 | 2/42 | 2/167 | 12/56 | 0/28 | 0/20 | 0/20 | 0/20 | 12/40 | 0/13 | 0/13 | 1/5 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 1/13 | 0/13 | 1/5 | 0/5 |
+| qa | ver02_fino1-8b_think_calc_s1 | 308 | 29/308 | 9.4 | 13.8 | 3/42 | 1/167 | 13/56 | 0/28 | 0/20 | 3/20 | 1/20 | 11/40 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 1/13 | 0/13 | 0/5 | 0/5 |
+| qa | ver02_fino1-8b_think_calc_s2 | 308 | 36/308 | 11.7 | 14.1 | 7/42 | 2/167 | 17/56 | 1/28 | 0/20 | 2/20 | 0/20 | 12/40 | 1/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 1/13 | 0/13 | 1/13 | 0/13 | 0/5 | 1/5 |
+| qa | ver02_fino1-8b_think_s0 | 308 | 27/308 | 8.8 | 13.9 | 4/42 | 2/167 | 16/56 | 0/28 | 0/20 | 1/20 | 0/20 | 9/40 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 1/13 | 0/13 | 0/5 | 0/5 |
+| qa | ver02_fino1-8b_think_s1 | 308 | 36/308 | 11.7 | 15.8 | 3/42 | 1/167 | 18/56 | 0/28 | 1/20 | 2/20 | 0/20 | 13/40 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 1/13 | 0/13 | 0/13 | 0/13 | 1/5 | 0/5 |
+| qa | ver02_fino1-8b_think_s2 | 308 | 29/308 | 9.4 | 16.0 | 4/42 | 2/167 | 14/56 | 0/28 | 0/20 | 1/20 | 0/20 | 10/40 | 0/13 | 0/13 | 0/5 | 1/13 | 0/13 | 0/5 | 0/13 | 0/13 | 2/13 | 0/13 | 1/5 | 0/5 |
+| qa | ver02_llama31-8b_calc_s0 | 308 | 38/308 | 12.3 | 15.5 | 5/42 | 1/167 | 20/56 | 0/28 | 0/20 | 0/20 | 0/20 | 17/40 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 1/13 | 0/13 | 0/5 | 0/5 |
+| qa | ver02_llama31-8b_s0 | 308 | 30/308 | 9.7 | 20.2 | 2/42 | 1/167 | 19/56 | 0/28 | 0/20 | 0/20 | 0/20 | 10/40 | 0/13 | 0/13 | 0/5 | 1/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/13 | 0/13 | 0/5 | 0/5 |
+| qa | ver02_qwen25-7b_calc_s0 | 308 | 81/308 | 26.3 | 23.6 | 1/42 | 4/167 | 45/56 | 0/28 | 0/20 | 1/20 | 1/20 | 31/40 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 0/13 | 2/13 | 0/13 | 0/13 | 1/5 | 0/5 |
+| qa | ver02_qwen25-7b_s0 | 308 | 79/308 | 25.6 | 23.2 | 4/42 | 0/167 | 44/56 | 0/28 | 0/20 | 3/20 | 0/20 | 26/40 | 0/13 | 0/13 | 0/5 | 0/13 | 0/13 | 0/5 | 3/13 | 1/13 | 2/13 | 0/13 | 0/5 | 0/5 |
+| qa | ver02_qwen3-14b_think_calc_s0 | 308 | 194/308 | 63.0 | 60.3 | 0/42 | 1/167 | 50/56 | 6/28 | 3/20 | 16/20 | 16/20 | 40/40 | 3/13 | 4/13 | 0/5 | 3/13 | 3/13 | 1/5 | 10/13 | 10/13 | 12/13 | 10/13 | 4/5 | 3/5 |
+| qa | ver02_qwen3-14b_think_calc_s1 | 308 | 187/308 | 60.7 | 59.7 | 0/42 | 0/167 | 51/56 | 2/28 | 4/20 | 16/20 | 12/20 | 40/40 | 3/13 | 3/13 | 1/5 | 4/13 | 0/13 | 1/5 | 9/13 | 12/13 | 11/13 | 8/13 | 5/5 | 5/5 |
+| qa | ver02_qwen3-14b_think_calc_s2 | 184 | 122/184 | 66.3 | 57.8 | 1/42 | 0/74 | 51/56 | 2/28 | 1/20 | 14/20 | 15/20 | 39/40 |  |  |  |  |  |  |  |  |  |  |  |  |
+| qa | ver02_qwen3-14b_think_s0 | 308 | 238/308 | 77.3 | 73.8 | 1/42 | 7/167 | 56/56 | 8/28 | 13/20 | 19/20 | 13/20 | 39/40 | 11/13 | 7/13 | 3/5 | 8/13 | 9/13 | 3/5 | 12/13 | 6/13 | 13/13 | 10/13 | 4/5 | 4/5 |
+| qa | ver02_qwen3-14b_think_s1 | 308 | 228/308 | 74.0 | 71.3 | 0/42 | 3/167 | 54/56 | 10/28 | 8/20 | 16/20 | 12/20 | 39/40 | 10/13 | 8/13 | 3/5 | 5/13 | 11/13 | 3/5 | 11/13 | 8/13 | 13/13 | 9/13 | 5/5 | 3/5 |
+| qa | ver02_qwen3-14b_think_s2 | 308 | 233/308 | 75.6 | 71.6 | 0/42 | 5/167 | 54/56 | 10/28 | 11/20 | 18/20 | 12/20 | 40/40 | 8/13 | 11/13 | 2/5 | 6/13 | 9/13 | 4/5 | 13/13 | 6/13 | 12/13 | 9/13 | 5/5 | 3/5 |
+| qa | ver02_qwen3-8b_think_calc_s0 | 288 | 198/288 | 68.8 | 63.5 | 0/42 | 2/152 | 50/56 | 7/28 | 6/20 | 14/20 | 17/20 | 40/40 | 4/13 | 5/13 |  | 3/13 | 5/13 |  | 12/13 | 13/13 | 10/13 | 12/13 |  |  |
+| qa | ver02_qwen3-8b_think_s0 | 308 | 201/308 | 65.3 | 63.1 | 0/42 | 1/167 | 50/56 | 4/28 | 4/20 | 15/20 | 16/20 | 40/40 | 6/13 | 5/13 | 0/5 | 3/13 | 6/13 | 0/5 | 10/13 | 12/13 | 9/13 | 12/13 | 4/5 | 5/5 |
+| qa | ver02_qwen3-8b_think_s1 | 308 | 206/308 | 66.9 | 62.3 | 0/42 | 3/167 | 49/56 | 4/28 | 6/20 | 15/20 | 15/20 | 40/40 | 7/13 | 8/13 | 1/5 | 5/13 | 9/13 | 2/5 | 7/13 | 11/13 | 10/13 | 9/13 | 5/5 | 3/5 |
+| qa | ver02_qwen3-8b_think_s2 | 308 | 211/308 | 68.5 | 64.4 | 0/42 | 3/167 | 53/56 | 5/28 | 6/20 | 11/20 | 15/20 | 40/40 | 6/13 | 5/13 | 5/5 | 7/13 | 3/13 | 1/5 | 13/13 | 11/13 | 12/13 | 10/13 | 4/5 | 4/5 |
+| plan | ver02_dianjin-7b_think (mean of 3 seeds) | 308 |  | 34.5 +/- 1.9 | 25.2 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| plan | ver02_dianjin-7b_think_calc (mean of 3 seeds) | 308 |  | 34.4 +/- 1.0 | 24.9 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| plan | ver02_fin-o1-14b_think (mean of 3 seeds) | 308 |  | 30.7 +/- 0.5 | 33.3 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| plan | ver02_fin-o1-14b_think_calc (mean of 3 seeds) | 308 |  | 30.4 +/- 1.2 | 36.8 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| plan | ver02_fin-o1-8b_think (mean of 3 seeds) | 308 |  | 27.7 +/- 1.3 | 34.4 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| plan | ver02_fin-o1-8b_think_calc (mean of 3 seeds) | 308 |  | 28.8 +/- 2.8 | 35.0 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| plan | ver02_fin-r1_think (mean of 3 seeds) | 308 |  | 27.3 +/- 0.4 | 33.6 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| plan | ver02_fin-r1_think_calc (mean of 3 seeds) | 308 |  | 25.2 +/- 2.0 | 26.8 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| plan | ver02_fino1-8b_think (mean of 3 seeds) | 308 |  | 15.0 +/- 1.3 | 21.7 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| plan | ver02_fino1-8b_think_calc (mean of 3 seeds) | 308 |  | 14.0 +/- 1.2 | 20.0 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| plan | ver02_qwen3-14b_think (mean of 3 seeds) | 308 |  | 80.0 +/- 2.3 | 74.9 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| plan | ver02_qwen3-14b_think_calc (mean of 3 seeds) | 308 |  | 66.4 +/- 3.3 | 61.3 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| plan | ver02_qwen3-8b_think (mean of 3 seeds) | 308 |  | 72.7 +/- 1.2 | 67.1 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| plan_think | ver02_dianjin-7b_think (mean of 3 seeds) | 308 |  | 34.5 +/- 1.9 | 50.2 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| plan_think | ver02_dianjin-7b_think_calc (mean of 3 seeds) | 308 |  | 34.4 +/- 1.0 | 50.3 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| plan_think | ver02_fin-o1-14b_think (mean of 3 seeds) | 308 |  | 30.7 +/- 0.5 | 33.3 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| plan_think | ver02_fin-o1-14b_think_calc (mean of 3 seeds) | 308 |  | 30.4 +/- 1.2 | 36.8 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| plan_think | ver02_fin-o1-8b_think (mean of 3 seeds) | 308 |  | 27.7 +/- 1.3 | 34.4 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| plan_think | ver02_fin-o1-8b_think_calc (mean of 3 seeds) | 308 |  | 28.8 +/- 2.8 | 35.0 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| plan_think | ver02_fin-r1_think (mean of 3 seeds) | 308 |  | 27.3 +/- 0.4 | 37.4 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| plan_think | ver02_fin-r1_think_calc (mean of 3 seeds) | 308 |  | 25.2 +/- 2.0 | 33.6 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| plan_think | ver02_fino1-8b_think (mean of 3 seeds) | 308 |  | 15.0 +/- 1.3 | 21.7 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| plan_think | ver02_fino1-8b_think_calc (mean of 3 seeds) | 308 |  | 14.0 +/- 1.2 | 20.1 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| plan_think | ver02_qwen3-14b_think (mean of 3 seeds) | 308 |  | 80.0 +/- 2.3 | 91.9 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| plan_think | ver02_qwen3-14b_think_calc (mean of 3 seeds) | 308 |  | 66.4 +/- 3.3 | 87.4 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| plan_think | ver02_qwen3-8b_think (mean of 3 seeds) | 308 |  | 72.7 +/- 1.2 | 86.4 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| qa | ver02_dianjin-7b_think (mean of 3 seeds) | 308 |  | 30.5 +/- 2.3 | 21.0 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| qa | ver02_dianjin-7b_think_calc (mean of 3 seeds) | 308 |  | 31.7 +/- 0.8 | 21.2 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| qa | ver02_fin-o1-14b_think (mean of 3 seeds) | 308 |  | 25.2 +/- 1.6 | 24.9 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| qa | ver02_fin-o1-14b_think_calc (mean of 3 seeds) | 308 |  | 25.0 +/- 1.7 | 28.8 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| qa | ver02_fin-o1-8b_think (mean of 3 seeds) | 308 |  | 21.5 +/- 0.9 | 26.0 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| qa | ver02_fin-o1-8b_think_calc (mean of 3 seeds) | 308 |  | 22.5 +/- 2.2 | 26.6 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| qa | ver02_fin-r1_think (mean of 3 seeds) | 308 |  | 21.2 +/- 1.6 | 24.2 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| qa | ver02_fin-r1_think_calc (mean of 3 seeds) | 308 |  | 18.9 +/- 2.1 | 19.3 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| qa | ver02_fino1-8b_think (mean of 3 seeds) | 308 |  | 10.0 +/- 1.5 | 15.2 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| qa | ver02_fino1-8b_think_calc (mean of 3 seeds) | 308 |  | 10.0 +/- 1.5 | 14.0 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| qa | ver02_qwen3-14b_think (mean of 3 seeds) | 308 |  | 75.6 +/- 1.7 | 72.2 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| qa | ver02_qwen3-14b_think_calc (mean of 3 seeds) | 308 |  | 63.3 +/- 2.8 | 59.3 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| qa | ver02_qwen3-8b_think (mean of 3 seeds) | 308 |  | 66.9 +/- 1.6 | 63.3 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+combined table: $REPO_ROOT/results/ver05_regrade/combined_20261015-1501/combined.md  Thu Oct 15 15:07:17 EDT 2026

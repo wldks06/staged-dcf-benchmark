@@ -1,0 +1,522 @@
+[env_ver02] 2026-10-15 00:55:06 host=g23.quartz.uits.iu.edu job=12259599 partition=v100
+[env_ver02] GPUs: Tesla V100-PCIE-32GB, 32768 MiB;Tesla V100-PCIE-32GB, 32768 MiB
+[env_ver02] env=$MODEL_STORE/conda-env-v100 python=$MODEL_STORE/conda-env-v100/bin/python dtype=float16 ngpu=2
+vllm 0.10.1.1 | torch 2.7.1+cu126 | cuda True
+INFO 10-15 01:00:02 [__init__.py:241] Automatically detected platform cuda.
+compatibility patches applied: ['PreTrainedTokenizerBase.all_special_tokens_extended', 'vllm get_config -> RoPE fields restored']
+INFO 10-15 01:00:22 [utils.py:326] non-default args: {'model': 'Qwen/Qwen3-8B', 'dtype': 'float16', 'seed': 0, 'max_model_len': 32768, 'tensor_parallel_size': 2, 'enable_prefix_caching': False, 'disable_log_stats': True, 'disable_custom_all_reduce': True, 'enable_chunked_prefill': False}
+[compat] Qwen3Config: restored rope_theta=1000000, rope_scaling=None
+INFO 10-15 01:01:10 [__init__.py:711] Resolved architecture: Qwen3ForCausalLM
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+WARNING 10-15 01:01:10 [__init__.py:2819] Casting torch.bfloat16 to torch.float16.
+INFO 10-15 01:01:10 [__init__.py:1750] Using max model len 32768
+WARNING 10-15 01:01:14 [arg_utils.py:1770] Compute Capability < 8.0 is not supported by the V1 Engine. Falling back to V0. 
+[compat] Qwen3Config: restored rope_theta=1000000, rope_scaling=None
+INFO 10-15 01:01:22 [llm_engine.py:222] Initializing a V0 LLM engine (v0.10.1.1) with config: model='Qwen/Qwen3-8B', speculative_config=None, tokenizer='Qwen/Qwen3-8B', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config={}, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float16, max_seq_len=32768, download_dir=None, load_format=auto, tensor_parallel_size=2, pipeline_parallel_size=1, disable_custom_all_reduce=True, quantization=None, enforce_eager=False, kv_cache_dtype=auto, device_config=cuda, decoding_config=DecodingConfig(backend='auto', disable_fallback=False, disable_any_whitespace=False, disable_additional_properties=False, reasoning_backend=''), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None), seed=0, served_model_name=Qwen/Qwen3-8B, enable_prefix_caching=False, chunked_prefill_enabled=False, use_async_output_proc=True, pooler_config=None, compilation_config={"level":0,"debug_dump_path":"","cache_dir":"","backend":"","custom_ops":[],"splitting_ops":null,"use_inductor":true,"compile_sizes":[],"inductor_compile_config":{"enable_auto_functionalized_v2":false},"inductor_passes":{},"cudagraph_mode":0,"use_cudagraph":true,"cudagraph_num_of_warmups":0,"cudagraph_capture_sizes":[256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"cudagraph_copy_inputs":false,"full_cuda_graph":false,"pass_config":{"enable_fusion":false,"enable_noop":false},"max_capture_size":256,"local_cache_dir":null}, use_cached_outputs=False, 
+WARNING 10-15 01:01:22 [multiproc_worker_utils.py:273] Reducing Torch parallelism from 16 threads to 1 to avoid unnecessary CPU contention. Set OMP_NUM_THREADS in the external environment to tune this value as needed.
+[1;36m(VllmWorkerProcess pid=1080067)[0;0m INFO 10-15 01:01:22 [multiproc_worker_utils.py:219] Worker ready; awaiting tasks
+[1;36m(VllmWorkerProcess pid=1080067)[0;0m INFO 10-15 01:01:25 [cuda.py:384] Cannot use FlashAttention-2 backend for Volta and Turing GPUs.
+[1;36m(VllmWorkerProcess pid=1080067)[0;0m INFO 10-15 01:01:25 [cuda.py:433] Using XFormers backend.
+INFO 10-15 01:01:25 [cuda.py:384] Cannot use FlashAttention-2 backend for Volta and Turing GPUs.
+INFO 10-15 01:01:25 [cuda.py:433] Using XFormers backend.
+[1;36m(VllmWorkerProcess pid=1080067)[0;0m INFO 10-15 01:01:28 [__init__.py:1418] Found nccl from library libnccl.so.2
+INFO 10-15 01:01:28 [__init__.py:1418] Found nccl from library libnccl.so.2
+[1;36m(VllmWorkerProcess pid=1080067)[0;0m INFO 10-15 01:01:28 [pynccl.py:70] vLLM is using nccl==2.26.2
+INFO 10-15 01:01:28 [pynccl.py:70] vLLM is using nccl==2.26.2
+INFO 10-15 01:01:30 [shm_broadcast.py:289] vLLM message queue communication handle: Handle(local_reader_ranks=[1], buffer_handle=(1, 4194304, 6, 'psm_cda57d5f'), local_subscribe_addr='ipc:///tmp/4d24ec93-e744-4e0b-923c-83119e2aafd1', remote_subscribe_addr=None, remote_addr_ipv6=False)
+INFO 10-15 01:01:30 [parallel_state.py:1134] rank 0 in world size 2 is assigned as DP rank 0, PP rank 0, TP rank 0, EP rank 0
+[1;36m(VllmWorkerProcess pid=1080067)[0;0m INFO 10-15 01:01:30 [parallel_state.py:1134] rank 1 in world size 2 is assigned as DP rank 0, PP rank 0, TP rank 1, EP rank 1
+INFO 10-15 01:01:31 [model_runner.py:1080] Starting to load model Qwen/Qwen3-8B...
+[1;36m(VllmWorkerProcess pid=1080067)[0;0m INFO 10-15 01:01:31 [model_runner.py:1080] Starting to load model Qwen/Qwen3-8B...
+INFO 10-15 01:01:33 [weight_utils.py:296] Using model weights format ['*.safetensors', '*.bin', '*.pt']
+[1;36m(VllmWorkerProcess pid=1080067)[0;0m INFO 10-15 01:01:33 [weight_utils.py:296] Using model weights format ['*.safetensors', '*.bin', '*.pt']
+Loading safetensors checkpoint shards:   0% Completed | 0/5 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards:  20% Completed | 1/5 [00:03<00:14,  3.64s/it]
+Loading safetensors checkpoint shards:  40% Completed | 2/5 [00:07<00:11,  3.81s/it]
+Loading safetensors checkpoint shards:  60% Completed | 3/5 [00:08<00:05,  2.67s/it]
+Loading safetensors checkpoint shards:  80% Completed | 4/5 [00:12<00:03,  3.23s/it]
+Loading safetensors checkpoint shards: 100% Completed | 5/5 [00:16<00:00,  3.48s/it]
+Loading safetensors checkpoint shards: 100% Completed | 5/5 [00:16<00:00,  3.38s/it]
+
+INFO 10-15 01:01:50 [default_loader.py:262] Loading weights took 16.92 seconds
+[1;36m(VllmWorkerProcess pid=1080067)[0;0m INFO 10-15 01:01:50 [default_loader.py:262] Loading weights took 17.01 seconds
+INFO 10-15 01:01:51 [model_runner.py:1112] Model loading took 7.6384 GiB and 18.990650 seconds
+[1;36m(VllmWorkerProcess pid=1080067)[0;0m INFO 10-15 01:01:51 [model_runner.py:1112] Model loading took 7.6384 GiB and 19.028516 seconds
+/N/soft/rhel8/xalt/xalt/libexec/xalt_rmap_exists: /N/soft/rhel8/xalt/xalt/lib64/libstdc++.so.6: version `GLIBCXX_3.4.32' not found (required by /N/soft/rhel8/xalt/xalt/libexec/xalt_rmap_exists)
+/N/soft/rhel8/xalt/xalt/libexec/xalt_rmap_exists: /N/soft/rhel8/xalt/xalt/lib64/libstdc++.so.6: version `GLIBCXX_3.4.32' not found (required by /N/soft/rhel8/xalt/xalt/libexec/xalt_rmap_exists)
+[1;36m(VllmWorkerProcess pid=1080067)[0;0m INFO 10-15 01:02:56 [worker.py:295] Memory profiling takes 64.51 seconds
+[1;36m(VllmWorkerProcess pid=1080067)[0;0m INFO 10-15 01:02:56 [worker.py:295] the current vLLM instance can use total_gpu_memory (31.73GiB) x gpu_memory_utilization (0.90) = 28.56GiB
+[1;36m(VllmWorkerProcess pid=1080067)[0;0m INFO 10-15 01:02:56 [worker.py:295] model weights take 7.64GiB; non_torch_memory takes 0.21GiB; PyTorch activation peak memory takes 2.38GiB; the rest of the memory reserved for KV Cache is 18.32GiB.
+INFO 10-15 01:02:56 [worker.py:295] Memory profiling takes 64.73 seconds
+INFO 10-15 01:02:56 [worker.py:295] the current vLLM instance can use total_gpu_memory (31.73GiB) x gpu_memory_utilization (0.90) = 28.56GiB
+INFO 10-15 01:02:56 [worker.py:295] model weights take 7.64GiB; non_torch_memory takes 0.23GiB; PyTorch activation peak memory takes 2.38GiB; the rest of the memory reserved for KV Cache is 18.31GiB.
+INFO 10-15 01:02:56 [executor_base.py:114] # cuda blocks: 16663, # CPU blocks: 3640
+INFO 10-15 01:02:56 [executor_base.py:119] Maximum concurrency for 32768 tokens per request: 8.14x
+INFO 10-15 01:02:59 [model_runner.py:1383] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI. If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+[1;36m(VllmWorkerProcess pid=1080067)[0;0m INFO 10-15 01:02:59 [model_runner.py:1383] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI. If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+Capturing CUDA graph shapes:   0%|          | 0/35 [00:00<?, ?it/s]Capturing CUDA graph shapes:   3%|▎         | 1/35 [00:01<00:45,  1.33s/it]Capturing CUDA graph shapes:   6%|▌         | 2/35 [00:02<00:34,  1.06s/it]Capturing CUDA graph shapes:   9%|▊         | 3/35 [00:03<00:30,  1.03it/s]Capturing CUDA graph shapes:  11%|█▏        | 4/35 [00:03<00:28,  1.08it/s]Capturing CUDA graph shapes:  14%|█▍        | 5/35 [00:04<00:27,  1.11it/s]Capturing CUDA graph shapes:  17%|█▋        | 6/35 [00:05<00:25,  1.13it/s]Capturing CUDA graph shapes:  20%|██        | 7/35 [00:06<00:24,  1.15it/s]Capturing CUDA graph shapes:  23%|██▎       | 8/35 [00:07<00:23,  1.14it/s]Capturing CUDA graph shapes:  26%|██▌       | 9/35 [00:08<00:22,  1.16it/s]Capturing CUDA graph shapes:  29%|██▊       | 10/35 [00:09<00:21,  1.17it/s]Capturing CUDA graph shapes:  31%|███▏      | 11/35 [00:09<00:20,  1.17it/s]Capturing CUDA graph shapes:  34%|███▍      | 12/35 [00:10<00:19,  1.18it/s]Capturing CUDA graph shapes:  37%|███▋      | 13/35 [00:11<00:18,  1.19it/s]Capturing CUDA graph shapes:  40%|████      | 14/35 [00:12<00:17,  1.20it/s]Capturing CUDA graph shapes:  43%|████▎     | 15/35 [00:13<00:16,  1.20it/s]Capturing CUDA graph shapes:  46%|████▌     | 16/35 [00:13<00:15,  1.21it/s]Capturing CUDA graph shapes:  49%|████▊     | 17/35 [00:14<00:14,  1.22it/s]Capturing CUDA graph shapes:  51%|█████▏    | 18/35 [00:15<00:13,  1.22it/s]Capturing CUDA graph shapes:  54%|█████▍    | 19/35 [00:16<00:13,  1.23it/s]Capturing CUDA graph shapes:  57%|█████▋    | 20/35 [00:17<00:12,  1.23it/s]Capturing CUDA graph shapes:  60%|██████    | 21/35 [00:18<00:11,  1.23it/s]Capturing CUDA graph shapes:  63%|██████▎   | 22/35 [00:18<00:10,  1.23it/s]Capturing CUDA graph shapes:  66%|██████▌   | 23/35 [00:19<00:09,  1.24it/s]Capturing CUDA graph shapes:  69%|██████▊   | 24/35 [00:20<00:08,  1.24it/s]Capturing CUDA graph shapes:  71%|███████▏  | 25/35 [00:21<00:08,  1.24it/s]Capturing CUDA graph shapes:  74%|███████▍  | 26/35 [00:22<00:07,  1.25it/s]Capturing CUDA graph shapes:  77%|███████▋  | 27/35 [00:22<00:06,  1.25it/s]Capturing CUDA graph shapes:  80%|████████  | 28/35 [00:23<00:05,  1.26it/s]Capturing CUDA graph shapes:  83%|████████▎ | 29/35 [00:24<00:04,  1.24it/s]Capturing CUDA graph shapes:  86%|████████▌ | 30/35 [00:25<00:03,  1.26it/s]Capturing CUDA graph shapes:  89%|████████▊ | 31/35 [00:26<00:03,  1.26it/s]Capturing CUDA graph shapes:  91%|█████████▏| 32/35 [00:26<00:02,  1.27it/s]Capturing CUDA graph shapes:  94%|█████████▍| 33/35 [00:27<00:01,  1.28it/s]Capturing CUDA graph shapes:  97%|█████████▋| 34/35 [00:28<00:00,  1.28it/s]/N/soft/rhel8/xalt/xalt/libexec/xalt_rmap_exists: /N/soft/rhel8/xalt/xalt/lib64/libstdc++.so.6: version `GLIBCXX_3.4.32' not found (required by /N/soft/rhel8/xalt/xalt/libexec/xalt_rmap_exists)
+/N/soft/rhel8/xalt/xalt/libexec/xalt_rmap_exists: /N/soft/rhel8/xalt/xalt/lib64/libstdc++.so.6: version `GLIBCXX_3.4.32' not found (required by /N/soft/rhel8/xalt/xalt/libexec/xalt_rmap_exists)
+/N/soft/rhel8/xalt/xalt/libexec/xalt_rmap_exists: /N/soft/rhel8/xalt/xalt/lib64/libstdc++.so.6: version `GLIBCXX_3.4.32' not found (required by /N/soft/rhel8/xalt/xalt/libexec/xalt_rmap_exists)
+/N/soft/rhel8/xalt/xalt/libexec/xalt_rmap_exists: /N/soft/rhel8/xalt/xalt/lib64/libstdc++.so.6: version `GLIBCXX_3.4.32' not found (required by /N/soft/rhel8/xalt/xalt/libexec/xalt_rmap_exists)
+[1;36m(VllmWorkerProcess pid=1080067)[0;0m INFO 10-15 01:03:29 [model_runner.py:1535] Graph capturing finished in 30 secs, took 0.28 GiB
+Capturing CUDA graph shapes: 100%|██████████| 35/35 [00:30<00:00,  1.07s/it]Capturing CUDA graph shapes: 100%|██████████| 35/35 [00:30<00:00,  1.16it/s]
+INFO 10-15 01:03:29 [model_runner.py:1535] Graph capturing finished in 30 secs, took 0.28 GiB
+INFO 10-15 01:03:29 [llm_engine.py:417] init engine (profile, create kv cache, warmup model) took 98.24 seconds
+INFO 10-15 01:03:29 [llm.py:298] Supported_tasks: ['generate']
+Loaded Qwen/Qwen3-8B (vLLM 0.10.1.1, tp=2); questions [('v2', 184), ('ver03', 104), ('ver03_newco', 20)]; tools ['none', 'calc']; seeds [0, 1, 2]
+WARNING 10-15 01:05:41 [scheduler.py:1775] Sequence group 183 is preempted by PreemptionMode.RECOMPUTE mode because there is not enough KV cache space. This can affect the end-to-end performance. Increase gpu_memory_utilization or tensor_parallel_size to provide more KV cache memory. total_num_cumulative_preemption=1
+WARNING 10-15 01:07:08 [scheduler.py:1775] Sequence group 131 is preempted by PreemptionMode.RECOMPUTE mode because there is not enough KV cache space. This can affect the end-to-end performance. Increase gpu_memory_utilization or tensor_parallel_size to provide more KV cache memory. total_num_cumulative_preemption=51
+WARNING 10-15 01:10:19 [scheduler.py:1775] Sequence group 86 is preempted by PreemptionMode.RECOMPUTE mode because there is not enough KV cache space. This can affect the end-to-end performance. Increase gpu_memory_utilization or tensor_parallel_size to provide more KV cache memory. total_num_cumulative_preemption=101
+WARNING 10-15 01:26:23 [scheduler.py:1775] Sequence group 72 is preempted by PreemptionMode.RECOMPUTE mode because there is not enough KV cache space. This can affect the end-to-end performance. Increase gpu_memory_utilization or tensor_parallel_size to provide more KV cache memory. total_num_cumulative_preemption=151
+WARNING 10-15 01:34:11 [scheduler.py:1775] Sequence group 120 is preempted by PreemptionMode.RECOMPUTE mode because there is not enough KV cache space. This can affect the end-to-end performance. Increase gpu_memory_utilization or tensor_parallel_size to provide more KV cache memory. total_num_cumulative_preemption=201
+WARNING 10-15 01:44:50 [scheduler.py:1775] Sequence group 147 is preempted by PreemptionMode.RECOMPUTE mode because there is not enough KV cache space. This can affect the end-to-end performance. Increase gpu_memory_utilization or tensor_parallel_size to provide more KV cache memory. total_num_cumulative_preemption=251
+WARNING 10-15 01:56:58 [scheduler.py:1775] Sequence group 183 is preempted by PreemptionMode.RECOMPUTE mode because there is not enough KV cache space. This can affect the end-to-end performance. Increase gpu_memory_utilization or tensor_parallel_size to provide more KV cache memory. total_num_cumulative_preemption=301
+Finished $REPO_ROOT/results/ver02_runs/qwen3-8b/answers_ver02_qwen3-8b_think_s0_v2_L2345_20261015-005624.jsonl: 184 answers in 3988.4s, 2 hit the token limit
+WARNING 10-15 02:16:14 [scheduler.py:1775] Sequence group 243 is preempted by PreemptionMode.RECOMPUTE mode because there is not enough KV cache space. This can affect the end-to-end performance. Increase gpu_memory_utilization or tensor_parallel_size to provide more KV cache memory. total_num_cumulative_preemption=351
+WARNING 10-15 02:34:51 [scheduler.py:1775] Sequence group 237 is preempted by PreemptionMode.RECOMPUTE mode because there is not enough KV cache space. This can affect the end-to-end performance. Increase gpu_memory_utilization or tensor_parallel_size to provide more KV cache memory. total_num_cumulative_preemption=401
+WARNING 10-15 02:50:42 [scheduler.py:1775] Sequence group 261 is preempted by PreemptionMode.RECOMPUTE mode because there is not enough KV cache space. This can affect the end-to-end performance. Increase gpu_memory_utilization or tensor_parallel_size to provide more KV cache memory. total_num_cumulative_preemption=451
+WARNING 10-15 03:02:02 [scheduler.py:1775] Sequence group 285 is preempted by PreemptionMode.RECOMPUTE mode because there is not enough KV cache space. This can affect the end-to-end performance. Increase gpu_memory_utilization or tensor_parallel_size to provide more KV cache memory. total_num_cumulative_preemption=501
+Finished $REPO_ROOT/results/ver02_runs/qwen3-8b/answers_ver02_qwen3-8b_think_s0_ver03_L2345_20261015-005624.jsonl: 104 answers in 3807.8s, 1 hit the token limit
+Finished $REPO_ROOT/results/ver02_runs/qwen3-8b/answers_ver02_qwen3-8b_think_s0_ver03_newco_L2345_20261015-005624.jsonl: 20 answers in 879.2s, 0 hit the token limit
+WARNING 10-15 03:31:36 [scheduler.py:1775] Sequence group 446 is preempted by PreemptionMode.RECOMPUTE mode because there is not enough KV cache space. This can affect the end-to-end performance. Increase gpu_memory_utilization or tensor_parallel_size to provide more KV cache memory. total_num_cumulative_preemption=551
+WARNING 10-15 03:34:09 [scheduler.py:1775] Sequence group 395 is preempted by PreemptionMode.RECOMPUTE mode because there is not enough KV cache space. This can affect the end-to-end performance. Increase gpu_memory_utilization or tensor_parallel_size to provide more KV cache memory. total_num_cumulative_preemption=601
+WARNING 10-15 03:49:50 [scheduler.py:1775] Sequence group 376 is preempted by PreemptionMode.RECOMPUTE mode because there is not enough KV cache space. This can affect the end-to-end performance. Increase gpu_memory_utilization or tensor_parallel_size to provide more KV cache memory. total_num_cumulative_preemption=651
+WARNING 10-15 04:01:47 [scheduler.py:1775] Sequence group 410 is preempted by PreemptionMode.RECOMPUTE mode because there is not enough KV cache space. This can affect the end-to-end performance. Increase gpu_memory_utilization or tensor_parallel_size to provide more KV cache memory. total_num_cumulative_preemption=701
+WARNING 10-15 04:09:55 [scheduler.py:1775] Sequence group 443 is preempted by PreemptionMode.RECOMPUTE mode because there is not enough KV cache space. This can affect the end-to-end performance. Increase gpu_memory_utilization or tensor_parallel_size to provide more KV cache memory. total_num_cumulative_preemption=751
+WARNING 10-15 04:14:57 [scheduler.py:1775] Sequence group 467 is preempted by PreemptionMode.RECOMPUTE mode because there is not enough KV cache space. This can affect the end-to-end performance. Increase gpu_memory_utilization or tensor_parallel_size to provide more KV cache memory. total_num_cumulative_preemption=801
+Finished $REPO_ROOT/results/ver02_runs/qwen3-8b/answers_ver02_qwen3-8b_think_s1_v2_L2345_20261015-005624.jsonl: 184 answers in 4408.8s, 4 hit the token limit
+WARNING 10-15 04:44:25 [scheduler.py:1775] Sequence group 595 is preempted by PreemptionMode.RECOMPUTE mode because there is not enough KV cache space. This can affect the end-to-end performance. Increase gpu_memory_utilization or tensor_parallel_size to provide more KV cache memory. total_num_cumulative_preemption=851
+WARNING 10-15 04:48:40 [scheduler.py:1775] Sequence group 545 is preempted by PreemptionMode.RECOMPUTE mode because there is not enough KV cache space. This can affect the end-to-end performance. Increase gpu_memory_utilization or tensor_parallel_size to provide more KV cache memory. total_num_cumulative_preemption=901
+WARNING 10-15 05:08:29 [scheduler.py:1775] Sequence group 544 is preempted by PreemptionMode.RECOMPUTE mode because there is not enough KV cache space. This can affect the end-to-end performance. Increase gpu_memory_utilization or tensor_parallel_size to provide more KV cache memory. total_num_cumulative_preemption=951
+WARNING 10-15 05:22:27 [scheduler.py:1775] Sequence group 583 is preempted by PreemptionMode.RECOMPUTE mode because there is not enough KV cache space. This can affect the end-to-end performance. Increase gpu_memory_utilization or tensor_parallel_size to provide more KV cache memory. total_num_cumulative_preemption=1001
+Finished $REPO_ROOT/results/ver02_runs/qwen3-8b/answers_ver02_qwen3-8b_think_s1_ver03_L2345_20261015-005624.jsonl: 104 answers in 3963.4s, 4 hit the token limit
+Finished $REPO_ROOT/results/ver02_runs/qwen3-8b/answers_ver02_qwen3-8b_think_s1_ver03_newco_L2345_20261015-005624.jsonl: 20 answers in 963.4s, 0 hit the token limit
+WARNING 10-15 06:06:20 [scheduler.py:1775] Sequence group 787 is preempted by PreemptionMode.RECOMPUTE mode because there is not enough KV cache space. This can affect the end-to-end performance. Increase gpu_memory_utilization or tensor_parallel_size to provide more KV cache memory. total_num_cumulative_preemption=1051
+WARNING 10-15 06:07:42 [scheduler.py:1775] Sequence group 736 is preempted by PreemptionMode.RECOMPUTE mode because there is not enough KV cache space. This can affect the end-to-end performance. Increase gpu_memory_utilization or tensor_parallel_size to provide more KV cache memory. total_num_cumulative_preemption=1101
+WARNING 10-15 06:12:39 [scheduler.py:1775] Sequence group 687 is preempted by PreemptionMode.RECOMPUTE mode because there is not enough KV cache space. This can affect the end-to-end performance. Increase gpu_memory_utilization or tensor_parallel_size to provide more KV cache memory. total_num_cumulative_preemption=1151
+WARNING 10-15 06:30:40 [scheduler.py:1775] Sequence group 722 is preempted by PreemptionMode.RECOMPUTE mode because there is not enough KV cache space. This can affect the end-to-end performance. Increase gpu_memory_utilization or tensor_parallel_size to provide more KV cache memory. total_num_cumulative_preemption=1201
+WARNING 10-15 06:40:02 [scheduler.py:1775] Sequence group 725 is preempted by PreemptionMode.RECOMPUTE mode because there is not enough KV cache space. This can affect the end-to-end performance. Increase gpu_memory_utilization or tensor_parallel_size to provide more KV cache memory. total_num_cumulative_preemption=1251
+WARNING 10-15 06:46:40 [scheduler.py:1775] Sequence group 777 is preempted by PreemptionMode.RECOMPUTE mode because there is not enough KV cache space. This can affect the end-to-end performance. Increase gpu_memory_utilization or tensor_parallel_size to provide more KV cache memory. total_num_cumulative_preemption=1301
+WARNING 10-15 07:01:31 [scheduler.py:1775] Sequence group 799 is preempted by PreemptionMode.RECOMPUTE mode because there is not enough KV cache space. This can affect the end-to-end performance. Increase gpu_memory_utilization or tensor_parallel_size to provide more KV cache memory. total_num_cumulative_preemption=1351
+Finished $REPO_ROOT/results/ver02_runs/qwen3-8b/answers_ver02_qwen3-8b_think_s2_v2_L2345_20261015-005624.jsonl: 184 answers in 4136.8s, 2 hit the token limit
+WARNING 10-15 07:18:35 [scheduler.py:1775] Sequence group 862 is preempted by PreemptionMode.RECOMPUTE mode because there is not enough KV cache space. This can affect the end-to-end performance. Increase gpu_memory_utilization or tensor_parallel_size to provide more KV cache memory. total_num_cumulative_preemption=1401
+WARNING 10-15 07:36:56 [scheduler.py:1775] Sequence group 847 is preempted by PreemptionMode.RECOMPUTE mode because there is not enough KV cache space. This can affect the end-to-end performance. Increase gpu_memory_utilization or tensor_parallel_size to provide more KV cache memory. total_num_cumulative_preemption=1451
+WARNING 10-15 07:51:41 [scheduler.py:1775] Sequence group 901 is preempted by PreemptionMode.RECOMPUTE mode because there is not enough KV cache space. This can affect the end-to-end performance. Increase gpu_memory_utilization or tensor_parallel_size to provide more KV cache memory. total_num_cumulative_preemption=1501
+WARNING 10-15 08:02:50 [scheduler.py:1775] Sequence group 898 is preempted by PreemptionMode.RECOMPUTE mode because there is not enough KV cache space. This can affect the end-to-end performance. Increase gpu_memory_utilization or tensor_parallel_size to provide more KV cache memory. total_num_cumulative_preemption=1551
+Finished $REPO_ROOT/results/ver02_runs/qwen3-8b/answers_ver02_qwen3-8b_think_s2_ver03_L2345_20261015-005624.jsonl: 104 answers in 3636.2s, 1 hit the token limit
+Finished $REPO_ROOT/results/ver02_runs/qwen3-8b/answers_ver02_qwen3-8b_think_s2_ver03_newco_L2345_20261015-005624.jsonl: 20 answers in 944.7s, 0 hit the token limit
+  [qwen3-8b_think_calc_s0] round 1: 164 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 2: 146 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 3: 131 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 4: 123 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 5: 110 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 6: 96 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 7: 91 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 8: 85 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 9: 79 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 10: 71 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 11: 67 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 12: 65 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 13: 60 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 14: 57 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 15: 54 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 16: 51 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 17: 48 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 18: 45 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 19: 45 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 20: 43 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 21: 41 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 22: 40 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 23: 37 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 24: 37 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 25: 37 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 26: 36 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 27: 36 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 28: 36 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 29: 36 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 30: 35 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 31: 35 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 32: 34 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 33: 33 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 34: 33 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 35: 33 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 36: 33 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 37: 32 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 38: 32 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 39: 32 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 40: 31 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 41: 31 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 42: 30 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 43: 28 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 44: 24 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 45: 20 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 46: 18 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 47: 16 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 48: 14 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 49: 11 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 50: 9 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 51: 8 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 52: 6 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 53: 6 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 54: 6 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 55: 5 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 56: 5 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 57: 5 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 58: 5 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 59: 5 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 60: 5 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 61: 0 questions still calling the calculator
+Finished $REPO_ROOT/results/ver02_runs/qwen3-8b/answers_ver02_qwen3-8b_think_calc_s0_v2_L2345_20261015-005624.jsonl: 184 answers in 10115.4s, 2 hit the token limit
+  [qwen3-8b_think_calc_s0] round 1: 77 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 2: 76 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 3: 76 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 4: 76 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 5: 76 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 6: 75 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 7: 74 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 8: 74 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 9: 74 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 10: 74 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 11: 69 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 12: 66 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 13: 66 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 14: 64 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 15: 63 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 16: 62 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 17: 62 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 18: 59 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 19: 58 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 20: 55 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 21: 54 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 22: 52 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 23: 51 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 24: 49 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 25: 46 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 26: 46 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 27: 46 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 28: 44 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 29: 43 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 30: 43 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 31: 41 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 32: 40 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 33: 39 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 34: 39 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 35: 38 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 36: 36 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 37: 36 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 38: 36 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 39: 36 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 40: 35 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 41: 35 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 42: 35 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 43: 31 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 44: 27 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 45: 25 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 46: 21 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 47: 21 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 48: 19 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 49: 16 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 50: 15 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 51: 13 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 52: 12 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 53: 11 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 54: 9 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 55: 7 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 56: 7 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 57: 6 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 58: 5 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 59: 4 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 60: 4 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 61: 0 questions still calling the calculator
+Finished $REPO_ROOT/results/ver02_runs/qwen3-8b/answers_ver02_qwen3-8b_think_calc_s0_ver03_L2345_20261015-005624.jsonl: 104 answers in 10899.0s, 0 hit the token limit
+  [qwen3-8b_think_calc_s0] round 1: 18 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 2: 16 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 3: 15 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 4: 15 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 5: 15 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 6: 15 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 7: 15 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 8: 15 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 9: 15 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 10: 15 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 11: 15 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 12: 15 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 13: 14 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 14: 13 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 15: 13 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 16: 13 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 17: 13 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 18: 12 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 19: 12 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 20: 12 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 21: 12 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 22: 12 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 23: 11 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 24: 11 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 25: 11 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 26: 11 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 27: 10 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 28: 10 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 29: 10 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 30: 9 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 31: 9 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 32: 9 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 33: 9 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 34: 9 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 35: 8 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 36: 7 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 37: 7 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 38: 7 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 39: 7 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 40: 7 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 41: 7 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 42: 6 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 43: 5 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 44: 3 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 45: 2 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 46: 2 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 47: 2 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 48: 2 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 49: 1 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 50: 1 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 51: 1 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 52: 1 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 53: 1 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 54: 1 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 55: 1 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 56: 1 questions still calling the calculator
+  [qwen3-8b_think_calc_s0] round 57: 0 questions still calling the calculator
+Finished $REPO_ROOT/results/ver02_runs/qwen3-8b/answers_ver02_qwen3-8b_think_calc_s0_ver03_newco_L2345_20261015-005624.jsonl: 20 answers in 3472.5s, 0 hit the token limit
+  [qwen3-8b_think_calc_s1] round 1: 164 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 2: 144 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 3: 130 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 4: 124 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 5: 113 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 6: 102 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 7: 99 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 8: 88 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 9: 81 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 10: 77 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 11: 70 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 12: 67 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 13: 62 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 14: 60 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 15: 59 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 16: 57 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 17: 55 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 18: 54 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 19: 53 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 20: 52 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 21: 51 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 22: 50 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 23: 47 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 24: 46 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 25: 46 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 26: 44 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 27: 42 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 28: 41 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 29: 40 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 30: 39 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 31: 39 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 32: 39 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 33: 39 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 34: 39 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 35: 38 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 36: 38 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 37: 38 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 38: 37 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 39: 36 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 40: 35 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 41: 33 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 42: 31 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 43: 27 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 44: 24 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 45: 21 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 46: 20 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 47: 16 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 48: 16 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 49: 13 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 50: 12 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 51: 11 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 52: 10 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 53: 9 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 54: 9 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 55: 8 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 56: 7 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 57: 7 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 58: 7 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 59: 7 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 60: 7 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 61: 0 questions still calling the calculator
+Finished $REPO_ROOT/results/ver02_runs/qwen3-8b/answers_ver02_qwen3-8b_think_calc_s1_v2_L2345_20261015-005624.jsonl: 184 answers in 11642.3s, 1 hit the token limit
+WARNING 10-15 18:39:44 [scheduler.py:1775] Sequence group 9987 is preempted by PreemptionMode.RECOMPUTE mode because there is not enough KV cache space. This can affect the end-to-end performance. Increase gpu_memory_utilization or tensor_parallel_size to provide more KV cache memory. total_num_cumulative_preemption=1601
+  [qwen3-8b_think_calc_s1] round 1: 72 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 2: 70 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 3: 70 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 4: 68 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 5: 68 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 6: 68 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 7: 68 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 8: 67 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 9: 66 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 10: 66 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 11: 66 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 12: 65 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 13: 62 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 14: 62 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 15: 58 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 16: 55 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 17: 54 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 18: 52 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 19: 50 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 20: 48 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 21: 45 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 22: 44 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 23: 41 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 24: 40 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 25: 40 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 26: 39 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 27: 38 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 28: 38 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 29: 38 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 30: 37 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 31: 36 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 32: 35 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 33: 34 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 34: 34 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 35: 33 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 36: 32 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 37: 31 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 38: 30 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 39: 29 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 40: 26 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 41: 24 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 42: 24 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 43: 23 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 44: 20 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 45: 19 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 46: 16 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 47: 13 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 48: 12 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 49: 10 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 50: 5 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 51: 5 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 52: 5 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 53: 5 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 54: 5 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 55: 5 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 56: 5 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 57: 5 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 58: 5 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 59: 5 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 60: 5 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 61: 0 questions still calling the calculator
+Finished $REPO_ROOT/results/ver02_runs/qwen3-8b/answers_ver02_qwen3-8b_think_calc_s1_ver03_L2345_20261015-005624.jsonl: 104 answers in 9959.7s, 3 hit the token limit
+  [qwen3-8b_think_calc_s1] round 1: 15 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 2: 15 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 3: 14 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 4: 13 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 5: 13 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 6: 13 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 7: 13 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 8: 13 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 9: 12 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 10: 12 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 11: 12 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 12: 12 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 13: 12 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 14: 12 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 15: 12 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 16: 11 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 17: 10 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 18: 10 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 19: 10 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 20: 9 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 21: 8 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 22: 8 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 23: 8 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 24: 7 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 25: 6 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 26: 6 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 27: 6 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 28: 6 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 29: 6 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 30: 6 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 31: 6 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 32: 6 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 33: 6 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 34: 6 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 35: 6 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 36: 6 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 37: 6 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 38: 6 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 39: 6 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 40: 6 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 41: 6 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 42: 6 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 43: 6 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 44: 4 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 45: 4 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 46: 3 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 47: 2 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 48: 2 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 49: 2 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 50: 1 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 51: 1 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 52: 1 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 53: 1 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 54: 1 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 55: 1 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 56: 1 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 57: 1 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 58: 1 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 59: 1 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 60: 1 questions still calling the calculator
+  [qwen3-8b_think_calc_s1] round 61: 0 questions still calling the calculator
+Finished $REPO_ROOT/results/ver02_runs/qwen3-8b/answers_ver02_qwen3-8b_think_calc_s1_ver03_newco_L2345_20261015-005624.jsonl: 20 answers in 2848.5s, 0 hit the token limit
+  [qwen3-8b_think_calc_s2] round 1: 161 questions still calling the calculator
+  [qwen3-8b_think_calc_s2] round 2: 139 questions still calling the calculator
+  [qwen3-8b_think_calc_s2] round 3: 124 questions still calling the calculator
+  [qwen3-8b_think_calc_s2] round 4: 121 questions still calling the calculator
+  [qwen3-8b_think_calc_s2] round 5: 114 questions still calling the calculator
+  [qwen3-8b_think_calc_s2] round 6: 107 questions still calling the calculator
+  [qwen3-8b_think_calc_s2] round 7: 94 questions still calling the calculator
+  [qwen3-8b_think_calc_s2] round 8: 89 questions still calling the calculator
+  [qwen3-8b_think_calc_s2] round 9: 81 questions still calling the calculator
+  [qwen3-8b_think_calc_s2] round 10: 73 questions still calling the calculator
+  [qwen3-8b_think_calc_s2] round 11: 67 questions still calling the calculator
+  [qwen3-8b_think_calc_s2] round 12: 62 questions still calling the calculator
+  [qwen3-8b_think_calc_s2] round 13: 60 questions still calling the calculator
+  [qwen3-8b_think_calc_s2] round 14: 58 questions still calling the calculator
+  [qwen3-8b_think_calc_s2] round 15: 55 questions still calling the calculator
+  [qwen3-8b_think_calc_s2] round 16: 54 questions still calling the calculator
+  [qwen3-8b_think_calc_s2] round 17: 53 questions still calling the calculator
+  [qwen3-8b_think_calc_s2] round 18: 51 questions still calling the calculator
+  [qwen3-8b_think_calc_s2] round 19: 49 questions still calling the calculator
+  [qwen3-8b_think_calc_s2] round 20: 49 questions still calling the calculator
+  [qwen3-8b_think_calc_s2] round 21: 47 questions still calling the calculator
+  [qwen3-8b_think_calc_s2] round 22: 47 questions still calling the calculator
+  [qwen3-8b_think_calc_s2] round 23: 45 questions still calling the calculator
+  [qwen3-8b_think_calc_s2] round 24: 44 questions still calling the calculator
+  [qwen3-8b_think_calc_s2] round 25: 44 questions still calling the calculator
+  [qwen3-8b_think_calc_s2] round 26: 43 questions still calling the calculator
+  [qwen3-8b_think_calc_s2] round 27: 43 questions still calling the calculator
+  [qwen3-8b_think_calc_s2] round 28: 41 questions still calling the calculator
+  [qwen3-8b_think_calc_s2] round 29: 40 questions still calling the calculator
+  [qwen3-8b_think_calc_s2] round 30: 39 questions still calling the calculator
+  [qwen3-8b_think_calc_s2] round 31: 37 questions still calling the calculator
+  [qwen3-8b_think_calc_s2] round 32: 34 questions still calling the calculator
+  [qwen3-8b_think_calc_s2] round 33: 34 questions still calling the calculator
+  [qwen3-8b_think_calc_s2] round 34: 32 questions still calling the calculator
+  [qwen3-8b_think_calc_s2] round 35: 32 questions still calling the calculator
+  [qwen3-8b_think_calc_s2] round 36: 31 questions still calling the calculator
+  [qwen3-8b_think_calc_s2] round 37: 29 questions still calling the calculator
+  [qwen3-8b_think_calc_s2] round 38: 27 questions still calling the calculator
+  [qwen3-8b_think_calc_s2] round 39: 25 questions still calling the calculator
+  [qwen3-8b_think_calc_s2] round 40: 22 questions still calling the calculator
+  [qwen3-8b_think_calc_s2] round 41: 19 questions still calling the calculator
+  [qwen3-8b_think_calc_s2] round 42: 19 questions still calling the calculator
+  [qwen3-8b_think_calc_s2] round 43: 17 questions still calling the calculator
+  [qwen3-8b_think_calc_s2] round 44: 16 questions still calling the calculator
+  [qwen3-8b_think_calc_s2] round 45: 15 questions still calling the calculator
+[2026-10-16T00:55:22.004] error: *** JOB 12259599 ON g23 CANCELLED AT 2026-10-16T00:55:22 DUE TO TIME LIMIT ***

@@ -1,0 +1,1587 @@
+question_id,item,kind,checkpoint,target,independent,rel_gap,status
+CMCSA-2019-05,1,middle,forecast.growth.1,8.1928,8.1928,0.00e+00,match
+CMCSA-2019-05,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],20.7171,20.7171,0.00e+00,match
+CMCSA-2019-05,3,middle,derived: forecast.da[1] / forecast.revenue[1],11.7487,11.7487,0.00e+00,match
+CMCSA-2019-05,4,middle,derived: forecast.capex[1] / forecast.revenue[1],10.9627,10.9627,0.00e+00,match
+CMCSA-2019-05,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],2.105,2.10499,0.00e+00,match
+CMCSA-2019-05,6,step,fcff.1,17375.3302,17375.3,0.00e+00,match
+CMCSA-2019-05,7,step,fcff.2,18560.6512,18560.7,0.00e+00,match
+CMCSA-2019-05,8,step,fcff.3,19539.8991,19539.9,0.00e+00,match
+CMCSA-2019-05,9,step,fcff.4,20268.7507,20268.8,0.00e+00,match
+CMCSA-2019-05,10,step,fcff.5,19474.7604,19474.8,0.00e+00,match
+CMCSA-2019-05,11,middle,beta_levered,1.096858,1.09686,0.00e+00,match
+CMCSA-2019-05,12,middle,re,9.198,9.19801,0.00e+00,match
+CMCSA-2019-05,13,middle,rd,2.9964,2.9964,0.00e+00,match
+CMCSA-2019-05,14,middle,weights.E,64.848,64.848,0.00e+00,match
+CMCSA-2019-05,15,step,wacc,6.7968,6.79683,0.00e+00,match
+CMCSA-2019-05,16,step,tv,414112.3519,414112,0.00e+00,match
+CMCSA-2019-05,17,step,ev,376258.7873,376259,0.00e+00,match
+CMCSA-2019-05,18,middle,equity,267534.7873,267535,0.00e+00,match
+CMCSA-2019-05,19,final,price_per_share,57.6584,57.6584,0.00e+00,match
+CMCSA-2019-05,20,alternative,alt: equity / inputs.shares_basic,58.3627,58.3627,0.00e+00,match
+CMCSA-2019-06,1,middle,forecast.growth.1,8.1928,8.1928,0.00e+00,match
+CMCSA-2019-06,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],20.7171,20.7171,0.00e+00,match
+CMCSA-2019-06,3,middle,derived: forecast.da[1] / forecast.revenue[1],11.7487,11.7487,0.00e+00,match
+CMCSA-2019-06,4,middle,derived: forecast.capex[1] / forecast.revenue[1],10.9627,10.9627,0.00e+00,match
+CMCSA-2019-06,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],2.105,2.10499,0.00e+00,match
+CMCSA-2019-06,6,step,fcff.1,17375.3302,17375.3,0.00e+00,match
+CMCSA-2019-06,7,step,fcff.2,18560.6512,18560.7,0.00e+00,match
+CMCSA-2019-06,8,step,fcff.3,19539.8991,19539.9,0.00e+00,match
+CMCSA-2019-06,9,step,fcff.4,20268.7507,20268.8,0.00e+00,match
+CMCSA-2019-06,10,final,fcff.5,19474.7604,19474.8,0.00e+00,match
+CMCSA-2019-07,1,middle,beta_levered,1.096858,1.09686,0.00e+00,match
+CMCSA-2019-07,2,middle,re,9.198,9.19801,0.00e+00,match
+CMCSA-2019-07,3,middle,rd,2.9964,2.9964,0.00e+00,match
+CMCSA-2019-07,4,step,wacc,6.7968,6.79683,0.00e+00,match
+CMCSA-2019-07,5,step,tv,414112.3519,414112,0.00e+00,match
+CMCSA-2019-07,6,step,ev,376258.7873,376259,0.00e+00,match
+CMCSA-2019-07,7,middle,equity,267534.7873,267535,0.00e+00,match
+CMCSA-2019-07,8,final,price_per_share,57.6584,57.6584,0.00e+00,match
+CMCSA-2019-07,9,alternative,alt: equity / inputs.shares_basic,58.3627,58.3627,0.00e+00,match
+CMCSA-2019-08,1,middle,forecast.growth.1,8.1928,8.1928,0.00e+00,match
+CMCSA-2019-08,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],20.7171,20.7171,0.00e+00,match
+CMCSA-2019-08,3,middle,derived: forecast.da[1] / forecast.revenue[1],11.7487,11.7487,0.00e+00,match
+CMCSA-2019-08,4,middle,derived: forecast.capex[1] / forecast.revenue[1],10.9627,10.9627,0.00e+00,match
+CMCSA-2019-08,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],2.105,2.10499,0.00e+00,match
+CMCSA-2019-08,6,middle,tax_rate,10.0,10,0.00e+00,match
+CMCSA-2019-08,7,step,fcff.1,19705.4782,19705.5,0.00e+00,match
+CMCSA-2019-08,8,step,fcff.2,21067.7734,21067.8,0.00e+00,match
+CMCSA-2019-08,9,step,fcff.3,22224.7733,22224.8,0.00e+00,match
+CMCSA-2019-08,10,step,fcff.4,23129.4017,23129.4,0.00e+00,match
+CMCSA-2019-08,11,step,fcff.5,19626.0371,19626,0.00e+00,match
+CMCSA-2019-08,12,middle,beta_levered,1.064895,1.06489,0.00e+00,match
+CMCSA-2019-08,13,middle,re,7.2445,7.24447,0.00e+00,match
+CMCSA-2019-08,14,middle,rd,2.9964,2.9964,0.00e+00,match
+CMCSA-2019-08,15,middle,weights.E,64.848,64.848,0.00e+00,match
+CMCSA-2019-08,16,step,wacc,5.53,5.53,0.00e+00,match
+CMCSA-2019-08,17,step,tv,663916.906,663917,0.00e+00,match
+CMCSA-2019-08,18,step,ev,613705.8149,613706,0.00e+00,match
+CMCSA-2019-08,19,middle,cash_excess,2017.86,2017.86,0.00e+00,match
+CMCSA-2019-08,20,middle,equity,503091.6749,503092,0.00e+00,match
+CMCSA-2019-08,21,final,price_per_share,108.4249,108.425,0.00e+00,match
+CMCSA-2019-08,22,alternative,alt: equity / inputs.shares_basic,109.7495,109.749,0.00e+00,match
+BKNG-2019-05,1,middle,forecast.growth.1,15.0,15,0.00e+00,match
+BKNG-2019-05,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],33.2007,33.2007,0.00e+00,match
+BKNG-2019-05,3,middle,derived: forecast.da[1] / forecast.revenue[1],2.8904,2.89044,0.00e+00,match
+BKNG-2019-05,4,middle,derived: forecast.capex[1] / forecast.revenue[1],2.4539,2.45386,0.00e+00,match
+BKNG-2019-05,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],3.7067,3.70668,0.00e+00,match
+BKNG-2019-05,6,step,fcff.1,4373.9165,4373.92,0.00e+00,match
+BKNG-2019-05,7,step,fcff.2,4905.352,4905.35,0.00e+00,match
+BKNG-2019-05,8,step,fcff.3,5342.4322,5342.43,0.00e+00,match
+BKNG-2019-05,9,step,fcff.4,5645.3998,5645.4,0.00e+00,match
+BKNG-2019-05,10,step,fcff.5,5674.8849,5674.88,0.00e+00,match
+BKNG-2019-05,11,middle,beta_levered,0.952064,0.952064,0.00e+00,match
+BKNG-2019-05,12,middle,re,8.1844,8.18445,0.00e+00,match
+BKNG-2019-05,13,middle,rd,2.55,2.55,0.00e+00,match
+BKNG-2019-05,14,middle,weights.E,91.4445,91.4445,0.00e+00,match
+BKNG-2019-05,15,step,wacc,7.6566,7.65658,0.00e+00,match
+BKNG-2019-05,16,step,tv,102330.1466,102330,0.00e+00,match
+BKNG-2019-05,17,step,ev,91466.0537,91466.1,0.00e+00,match
+BKNG-2019-05,18,middle,equity,89101.0537,89101.1,0.00e+00,match
+BKNG-2019-05,19,final,price_per_share,1855.6148,1855.61,0.00e+00,match
+BKNG-2019-05,20,alternative,alt: equity / inputs.shares_basic,1979.4637,1979.46,0.00e+00,match
+BKNG-2019-06,1,middle,forecast.growth.1,15.0,15,0.00e+00,match
+BKNG-2019-06,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],33.2007,33.2007,0.00e+00,match
+BKNG-2019-06,3,middle,derived: forecast.da[1] / forecast.revenue[1],2.8904,2.89044,0.00e+00,match
+BKNG-2019-06,4,middle,derived: forecast.capex[1] / forecast.revenue[1],2.4539,2.45386,0.00e+00,match
+BKNG-2019-06,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],3.7067,3.70668,0.00e+00,match
+BKNG-2019-06,6,step,fcff.1,4373.9165,4373.92,0.00e+00,match
+BKNG-2019-06,7,step,fcff.2,4905.352,4905.35,0.00e+00,match
+BKNG-2019-06,8,step,fcff.3,5342.4322,5342.43,0.00e+00,match
+BKNG-2019-06,9,step,fcff.4,5645.3998,5645.4,0.00e+00,match
+BKNG-2019-06,10,final,fcff.5,5674.8849,5674.88,0.00e+00,match
+BKNG-2019-07,1,middle,beta_levered,0.952064,0.952064,0.00e+00,match
+BKNG-2019-07,2,middle,re,8.1844,8.18445,0.00e+00,match
+BKNG-2019-07,3,middle,rd,2.55,2.55,0.00e+00,match
+BKNG-2019-07,4,step,wacc,7.6566,7.65658,0.00e+00,match
+BKNG-2019-07,5,step,tv,102330.1466,102330,0.00e+00,match
+BKNG-2019-07,6,step,ev,91466.0537,91466.1,0.00e+00,match
+BKNG-2019-07,7,middle,equity,89101.0537,89101.1,0.00e+00,match
+BKNG-2019-07,8,final,price_per_share,1855.6148,1855.61,0.00e+00,match
+BKNG-2019-07,9,alternative,alt: equity / inputs.shares_basic,1979.4637,1979.46,0.00e+00,match
+BKNG-2019-08,1,middle,forecast.growth.1,15.0,15,0.00e+00,match
+BKNG-2019-08,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],33.2007,33.2007,0.00e+00,match
+BKNG-2019-08,3,middle,derived: forecast.da[1] / forecast.revenue[1],2.8904,2.89044,0.00e+00,match
+BKNG-2019-08,4,middle,derived: forecast.capex[1] / forecast.revenue[1],2.4539,2.45386,0.00e+00,match
+BKNG-2019-08,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],3.7067,3.70668,0.00e+00,match
+BKNG-2019-08,6,middle,tax_rate,28.4665,28.4665,0.00e+00,match
+BKNG-2019-08,7,step,fcff.1,3959.7863,3959.79,0.00e+00,match
+BKNG-2019-08,8,step,fcff.2,4446.838,4446.84,0.00e+00,match
+BKNG-2019-08,9,step,fcff.3,4855.2876,4855.29,0.00e+00,match
+BKNG-2019-08,10,step,fcff.4,5150.0467,5150.05,0.00e+00,match
+BKNG-2019-08,11,step,fcff.5,5735.3659,5735.37,0.00e+00,match
+BKNG-2019-08,12,middle,beta_levered,0.967883,0.967883,0.00e+00,match
+BKNG-2019-08,13,middle,re,6.7594,6.75941,0.00e+00,match
+BKNG-2019-08,14,middle,rd,2.55,2.55,0.00e+00,match
+BKNG-2019-08,15,middle,weights.E,91.4445,91.4445,0.00e+00,match
+BKNG-2019-08,16,step,wacc,6.3535,6.35346,0.00e+00,match
+BKNG-2019-08,17,step,tv,152557.6037,152558,0.00e+00,match
+BKNG-2019-08,18,step,ev,136179.4793,136179,0.00e+00,match
+BKNG-2019-08,19,middle,cash_excess,5993.46,5993.46,0.00e+00,match
+BKNG-2019-08,20,middle,equity,133523.9393,133524,0.00e+00,match
+BKNG-2019-08,21,final,price_per_share,2780.7639,2780.76,0.00e+00,match
+BKNG-2019-08,22,alternative,alt: equity / inputs.shares_basic,2966.3598,2966.36,0.00e+00,match
+PM-2019-05,1,middle,forecast.growth.1,5.3648,5.36481,0.00e+00,match
+PM-2019-05,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],39.8487,39.8487,0.00e+00,match
+PM-2019-05,3,middle,derived: forecast.da[1] / forecast.revenue[1],3.0555,3.05547,0.00e+00,match
+PM-2019-05,4,middle,derived: forecast.capex[1] / forecast.revenue[1],4.8747,4.87465,0.00e+00,match
+PM-2019-05,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],35.766,35.766,0.00e+00,match
+PM-2019-05,6,step,fcff.1,8690.1321,8690.13,0.00e+00,match
+PM-2019-05,7,step,fcff.2,9172.3705,9172.37,0.00e+00,match
+PM-2019-05,8,step,fcff.3,9604.047,9604.05,0.00e+00,match
+PM-2019-05,9,step,fcff.4,9975.0785,9975.08,0.00e+00,match
+PM-2019-05,10,step,fcff.5,10895.224,10895.2,0.00e+00,match
+PM-2019-05,11,middle,beta_levered,1.646331,1.64633,0.00e+00,match
+PM-2019-05,12,middle,re,13.0443,13.0443,0.00e+00,match
+PM-2019-05,13,middle,rd,2.55,2.55,0.00e+00,match
+PM-2019-05,14,middle,weights.E,80.6393,80.6393,0.00e+00,match
+PM-2019-05,15,step,wacc,10.9089,10.9089,0.00e+00,match
+PM-2019-05,16,step,tv,124742.2866,124742,0.00e+00,match
+PM-2019-05,17,step,ev,109749.8585,109750,0.00e+00,match
+PM-2019-05,18,middle,equity,82863.8585,82863.9,0.00e+00,match
+PM-2019-05,19,final,price_per_share,53.2887,53.2887,0.00e+00,match
+PM-2019-05,20,alternative,alt: equity / inputs.shares_basic,53.3029,53.3029,0.00e+00,match
+PM-2019-06,1,middle,forecast.growth.1,5.3648,5.36481,0.00e+00,match
+PM-2019-06,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],39.8487,39.8487,0.00e+00,match
+PM-2019-06,3,middle,derived: forecast.da[1] / forecast.revenue[1],3.0555,3.05547,0.00e+00,match
+PM-2019-06,4,middle,derived: forecast.capex[1] / forecast.revenue[1],4.8747,4.87465,0.00e+00,match
+PM-2019-06,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],35.766,35.766,0.00e+00,match
+PM-2019-06,6,step,fcff.1,8690.1321,8690.13,0.00e+00,match
+PM-2019-06,7,step,fcff.2,9172.3705,9172.37,0.00e+00,match
+PM-2019-06,8,step,fcff.3,9604.047,9604.05,0.00e+00,match
+PM-2019-06,9,step,fcff.4,9975.0785,9975.08,0.00e+00,match
+PM-2019-06,10,final,fcff.5,10895.224,10895.2,0.00e+00,match
+PM-2019-07,1,middle,beta_levered,1.646331,1.64633,0.00e+00,match
+PM-2019-07,2,middle,re,13.0443,13.0443,0.00e+00,match
+PM-2019-07,3,middle,rd,2.55,2.55,0.00e+00,match
+PM-2019-07,4,step,wacc,10.9089,10.9089,0.00e+00,match
+PM-2019-07,5,step,tv,124742.2866,124742,0.00e+00,match
+PM-2019-07,6,step,ev,109749.8585,109750,0.00e+00,match
+PM-2019-07,7,middle,equity,82863.8585,82863.9,0.00e+00,match
+PM-2019-07,8,final,price_per_share,53.2887,53.2887,0.00e+00,match
+PM-2019-07,9,alternative,alt: equity / inputs.shares_basic,53.3029,53.3029,0.00e+00,match
+PM-2019-08,1,middle,forecast.growth.1,5.3648,5.36481,0.00e+00,match
+PM-2019-08,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],39.8487,39.8487,0.00e+00,match
+PM-2019-08,3,middle,derived: forecast.da[1] / forecast.revenue[1],3.0555,3.05547,0.00e+00,match
+PM-2019-08,4,middle,derived: forecast.capex[1] / forecast.revenue[1],4.8747,4.87465,0.00e+00,match
+PM-2019-08,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],35.766,35.766,0.00e+00,match
+PM-2019-08,6,middle,tax_rate,30.4929,30.4929,0.00e+00,match
+PM-2019-08,7,step,fcff.1,7509.3523,7509.35,0.00e+00,match
+PM-2019-08,8,step,fcff.2,7934.319,7934.32,0.00e+00,match
+PM-2019-08,9,step,fcff.3,8326.2861,8326.29,0.00e+00,match
+PM-2019-08,10,step,fcff.4,8677.7509,8677.75,0.00e+00,match
+PM-2019-08,11,step,fcff.5,10958.5044,10958.5,0.00e+00,match
+PM-2019-08,12,middle,beta_levered,1.433042,1.43304,0.00e+00,match
+PM-2019-08,13,middle,re,9.0852,9.08521,0.00e+00,match
+PM-2019-08,14,middle,rd,2.55,2.55,0.00e+00,match
+PM-2019-08,15,middle,weights.E,80.6393,80.6393,0.00e+00,match
+PM-2019-08,16,step,wacc,7.7163,7.71627,0.00e+00,match
+PM-2019-08,17,step,tv,215335.1579,215335,0.00e+00,match
+PM-2019-08,18,step,ev,189896.3614,189896,0.00e+00,match
+PM-2019-08,19,middle,cash_excess,6000.5,6000.5,0.00e+00,match
+PM-2019-08,20,middle,equity,162417.8614,162418,0.00e+00,match
+PM-2019-08,21,final,price_per_share,104.4488,104.449,0.00e+00,match
+PM-2019-08,22,alternative,alt: equity / inputs.shares_basic,104.4767,104.477,0.00e+00,match
+JNJ-2019-05,1,middle,forecast.growth.1,6.5271,6.52714,0.00e+00,match
+JNJ-2019-05,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],25.3965,25.3965,0.00e+00,match
+JNJ-2019-05,3,middle,derived: forecast.da[1] / forecast.revenue[1],7.0318,7.03175,0.00e+00,match
+JNJ-2019-05,4,middle,derived: forecast.capex[1] / forecast.revenue[1],4.425,4.42503,0.00e+00,match
+JNJ-2019-05,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],18.7034,18.7034,0.00e+00,match
+JNJ-2019-05,6,step,fcff.1,18705.6025,18705.6,0.00e+00,match
+JNJ-2019-05,7,step,fcff.2,19887.5293,19887.5,0.00e+00,match
+JNJ-2019-05,8,step,fcff.3,20919.413,20919.4,0.00e+00,match
+JNJ-2019-05,9,step,fcff.4,21768.4545,21768.5,0.00e+00,match
+JNJ-2019-05,10,step,fcff.5,19638.5986,19638.6,0.00e+00,match
+JNJ-2019-05,11,middle,beta_levered,1.300383,1.30038,0.00e+00,match
+JNJ-2019-05,12,middle,re,10.6227,10.6227,0.00e+00,match
+JNJ-2019-05,13,middle,rd,2.55,2.55,0.00e+00,match
+JNJ-2019-05,14,middle,weights.E,92.7238,92.7238,0.00e+00,match
+JNJ-2019-05,15,step,wacc,9.9963,9.99634,0.00e+00,match
+JNJ-2019-05,16,step,tv,250506.8675,250507,0.00e+00,match
+JNJ-2019-05,17,step,ev,231798.5133,231799,0.00e+00,match
+JNJ-2019-05,18,middle,equity,221001.5133,221002,0.00e+00,match
+JNJ-2019-05,19,final,price_per_share,80.9915,80.9915,0.00e+00,match
+JNJ-2019-05,20,alternative,alt: equity / inputs.shares_basic,82.9854,82.9854,0.00e+00,match
+JNJ-2019-06,1,middle,forecast.growth.1,6.5271,6.52714,0.00e+00,match
+JNJ-2019-06,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],25.3965,25.3965,0.00e+00,match
+JNJ-2019-06,3,middle,derived: forecast.da[1] / forecast.revenue[1],7.0318,7.03175,0.00e+00,match
+JNJ-2019-06,4,middle,derived: forecast.capex[1] / forecast.revenue[1],4.425,4.42503,0.00e+00,match
+JNJ-2019-06,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],18.7034,18.7034,0.00e+00,match
+JNJ-2019-06,6,step,fcff.1,18705.6025,18705.6,0.00e+00,match
+JNJ-2019-06,7,step,fcff.2,19887.5293,19887.5,0.00e+00,match
+JNJ-2019-06,8,step,fcff.3,20919.413,20919.4,0.00e+00,match
+JNJ-2019-06,9,step,fcff.4,21768.4545,21768.5,0.00e+00,match
+JNJ-2019-06,10,final,fcff.5,19638.5986,19638.6,0.00e+00,match
+JNJ-2019-07,1,middle,beta_levered,1.300383,1.30038,0.00e+00,match
+JNJ-2019-07,2,middle,re,10.6227,10.6227,0.00e+00,match
+JNJ-2019-07,3,middle,rd,2.55,2.55,0.00e+00,match
+JNJ-2019-07,4,step,wacc,9.9963,9.99634,0.00e+00,match
+JNJ-2019-07,5,step,tv,250506.8675,250507,0.00e+00,match
+JNJ-2019-07,6,step,ev,231798.5133,231799,0.00e+00,match
+JNJ-2019-07,7,middle,equity,221001.5133,221002,0.00e+00,match
+JNJ-2019-07,8,final,price_per_share,80.9915,80.9915,0.00e+00,match
+JNJ-2019-07,9,alternative,alt: equity / inputs.shares_basic,82.9854,82.9854,0.00e+00,match
+JNJ-2019-08,1,middle,forecast.growth.1,6.5271,6.52714,0.00e+00,match
+JNJ-2019-08,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],25.3965,25.3965,0.00e+00,match
+JNJ-2019-08,3,middle,derived: forecast.da[1] / forecast.revenue[1],7.0318,7.03175,0.00e+00,match
+JNJ-2019-08,4,middle,derived: forecast.capex[1] / forecast.revenue[1],4.425,4.42503,0.00e+00,match
+JNJ-2019-08,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],18.7034,18.7034,0.00e+00,match
+JNJ-2019-08,6,middle,tax_rate,35.0,35,0.00e+00,match
+JNJ-2019-08,7,step,fcff.1,15615.6523,15615.7,0.00e+00,match
+JNJ-2019-08,8,step,fcff.2,16631.3117,16631.3,0.00e+00,match
+JNJ-2019-08,9,step,fcff.3,17545.6246,17545.6,0.00e+00,match
+JNJ-2019-08,10,step,fcff.4,18333.5927,18333.6,0.00e+00,match
+JNJ-2019-08,11,step,fcff.5,19746.8212,19746.8,0.00e+00,match
+JNJ-2019-08,12,middle,beta_levered,1.201257,1.20126,0.00e+00,match
+JNJ-2019-08,13,middle,re,7.9263,7.92628,0.00e+00,match
+JNJ-2019-08,14,middle,rd,2.55,2.55,0.00e+00,match
+JNJ-2019-08,15,middle,weights.E,92.7238,92.7238,0.00e+00,match
+JNJ-2019-08,16,step,wacc,7.4961,7.49613,0.00e+00,match
+JNJ-2019-08,17,step,tv,405123.2514,405123,0.00e+00,match
+JNJ-2019-08,18,step,ev,365758.0873,365758,0.00e+00,match
+JNJ-2019-08,19,middle,cash_excess,18055.38,18055.4,0.00e+00,match
+JNJ-2019-08,20,middle,equity,353329.4673,353329,0.00e+00,match
+JNJ-2019-08,21,final,price_per_share,129.4864,129.486,0.00e+00,match
+JNJ-2019-08,22,alternative,alt: equity / inputs.shares_basic,132.6741,132.674,0.00e+00,match
+UNP-2019-05,1,middle,forecast.growth.1,7.0036,7.00363,0.00e+00,match
+UNP-2019-05,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],37.263,37.263,0.00e+00,match
+UNP-2019-05,3,middle,derived: forecast.da[1] / forecast.revenue[1],9.909,9.90896,0.00e+00,match
+UNP-2019-05,4,middle,derived: forecast.capex[1] / forecast.revenue[1],15.9584,15.9584,0.00e+00,match
+UNP-2019-05,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],6.0062,6.00618,0.00e+00,match
+UNP-2019-05,6,step,fcff.1,5617.9769,5617.98,0.00e+00,match
+UNP-2019-05,7,step,fcff.2,5958.3176,5958.32,0.00e+00,match
+UNP-2019-05,8,step,fcff.3,6244.9056,6244.91,0.00e+00,match
+UNP-2019-05,9,step,fcff.4,6467.3331,6467.33,0.00e+00,match
+UNP-2019-05,10,step,fcff.5,8280.0877,8280.09,0.00e+00,match
+UNP-2019-05,11,middle,beta_levered,2.127698,2.1277,0.00e+00,match
+UNP-2019-05,12,middle,re,16.4139,16.4139,0.00e+00,match
+UNP-2019-05,13,middle,rd,2.55,2.55,0.00e+00,match
+UNP-2019-05,14,middle,weights.E,85.2616,85.2616,0.00e+00,match
+UNP-2019-05,15,step,wacc,14.2917,14.2917,0.00e+00,match
+UNP-2019-05,16,step,tv,68710.7781,68710.8,0.00e+00,match
+UNP-2019-05,17,step,ev,56929.0754,56929.1,0.00e+00,match
+UNP-2019-05,18,middle,equity,35611.0754,35611.1,0.00e+00,match
+UNP-2019-05,19,final,price_per_share,47.2108,47.2108,0.00e+00,match
+UNP-2019-05,20,alternative,alt: equity / inputs.shares_basic,49.2629,49.2629,0.00e+00,match
+UNP-2019-06,1,middle,forecast.growth.1,7.0036,7.00363,0.00e+00,match
+UNP-2019-06,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],37.263,37.263,0.00e+00,match
+UNP-2019-06,3,middle,derived: forecast.da[1] / forecast.revenue[1],9.909,9.90896,0.00e+00,match
+UNP-2019-06,4,middle,derived: forecast.capex[1] / forecast.revenue[1],15.9584,15.9584,0.00e+00,match
+UNP-2019-06,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],6.0062,6.00618,0.00e+00,match
+UNP-2019-06,6,step,fcff.1,5617.9769,5617.98,0.00e+00,match
+UNP-2019-06,7,step,fcff.2,5958.3176,5958.32,0.00e+00,match
+UNP-2019-06,8,step,fcff.3,6244.9056,6244.91,0.00e+00,match
+UNP-2019-06,9,step,fcff.4,6467.3331,6467.33,0.00e+00,match
+UNP-2019-06,10,final,fcff.5,8280.0877,8280.09,0.00e+00,match
+UNP-2019-07,1,middle,beta_levered,2.127698,2.1277,0.00e+00,match
+UNP-2019-07,2,middle,re,16.4139,16.4139,0.00e+00,match
+UNP-2019-07,3,middle,rd,2.55,2.55,0.00e+00,match
+UNP-2019-07,4,step,wacc,14.2917,14.2917,0.00e+00,match
+UNP-2019-07,5,step,tv,68710.7781,68710.8,0.00e+00,match
+UNP-2019-07,6,step,ev,56929.0754,56929.1,0.00e+00,match
+UNP-2019-07,7,middle,equity,35611.0754,35611.1,0.00e+00,match
+UNP-2019-07,8,final,price_per_share,47.2108,47.2108,0.00e+00,match
+UNP-2019-07,9,alternative,alt: equity / inputs.shares_basic,49.2629,49.2629,0.00e+00,match
+UNP-2019-08,1,middle,forecast.growth.1,7.0036,7.00363,0.00e+00,match
+UNP-2019-08,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],37.263,37.263,0.00e+00,match
+UNP-2019-08,3,middle,derived: forecast.da[1] / forecast.revenue[1],9.909,9.90896,0.00e+00,match
+UNP-2019-08,4,middle,derived: forecast.capex[1] / forecast.revenue[1],15.9584,15.9584,0.00e+00,match
+UNP-2019-08,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],6.0062,6.00618,0.00e+00,match
+UNP-2019-08,6,middle,tax_rate,10.0,10,0.00e+00,match
+UNP-2019-08,7,step,fcff.1,6619.3884,6619.39,0.00e+00,match
+UNP-2019-08,8,step,fcff.2,7023.8976,7023.9,0.00e+00,match
+UNP-2019-08,9,step,fcff.3,7374.1815,7374.18,0.00e+00,match
+UNP-2019-08,10,step,fcff.4,7659.0549,7659.05,0.00e+00,match
+UNP-2019-08,11,step,fcff.5,8357.8664,8357.87,0.00e+00,match
+UNP-2019-08,12,middle,beta_levered,1.755558,1.75556,0.00e+00,match
+UNP-2019-08,13,middle,re,10.6978,10.6978,0.00e+00,match
+UNP-2019-08,14,middle,rd,2.55,2.55,0.00e+00,match
+UNP-2019-08,15,middle,weights.E,85.2616,85.2616,0.00e+00,match
+UNP-2019-08,16,step,wacc,9.418,9.41801,0.00e+00,match
+UNP-2019-08,17,step,tv,123833.4304,123833,0.00e+00,match
+UNP-2019-08,18,step,ev,112109.066,112109,0.00e+00,match
+UNP-2019-08,19,middle,cash_excess,816.36,816.36,0.00e+00,match
+UNP-2019-08,20,middle,equity,90334.426,90334.4,0.00e+00,match
+UNP-2019-08,21,final,price_per_share,119.7593,119.759,0.00e+00,match
+UNP-2019-08,22,alternative,alt: equity / inputs.shares_basic,124.965,124.965,0.00e+00,match
+PPL-2019-05,1,middle,forecast.growth.1,1.767,1.76701,0.00e+00,match
+PPL-2019-05,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],38.216,38.216,0.00e+00,match
+PPL-2019-05,3,middle,derived: forecast.da[1] / forecast.revenue[1],14.4253,14.4253,0.00e+00,match
+PPL-2019-05,4,middle,derived: forecast.capex[1] / forecast.revenue[1],40.8362,40.8362,0.00e+00,match
+PPL-2019-05,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],1.1419,1.14193,0.00e+00,match
+PPL-2019-05,6,step,fcff.1,297.8744,297.874,0.00e+00,match
+PPL-2019-05,7,step,fcff.2,303.2596,303.26,0.00e+00,match
+PPL-2019-05,8,step,fcff.3,308.9188,308.919,0.00e+00,match
+PPL-2019-05,9,step,fcff.4,314.8636,314.864,0.00e+00,match
+PPL-2019-05,10,step,fcff.5,2553.569,2553.57,0.00e+00,match
+PPL-2019-05,11,middle,beta_levered,0.623917,0.623917,0.00e+00,match
+PPL-2019-05,12,middle,re,5.8874,5.88742,0.00e+00,match
+PPL-2019-05,13,middle,rd,3.48,3.48,0.00e+00,match
+PPL-2019-05,14,middle,weights.E,54.0068,54.0068,0.00e+00,match
+PPL-2019-05,15,step,wacc,4.4441,4.44405,0.00e+00,match
+PPL-2019-05,16,step,tv,106570.516,106571,0.00e+00,match
+PPL-2019-05,17,step,ev,88900.4576,88900.5,0.00e+00,match
+PPL-2019-05,18,middle,equity,67492.4576,67492.5,0.00e+00,match
+PPL-2019-05,19,final,price_per_share,95.2451,95.2451,0.00e+00,match
+PPL-2019-05,20,alternative,alt: equity / inputs.shares_basic,93.6177,93.6177,0.00e+00,match
+PPL-2019-06,1,middle,forecast.growth.1,1.767,1.76701,0.00e+00,match
+PPL-2019-06,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],38.216,38.216,0.00e+00,match
+PPL-2019-06,3,middle,derived: forecast.da[1] / forecast.revenue[1],14.4253,14.4253,0.00e+00,match
+PPL-2019-06,4,middle,derived: forecast.capex[1] / forecast.revenue[1],40.8362,40.8362,0.00e+00,match
+PPL-2019-06,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],1.1419,1.14193,0.00e+00,match
+PPL-2019-06,6,step,fcff.1,297.8744,297.874,0.00e+00,match
+PPL-2019-06,7,step,fcff.2,303.2596,303.26,0.00e+00,match
+PPL-2019-06,8,step,fcff.3,308.9188,308.919,0.00e+00,match
+PPL-2019-06,9,step,fcff.4,314.8636,314.864,0.00e+00,match
+PPL-2019-06,10,final,fcff.5,2553.569,2553.57,0.00e+00,match
+PPL-2019-07,1,middle,beta_levered,0.623917,0.623917,0.00e+00,match
+PPL-2019-07,2,middle,re,5.8874,5.88742,0.00e+00,match
+PPL-2019-07,3,middle,rd,3.48,3.48,0.00e+00,match
+PPL-2019-07,4,step,wacc,4.4441,4.44405,0.00e+00,match
+PPL-2019-07,5,step,tv,106570.516,106571,0.00e+00,match
+PPL-2019-07,6,step,ev,88900.4576,88900.5,0.00e+00,match
+PPL-2019-07,7,middle,equity,67492.4576,67492.5,0.00e+00,match
+PPL-2019-07,8,final,price_per_share,95.2451,95.2451,0.00e+00,match
+PPL-2019-07,9,alternative,alt: equity / inputs.shares_basic,93.6177,93.6177,0.00e+00,match
+PPL-2019-08,1,middle,forecast.growth.1,1.767,1.76701,0.00e+00,match
+PPL-2019-08,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],38.216,38.216,0.00e+00,match
+PPL-2019-08,3,middle,derived: forecast.da[1] / forecast.revenue[1],14.4253,14.4253,0.00e+00,match
+PPL-2019-08,4,middle,derived: forecast.capex[1] / forecast.revenue[1],40.8362,40.8362,0.00e+00,match
+PPL-2019-08,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],1.1419,1.14193,0.00e+00,match
+PPL-2019-08,6,middle,tax_rate,28.8199,28.8199,0.00e+00,match
+PPL-2019-08,7,step,fcff.1,61.1123,61.1123,0.00e+00,match
+PPL-2019-08,8,step,fcff.2,62.1412,62.1412,0.00e+00,match
+PPL-2019-08,9,step,fcff.3,63.3013,63.3013,0.00e+00,match
+PPL-2019-08,10,step,fcff.4,64.5988,64.5988,0.00e+00,match
+PPL-2019-08,11,step,fcff.5,2578.2813,2578.28,0.00e+00,match
+PPL-2019-08,12,middle,beta_levered,0.748025,0.748025,0.00e+00,match
+PPL-2019-08,13,middle,re,5.6601,5.66012,0.00e+00,match
+PPL-2019-08,14,middle,rd,3.48,3.48,0.00e+00,match
+PPL-2019-08,15,middle,weights.E,54.0068,54.0068,0.00e+00,match
+PPL-2019-08,16,step,wacc,4.3213,4.3213,0.00e+00,match
+PPL-2019-08,17,step,tv,145102.0172,145102,0.00e+00,match
+PPL-2019-08,18,step,ev,122310.7102,122311,0.00e+00,match
+PPL-2019-08,19,middle,cash_excess,465.3,465.3,0.00e+00,match
+PPL-2019-08,20,middle,equity,100747.0102,100747,0.00e+00,match
+PPL-2019-08,21,final,price_per_share,142.1737,142.174,0.00e+00,match
+PPL-2019-08,22,alternative,alt: equity / inputs.shares_basic,139.7446,139.745,0.00e+00,match
+META-2019-05,1,middle,forecast.growth.1,15.0,15,0.00e+00,match
+META-2019-05,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],46.4254,46.4254,0.00e+00,match
+META-2019-05,3,middle,derived: forecast.da[1] / forecast.revenue[1],7.8838,7.88384,0.00e+00,match
+META-2019-05,4,middle,derived: forecast.capex[1] / forecast.revenue[1],19.2439,19.2439,0.00e+00,match
+META-2019-05,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],12.9616,12.9616,0.00e+00,match
+META-2019-05,6,step,fcff.1,15170.7061,15170.7,0.00e+00,match
+META-2019-05,7,step,fcff.2,17188.4831,17188.5,0.00e+00,match
+META-2019-05,8,step,fcff.3,18920.006,18920,0.00e+00,match
+META-2019-05,9,step,fcff.4,20215.5921,20215.6,0.00e+00,match
+META-2019-05,10,step,fcff.5,30307.1467,30307.1,0.00e+00,match
+META-2019-05,11,middle,beta_levered,1.25264,1.25264,0.00e+00,match
+META-2019-05,12,middle,re,10.2885,10.2885,0.00e+00,match
+META-2019-05,13,middle,rd,2.55,2.55,0.00e+00,match
+META-2019-05,14,middle,weights.E,100.0,100,0.00e+00,match
+META-2019-05,15,step,wacc,10.2885,10.2885,0.00e+00,match
+META-2019-05,16,step,tv,372967.0796,372967,0.00e+00,match
+META-2019-05,17,step,ev,302797.7031,302798,0.00e+00,match
+META-2019-05,18,middle,equity,343911.7031,343912,0.00e+00,match
+META-2019-05,19,final,price_per_share,117.7377,117.738,0.00e+00,match
+META-2019-05,20,alternative,alt: equity / inputs.shares_basic,119.0006,119.001,0.00e+00,match
+META-2019-06,1,middle,forecast.growth.1,15.0,15,0.00e+00,match
+META-2019-06,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],46.4254,46.4254,0.00e+00,match
+META-2019-06,3,middle,derived: forecast.da[1] / forecast.revenue[1],7.8838,7.88384,0.00e+00,match
+META-2019-06,4,middle,derived: forecast.capex[1] / forecast.revenue[1],19.2439,19.2439,0.00e+00,match
+META-2019-06,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],12.9616,12.9616,0.00e+00,match
+META-2019-06,6,step,fcff.1,15170.7061,15170.7,0.00e+00,match
+META-2019-06,7,step,fcff.2,17188.4831,17188.5,0.00e+00,match
+META-2019-06,8,step,fcff.3,18920.006,18920,0.00e+00,match
+META-2019-06,9,step,fcff.4,20215.5921,20215.6,0.00e+00,match
+META-2019-06,10,final,fcff.5,30307.1467,30307.1,0.00e+00,match
+META-2019-07,1,middle,beta_levered,1.25264,1.25264,0.00e+00,match
+META-2019-07,2,middle,re,10.2885,10.2885,0.00e+00,match
+META-2019-07,3,middle,rd,2.55,2.55,0.00e+00,match
+META-2019-07,4,step,wacc,10.2885,10.2885,0.00e+00,match
+META-2019-07,5,step,tv,372967.0796,372967,0.00e+00,match
+META-2019-07,6,step,ev,302797.7031,302798,0.00e+00,match
+META-2019-07,7,middle,equity,343911.7031,343912,0.00e+00,match
+META-2019-07,8,final,price_per_share,117.7377,117.738,0.00e+00,match
+META-2019-07,9,alternative,alt: equity / inputs.shares_basic,119.0006,119.001,0.00e+00,match
+META-2019-08,1,middle,forecast.growth.1,15.0,15,0.00e+00,match
+META-2019-08,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],46.4254,46.4254,0.00e+00,match
+META-2019-08,3,middle,derived: forecast.da[1] / forecast.revenue[1],7.8838,7.88384,0.00e+00,match
+META-2019-08,4,middle,derived: forecast.capex[1] / forecast.revenue[1],19.2439,19.2439,0.00e+00,match
+META-2019-08,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],12.9616,12.9616,0.00e+00,match
+META-2019-08,6,middle,tax_rate,17.9402,17.9402,0.00e+00,match
+META-2019-08,7,step,fcff.1,16082.8886,16082.9,0.00e+00,match
+META-2019-08,8,step,fcff.2,18218.9037,18218.9,0.00e+00,match
+META-2019-08,9,step,fcff.3,20073.1557,20073.2,0.00e+00,match
+META-2019-08,10,step,fcff.4,21493.2553,21493.3,0.00e+00,match
+META-2019-08,11,step,fcff.5,30580.7565,30580.8,0.00e+00,match
+META-2019-08,12,middle,beta_levered,1.169268,1.16927,0.00e+00,match
+META-2019-08,13,middle,re,7.7663,7.76634,0.00e+00,match
+META-2019-08,14,middle,rd,2.55,2.55,0.00e+00,match
+META-2019-08,15,middle,weights.E,100.0,100,0.00e+00,match
+META-2019-08,16,step,wacc,7.7663,7.76634,0.00e+00,match
+META-2019-08,17,step,tv,595200.0994,595200,0.00e+00,match
+META-2019-08,18,step,ev,511909.4085,511909,0.00e+00,match
+META-2019-08,19,middle,cash_excess,39997.24,39997.2,0.00e+00,match
+META-2019-08,20,middle,equity,551906.6485,551907,0.00e+00,match
+META-2019-08,21,final,price_per_share,188.9444,188.944,0.00e+00,match
+META-2019-08,22,alternative,alt: equity / inputs.shares_basic,190.9712,190.971,0.00e+00,match
+VZ-2019-05,1,middle,forecast.growth.1,1.9196,1.91958,0.00e+00,match
+VZ-2019-05,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],20.667,20.667,0.00e+00,match
+VZ-2019-05,3,middle,derived: forecast.da[1] / forecast.revenue[1],13.1313,13.1313,0.00e+00,match
+VZ-2019-05,4,middle,derived: forecast.capex[1] / forecast.revenue[1],13.3183,13.3183,0.00e+00,match
+VZ-2019-05,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],12.5885,12.5885,0.00e+00,match
+VZ-2019-05,6,step,fcff.1,21210.4676,21210.5,0.00e+00,match
+VZ-2019-05,7,step,fcff.2,21618.5723,21618.6,0.00e+00,match
+VZ-2019-05,8,step,fcff.3,22038.8756,22038.9,0.00e+00,match
+VZ-2019-05,9,step,fcff.4,22471.7813,22471.8,0.00e+00,match
+VZ-2019-05,10,step,fcff.5,22801.5103,22801.5,0.00e+00,match
+VZ-2019-05,11,middle,beta_levered,0.889101,0.889101,0.00e+00,match
+VZ-2019-05,12,middle,re,7.7437,7.74371,0.00e+00,match
+VZ-2019-05,13,middle,rd,2.9964,2.9964,0.00e+00,match
+VZ-2019-05,14,middle,weights.E,69.1734,69.1734,0.00e+00,match
+VZ-2019-05,15,step,wacc,6.0863,6.0863,0.00e+00,match
+VZ-2019-05,16,step,tv,569159.3614,569159,0.00e+00,match
+VZ-2019-05,17,step,ev,515955.1815,515955,0.00e+00,match
+VZ-2019-05,18,middle,equity,404072.1815,404072,0.00e+00,match
+VZ-2019-05,19,final,price_per_share,97.7909,97.7909,0.00e+00,match
+VZ-2019-05,20,alternative,alt: equity / inputs.shares_basic,97.7899,97.7899,0.00e+00,match
+VZ-2019-06,1,middle,forecast.growth.1,1.9196,1.91958,0.00e+00,match
+VZ-2019-06,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],20.667,20.667,0.00e+00,match
+VZ-2019-06,3,middle,derived: forecast.da[1] / forecast.revenue[1],13.1313,13.1313,0.00e+00,match
+VZ-2019-06,4,middle,derived: forecast.capex[1] / forecast.revenue[1],13.3183,13.3183,0.00e+00,match
+VZ-2019-06,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],12.5885,12.5885,0.00e+00,match
+VZ-2019-06,6,step,fcff.1,21210.4676,21210.5,0.00e+00,match
+VZ-2019-06,7,step,fcff.2,21618.5723,21618.6,0.00e+00,match
+VZ-2019-06,8,step,fcff.3,22038.8756,22038.9,0.00e+00,match
+VZ-2019-06,9,step,fcff.4,22471.7813,22471.8,0.00e+00,match
+VZ-2019-06,10,final,fcff.5,22801.5103,22801.5,0.00e+00,match
+VZ-2019-07,1,middle,beta_levered,0.889101,0.889101,0.00e+00,match
+VZ-2019-07,2,middle,re,7.7437,7.74371,0.00e+00,match
+VZ-2019-07,3,middle,rd,2.9964,2.9964,0.00e+00,match
+VZ-2019-07,4,step,wacc,6.0863,6.0863,0.00e+00,match
+VZ-2019-07,5,step,tv,569159.3614,569159,0.00e+00,match
+VZ-2019-07,6,step,ev,515955.1815,515955,0.00e+00,match
+VZ-2019-07,7,middle,equity,404072.1815,404072,0.00e+00,match
+VZ-2019-07,8,final,price_per_share,97.7909,97.7909,0.00e+00,match
+VZ-2019-07,9,alternative,alt: equity / inputs.shares_basic,97.7899,97.7899,0.00e+00,match
+VZ-2019-08,1,middle,forecast.growth.1,1.9196,1.91958,0.00e+00,match
+VZ-2019-08,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],20.667,20.667,0.00e+00,match
+VZ-2019-08,3,middle,derived: forecast.da[1] / forecast.revenue[1],13.1313,13.1313,0.00e+00,match
+VZ-2019-08,4,middle,derived: forecast.capex[1] / forecast.revenue[1],13.3183,13.3183,0.00e+00,match
+VZ-2019-08,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],12.5885,12.5885,0.00e+00,match
+VZ-2019-08,6,middle,tax_rate,10.0,10,0.00e+00,match
+VZ-2019-08,7,step,fcff.1,24242.5798,24242.6,0.00e+00,match
+VZ-2019-08,8,step,fcff.2,24719.209,24719.2,0.00e+00,match
+VZ-2019-08,9,step,fcff.3,25241.089,25241.1,0.00e+00,match
+VZ-2019-08,10,step,fcff.4,25810.6244,25810.6,0.00e+00,match
+VZ-2019-08,11,step,fcff.5,22894.4763,22894.5,0.00e+00,match
+VZ-2019-08,12,middle,beta_levered,0.925698,0.925698,0.00e+00,match
+VZ-2019-08,13,middle,re,6.5485,6.54849,0.00e+00,match
+VZ-2019-08,14,middle,rd,2.9964,2.9964,0.00e+00,match
+VZ-2019-08,15,middle,weights.E,69.1734,69.1734,0.00e+00,match
+VZ-2019-08,16,step,wacc,5.2595,5.25952,0.00e+00,match
+VZ-2019-08,17,step,tv,850394.3512,850394,0.00e+00,match
+VZ-2019-08,18,step,ev,783692.2475,783692,0.00e+00,match
+VZ-2019-08,19,middle,cash_excess,127.74,127.74,0.00e+00,match
+VZ-2019-08,20,middle,equity,669191.9875,669192,0.00e+00,match
+VZ-2019-08,21,final,price_per_share,161.9535,161.954,0.00e+00,match
+VZ-2019-08,22,alternative,alt: equity / inputs.shares_basic,161.9517,161.952,0.00e+00,match
+MCD-2019-05,1,middle,forecast.growth.1,0.0,0,0.00e+00,match
+MCD-2019-05,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],38.4254,38.4254,0.00e+00,match
+MCD-2019-05,3,middle,derived: forecast.da[1] / forecast.revenue[1],6.3941,6.3941,0.00e+00,match
+MCD-2019-05,4,middle,derived: forecast.capex[1] / forecast.revenue[1],9.5198,9.51977,0.00e+00,match
+MCD-2019-05,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],4.7103,4.71032,0.00e+00,match
+MCD-2019-05,6,step,fcff.1,5725.239,5725.24,0.00e+00,match
+MCD-2019-05,7,step,fcff.2,5748.9134,5748.91,0.00e+00,match
+MCD-2019-05,8,step,fcff.3,5801.4508,5801.45,0.00e+00,match
+MCD-2019-05,9,step,fcff.4,5883.496,5883.5,0.00e+00,match
+MCD-2019-05,10,step,fcff.5,6658.0923,6658.09,0.00e+00,match
+MCD-2019-05,11,middle,beta_levered,0.861713,0.861713,0.00e+00,match
+MCD-2019-05,12,middle,re,7.552,7.55199,0.00e+00,match
+MCD-2019-05,13,middle,rd,2.55,2.55,0.00e+00,match
+MCD-2019-05,14,middle,weights.E,82.9547,82.9547,0.00e+00,match
+MCD-2019-05,15,step,wacc,6.6081,6.60811,0.00e+00,match
+MCD-2019-05,16,step,tv,147376.2708,147376,0.00e+00,match
+MCD-2019-05,17,step,ev,131629.5087,131630,0.00e+00,match
+MCD-2019-05,18,middle,equity,101420.2087,101420,0.00e+00,match
+MCD-2019-05,19,final,price_per_share,129.099,129.099,0.00e+00,match
+MCD-2019-05,20,alternative,alt: equity / inputs.shares_basic,132.5205,132.52,0.00e+00,match
+MCD-2019-06,1,middle,forecast.growth.1,0.0,0,0.00e+00,match
+MCD-2019-06,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],38.4254,38.4254,0.00e+00,match
+MCD-2019-06,3,middle,derived: forecast.da[1] / forecast.revenue[1],6.3941,6.3941,0.00e+00,match
+MCD-2019-06,4,middle,derived: forecast.capex[1] / forecast.revenue[1],9.5198,9.51977,0.00e+00,match
+MCD-2019-06,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],4.7103,4.71032,0.00e+00,match
+MCD-2019-06,6,step,fcff.1,5725.239,5725.24,0.00e+00,match
+MCD-2019-06,7,step,fcff.2,5748.9134,5748.91,0.00e+00,match
+MCD-2019-06,8,step,fcff.3,5801.4508,5801.45,0.00e+00,match
+MCD-2019-06,9,step,fcff.4,5883.496,5883.5,0.00e+00,match
+MCD-2019-06,10,final,fcff.5,6658.0923,6658.09,0.00e+00,match
+MCD-2019-07,1,middle,beta_levered,0.861713,0.861713,0.00e+00,match
+MCD-2019-07,2,middle,re,7.552,7.55199,0.00e+00,match
+MCD-2019-07,3,middle,rd,2.55,2.55,0.00e+00,match
+MCD-2019-07,4,step,wacc,6.6081,6.60811,0.00e+00,match
+MCD-2019-07,5,step,tv,147376.2708,147376,0.00e+00,match
+MCD-2019-07,6,step,ev,131629.5087,131630,0.00e+00,match
+MCD-2019-07,7,middle,equity,101420.2087,101420,0.00e+00,match
+MCD-2019-07,8,final,price_per_share,129.099,129.099,0.00e+00,match
+MCD-2019-07,9,alternative,alt: equity / inputs.shares_basic,132.5205,132.52,0.00e+00,match
+MCD-2019-08,1,middle,forecast.growth.1,0.0,0,0.00e+00,match
+MCD-2019-08,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],38.4254,38.4254,0.00e+00,match
+MCD-2019-08,3,middle,derived: forecast.da[1] / forecast.revenue[1],6.3941,6.3941,0.00e+00,match
+MCD-2019-08,4,middle,derived: forecast.capex[1] / forecast.revenue[1],9.5198,9.51977,0.00e+00,match
+MCD-2019-08,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],4.7103,4.71032,0.00e+00,match
+MCD-2019-08,6,middle,tax_rate,31.795,31.795,0.00e+00,match
+MCD-2019-08,7,step,fcff.1,4853.1083,4853.11,0.00e+00,match
+MCD-2019-08,8,step,fcff.2,4877.2505,4877.25,0.00e+00,match
+MCD-2019-08,9,step,fcff.3,4932.0264,4932.03,0.00e+00,match
+MCD-2019-08,10,step,fcff.4,5018.2735,5018.27,0.00e+00,match
+MCD-2019-08,11,step,fcff.5,6728.0257,6728.03,0.00e+00,match
+MCD-2019-08,12,middle,beta_levered,0.907348,0.907348,0.00e+00,match
+MCD-2019-08,13,middle,re,6.4567,6.45674,0.00e+00,match
+MCD-2019-08,14,middle,rd,2.55,2.55,0.00e+00,match
+MCD-2019-08,15,middle,weights.E,82.9547,82.9547,0.00e+00,match
+MCD-2019-08,16,step,wacc,5.6995,5.69954,0.00e+00,match
+MCD-2019-08,17,step,tv,215537.8358,215538,0.00e+00,match
+MCD-2019-08,18,step,ev,190834.058,190834,0.00e+00,match
+MCD-2019-08,19,middle,cash_excess,445.496,445.496,0.00e+00,match
+MCD-2019-08,20,middle,equity,160204.254,160204,0.00e+00,match
+MCD-2019-08,21,final,price_per_share,203.926,203.926,0.00e+00,match
+MCD-2019-08,22,alternative,alt: equity / inputs.shares_basic,209.3305,209.33,0.00e+00,match
+ORLY-2019-05,1,middle,forecast.growth.1,5.346,5.346,0.00e+00,match
+ORLY-2019-05,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],19.3423,19.3423,0.00e+00,match
+ORLY-2019-05,3,middle,derived: forecast.da[1] / forecast.revenue[1],2.6184,2.61844,0.00e+00,match
+ORLY-2019-05,4,middle,derived: forecast.capex[1] / forecast.revenue[1],5.3404,5.34037,0.00e+00,match
+ORLY-2019-05,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],0.3187,0.318677,0.00e+00,match
+ORLY-2019-05,6,step,fcff.1,1260.0342,1260.03,0.00e+00,match
+ORLY-2019-05,7,step,fcff.2,1317.1097,1317.11,0.00e+00,match
+ORLY-2019-05,8,step,fcff.3,1365.7549,1365.75,0.00e+00,match
+ORLY-2019-05,9,step,fcff.4,1404.7744,1404.77,0.00e+00,match
+ORLY-2019-05,10,step,fcff.5,1737.9433,1737.94,0.00e+00,match
+ORLY-2019-05,11,middle,beta_levered,0.929375,0.929375,0.00e+00,match
+ORLY-2019-05,12,middle,re,8.0256,8.02562,0.00e+00,match
+ORLY-2019-05,13,middle,rd,2.55,2.55,0.00e+00,match
+ORLY-2019-05,14,middle,weights.E,90.9519,90.9519,0.00e+00,match
+ORLY-2019-05,15,step,wacc,7.4817,7.48173,0.00e+00,match
+ORLY-2019-05,16,step,tv,32338.3736,32338.4,0.00e+00,match
+ORLY-2019-05,17,step,ev,28221.3339,28221.3,0.00e+00,match
+ORLY-2019-05,18,middle,equity,24835.5269,24835.5,0.00e+00,match
+ORLY-2019-05,19,final,price_per_share,301.8416,301.842,0.00e+00,match
+ORLY-2019-05,20,alternative,alt: equity / inputs.shares_basic,316.8783,316.878,0.00e+00,match
+ORLY-2019-06,1,middle,forecast.growth.1,5.346,5.346,0.00e+00,match
+ORLY-2019-06,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],19.3423,19.3423,0.00e+00,match
+ORLY-2019-06,3,middle,derived: forecast.da[1] / forecast.revenue[1],2.6184,2.61844,0.00e+00,match
+ORLY-2019-06,4,middle,derived: forecast.capex[1] / forecast.revenue[1],5.3404,5.34037,0.00e+00,match
+ORLY-2019-06,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],0.3187,0.318677,0.00e+00,match
+ORLY-2019-06,6,step,fcff.1,1260.0342,1260.03,0.00e+00,match
+ORLY-2019-06,7,step,fcff.2,1317.1097,1317.11,0.00e+00,match
+ORLY-2019-06,8,step,fcff.3,1365.7549,1365.75,0.00e+00,match
+ORLY-2019-06,9,step,fcff.4,1404.7744,1404.77,0.00e+00,match
+ORLY-2019-06,10,final,fcff.5,1737.9433,1737.94,0.00e+00,match
+ORLY-2019-07,1,middle,beta_levered,0.929375,0.929375,0.00e+00,match
+ORLY-2019-07,2,middle,re,8.0256,8.02562,0.00e+00,match
+ORLY-2019-07,3,middle,rd,2.55,2.55,0.00e+00,match
+ORLY-2019-07,4,step,wacc,7.4817,7.48173,0.00e+00,match
+ORLY-2019-07,5,step,tv,32338.3736,32338.4,0.00e+00,match
+ORLY-2019-07,6,step,ev,28221.3339,28221.3,0.00e+00,match
+ORLY-2019-07,7,middle,equity,24835.5269,24835.5,0.00e+00,match
+ORLY-2019-07,8,final,price_per_share,301.8416,301.842,0.00e+00,match
+ORLY-2019-07,9,alternative,alt: equity / inputs.shares_basic,316.8783,316.878,0.00e+00,match
+ORLY-2019-08,1,middle,forecast.growth.1,5.346,5.346,0.00e+00,match
+ORLY-2019-08,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],19.3423,19.3423,0.00e+00,match
+ORLY-2019-08,3,middle,derived: forecast.da[1] / forecast.revenue[1],2.6184,2.61844,0.00e+00,match
+ORLY-2019-08,4,middle,derived: forecast.capex[1] / forecast.revenue[1],5.3404,5.34037,0.00e+00,match
+ORLY-2019-08,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],0.3187,0.318677,0.00e+00,match
+ORLY-2019-08,6,middle,tax_rate,29.7359,29.7359,0.00e+00,match
+ORLY-2019-08,7,step,fcff.1,1090.281,1090.28,0.00e+00,match
+ORLY-2019-08,8,step,fcff.2,1141.0263,1141.03,0.00e+00,match
+ORLY-2019-08,9,step,fcff.3,1186.0165,1186.02,0.00e+00,match
+ORLY-2019-08,10,step,fcff.4,1224.3438,1224.34,0.00e+00,match
+ORLY-2019-08,11,step,fcff.5,1757.4624,1757.46,0.00e+00,match
+ORLY-2019-08,12,middle,beta_levered,0.952681,0.952681,0.00e+00,match
+ORLY-2019-08,13,middle,re,6.6834,6.68341,0.00e+00,match
+ORLY-2019-08,14,middle,rd,2.55,2.55,0.00e+00,match
+ORLY-2019-08,15,middle,weights.E,90.9519,90.9519,0.00e+00,match
+ORLY-2019-08,16,step,wacc,6.261,6.26096,0.00e+00,match
+ORLY-2019-08,17,step,tv,47897.3582,47897.4,0.00e+00,match
+ORLY-2019-08,18,step,ev,41889.7637,41889.8,0.00e+00,match
+ORLY-2019-08,19,middle,cash_excess,0.0,0,0.00e+00,match
+ORLY-2019-08,20,middle,equity,38472.6417,38472.6,0.00e+00,match
+ORLY-2019-08,21,final,price_per_share,467.5819,467.582,0.00e+00,match
+ORLY-2019-08,22,alternative,alt: equity / inputs.shares_basic,490.8752,490.875,0.00e+00,match
+PEP-2019-05,1,middle,forecast.growth.1,1.4717,1.47168,0.00e+00,match
+PEP-2019-05,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],15.8078,15.8078,0.00e+00,match
+PEP-2019-05,3,middle,derived: forecast.da[1] / forecast.revenue[1],3.7367,3.73671,0.00e+00,match
+PEP-2019-05,4,middle,derived: forecast.capex[1] / forecast.revenue[1],4.8634,4.86343,0.00e+00,match
+PEP-2019-05,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],5.008,5.00799,0.00e+00,match
+PEP-2019-05,6,step,fcff.1,7406.8807,7406.88,0.00e+00,match
+PEP-2019-05,7,step,fcff.2,7521.3922,7521.39,0.00e+00,match
+PEP-2019-05,8,step,fcff.3,7647.6115,7647.61,0.00e+00,match
+PEP-2019-05,9,step,fcff.4,7786.0531,7786.05,0.00e+00,match
+PEP-2019-05,10,step,fcff.5,8677.2493,8677.25,0.00e+00,match
+PEP-2019-05,11,middle,beta_levered,1.206876,1.20688,0.00e+00,match
+PEP-2019-05,12,middle,re,9.9681,9.96813,0.00e+00,match
+PEP-2019-05,13,middle,rd,2.7,2.7,0.00e+00,match
+PEP-2019-05,14,middle,weights.E,85.5902,85.5902,0.00e+00,match
+PEP-2019-05,15,step,wacc,8.8391,8.83911,0.00e+00,match
+PEP-2019-05,16,step,tv,129414.4424,129414,0.00e+00,match
+PEP-2019-05,17,step,ev,115050.2491,115050,0.00e+00,match
+PEP-2019-05,18,middle,equity,91638.2491,91638.2,0.00e+00,match
+PEP-2019-05,19,final,price_per_share,64.3075,64.3075,0.00e+00,match
+PEP-2019-05,20,alternative,alt: equity / inputs.shares_basic,65.2375,65.2375,0.00e+00,match
+PEP-2019-06,1,middle,forecast.growth.1,1.4717,1.47168,0.00e+00,match
+PEP-2019-06,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],15.8078,15.8078,0.00e+00,match
+PEP-2019-06,3,middle,derived: forecast.da[1] / forecast.revenue[1],3.7367,3.73671,0.00e+00,match
+PEP-2019-06,4,middle,derived: forecast.capex[1] / forecast.revenue[1],4.8634,4.86343,0.00e+00,match
+PEP-2019-06,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],5.008,5.00799,0.00e+00,match
+PEP-2019-06,6,step,fcff.1,7406.8807,7406.88,0.00e+00,match
+PEP-2019-06,7,step,fcff.2,7521.3922,7521.39,0.00e+00,match
+PEP-2019-06,8,step,fcff.3,7647.6115,7647.61,0.00e+00,match
+PEP-2019-06,9,step,fcff.4,7786.0531,7786.05,0.00e+00,match
+PEP-2019-06,10,final,fcff.5,8677.2493,8677.25,0.00e+00,match
+PEP-2019-07,1,middle,beta_levered,1.206876,1.20688,0.00e+00,match
+PEP-2019-07,2,middle,re,9.9681,9.96813,0.00e+00,match
+PEP-2019-07,3,middle,rd,2.7,2.7,0.00e+00,match
+PEP-2019-07,4,step,wacc,8.8391,8.83911,0.00e+00,match
+PEP-2019-07,5,step,tv,129414.4424,129414,0.00e+00,match
+PEP-2019-07,6,step,ev,115050.2491,115050,0.00e+00,match
+PEP-2019-07,7,middle,equity,91638.2491,91638.2,0.00e+00,match
+PEP-2019-07,8,final,price_per_share,64.3075,64.3075,0.00e+00,match
+PEP-2019-07,9,alternative,alt: equity / inputs.shares_basic,65.2375,65.2375,0.00e+00,match
+PEP-2019-08,1,middle,forecast.growth.1,1.4717,1.47168,0.00e+00,match
+PEP-2019-08,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],15.8078,15.8078,0.00e+00,match
+PEP-2019-08,3,middle,derived: forecast.da[1] / forecast.revenue[1],3.7367,3.73671,0.00e+00,match
+PEP-2019-08,4,middle,derived: forecast.capex[1] / forecast.revenue[1],4.8634,4.86343,0.00e+00,match
+PEP-2019-08,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],5.008,5.00799,0.00e+00,match
+PEP-2019-08,6,middle,tax_rate,12.5431,12.5431,0.00e+00,match
+PEP-2019-08,7,step,fcff.1,8284.0213,8284.02,0.00e+00,match
+PEP-2019-08,8,step,fcff.2,8418.9072,8418.91,0.00e+00,match
+PEP-2019-08,9,step,fcff.3,8577.6459,8577.65,0.00e+00,match
+PEP-2019-08,10,step,fcff.4,8761.4422,8761.44,0.00e+00,match
+PEP-2019-08,11,step,fcff.5,8752.9925,8752.99,0.00e+00,match
+PEP-2019-08,12,middle,beta_levered,1.138607,1.13861,0.00e+00,match
+PEP-2019-08,13,middle,re,7.613,7.61303,0.00e+00,match
+PEP-2019-08,14,middle,rd,2.7,2.7,0.00e+00,match
+PEP-2019-08,15,middle,weights.E,85.5902,85.5902,0.00e+00,match
+PEP-2019-08,16,step,wacc,6.8234,6.82338,0.00e+00,match
+PEP-2019-08,17,step,tv,207518.8314,207519,0.00e+00,match
+PEP-2019-08,18,step,ev,190562.0495,190562,0.00e+00,match
+PEP-2019-08,19,middle,cash_excess,7699.78,7699.78,0.00e+00,match
+PEP-2019-08,20,middle,equity,165856.8295,165857,0.00e+00,match
+PEP-2019-08,21,final,price_per_share,116.3908,116.391,0.00e+00,match
+PEP-2019-08,22,alternative,alt: equity / inputs.shares_basic,118.0739,118.074,0.00e+00,match
+MRK-2019-05,1,middle,forecast.growth.1,3.0765,3.0765,0.00e+00,match
+MRK-2019-05,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],17.9917,17.9917,0.00e+00,match
+MRK-2019-05,3,middle,derived: forecast.da[1] / forecast.revenue[1],12.0476,12.0476,0.00e+00,match
+MRK-2019-05,4,middle,derived: forecast.capex[1] / forecast.revenue[1],4.981,4.98104,0.00e+00,match
+MRK-2019-05,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],22.2129,22.2129,0.00e+00,match
+MRK-2019-05,6,step,fcff.1,8988.0222,8988.02,0.00e+00,match
+MRK-2019-05,7,step,fcff.2,9265.6331,9265.63,0.00e+00,match
+MRK-2019-05,8,step,fcff.3,9526.8792,9526.88,0.00e+00,match
+MRK-2019-05,9,step,fcff.4,9769.8489,9769.85,0.00e+00,match
+MRK-2019-05,10,step,fcff.5,6485.3575,6485.36,0.00e+00,match
+MRK-2019-05,11,middle,beta_levered,1.327957,1.32796,0.00e+00,match
+MRK-2019-05,12,middle,re,10.8157,10.8157,0.00e+00,match
+MRK-2019-05,13,middle,rd,2.55,2.55,0.00e+00,match
+MRK-2019-05,14,middle,weights.E,90.3362,90.3362,0.00e+00,match
+MRK-2019-05,15,step,wacc,9.9652,9.96517,0.00e+00,match
+MRK-2019-05,16,step,tv,83049.9331,83049.9,0.00e+00,match
+MRK-2019-05,17,step,ev,85364.2874,85364.3,0.00e+00,match
+MRK-2019-05,18,middle,equity,68933.2874,68933.3,0.00e+00,match
+MRK-2019-05,19,final,price_per_share,25.731,25.731,0.00e+00,match
+MRK-2019-05,20,alternative,alt: equity / inputs.shares_basic,26.7057,26.7057,0.00e+00,match
+MRK-2019-06,1,middle,forecast.growth.1,3.0765,3.0765,0.00e+00,match
+MRK-2019-06,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],17.9917,17.9917,0.00e+00,match
+MRK-2019-06,3,middle,derived: forecast.da[1] / forecast.revenue[1],12.0476,12.0476,0.00e+00,match
+MRK-2019-06,4,middle,derived: forecast.capex[1] / forecast.revenue[1],4.981,4.98104,0.00e+00,match
+MRK-2019-06,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],22.2129,22.2129,0.00e+00,match
+MRK-2019-06,6,step,fcff.1,8988.0222,8988.02,0.00e+00,match
+MRK-2019-06,7,step,fcff.2,9265.6331,9265.63,0.00e+00,match
+MRK-2019-06,8,step,fcff.3,9526.8792,9526.88,0.00e+00,match
+MRK-2019-06,9,step,fcff.4,9769.8489,9769.85,0.00e+00,match
+MRK-2019-06,10,final,fcff.5,6485.3575,6485.36,0.00e+00,match
+MRK-2019-07,1,middle,beta_levered,1.327957,1.32796,0.00e+00,match
+MRK-2019-07,2,middle,re,10.8157,10.8157,0.00e+00,match
+MRK-2019-07,3,middle,rd,2.55,2.55,0.00e+00,match
+MRK-2019-07,4,step,wacc,9.9652,9.96517,0.00e+00,match
+MRK-2019-07,5,step,tv,83049.9331,83049.9,0.00e+00,match
+MRK-2019-07,6,step,ev,85364.2874,85364.3,0.00e+00,match
+MRK-2019-07,7,middle,equity,68933.2874,68933.3,0.00e+00,match
+MRK-2019-07,8,final,price_per_share,25.731,25.731,0.00e+00,match
+MRK-2019-07,9,alternative,alt: equity / inputs.shares_basic,26.7057,26.7057,0.00e+00,match
+MRK-2019-08,1,middle,forecast.growth.1,3.0765,3.0765,0.00e+00,match
+MRK-2019-08,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],17.9917,17.9917,0.00e+00,match
+MRK-2019-08,3,middle,derived: forecast.da[1] / forecast.revenue[1],12.0476,12.0476,0.00e+00,match
+MRK-2019-08,4,middle,derived: forecast.capex[1] / forecast.revenue[1],4.981,4.98104,0.00e+00,match
+MRK-2019-08,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],22.2129,22.2129,0.00e+00,match
+MRK-2019-08,6,middle,tax_rate,35.0,35,0.00e+00,match
+MRK-2019-08,7,step,fcff.1,7889.9316,7889.93,0.00e+00,match
+MRK-2019-08,8,step,fcff.2,8134.8339,8134.83,0.00e+00,match
+MRK-2019-08,9,step,fcff.3,8375.61,8375.61,0.00e+00,match
+MRK-2019-08,10,step,fcff.4,8611.4374,8611.44,0.00e+00,match
+MRK-2019-08,11,step,fcff.5,6481.8363,6481.84,0.00e+00,match
+MRK-2019-08,12,middle,beta_levered,1.219731,1.21973,0.00e+00,match
+MRK-2019-08,13,middle,re,8.0187,8.01866,0.00e+00,match
+MRK-2019-08,14,middle,rd,2.55,2.55,0.00e+00,match
+MRK-2019-08,15,middle,weights.E,90.3362,90.3362,0.00e+00,match
+MRK-2019-08,16,step,wacc,7.4384,7.43842,0.00e+00,match
+MRK-2019-08,17,step,tv,134534.4608,134534,0.00e+00,match
+MRK-2019-08,18,step,ev,130722.0728,130722,0.00e+00,match
+MRK-2019-08,19,middle,cash_excess,8018.12,8018.12,0.00e+00,match
+MRK-2019-08,20,middle,equity,113445.1928,113445,0.00e+00,match
+MRK-2019-08,21,final,price_per_share,42.3461,42.3461,0.00e+00,match
+MRK-2019-08,22,alternative,alt: equity / inputs.shares_basic,43.9502,43.9502,0.00e+00,match
+SHW-2019-05,1,middle,forecast.growth.1,15.0,15,0.00e+00,match
+SHW-2019-05,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],16.0199,16.0199,0.00e+00,match
+SHW-2019-05,3,middle,derived: forecast.da[1] / forecast.revenue[1],2.7833,2.78328,0.00e+00,match
+SHW-2019-05,4,middle,derived: forecast.capex[1] / forecast.revenue[1],1.6447,1.64469,0.00e+00,match
+SHW-2019-05,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],11.9963,11.9963,0.00e+00,match
+SHW-2019-05,6,step,fcff.1,2466.0536,2466.05,0.00e+00,match
+SHW-2019-05,7,step,fcff.2,2824.1786,2824.18,0.00e+00,match
+SHW-2019-05,8,step,fcff.3,3142.852,3142.85,0.00e+00,match
+SHW-2019-05,9,step,fcff.4,3395.7077,3395.71,0.00e+00,match
+SHW-2019-05,10,step,fcff.5,3244.2477,3244.25,0.00e+00,match
+SHW-2019-05,11,middle,beta_levered,1.062701,1.0627,0.00e+00,match
+SHW-2019-05,12,middle,re,8.9589,8.95891,0.00e+00,match
+SHW-2019-05,13,middle,rd,2.7,2.7,0.00e+00,match
+SHW-2019-05,14,middle,weights.E,85.2736,85.2736,0.00e+00,match
+SHW-2019-05,15,step,wacc,7.9537,7.9537,0.00e+00,match
+SHW-2019-05,16,step,tv,55581.1195,55581.1,0.00e+00,match
+SHW-2019-05,17,step,ev,49827.5431,49827.5,0.00e+00,match
+SHW-2019-05,18,middle,equity,40639.3971,40639.4,0.00e+00,match
+SHW-2019-05,19,final,price_per_share,427.8369,427.837,0.00e+00,match
+SHW-2019-05,20,alternative,alt: equity / inputs.shares_basic,438.3106,438.311,0.00e+00,match
+SHW-2019-06,1,middle,forecast.growth.1,15.0,15,0.00e+00,match
+SHW-2019-06,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],16.0199,16.0199,0.00e+00,match
+SHW-2019-06,3,middle,derived: forecast.da[1] / forecast.revenue[1],2.7833,2.78328,0.00e+00,match
+SHW-2019-06,4,middle,derived: forecast.capex[1] / forecast.revenue[1],1.6447,1.64469,0.00e+00,match
+SHW-2019-06,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],11.9963,11.9963,0.00e+00,match
+SHW-2019-06,6,step,fcff.1,2466.0536,2466.05,0.00e+00,match
+SHW-2019-06,7,step,fcff.2,2824.1786,2824.18,0.00e+00,match
+SHW-2019-06,8,step,fcff.3,3142.852,3142.85,0.00e+00,match
+SHW-2019-06,9,step,fcff.4,3395.7077,3395.71,0.00e+00,match
+SHW-2019-06,10,final,fcff.5,3244.2477,3244.25,0.00e+00,match
+SHW-2019-07,1,middle,beta_levered,1.062701,1.0627,0.00e+00,match
+SHW-2019-07,2,middle,re,8.9589,8.95891,0.00e+00,match
+SHW-2019-07,3,middle,rd,2.7,2.7,0.00e+00,match
+SHW-2019-07,4,step,wacc,7.9537,7.9537,0.00e+00,match
+SHW-2019-07,5,step,tv,55581.1195,55581.1,0.00e+00,match
+SHW-2019-07,6,step,ev,49827.5431,49827.5,0.00e+00,match
+SHW-2019-07,7,middle,equity,40639.3971,40639.4,0.00e+00,match
+SHW-2019-07,8,final,price_per_share,427.8369,427.837,0.00e+00,match
+SHW-2019-07,9,alternative,alt: equity / inputs.shares_basic,438.3106,438.311,0.00e+00,match
+SHW-2019-08,1,middle,forecast.growth.1,15.0,15,0.00e+00,match
+SHW-2019-08,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],16.0199,16.0199,0.00e+00,match
+SHW-2019-08,3,middle,derived: forecast.da[1] / forecast.revenue[1],2.7833,2.78328,0.00e+00,match
+SHW-2019-08,4,middle,derived: forecast.capex[1] / forecast.revenue[1],1.6447,1.64469,0.00e+00,match
+SHW-2019-08,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],11.9963,11.9963,0.00e+00,match
+SHW-2019-08,6,middle,tax_rate,10.0,10,0.00e+00,match
+SHW-2019-08,7,step,fcff.1,2821.3935,2821.39,0.00e+00,match
+SHW-2019-08,8,step,fcff.2,3222.1683,3222.17,0.00e+00,match
+SHW-2019-08,9,step,fcff.3,3579.7025,3579.7,0.00e+00,match
+SHW-2019-08,10,step,fcff.4,3865.6321,3865.63,0.00e+00,match
+SHW-2019-08,11,step,fcff.5,3263.3453,3263.35,0.00e+00,match
+SHW-2019-08,12,middle,beta_levered,1.04201,1.04201,0.00e+00,match
+SHW-2019-08,13,middle,re,7.13,7.13005,0.00e+00,match
+SHW-2019-08,14,middle,rd,2.7,2.7,0.00e+00,match
+SHW-2019-08,15,middle,weights.E,85.2736,85.2736,0.00e+00,match
+SHW-2019-08,16,step,wacc,6.3942,6.39416,0.00e+00,match
+SHW-2019-08,17,step,tv,85895.9244,85895.9,0.00e+00,match
+SHW-2019-08,18,step,ev,79307.4885,79307.5,0.00e+00,match
+SHW-2019-08,19,middle,cash_excess,0.0,0,0.00e+00,match
+SHW-2019-08,20,middle,equity,69963.8375,69963.8,0.00e+00,match
+SHW-2019-08,21,final,price_per_share,736.5539,736.554,0.00e+00,match
+SHW-2019-08,22,alternative,alt: equity / inputs.shares_basic,754.5852,754.585,0.00e+00,match
+CMCSA-2022-05,1,middle,forecast.growth.1,3.3596,3.3596,0.00e+00,match
+CMCSA-2022-05,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],18.0561,18.0561,0.00e+00,match
+CMCSA-2022-05,3,middle,derived: forecast.da[1] / forecast.revenue[1],12.1332,12.1332,0.00e+00,match
+CMCSA-2022-05,4,middle,derived: forecast.capex[1] / forecast.revenue[1],8.6272,8.62721,0.00e+00,match
+CMCSA-2022-05,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],0.0474,0.0473901,0.00e+00,match
+CMCSA-2022-05,6,step,fcff.1,21374.9913,21375,0.00e+00,match
+CMCSA-2022-05,7,step,fcff.2,22020.6399,22020.6,0.00e+00,match
+CMCSA-2022-05,8,step,fcff.3,22610.9431,22610.9,0.00e+00,match
+CMCSA-2022-05,9,step,fcff.4,23140.2164,23140.2,0.00e+00,match
+CMCSA-2022-05,10,step,fcff.5,18623.826,18623.8,0.00e+00,match
+CMCSA-2022-05,11,middle,beta_levered,1.045531,1.04553,0.00e+00,match
+CMCSA-2022-05,12,middle,re,11.6187,11.6187,0.00e+00,match
+CMCSA-2022-05,13,middle,rd,5.3,5.3,0.00e+00,match
+CMCSA-2022-05,14,middle,weights.E,61.0929,61.0929,0.00e+00,match
+CMCSA-2022-05,15,step,wacc,8.7272,8.72725,0.00e+00,match
+CMCSA-2022-05,16,step,tv,282378.488,282378,0.00e+00,match
+CMCSA-2022-05,17,step,ev,270533.4436,270533,0.00e+00,match
+CMCSA-2022-05,18,middle,equity,176125.4436,176125,0.00e+00,match
+CMCSA-2022-05,19,final,price_per_share,37.8439,37.8439,0.00e+00,match
+CMCSA-2022-05,20,alternative,alt: equity / inputs.shares_basic,38.4218,38.4218,0.00e+00,match
+CMCSA-2022-06,1,middle,forecast.growth.1,3.3596,3.3596,0.00e+00,match
+CMCSA-2022-06,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],18.0561,18.0561,0.00e+00,match
+CMCSA-2022-06,3,middle,derived: forecast.da[1] / forecast.revenue[1],12.1332,12.1332,0.00e+00,match
+CMCSA-2022-06,4,middle,derived: forecast.capex[1] / forecast.revenue[1],8.6272,8.62721,0.00e+00,match
+CMCSA-2022-06,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],0.0474,0.0473901,0.00e+00,match
+CMCSA-2022-06,6,step,fcff.1,21374.9913,21375,0.00e+00,match
+CMCSA-2022-06,7,step,fcff.2,22020.6399,22020.6,0.00e+00,match
+CMCSA-2022-06,8,step,fcff.3,22610.9431,22610.9,0.00e+00,match
+CMCSA-2022-06,9,step,fcff.4,23140.2164,23140.2,0.00e+00,match
+CMCSA-2022-06,10,final,fcff.5,18623.826,18623.8,0.00e+00,match
+CMCSA-2022-07,1,middle,beta_levered,1.045531,1.04553,0.00e+00,match
+CMCSA-2022-07,2,middle,re,11.6187,11.6187,0.00e+00,match
+CMCSA-2022-07,3,middle,rd,5.3,5.3,0.00e+00,match
+CMCSA-2022-07,4,step,wacc,8.7272,8.72725,0.00e+00,match
+CMCSA-2022-07,5,step,tv,282378.488,282378,0.00e+00,match
+CMCSA-2022-07,6,step,ev,270533.4436,270533,0.00e+00,match
+CMCSA-2022-07,7,middle,equity,176125.4436,176125,0.00e+00,match
+CMCSA-2022-07,8,final,price_per_share,37.8439,37.8439,0.00e+00,match
+CMCSA-2022-07,9,alternative,alt: equity / inputs.shares_basic,38.4218,38.4218,0.00e+00,match
+CMCSA-2022-08,1,middle,forecast.growth.1,3.3596,3.3596,0.00e+00,match
+CMCSA-2022-08,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],18.0561,18.0561,0.00e+00,match
+CMCSA-2022-08,3,middle,derived: forecast.da[1] / forecast.revenue[1],12.1332,12.1332,0.00e+00,match
+CMCSA-2022-08,4,middle,derived: forecast.capex[1] / forecast.revenue[1],8.6272,8.62721,0.00e+00,match
+CMCSA-2022-08,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],0.0474,0.0473901,0.00e+00,match
+CMCSA-2022-08,6,middle,tax_rate,24.3575,24.3575,0.00e+00,match
+CMCSA-2022-08,7,step,fcff.1,20645.7124,20645.7,0.00e+00,match
+CMCSA-2022-08,8,step,fcff.2,21295.0772,21295.1,0.00e+00,match
+CMCSA-2022-08,9,step,fcff.3,21919.1032,21919.1,0.00e+00,match
+CMCSA-2022-08,10,step,fcff.4,22514.3115,22514.3,0.00e+00,match
+CMCSA-2022-08,11,step,fcff.5,18770.3866,18770.4,0.00e+00,match
+CMCSA-2022-08,12,middle,beta_levered,1.030506,1.03051,0.00e+00,match
+CMCSA-2022-08,13,middle,re,9.0325,9.03253,0.00e+00,match
+CMCSA-2022-08,14,middle,rd,5.3,5.3,0.00e+00,match
+CMCSA-2022-08,15,middle,weights.E,61.0929,61.0929,0.00e+00,match
+CMCSA-2022-08,16,step,wacc,7.1473,7.14727,0.00e+00,match
+CMCSA-2022-08,17,step,tv,413998.6918,413999,0.00e+00,match
+CMCSA-2022-08,18,step,ev,392477.7311,392478,0.00e+00,match
+CMCSA-2022-08,19,middle,cash_excess,6751.3,6751.3,0.00e+00,match
+CMCSA-2022-08,20,middle,equity,295742.0311,295742,0.00e+00,match
+CMCSA-2022-08,21,final,price_per_share,63.5458,63.5458,0.00e+00,match
+CMCSA-2022-08,22,alternative,alt: equity / inputs.shares_basic,64.5161,64.5161,0.00e+00,match
+PM-2022-05,1,middle,forecast.growth.1,2.649,2.64903,0.00e+00,match
+PM-2022-05,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],39.1039,39.1039,0.00e+00,match
+PM-2022-05,3,middle,derived: forecast.da[1] / forecast.revenue[1],3.277,3.27701,0.00e+00,match
+PM-2022-05,4,middle,derived: forecast.capex[1] / forecast.revenue[1],2.4461,2.44612,0.00e+00,match
+PM-2022-05,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],31.5233,31.5233,0.00e+00,match
+PM-2022-05,6,step,fcff.1,9964.2534,9964.25,0.00e+00,match
+PM-2022-05,7,step,fcff.2,10228.1047,10228.1,0.00e+00,match
+PM-2022-05,8,step,fcff.3,10482.3471,10482.3,0.00e+00,match
+PM-2022-05,9,step,fcff.4,10725.9011,10725.9,0.00e+00,match
+PM-2022-05,10,step,fcff.5,10637.5596,10637.6,0.00e+00,match
+PM-2022-05,11,middle,beta_levered,1.93661,1.93661,0.00e+00,match
+PM-2022-05,12,middle,re,17.8563,17.8563,0.00e+00,match
+PM-2022-05,13,middle,rd,4.57,4.57,0.00e+00,match
+PM-2022-05,14,middle,weights.E,84.6966,84.6966,0.00e+00,match
+PM-2022-05,15,step,wacc,15.6761,15.6761,0.00e+00,match
+PM-2022-05,16,step,tv,79337.4798,79337.5,0.00e+00,match
+PM-2022-05,17,step,ev,72461.601,72461.6,0.00e+00,match
+PM-2022-05,18,middle,equity,46717.601,46717.6,0.00e+00,match
+PM-2022-05,19,final,price_per_share,29.9664,29.9664,0.00e+00,match
+PM-2022-05,20,alternative,alt: equity / inputs.shares_basic,30.1437,30.1437,0.00e+00,match
+PM-2022-06,1,middle,forecast.growth.1,2.649,2.64903,0.00e+00,match
+PM-2022-06,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],39.1039,39.1039,0.00e+00,match
+PM-2022-06,3,middle,derived: forecast.da[1] / forecast.revenue[1],3.277,3.27701,0.00e+00,match
+PM-2022-06,4,middle,derived: forecast.capex[1] / forecast.revenue[1],2.4461,2.44612,0.00e+00,match
+PM-2022-06,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],31.5233,31.5233,0.00e+00,match
+PM-2022-06,6,step,fcff.1,9964.2534,9964.25,0.00e+00,match
+PM-2022-06,7,step,fcff.2,10228.1047,10228.1,0.00e+00,match
+PM-2022-06,8,step,fcff.3,10482.3471,10482.3,0.00e+00,match
+PM-2022-06,9,step,fcff.4,10725.9011,10725.9,0.00e+00,match
+PM-2022-06,10,final,fcff.5,10637.5596,10637.6,0.00e+00,match
+PM-2022-07,1,middle,beta_levered,1.93661,1.93661,0.00e+00,match
+PM-2022-07,2,middle,re,17.8563,17.8563,0.00e+00,match
+PM-2022-07,3,middle,rd,4.57,4.57,0.00e+00,match
+PM-2022-07,4,step,wacc,15.6761,15.6761,0.00e+00,match
+PM-2022-07,5,step,tv,79337.4798,79337.5,0.00e+00,match
+PM-2022-07,6,step,ev,72461.601,72461.6,0.00e+00,match
+PM-2022-07,7,middle,equity,46717.601,46717.6,0.00e+00,match
+PM-2022-07,8,final,price_per_share,29.9664,29.9664,0.00e+00,match
+PM-2022-07,9,alternative,alt: equity / inputs.shares_basic,30.1437,30.1437,0.00e+00,match
+PM-2022-08,1,middle,forecast.growth.1,2.649,2.64903,0.00e+00,match
+PM-2022-08,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],39.1039,39.1039,0.00e+00,match
+PM-2022-08,3,middle,derived: forecast.da[1] / forecast.revenue[1],3.277,3.27701,0.00e+00,match
+PM-2022-08,4,middle,derived: forecast.capex[1] / forecast.revenue[1],2.4461,2.44612,0.00e+00,match
+PM-2022-08,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],31.5233,31.5233,0.00e+00,match
+PM-2022-08,6,middle,tax_rate,22.2551,22.2551,0.00e+00,match
+PM-2022-08,7,step,fcff.1,9806.0372,9806.04,0.00e+00,match
+PM-2022-08,8,step,fcff.2,10065.8367,10065.8,0.00e+00,match
+PM-2022-08,9,step,fcff.3,10328.769,10328.8,0.00e+00,match
+PM-2022-08,10,step,fcff.4,10594.7214,10594.7,0.00e+00,match
+PM-2022-08,11,step,fcff.5,10706.2223,10706.2,0.00e+00,match
+PM-2022-08,12,middle,beta_levered,1.627529,1.62753,0.00e+00,match
+PM-2022-08,13,middle,re,12.0176,12.0176,0.00e+00,match
+PM-2022-08,14,middle,rd,4.57,4.57,0.00e+00,match
+PM-2022-08,15,middle,weights.E,84.6966,84.6966,0.00e+00,match
+PM-2022-08,16,step,wacc,10.731,10.731,0.00e+00,match
+PM-2022-08,17,step,tv,133323.2465,133323,0.00e+00,match
+PM-2022-08,18,step,ev,124419.7708,124420,0.00e+00,match
+PM-2022-08,19,middle,cash_excess,3867.9,3867.9,0.00e+00,match
+PM-2022-08,20,middle,equity,98047.6708,98047.7,0.00e+00,match
+PM-2022-08,21,final,price_per_share,62.8914,62.8914,0.00e+00,match
+PM-2022-08,22,alternative,alt: equity / inputs.shares_basic,63.2636,63.2636,0.00e+00,match
+WMB-2022-05,1,middle,forecast.growth.1,13.834,13.834,0.00e+00,match
+WMB-2022-05,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],25.5696,25.5696,0.00e+00,match
+WMB-2022-05,3,middle,derived: forecast.da[1] / forecast.revenue[1],20.1762,20.1762,0.00e+00,match
+WMB-2022-05,4,middle,derived: forecast.capex[1] / forecast.revenue[1],17.8089,17.8089,0.00e+00,match
+WMB-2022-05,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],7.0491,7.04911,0.00e+00,match
+WMB-2022-05,6,step,fcff.1,2626.3668,2626.37,0.00e+00,match
+WMB-2022-05,7,step,fcff.2,2934.1593,2934.16,0.00e+00,match
+WMB-2022-05,8,step,fcff.3,3191.6848,3191.68,0.00e+00,match
+WMB-2022-05,9,step,fcff.4,3377.9163,3377.92,0.00e+00,match
+WMB-2022-05,10,step,fcff.5,3045.8508,3045.85,0.00e+00,match
+WMB-2022-05,11,middle,beta_levered,0.949503,0.949503,0.00e+00,match
+WMB-2022-05,12,middle,re,10.9465,10.9465,0.00e+00,match
+WMB-2022-05,13,middle,rd,7.01,7.01,0.00e+00,match
+WMB-2022-05,14,middle,weights.E,62.6535,62.6535,0.00e+00,match
+WMB-2022-05,15,step,wacc,8.9266,8.92659,0.00e+00,match
+WMB-2022-05,16,step,tv,44852.7549,44852.8,0.00e+00,match
+WMB-2022-05,17,step,ev,40988.944,40988.9,0.00e+00,match
+WMB-2022-05,18,middle,equity,16116.944,16116.9,0.00e+00,match
+WMB-2022-05,19,final,price_per_share,13.23,13.23,0.00e+00,match
+WMB-2022-05,20,alternative,alt: equity / inputs.shares_basic,13.2585,13.2585,0.00e+00,match
+WMB-2022-06,1,middle,forecast.growth.1,13.834,13.834,0.00e+00,match
+WMB-2022-06,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],25.5696,25.5696,0.00e+00,match
+WMB-2022-06,3,middle,derived: forecast.da[1] / forecast.revenue[1],20.1762,20.1762,0.00e+00,match
+WMB-2022-06,4,middle,derived: forecast.capex[1] / forecast.revenue[1],17.8089,17.8089,0.00e+00,match
+WMB-2022-06,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],7.0491,7.04911,0.00e+00,match
+WMB-2022-06,6,step,fcff.1,2626.3668,2626.37,0.00e+00,match
+WMB-2022-06,7,step,fcff.2,2934.1593,2934.16,0.00e+00,match
+WMB-2022-06,8,step,fcff.3,3191.6848,3191.68,0.00e+00,match
+WMB-2022-06,9,step,fcff.4,3377.9163,3377.92,0.00e+00,match
+WMB-2022-06,10,final,fcff.5,3045.8508,3045.85,0.00e+00,match
+WMB-2022-07,1,middle,beta_levered,0.949503,0.949503,0.00e+00,match
+WMB-2022-07,2,middle,re,10.9465,10.9465,0.00e+00,match
+WMB-2022-07,3,middle,rd,7.01,7.01,0.00e+00,match
+WMB-2022-07,4,step,wacc,8.9266,8.92659,0.00e+00,match
+WMB-2022-07,5,step,tv,44852.7549,44852.8,0.00e+00,match
+WMB-2022-07,6,step,ev,40988.944,40988.9,0.00e+00,match
+WMB-2022-07,7,middle,equity,16116.944,16116.9,0.00e+00,match
+WMB-2022-07,8,final,price_per_share,13.23,13.23,0.00e+00,match
+WMB-2022-07,9,alternative,alt: equity / inputs.shares_basic,13.2585,13.2585,0.00e+00,match
+WMB-2022-08,1,middle,forecast.growth.1,13.834,13.834,0.00e+00,match
+WMB-2022-08,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],25.5696,25.5696,0.00e+00,match
+WMB-2022-08,3,middle,derived: forecast.da[1] / forecast.revenue[1],20.1762,20.1762,0.00e+00,match
+WMB-2022-08,4,middle,derived: forecast.capex[1] / forecast.revenue[1],17.8089,17.8089,0.00e+00,match
+WMB-2022-08,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],7.0491,7.04911,0.00e+00,match
+WMB-2022-08,6,middle,tax_rate,28.2184,28.2184,0.00e+00,match
+WMB-2022-08,7,step,fcff.1,2403.0895,2403.09,0.00e+00,match
+WMB-2022-08,8,step,fcff.2,2688.6671,2688.67,0.00e+00,match
+WMB-2022-08,9,step,fcff.3,2932.4127,2932.41,0.00e+00,match
+WMB-2022-08,10,step,fcff.4,3115.6331,3115.63,0.00e+00,match
+WMB-2022-08,11,step,fcff.5,3060.9571,3060.96,0.00e+00,match
+WMB-2022-08,12,middle,beta_levered,0.966167,0.966167,0.00e+00,match
+WMB-2022-08,13,middle,re,8.7108,8.71084,0.00e+00,match
+WMB-2022-08,14,middle,rd,7.01,7.01,0.00e+00,match
+WMB-2022-08,15,middle,weights.E,62.6535,62.6535,0.00e+00,match
+WMB-2022-08,16,step,wacc,7.5259,7.52586,0.00e+00,match
+WMB-2022-08,17,step,tv,62426.7956,62426.8,0.00e+00,match
+WMB-2022-08,18,step,ev,56836.219,56836.2,0.00e+00,match
+WMB-2022-08,19,middle,cash_excess,1467.46,1467.46,0.00e+00,match
+WMB-2022-08,20,middle,equity,31751.679,31751.7,0.00e+00,match
+WMB-2022-08,21,final,price_per_share,26.0641,26.0641,0.00e+00,match
+WMB-2022-08,22,alternative,alt: equity / inputs.shares_basic,26.1203,26.1203,0.00e+00,match
+JNJ-2022-05,1,middle,forecast.growth.1,6.9007,6.90067,0.00e+00,match
+JNJ-2022-05,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],22.0688,22.0688,0.00e+00,match
+JNJ-2022-05,3,middle,derived: forecast.da[1] / forecast.revenue[1],8.3926,8.39264,0.00e+00,match
+JNJ-2022-05,4,middle,derived: forecast.capex[1] / forecast.revenue[1],4.07,4.07002,0.00e+00,match
+JNJ-2022-05,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],16.6855,16.6855,0.00e+00,match
+JNJ-2022-05,6,step,fcff.1,20730.8148,20730.8,0.00e+00,match
+JNJ-2022-05,7,step,fcff.2,22099.092,22099.1,0.00e+00,match
+JNJ-2022-05,8,step,fcff.3,23287.5035,23287.5,0.00e+00,match
+JNJ-2022-05,9,step,fcff.4,24255.1231,24255.1,0.00e+00,match
+JNJ-2022-05,10,step,fcff.5,19727.2608,19727.3,0.00e+00,match
+JNJ-2022-05,11,middle,beta_levered,1.21859,1.21859,0.00e+00,match
+JNJ-2022-05,12,middle,re,12.8301,12.8301,0.00e+00,match
+JNJ-2022-05,13,middle,rd,4.57,4.57,0.00e+00,match
+JNJ-2022-05,14,middle,weights.E,93.0325,93.0325,0.00e+00,match
+JNJ-2022-05,15,step,wacc,12.1877,12.1877,0.00e+00,match
+JNJ-2022-05,16,step,tv,197510.0477,197510,0.00e+00,match
+JNJ-2022-05,17,step,ev,190079.5306,190080,0.00e+00,match
+JNJ-2022-05,18,middle,equity,186902.5306,186903,0.00e+00,match
+JNJ-2022-05,19,final,price_per_share,69.8962,69.8962,0.00e+00,match
+JNJ-2022-05,20,alternative,alt: equity / inputs.shares_basic,71.0854,71.0854,0.00e+00,match
+JNJ-2022-06,1,middle,forecast.growth.1,6.9007,6.90067,0.00e+00,match
+JNJ-2022-06,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],22.0688,22.0688,0.00e+00,match
+JNJ-2022-06,3,middle,derived: forecast.da[1] / forecast.revenue[1],8.3926,8.39264,0.00e+00,match
+JNJ-2022-06,4,middle,derived: forecast.capex[1] / forecast.revenue[1],4.07,4.07002,0.00e+00,match
+JNJ-2022-06,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],16.6855,16.6855,0.00e+00,match
+JNJ-2022-06,6,step,fcff.1,20730.8148,20730.8,0.00e+00,match
+JNJ-2022-06,7,step,fcff.2,22099.092,22099.1,0.00e+00,match
+JNJ-2022-06,8,step,fcff.3,23287.5035,23287.5,0.00e+00,match
+JNJ-2022-06,9,step,fcff.4,24255.1231,24255.1,0.00e+00,match
+JNJ-2022-06,10,final,fcff.5,19727.2608,19727.3,0.00e+00,match
+JNJ-2022-07,1,middle,beta_levered,1.21859,1.21859,0.00e+00,match
+JNJ-2022-07,2,middle,re,12.8301,12.8301,0.00e+00,match
+JNJ-2022-07,3,middle,rd,4.57,4.57,0.00e+00,match
+JNJ-2022-07,4,step,wacc,12.1877,12.1877,0.00e+00,match
+JNJ-2022-07,5,step,tv,197510.0477,197510,0.00e+00,match
+JNJ-2022-07,6,step,ev,190079.5306,190080,0.00e+00,match
+JNJ-2022-07,7,middle,equity,186902.5306,186903,0.00e+00,match
+JNJ-2022-07,8,final,price_per_share,69.8962,69.8962,0.00e+00,match
+JNJ-2022-07,9,alternative,alt: equity / inputs.shares_basic,71.0854,71.0854,0.00e+00,match
+JNJ-2022-08,1,middle,forecast.growth.1,6.9007,6.90067,0.00e+00,match
+JNJ-2022-08,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],22.0688,22.0688,0.00e+00,match
+JNJ-2022-08,3,middle,derived: forecast.da[1] / forecast.revenue[1],8.3926,8.39264,0.00e+00,match
+JNJ-2022-08,4,middle,derived: forecast.capex[1] / forecast.revenue[1],4.07,4.07002,0.00e+00,match
+JNJ-2022-08,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],16.6855,16.6855,0.00e+00,match
+JNJ-2022-08,6,middle,tax_rate,10.6298,10.6298,0.00e+00,match
+JNJ-2022-08,7,step,fcff.1,23025.0218,23025,0.00e+00,match
+JNJ-2022-08,8,step,fcff.2,24532.7296,24532.7,0.00e+00,match
+JNJ-2022-08,9,step,fcff.3,25869.8697,25869.9,0.00e+00,match
+JNJ-2022-08,10,step,fcff.4,26995.9222,26995.9,0.00e+00,match
+JNJ-2022-08,11,step,fcff.5,19819.331,19819.3,0.00e+00,match
+JNJ-2022-08,12,middle,beta_levered,1.146455,1.14646,0.00e+00,match
+JNJ-2022-08,13,middle,re,9.6123,9.61228,0.00e+00,match
+JNJ-2022-08,14,middle,rd,4.57,4.57,0.00e+00,match
+JNJ-2022-08,15,middle,weights.E,93.0325,93.0325,0.00e+00,match
+JNJ-2022-08,16,step,wacc,9.1941,9.19409,0.00e+00,match
+JNJ-2022-08,17,step,tv,303473.9521,303474,0.00e+00,match
+JNJ-2022-08,18,step,ev,301761.7223,301762,0.00e+00,match
+JNJ-2022-08,19,middle,cash_excess,29732.5,29732.5,0.00e+00,match
+JNJ-2022-08,20,middle,equity,296709.2223,296709,0.00e+00,match
+JNJ-2022-08,21,final,price_per_share,110.9608,110.961,0.00e+00,match
+JNJ-2022-08,22,alternative,alt: equity / inputs.shares_basic,112.8486,112.849,0.00e+00,match
+UNP-2022-05,1,middle,forecast.growth.1,0.2209,0.220873,0.00e+00,match
+UNP-2022-05,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],40.7794,40.7794,0.00e+00,match
+UNP-2022-05,3,middle,derived: forecast.da[1] / forecast.revenue[1],10.5497,10.5497,0.00e+00,match
+UNP-2022-05,4,middle,derived: forecast.capex[1] / forecast.revenue[1],14.7856,14.7856,0.00e+00,match
+UNP-2022-05,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],7.4972,7.49719,0.00e+00,match
+UNP-2022-05,6,step,fcff.1,6110.5772,6110.58,0.00e+00,match
+UNP-2022-05,7,step,fcff.2,6143.9817,6143.98,0.00e+00,match
+UNP-2022-05,8,step,fcff.3,6204.9199,6204.92,0.00e+00,match
+UNP-2022-05,9,step,fcff.4,6294.0845,6294.08,0.00e+00,match
+UNP-2022-05,10,step,fcff.5,7339.2086,7339.21,0.00e+00,match
+UNP-2022-05,11,middle,beta_levered,1.094171,1.09417,0.00e+00,match
+UNP-2022-05,12,middle,re,11.9592,11.9592,0.00e+00,match
+UNP-2022-05,13,middle,rd,4.73,4.73,0.00e+00,match
+UNP-2022-05,14,middle,weights.E,80.5289,80.5289,0.00e+00,match
+UNP-2022-05,15,step,wacc,10.3582,10.3582,0.00e+00,match
+UNP-2022-05,16,step,tv,89564.8534,89564.9,0.00e+00,match
+UNP-2022-05,17,step,ev,78641.4856,78641.5,0.00e+00,match
+UNP-2022-05,18,middle,equity,47713.4856,47713.5,0.00e+00,match
+UNP-2022-05,19,final,price_per_share,72.8006,72.8006,0.00e+00,match
+UNP-2022-05,20,alternative,alt: equity / inputs.shares_basic,74.9153,74.9153,0.00e+00,match
+UNP-2022-06,1,middle,forecast.growth.1,0.2209,0.220873,0.00e+00,match
+UNP-2022-06,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],40.7794,40.7794,0.00e+00,match
+UNP-2022-06,3,middle,derived: forecast.da[1] / forecast.revenue[1],10.5497,10.5497,0.00e+00,match
+UNP-2022-06,4,middle,derived: forecast.capex[1] / forecast.revenue[1],14.7856,14.7856,0.00e+00,match
+UNP-2022-06,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],7.4972,7.49719,0.00e+00,match
+UNP-2022-06,6,step,fcff.1,6110.5772,6110.58,0.00e+00,match
+UNP-2022-06,7,step,fcff.2,6143.9817,6143.98,0.00e+00,match
+UNP-2022-06,8,step,fcff.3,6204.9199,6204.92,0.00e+00,match
+UNP-2022-06,9,step,fcff.4,6294.0845,6294.08,0.00e+00,match
+UNP-2022-06,10,final,fcff.5,7339.2086,7339.21,0.00e+00,match
+UNP-2022-07,1,middle,beta_levered,1.094171,1.09417,0.00e+00,match
+UNP-2022-07,2,middle,re,11.9592,11.9592,0.00e+00,match
+UNP-2022-07,3,middle,rd,4.73,4.73,0.00e+00,match
+UNP-2022-07,4,step,wacc,10.3582,10.3582,0.00e+00,match
+UNP-2022-07,5,step,tv,89564.8534,89564.9,0.00e+00,match
+UNP-2022-07,6,step,ev,78641.4856,78641.5,0.00e+00,match
+UNP-2022-07,7,middle,equity,47713.4856,47713.5,0.00e+00,match
+UNP-2022-07,8,final,price_per_share,72.8006,72.8006,0.00e+00,match
+UNP-2022-07,9,alternative,alt: equity / inputs.shares_basic,74.9153,74.9153,0.00e+00,match
+UNP-2022-08,1,middle,forecast.growth.1,0.2209,0.220873,0.00e+00,match
+UNP-2022-08,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],40.7794,40.7794,0.00e+00,match
+UNP-2022-08,3,middle,derived: forecast.da[1] / forecast.revenue[1],10.5497,10.5497,0.00e+00,match
+UNP-2022-08,4,middle,derived: forecast.capex[1] / forecast.revenue[1],14.7856,14.7856,0.00e+00,match
+UNP-2022-08,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],7.4972,7.49719,0.00e+00,match
+UNP-2022-08,6,middle,tax_rate,23.3409,23.3409,0.00e+00,match
+UNP-2022-08,7,step,fcff.1,5901.9759,5901.98,0.00e+00,match
+UNP-2022-08,8,step,fcff.2,5939.3259,5939.33,0.00e+00,match
+UNP-2022-08,9,step,fcff.3,6010.792,6010.79,0.00e+00,match
+UNP-2022-08,10,step,fcff.4,6117.4048,6117.4,0.00e+00,match
+UNP-2022-08,11,step,fcff.5,7408.8893,7408.89,0.00e+00,match
+UNP-2022-08,12,middle,beta_levered,1.063094,1.06309,0.00e+00,match
+UNP-2022-08,13,middle,re,9.1955,9.19547,0.00e+00,match
+UNP-2022-08,14,middle,rd,4.73,4.73,0.00e+00,match
+UNP-2022-08,15,middle,weights.E,80.5289,80.5289,0.00e+00,match
+UNP-2022-08,16,step,wacc,8.1326,8.13259,0.00e+00,match
+UNP-2022-08,17,step,tv,134824.5806,134825,0.00e+00,match
+UNP-2022-08,18,step,ev,120599.562,120600,0.00e+00,match
+UNP-2022-08,19,middle,cash_excess,523.92,523.92,0.00e+00,match
+UNP-2022-08,20,middle,equity,89235.482,89235.5,0.00e+00,match
+UNP-2022-08,21,final,price_per_share,136.1542,136.154,0.00e+00,match
+UNP-2022-08,22,alternative,alt: equity / inputs.shares_basic,140.1093,140.109,0.00e+00,match
+META-2022-05,1,middle,forecast.growth.1,15.0,15,0.00e+00,match
+META-2022-05,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],37.1926,37.1926,0.00e+00,match
+META-2022-05,3,middle,derived: forecast.da[1] / forecast.revenue[1],7.6204,7.62041,0.00e+00,match
+META-2022-05,4,middle,derived: forecast.capex[1] / forecast.revenue[1],18.2295,18.2295,0.00e+00,match
+META-2022-05,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],10.7632,10.7632,0.00e+00,match
+META-2022-05,6,step,fcff.1,23555.8115,23555.8,0.00e+00,match
+META-2022-05,7,step,fcff.2,26736.1386,26736.1,0.00e+00,match
+META-2022-05,8,step,fcff.3,29483.1076,29483.1,0.00e+00,match
+META-2022-05,9,step,fcff.4,31561.1096,31561.1,0.00e+00,match
+META-2022-05,10,step,fcff.5,51219.266,51219.3,0.00e+00,match
+META-2022-05,11,middle,beta_levered,1.35875,1.35875,0.00e+00,match
+META-2022-05,12,middle,re,13.8113,13.8113,0.00e+00,match
+META-2022-05,13,middle,rd,4.57,4.57,0.00e+00,match
+META-2022-05,14,middle,weights.E,96.0658,96.0658,0.00e+00,match
+META-2022-05,15,step,wacc,13.4099,13.4099,0.00e+00,match
+META-2022-05,16,step,tv,457878.8158,457879,0.00e+00,match
+META-2022-05,17,step,ev,352209.0282,352209,0.00e+00,match
+META-2022-05,18,middle,equity,386334.0282,386334,0.00e+00,match
+META-2022-05,19,final,price_per_share,135.1291,135.129,0.00e+00,match
+META-2022-05,20,alternative,alt: equity / inputs.shares_basic,137.2412,137.241,0.00e+00,match
+META-2022-06,1,middle,forecast.growth.1,15.0,15,0.00e+00,match
+META-2022-06,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],37.1926,37.1926,0.00e+00,match
+META-2022-06,3,middle,derived: forecast.da[1] / forecast.revenue[1],7.6204,7.62041,0.00e+00,match
+META-2022-06,4,middle,derived: forecast.capex[1] / forecast.revenue[1],18.2295,18.2295,0.00e+00,match
+META-2022-06,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],10.7632,10.7632,0.00e+00,match
+META-2022-06,6,step,fcff.1,23555.8115,23555.8,0.00e+00,match
+META-2022-06,7,step,fcff.2,26736.1386,26736.1,0.00e+00,match
+META-2022-06,8,step,fcff.3,29483.1076,29483.1,0.00e+00,match
+META-2022-06,9,step,fcff.4,31561.1096,31561.1,0.00e+00,match
+META-2022-06,10,final,fcff.5,51219.266,51219.3,0.00e+00,match
+META-2022-07,1,middle,beta_levered,1.35875,1.35875,0.00e+00,match
+META-2022-07,2,middle,re,13.8113,13.8113,0.00e+00,match
+META-2022-07,3,middle,rd,4.57,4.57,0.00e+00,match
+META-2022-07,4,step,wacc,13.4099,13.4099,0.00e+00,match
+META-2022-07,5,step,tv,457878.8158,457879,0.00e+00,match
+META-2022-07,6,step,ev,352209.0282,352209,0.00e+00,match
+META-2022-07,7,middle,equity,386334.0282,386334,0.00e+00,match
+META-2022-07,8,final,price_per_share,135.1291,135.129,0.00e+00,match
+META-2022-07,9,alternative,alt: equity / inputs.shares_basic,137.2412,137.241,0.00e+00,match
+META-2022-08,1,middle,forecast.growth.1,15.0,15,0.00e+00,match
+META-2022-08,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],37.1926,37.1926,0.00e+00,match
+META-2022-08,3,middle,derived: forecast.da[1] / forecast.revenue[1],7.6204,7.62041,0.00e+00,match
+META-2022-08,4,middle,derived: forecast.capex[1] / forecast.revenue[1],18.2295,18.2295,0.00e+00,match
+META-2022-08,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],10.7632,10.7632,0.00e+00,match
+META-2022-08,6,middle,tax_rate,18.1316,18.1316,0.00e+00,match
+META-2022-08,7,step,fcff.1,25002.626,25002.6,0.00e+00,match
+META-2022-08,8,step,fcff.2,28368.3409,28368.3,0.00e+00,match
+META-2022-08,9,step,fcff.3,31306.7219,31306.7,0.00e+00,match
+META-2022-08,10,step,fcff.4,33578.0441,33578,0.00e+00,match
+META-2022-08,11,step,fcff.5,51666.4566,51666.5,0.00e+00,match
+META-2022-08,12,middle,beta_levered,1.240363,1.24036,0.00e+00,match
+META-2022-08,13,middle,re,10.0818,10.0818,0.00e+00,match
+META-2022-08,14,middle,rd,4.57,4.57,0.00e+00,match
+META-2022-08,15,middle,weights.E,96.0658,96.0658,0.00e+00,match
+META-2022-08,16,step,wacc,9.8272,9.82721,0.00e+00,match
+META-2022-08,17,step,tv,722759.2956,722759,0.00e+00,match
+META-2022-08,18,step,ev,605365.7097,605366,0.00e+00,match
+META-2022-08,19,middle,cash_excess,45639.42,45639.4,0.00e+00,match
+META-2022-08,20,middle,equity,637132.1297,637132,0.00e+00,match
+META-2022-08,21,final,price_per_share,222.8514,222.851,0.00e+00,match
+META-2022-08,22,alternative,alt: equity / inputs.shares_basic,226.3347,226.335,0.00e+00,match
+VZ-2022-05,1,middle,forecast.growth.1,0.6595,0.659472,0.00e+00,match
+VZ-2022-05,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],23.2563,23.2563,0.00e+00,match
+VZ-2022-05,3,middle,derived: forecast.da[1] / forecast.revenue[1],12.6041,12.6041,0.00e+00,match
+VZ-2022-05,4,middle,derived: forecast.capex[1] / forecast.revenue[1],14.3222,14.3222,0.00e+00,match
+VZ-2022-05,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],14.4886,14.4886,0.00e+00,match
+VZ-2022-05,6,step,fcff.1,22271.5623,22271.6,0.00e+00,match
+VZ-2022-05,7,step,fcff.2,22428.199,22428.2,0.00e+00,match
+VZ-2022-05,8,step,fcff.3,22661.1299,22661.1,0.00e+00,match
+VZ-2022-05,9,step,fcff.4,22972.4533,22972.5,0.00e+00,match
+VZ-2022-05,10,step,fcff.5,25449.3346,25449.3,0.00e+00,match
+VZ-2022-05,11,middle,beta_levered,0.866803,0.866803,0.00e+00,match
+VZ-2022-05,12,middle,re,10.3676,10.3676,0.00e+00,match
+VZ-2022-05,13,middle,rd,4.57,4.57,0.00e+00,match
+VZ-2022-05,14,middle,weights.E,48.1744,48.1744,0.00e+00,match
+VZ-2022-05,15,step,wacc,6.8656,6.86559,0.00e+00,match
+VZ-2022-05,16,step,tv,533507.6462,533508,0.00e+00,match
+VZ-2022-05,17,step,ev,477702.7758,477703,0.00e+00,match
+VZ-2022-05,18,middle,equity,301283.7758,301284,0.00e+00,match
+VZ-2022-05,19,final,price_per_share,72.5985,72.5985,0.00e+00,match
+VZ-2022-05,20,alternative,alt: equity / inputs.shares_basic,71.7714,71.7714,0.00e+00,match
+VZ-2022-06,1,middle,forecast.growth.1,0.6595,0.659472,0.00e+00,match
+VZ-2022-06,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],23.2563,23.2563,0.00e+00,match
+VZ-2022-06,3,middle,derived: forecast.da[1] / forecast.revenue[1],12.6041,12.6041,0.00e+00,match
+VZ-2022-06,4,middle,derived: forecast.capex[1] / forecast.revenue[1],14.3222,14.3222,0.00e+00,match
+VZ-2022-06,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],14.4886,14.4886,0.00e+00,match
+VZ-2022-06,6,step,fcff.1,22271.5623,22271.6,0.00e+00,match
+VZ-2022-06,7,step,fcff.2,22428.199,22428.2,0.00e+00,match
+VZ-2022-06,8,step,fcff.3,22661.1299,22661.1,0.00e+00,match
+VZ-2022-06,9,step,fcff.4,22972.4533,22972.5,0.00e+00,match
+VZ-2022-06,10,final,fcff.5,25449.3346,25449.3,0.00e+00,match
+VZ-2022-07,1,middle,beta_levered,0.866803,0.866803,0.00e+00,match
+VZ-2022-07,2,middle,re,10.3676,10.3676,0.00e+00,match
+VZ-2022-07,3,middle,rd,4.57,4.57,0.00e+00,match
+VZ-2022-07,4,step,wacc,6.8656,6.86559,0.00e+00,match
+VZ-2022-07,5,step,tv,533507.6462,533508,0.00e+00,match
+VZ-2022-07,6,step,ev,477702.7758,477703,0.00e+00,match
+VZ-2022-07,7,middle,equity,301283.7758,301284,0.00e+00,match
+VZ-2022-07,8,final,price_per_share,72.5985,72.5985,0.00e+00,match
+VZ-2022-07,9,alternative,alt: equity / inputs.shares_basic,71.7714,71.7714,0.00e+00,match
+VZ-2022-08,1,middle,forecast.growth.1,0.6595,0.659472,0.00e+00,match
+VZ-2022-08,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],23.2563,23.2563,0.00e+00,match
+VZ-2022-08,3,middle,derived: forecast.da[1] / forecast.revenue[1],12.6041,12.6041,0.00e+00,match
+VZ-2022-08,4,middle,derived: forecast.capex[1] / forecast.revenue[1],14.3222,14.3222,0.00e+00,match
+VZ-2022-08,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],14.4886,14.4886,0.00e+00,match
+VZ-2022-08,6,middle,tax_rate,19.8399,19.8399,0.00e+00,match
+VZ-2022-08,7,step,fcff.1,22634.4127,22634.4,0.00e+00,match
+VZ-2022-08,8,step,fcff.2,22798.753,22798.8,0.00e+00,match
+VZ-2022-08,9,step,fcff.3,23069.2502,23069.3,0.00e+00,match
+VZ-2022-08,10,step,fcff.4,23449.1656,23449.2,0.00e+00,match
+VZ-2022-08,11,step,fcff.5,25567.8632,25567.9,0.00e+00,match
+VZ-2022-08,12,middle,beta_levered,0.910758,0.910758,0.00e+00,match
+VZ-2022-08,13,middle,re,8.4338,8.43379,0.00e+00,match
+VZ-2022-08,14,middle,rd,4.57,4.57,0.00e+00,match
+VZ-2022-08,15,middle,weights.E,48.1744,48.1744,0.00e+00,match
+VZ-2022-08,16,step,wacc,5.934,5.93398,0.00e+00,match
+VZ-2022-08,17,step,tv,763167.5907,763168,0.00e+00,match
+VZ-2022-08,18,step,ev,690556.0549,690556,0.00e+00,match
+VZ-2022-08,19,middle,cash_excess,248.74,248.74,0.00e+00,match
+VZ-2022-08,20,middle,equity,511464.7949,511465,0.00e+00,match
+VZ-2022-08,21,final,price_per_share,123.2445,123.245,0.00e+00,match
+VZ-2022-08,22,alternative,alt: equity / inputs.shares_basic,121.8405,121.84,0.00e+00,match
+MCD-2022-05,1,middle,forecast.growth.1,4.2588,4.25884,0.00e+00,match
+MCD-2022-05,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],41.7257,41.7257,0.00e+00,match
+MCD-2022-05,3,middle,derived: forecast.da[1] / forecast.revenue[1],8.2451,8.24509,0.00e+00,match
+MCD-2022-05,4,middle,derived: forecast.capex[1] / forecast.revenue[1],9.5103,9.51032,0.00e+00,match
+MCD-2022-05,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],5.7935,5.79347,0.00e+00,match
+MCD-2022-05,6,step,fcff.1,7617.4167,7617.42,0.00e+00,match
+MCD-2022-05,7,step,fcff.2,7906.4115,7906.41,0.00e+00,match
+MCD-2022-05,8,step,fcff.3,8161.7575,8161.76,0.00e+00,match
+MCD-2022-05,9,step,fcff.4,8379.2967,8379.3,0.00e+00,match
+MCD-2022-05,10,step,fcff.5,8852.7857,8852.79,0.00e+00,match
+MCD-2022-05,11,middle,beta_levered,1.373884,1.37388,0.00e+00,match
+MCD-2022-05,12,middle,re,13.9172,13.9172,0.00e+00,match
+MCD-2022-05,13,middle,rd,4.57,4.57,0.00e+00,match
+MCD-2022-05,14,middle,weights.E,79.8826,79.8826,0.00e+00,match
+MCD-2022-05,15,step,wacc,11.8437,11.8437,0.00e+00,match
+MCD-2022-05,16,step,tv,91732.0769,91732.1,0.00e+00,match
+MCD-2022-05,17,step,ev,81794.5691,81794.6,0.00e+00,match
+MCD-2022-05,18,middle,equity,37154.6691,37154.7,0.00e+00,match
+MCD-2022-05,19,final,price_per_share,49.4209,49.4209,0.00e+00,match
+MCD-2022-05,20,alternative,alt: equity / inputs.shares_basic,49.967,49.967,0.00e+00,match
+MCD-2022-06,1,middle,forecast.growth.1,4.2588,4.25884,0.00e+00,match
+MCD-2022-06,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],41.7257,41.7257,0.00e+00,match
+MCD-2022-06,3,middle,derived: forecast.da[1] / forecast.revenue[1],8.2451,8.24509,0.00e+00,match
+MCD-2022-06,4,middle,derived: forecast.capex[1] / forecast.revenue[1],9.5103,9.51032,0.00e+00,match
+MCD-2022-06,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],5.7935,5.79347,0.00e+00,match
+MCD-2022-06,6,step,fcff.1,7617.4167,7617.42,0.00e+00,match
+MCD-2022-06,7,step,fcff.2,7906.4115,7906.41,0.00e+00,match
+MCD-2022-06,8,step,fcff.3,8161.7575,8161.76,0.00e+00,match
+MCD-2022-06,9,step,fcff.4,8379.2967,8379.3,0.00e+00,match
+MCD-2022-06,10,final,fcff.5,8852.7857,8852.79,0.00e+00,match
+MCD-2022-07,1,middle,beta_levered,1.373884,1.37388,0.00e+00,match
+MCD-2022-07,2,middle,re,13.9172,13.9172,0.00e+00,match
+MCD-2022-07,3,middle,rd,4.57,4.57,0.00e+00,match
+MCD-2022-07,4,step,wacc,11.8437,11.8437,0.00e+00,match
+MCD-2022-07,5,step,tv,91732.0769,91732.1,0.00e+00,match
+MCD-2022-07,6,step,ev,81794.5691,81794.6,0.00e+00,match
+MCD-2022-07,7,middle,equity,37154.6691,37154.7,0.00e+00,match
+MCD-2022-07,8,final,price_per_share,49.4209,49.4209,0.00e+00,match
+MCD-2022-07,9,alternative,alt: equity / inputs.shares_basic,49.967,49.967,0.00e+00,match
+MCD-2022-08,1,middle,forecast.growth.1,4.2588,4.25884,0.00e+00,match
+MCD-2022-08,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],41.7257,41.7257,0.00e+00,match
+MCD-2022-08,3,middle,derived: forecast.da[1] / forecast.revenue[1],8.2451,8.24509,0.00e+00,match
+MCD-2022-08,4,middle,derived: forecast.capex[1] / forecast.revenue[1],9.5103,9.51032,0.00e+00,match
+MCD-2022-08,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],5.7935,5.79347,0.00e+00,match
+MCD-2022-08,6,middle,tax_rate,21.7188,21.7188,0.00e+00,match
+MCD-2022-08,7,step,fcff.1,7544.7967,7544.8,0.00e+00,match
+MCD-2022-08,8,step,fcff.2,7838.858,7838.86,0.00e+00,match
+MCD-2022-08,9,step,fcff.3,8109.9337,8109.93,0.00e+00,match
+MCD-2022-08,10,step,fcff.4,8354.7456,8354.75,0.00e+00,match
+MCD-2022-08,11,step,fcff.5,8941.896,8941.9,0.00e+00,match
+MCD-2022-08,12,middle,beta_levered,1.250502,1.2505,0.00e+00,match
+MCD-2022-08,13,middle,re,10.1325,10.1325,0.00e+00,match
+MCD-2022-08,14,middle,rd,4.57,4.57,0.00e+00,match
+MCD-2022-08,15,middle,weights.E,79.8826,79.8826,0.00e+00,match
+MCD-2022-08,16,step,wacc,8.8204,8.82041,0.00e+00,match
+MCD-2022-08,17,step,tv,145013.3514,145013,0.00e+00,match
+MCD-2022-08,18,step,ev,132162.2386,132162,0.00e+00,match
+MCD-2022-08,19,middle,cash_excess,4244.742,4244.74,0.00e+00,match
+MCD-2022-08,20,middle,equity,87057.8806,87057.9,0.00e+00,match
+MCD-2022-08,21,final,price_per_share,115.7993,115.799,0.00e+00,match
+MCD-2022-08,22,alternative,alt: equity / inputs.shares_basic,117.0786,117.079,0.00e+00,match
+ORLY-2022-05,1,middle,forecast.growth.1,14.5889,14.5889,0.00e+00,match
+ORLY-2022-05,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],20.5533,20.5533,0.00e+00,match
+ORLY-2022-05,3,middle,derived: forecast.da[1] / forecast.revenue[1],2.6142,2.61425,0.00e+00,match
+ORLY-2022-05,4,middle,derived: forecast.capex[1] / forecast.revenue[1],4.5076,4.50755,0.00e+00,match
+ORLY-2022-05,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],-2.4975,-2.49747,0.00e+00,match
+ORLY-2022-05,6,step,fcff.1,2239.1337,2239.13,0.00e+00,match
+ORLY-2022-05,7,step,fcff.2,2484.853,2484.85,0.00e+00,match
+ORLY-2022-05,8,step,fcff.3,2678.9544,2678.95,0.00e+00,match
+ORLY-2022-05,9,step,fcff.4,2803.4691,2803.47,0.00e+00,match
+ORLY-2022-05,10,step,fcff.5,3209.1638,3209.16,0.00e+00,match
+ORLY-2022-05,11,middle,beta_levered,1.149793,1.14979,0.00e+00,match
+ORLY-2022-05,12,middle,re,12.3486,12.3486,0.00e+00,match
+ORLY-2022-05,13,middle,rd,4.57,4.57,0.00e+00,match
+ORLY-2022-05,14,middle,weights.E,90.5499,90.5499,0.00e+00,match
+ORLY-2022-05,15,step,wacc,11.5228,11.5228,0.00e+00,match
+ORLY-2022-05,16,step,tv,34373.8555,34373.9,0.00e+00,match
+ORLY-2022-05,17,step,ev,29535.2478,29535.2,0.00e+00,match
+ORLY-2022-05,18,middle,equity,24030.7938,24030.8,0.00e+00,match
+ORLY-2022-05,19,final,price_per_share,345.2155,345.215,0.00e+00,match
+ORLY-2022-05,20,alternative,alt: equity / inputs.shares_basic,360.8178,360.818,0.00e+00,match
+ORLY-2022-06,1,middle,forecast.growth.1,14.5889,14.5889,0.00e+00,match
+ORLY-2022-06,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],20.5533,20.5533,0.00e+00,match
+ORLY-2022-06,3,middle,derived: forecast.da[1] / forecast.revenue[1],2.6142,2.61425,0.00e+00,match
+ORLY-2022-06,4,middle,derived: forecast.capex[1] / forecast.revenue[1],4.5076,4.50755,0.00e+00,match
+ORLY-2022-06,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],-2.4975,-2.49747,0.00e+00,match
+ORLY-2022-06,6,step,fcff.1,2239.1337,2239.13,0.00e+00,match
+ORLY-2022-06,7,step,fcff.2,2484.853,2484.85,0.00e+00,match
+ORLY-2022-06,8,step,fcff.3,2678.9544,2678.95,0.00e+00,match
+ORLY-2022-06,9,step,fcff.4,2803.4691,2803.47,0.00e+00,match
+ORLY-2022-06,10,final,fcff.5,3209.1638,3209.16,0.00e+00,match
+ORLY-2022-07,1,middle,beta_levered,1.149793,1.14979,0.00e+00,match
+ORLY-2022-07,2,middle,re,12.3486,12.3486,0.00e+00,match
+ORLY-2022-07,3,middle,rd,4.57,4.57,0.00e+00,match
+ORLY-2022-07,4,step,wacc,11.5228,11.5228,0.00e+00,match
+ORLY-2022-07,5,step,tv,34373.8555,34373.9,0.00e+00,match
+ORLY-2022-07,6,step,ev,29535.2478,29535.2,0.00e+00,match
+ORLY-2022-07,7,middle,equity,24030.7938,24030.8,0.00e+00,match
+ORLY-2022-07,8,final,price_per_share,345.2155,345.215,0.00e+00,match
+ORLY-2022-07,9,alternative,alt: equity / inputs.shares_basic,360.8178,360.818,0.00e+00,match
+ORLY-2022-08,1,middle,forecast.growth.1,14.5889,14.5889,0.00e+00,match
+ORLY-2022-08,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],20.5533,20.5533,0.00e+00,match
+ORLY-2022-08,3,middle,derived: forecast.da[1] / forecast.revenue[1],2.6142,2.61425,0.00e+00,match
+ORLY-2022-08,4,middle,derived: forecast.capex[1] / forecast.revenue[1],4.5076,4.50755,0.00e+00,match
+ORLY-2022-08,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],-2.4975,-2.49747,0.00e+00,match
+ORLY-2022-08,6,middle,tax_rate,22.3911,22.3911,0.00e+00,match
+ORLY-2022-08,7,step,fcff.1,2195.4689,2195.47,0.00e+00,match
+ORLY-2022-08,8,step,fcff.2,2439.3527,2439.35,0.00e+00,match
+ORLY-2022-08,9,step,fcff.3,2636.2552,2636.26,0.00e+00,match
+ORLY-2022-08,10,step,fcff.4,2768.9749,2768.97,0.00e+00,match
+ORLY-2022-08,11,step,fcff.5,3247.3893,3247.39,0.00e+00,match
+ORLY-2022-08,12,middle,beta_levered,1.100361,1.10036,0.00e+00,match
+ORLY-2022-08,13,middle,re,9.3818,9.38181,0.00e+00,match
+ORLY-2022-08,14,middle,rd,4.57,4.57,0.00e+00,match
+ORLY-2022-08,15,middle,weights.E,90.5499,90.5499,0.00e+00,match
+ORLY-2022-08,16,step,wacc,8.8364,8.8364,0.00e+00,match
+ORLY-2022-08,17,step,tv,52531.0303,52531,0.00e+00,match
+ORLY-2022-08,18,step,ev,46549.9762,46550,0.00e+00,match
+ORLY-2022-08,19,middle,cash_excess,95.5617,95.5617,0.00e+00,match
+ORLY-2022-08,20,middle,equity,40778.971,40779,0.00e+00,match
+ORLY-2022-08,21,final,price_per_share,585.8122,585.812,0.00e+00,match
+ORLY-2022-08,22,alternative,alt: equity / inputs.shares_basic,612.2884,612.288,0.00e+00,match
+PEP-2022-05,1,middle,forecast.growth.1,8.7812,8.78123,0.00e+00,match
+PEP-2022-05,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],14.5639,14.5639,0.00e+00,match
+PEP-2022-05,3,middle,derived: forecast.da[1] / forecast.revenue[1],3.5506,3.55061,0.00e+00,match
+PEP-2022-05,4,middle,derived: forecast.capex[1] / forecast.revenue[1],6.0486,6.04864,0.00e+00,match
+PEP-2022-05,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],4.6646,4.66463,0.00e+00,match
+PEP-2022-05,6,step,fcff.1,7461.638,7461.64,0.00e+00,match
+PEP-2022-05,7,step,fcff.2,8053.2116,8053.21,0.00e+00,match
+PEP-2022-05,8,step,fcff.3,8555.6959,8555.7,0.00e+00,match
+PEP-2022-05,9,step,fcff.4,8945.0661,8945.07,0.00e+00,match
+PEP-2022-05,10,step,fcff.5,11703.8772,11703.9,0.00e+00,match
+PEP-2022-05,11,middle,beta_levered,1.326169,1.32617,0.00e+00,match
+PEP-2022-05,12,middle,re,13.5832,13.5832,0.00e+00,match
+PEP-2022-05,13,middle,rd,5.11,5.11,0.00e+00,match
+PEP-2022-05,14,middle,weights.E,85.5025,85.5025,0.00e+00,match
+PEP-2022-05,15,step,wacc,12.1992,12.1992,0.00e+00,match
+PEP-2022-05,16,step,tv,117047.8317,117048,0.00e+00,match
+PEP-2022-05,17,step,ev,97160.3314,97160.3,0.00e+00,match
+PEP-2022-05,18,middle,equity,60662.3314,60662.3,0.00e+00,match
+PEP-2022-05,19,final,price_per_share,43.6734,43.6734,0.00e+00,match
+PEP-2022-05,20,alternative,alt: equity / inputs.shares_basic,43.8485,43.8485,0.00e+00,match
+PEP-2022-06,1,middle,forecast.growth.1,8.7812,8.78123,0.00e+00,match
+PEP-2022-06,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],14.5639,14.5639,0.00e+00,match
+PEP-2022-06,3,middle,derived: forecast.da[1] / forecast.revenue[1],3.5506,3.55061,0.00e+00,match
+PEP-2022-06,4,middle,derived: forecast.capex[1] / forecast.revenue[1],6.0486,6.04864,0.00e+00,match
+PEP-2022-06,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],4.6646,4.66463,0.00e+00,match
+PEP-2022-06,6,step,fcff.1,7461.638,7461.64,0.00e+00,match
+PEP-2022-06,7,step,fcff.2,8053.2116,8053.21,0.00e+00,match
+PEP-2022-06,8,step,fcff.3,8555.6959,8555.7,0.00e+00,match
+PEP-2022-06,9,step,fcff.4,8945.0661,8945.07,0.00e+00,match
+PEP-2022-06,10,final,fcff.5,11703.8772,11703.9,0.00e+00,match
+PEP-2022-07,1,middle,beta_levered,1.326169,1.32617,0.00e+00,match
+PEP-2022-07,2,middle,re,13.5832,13.5832,0.00e+00,match
+PEP-2022-07,3,middle,rd,5.11,5.11,0.00e+00,match
+PEP-2022-07,4,step,wacc,12.1992,12.1992,0.00e+00,match
+PEP-2022-07,5,step,tv,117047.8317,117048,0.00e+00,match
+PEP-2022-07,6,step,ev,97160.3314,97160.3,0.00e+00,match
+PEP-2022-07,7,middle,equity,60662.3314,60662.3,0.00e+00,match
+PEP-2022-07,8,final,price_per_share,43.6734,43.6734,0.00e+00,match
+PEP-2022-07,9,alternative,alt: equity / inputs.shares_basic,43.8485,43.8485,0.00e+00,match
+PEP-2022-08,1,middle,forecast.growth.1,8.7812,8.78123,0.00e+00,match
+PEP-2022-08,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],14.5639,14.5639,0.00e+00,match
+PEP-2022-08,3,middle,derived: forecast.da[1] / forecast.revenue[1],3.5506,3.55061,0.00e+00,match
+PEP-2022-08,4,middle,derived: forecast.capex[1] / forecast.revenue[1],6.0486,6.04864,0.00e+00,match
+PEP-2022-08,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],4.6646,4.66463,0.00e+00,match
+PEP-2022-08,6,middle,tax_rate,21.244,21.244,0.00e+00,match
+PEP-2022-08,7,step,fcff.1,7430.9117,7430.91,0.00e+00,match
+PEP-2022-08,8,step,fcff.2,8024.9628,8024.96,0.00e+00,match
+PEP-2022-08,9,step,fcff.3,8540.9458,8540.95,0.00e+00,match
+PEP-2022-08,10,step,fcff.4,8956.4806,8956.48,0.00e+00,match
+PEP-2022-08,11,step,fcff.5,11802.6901,11802.7,0.00e+00,match
+PEP-2022-08,12,middle,beta_levered,1.218533,1.21853,0.00e+00,match
+PEP-2022-08,13,middle,re,9.9727,9.97267,0.00e+00,match
+PEP-2022-08,14,middle,rd,5.11,5.11,0.00e+00,match
+PEP-2022-08,15,middle,weights.E,85.5025,85.5025,0.00e+00,match
+PEP-2022-08,16,step,wacc,9.1121,9.11213,0.00e+00,match
+PEP-2022-08,17,step,tv,182963.1364,182963,0.00e+00,match
+PEP-2022-08,18,step,ev,159171.2827,159171,0.00e+00,match
+PEP-2022-08,19,middle,cash_excess,4398.52,4398.52,0.00e+00,match
+PEP-2022-08,20,middle,equity,121083.8027,121084,0.00e+00,match
+PEP-2022-08,21,final,price_per_share,87.1734,87.1734,0.00e+00,match
+PEP-2022-08,22,alternative,alt: equity / inputs.shares_basic,87.523,87.523,0.00e+00,match
+MRK-2022-05,1,middle,forecast.growth.1,11.5777,11.5777,0.00e+00,match
+MRK-2022-05,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],22.2959,22.2959,0.00e+00,match
+MRK-2022-05,3,middle,derived: forecast.da[1] / forecast.revenue[1],8.1102,8.11018,0.00e+00,match
+MRK-2022-05,4,middle,derived: forecast.capex[1] / forecast.revenue[1],9.4707,9.47071,0.00e+00,match
+MRK-2022-05,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],21.3678,21.3678,0.00e+00,match
+MRK-2022-05,6,step,fcff.1,7627.5663,7627.57,0.00e+00,match
+MRK-2022-05,7,step,fcff.2,8577.2122,8577.21,0.00e+00,match
+MRK-2022-05,8,step,fcff.3,9437.5419,9437.54,0.00e+00,match
+MRK-2022-05,9,step,fcff.4,10155.8365,10155.8,0.00e+00,match
+MRK-2022-05,10,step,fcff.5,11485.9689,11486,0.00e+00,match
+MRK-2022-05,11,middle,beta_levered,1.262747,1.26275,0.00e+00,match
+MRK-2022-05,12,middle,re,13.1392,13.1392,0.00e+00,match
+MRK-2022-05,13,middle,rd,4.57,4.57,0.00e+00,match
+MRK-2022-05,14,middle,weights.E,89.0095,89.0095,0.00e+00,match
+MRK-2022-05,15,step,wacc,12.092,12.092,0.00e+00,match
+MRK-2022-05,16,step,tv,116089.4169,116089,0.00e+00,match
+MRK-2022-05,17,step,ev,98858.5017,98858.5,0.00e+00,match
+MRK-2022-05,18,middle,equity,72252.5017,72252.5,0.00e+00,match
+MRK-2022-05,19,final,price_per_share,28.4683,28.4683,0.00e+00,match
+MRK-2022-05,20,alternative,alt: equity / inputs.shares_basic,28.5839,28.5839,0.00e+00,match
+MRK-2022-06,1,middle,forecast.growth.1,11.5777,11.5777,0.00e+00,match
+MRK-2022-06,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],22.2959,22.2959,0.00e+00,match
+MRK-2022-06,3,middle,derived: forecast.da[1] / forecast.revenue[1],8.1102,8.11018,0.00e+00,match
+MRK-2022-06,4,middle,derived: forecast.capex[1] / forecast.revenue[1],9.4707,9.47071,0.00e+00,match
+MRK-2022-06,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],21.3678,21.3678,0.00e+00,match
+MRK-2022-06,6,step,fcff.1,7627.5663,7627.57,0.00e+00,match
+MRK-2022-06,7,step,fcff.2,8577.2122,8577.21,0.00e+00,match
+MRK-2022-06,8,step,fcff.3,9437.5419,9437.54,0.00e+00,match
+MRK-2022-06,9,step,fcff.4,10155.8365,10155.8,0.00e+00,match
+MRK-2022-06,10,final,fcff.5,11485.9689,11486,0.00e+00,match
+MRK-2022-07,1,middle,beta_levered,1.262747,1.26275,0.00e+00,match
+MRK-2022-07,2,middle,re,13.1392,13.1392,0.00e+00,match
+MRK-2022-07,3,middle,rd,4.57,4.57,0.00e+00,match
+MRK-2022-07,4,step,wacc,12.092,12.092,0.00e+00,match
+MRK-2022-07,5,step,tv,116089.4169,116089,0.00e+00,match
+MRK-2022-07,6,step,ev,98858.5017,98858.5,0.00e+00,match
+MRK-2022-07,7,middle,equity,72252.5017,72252.5,0.00e+00,match
+MRK-2022-07,8,final,price_per_share,28.4683,28.4683,0.00e+00,match
+MRK-2022-07,9,alternative,alt: equity / inputs.shares_basic,28.5839,28.5839,0.00e+00,match
+MRK-2022-08,1,middle,forecast.growth.1,11.5777,11.5777,0.00e+00,match
+MRK-2022-08,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],22.2959,22.2959,0.00e+00,match
+MRK-2022-08,3,middle,derived: forecast.da[1] / forecast.revenue[1],8.1102,8.11018,0.00e+00,match
+MRK-2022-08,4,middle,derived: forecast.capex[1] / forecast.revenue[1],9.4707,9.47071,0.00e+00,match
+MRK-2022-08,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],21.3678,21.3678,0.00e+00,match
+MRK-2022-08,6,middle,tax_rate,18.5461,18.5461,0.00e+00,match
+MRK-2022-08,7,step,fcff.1,7924.8894,7924.89,0.00e+00,match
+MRK-2022-08,8,step,fcff.2,8898.7367,8898.74,0.00e+00,match
+MRK-2022-08,9,step,fcff.3,9788.6263,9788.63,0.00e+00,match
+MRK-2022-08,10,step,fcff.4,10543.5379,10543.5,0.00e+00,match
+MRK-2022-08,11,step,fcff.5,11523.5074,11523.5,0.00e+00,match
+MRK-2022-08,12,middle,beta_levered,1.176041,1.17604,0.00e+00,match
+MRK-2022-08,13,middle,re,9.7602,9.7602,0.00e+00,match
+MRK-2022-08,14,middle,rd,4.57,4.57,0.00e+00,match
+MRK-2022-08,15,middle,weights.E,89.0095,89.0095,0.00e+00,match
+MRK-2022-08,16,step,wacc,9.0843,9.0843,0.00e+00,match
+MRK-2022-08,17,step,tv,179390.3657,179390,0.00e+00,match
+MRK-2022-08,18,step,ev,160146.0527,160146,0.00e+00,match
+MRK-2022-08,19,middle,cash_excess,7121.92,7121.92,0.00e+00,match
+MRK-2022-08,20,middle,equity,132565.9727,132566,0.00e+00,match
+MRK-2022-08,21,final,price_per_share,52.2325,52.2325,0.00e+00,match
+MRK-2022-08,22,alternative,alt: equity / inputs.shares_basic,52.4446,52.4446,0.00e+00,match
+CAT-2022-05,1,middle,forecast.growth.1,0.0,0,0.00e+00,match
+CAT-2022-05,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],13.2696,13.2696,0.00e+00,match
+CAT-2022-05,3,middle,derived: forecast.da[1] / forecast.revenue[1],5.0774,5.07739,0.00e+00,match
+CAT-2022-05,4,middle,derived: forecast.capex[1] / forecast.revenue[1],2.1499,2.14994,0.00e+00,match
+CAT-2022-05,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],28.0427,28.0427,0.00e+00,match
+CAT-2022-05,6,step,fcff.1,6835.4326,6835.43,0.00e+00,match
+CAT-2022-05,7,step,fcff.2,6798.1416,6798.14,0.00e+00,match
+CAT-2022-05,8,step,fcff.3,6794.6548,6794.65,0.00e+00,match
+CAT-2022-05,9,step,fcff.4,6824.7491,6824.75,0.00e+00,match
+CAT-2022-05,10,step,fcff.5,5260.3402,5260.34,0.00e+00,match
+CAT-2022-05,11,middle,beta_levered,1.234959,1.23496,0.00e+00,match
+CAT-2022-05,12,middle,re,12.9447,12.9447,0.00e+00,match
+CAT-2022-05,13,middle,rd,4.73,4.73,0.00e+00,match
+CAT-2022-05,14,middle,weights.E,80.0076,80.0076,0.00e+00,match
+CAT-2022-05,15,step,wacc,11.1038,11.1038,0.00e+00,match
+CAT-2022-05,16,step,tv,58937.335,58937.3,0.00e+00,match
+CAT-2022-05,17,step,ev,59013.2146,59013.2,0.00e+00,match
+CAT-2022-05,18,middle,equity,36156.2146,36156.2,0.00e+00,match
+CAT-2022-05,19,final,price_per_share,65.9183,65.9183,0.00e+00,match
+CAT-2022-05,20,alternative,alt: equity / inputs.shares_basic,67.4697,67.4697,0.00e+00,match
+CAT-2022-06,1,middle,forecast.growth.1,0.0,0,0.00e+00,match
+CAT-2022-06,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],13.2696,13.2696,0.00e+00,match
+CAT-2022-06,3,middle,derived: forecast.da[1] / forecast.revenue[1],5.0774,5.07739,0.00e+00,match
+CAT-2022-06,4,middle,derived: forecast.capex[1] / forecast.revenue[1],2.1499,2.14994,0.00e+00,match
+CAT-2022-06,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],28.0427,28.0427,0.00e+00,match
+CAT-2022-06,6,step,fcff.1,6835.4326,6835.43,0.00e+00,match
+CAT-2022-06,7,step,fcff.2,6798.1416,6798.14,0.00e+00,match
+CAT-2022-06,8,step,fcff.3,6794.6548,6794.65,0.00e+00,match
+CAT-2022-06,9,step,fcff.4,6824.7491,6824.75,0.00e+00,match
+CAT-2022-06,10,final,fcff.5,5260.3402,5260.34,0.00e+00,match
+CAT-2022-07,1,middle,beta_levered,1.234959,1.23496,0.00e+00,match
+CAT-2022-07,2,middle,re,12.9447,12.9447,0.00e+00,match
+CAT-2022-07,3,middle,rd,4.73,4.73,0.00e+00,match
+CAT-2022-07,4,step,wacc,11.1038,11.1038,0.00e+00,match
+CAT-2022-07,5,step,tv,58937.335,58937.3,0.00e+00,match
+CAT-2022-07,6,step,ev,59013.2146,59013.2,0.00e+00,match
+CAT-2022-07,7,middle,equity,36156.2146,36156.2,0.00e+00,match
+CAT-2022-07,8,final,price_per_share,65.9183,65.9183,0.00e+00,match
+CAT-2022-07,9,alternative,alt: equity / inputs.shares_basic,67.4697,67.4697,0.00e+00,match
+CAT-2022-08,1,middle,forecast.growth.1,0.0,0,0.00e+00,match
+CAT-2022-08,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],13.2696,13.2696,0.00e+00,match
+CAT-2022-08,3,middle,derived: forecast.da[1] / forecast.revenue[1],5.0774,5.07739,0.00e+00,match
+CAT-2022-08,4,middle,derived: forecast.capex[1] / forecast.revenue[1],2.1499,2.14994,0.00e+00,match
+CAT-2022-08,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],28.0427,28.0427,0.00e+00,match
+CAT-2022-08,6,middle,tax_rate,22.9218,22.9218,0.00e+00,match
+CAT-2022-08,7,step,fcff.1,6705.4522,6705.45,0.00e+00,match
+CAT-2022-08,8,step,fcff.2,6658.026,6658.03,0.00e+00,match
+CAT-2022-08,9,step,fcff.3,6651.9161,6651.92,0.00e+00,match
+CAT-2022-08,10,step,fcff.4,6686.746,6686.75,0.00e+00,match
+CAT-2022-08,11,step,fcff.5,5235.6043,5235.6,0.00e+00,match
+CAT-2022-08,12,middle,beta_levered,1.157423,1.15742,0.00e+00,match
+CAT-2022-08,13,middle,re,9.6671,9.66711,0.00e+00,match
+CAT-2022-08,14,middle,rd,4.73,4.73,0.00e+00,match
+CAT-2022-08,15,middle,weights.E,80.0076,80.0076,0.00e+00,match
+CAT-2022-08,16,step,wacc,8.4815,8.48148,0.00e+00,match
+CAT-2022-08,17,step,tv,89718.4345,89718.4,0.00e+00,match
+CAT-2022-08,18,step,ev,88614.8767,88614.9,0.00e+00,match
+CAT-2022-08,19,middle,cash_excess,8234.58,8234.58,0.00e+00,match
+CAT-2022-08,20,middle,equity,64738.4567,64738.5,0.00e+00,match
+CAT-2022-08,21,final,price_per_share,118.0282,118.028,0.00e+00,match
+CAT-2022-08,22,alternative,alt: equity / inputs.shares_basic,120.8059,120.806,0.00e+00,match
+SHW-2022-05,1,middle,forecast.growth.1,5.5544,5.55443,0.00e+00,match
+SHW-2022-05,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],16.5088,16.5088,0.00e+00,match
+SHW-2022-05,3,middle,derived: forecast.da[1] / forecast.revenue[1],3.083,3.08297,0.00e+00,match
+SHW-2022-05,4,middle,derived: forecast.capex[1] / forecast.revenue[1],1.7857,1.78568,0.00e+00,match
+SHW-2022-05,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],10.2539,10.2539,0.00e+00,match
+SHW-2022-05,6,step,fcff.1,2905.1597,2905.16,0.00e+00,match
+SHW-2022-05,7,step,fcff.2,3058.8821,3058.88,0.00e+00,match
+SHW-2022-05,8,step,fcff.3,3193.6049,3193.6,0.00e+00,match
+SHW-2022-05,9,step,fcff.4,3305.9329,3305.93,0.00e+00,match
+SHW-2022-05,10,step,fcff.5,3065.8009,3065.8,0.00e+00,match
+SHW-2022-05,11,middle,beta_levered,1.215236,1.21524,0.00e+00,match
+SHW-2022-05,12,middle,re,12.8067,12.8067,0.00e+00,match
+SHW-2022-05,13,middle,rd,4.57,4.57,0.00e+00,match
+SHW-2022-05,14,middle,weights.E,84.3152,84.3152,0.00e+00,match
+SHW-2022-05,15,step,wacc,11.3642,11.3642,0.00e+00,match
+SHW-2022-05,16,step,tv,33394.3082,33394.3,0.00e+00,match
+SHW-2022-05,17,step,ev,30822.5945,30822.6,0.00e+00,match
+SHW-2022-05,18,middle,equity,19492.8945,19492.9,0.00e+00,match
+SHW-2022-05,19,final,price_per_share,72.9798,72.9798,0.00e+00,match
+SHW-2022-05,20,alternative,alt: equity / inputs.shares_basic,74.865,74.865,0.00e+00,match
+SHW-2022-06,1,middle,forecast.growth.1,5.5544,5.55443,0.00e+00,match
+SHW-2022-06,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],16.5088,16.5088,0.00e+00,match
+SHW-2022-06,3,middle,derived: forecast.da[1] / forecast.revenue[1],3.083,3.08297,0.00e+00,match
+SHW-2022-06,4,middle,derived: forecast.capex[1] / forecast.revenue[1],1.7857,1.78568,0.00e+00,match
+SHW-2022-06,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],10.2539,10.2539,0.00e+00,match
+SHW-2022-06,6,step,fcff.1,2905.1597,2905.16,0.00e+00,match
+SHW-2022-06,7,step,fcff.2,3058.8821,3058.88,0.00e+00,match
+SHW-2022-06,8,step,fcff.3,3193.6049,3193.6,0.00e+00,match
+SHW-2022-06,9,step,fcff.4,3305.9329,3305.93,0.00e+00,match
+SHW-2022-06,10,final,fcff.5,3065.8009,3065.8,0.00e+00,match
+SHW-2022-07,1,middle,beta_levered,1.215236,1.21524,0.00e+00,match
+SHW-2022-07,2,middle,re,12.8067,12.8067,0.00e+00,match
+SHW-2022-07,3,middle,rd,4.57,4.57,0.00e+00,match
+SHW-2022-07,4,step,wacc,11.3642,11.3642,0.00e+00,match
+SHW-2022-07,5,step,tv,33394.3082,33394.3,0.00e+00,match
+SHW-2022-07,6,step,ev,30822.5945,30822.6,0.00e+00,match
+SHW-2022-07,7,middle,equity,19492.8945,19492.9,0.00e+00,match
+SHW-2022-07,8,final,price_per_share,72.9798,72.9798,0.00e+00,match
+SHW-2022-07,9,alternative,alt: equity / inputs.shares_basic,74.865,74.865,0.00e+00,match
+SHW-2022-08,1,middle,forecast.growth.1,5.5544,5.55443,0.00e+00,match
+SHW-2022-08,2,middle,derived: forecast.ebit[1] / forecast.revenue[1],16.5088,16.5088,0.00e+00,match
+SHW-2022-08,3,middle,derived: forecast.da[1] / forecast.revenue[1],3.083,3.08297,0.00e+00,match
+SHW-2022-08,4,middle,derived: forecast.capex[1] / forecast.revenue[1],1.7857,1.78568,0.00e+00,match
+SHW-2022-08,5,middle,derived: forecast.nwc[1] / forecast.revenue[1],10.2539,10.2539,0.00e+00,match
+SHW-2022-08,6,middle,tax_rate,19.5721,19.5721,0.00e+00,match
+SHW-2022-08,7,step,fcff.1,2954.7847,2954.78,0.00e+00,match
+SHW-2022-08,8,step,fcff.2,3111.9596,3111.96,0.00e+00,match
+SHW-2022-08,9,step,fcff.3,3253.7688,3253.77,0.00e+00,match
+SHW-2022-08,10,step,fcff.4,3377.2327,3377.23,0.00e+00,match
+SHW-2022-08,11,step,fcff.5,3087.0103,3087.01,0.00e+00,match
+SHW-2022-08,12,middle,beta_levered,1.144208,1.14421,0.00e+00,match
+SHW-2022-08,13,middle,re,9.601,9.60104,0.00e+00,match
+SHW-2022-08,14,middle,rd,4.57,4.57,0.00e+00,match
+SHW-2022-08,15,middle,weights.E,84.3152,84.3152,0.00e+00,match
+SHW-2022-08,16,step,wacc,8.6614,8.6614,0.00e+00,match
+SHW-2022-08,17,step,tv,51354.9457,51354.9,0.00e+00,match
+SHW-2022-08,18,step,ev,48213.1292,48213.1,0.00e+00,match
+SHW-2022-08,19,middle,cash_excess,0.0,0,0.00e+00,match
+SHW-2022-08,20,middle,equity,36717.7292,36717.7,0.00e+00,match
+SHW-2022-08,21,final,price_per_share,137.4681,137.468,0.00e+00,match
+SHW-2022-08,22,alternative,alt: equity / inputs.shares_basic,141.0193,141.019,0.00e+00,match

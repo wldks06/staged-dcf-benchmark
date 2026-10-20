@@ -1,0 +1,45 @@
+answers_ver02_qwen25-7b_calc_s0_ver03_L2345_20261015-005517  [grade_ver05, tolerance=qa, include_thinking=False, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 21.4%
+Final answers correct: 2/104
+Final-answer marker: exact 69, other case 18, missing 17 (missing = final scored zero)
+Hit the token limit: 4 ['PPL-2019-06', 'ORLY-2019-05', 'VZ-2022-05', 'CAT-2022-05']
+
+Final answers correct by tier and level:
+  basic@2019 L3    0/13  =   0.0%
+  basic@2022 L3    0/13  =   0.0%
+  complex@2019 L3    0/13  =   0.0%
+  complex@2022 L3    0/13  =   0.0%
+  half@2019 L4    0/13  =   0.0%
+  half@2019 L5    2/13  =  15.4%
+  half@2022 L4    0/13  =   0.0%
+  half@2022 L5    0/13  =   0.0%
+
+Used basic shares (final wrong AND matched the basic-share value): 2/78   (also matched but final correct, not counted: 2)
+   BKNG-2019-05, PEP-2019-05
+
+By tier:
+  basic@2019                                 85/880  =   9.7%
+  basic@2022                                148/906  =  16.3%
+  complex@2019                              100/924  =  10.8%
+  complex@2022                              184/952  =  19.3%
+  half@2019                                 346/923  =  37.5%
+  half@2022                                 167/945  =  17.7%
+
+By level:
+  3                                         517/3662 =  14.1%
+  4                                         156/1021 =  15.3%
+  5                                         357/847  =  42.1%
+
+By step:
+  Step 2. Project the future                126/768  =  16.4%
+  Step 3. Compute free cash flow            390/2070 =  18.8%
+  Step 4. Discount to today                 462/1712 =  27.0%
+  Step 5. Value and decide                   52/980  =   5.3%
+
+By kind:
+  final                                      20/1040 =   1.9%
+  middle                                    400/1520 =  26.3%
+  step                                      610/2970 =  20.5%
+
+Excluded items: {'target already in prompt': 41, 'rounding not auto-graded': 104, 'zero target not auto-graded': 9}

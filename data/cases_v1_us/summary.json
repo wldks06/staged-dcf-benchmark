@@ -1,0 +1,63 @@
+{
+ "cases": 484,
+ "firms_by_date": {
+  "2019-12-31": 43,
+  "2022-12-31": 38,
+  "2025-12-31": 44
+ },
+ "cases_by_date": {
+  "2019-12-31": 167,
+  "2022-12-31": 147,
+  "2025-12-31": 170
+ },
+ "exclusion_reasons": {
+  "fye_not_december": 182,
+  "outside_sector_top_5": 144,
+  "financial_sic": 105,
+  "negative_ebit": 71,
+  "negative_fcff": 68,
+  "missing_capex": 58,
+  "missing_receivables": 46,
+  "only_0_fiscal_years": 41,
+  "missing_payables": 41,
+  "missing_pretax_income": 37,
+  "missing_da": 30,
+  "missing_shares_diluted": 26,
+  "missing_tax_expense": 17,
+  "policy_undefined": 16,
+  "not_a_10k_filer": 14,
+  "missing_shares_basic": 12,
+  "missing_debt_total": 10,
+  "missing_ebit": 7,
+  "captive_finance": 6,
+  "missing_interest_expense": 6,
+  "only_2_fiscal_years": 4,
+  "dcf_equity_not_positive": 3,
+  "no_industry_beta": 2,
+  "missing_revenue": 1,
+  "share_counts_inconsistent": 1,
+  "stale_financials": 1
+ },
+ "fallbacks_logged": 1450,
+ "cases_to_inspect": 57,
+ "judgment_company_dates": 50,
+ "trap_visible_share": {
+  "T1": 1.0,
+  "T2": 0.961,
+  "T3": 0.669,
+  "T5": 0.952,
+  "T6": 0.988
+ },
+ "median_wacc": {
+  "textbook": 0.0926,
+  "practitioner": 0.0768
+ },
+ "median_tv_share": {
+  "textbook": 0.7128,
+  "practitioner": 0.7813
+ },
+ "median_price_over_market": {
+  "textbook": 0.4827,
+  "practitioner": 0.7019
+ }
+}

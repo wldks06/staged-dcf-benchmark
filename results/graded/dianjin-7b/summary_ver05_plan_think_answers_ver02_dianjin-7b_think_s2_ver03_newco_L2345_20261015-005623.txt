@@ -1,0 +1,38 @@
+answers_ver02_dianjin-7b_think_s2_ver03_newco_L2345_20261015-005623  [grade_ver05, tolerance=plan, include_thinking=True, qa=QA_set_ver03_newco.json]
+
+Questions graded: 20   mean score per question: 46.3%
+Final answers correct: 3/20
+Final-answer marker: answer tag 11, other case 4, missing 3, Final Response heading 1, exact 1 (missing = final scored zero)
+Hit the token limit: 3 ['ECL-2025-08', 'LIN-2025-05', 'LIN-2025-06']
+Thinking never finished: 3 ['ECL-2025-08', 'LIN-2025-05', 'LIN-2025-06']
+
+Final answers correct by tier and level:
+  basic@2025 L3    0/5   =   0.0%
+  complex@2025 L3    1/5   =  20.0%
+  half@2025 L4    0/5   =   0.0%
+  half@2025 L5    2/5   =  40.0%
+
+Used basic shares (final wrong AND matched the basic-share value): 0/15   (also matched but final correct, not counted: 1)
+
+By tier:
+  basic@2025                                147/341  =  43.1%
+  complex@2025                              173/366  =  47.3%
+  half@2025                                 171/356  =  48.0%
+
+By level:
+  3                                         320/707  =  45.3%
+  4                                          89/196  =  45.4%
+  5                                          82/160  =  51.2%
+
+By step:
+  Step 2. Project the future                 88/148  =  59.5%
+  Step 3. Compute free cash flow            205/400  =  51.2%
+  Step 4. Discount to today                 146/325  =  44.9%
+  Step 5. Value and decide                   52/190  =  27.4%
+
+By kind:
+  final                                      30/200  =  15.0%
+  middle                                    196/298  =  65.8%
+  step                                      265/565  =  46.9%
+
+Excluded items: {'rounding not auto-graded': 20, 'zero target not auto-graded': 6, 'target already in prompt': 2}

@@ -1,0 +1,45 @@
+answers_ver02_qwen3-14b_think_s1_ver03_L2345_20261015-051808  [grade_ver05, tolerance=qa, include_thinking=False, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 75.7%
+Final answers correct: 75/104
+Final-answer marker: exact 104 (missing = final scored zero)
+Hit the token limit: 0 []
+
+Final answers correct by tier and level:
+  basic@2019 L3   10/13  =  76.9%
+  basic@2022 L3    8/13  =  61.5%
+  complex@2019 L3    5/13  =  38.5%
+  complex@2022 L3   11/13  =  84.6%
+  half@2019 L4   11/13  =  84.6%
+  half@2019 L5    8/13  =  61.5%
+  half@2022 L4   13/13  = 100.0%
+  half@2022 L5    9/13  =  69.2%
+
+Used basic shares (final wrong AND matched the basic-share value): 2/78   (also matched but final correct, not counted: 14)
+   PPL-2019-08, SHW-2022-08
+
+By tier:
+  basic@2019                                584/880  =  66.4%
+  basic@2022                                546/906  =  60.3%
+  complex@2019                              498/924  =  53.9%
+  complex@2022                              640/952  =  67.2%
+  half@2019                                 813/923  =  88.1%
+  half@2022                                 869/945  =  92.0%
+
+By level:
+  3                                        2268/3662 =  61.9%
+  4                                         965/1021 =  94.5%
+  5                                         717/847  =  84.7%
+
+By step:
+  Step 2. Project the future                266/768  =  34.6%
+  Step 3. Compute free cash flow           1905/2070 =  92.0%
+  Step 4. Discount to today                1111/1712 =  64.9%
+  Step 5. Value and decide                  668/980  =  68.2%
+
+By kind:
+  final                                     750/1040 =  72.1%
+  middle                                    580/1520 =  38.2%
+  step                                     2620/2970 =  88.2%
+
+Excluded items: {'target already in prompt': 41, 'rounding not auto-graded': 104, 'zero target not auto-graded': 9}

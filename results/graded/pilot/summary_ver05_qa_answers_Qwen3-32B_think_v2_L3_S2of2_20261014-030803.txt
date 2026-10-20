@@ -1,0 +1,32 @@
+answers_Qwen3-32B_think_v2_L3_S2of2_20261014-030803  [grade_ver05, tolerance=qa, include_thinking=False, qa=QA_set_v2.json]
+
+Questions graded: 20   mean score per question: 77.0%
+Final answers correct: 18/20
+Final-answer marker: exact 18, other case 2 (missing = final scored zero)
+Hit the token limit: 0 []
+
+Final answers correct by tier and level:
+  basic    L3   10/10  = 100.0%
+  complex  L3    8/10  =  80.0%
+
+Used basic shares (final wrong AND matched the basic-share value): 0/20   (also matched but final correct, not counted: 6)
+
+By tier:
+  basic                                     564/687  =  82.1%
+  complex                                   509/709  =  71.8%
+
+By level:
+  3                                        1073/1396 =  76.9%
+
+By step:
+  Step 2. Project the future                 60/196  =  30.6%
+  Step 3. Compute free cash flow            465/490  =  94.9%
+  Step 4. Discount to today                 320/458  =  69.9%
+  Step 5. Value and decide                  228/252  =  90.5%
+
+By kind:
+  final                                     180/200  =  90.0%
+  middle                                    138/406  =  34.0%
+  step                                      755/790  =  95.6%
+
+Excluded items: {'input given in data table': 206, 'zero target not auto-graded': 12, 'rounding not auto-graded': 20, 'target already in prompt': 7}

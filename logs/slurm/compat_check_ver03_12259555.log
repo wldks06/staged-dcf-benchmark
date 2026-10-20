@@ -1,0 +1,35 @@
+start Thu Oct 15 00:25:14 EDT 2026 on c1.quartz.uits.iu.edu
+patches: ['PreTrainedTokenizerBase.all_special_tokens_extended']
+vllm 0.10.1.1 | transformers 5.19.0
+
+== qwen25-7b (Qwen/Qwen2.5-7B-Instruct)
+  tokenizer CachedQwen2Tokenizer: 29 ids, round trip ok, specials 14, eos '<|im_end|>'
+  config Qwen2Config: rope_theta config.json=1000000.0 vLLM sees=None [MISMATCH]; rope_scaling config.json=None vLLM sees={'rope_theta': 1000000.0, 'rope_type': 'default'} [ok]; max_position_embeddings 32768
+
+== fin-r1 (SUFE-AIFLM-Lab/Fin-R1)
+  tokenizer CachedQwen2Tokenizer: 29 ids, round trip ok, specials 14, eos '<|im_end|>'
+  config Qwen2Config: rope_theta config.json=1000000.0 vLLM sees=None [MISMATCH]; rope_scaling config.json=None vLLM sees={'rope_theta': 1000000.0, 'rope_type': 'default'} [ok]; max_position_embeddings 32768
+
+== dianjin-7b (DianJin/DianJin-R1-7B)
+  tokenizer CachedQwen2Tokenizer: 29 ids, round trip ok, specials 14, eos '<|im_end|>'
+  config Qwen2Config: rope_theta config.json=1000000.0 vLLM sees=None [MISMATCH]; rope_scaling config.json=None vLLM sees={'rope_theta': 1000000.0, 'rope_type': 'default'} [ok]; max_position_embeddings 32768
+
+== llama31-8b (meta-llama/Llama-3.1-8B-Instruct)
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer CachedTokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+  tokenizer CachedTokenizersBackend: 51 ids, round trip ok, specials 2, eos '<|eot_id|>'
+  config LlamaConfig: rope_theta config.json=500000.0 vLLM sees=None [MISMATCH]; rope_scaling config.json={'factor': 8.0, 'low_freq_factor': 1.0, 'high_freq_factor': 4.0, 'original_max_position_embeddings': 8192, 'rope_type': 'llama3'} vLLM sees={'factor': 8.0, 'low_freq_factor': 1.0, 'high_freq_factor': 4.0, 'original_max_position_embeddings': 8192, 'rope_type': 'llama3', 'rope_theta': 500000.0} [ok]; max_position_embeddings 131072
+
+== fino1-8b (TheFinAI/Fino1-8B)
+  tokenizer CachedTokenizersBackend: 51 ids, round trip ok, specials 3, eos '<|eot_id|>'
+  config LlamaConfig: rope_theta config.json=500000.0 vLLM sees=None [MISMATCH]; rope_scaling config.json={'factor': 8.0, 'high_freq_factor': 4.0, 'low_freq_factor': 1.0, 'original_max_position_embeddings': 8192, 'rope_type': 'llama3'} vLLM sees={'factor': 8.0, 'high_freq_factor': 4.0, 'low_freq_factor': 1.0, 'original_max_position_embeddings': 8192, 'rope_type': 'llama3', 'rope_theta': 500000.0} [ok]; max_position_embeddings 131072
+
+== qwen3-8b (Qwen/Qwen3-8B)
+  tokenizer CachedQwen2Tokenizer: 29 ids, round trip ok, specials 14, eos '<|im_end|>'
+  config Qwen3Config: rope_theta config.json=1000000 vLLM sees=None [MISMATCH]; rope_scaling config.json=None vLLM sees={'rope_theta': 1000000, 'rope_type': 'default'} [ok]; max_position_embeddings 40960
+
+== fin-o1-8b (TheFinAI/Fin-o1-8B)
+  tokenizer CachedQwen2Tokenizer: 29 ids, round trip ok, specials 14, eos '<|im_end|>'
+  config Qwen3Config: rope_theta config.json=1000000 vLLM sees=None [MISMATCH]; rope_scaling config.json=None vLLM sees={'rope_theta': 1000000, 'rope_type': 'default'} [ok]; max_position_embeddings 40960
+
+RESULT: 7 problem(s)
+exit 1 Thu Oct 15 00:29:10 EDT 2026

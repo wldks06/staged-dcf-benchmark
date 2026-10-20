@@ -1,0 +1,45 @@
+answers_ver02_dianjin-32b_think_calc_s2_v2_L2345_20261015-185513  [grade_ver05, tolerance=qa, include_thinking=False, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 80.2%
+Final answers correct: 128/184
+Final-answer marker: exact 116, answer tag 33, missing 20, Final Response heading 8, other case 7 (missing = final scored zero)
+Hit the token limit: 20 ['JNJ-05', 'UNP-05', 'META-03', 'ORLY-03', 'CVX-03', 'MRK-03', 'CAT-03', 'MNST-02', 'GE-03', 'CMCSA-07', 'WMB-07', 'CRH-07', 'PPL-07', 'SHW-07', 'CEG-06', 'JNJ-10', 'WEC-11', 'UNP-08', 'PPL-08', 'SHW-08']
+Thinking never finished: 2 ['WEC-11', 'SHW-08']
+
+Final answers correct by tier and level:
+  basic    L2   53/56  =  94.6%
+  basic    L3    6/28  =  21.4%
+  complex  L3    3/20  =  15.0%
+  half     L4   13/20  =  65.0%
+  half     L5   15/20  =  75.0%
+  trap     L2   38/40  =  95.0%
+
+Fell for the trap (final wrong AND matched the trap value): 0/42
+
+Used basic shares (final wrong AND matched the basic-share value): 1/74   (also matched but final correct, not counted: 15)
+   WMB-08
+
+By tier:
+  basic                                    1508/2640 =  57.1%
+  complex                                   643/1438 =  44.7%
+  half                                     1286/1442 =  89.2%
+  trap                                      468/492  =  95.1%
+
+By level:
+  2                                        1146/1210 =  94.7%
+  3                                        1473/3360 =  43.8%
+  4                                         676/782  =  86.4%
+  5                                         610/660  =  92.4%
+
+By step:
+  Step 2. Project the future                210/654  =  32.1%
+  Step 3. Compute free cash flow           1737/2084 =  83.3%
+  Step 4. Discount to today                1438/2222 =  64.7%
+  Step 5. Value and decide                  520/1052 =  49.4%
+
+By kind:
+  final                                    1280/1840 =  69.6%
+  middle                                    660/1572 =  42.0%
+  step                                     1965/2600 =  75.6%
+
+Excluded items: {'rounding not auto-graded': 184, 'input given in data table': 482, 'target already in prompt': 17, 'zero target not auto-graded': 26}

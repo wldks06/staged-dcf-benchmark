@@ -1,0 +1,45 @@
+answers_ver02_qwen3-8b_think_s1_v2_L2345_20261015-005624  [grade_ver05, tolerance=qa, include_thinking=False, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 76.5%
+Final answers correct: 129/184
+Final-answer marker: exact 177, missing 4, other case 3 (missing = final scored zero)
+Hit the token limit: 4 ['CEG-03', 'JNJ-08', 'UNP-08', 'META-08']
+Thinking never finished: 4 ['CEG-03', 'JNJ-08', 'UNP-08', 'META-08']
+
+Final answers correct by tier and level:
+  basic    L2   49/56  =  87.5%
+  basic    L3    4/28  =  14.3%
+  complex  L3    6/20  =  30.0%
+  half     L4   15/20  =  75.0%
+  half     L5   15/20  =  75.0%
+  trap     L2   40/40  = 100.0%
+
+Fell for the trap (final wrong AND matched the trap value): 0/42
+
+Used basic shares (final wrong AND matched the basic-share value): 2/74   (also matched but final correct, not counted: 16)
+   CAT-03, PPL-07
+
+By tier:
+  basic                                    1284/2640 =  48.6%
+  complex                                   575/1438 =  40.0%
+  half                                     1255/1442 =  87.0%
+  trap                                      492/492  = 100.0%
+
+By level:
+  2                                        1118/1210 =  92.4%
+  3                                        1233/3360 =  36.7%
+  4                                         665/782  =  85.0%
+  5                                         590/660  =  89.4%
+
+By step:
+  Step 2. Project the future                194/654  =  29.7%
+  Step 3. Compute free cash flow           1549/2084 =  74.3%
+  Step 4. Discount to today                1335/2222 =  60.1%
+  Step 5. Value and decide                  528/1052 =  50.2%
+
+By kind:
+  final                                    1290/1840 =  70.1%
+  middle                                    616/1572 =  39.2%
+  step                                     1700/2600 =  65.4%
+
+Excluded items: {'rounding not auto-graded': 184, 'input given in data table': 482, 'target already in prompt': 17, 'zero target not auto-graded': 26}

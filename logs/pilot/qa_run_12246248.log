@@ -1,0 +1,10 @@
+[W1014 00:07:50.004431005 CUDACachingAllocator.cpp:3934] memory allocation failed with OOM on device 0 while trying to allocate 29360128 bytes (free: 13565952, total: 85019590656).
+[1/8] CMCSA-05 done in 1266.2s, 15369 tokens, thinking 13736
+[2/8] BKNG-05 done in 696.4s, 15717 tokens, thinking 13960
+[3/8] PM-05 done in 677.1s, 15542 tokens, thinking 13677
+[4/8] WMB-05 done in 384.4s, 8848 tokens, thinking 7226
+[5/8] JNJ-05 done in 691.3s, 15796 tokens, thinking 14340
+[6/8] UNP-05 done in 567.5s, 12932 tokens, thinking 12276
+[7/8] CRH-05 done in 374.4s, 8620 tokens, thinking 8471
+[8/8] PPL-05 done in 572.9s, 13413 tokens, thinking 13280
+Finished: answers_Qwen3-32B_think_L3_20261013-234908.jsonl

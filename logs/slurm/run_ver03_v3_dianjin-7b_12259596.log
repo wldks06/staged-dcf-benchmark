@@ -1,0 +1,561 @@
+[env_ver02] 2026-10-15 00:55:06 host=g8.quartz.uits.iu.edu job=12259596 partition=v100
+[env_ver02] GPUs: Tesla V100-PCIE-32GB, 32768 MiB;Tesla V100-PCIE-32GB, 32768 MiB
+[env_ver02] env=$MODEL_STORE/conda-env-v100 python=$MODEL_STORE/conda-env-v100/bin/python dtype=float16 ngpu=2
+vllm 0.10.1.1 | torch 2.7.1+cu126 | cuda True
+INFO 10-15 00:59:54 [__init__.py:241] Automatically detected platform cuda.
+compatibility patches applied: ['PreTrainedTokenizerBase.all_special_tokens_extended', 'vllm get_config -> RoPE fields restored']
+INFO 10-15 01:00:22 [utils.py:326] non-default args: {'model': 'DianJin/DianJin-R1-7B', 'dtype': 'float16', 'seed': 0, 'max_model_len': 32768, 'tensor_parallel_size': 2, 'enable_prefix_caching': False, 'disable_log_stats': True, 'disable_custom_all_reduce': True, 'enable_chunked_prefill': False}
+[compat] Qwen2Config: restored rope_theta=1000000.0, rope_scaling=None
+INFO 10-15 01:01:09 [__init__.py:711] Resolved architecture: Qwen2ForCausalLM
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+WARNING 10-15 01:01:09 [__init__.py:2819] Casting torch.bfloat16 to torch.float16.
+INFO 10-15 01:01:09 [__init__.py:1750] Using max model len 32768
+WARNING 10-15 01:01:09 [arg_utils.py:1770] Compute Capability < 8.0 is not supported by the V1 Engine. Falling back to V0. 
+[compat] Qwen2Config: restored rope_theta=1000000.0, rope_scaling=None
+INFO 10-15 01:01:19 [llm_engine.py:222] Initializing a V0 LLM engine (v0.10.1.1) with config: model='DianJin/DianJin-R1-7B', speculative_config=None, tokenizer='DianJin/DianJin-R1-7B', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config={}, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float16, max_seq_len=32768, download_dir=None, load_format=auto, tensor_parallel_size=2, pipeline_parallel_size=1, disable_custom_all_reduce=True, quantization=None, enforce_eager=False, kv_cache_dtype=auto, device_config=cuda, decoding_config=DecodingConfig(backend='auto', disable_fallback=False, disable_any_whitespace=False, disable_additional_properties=False, reasoning_backend=''), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None), seed=0, served_model_name=DianJin/DianJin-R1-7B, enable_prefix_caching=False, chunked_prefill_enabled=False, use_async_output_proc=True, pooler_config=None, compilation_config={"level":0,"debug_dump_path":"","cache_dir":"","backend":"","custom_ops":[],"splitting_ops":null,"use_inductor":true,"compile_sizes":[],"inductor_compile_config":{"enable_auto_functionalized_v2":false},"inductor_passes":{},"cudagraph_mode":0,"use_cudagraph":true,"cudagraph_num_of_warmups":0,"cudagraph_capture_sizes":[256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"cudagraph_copy_inputs":false,"full_cuda_graph":false,"pass_config":{"enable_fusion":false,"enable_noop":false},"max_capture_size":256,"local_cache_dir":null}, use_cached_outputs=False, 
+WARNING 10-15 01:01:20 [multiproc_worker_utils.py:273] Reducing Torch parallelism from 16 threads to 1 to avoid unnecessary CPU contention. Set OMP_NUM_THREADS in the external environment to tune this value as needed.
+[1;36m(VllmWorkerProcess pid=1152951)[0;0m INFO 10-15 01:01:20 [multiproc_worker_utils.py:219] Worker ready; awaiting tasks
+[1;36m(VllmWorkerProcess pid=1152951)[0;0m INFO 10-15 01:01:22 [cuda.py:384] Cannot use FlashAttention-2 backend for Volta and Turing GPUs.
+INFO 10-15 01:01:22 [cuda.py:384] Cannot use FlashAttention-2 backend for Volta and Turing GPUs.
+INFO 10-15 01:01:22 [cuda.py:433] Using XFormers backend.
+[1;36m(VllmWorkerProcess pid=1152951)[0;0m INFO 10-15 01:01:22 [cuda.py:433] Using XFormers backend.
+INFO 10-15 01:01:32 [__init__.py:1418] Found nccl from library libnccl.so.2
+INFO 10-15 01:01:32 [pynccl.py:70] vLLM is using nccl==2.26.2
+[1;36m(VllmWorkerProcess pid=1152951)[0;0m INFO 10-15 01:01:32 [__init__.py:1418] Found nccl from library libnccl.so.2
+[1;36m(VllmWorkerProcess pid=1152951)[0;0m INFO 10-15 01:01:32 [pynccl.py:70] vLLM is using nccl==2.26.2
+INFO 10-15 01:01:32 [shm_broadcast.py:289] vLLM message queue communication handle: Handle(local_reader_ranks=[1], buffer_handle=(1, 4194304, 6, 'psm_4139593a'), local_subscribe_addr='ipc:///tmp/d041c6e5-0f94-4db8-a21a-282081a35da9', remote_subscribe_addr=None, remote_addr_ipv6=False)
+INFO 10-15 01:01:32 [parallel_state.py:1134] rank 0 in world size 2 is assigned as DP rank 0, PP rank 0, TP rank 0, EP rank 0
+[1;36m(VllmWorkerProcess pid=1152951)[0;0m INFO 10-15 01:01:32 [parallel_state.py:1134] rank 1 in world size 2 is assigned as DP rank 0, PP rank 0, TP rank 1, EP rank 1
+INFO 10-15 01:01:32 [model_runner.py:1080] Starting to load model DianJin/DianJin-R1-7B...
+[1;36m(VllmWorkerProcess pid=1152951)[0;0m INFO 10-15 01:01:32 [model_runner.py:1080] Starting to load model DianJin/DianJin-R1-7B...
+INFO 10-15 01:01:33 [weight_utils.py:296] Using model weights format ['*.safetensors', '*.bin', '*.pt']
+[1;36m(VllmWorkerProcess pid=1152951)[0;0m INFO 10-15 01:01:33 [weight_utils.py:296] Using model weights format ['*.safetensors', '*.bin', '*.pt']
+Loading safetensors checkpoint shards:   0% Completed | 0/4 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards:  25% Completed | 1/4 [00:05<00:15,  5.31s/it]
+Loading safetensors checkpoint shards:  50% Completed | 2/4 [00:10<00:09,  4.96s/it]
+Loading safetensors checkpoint shards:  75% Completed | 3/4 [00:11<00:03,  3.19s/it]
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:16<00:00,  4.14s/it]
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:16<00:00,  4.18s/it]
+
+INFO 10-15 01:01:50 [default_loader.py:262] Loading weights took 16.76 seconds
+[1;36m(VllmWorkerProcess pid=1152951)[0;0m INFO 10-15 01:01:50 [default_loader.py:262] Loading weights took 16.78 seconds
+INFO 10-15 01:01:50 [model_runner.py:1112] Model loading took 7.1007 GiB and 17.766659 seconds
+[1;36m(VllmWorkerProcess pid=1152951)[0;0m INFO 10-15 01:01:51 [model_runner.py:1112] Model loading took 7.1007 GiB and 17.785667 seconds
+/N/soft/rhel8/xalt/xalt/libexec/xalt_rmap_exists: /N/soft/rhel8/xalt/xalt/lib64/libstdc++.so.6: version `GLIBCXX_3.4.32' not found (required by /N/soft/rhel8/xalt/xalt/libexec/xalt_rmap_exists)
+/N/soft/rhel8/xalt/xalt/libexec/xalt_rmap_exists: /N/soft/rhel8/xalt/xalt/lib64/libstdc++.so.6: version `GLIBCXX_3.4.32' not found (required by /N/soft/rhel8/xalt/xalt/libexec/xalt_rmap_exists)
+[1;36m(VllmWorkerProcess pid=1152951)[0;0m INFO 10-15 01:02:54 [worker.py:295] Memory profiling takes 63.04 seconds
+[1;36m(VllmWorkerProcess pid=1152951)[0;0m INFO 10-15 01:02:54 [worker.py:295] the current vLLM instance can use total_gpu_memory (31.73GiB) x gpu_memory_utilization (0.90) = 28.56GiB
+[1;36m(VllmWorkerProcess pid=1152951)[0;0m INFO 10-15 01:02:54 [worker.py:295] model weights take 7.10GiB; non_torch_memory takes 0.21GiB; PyTorch activation peak memory takes 2.84GiB; the rest of the memory reserved for KV Cache is 18.41GiB.
+INFO 10-15 01:02:56 [worker.py:295] Memory profiling takes 64.63 seconds
+INFO 10-15 01:02:56 [worker.py:295] the current vLLM instance can use total_gpu_memory (31.73GiB) x gpu_memory_utilization (0.90) = 28.56GiB
+INFO 10-15 01:02:56 [worker.py:295] model weights take 7.10GiB; non_torch_memory takes 0.23GiB; PyTorch activation peak memory takes 2.84GiB; the rest of the memory reserved for KV Cache is 18.39GiB.
+INFO 10-15 01:02:56 [executor_base.py:114] # cuda blocks: 43046, # CPU blocks: 9362
+INFO 10-15 01:02:56 [executor_base.py:119] Maximum concurrency for 32768 tokens per request: 21.02x
+INFO 10-15 01:03:00 [model_runner.py:1383] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI. If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+[1;36m(VllmWorkerProcess pid=1152951)[0;0m INFO 10-15 01:03:00 [model_runner.py:1383] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI. If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+Capturing CUDA graph shapes:   0%|          | 0/35 [00:00<?, ?it/s]Capturing CUDA graph shapes:   3%|▎         | 1/35 [00:00<00:33,  1.03it/s]Capturing CUDA graph shapes:   6%|▌         | 2/35 [00:01<00:30,  1.09it/s]Capturing CUDA graph shapes:   9%|▊         | 3/35 [00:02<00:27,  1.15it/s]Capturing CUDA graph shapes:  11%|█▏        | 4/35 [00:03<00:25,  1.19it/s]Capturing CUDA graph shapes:  14%|█▍        | 5/35 [00:04<00:24,  1.22it/s]Capturing CUDA graph shapes:  17%|█▋        | 6/35 [00:05<00:23,  1.21it/s]Capturing CUDA graph shapes:  20%|██        | 7/35 [00:05<00:22,  1.23it/s]Capturing CUDA graph shapes:  23%|██▎       | 8/35 [00:06<00:22,  1.23it/s]Capturing CUDA graph shapes:  26%|██▌       | 9/35 [00:07<00:21,  1.24it/s]Capturing CUDA graph shapes:  29%|██▊       | 10/35 [00:08<00:20,  1.24it/s]Capturing CUDA graph shapes:  31%|███▏      | 11/35 [00:09<00:19,  1.24it/s]Capturing CUDA graph shapes:  34%|███▍      | 12/35 [00:09<00:18,  1.24it/s]Capturing CUDA graph shapes:  37%|███▋      | 13/35 [00:10<00:17,  1.25it/s]Capturing CUDA graph shapes:  40%|████      | 14/35 [00:11<00:16,  1.26it/s]Capturing CUDA graph shapes:  43%|████▎     | 15/35 [00:12<00:15,  1.25it/s]Capturing CUDA graph shapes:  46%|████▌     | 16/35 [00:13<00:15,  1.25it/s]Capturing CUDA graph shapes:  49%|████▊     | 17/35 [00:13<00:14,  1.26it/s]Capturing CUDA graph shapes:  51%|█████▏    | 18/35 [00:14<00:13,  1.26it/s]Capturing CUDA graph shapes:  54%|█████▍    | 19/35 [00:15<00:12,  1.26it/s]Capturing CUDA graph shapes:  57%|█████▋    | 20/35 [00:16<00:11,  1.28it/s]Capturing CUDA graph shapes:  60%|██████    | 21/35 [00:16<00:10,  1.27it/s]Capturing CUDA graph shapes:  63%|██████▎   | 22/35 [00:17<00:10,  1.28it/s]Capturing CUDA graph shapes:  66%|██████▌   | 23/35 [00:18<00:09,  1.26it/s]Capturing CUDA graph shapes:  69%|██████▊   | 24/35 [00:19<00:08,  1.27it/s]Capturing CUDA graph shapes:  71%|███████▏  | 25/35 [00:20<00:07,  1.28it/s]Capturing CUDA graph shapes:  74%|███████▍  | 26/35 [00:20<00:06,  1.29it/s]Capturing CUDA graph shapes:  77%|███████▋  | 27/35 [00:21<00:06,  1.30it/s]Capturing CUDA graph shapes:  80%|████████  | 28/35 [00:22<00:05,  1.31it/s]Capturing CUDA graph shapes:  83%|████████▎ | 29/35 [00:23<00:04,  1.29it/s]Capturing CUDA graph shapes:  86%|████████▌ | 30/35 [00:23<00:03,  1.30it/s]Capturing CUDA graph shapes:  89%|████████▊ | 31/35 [00:24<00:03,  1.30it/s]Capturing CUDA graph shapes:  91%|█████████▏| 32/35 [00:25<00:02,  1.32it/s]Capturing CUDA graph shapes:  94%|█████████▍| 33/35 [00:26<00:01,  1.33it/s]Capturing CUDA graph shapes:  97%|█████████▋| 34/35 [00:26<00:00,  1.33it/s]/N/soft/rhel8/xalt/xalt/libexec/xalt_rmap_exists: /N/soft/rhel8/xalt/xalt/lib64/libstdc++.so.6: version `GLIBCXX_3.4.32' not found (required by /N/soft/rhel8/xalt/xalt/libexec/xalt_rmap_exists)
+/N/soft/rhel8/xalt/xalt/libexec/xalt_rmap_exists: /N/soft/rhel8/xalt/xalt/lib64/libstdc++.so.6: version `GLIBCXX_3.4.32' not found (required by /N/soft/rhel8/xalt/xalt/libexec/xalt_rmap_exists)
+/N/soft/rhel8/xalt/xalt/libexec/xalt_rmap_exists: /N/soft/rhel8/xalt/xalt/lib64/libstdc++.so.6: version `GLIBCXX_3.4.32' not found (required by /N/soft/rhel8/xalt/xalt/libexec/xalt_rmap_exists)
+/N/soft/rhel8/xalt/xalt/libexec/xalt_rmap_exists: /N/soft/rhel8/xalt/xalt/lib64/libstdc++.so.6: version `GLIBCXX_3.4.32' not found (required by /N/soft/rhel8/xalt/xalt/libexec/xalt_rmap_exists)
+Capturing CUDA graph shapes: 100%|██████████| 35/35 [00:28<00:00,  1.04s/it][1;36m(VllmWorkerProcess pid=1152951)[0;0m INFO 10-15 01:03:29 [model_runner.py:1535] Graph capturing finished in 29 secs, took 0.21 GiB
+Capturing CUDA graph shapes: 100%|██████████| 35/35 [00:28<00:00,  1.22it/s]
+INFO 10-15 01:03:29 [model_runner.py:1535] Graph capturing finished in 29 secs, took 0.21 GiB
+INFO 10-15 01:03:29 [llm_engine.py:417] init engine (profile, create kv cache, warmup model) took 98.51 seconds
+INFO 10-15 01:03:30 [llm.py:298] Supported_tasks: ['generate']
+Loaded DianJin/DianJin-R1-7B (vLLM 0.10.1.1, tp=2); questions [('v2', 184), ('ver03', 104), ('ver03_newco', 20)]; tools ['none', 'calc']; seeds [0, 1, 2]
+Finished $REPO_ROOT/results/ver02_runs/dianjin-7b/answers_ver02_dianjin-7b_think_s0_v2_L2345_20261015-005623.jsonl: 184 answers in 1692.9s, 15 hit the token limit
+Finished $REPO_ROOT/results/ver02_runs/dianjin-7b/answers_ver02_dianjin-7b_think_s0_ver03_L2345_20261015-005623.jsonl: 104 answers in 1628.8s, 16 hit the token limit
+Finished $REPO_ROOT/results/ver02_runs/dianjin-7b/answers_ver02_dianjin-7b_think_s0_ver03_newco_L2345_20261015-005623.jsonl: 20 answers in 752.5s, 7 hit the token limit
+Finished $REPO_ROOT/results/ver02_runs/dianjin-7b/answers_ver02_dianjin-7b_think_s1_v2_L2345_20261015-005623.jsonl: 184 answers in 1722.9s, 16 hit the token limit
+Finished $REPO_ROOT/results/ver02_runs/dianjin-7b/answers_ver02_dianjin-7b_think_s1_ver03_L2345_20261015-005623.jsonl: 104 answers in 1730.3s, 18 hit the token limit
+Finished $REPO_ROOT/results/ver02_runs/dianjin-7b/answers_ver02_dianjin-7b_think_s1_ver03_newco_L2345_20261015-005623.jsonl: 20 answers in 719.0s, 6 hit the token limit
+Finished $REPO_ROOT/results/ver02_runs/dianjin-7b/answers_ver02_dianjin-7b_think_s2_v2_L2345_20261015-005623.jsonl: 184 answers in 1633.6s, 14 hit the token limit
+Finished $REPO_ROOT/results/ver02_runs/dianjin-7b/answers_ver02_dianjin-7b_think_s2_ver03_L2345_20261015-005623.jsonl: 104 answers in 1595.5s, 16 hit the token limit
+Finished $REPO_ROOT/results/ver02_runs/dianjin-7b/answers_ver02_dianjin-7b_think_s2_ver03_newco_L2345_20261015-005623.jsonl: 20 answers in 627.5s, 3 hit the token limit
+WARNING 10-15 04:58:24 [scheduler.py:1775] Sequence group 1107 is preempted by PreemptionMode.RECOMPUTE mode because there is not enough KV cache space. This can affect the end-to-end performance. Increase gpu_memory_utilization or tensor_parallel_size to provide more KV cache memory. total_num_cumulative_preemption=1
+  [dianjin-7b_think_calc_s0] round 1: 37 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 2: 16 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 3: 13 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 4: 11 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 5: 9 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 6: 6 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 7: 6 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 8: 6 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 9: 6 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 10: 6 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 11: 6 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 12: 5 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 13: 4 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 14: 4 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 15: 4 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 16: 4 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 17: 3 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 18: 3 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 19: 3 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 20: 3 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 21: 3 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 22: 3 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 23: 3 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 24: 3 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 25: 3 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 26: 3 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 27: 3 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 28: 3 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 29: 3 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 30: 3 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 31: 3 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 32: 3 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 33: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 34: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 35: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 36: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 37: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 38: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 39: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 40: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 41: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 42: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 43: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 44: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 45: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 46: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 47: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 48: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 49: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 50: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 51: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 52: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 53: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 54: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 55: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 56: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 57: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 58: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 59: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 60: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 61: 0 questions still calling the calculator
+Finished $REPO_ROOT/results/ver02_runs/dianjin-7b/answers_ver02_dianjin-7b_think_calc_s0_v2_L2345_20261015-005623.jsonl: 184 answers in 4716.6s, 32 hit the token limit
+  [dianjin-7b_think_calc_s0] round 1: 12 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 2: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 3: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 4: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 5: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 6: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 7: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 8: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 9: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 10: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 11: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 12: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 13: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 14: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 15: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 16: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 17: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 18: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 19: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 20: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 21: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 22: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 23: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 24: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 25: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 26: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 27: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 28: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 29: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 30: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 31: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 32: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 33: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 34: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 35: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 36: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 37: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 38: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 39: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 40: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 41: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 42: 0 questions still calling the calculator
+Finished $REPO_ROOT/results/ver02_runs/dianjin-7b/answers_ver02_dianjin-7b_think_calc_s0_ver03_L2345_20261015-005623.jsonl: 104 answers in 2707.4s, 19 hit the token limit
+  [dianjin-7b_think_calc_s0] round 1: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s0] round 2: 0 questions still calling the calculator
+Finished $REPO_ROOT/results/ver02_runs/dianjin-7b/answers_ver02_dianjin-7b_think_calc_s0_ver03_newco_L2345_20261015-005623.jsonl: 20 answers in 807.6s, 4 hit the token limit
+  [dianjin-7b_think_calc_s1] round 1: 30 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 2: 12 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 3: 6 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 4: 4 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 5: 3 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 6: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 7: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 8: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 9: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 10: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 11: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 12: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 13: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 14: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 15: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 16: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 17: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 18: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 19: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 20: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 21: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 22: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 23: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 24: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 25: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 26: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 27: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 28: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 29: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 30: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 31: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 32: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 33: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 34: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 35: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 36: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 37: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 38: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 39: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 40: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 41: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 42: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 43: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 44: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 45: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 46: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 47: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 48: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 49: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 50: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 51: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 52: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 53: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 54: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 55: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 56: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 57: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 58: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 59: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 60: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 61: 0 questions still calling the calculator
+Finished $REPO_ROOT/results/ver02_runs/dianjin-7b/answers_ver02_dianjin-7b_think_calc_s1_v2_L2345_20261015-005623.jsonl: 184 answers in 3656.6s, 25 hit the token limit
+  [dianjin-7b_think_calc_s1] round 1: 9 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 2: 6 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 3: 4 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 4: 4 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 5: 3 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 6: 3 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 7: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 8: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 9: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 10: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 11: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 12: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 13: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 14: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 15: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 16: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 17: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 18: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 19: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 20: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 21: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 22: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 23: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 24: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 25: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 26: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 27: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 28: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 29: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 30: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 31: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 32: 0 questions still calling the calculator
+Finished $REPO_ROOT/results/ver02_runs/dianjin-7b/answers_ver02_dianjin-7b_think_calc_s1_ver03_L2345_20261015-005623.jsonl: 104 answers in 2763.4s, 18 hit the token limit
+  [dianjin-7b_think_calc_s1] round 1: 3 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 2: 3 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 3: 3 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 4: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 5: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 6: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 7: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 8: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 9: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 10: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 11: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 12: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 13: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s1] round 14: 0 questions still calling the calculator
+Finished $REPO_ROOT/results/ver02_runs/dianjin-7b/answers_ver02_dianjin-7b_think_calc_s1_ver03_newco_L2345_20261015-005623.jsonl: 20 answers in 883.4s, 5 hit the token limit
+  [dianjin-7b_think_calc_s2] round 1: 27 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 2: 10 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 3: 7 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 4: 5 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 5: 3 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 6: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 7: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 8: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 9: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 10: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 11: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 12: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 13: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 14: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 15: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 16: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 17: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 18: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 19: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 20: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 21: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 22: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 23: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 24: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 25: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 26: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 27: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 28: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 29: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 30: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 31: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 32: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 33: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 34: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 35: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 36: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 37: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 38: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 39: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 40: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 41: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 42: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 43: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 44: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 45: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 46: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 47: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 48: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 49: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 50: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 51: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 52: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 53: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 54: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 55: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 56: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 57: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 58: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 59: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 60: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 61: 0 questions still calling the calculator
+Finished $REPO_ROOT/results/ver02_runs/dianjin-7b/answers_ver02_dianjin-7b_think_calc_s2_v2_L2345_20261015-005623.jsonl: 184 answers in 2436.2s, 18 hit the token limit
+  [dianjin-7b_think_calc_s2] round 1: 8 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 2: 5 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 3: 4 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 4: 4 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 5: 4 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 6: 4 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 7: 3 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 8: 3 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 9: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 10: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 11: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 12: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 13: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 14: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 15: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 16: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 17: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 18: 0 questions still calling the calculator
+Finished $REPO_ROOT/results/ver02_runs/dianjin-7b/answers_ver02_dianjin-7b_think_calc_s2_ver03_L2345_20261015-005623.jsonl: 104 answers in 2940.6s, 21 hit the token limit
+  [dianjin-7b_think_calc_s2] round 1: 2 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 2: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 3: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 4: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 5: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 6: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 7: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 8: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 9: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 10: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 11: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 12: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 13: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 14: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 15: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 16: 1 questions still calling the calculator
+  [dianjin-7b_think_calc_s2] round 17: 0 questions still calling the calculator
+Finished $REPO_ROOT/results/ver02_runs/dianjin-7b/answers_ver02_dianjin-7b_think_calc_s2_ver03_newco_L2345_20261015-005623.jsonl: 20 answers in 1267.0s, 5 hit the token limit
+INFO 10-15 10:34:52 [multiproc_worker_utils.py:133] Terminating local vLLM worker processes
+[1;36m(VllmWorkerProcess pid=1152951)[0;0m INFO 10-15 10:34:52 [multiproc_worker_utils.py:253] Worker exiting
+$MODEL_STORE/conda-env-v100/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 1 leaked shared_memory objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+[rank0]:[W1015 10:34:54.305649677 ProcessGroupNCCL.cpp:1479] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+[sanity] 18 answer files, 1848 answers, 258 cut by the token limit, 391 of 1590 finished answers with a FINAL ANSWER line, 690 calculator calls
+answers_ver02_dianjin-7b_think_calc_s0_v2_L2345_20261015-005623  [grade_ver04, tolerance=qa, include_thinking=False, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 21.3%
+answers_ver02_dianjin-7b_think_calc_s0_v2_L2345_20261015-005623  [grade_ver04, tolerance=plan, include_thinking=False, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 23.2%
+answers_ver02_dianjin-7b_think_calc_s0_v2_L2345_20261015-005623  [grade_ver04, tolerance=plan, include_thinking=True, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 37.0%
+answers_ver02_dianjin-7b_think_calc_s0_ver03_L2345_20261015-005623  [grade_ver04, tolerance=qa, include_thinking=False, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 15.7%
+answers_ver02_dianjin-7b_think_calc_s0_ver03_L2345_20261015-005623  [grade_ver04, tolerance=plan, include_thinking=False, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 20.8%
+answers_ver02_dianjin-7b_think_calc_s0_ver03_L2345_20261015-005623  [grade_ver04, tolerance=plan, include_thinking=True, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 46.5%
+answers_ver02_dianjin-7b_think_calc_s0_ver03_newco_L2345_20261015-005623  [grade_ver04, tolerance=qa, include_thinking=False, qa=QA_set_ver03_newco.json]
+
+Questions graded: 20   mean score per question: 21.0%
+answers_ver02_dianjin-7b_think_calc_s0_ver03_newco_L2345_20261015-005623  [grade_ver04, tolerance=plan, include_thinking=False, qa=QA_set_ver03_newco.json]
+
+Questions graded: 20   mean score per question: 23.9%
+answers_ver02_dianjin-7b_think_calc_s0_ver03_newco_L2345_20261015-005623  [grade_ver04, tolerance=plan, include_thinking=True, qa=QA_set_ver03_newco.json]
+
+Questions graded: 20   mean score per question: 49.4%
+answers_ver02_dianjin-7b_think_calc_s1_v2_L2345_20261015-005623  [grade_ver04, tolerance=qa, include_thinking=False, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 17.1%
+answers_ver02_dianjin-7b_think_calc_s1_v2_L2345_20261015-005623  [grade_ver04, tolerance=plan, include_thinking=False, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 19.8%
+answers_ver02_dianjin-7b_think_calc_s1_v2_L2345_20261015-005623  [grade_ver04, tolerance=plan, include_thinking=True, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 34.2%
+answers_ver02_dianjin-7b_think_calc_s1_ver03_L2345_20261015-005623  [grade_ver04, tolerance=qa, include_thinking=False, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 18.2%
+answers_ver02_dianjin-7b_think_calc_s1_ver03_L2345_20261015-005623  [grade_ver04, tolerance=plan, include_thinking=False, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 21.8%
+answers_ver02_dianjin-7b_think_calc_s1_ver03_L2345_20261015-005623  [grade_ver04, tolerance=plan, include_thinking=True, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 47.7%
+answers_ver02_dianjin-7b_think_calc_s1_ver03_newco_L2345_20261015-005623  [grade_ver04, tolerance=qa, include_thinking=False, qa=QA_set_ver03_newco.json]
+
+Questions graded: 20   mean score per question: 14.6%
+answers_ver02_dianjin-7b_think_calc_s1_ver03_newco_L2345_20261015-005623  [grade_ver04, tolerance=plan, include_thinking=False, qa=QA_set_ver03_newco.json]
+
+Questions graded: 20   mean score per question: 16.8%
+answers_ver02_dianjin-7b_think_calc_s1_ver03_newco_L2345_20261015-005623  [grade_ver04, tolerance=plan, include_thinking=True, qa=QA_set_ver03_newco.json]
+
+Questions graded: 20   mean score per question: 36.5%
+answers_ver02_dianjin-7b_think_calc_s2_v2_L2345_20261015-005623  [grade_ver04, tolerance=qa, include_thinking=False, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 21.3%
+answers_ver02_dianjin-7b_think_calc_s2_v2_L2345_20261015-005623  [grade_ver04, tolerance=plan, include_thinking=False, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 24.2%
+answers_ver02_dianjin-7b_think_calc_s2_v2_L2345_20261015-005623  [grade_ver04, tolerance=plan, include_thinking=True, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 38.5%
+answers_ver02_dianjin-7b_think_calc_s2_ver03_L2345_20261015-005623  [grade_ver04, tolerance=qa, include_thinking=False, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 17.9%
+answers_ver02_dianjin-7b_think_calc_s2_ver03_L2345_20261015-005623  [grade_ver04, tolerance=plan, include_thinking=False, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 21.2%
+answers_ver02_dianjin-7b_think_calc_s2_ver03_L2345_20261015-005623  [grade_ver04, tolerance=plan, include_thinking=True, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 43.9%
+answers_ver02_dianjin-7b_think_calc_s2_ver03_newco_L2345_20261015-005623  [grade_ver04, tolerance=qa, include_thinking=False, qa=QA_set_ver03_newco.json]
+
+Questions graded: 20   mean score per question: 13.1%
+answers_ver02_dianjin-7b_think_calc_s2_ver03_newco_L2345_20261015-005623  [grade_ver04, tolerance=plan, include_thinking=False, qa=QA_set_ver03_newco.json]
+
+Questions graded: 20   mean score per question: 15.6%
+answers_ver02_dianjin-7b_think_calc_s2_ver03_newco_L2345_20261015-005623  [grade_ver04, tolerance=plan, include_thinking=True, qa=QA_set_ver03_newco.json]
+
+Questions graded: 20   mean score per question: 42.3%
+answers_ver02_dianjin-7b_think_s0_v2_L2345_20261015-005623  [grade_ver04, tolerance=qa, include_thinking=False, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 24.7%
+answers_ver02_dianjin-7b_think_s0_v2_L2345_20261015-005623  [grade_ver04, tolerance=plan, include_thinking=False, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 29.4%
+answers_ver02_dianjin-7b_think_s0_v2_L2345_20261015-005623  [grade_ver04, tolerance=plan, include_thinking=True, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 41.2%
+answers_ver02_dianjin-7b_think_s0_ver03_L2345_20261015-005623  [grade_ver04, tolerance=qa, include_thinking=False, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 17.7%
+answers_ver02_dianjin-7b_think_s0_ver03_L2345_20261015-005623  [grade_ver04, tolerance=plan, include_thinking=False, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 21.3%
+answers_ver02_dianjin-7b_think_s0_ver03_L2345_20261015-005623  [grade_ver04, tolerance=plan, include_thinking=True, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 45.4%
+answers_ver02_dianjin-7b_think_s0_ver03_newco_L2345_20261015-005623  [grade_ver04, tolerance=qa, include_thinking=False, qa=QA_set_ver03_newco.json]
+
+Questions graded: 20   mean score per question: 9.8%
+answers_ver02_dianjin-7b_think_s0_ver03_newco_L2345_20261015-005623  [grade_ver04, tolerance=plan, include_thinking=False, qa=QA_set_ver03_newco.json]
+
+Questions graded: 20   mean score per question: 12.1%
+answers_ver02_dianjin-7b_think_s0_ver03_newco_L2345_20261015-005623  [grade_ver04, tolerance=plan, include_thinking=True, qa=QA_set_ver03_newco.json]
+
+Questions graded: 20   mean score per question: 43.0%
+answers_ver02_dianjin-7b_think_s1_v2_L2345_20261015-005623  [grade_ver04, tolerance=qa, include_thinking=False, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 27.8%
+answers_ver02_dianjin-7b_think_s1_v2_L2345_20261015-005623  [grade_ver04, tolerance=plan, include_thinking=False, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 31.7%
+answers_ver02_dianjin-7b_think_s1_v2_L2345_20261015-005623  [grade_ver04, tolerance=plan, include_thinking=True, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 43.2%
+answers_ver02_dianjin-7b_think_s1_ver03_L2345_20261015-005623  [grade_ver04, tolerance=qa, include_thinking=False, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 16.1%
+answers_ver02_dianjin-7b_think_s1_ver03_L2345_20261015-005623  [grade_ver04, tolerance=plan, include_thinking=False, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 20.4%
+answers_ver02_dianjin-7b_think_s1_ver03_L2345_20261015-005623  [grade_ver04, tolerance=plan, include_thinking=True, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 43.7%
+answers_ver02_dianjin-7b_think_s1_ver03_newco_L2345_20261015-005623  [grade_ver04, tolerance=qa, include_thinking=False, qa=QA_set_ver03_newco.json]
+
+Questions graded: 20   mean score per question: 17.1%
+answers_ver02_dianjin-7b_think_s1_ver03_newco_L2345_20261015-005623  [grade_ver04, tolerance=plan, include_thinking=False, qa=QA_set_ver03_newco.json]
+
+Questions graded: 20   mean score per question: 22.1%
+answers_ver02_dianjin-7b_think_s1_ver03_newco_L2345_20261015-005623  [grade_ver04, tolerance=plan, include_thinking=True, qa=QA_set_ver03_newco.json]
+
+Questions graded: 20   mean score per question: 47.2%
+answers_ver02_dianjin-7b_think_s2_v2_L2345_20261015-005623  [grade_ver04, tolerance=qa, include_thinking=False, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 28.4%
+answers_ver02_dianjin-7b_think_s2_v2_L2345_20261015-005623  [grade_ver04, tolerance=plan, include_thinking=False, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 31.5%
+answers_ver02_dianjin-7b_think_s2_v2_L2345_20261015-005623  [grade_ver04, tolerance=plan, include_thinking=True, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 43.6%
+answers_ver02_dianjin-7b_think_s2_ver03_L2345_20261015-005623  [grade_ver04, tolerance=qa, include_thinking=False, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 15.9%
+answers_ver02_dianjin-7b_think_s2_ver03_L2345_20261015-005623  [grade_ver04, tolerance=plan, include_thinking=False, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 21.6%
+answers_ver02_dianjin-7b_think_s2_ver03_L2345_20261015-005623  [grade_ver04, tolerance=plan, include_thinking=True, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 47.1%
+answers_ver02_dianjin-7b_think_s2_ver03_newco_L2345_20261015-005623  [grade_ver04, tolerance=qa, include_thinking=False, qa=QA_set_ver03_newco.json]
+
+Questions graded: 20   mean score per question: 16.5%
+answers_ver02_dianjin-7b_think_s2_ver03_newco_L2345_20261015-005623  [grade_ver04, tolerance=plan, include_thinking=False, qa=QA_set_ver03_newco.json]
+
+Questions graded: 20   mean score per question: 20.3%
+answers_ver02_dianjin-7b_think_s2_ver03_newco_L2345_20261015-005623  [grade_ver04, tolerance=plan, include_thinking=True, qa=QA_set_ver03_newco.json]
+
+Questions graded: 20   mean score per question: 44.1%
+run_model_ver03 exit code 4  Thu Oct 15 10:35:28 EDT 2026

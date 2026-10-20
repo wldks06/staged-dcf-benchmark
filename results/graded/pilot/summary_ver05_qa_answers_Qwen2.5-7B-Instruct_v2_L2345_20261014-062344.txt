@@ -1,0 +1,45 @@
+answers_Qwen2.5-7B-Instruct_v2_L2345_20261014-062344  [grade_ver05, tolerance=qa, include_thinking=False, qa=QA_set_v2.json]
+
+Questions graded: 160   mean score per question: 47.6%
+Final answers correct: 62/160
+Final-answer marker: exact 121, other case 39 (missing = final scored zero)
+Hit the token limit: 2 ['PEP-06', 'CMCSA-08']
+
+Final answers correct by tier and level:
+  basic    L2   31/40  =  77.5%
+  basic    L3    0/20  =   0.0%
+  complex  L3    0/20  =   0.0%
+  half     L4    2/20  =  10.0%
+  half     L5    0/20  =   0.0%
+  trap     L2   29/40  =  72.5%
+
+Fell for the trap (final wrong AND matched the trap value): 3/42
+   BKNG-10, BKNG-11, CEG-11
+
+Used basic shares (final wrong AND matched the basic-share value): 1/74   (also matched but final correct, not counted: 3)
+   ORLY-11
+
+By tier:
+  basic                                     585/1885 =  31.0%
+  complex                                   211/1438 =  14.7%
+  half                                      294/1442 =  20.4%
+  trap                                      368/492  =  74.8%
+
+By level:
+  2                                         788/1004 =  78.5%
+  3                                         376/2811 =  13.4%
+  4                                         149/782  =  19.1%
+  5                                         145/660  =  22.0%
+
+By step:
+  Step 2. Project the future                 10/580  =   1.7%
+  Step 3. Compute free cash flow            586/1853 =  31.6%
+  Step 4. Discount to today                 712/1904 =  37.4%
+  Step 5. Value and decide                  150/920  =  16.3%
+
+By kind:
+  final                                     620/1600 =  38.8%
+  middle                                    378/1372 =  27.6%
+  step                                      460/2285 =  20.1%
+
+Excluded items: {'rounding not auto-graded': 160, 'input given in data table': 402, 'target already in prompt': 15, 'zero target not auto-graded': 24}

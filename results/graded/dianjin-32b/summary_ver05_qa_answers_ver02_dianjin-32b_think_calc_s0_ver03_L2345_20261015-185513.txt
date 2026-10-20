@@ -1,0 +1,45 @@
+answers_ver02_dianjin-32b_think_calc_s0_ver03_L2345_20261015-185513  [grade_ver05, tolerance=qa, include_thinking=False, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 64.4%
+Final answers correct: 50/104
+Final-answer marker: exact 62, answer tag 20, missing 18, Final Response heading 2, other case 2 (missing = final scored zero)
+Hit the token limit: 15 ['CMCSA-2019-06', 'META-2019-05', 'MCD-2019-07', 'ORLY-2019-07', 'MRK-2019-05', 'MRK-2019-07', 'MRK-2019-08', 'SHW-2019-05', 'SHW-2019-06', 'CMCSA-2022-08', 'PM-2022-07', 'META-2022-08', 'VZ-2022-07', 'ORLY-2022-05', 'SHW-2022-07']
+Thinking never finished: 1 ['PM-2022-08']
+
+Final answers correct by tier and level:
+  basic@2019 L3    0/13  =   0.0%
+  basic@2022 L3    7/13  =  53.8%
+  complex@2019 L3    2/13  =  15.4%
+  complex@2022 L3    3/13  =  23.1%
+  half@2019 L4   10/13  =  76.9%
+  half@2019 L5    9/13  =  69.2%
+  half@2022 L4   10/13  =  76.9%
+  half@2022 L5    9/13  =  69.2%
+
+Used basic shares (final wrong AND matched the basic-share value): 0/78   (also matched but final correct, not counted: 8)
+
+By tier:
+  basic@2019                                319/880  =  36.2%
+  basic@2022                                495/906  =  54.6%
+  complex@2019                              304/924  =  32.9%
+  complex@2022                              461/952  =  48.4%
+  half@2019                                 776/923  =  84.1%
+  half@2022                                 827/945  =  87.5%
+
+By level:
+  3                                        1579/3662 =  43.1%
+  4                                         879/1021 =  86.1%
+  5                                         724/847  =  85.5%
+
+By step:
+  Step 2. Project the future                280/768  =  36.5%
+  Step 3. Compute free cash flow           1585/2070 =  76.6%
+  Step 4. Discount to today                 907/1712 =  53.0%
+  Step 5. Value and decide                  410/980  =  41.8%
+
+By kind:
+  final                                     500/1040 =  48.1%
+  middle                                    562/1520 =  37.0%
+  step                                     2120/2970 =  71.4%
+
+Excluded items: {'target already in prompt': 41, 'rounding not auto-graded': 104, 'zero target not auto-graded': 9}

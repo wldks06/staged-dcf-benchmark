@@ -1,0 +1,65 @@
+start Thu Oct 15 00:30:54 EDT 2026 on c1.quartz.uits.iu.edu
+INFO 10-15 00:31:16 [__init__.py:245] No platform detected, vLLM is running on UnspecifiedPlatform
+patches: ['PreTrainedTokenizerBase.all_special_tokens_extended', 'vllm get_config -> RoPE fields restored']
+vllm 0.10.1.1 | transformers 5.19.0
+
+== qwen25-7b (Qwen/Qwen2.5-7B-Instruct)
+  tokenizer CachedQwen2Tokenizer: 29 ids, round trip ok, specials 14, eos '<|im_end|>'
+[compat] Qwen2Config: restored rope_theta=1000000.0, rope_scaling=None
+INFO 10-15 00:32:16 [__init__.py:711] Resolved architecture: Qwen2ForCausalLM
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+WARNING 10-15 00:32:16 [__init__.py:2819] Casting torch.bfloat16 to torch.float16.
+INFO 10-15 00:32:16 [__init__.py:1750] Using max model len 32768
+  config Qwen2Config: rope_theta config.json=1000000.0 vLLM sees=1000000.0 [ok]; rope_scaling config.json=None vLLM sees=None [ok]; max_position_embeddings 32768, vLLM max_model_len 32768
+
+== fin-r1 (SUFE-AIFLM-Lab/Fin-R1)
+  tokenizer CachedQwen2Tokenizer: 29 ids, round trip ok, specials 14, eos '<|im_end|>'
+[compat] Qwen2Config: restored rope_theta=1000000.0, rope_scaling=None
+INFO 10-15 00:32:16 [__init__.py:711] Resolved architecture: Qwen2ForCausalLM
+WARNING 10-15 00:32:16 [__init__.py:2819] Casting torch.bfloat16 to torch.float16.
+INFO 10-15 00:32:16 [__init__.py:1750] Using max model len 32768
+  config Qwen2Config: rope_theta config.json=1000000.0 vLLM sees=1000000.0 [ok]; rope_scaling config.json=None vLLM sees=None [ok]; max_position_embeddings 32768, vLLM max_model_len 32768
+
+== dianjin-7b (DianJin/DianJin-R1-7B)
+  tokenizer CachedQwen2Tokenizer: 29 ids, round trip ok, specials 14, eos '<|im_end|>'
+[compat] Qwen2Config: restored rope_theta=1000000.0, rope_scaling=None
+INFO 10-15 00:32:17 [__init__.py:711] Resolved architecture: Qwen2ForCausalLM
+WARNING 10-15 00:32:17 [__init__.py:2819] Casting torch.bfloat16 to torch.float16.
+INFO 10-15 00:32:17 [__init__.py:1750] Using max model len 32768
+  config Qwen2Config: rope_theta config.json=1000000.0 vLLM sees=1000000.0 [ok]; rope_scaling config.json=None vLLM sees=None [ok]; max_position_embeddings 32768, vLLM max_model_len 32768
+
+== llama31-8b (meta-llama/Llama-3.1-8B-Instruct)
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer CachedTokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+  tokenizer CachedTokenizersBackend: 51 ids, round trip ok, specials 2, eos '<|eot_id|>'
+[compat] LlamaConfig: restored rope_theta=500000.0, rope_scaling={'factor': 8.0, 'low_freq_factor': 1.0, 'high_freq_factor': 4.0, 'original_max_position_embeddings': 8192, 'rope_type': 'llama3'}
+INFO 10-15 00:32:42 [__init__.py:711] Resolved architecture: LlamaForCausalLM
+WARNING 10-15 00:32:42 [__init__.py:2819] Casting torch.bfloat16 to torch.float16.
+INFO 10-15 00:32:42 [__init__.py:1750] Using max model len 32768
+  config LlamaConfig: rope_theta config.json=500000.0 vLLM sees=500000.0 [ok]; rope_scaling config.json={'factor': 8.0, 'low_freq_factor': 1.0, 'high_freq_factor': 4.0, 'original_max_position_embeddings': 8192, 'rope_type': 'llama3'} vLLM sees={'factor': 8.0, 'low_freq_factor': 1.0, 'high_freq_factor': 4.0, 'original_max_position_embeddings': 8192, 'rope_type': 'llama3'} [ok]; max_position_embeddings 131072, vLLM max_model_len 32768
+
+== fino1-8b (TheFinAI/Fino1-8B)
+  tokenizer CachedTokenizersBackend: 51 ids, round trip ok, specials 3, eos '<|eot_id|>'
+[compat] LlamaConfig: restored rope_theta=500000.0, rope_scaling={'factor': 8.0, 'high_freq_factor': 4.0, 'low_freq_factor': 1.0, 'original_max_position_embeddings': 8192, 'rope_type': 'llama3'}
+INFO 10-15 00:32:43 [__init__.py:711] Resolved architecture: LlamaForCausalLM
+WARNING 10-15 00:32:43 [__init__.py:2819] Casting torch.bfloat16 to torch.float16.
+INFO 10-15 00:32:43 [__init__.py:1750] Using max model len 32768
+  config LlamaConfig: rope_theta config.json=500000.0 vLLM sees=500000.0 [ok]; rope_scaling config.json={'factor': 8.0, 'high_freq_factor': 4.0, 'low_freq_factor': 1.0, 'original_max_position_embeddings': 8192, 'rope_type': 'llama3'} vLLM sees={'factor': 8.0, 'high_freq_factor': 4.0, 'low_freq_factor': 1.0, 'original_max_position_embeddings': 8192, 'rope_type': 'llama3'} [ok]; max_position_embeddings 131072, vLLM max_model_len 32768
+
+== qwen3-8b (Qwen/Qwen3-8B)
+  tokenizer CachedQwen2Tokenizer: 29 ids, round trip ok, specials 14, eos '<|im_end|>'
+[compat] Qwen3Config: restored rope_theta=1000000, rope_scaling=None
+INFO 10-15 00:33:05 [__init__.py:711] Resolved architecture: Qwen3ForCausalLM
+WARNING 10-15 00:33:05 [__init__.py:2819] Casting torch.bfloat16 to torch.float16.
+INFO 10-15 00:33:05 [__init__.py:1750] Using max model len 32768
+  config Qwen3Config: rope_theta config.json=1000000 vLLM sees=1000000 [ok]; rope_scaling config.json=None vLLM sees=None [ok]; max_position_embeddings 40960, vLLM max_model_len 32768
+
+== fin-o1-8b (TheFinAI/Fin-o1-8B)
+  tokenizer CachedQwen2Tokenizer: 29 ids, round trip ok, specials 14, eos '<|im_end|>'
+[compat] Qwen3Config: restored rope_theta=1000000, rope_scaling=None
+INFO 10-15 00:33:06 [__init__.py:711] Resolved architecture: Qwen3ForCausalLM
+WARNING 10-15 00:33:06 [__init__.py:2819] Casting torch.bfloat16 to torch.float16.
+INFO 10-15 00:33:06 [__init__.py:1750] Using max model len 32768
+  config Qwen3Config: rope_theta config.json=1000000 vLLM sees=1000000 [ok]; rope_scaling config.json=None vLLM sees=None [ok]; max_position_embeddings 40960, vLLM max_model_len 32768
+
+RESULT: ALL OK
+exit 0 Thu Oct 15 00:33:07 EDT 2026

@@ -1,0 +1,45 @@
+answers_ver02_qwen3-8b_think_s2_v2_L2345_20261015-005624  [grade_ver05, tolerance=plan, include_thinking=False, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 82.4%
+Final answers correct: 139/184
+Final-answer marker: exact 176, other case 6, missing 2 (missing = final scored zero)
+Hit the token limit: 2 ['META-06', 'META-08']
+Thinking never finished: 2 ['META-06', 'META-08']
+
+Final answers correct by tier and level:
+  basic    L2   56/56  = 100.0%
+  basic    L3    8/28  =  28.6%
+  complex  L3    9/20  =  45.0%
+  half     L4   11/20  =  55.0%
+  half     L5   15/20  =  75.0%
+  trap     L2   40/40  = 100.0%
+
+Fell for the trap (final wrong AND matched the trap value): 0/42   (also matched but final correct, not counted: 1)
+
+Used basic shares (final wrong AND matched the basic-share value): 1/74   (also matched but final correct, not counted: 29)
+   BKNG-08
+
+By tier:
+  basic                                    1593/2640 =  60.3%
+  complex                                   737/1438 =  51.3%
+  half                                     1200/1442 =  83.2%
+  trap                                      492/492  = 100.0%
+
+By level:
+  2                                        1198/1210 =  99.0%
+  3                                        1624/3360 =  48.3%
+  4                                         594/782  =  76.0%
+  5                                         606/660  =  91.8%
+
+By step:
+  Step 2. Project the future                230/654  =  35.2%
+  Step 3. Compute free cash flow           1659/2084 =  79.6%
+  Step 4. Discount to today                1515/2222 =  68.2%
+  Step 5. Value and decide                  618/1052 =  58.7%
+
+By kind:
+  final                                    1390/1840 =  75.5%
+  middle                                    692/1572 =  44.0%
+  step                                     1940/2600 =  74.6%
+
+Excluded items: {'rounding not auto-graded': 184, 'input given in data table': 482, 'target already in prompt': 17, 'zero target not auto-graded': 26}

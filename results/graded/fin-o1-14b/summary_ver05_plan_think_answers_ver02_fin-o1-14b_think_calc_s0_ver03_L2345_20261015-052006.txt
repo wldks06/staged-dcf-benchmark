@@ -1,0 +1,45 @@
+answers_ver02_fin-o1-14b_think_calc_s0_ver03_L2345_20261015-052006  [grade_ver05, tolerance=plan, include_thinking=True, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 35.7%
+Final answers correct: 8/104
+Final-answer marker: exact 74, Final Response heading 25, other case 5 (missing = final scored zero)
+Hit the token limit: 2 ['VZ-2019-08', 'ORLY-2022-08']
+
+Final answers correct by tier and level:
+  basic@2019 L3    0/13  =   0.0%
+  basic@2022 L3    0/13  =   0.0%
+  complex@2019 L3    1/13  =   7.7%
+  complex@2022 L3    0/13  =   0.0%
+  half@2019 L4    1/13  =   7.7%
+  half@2019 L5    3/13  =  23.1%
+  half@2022 L4    2/13  =  15.4%
+  half@2022 L5    1/13  =   7.7%
+
+Used basic shares (final wrong AND matched the basic-share value): 3/78   (also matched but final correct, not counted: 2)
+   BKNG-2019-07, ORLY-2019-05, SHW-2022-05
+
+By tier:
+  basic@2019                                234/880  =  26.6%
+  basic@2022                                270/906  =  29.8%
+  complex@2019                              299/924  =  32.4%
+  complex@2022                              270/952  =  28.4%
+  half@2019                                 400/923  =  43.3%
+  half@2022                                 382/945  =  40.4%
+
+By level:
+  3                                        1073/3662 =  29.3%
+  4                                         393/1021 =  38.5%
+  5                                         389/847  =  45.9%
+
+By step:
+  Step 2. Project the future                438/768  =  57.0%
+  Step 3. Compute free cash flow            640/2070 =  30.9%
+  Step 4. Discount to today                 669/1712 =  39.1%
+  Step 5. Value and decide                  108/980  =  11.0%
+
+By kind:
+  final                                      80/1040 =   7.7%
+  middle                                    820/1520 =  53.9%
+  step                                      955/2970 =  32.2%
+
+Excluded items: {'target already in prompt': 41, 'rounding not auto-graded': 104, 'zero target not auto-graded': 9}

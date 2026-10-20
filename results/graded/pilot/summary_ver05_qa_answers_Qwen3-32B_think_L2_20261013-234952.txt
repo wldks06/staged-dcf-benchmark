@@ -1,0 +1,26 @@
+answers_Qwen3-32B_think_L2_20261013-234952  [grade_ver05, tolerance=qa, include_thinking=False, qa=QA_set_v2.json]
+
+Questions graded: 16   mean score per question: 99.1%
+Final answers correct: 16/16
+Final-answer marker: exact 12, other case 4 (missing = final scored zero)
+Hit the token limit: 0 []
+
+Final answers correct by tier and level:
+  basic    L2   16/16  = 100.0%
+
+By tier:
+  basic                                     204/206  =  99.0%
+
+By level:
+  2                                         204/206  =  99.0%
+
+By step:
+  Step 3. Compute free cash flow             36/36   = 100.0%
+  Step 4. Discount to today                 132/134  =  98.5%
+  Step 5. Value and decide                   36/36   = 100.0%
+
+By kind:
+  final                                     160/160  = 100.0%
+  middle                                     44/46   =  95.7%
+
+Excluded items: {'rounding not auto-graded': 16}

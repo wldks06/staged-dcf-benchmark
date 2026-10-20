@@ -1,0 +1,91 @@
+question_id,tier,level,item,kind,step,component,checkpoint,points,earned,correct,excluded,marker,criterion
+BKNG-2019-08,complex@2019,3,1,middle,Step 2. Project the future,Growth path,forecast.growth.1,2,0,,target already in prompt,missing,Year-1 revenue growth = 15.00%
+BKNG-2019-08,complex@2019,3,2,middle,Step 2. Project the future,Operating margin,derived: forecast.ebit[1] / forecast.revenue[1],2,0,False,,missing,EBIT margin (mean of three ratios) = 33.20%
+BKNG-2019-08,complex@2019,3,3,middle,Step 2. Project the future,Reinvestment (D&A),derived: forecast.da[1] / forecast.revenue[1],2,0,False,,missing,D&A share of revenue = 2.89%
+BKNG-2019-08,complex@2019,3,4,middle,Step 2. Project the future,Reinvestment (capex),derived: forecast.capex[1] / forecast.revenue[1],2,0,False,,missing,Capex share of revenue = 2.45%
+BKNG-2019-08,complex@2019,3,5,middle,Step 2. Project the future,Working capital,derived: forecast.nwc[1] / forecast.revenue[1],2,0,False,,missing,NWC share of revenue = 3.71%
+BKNG-2019-08,complex@2019,3,6,middle,Step 2. Project the future,Tax applied,tax_rate,2,0,False,,missing,Effective tax rate on EBIT (years 1-4) = 28.47%
+BKNG-2019-08,complex@2019,3,7,step,Step 3. Compute free cash flow,FCFF build,fcff.1,5,0,False,,missing,"FCFF year 1 = $3,959.8 million"
+BKNG-2019-08,complex@2019,3,8,step,Step 3. Compute free cash flow,FCFF build,fcff.2,5,0,False,,missing,"FCFF year 2 = $4,446.8 million"
+BKNG-2019-08,complex@2019,3,9,step,Step 3. Compute free cash flow,FCFF build,fcff.3,5,0,False,,missing,"FCFF year 3 = $4,855.3 million"
+BKNG-2019-08,complex@2019,3,10,step,Step 3. Compute free cash flow,FCFF build,fcff.4,5,0,False,,missing,"FCFF year 4 = $5,150.0 million"
+BKNG-2019-08,complex@2019,3,11,step,Step 3. Compute free cash flow,FCFF build,fcff.5,5,0,False,,missing,"FCFF year 5 = $5,735.4 million"
+BKNG-2019-08,complex@2019,3,12,middle,Step 4. Discount to today,Beta / Cost of equity model,beta_levered,2,0,False,,missing,Levered beta = 0.9679
+BKNG-2019-08,complex@2019,3,13,middle,Step 4. Discount to today,Beta / Cost of equity model,re,2,0,False,,missing,Cost of equity = 6.76%
+BKNG-2019-08,complex@2019,3,14,middle,Step 4. Discount to today,Cost of debt,rd,2,0,False,,missing,Pre-tax cost of debt = 2.55%
+BKNG-2019-08,complex@2019,3,15,middle,Step 4. Discount to today,Capital structure weights,weights.E,2,0,False,,missing,"Equity weight 91.44%, debt weight 8.56%"
+BKNG-2019-08,complex@2019,3,16,step,Step 4. Discount to today,WACC,wacc,5,5,True,,missing,WACC = 6.35%
+BKNG-2019-08,complex@2019,3,17,step,Step 4. Discount to today,Terminal value method,tv,5,0,False,,missing,"Terminal value = $152,557.6 million"
+BKNG-2019-08,complex@2019,3,18,step,Step 4. Discount to today,Enterprise value,ev,5,0,False,,missing,"Enterprise value = $136,179.5 million"
+BKNG-2019-08,complex@2019,3,19,middle,Step 5. Value and decide,Cash,cash_excess,2,0,False,,missing,"Excess cash = cash and short-term investments - 2% of FY2018 revenue = $5,993.5 million"
+BKNG-2019-08,complex@2019,3,20,middle,Step 5. Value and decide,Bridge to equity,equity,2,0,False,,missing,"Equity value = $133,523.9 million"
+BKNG-2019-08,complex@2019,3,21,final,Step 5. Value and decide,Value per share,price_per_share,10,0,False,,missing,Value per share = $2780.76
+BKNG-2019-08,complex@2019,3,22,alternative,Step 5. Value and decide,Share count,alt: equity / inputs.shares_basic,0,0,False,,missing,"Alternative, not scored: value per share on the latest basic share count (45.013 million shares) = $2966.36"
+BKNG-2019-08,complex@2019,3,23,rounding,Step 5. Value and decide,Answer format,n/a,1,0,,rounding not auto-graded,missing,Follows the rounding instruction: rates in % to two decimals; dollar amounts in $ millions to one decimal; value per share to two decimals
+JNJ-2019-08,complex@2019,3,1,middle,Step 2. Project the future,Growth path,forecast.growth.1,2,2,True,,missing,Year-1 revenue growth = 6.53%
+JNJ-2019-08,complex@2019,3,2,middle,Step 2. Project the future,Operating margin,derived: forecast.ebit[1] / forecast.revenue[1],2,0,False,,missing,EBIT margin (mean of three ratios) = 25.40%
+JNJ-2019-08,complex@2019,3,3,middle,Step 2. Project the future,Reinvestment (D&A),derived: forecast.da[1] / forecast.revenue[1],2,0,False,,missing,D&A share of revenue = 7.03%
+JNJ-2019-08,complex@2019,3,4,middle,Step 2. Project the future,Reinvestment (capex),derived: forecast.capex[1] / forecast.revenue[1],2,0,False,,missing,Capex share of revenue = 4.43%
+JNJ-2019-08,complex@2019,3,5,middle,Step 2. Project the future,Working capital,derived: forecast.nwc[1] / forecast.revenue[1],2,0,False,,missing,NWC share of revenue = 18.70%
+JNJ-2019-08,complex@2019,3,6,middle,Step 2. Project the future,Tax applied,tax_rate,2,0,,target already in prompt,missing,Effective tax rate on EBIT (years 1-4) = 35.00%
+JNJ-2019-08,complex@2019,3,7,step,Step 3. Compute free cash flow,FCFF build,fcff.1,5,0,False,,missing,"FCFF year 1 = $15,615.7 million"
+JNJ-2019-08,complex@2019,3,8,step,Step 3. Compute free cash flow,FCFF build,fcff.2,5,0,False,,missing,"FCFF year 2 = $16,631.3 million"
+JNJ-2019-08,complex@2019,3,9,step,Step 3. Compute free cash flow,FCFF build,fcff.3,5,5,True,,missing,"FCFF year 3 = $17,545.6 million"
+JNJ-2019-08,complex@2019,3,10,step,Step 3. Compute free cash flow,FCFF build,fcff.4,5,0,False,,missing,"FCFF year 4 = $18,333.6 million"
+JNJ-2019-08,complex@2019,3,11,step,Step 3. Compute free cash flow,FCFF build,fcff.5,5,5,True,,missing,"FCFF year 5 = $19,746.8 million"
+JNJ-2019-08,complex@2019,3,12,middle,Step 4. Discount to today,Beta / Cost of equity model,beta_levered,2,0,False,,missing,Levered beta = 1.2013
+JNJ-2019-08,complex@2019,3,13,middle,Step 4. Discount to today,Beta / Cost of equity model,re,2,0,False,,missing,Cost of equity = 7.93%
+JNJ-2019-08,complex@2019,3,14,middle,Step 4. Discount to today,Cost of debt,rd,2,2,True,,missing,Pre-tax cost of debt = 2.55%
+JNJ-2019-08,complex@2019,3,15,middle,Step 4. Discount to today,Capital structure weights,weights.E,2,0,False,,missing,"Equity weight 92.72%, debt weight 7.28%"
+JNJ-2019-08,complex@2019,3,16,step,Step 4. Discount to today,WACC,wacc,5,5,True,,missing,WACC = 7.50%
+JNJ-2019-08,complex@2019,3,17,step,Step 4. Discount to today,Terminal value method,tv,5,0,False,,missing,"Terminal value = $405,123.3 million"
+JNJ-2019-08,complex@2019,3,18,step,Step 4. Discount to today,Enterprise value,ev,5,0,False,,missing,"Enterprise value = $365,758.1 million"
+JNJ-2019-08,complex@2019,3,19,middle,Step 5. Value and decide,Cash,cash_excess,2,2,True,,missing,"Excess cash = cash and short-term investments - 2% of FY2018 revenue = $18,055.4 million"
+JNJ-2019-08,complex@2019,3,20,middle,Step 5. Value and decide,Bridge to equity,equity,2,0,False,,missing,"Equity value = $353,329.5 million"
+JNJ-2019-08,complex@2019,3,21,final,Step 5. Value and decide,Value per share,price_per_share,10,0,False,,missing,Value per share = $129.49
+JNJ-2019-08,complex@2019,3,22,alternative,Step 5. Value and decide,Share count,alt: equity / inputs.shares_basic,0,0,False,,missing,"Alternative, not scored: value per share on the latest basic share count (2,663.139 million shares) = $132.67"
+JNJ-2019-08,complex@2019,3,23,rounding,Step 5. Value and decide,Answer format,n/a,1,0,,rounding not auto-graded,missing,Follows the rounding instruction: rates in % to two decimals; dollar amounts in $ millions to one decimal; value per share to two decimals
+VZ-2019-06,half@2019,4,1,middle,Step 2. Project the future,Growth path,forecast.growth.1,2,2,True,,missing,Year-1 revenue growth = 1.92%
+VZ-2019-06,half@2019,4,2,middle,Step 2. Project the future,Operating margin,derived: forecast.ebit[1] / forecast.revenue[1],2,0,False,,missing,EBIT margin (mean of three ratios) = 20.67%
+VZ-2019-06,half@2019,4,3,middle,Step 2. Project the future,Reinvestment (D&A),derived: forecast.da[1] / forecast.revenue[1],2,0,False,,missing,D&A share of revenue = 13.13%
+VZ-2019-06,half@2019,4,4,middle,Step 2. Project the future,Reinvestment (capex),derived: forecast.capex[1] / forecast.revenue[1],2,2,True,,missing,Capex share of revenue = 13.32%
+VZ-2019-06,half@2019,4,5,middle,Step 2. Project the future,Working capital,derived: forecast.nwc[1] / forecast.revenue[1],2,0,False,,missing,NWC share of revenue = 12.59%
+VZ-2019-06,half@2019,4,6,step,Step 3. Compute free cash flow,FCFF build,fcff.1,5,0,False,,missing,"FCFF year 1 = $21,210.5 million"
+VZ-2019-06,half@2019,4,7,step,Step 3. Compute free cash flow,FCFF build,fcff.2,5,5,True,,missing,"FCFF year 2 = $21,618.6 million"
+VZ-2019-06,half@2019,4,8,step,Step 3. Compute free cash flow,FCFF build,fcff.3,5,0,False,,missing,"FCFF year 3 = $22,038.9 million"
+VZ-2019-06,half@2019,4,9,step,Step 3. Compute free cash flow,FCFF build,fcff.4,5,5,True,,missing,"FCFF year 4 = $22,471.8 million"
+VZ-2019-06,half@2019,4,10,final,Step 3. Compute free cash flow,FCFF build,fcff.5,10,0,False,,missing,"FCFF year 5 = $22,801.5 million"
+VZ-2019-06,half@2019,4,11,rounding,Step 3. Compute free cash flow,Answer format,n/a,1,0,,rounding not auto-graded,missing,Follows the rounding instruction: percentages to two decimals; FCFF in $ millions to one decimal
+MRK-2019-06,half@2019,4,1,middle,Step 2. Project the future,Growth path,forecast.growth.1,2,2,True,,missing,Year-1 revenue growth = 3.08%
+MRK-2019-06,half@2019,4,2,middle,Step 2. Project the future,Operating margin,derived: forecast.ebit[1] / forecast.revenue[1],2,0,False,,missing,EBIT margin (mean of three ratios) = 17.99%
+MRK-2019-06,half@2019,4,3,middle,Step 2. Project the future,Reinvestment (D&A),derived: forecast.da[1] / forecast.revenue[1],2,0,False,,missing,D&A share of revenue = 12.05%
+MRK-2019-06,half@2019,4,4,middle,Step 2. Project the future,Reinvestment (capex),derived: forecast.capex[1] / forecast.revenue[1],2,0,False,,missing,Capex share of revenue = 4.98%
+MRK-2019-06,half@2019,4,5,middle,Step 2. Project the future,Working capital,derived: forecast.nwc[1] / forecast.revenue[1],2,0,False,,missing,NWC share of revenue = 22.21%
+MRK-2019-06,half@2019,4,6,step,Step 3. Compute free cash flow,FCFF build,fcff.1,5,5,True,,missing,"FCFF year 1 = $8,988.0 million"
+MRK-2019-06,half@2019,4,7,step,Step 3. Compute free cash flow,FCFF build,fcff.2,5,0,False,,missing,"FCFF year 2 = $9,265.6 million"
+MRK-2019-06,half@2019,4,8,step,Step 3. Compute free cash flow,FCFF build,fcff.3,5,5,True,,missing,"FCFF year 3 = $9,526.9 million"
+MRK-2019-06,half@2019,4,9,step,Step 3. Compute free cash flow,FCFF build,fcff.4,5,0,False,,missing,"FCFF year 4 = $9,769.8 million"
+MRK-2019-06,half@2019,4,10,final,Step 3. Compute free cash flow,FCFF build,fcff.5,10,0,False,,missing,"FCFF year 5 = $6,485.4 million"
+MRK-2019-06,half@2019,4,11,rounding,Step 3. Compute free cash flow,Answer format,n/a,1,0,,rounding not auto-graded,missing,Follows the rounding instruction: percentages to two decimals; FCFF in $ millions to one decimal
+META-2022-06,half@2022,4,1,middle,Step 2. Project the future,Growth path,forecast.growth.1,2,0,,target already in prompt,missing,Year-1 revenue growth = 15.00%
+META-2022-06,half@2022,4,2,middle,Step 2. Project the future,Operating margin,derived: forecast.ebit[1] / forecast.revenue[1],2,0,False,,missing,EBIT margin (mean of three ratios) = 37.19%
+META-2022-06,half@2022,4,3,middle,Step 2. Project the future,Reinvestment (D&A),derived: forecast.da[1] / forecast.revenue[1],2,0,False,,missing,D&A share of revenue = 7.62%
+META-2022-06,half@2022,4,4,middle,Step 2. Project the future,Reinvestment (capex),derived: forecast.capex[1] / forecast.revenue[1],2,0,False,,missing,Capex share of revenue = 18.23%
+META-2022-06,half@2022,4,5,middle,Step 2. Project the future,Working capital,derived: forecast.nwc[1] / forecast.revenue[1],2,0,False,,missing,NWC share of revenue = 10.76%
+META-2022-06,half@2022,4,6,step,Step 3. Compute free cash flow,FCFF build,fcff.1,5,0,False,,missing,"FCFF year 1 = $23,555.8 million"
+META-2022-06,half@2022,4,7,step,Step 3. Compute free cash flow,FCFF build,fcff.2,5,0,False,,missing,"FCFF year 2 = $26,736.1 million"
+META-2022-06,half@2022,4,8,step,Step 3. Compute free cash flow,FCFF build,fcff.3,5,0,False,,missing,"FCFF year 3 = $29,483.1 million"
+META-2022-06,half@2022,4,9,step,Step 3. Compute free cash flow,FCFF build,fcff.4,5,0,False,,missing,"FCFF year 4 = $31,561.1 million"
+META-2022-06,half@2022,4,10,final,Step 3. Compute free cash flow,FCFF build,fcff.5,10,0,False,,missing,"FCFF year 5 = $51,219.3 million"
+META-2022-06,half@2022,4,11,rounding,Step 3. Compute free cash flow,Answer format,n/a,1,0,,rounding not auto-graded,missing,Follows the rounding instruction: percentages to two decimals; FCFF in $ millions to one decimal
+SHW-2022-06,half@2022,4,1,middle,Step 2. Project the future,Growth path,forecast.growth.1,2,0,False,,exact,Year-1 revenue growth = 5.55%
+SHW-2022-06,half@2022,4,2,middle,Step 2. Project the future,Operating margin,derived: forecast.ebit[1] / forecast.revenue[1],2,0,False,,exact,EBIT margin (mean of three ratios) = 16.51%
+SHW-2022-06,half@2022,4,3,middle,Step 2. Project the future,Reinvestment (D&A),derived: forecast.da[1] / forecast.revenue[1],2,2,True,,exact,D&A share of revenue = 3.08%
+SHW-2022-06,half@2022,4,4,middle,Step 2. Project the future,Reinvestment (capex),derived: forecast.capex[1] / forecast.revenue[1],2,2,True,,exact,Capex share of revenue = 1.79%
+SHW-2022-06,half@2022,4,5,middle,Step 2. Project the future,Working capital,derived: forecast.nwc[1] / forecast.revenue[1],2,0,False,,exact,NWC share of revenue = 10.25%
+SHW-2022-06,half@2022,4,6,step,Step 3. Compute free cash flow,FCFF build,fcff.1,5,0,False,,exact,"FCFF year 1 = $2,905.2 million"
+SHW-2022-06,half@2022,4,7,step,Step 3. Compute free cash flow,FCFF build,fcff.2,5,5,True,,exact,"FCFF year 2 = $3,058.9 million"
+SHW-2022-06,half@2022,4,8,step,Step 3. Compute free cash flow,FCFF build,fcff.3,5,0,False,,exact,"FCFF year 3 = $3,193.6 million"
+SHW-2022-06,half@2022,4,9,step,Step 3. Compute free cash flow,FCFF build,fcff.4,5,0,False,,exact,"FCFF year 4 = $3,305.9 million"
+SHW-2022-06,half@2022,4,10,final,Step 3. Compute free cash flow,FCFF build,fcff.5,10,0,False,,exact,"FCFF year 5 = $3,065.8 million"
+SHW-2022-06,half@2022,4,11,rounding,Step 3. Compute free cash flow,Answer format,n/a,1,0,,rounding not auto-graded,exact,Follows the rounding instruction: percentages to two decimals; FCFF in $ millions to one decimal

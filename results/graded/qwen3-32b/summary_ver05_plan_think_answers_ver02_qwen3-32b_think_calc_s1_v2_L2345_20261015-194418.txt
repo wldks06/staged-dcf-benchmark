@@ -1,0 +1,45 @@
+answers_ver02_qwen3-32b_think_calc_s1_v2_L2345_20261015-194418  [grade_ver05, tolerance=plan, include_thinking=True, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 96.0%
+Final answers correct: 159/184
+Final-answer marker: exact 162, missing 17, other case 4, Final Response heading 1 (missing = final scored zero)
+Hit the token limit: 1 ['PPL-08']
+Thinking never finished: 1 ['CEG-03']
+
+Final answers correct by tier and level:
+  basic    L2   56/56  = 100.0%
+  basic    L3   14/28  =  50.0%
+  complex  L3   12/20  =  60.0%
+  half     L4   19/20  =  95.0%
+  half     L5   18/20  =  90.0%
+  trap     L2   40/40  = 100.0%
+
+Fell for the trap (final wrong AND matched the trap value): 0/42   (also matched but final correct, not counted: 1)
+
+Used basic shares (final wrong AND matched the basic-share value): 1/74   (also matched but final correct, not counted: 34)
+   META-03
+
+By tier:
+  basic                                    2419/2640 =  91.6%
+  complex                                  1336/1438 =  92.9%
+  half                                     1400/1442 =  97.1%
+  trap                                      492/492  = 100.0%
+
+By level:
+  2                                        1188/1210 =  98.2%
+  3                                        3059/3360 =  91.0%
+  4                                         772/782  =  98.7%
+  5                                         628/660  =  95.2%
+
+By step:
+  Step 2. Project the future                644/654  =  98.5%
+  Step 3. Compute free cash flow           2049/2084 =  98.3%
+  Step 4. Discount to today                2150/2222 =  96.8%
+  Step 5. Value and decide                  804/1052 =  76.4%
+
+By kind:
+  final                                    1590/1840 =  86.4%
+  middle                                   1532/1572 =  97.5%
+  step                                     2525/2600 =  97.1%
+
+Excluded items: {'rounding not auto-graded': 184, 'input given in data table': 482, 'target already in prompt': 17, 'zero target not auto-graded': 26}

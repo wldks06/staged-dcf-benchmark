@@ -1,0 +1,35 @@
+answers_ver02_llama31-8b_calc_s0_ver03_newco_L2345_20261015-151136  [grade_ver05, tolerance=qa, include_thinking=False, qa=QA_set_ver03_newco.json]
+
+Questions graded: 5   mean score per question: 2.5%
+Final answers correct: 0/5
+Final-answer marker: missing 5 (missing = final scored zero)
+Hit the token limit: 0 []
+
+Final answers correct by tier and level:
+  basic@2025 L3    0/2   =   0.0%
+  complex@2025 L3    0/2   =   0.0%
+  half@2025 L4    0/1   =   0.0%
+
+Used basic shares (final wrong AND matched the basic-share value): 0/4
+
+By tier:
+  basic@2025                                  2/140  =   1.4%
+  complex@2025                                7/146  =   4.8%
+  half@2025                                   0/40   =   0.0%
+
+By level:
+  3                                           9/286  =   3.1%
+  4                                           0/40   =   0.0%
+
+By step:
+  Step 2. Project the future                  2/52   =   3.8%
+  Step 3. Compute free cash flow              5/130  =   3.8%
+  Step 4. Discount to today                   0/92   =   0.0%
+  Step 5. Value and decide                    2/52   =   3.8%
+
+By kind:
+  final                                       0/50   =   0.0%
+  middle                                      4/96   =   4.2%
+  step                                        5/180  =   2.8%
+
+Excluded items: {'rounding not auto-graded': 5, 'zero target not auto-graded': 1}

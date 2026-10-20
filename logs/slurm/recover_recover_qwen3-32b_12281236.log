@@ -1,0 +1,6 @@
+[env_ver03] 2026-10-16 18:08:54 host=g29.quartz.uits.iu.edu job=12281236 partition=h100-multi
+[env_ver03] GPUs: NVIDIA H100 80GB HBM3, 81559 MiB;NVIDIA H100 80GB HBM3, 81559 MiB
+[env_ver03] env=$MODEL_STORE/conda-env python=$MODEL_STORE/conda-env/bin/python dtype=bfloat16 ngpu=2
+qwen3-32b none: 0 answers missing -> {}
+qwen3-32b calc: 0 answers missing -> {}
+recover done Fri Oct 16 18:08:57 EDT 2026

@@ -1,0 +1,42 @@
+answers_ver02_llama31-8b_calc_s0_v2_L2345_20261015-151136  [grade_ver05, tolerance=plan, include_thinking=True, qa=QA_set_v2.json]
+
+Questions graded: 24   mean score per question: 16.0%
+Final answers correct: 0/24
+Final-answer marker: missing 16, exact 8 (missing = final scored zero)
+Hit the token limit: 5 ['CAT-03', 'SHW-03', 'ETN-03', 'WEC-07', 'CRH-10']
+
+Final answers correct by tier and level:
+  basic    L3    0/10  =   0.0%
+  complex  L3    0/4   =   0.0%
+  half     L4    0/7   =   0.0%
+  half     L5    0/2   =   0.0%
+  trap     L2    0/1   =   0.0%
+
+Fell for the trap (final wrong AND matched the trap value): 0/1
+
+Used basic shares (final wrong AND matched the basic-share value): 0/14
+
+By tier:
+  basic                                     111/684  =  16.2%
+  complex                                    39/285  =  13.7%
+  half                                       64/338  =  18.9%
+  trap                                        0/12   =   0.0%
+
+By level:
+  2                                           0/12   =   0.0%
+  3                                         150/969  =  15.5%
+  4                                          56/272  =  20.6%
+  5                                           8/66   =  12.1%
+
+By step:
+  Step 2. Project the future                 66/200  =  33.0%
+  Step 3. Compute free cash flow             95/557  =  17.1%
+  Step 4. Discount to today                  49/364  =  13.5%
+  Step 5. Value and decide                    4/198  =   2.0%
+
+By kind:
+  final                                       0/240  =   0.0%
+  middle                                    104/364  =  28.6%
+  step                                      110/715  =  15.4%
+
+Excluded items: {'input given in data table': 138, 'zero target not auto-graded': 7, 'target already in prompt': 6, 'rounding not auto-graded': 24}

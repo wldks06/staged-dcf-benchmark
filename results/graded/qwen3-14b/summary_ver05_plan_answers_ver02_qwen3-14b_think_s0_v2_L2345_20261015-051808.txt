@@ -1,0 +1,46 @@
+answers_ver02_qwen3-14b_think_s0_v2_L2345_20261015-051808  [grade_ver05, tolerance=plan, include_thinking=False, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 87.5%
+Final answers correct: 156/184
+Final-answer marker: exact 168, other case 15, missing 1 (missing = final scored zero)
+Hit the token limit: 1 ['JNJ-05']
+Thinking never finished: 1 ['JNJ-05']
+
+Final answers correct by tier and level:
+  basic    L2   56/56  = 100.0%
+  basic    L3   12/28  =  42.9%
+  complex  L3   16/20  =  80.0%
+  half     L4   19/20  =  95.0%
+  half     L5   14/20  =  70.0%
+  trap     L2   39/40  =  97.5%
+
+Fell for the trap (final wrong AND matched the trap value): 1/42   (also matched but final correct, not counted: 1)
+   CEG-11
+
+Used basic shares (final wrong AND matched the basic-share value): 1/74   (also matched but final correct, not counted: 40)
+   XOM-03
+
+By tier:
+  basic                                    1802/2640 =  68.3%
+  complex                                  1003/1438 =  69.7%
+  half                                     1342/1442 =  93.1%
+  trap                                      476/492  =  96.7%
+
+By level:
+  2                                        1186/1210 =  98.0%
+  3                                        2095/3360 =  62.4%
+  4                                         757/782  =  96.8%
+  5                                         585/660  =  88.6%
+
+By step:
+  Step 2. Project the future                236/654  =  36.1%
+  Step 3. Compute free cash flow           1958/2084 =  94.0%
+  Step 4. Discount to today                1687/2222 =  75.9%
+  Step 5. Value and decide                  742/1052 =  70.5%
+
+By kind:
+  final                                    1560/1840 =  84.8%
+  middle                                    718/1572 =  45.7%
+  step                                     2345/2600 =  90.2%
+
+Excluded items: {'rounding not auto-graded': 184, 'input given in data table': 482, 'target already in prompt': 17, 'zero target not auto-graded': 26}

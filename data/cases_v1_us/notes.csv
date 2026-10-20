@@ -1,0 +1,130 @@
+ticker,valuation_date,note,value
+ABT,2019-12-31,sector_rank,4 of Health Care by market cap on 2019-12-31
+AEP,2019-12-31,sector_rank,1 of Utilities by market cap on 2019-12-31
+AMGN,2019-12-31,sector_rank,5 of Health Care by market cap on 2019-12-31
+AMZN,2019-12-31,sector_rank,1 of Consumer Discretionary by market cap on 2019-12-31
+APH,2019-12-31,sector_rank,4 of Information Technology by market cap on 2019-12-31
+BKNG,2019-12-31,sector_rank,3 of Consumer Discretionary by market cap on 2019-12-31
+CHTR,2019-12-31,sector_rank,5 of Communication Services by market cap on 2019-12-31
+CMCSA,2019-12-31,sector_rank,4 of Communication Services by market cap on 2019-12-31
+CNP,2019-12-31,sector_rank,4 of Utilities by market cap on 2019-12-31
+DVN,2019-12-31,sector_rank,5 of Energy by market cap on 2019-12-31
+ECL,2019-12-31,sector_rank,1 of Materials by market cap on 2019-12-31
+FE,2019-12-31,sector_rank,3 of Utilities by market cap on 2019-12-31
+IBM,2019-12-31,sector_rank,3 of Information Technology by market cap on 2019-12-31
+INTC,2019-12-31,sector_rank,1 of Information Technology by market cap on 2019-12-31
+JNJ,2019-12-31,sector_rank,1 of Health Care by market cap on 2019-12-31
+KMI,2019-12-31,sector_rank,3 of Energy by market cap on 2019-12-31
+KO,2019-12-31,sector_rank,1 of Consumer Staples by market cap on 2019-12-31
+LMT,2019-12-31,sector_rank,3 of Industrials by market cap on 2019-12-31
+LYB,2019-12-31,sector_rank,3 of Materials by market cap on 2019-12-31
+MAR,2019-12-31,sector_rank,4 of Consumer Discretionary by market cap on 2019-12-31
+MCD,2019-12-31,sector_rank,2 of Consumer Discretionary by market cap on 2019-12-31
+MDLZ,2019-12-31,sector_rank,5 of Consumer Staples by market cap on 2019-12-31
+META,2019-12-31,sector_rank,1 of Communication Services by market cap on 2019-12-31
+MMM,2019-12-31,sector_rank,4 of Industrials by market cap on 2019-12-31
+MO,2019-12-31,sector_rank,4 of Consumer Staples by market cap on 2019-12-31
+MRK,2019-12-31,sector_rank,2 of Health Care by market cap on 2019-12-31
+ORLY,2019-12-31,sector_rank,5 of Consumer Discretionary by market cap on 2019-12-31
+PEP,2019-12-31,sector_rank,2 of Consumer Staples by market cap on 2019-12-31
+PFE,2019-12-31,sector_rank,3 of Health Care by market cap on 2019-12-31
+PM,2019-12-31,sector_rank,3 of Consumer Staples by market cap on 2019-12-31
+PPG,2019-12-31,sector_rank,5 of Materials by market cap on 2019-12-31
+PPL,2019-12-31,sector_rank,2 of Utilities by market cap on 2019-12-31
+RTX,2019-12-31,sector_rank,2 of Industrials by market cap on 2019-12-31
+SCCO,2019-12-31,sector_rank,4 of Materials by market cap on 2019-12-31
+SHW,2019-12-31,sector_rank,2 of Materials by market cap on 2019-12-31
+SLB,2019-12-31,sector_rank,2 of Energy by market cap on 2019-12-31
+T,2019-12-31,sector_rank,2 of Communication Services by market cap on 2019-12-31
+TXN,2019-12-31,sector_rank,2 of Information Technology by market cap on 2019-12-31
+UNP,2019-12-31,sector_rank,1 of Industrials by market cap on 2019-12-31
+UPS,2019-12-31,sector_rank,5 of Industrials by market cap on 2019-12-31
+VLO,2019-12-31,sector_rank,4 of Energy by market cap on 2019-12-31
+VZ,2019-12-31,sector_rank,3 of Communication Services by market cap on 2019-12-31
+XOM,2019-12-31,sector_rank,1 of Energy by market cap on 2019-12-31
+ABBV,2022-12-31,sector_rank,4 of Health Care by market cap on 2022-12-31
+ANET,2022-12-31,sector_rank,5 of Information Technology by market cap on 2022-12-31
+APH,2022-12-31,sector_rank,4 of Information Technology by market cap on 2022-12-31
+CAT,2022-12-31,sector_rank,4 of Industrials by market cap on 2022-12-31
+CMCSA,2022-12-31,sector_rank,4 of Communication Services by market cap on 2022-12-31
+EBAY,2022-12-31,sector_rank,5 of Consumer Discretionary by market cap on 2022-12-31
+ECL,2022-12-31,sector_rank,4 of Materials by market cap on 2022-12-31
+ETR,2022-12-31,sector_rank,3 of Utilities by market cap on 2022-12-31
+IBM,2022-12-31,sector_rank,2 of Information Technology by market cap on 2022-12-31
+INTC,2022-12-31,sector_rank,3 of Information Technology by market cap on 2022-12-31
+JNJ,2022-12-31,sector_rank,1 of Health Care by market cap on 2022-12-31
+KO,2022-12-31,sector_rank,1 of Consumer Staples by market cap on 2022-12-31
+LIN,2022-12-31,sector_rank,1 of Materials by market cap on 2022-12-31
+LLY,2022-12-31,sector_rank,2 of Health Care by market cap on 2022-12-31
+LMT,2022-12-31,sector_rank,2 of Industrials by market cap on 2022-12-31
+MCD,2022-12-31,sector_rank,1 of Consumer Discretionary by market cap on 2022-12-31
+MDLZ,2022-12-31,sector_rank,4 of Consumer Staples by market cap on 2022-12-31
+META,2022-12-31,sector_rank,1 of Communication Services by market cap on 2022-12-31
+MO,2022-12-31,sector_rank,5 of Consumer Staples by market cap on 2022-12-31
+MRK,2022-12-31,sector_rank,5 of Health Care by market cap on 2022-12-31
+NEM,2022-12-31,sector_rank,5 of Materials by market cap on 2022-12-31
+NOC,2022-12-31,sector_rank,5 of Industrials by market cap on 2022-12-31
+NRG,2022-12-31,sector_rank,4 of Utilities by market cap on 2022-12-31
+ORLY,2022-12-31,sector_rank,2 of Consumer Discretionary by market cap on 2022-12-31
+PEP,2022-12-31,sector_rank,2 of Consumer Staples by market cap on 2022-12-31
+PFE,2022-12-31,sector_rank,3 of Health Care by market cap on 2022-12-31
+PM,2022-12-31,sector_rank,3 of Consumer Staples by market cap on 2022-12-31
+SCCO,2022-12-31,sector_rank,3 of Materials by market cap on 2022-12-31
+SHW,2022-12-31,sector_rank,2 of Materials by market cap on 2022-12-31
+SLB,2022-12-31,sector_rank,1 of Energy by market cap on 2022-12-31
+T,2022-12-31,sector_rank,5 of Communication Services by market cap on 2022-12-31
+TMUS,2022-12-31,sector_rank,2 of Communication Services by market cap on 2022-12-31
+TXN,2022-12-31,sector_rank,1 of Information Technology by market cap on 2022-12-31
+UNP,2022-12-31,sector_rank,3 of Industrials by market cap on 2022-12-31
+UPS,2022-12-31,sector_rank,1 of Industrials by market cap on 2022-12-31
+VZ,2022-12-31,sector_rank,3 of Communication Services by market cap on 2022-12-31
+WMB,2022-12-31,sector_rank,2 of Energy by market cap on 2022-12-31
+YUM,2022-12-31,sector_rank,4 of Consumer Discretionary by market cap on 2022-12-31
+ABBV,2025-12-31,sector_rank,3 of Health Care by market cap on 2025-12-31
+AMD,2025-12-31,sector_rank,1 of Information Technology by market cap on 2025-12-31
+ANET,2025-12-31,sector_rank,3 of Information Technology by market cap on 2025-12-31
+APH,2025-12-31,sector_rank,4 of Information Technology by market cap on 2025-12-31
+BKNG,2025-12-31,sector_rank,2 of Consumer Discretionary by market cap on 2025-12-31
+CAT,2025-12-31,sector_rank,2 of Industrials by market cap on 2025-12-31
+CEG,2025-12-31,sector_rank,1 of Utilities by market cap on 2025-12-31
+CMCSA,2025-12-31,sector_rank,5 of Communication Services by market cap on 2025-12-31
+CRH,2025-12-31,first_year_dnwc,"not available, taken as zero in the FCFF filter"
+CRH,2025-12-31,sector_rank,3 of Materials by market cap on 2025-12-31
+CVX,2025-12-31,sector_rank,2 of Energy by market cap on 2025-12-31
+ECL,2025-12-31,sector_rank,5 of Materials by market cap on 2025-12-31
+EOG,2025-12-31,sector_rank,4 of Energy by market cap on 2025-12-31
+ETN,2025-12-31,sector_rank,5 of Industrials by market cap on 2025-12-31
+GE,2025-12-31,sector_rank,1 of Industrials by market cap on 2025-12-31
+GOOGL,2025-12-31,sector_rank,1 of Communication Services by market cap on 2025-12-31
+IBM,2025-12-31,sector_rank,2 of Information Technology by market cap on 2025-12-31
+JNJ,2025-12-31,sector_rank,2 of Health Care by market cap on 2025-12-31
+KO,2025-12-31,sector_rank,1 of Consumer Staples by market cap on 2025-12-31
+LIN,2025-12-31,sector_rank,1 of Materials by market cap on 2025-12-31
+LLY,2025-12-31,sector_rank,1 of Health Care by market cap on 2025-12-31
+MAR,2025-12-31,sector_rank,4 of Consumer Discretionary by market cap on 2025-12-31
+MCD,2025-12-31,share_scale,shares_diluted scaled by 1e+06
+MCD,2025-12-31,sector_rank,1 of Consumer Discretionary by market cap on 2025-12-31
+MELI,2025-12-31,sector_rank,3 of Consumer Discretionary by market cap on 2025-12-31
+META,2025-12-31,sector_rank,2 of Communication Services by market cap on 2025-12-31
+MNST,2025-12-31,sector_rank,5 of Consumer Staples by market cap on 2025-12-31
+MO,2025-12-31,sector_rank,4 of Consumer Staples by market cap on 2025-12-31
+MRK,2025-12-31,sector_rank,4 of Health Care by market cap on 2025-12-31
+NRG,2025-12-31,sector_rank,3 of Utilities by market cap on 2025-12-31
+ORLY,2025-12-31,shares_basic_split_factor,15.0
+ORLY,2025-12-31,shares_diluted_split_factor,15.0
+ORLY,2025-12-31,sector_rank,5 of Consumer Discretionary by market cap on 2025-12-31
+PEP,2025-12-31,sector_rank,3 of Consumer Staples by market cap on 2025-12-31
+PM,2025-12-31,sector_rank,2 of Consumer Staples by market cap on 2025-12-31
+PPL,2025-12-31,sector_rank,4 of Utilities by market cap on 2025-12-31
+RTX,2025-12-31,sector_rank,3 of Industrials by market cap on 2025-12-31
+SCCO,2025-12-31,sector_rank,2 of Materials by market cap on 2025-12-31
+SHW,2025-12-31,sector_rank,4 of Materials by market cap on 2025-12-31
+SLB,2025-12-31,sector_rank,5 of Energy by market cap on 2025-12-31
+TMO,2025-12-31,sector_rank,5 of Health Care by market cap on 2025-12-31
+TMUS,2025-12-31,sector_rank,3 of Communication Services by market cap on 2025-12-31
+TXN,2025-12-31,sector_rank,5 of Information Technology by market cap on 2025-12-31
+UNP,2025-12-31,sector_rank,4 of Industrials by market cap on 2025-12-31
+VZ,2025-12-31,sector_rank,4 of Communication Services by market cap on 2025-12-31
+WEC,2025-12-31,sector_rank,2 of Utilities by market cap on 2025-12-31
+WMB,2025-12-31,sector_rank,3 of Energy by market cap on 2025-12-31
+XOM,2025-12-31,sector_rank,1 of Energy by market cap on 2025-12-31

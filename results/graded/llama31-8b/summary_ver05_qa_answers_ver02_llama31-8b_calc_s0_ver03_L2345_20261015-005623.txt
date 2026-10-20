@@ -1,0 +1,45 @@
+answers_ver02_llama31-8b_calc_s0_ver03_L2345_20261015-005623  [grade_ver05, tolerance=qa, include_thinking=False, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 13.0%
+Final answers correct: 1/104
+Final-answer marker: exact 80, missing 17, other case 7 (missing = final scored zero)
+Hit the token limit: 11 ['PPL-2019-05', 'PEP-2019-08', 'MRK-2019-08', 'SHW-2019-08', 'CMCSA-2022-07', 'JNJ-2022-05', 'UNP-2022-05', 'UNP-2022-07', 'UNP-2022-08', 'MRK-2022-08', 'CAT-2022-05']
+
+Final answers correct by tier and level:
+  basic@2019 L3    0/13  =   0.0%
+  basic@2022 L3    0/13  =   0.0%
+  complex@2019 L3    0/13  =   0.0%
+  complex@2022 L3    0/13  =   0.0%
+  half@2019 L4    0/13  =   0.0%
+  half@2019 L5    0/13  =   0.0%
+  half@2022 L4    1/13  =   7.7%
+  half@2022 L5    0/13  =   0.0%
+
+Used basic shares (final wrong AND matched the basic-share value): 1/78
+   JNJ-2019-07
+
+By tier:
+  basic@2019                                104/880  =  11.8%
+  basic@2022                                 79/906  =   8.7%
+  complex@2019                               95/924  =  10.3%
+  complex@2022                               96/952  =  10.1%
+  half@2019                                 156/923  =  16.9%
+  half@2022                                 141/945  =  14.9%
+
+By level:
+  3                                         374/3662 =  10.2%
+  4                                         182/1021 =  17.8%
+  5                                         115/847  =  13.6%
+
+By step:
+  Step 2. Project the future                122/768  =  15.9%
+  Step 3. Compute free cash flow            355/2070 =  17.1%
+  Step 4. Discount to today                 176/1712 =  10.3%
+  Step 5. Value and decide                   18/980  =   1.8%
+
+By kind:
+  final                                      10/1040 =   1.0%
+  middle                                    286/1520 =  18.8%
+  step                                      375/2970 =  12.6%
+
+Excluded items: {'target already in prompt': 41, 'rounding not auto-graded': 104, 'zero target not auto-graded': 9}

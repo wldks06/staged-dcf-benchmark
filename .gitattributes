@@ -1,0 +1,5 @@
+# Store every file exactly as it is, with no line-ending conversion: the graded CSVs end their lines
+# with CRLF (Python's csv module) and the reproduction checks (make tables, make regrade) compare
+# files byte for byte.
+* -text
+*.gz binary

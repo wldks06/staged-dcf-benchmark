@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this benchmark, please cite the paper."
+title: "Staged DCF Benchmark"
+type: dataset
+authors:
+  - family-names: Kim
+    given-names: Hawon
+    affiliation: "Department of Operations and Decision Technologies, Indiana University"
+  - family-names: Hur
+    given-names: Jianna
+    affiliation: "Department of Operations and Decision Technologies, Indiana University"
+keywords:
+  - large language models
+  - financial reasoning
+  - discounted cash flow
+  - valuation
+  - benchmark
+preferred-citation:
+  type: conference-paper
+  title: "Evaluating Large Language Models on Multi-Step Discounted Cash Flow Valuation"
+  year: 2026
+  authors:
+    - family-names: Kim
+      given-names: Hawon
+      affiliation: "Indiana University"
+    - family-names: Hur
+      given-names: Jianna
+      affiliation: "Indiana University"
+    - family-names: Samtani
+      given-names: Sagar
+      affiliation: "Indiana University"

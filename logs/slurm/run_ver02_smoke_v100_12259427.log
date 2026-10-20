@@ -1,0 +1,50 @@
+[env_ver02] 2026-10-15 00:00:55 host=g1.quartz.uits.iu.edu job=12259427 partition=v100
+[env_ver02] GPUs: Tesla V100-PCIE-32GB, 32768 MiB;Tesla V100-PCIE-32GB, 32768 MiB
+[env_ver02] env=$MODEL_STORE/conda-env-v100 python=$MODEL_STORE/conda-env-v100/bin/python dtype=float16 ngpu=2
+vllm 0.10.1.1 | torch 2.7.1+cu126 | cuda True
+INFO 10-15 00:10:06 [__init__.py:241] Automatically detected platform cuda.
+INFO 10-15 00:10:48 [utils.py:326] non-default args: {'model': 'Qwen/Qwen2.5-7B-Instruct', 'dtype': 'float16', 'seed': 0, 'max_model_len': 32768, 'tensor_parallel_size': 2, 'enable_prefix_caching': True, 'disable_log_stats': True}
+INFO 10-15 00:12:09 [__init__.py:711] Resolved architecture: Qwen2ForCausalLM
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+WARNING 10-15 00:12:09 [__init__.py:2819] Casting torch.bfloat16 to torch.float16.
+INFO 10-15 00:12:09 [__init__.py:1750] Using max model len 32768
+WARNING 10-15 00:12:11 [arg_utils.py:1770] Compute Capability < 8.0 is not supported by the V1 Engine. Falling back to V0. 
+INFO 10-15 00:12:31 [llm_engine.py:222] Initializing a V0 LLM engine (v0.10.1.1) with config: model='Qwen/Qwen2.5-7B-Instruct', speculative_config=None, tokenizer='Qwen/Qwen2.5-7B-Instruct', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config={}, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float16, max_seq_len=32768, download_dir=None, load_format=auto, tensor_parallel_size=2, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, device_config=cuda, decoding_config=DecodingConfig(backend='auto', disable_fallback=False, disable_any_whitespace=False, disable_additional_properties=False, reasoning_backend=''), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None), seed=0, served_model_name=Qwen/Qwen2.5-7B-Instruct, enable_prefix_caching=True, chunked_prefill_enabled=False, use_async_output_proc=True, pooler_config=None, compilation_config={"level":0,"debug_dump_path":"","cache_dir":"","backend":"","custom_ops":[],"splitting_ops":null,"use_inductor":true,"compile_sizes":[],"inductor_compile_config":{"enable_auto_functionalized_v2":false},"inductor_passes":{},"cudagraph_mode":0,"use_cudagraph":true,"cudagraph_num_of_warmups":0,"cudagraph_capture_sizes":[256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"cudagraph_copy_inputs":false,"full_cuda_graph":false,"pass_config":{"enable_fusion":false,"enable_noop":false},"max_capture_size":256,"local_cache_dir":null}, use_cached_outputs=False, 
+Traceback (most recent call last):
+  File "$REPO_ROOT/code/run_model_ver02.py", line 298, in <module>
+    main()
+  File "$REPO_ROOT/code/run_model_ver02.py", line 217, in main
+    llm = LLM(model=hf_id, tensor_parallel_size=a.tp, max_model_len=a.max_model_len,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/entrypoints/llm.py", line 285, in __init__
+    self.llm_engine = LLMEngine.from_engine_args(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/engine/llm_engine.py", line 490, in from_engine_args
+    return engine_cls.from_vllm_config(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/engine/llm_engine.py", line 466, in from_vllm_config
+    return cls(
+           ^^^^
+  File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/engine/llm_engine.py", line 238, in __init__
+    self.tokenizer = self._init_tokenizer()
+                     ^^^^^^^^^^^^^^^^^^^^^^
+  File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/engine/llm_engine.py", line 522, in _init_tokenizer
+    return init_tokenizer_from_configs(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/transformers_utils/tokenizer_group.py", line 121, in init_tokenizer_from_configs
+    return TokenizerGroup(
+           ^^^^^^^^^^^^^^^
+  File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/transformers_utils/tokenizer_group.py", line 26, in __init__
+    self.tokenizer = get_tokenizer(self.tokenizer_id, **tokenizer_config)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/transformers_utils/tokenizer.py", line 284, in get_tokenizer
+    tokenizer = get_cached_tokenizer(tokenizer)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/transformers_utils/tokenizer.py", line 101, in get_cached_tokenizer
+    tokenizer.all_special_tokens_extended)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/transformers/tokenization_utils_base.py", line 1306, in __getattr__
+    raise AttributeError(f"{self.__class__.__name__} has no attribute {key}")
+AttributeError: Qwen2Tokenizer has no attribute all_special_tokens_extended. Did you mean: 'num_special_tokens_to_add'?
+[sanity] 0 answer files, 0 answers, 0 with a FINAL ANSWER line, 0 calculator calls
+run_model_ver02 exit code 4  Thu Oct 15 00:12:36 EDT 2026

@@ -1,0 +1,38 @@
+answers_ver02_fin-r1_think_calc_s0_ver03_newco_L2345_20261015-005623  [grade_ver05, tolerance=plan, include_thinking=True, qa=QA_set_ver03_newco.json]
+
+Questions graded: 20   mean score per question: 33.1%
+Final answers correct: 1/20
+Final-answer marker: other case 8, boxed 3, missing 3, boxed in thinking 2, Final Response heading 2, exact 2 (missing = final scored zero)
+Hit the token limit: 5 ['ECL-2025-05', 'ECL-2025-07', 'KO-2025-08', 'LIN-2025-07', 'LIN-2025-08']
+Thinking never finished: 5 ['ECL-2025-05', 'ECL-2025-07', 'KO-2025-08', 'LIN-2025-07', 'LIN-2025-08']
+
+Final answers correct by tier and level:
+  basic@2025 L3    0/5   =   0.0%
+  complex@2025 L3    0/5   =   0.0%
+  half@2025 L4    0/5   =   0.0%
+  half@2025 L5    1/5   =  20.0%
+
+Used basic shares (final wrong AND matched the basic-share value): 0/15
+
+By tier:
+  basic@2025                                 90/341  =  26.4%
+  complex@2025                               70/366  =  19.1%
+  half@2025                                 154/356  =  43.3%
+
+By level:
+  3                                         160/707  =  22.6%
+  4                                          79/196  =  40.3%
+  5                                          75/160  =  46.9%
+
+By step:
+  Step 2. Project the future                 52/148  =  35.1%
+  Step 3. Compute free cash flow            120/400  =  30.0%
+  Step 4. Discount to today                 120/325  =  36.9%
+  Step 5. Value and decide                   22/190  =  11.6%
+
+By kind:
+  final                                      10/200  =   5.0%
+  middle                                    124/298  =  41.6%
+  step                                      180/565  =  31.9%
+
+Excluded items: {'rounding not auto-graded': 20, 'zero target not auto-graded': 6, 'target already in prompt': 2}

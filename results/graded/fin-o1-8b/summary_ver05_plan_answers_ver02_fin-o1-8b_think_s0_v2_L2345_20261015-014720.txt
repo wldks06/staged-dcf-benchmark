@@ -1,0 +1,45 @@
+answers_ver02_fin-o1-8b_think_s0_v2_L2345_20261015-014720  [grade_ver05, tolerance=plan, include_thinking=False, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 54.1%
+Final answers correct: 78/184
+Final-answer marker: exact 172, Final Response heading 10, other case 2 (missing = final scored zero)
+Hit the token limit: 0 []
+
+Final answers correct by tier and level:
+  basic    L2   43/56  =  76.8%
+  basic    L3    1/28  =   3.6%
+  complex  L3    3/20  =  15.0%
+  half     L4    1/20  =   5.0%
+  half     L5    1/20  =   5.0%
+  trap     L2   29/40  =  72.5%
+
+Fell for the trap (final wrong AND matched the trap value): 5/42   (also matched but final correct, not counted: 2)
+   BKNG-11, WMB-11, META-11, ORLY-11, SHW-11
+
+Used basic shares (final wrong AND matched the basic-share value): 2/74   (also matched but final correct, not counted: 8)
+   CVX-02, CRH-11
+
+By tier:
+  basic                                    1145/2640 =  43.4%
+  complex                                   460/1438 =  32.0%
+  half                                      427/1442 =  29.6%
+  trap                                      368/492  =  74.8%
+
+By level:
+  2                                         916/1210 =  75.7%
+  3                                        1057/3360 =  31.5%
+  4                                         231/782  =  29.5%
+  5                                         196/660  =  29.7%
+
+By step:
+  Step 2. Project the future                266/654  =  40.7%
+  Step 3. Compute free cash flow            832/2084 =  39.9%
+  Step 4. Discount to today                1080/2222 =  48.6%
+  Step 5. Value and decide                  222/1052 =  21.1%
+
+By kind:
+  final                                     780/1840 =  42.4%
+  middle                                    820/1572 =  52.2%
+  step                                      800/2600 =  30.8%
+
+Excluded items: {'rounding not auto-graded': 184, 'input given in data table': 482, 'target already in prompt': 17, 'zero target not auto-graded': 26}

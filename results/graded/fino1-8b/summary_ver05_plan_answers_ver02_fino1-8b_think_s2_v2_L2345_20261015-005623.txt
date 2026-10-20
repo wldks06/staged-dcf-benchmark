@@ -1,0 +1,45 @@
+answers_ver02_fino1-8b_think_s2_v2_L2345_20261015-005623  [grade_ver05, tolerance=plan, include_thinking=False, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 31.6%
+Final answers correct: 37/184
+Final-answer marker: Final Response heading 147, exact 36, missing 1 (missing = final scored zero)
+Hit the token limit: 0 []
+
+Final answers correct by tier and level:
+  basic    L2   21/56  =  37.5%
+  basic    L3    0/28  =   0.0%
+  complex  L3    1/20  =   5.0%
+  half     L4    1/20  =   5.0%
+  half     L5    0/20  =   0.0%
+  trap     L2   14/40  =  35.0%
+
+Fell for the trap (final wrong AND matched the trap value): 4/42   (also matched but final correct, not counted: 1)
+   CMCSA-10, BKNG-10, PEP-11, CEG-11
+
+Used basic shares (final wrong AND matched the basic-share value): 2/74   (also matched but final correct, not counted: 7)
+   CRH-11, META-11
+
+By tier:
+  basic                                     672/2640 =  25.5%
+  complex                                   368/1438 =  25.6%
+  half                                      273/1442 =  18.9%
+  trap                                      202/492  =  41.1%
+
+By level:
+  2                                         512/1210 =  42.3%
+  3                                         730/3360 =  21.7%
+  4                                         199/782  =  25.4%
+  5                                          74/660  =  11.2%
+
+By step:
+  Step 2. Project the future                164/654  =  25.1%
+  Step 3. Compute free cash flow            578/2084 =  27.7%
+  Step 4. Discount to today                 599/2222 =  27.0%
+  Step 5. Value and decide                  174/1052 =  16.5%
+
+By kind:
+  final                                     370/1840 =  20.1%
+  middle                                    550/1572 =  35.0%
+  step                                      595/2600 =  22.9%
+
+Excluded items: {'rounding not auto-graded': 184, 'input given in data table': 482, 'target already in prompt': 17, 'zero target not auto-graded': 26}

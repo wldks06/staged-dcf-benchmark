@@ -1,0 +1,44 @@
+answers_ver02_llama31-8b_calc_s0_v2_L2345_20261015-005623  [grade_ver05, tolerance=qa, include_thinking=False, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 28.4%
+Final answers correct: 37/184
+Final-answer marker: exact 156, missing 27, other case 1 (missing = final scored zero)
+Hit the token limit: 2 ['CVX-08', 'SHW-08']
+
+Final answers correct by tier and level:
+  basic    L2   20/56  =  35.7%
+  basic    L3    0/28  =   0.0%
+  complex  L3    0/20  =   0.0%
+  half     L4    0/20  =   0.0%
+  half     L5    0/20  =   0.0%
+  trap     L2   17/40  =  42.5%
+
+Fell for the trap (final wrong AND matched the trap value): 5/42
+   BKNG-10, BKNG-11, PM-10, CVX-11, CEG-11
+
+Used basic shares (final wrong AND matched the basic-share value): 0/74   (also matched but final correct, not counted: 1)
+
+By tier:
+  basic                                     521/2640 =  19.7%
+  complex                                   195/1438 =  13.6%
+  half                                      213/1442 =  14.8%
+  trap                                      214/492  =  43.5%
+
+By level:
+  2                                         508/1210 =  42.0%
+  3                                         422/3360 =  12.6%
+  4                                         145/782  =  18.5%
+  5                                          68/660  =  10.3%
+
+By step:
+  Step 2. Project the future                 94/654  =  14.4%
+  Step 3. Compute free cash flow            499/2084 =  23.9%
+  Step 4. Discount to today                 444/2222 =  20.0%
+  Step 5. Value and decide                  106/1052 =  10.1%
+
+By kind:
+  final                                     370/1840 =  20.1%
+  middle                                    378/1572 =  24.0%
+  step                                      395/2600 =  15.2%
+
+Excluded items: {'rounding not auto-graded': 184, 'input given in data table': 482, 'target already in prompt': 17, 'zero target not auto-graded': 26}

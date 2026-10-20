@@ -1,0 +1,45 @@
+answers_ver02_qwen3-8b_think_s2_v2_L2345_20261015-005624  [grade_ver05, tolerance=qa, include_thinking=False, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 79.6%
+Final answers correct: 130/184
+Final-answer marker: exact 176, other case 6, missing 2 (missing = final scored zero)
+Hit the token limit: 2 ['META-06', 'META-08']
+Thinking never finished: 2 ['META-06', 'META-08']
+
+Final answers correct by tier and level:
+  basic    L2   53/56  =  94.6%
+  basic    L3    5/28  =  17.9%
+  complex  L3    6/20  =  30.0%
+  half     L4   11/20  =  55.0%
+  half     L5   15/20  =  75.0%
+  trap     L2   40/40  = 100.0%
+
+Fell for the trap (final wrong AND matched the trap value): 0/42
+
+Used basic shares (final wrong AND matched the basic-share value): 2/74   (also matched but final correct, not counted: 14)
+   BKNG-08, CEG-08
+
+By tier:
+  basic                                    1491/2640 =  56.5%
+  complex                                   642/1438 =  44.6%
+  half                                     1185/1442 =  82.2%
+  trap                                      492/492  = 100.0%
+
+By level:
+  2                                        1168/1210 =  96.5%
+  3                                        1457/3360 =  43.4%
+  4                                         584/782  =  74.7%
+  5                                         601/660  =  91.1%
+
+By step:
+  Step 2. Project the future                188/654  =  28.7%
+  Step 3. Compute free cash flow           1659/2084 =  79.6%
+  Step 4. Discount to today                1417/2222 =  63.8%
+  Step 5. Value and decide                  546/1052 =  51.9%
+
+By kind:
+  final                                    1300/1840 =  70.7%
+  middle                                    630/1572 =  40.1%
+  step                                     1880/2600 =  72.3%
+
+Excluded items: {'rounding not auto-graded': 184, 'input given in data table': 482, 'target already in prompt': 17, 'zero target not auto-graded': 26}

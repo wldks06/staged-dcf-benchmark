@@ -1,0 +1,46 @@
+answers_ver02_fin-r1_think_calc_s2_ver03_L2345_20261015-005623  [grade_ver05, tolerance=plan, include_thinking=False, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 26.2%
+Final answers correct: 7/104
+Final-answer marker: other case 40, missing 27, exact 19, boxed in thinking 8, boxed 5, Final Response heading 5 (missing = final scored zero)
+Hit the token limit: 34 ['CMCSA-2019-05', 'BKNG-2019-05', 'BKNG-2019-07', 'BKNG-2019-08', 'PM-2019-05', 'PM-2019-07', 'PM-2019-08', 'JNJ-2019-05', 'META-2019-06', 'VZ-2019-08', 'MCD-2019-05', 'ORLY-2019-08', 'MRK-2019-05', 'SHW-2019-05', 'SHW-2019-06', 'CMCSA-2022-08', 'PM-2022-07', 'PM-2022-08', 'WMB-2022-05', 'WMB-2022-06']
+Thinking never finished: 34 ['CMCSA-2019-05', 'BKNG-2019-05', 'BKNG-2019-07', 'BKNG-2019-08', 'PM-2019-05', 'PM-2019-07', 'PM-2019-08', 'JNJ-2019-05', 'META-2019-06', 'VZ-2019-08', 'MCD-2019-05', 'ORLY-2019-08', 'MRK-2019-05', 'SHW-2019-05', 'SHW-2019-06', 'CMCSA-2022-08', 'PM-2022-07', 'PM-2022-08', 'WMB-2022-05', 'WMB-2022-06']
+
+Final answers correct by tier and level:
+  basic@2019 L3    0/13  =   0.0%
+  basic@2022 L3    0/13  =   0.0%
+  complex@2019 L3    0/13  =   0.0%
+  complex@2022 L3    0/13  =   0.0%
+  half@2019 L4    1/13  =   7.7%
+  half@2019 L5    3/13  =  23.1%
+  half@2022 L4    2/13  =  15.4%
+  half@2022 L5    1/13  =   7.7%
+
+Used basic shares (final wrong AND matched the basic-share value): 3/78   (also matched but final correct, not counted: 2)
+   MCD-2019-08, MRK-2019-05, CAT-2022-08
+
+By tier:
+  basic@2019                                142/880  =  16.1%
+  basic@2022                                 95/906  =  10.5%
+  complex@2019                              200/924  =  21.6%
+  complex@2022                              149/952  =  15.7%
+  half@2019                                 387/923  =  41.9%
+  half@2022                                 290/945  =  30.7%
+
+By level:
+  3                                         586/3662 =  16.0%
+  4                                         359/1021 =  35.2%
+  5                                         318/847  =  37.5%
+
+By step:
+  Step 2. Project the future                212/768  =  27.6%
+  Step 3. Compute free cash flow            475/2070 =  22.9%
+  Step 4. Discount to today                 496/1712 =  29.0%
+  Step 5. Value and decide                   80/980  =   8.2%
+
+By kind:
+  final                                      70/1040 =   6.7%
+  middle                                    488/1520 =  32.1%
+  step                                      705/2970 =  23.7%
+
+Excluded items: {'target already in prompt': 41, 'rounding not auto-graded': 104, 'zero target not auto-graded': 9}

@@ -1,0 +1,37 @@
+answers_ver02_qwen3-32b_think_s2_ver03_newco_L2345_20261015-194418  [grade_ver05, tolerance=qa, include_thinking=False, qa=QA_set_ver03_newco.json]
+
+Questions graded: 20   mean score per question: 90.4%
+Final answers correct: 19/20
+Final-answer marker: exact 18, Final Response heading 1, other case 1 (missing = final scored zero)
+Hit the token limit: 0 []
+
+Final answers correct by tier and level:
+  basic@2025 L3    5/5   = 100.0%
+  complex@2025 L3    4/5   =  80.0%
+  half@2025 L4    5/5   = 100.0%
+  half@2025 L5    5/5   = 100.0%
+
+Used basic shares (final wrong AND matched the basic-share value): 0/15   (also matched but final correct, not counted: 3)
+
+By tier:
+  basic@2025                                321/341  =  94.1%
+  complex@2025                              272/366  =  74.3%
+  half@2025                                 344/356  =  96.6%
+
+By level:
+  3                                         593/707  =  83.9%
+  4                                         194/196  =  99.0%
+  5                                         150/160  =  93.8%
+
+By step:
+  Step 2. Project the future                 96/148  =  64.9%
+  Step 3. Compute free cash flow            400/400  = 100.0%
+  Step 4. Discount to today                 263/325  =  80.9%
+  Step 5. Value and decide                  178/190  =  93.7%
+
+By kind:
+  final                                     190/200  =  95.0%
+  middle                                    192/298  =  64.4%
+  step                                      555/565  =  98.2%
+
+Excluded items: {'rounding not auto-graded': 20, 'zero target not auto-graded': 6, 'target already in prompt': 2}

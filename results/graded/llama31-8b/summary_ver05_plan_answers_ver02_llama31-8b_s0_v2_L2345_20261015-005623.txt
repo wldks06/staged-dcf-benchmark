@@ -1,0 +1,45 @@
+answers_ver02_llama31-8b_s0_v2_L2345_20261015-005623  [grade_ver05, tolerance=plan, include_thinking=False, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 40.5%
+Final answers correct: 47/184
+Final-answer marker: exact 173, missing 11 (missing = final scored zero)
+Hit the token limit: 10 ['PM-05', 'WMB-05', 'PPL-05', 'MCD-03', 'MRK-03', 'GE-01', 'UNP-07', 'MCD-07', 'CVX-06', 'ORLY-08']
+
+Final answers correct by tier and level:
+  basic    L2   29/56  =  51.8%
+  basic    L3    0/28  =   0.0%
+  complex  L3    1/20  =   5.0%
+  half     L4    0/20  =   0.0%
+  half     L5    0/20  =   0.0%
+  trap     L2   17/40  =  42.5%
+
+Fell for the trap (final wrong AND matched the trap value): 2/42
+   BKNG-10, CEG-11
+
+Used basic shares (final wrong AND matched the basic-share value): 1/74   (also matched but final correct, not counted: 5)
+   META-11
+
+By tier:
+  basic                                     921/2640 =  34.9%
+  complex                                   432/1438 =  30.0%
+  half                                      399/1442 =  27.7%
+  trap                                      238/492  =  48.4%
+
+By level:
+  2                                         648/1210 =  53.6%
+  3                                         943/3360 =  28.1%
+  4                                         236/782  =  30.2%
+  5                                         163/660  =  24.7%
+
+By step:
+  Step 2. Project the future                228/654  =  34.9%
+  Step 3. Compute free cash flow            608/2084 =  29.2%
+  Step 4. Discount to today                 976/2222 =  43.9%
+  Step 5. Value and decide                  178/1052 =  16.9%
+
+By kind:
+  final                                     470/1840 =  25.5%
+  middle                                    780/1572 =  49.6%
+  step                                      740/2600 =  28.5%
+
+Excluded items: {'rounding not auto-graded': 184, 'input given in data table': 482, 'target already in prompt': 17, 'zero target not auto-graded': 26}

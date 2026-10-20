@@ -1,0 +1,44 @@
+answers_ver02_fin-o1-14b_think_s0_v2_L2345_20261015-052006  [grade_ver05, tolerance=plan, include_thinking=True, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 59.9%
+Final answers correct: 89/184
+Final-answer marker: exact 158, Final Response heading 25, other case 1 (missing = final scored zero)
+Hit the token limit: 0 []
+
+Final answers correct by tier and level:
+  basic    L2   52/56  =  92.9%
+  basic    L3    2/28  =   7.1%
+  complex  L3    0/20  =   0.0%
+  half     L4    0/20  =   0.0%
+  half     L5    3/20  =  15.0%
+  trap     L2   32/40  =  80.0%
+
+Fell for the trap (final wrong AND matched the trap value): 5/42   (also matched but final correct, not counted: 2)
+   BKNG-11, WMB-11, META-10, META-11, CEG-11
+
+Used basic shares (final wrong AND matched the basic-share value): 0/74   (also matched but final correct, not counted: 9)
+
+By tier:
+  basic                                    1217/2640 =  46.1%
+  complex                                   406/1438 =  28.2%
+  half                                      443/1442 =  30.7%
+  trap                                      402/492  =  81.7%
+
+By level:
+  2                                        1058/1210 =  87.4%
+  3                                         967/3360 =  28.8%
+  4                                         237/782  =  30.3%
+  5                                         206/660  =  31.2%
+
+By step:
+  Step 2. Project the future                324/654  =  49.5%
+  Step 3. Compute free cash flow            789/2084 =  37.9%
+  Step 4. Discount to today                1085/2222 =  48.8%
+  Step 5. Value and decide                  270/1052 =  25.7%
+
+By kind:
+  final                                     890/1840 =  48.4%
+  middle                                    848/1572 =  53.9%
+  step                                      730/2600 =  28.1%
+
+Excluded items: {'rounding not auto-graded': 184, 'input given in data table': 482, 'target already in prompt': 17, 'zero target not auto-graded': 26}

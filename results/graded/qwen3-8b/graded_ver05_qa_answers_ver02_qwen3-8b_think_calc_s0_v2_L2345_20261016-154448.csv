@@ -1,0 +1,112 @@
+question_id,tier,level,item,kind,step,component,checkpoint,points,earned,correct,excluded,marker,criterion
+BKNG-05,basic,3,1,input,Step 1. Gather historicals,Revenue,inputs.revenue.2022-2024,1,0,,input given in data table,missing,"Pulls total revenue for FY2022-FY2024: $17,090.0; $21,365.0; $23,739.0 million"
+BKNG-05,basic,3,2,input,Step 1. Gather historicals,Operating profit (EBIT),inputs.ebit.2022-2024,1,0,,input given in data table,missing,"Pulls operating income (EBIT) for FY2022-FY2024: $5,102.0; $5,835.0; $7,555.0 million"
+BKNG-05,basic,3,3,input,Step 1. Gather historicals,D&A,inputs.da.2022-2024,1,0,,input given in data table,missing,Pulls depreciation and amortization for FY2022-FY2024: $451.0; $504.0; $591.0 million
+BKNG-05,basic,3,4,input,Step 1. Gather historicals,Capital expenditure,inputs.capex.2022-2024,1,0,,input given in data table,missing,"Pulls capital expenditures (purchases of property, plant and equipment) for FY2022-FY2024: $368.0; $345.0; $429.0 million"
+BKNG-05,basic,3,5,input,Step 1. Gather historicals,Working capital,inputs.payables.2022-2024,1,0,,input given in data table,missing,"Pulls accounts payable for FY2022-FY2024: $2,507.0; $3,374.0; $3,824.0 million"
+BKNG-05,basic,3,6,input,Step 1. Gather historicals,Cash,inputs.cash,1,0,,input given in data table,missing,"Pulls cash and cash equivalents (FY2024): $16,164.0 million"
+BKNG-05,basic,3,7,input,Step 1. Gather historicals,Cash,inputs.st_investments,1,0,,input given in data table,missing,Pulls short-term investments (FY2024): $0.0 million
+BKNG-05,basic,3,8,input,Step 1. Gather historicals,Leases,inputs.lease_liability,1,0,,input given in data table,missing,Pulls lease liabilities (FY2024): $605.0 million
+BKNG-05,basic,3,9,input,Step 1. Gather historicals,Share count,inputs.shares_diluted,1,0,,input given in data table,missing,Pulls FY2024 weighted-average diluted shares (FY2024): 34.064 million
+BKNG-05,basic,3,10,middle,Step 2. Project the future,Growth path,forecast.growth.1,2,0,,target already in prompt,missing,Year-1 revenue growth = 15.00%
+BKNG-05,basic,3,11,middle,Step 2. Project the future,Operating margin,derived: forecast.ebit[1] / forecast.revenue[1],2,0,False,,missing,EBIT margin (mean of three ratios) = 29.66%
+BKNG-05,basic,3,12,middle,Step 2. Project the future,Reinvestment (D&A),derived: forecast.da[1] / forecast.revenue[1],2,2,True,,missing,D&A share of revenue = 2.50%
+BKNG-05,basic,3,13,middle,Step 2. Project the future,Reinvestment (capex),derived: forecast.capex[1] / forecast.revenue[1],2,2,True,,missing,Capex share of revenue = 1.86%
+BKNG-05,basic,3,14,middle,Step 2. Project the future,Working capital,derived: forecast.nwc[1] / forecast.revenue[1],2,2,True,,missing,NWC share of revenue = -1.61%
+BKNG-05,basic,3,15,step,Step 3. Compute free cash flow,FCFF build,fcff.1,5,5,True,,missing,"FCFF year 1 = $6,628.8 million"
+BKNG-05,basic,3,16,step,Step 3. Compute free cash flow,FCFF build,fcff.2,5,0,False,,missing,"FCFF year 2 = $7,395.2 million"
+BKNG-05,basic,3,17,step,Step 3. Compute free cash flow,FCFF build,fcff.3,5,0,False,,missing,"FCFF year 3 = $8,009.5 million"
+BKNG-05,basic,3,18,step,Step 3. Compute free cash flow,FCFF build,fcff.4,5,5,True,,missing,"FCFF year 4 = $8,414.1 million"
+BKNG-05,basic,3,19,step,Step 3. Compute free cash flow,FCFF build,fcff.5,5,5,True,,missing,"FCFF year 5 = $8,321.0 million"
+BKNG-05,basic,3,20,middle,Step 4. Discount to today,Beta / Cost of equity model,beta_levered,2,0,False,,missing,Levered beta = 0.8966
+BKNG-05,basic,3,21,middle,Step 4. Discount to today,Beta / Cost of equity model,re,2,0,False,,missing,Cost of equity = 9.85%
+BKNG-05,basic,3,22,middle,Step 4. Discount to today,Cost of debt,rd,2,0,False,,missing,Pre-tax cost of debt = 4.88%
+BKNG-05,basic,3,23,middle,Step 4. Discount to today,Capital structure weights,weights.E,2,0,False,,missing,"Equity weight 91.08%, debt weight 8.92%"
+BKNG-05,basic,3,24,step,Step 4. Discount to today,WACC,wacc,5,5,True,,missing,WACC = 9.31%
+BKNG-05,basic,3,25,step,Step 4. Discount to today,Terminal value method,tv,5,0,False,,missing,"Terminal value = $116,074.2 million"
+BKNG-05,basic,3,26,step,Step 4. Discount to today,Enterprise value,ev,5,0,False,,missing,"Enterprise value = $103,978.7 million"
+BKNG-05,basic,3,27,middle,Step 5. Value and decide,Bridge to equity,equity,2,0,False,,missing,"Equity value = $102,939.7 million"
+BKNG-05,basic,3,28,final,Step 5. Value and decide,Value per share,price_per_share,10,0,False,,missing,Value per share = $3021.95
+BKNG-05,basic,3,29,rounding,Step 5. Value and decide,Answer format,n/a,1,0,,rounding not auto-graded,missing,Follows the rounding instruction: WACC % to two decimals; dollar amounts in $ millions to one decimal; value per share to two decimals
+CVX-03,basic,3,1,input,Step 1. Gather historicals,Revenue,inputs.revenue.2022-2024,1,0,,input given in data table,exact,"Pulls total revenue for FY2022-FY2024: $246,252.0; $200,949.0; $202,792.0 million"
+CVX-03,basic,3,2,input,Step 1. Gather historicals,D&A,inputs.da.2022-2024,1,0,,input given in data table,exact,"Pulls depreciation and amortization for FY2022-FY2024: $16,319.0; $17,326.0; $17,282.0 million"
+CVX-03,basic,3,3,input,Step 1. Gather historicals,Working capital,inputs.receivables.2022-2024,1,0,,input given in data table,exact,"Pulls accounts receivable for FY2022-FY2024: $18,200.0; $17,640.0; $18,338.0 million"
+CVX-03,basic,3,4,input,Step 1. Gather historicals,Working capital,inputs.inventory.2022-2024,1,0,,input given in data table,exact,"Pulls inventories for FY2022-FY2024: $8,247.0; $8,612.0; $9,074.0 million"
+CVX-03,basic,3,5,input,Step 1. Gather historicals,Working capital,inputs.payables.2022-2024,1,0,,input given in data table,exact,"Pulls accounts payable for FY2022-FY2024: $18,955.0; $20,423.0; $22,079.0 million"
+CVX-03,basic,3,6,input,Step 1. Gather historicals,Leases,inputs.lease_liability,1,0,,input given in data table,exact,"Pulls lease liabilities (FY2024): $5,070.0 million"
+CVX-03,basic,3,7,input,Step 1. Gather historicals,Preferred stock,inputs.preferred,1,0,,input given in data table,exact,Pulls preferred stock (FY2024): $0.0 million
+CVX-03,basic,3,8,input,Step 1. Gather historicals,Minority interest,inputs.minority_interest,1,0,,input given in data table,exact,Pulls minority (noncontrolling) interest (FY2024): $839.0 million
+CVX-03,basic,3,9,input,Step 1. Gather historicals,Share count,inputs.shares_diluted,1,0,,input given in data table,exact,"Pulls FY2024 weighted-average diluted shares (FY2024): 1,817.000 million"
+CVX-03,basic,3,10,middle,Step 2. Project the future,Growth path,forecast.growth.1,2,0,,zero target not auto-graded,exact,Year-1 revenue growth = 0.00%
+CVX-03,basic,3,11,middle,Step 2. Project the future,Operating margin,derived: forecast.ebit[1] / forecast.revenue[1],2,0,False,,exact,EBIT margin (mean of three ratios) = 16.40%
+CVX-03,basic,3,12,middle,Step 2. Project the future,Reinvestment (D&A),derived: forecast.da[1] / forecast.revenue[1],2,0,False,,exact,D&A share of revenue = 7.92%
+CVX-03,basic,3,13,middle,Step 2. Project the future,Reinvestment (capex),derived: forecast.capex[1] / forecast.revenue[1],2,0,False,,exact,Capex share of revenue = 6.95%
+CVX-03,basic,3,14,middle,Step 2. Project the future,Working capital,derived: forecast.nwc[1] / forecast.revenue[1],2,0,False,,exact,NWC share of revenue = 2.86%
+CVX-03,basic,3,15,step,Step 3. Compute free cash flow,FCFF build,fcff.1,5,5,True,,exact,"FCFF year 1 = $28,244.6 million"
+CVX-03,basic,3,16,step,Step 3. Compute free cash flow,FCFF build,fcff.2,5,5,True,,exact,"FCFF year 2 = $28,356.9 million"
+CVX-03,basic,3,17,step,Step 3. Compute free cash flow,FCFF build,fcff.3,5,5,True,,exact,"FCFF year 3 = $28,611.5 million"
+CVX-03,basic,3,18,step,Step 3. Compute free cash flow,FCFF build,fcff.4,5,5,True,,exact,"FCFF year 4 = $29,011.5 million"
+CVX-03,basic,3,19,step,Step 3. Compute free cash flow,FCFF build,fcff.5,5,5,True,,exact,"FCFF year 5 = $27,147.5 million"
+CVX-03,basic,3,20,middle,Step 4. Discount to today,Beta / Cost of equity model,beta_levered,2,0,False,,exact,Levered beta = 0.3015
+CVX-03,basic,3,21,middle,Step 4. Discount to today,Beta / Cost of equity model,re,2,0,False,,exact,Cost of equity = 5.68%
+CVX-03,basic,3,22,middle,Step 4. Discount to today,Cost of debt,rd,2,0,False,,exact,Pre-tax cost of debt = 4.58%
+CVX-03,basic,3,23,middle,Step 4. Discount to today,Capital structure weights,weights.E,2,0,False,,exact,"Equity weight 87.63%, debt weight 12.37%"
+CVX-03,basic,3,24,step,Step 4. Discount to today,WACC,wacc,5,5,True,,exact,WACC = 5.43%
+CVX-03,basic,3,25,step,Step 4. Discount to today,Terminal value method,tv,5,5,True,,exact,"Terminal value = $808,433.7 million"
+CVX-03,basic,3,26,step,Step 4. Discount to today,Enterprise value,ev,5,5,True,,exact,"Enterprise value = $741,810.9 million"
+CVX-03,basic,3,27,middle,Step 5. Value and decide,Bridge to equity,equity,2,2,True,,exact,"Equity value = $711,372.9 million"
+CVX-03,basic,3,28,final,Step 5. Value and decide,Value per share,price_per_share,10,10,True,,exact,Value per share = $391.51
+CVX-03,basic,3,29,alternative,Step 5. Value and decide,Share count,alt: equity / inputs.shares_basic,0,0,False,,exact,"Alternative, not scored: value per share on the latest basic share count (1,760.599 million shares outstanding per the 10-K cover, as of 2025-02-07) = $404.05"
+CVX-03,basic,3,30,rounding,Step 5. Value and decide,Answer format,n/a,1,0,,rounding not auto-graded,exact,Follows the rounding instruction: WACC % to two decimals; dollar amounts in $ millions to one decimal; value per share to two decimals
+ETN-03,basic,3,1,input,Step 1. Gather historicals,Revenue,inputs.revenue.2022-2024,1,0,,input given in data table,missing,"Pulls total revenue for FY2022-FY2024: $20,752.0; $23,196.0; $24,878.0 million"
+ETN-03,basic,3,2,input,Step 1. Gather historicals,D&A,inputs.da.2022-2024,1,0,,input given in data table,missing,Pulls depreciation and amortization for FY2022-FY2024: $954.0; $926.0; $921.0 million
+ETN-03,basic,3,3,input,Step 1. Gather historicals,Capital expenditure,inputs.capex.2022-2024,1,0,,input given in data table,missing,"Pulls capital expenditures (purchases of property, plant and equipment) for FY2022-FY2024: $598.0; $757.0; $808.0 million"
+ETN-03,basic,3,4,input,Step 1. Gather historicals,Working capital,inputs.inventory.2022-2024,1,0,,input given in data table,missing,"Pulls inventories for FY2022-FY2024: $3,430.0; $3,739.0; $4,227.0 million"
+ETN-03,basic,3,5,input,Step 1. Gather historicals,Working capital,inputs.payables.2022-2024,1,0,,input given in data table,missing,"Pulls accounts payable for FY2022-FY2024: $3,072.0; $3,365.0; $3,678.0 million"
+ETN-03,basic,3,6,input,Step 1. Gather historicals,Cash,inputs.cash,1,0,,input given in data table,missing,Pulls cash and cash equivalents (FY2024): $555.0 million
+ETN-03,basic,3,7,input,Step 1. Gather historicals,Cash,inputs.st_investments,1,0,,input given in data table,missing,"Pulls short-term investments (FY2024): $1,525.0 million"
+ETN-03,basic,3,8,input,Step 1. Gather historicals,Leases,inputs.lease_liability,1,0,,input given in data table,missing,Pulls lease liabilities (FY2024): $832.0 million
+ETN-03,basic,3,9,input,Step 1. Gather historicals,Minority interest,inputs.minority_interest,1,0,,input given in data table,missing,Pulls minority (noncontrolling) interest (FY2024): $43.0 million
+ETN-03,basic,3,10,input,Step 1. Gather historicals,Share count,inputs.shares_diluted,1,0,,input given in data table,missing,Pulls FY2024 weighted-average diluted shares (FY2024): 399.400 million
+ETN-03,basic,3,11,middle,Step 2. Project the future,Growth path,forecast.growth.1,2,0,False,,missing,Year-1 revenue growth = 9.49%
+ETN-03,basic,3,12,middle,Step 2. Project the future,Operating margin,derived: forecast.ebit[1] / forecast.revenue[1],2,0,False,,missing,EBIT margin (mean of three ratios) = 16.92%
+ETN-03,basic,3,13,middle,Step 2. Project the future,Reinvestment (D&A),derived: forecast.da[1] / forecast.revenue[1],2,0,False,,missing,D&A share of revenue = 4.10%
+ETN-03,basic,3,14,middle,Step 2. Project the future,Reinvestment (capex),derived: forecast.capex[1] / forecast.revenue[1],2,0,False,,missing,Capex share of revenue = 3.13%
+ETN-03,basic,3,15,middle,Step 2. Project the future,Working capital,derived: forecast.nwc[1] / forecast.revenue[1],2,0,False,,missing,NWC share of revenue = 21.01%
+ETN-03,basic,3,16,step,Step 3. Compute free cash flow,FCFF build,fcff.1,5,0,False,,missing,"FCFF year 1 = $3,407.0 million"
+ETN-03,basic,3,17,step,Step 3. Compute free cash flow,FCFF build,fcff.2,5,0,False,,missing,"FCFF year 2 = $3,764.5 million"
+ETN-03,basic,3,18,step,Step 3. Compute free cash flow,FCFF build,fcff.3,5,0,False,,missing,"FCFF year 3 = $4,088.0 million"
+ETN-03,basic,3,19,step,Step 3. Compute free cash flow,FCFF build,fcff.4,5,0,False,,missing,"FCFF year 4 = $4,361.7 million"
+ETN-03,basic,3,20,step,Step 3. Compute free cash flow,FCFF build,fcff.5,5,0,False,,missing,"FCFF year 5 = $4,224.0 million"
+ETN-03,basic,3,21,middle,Step 4. Discount to today,Beta / Cost of equity model,beta_levered,2,0,False,,missing,Levered beta = 1.2203
+ETN-03,basic,3,22,middle,Step 4. Discount to today,Beta / Cost of equity model,re,2,0,False,,missing,Cost of equity = 12.11%
+ETN-03,basic,3,23,middle,Step 4. Discount to today,Cost of debt,rd,2,0,False,,missing,Pre-tax cost of debt = 4.58%
+ETN-03,basic,3,24,middle,Step 4. Discount to today,Capital structure weights,weights.E,2,0,False,,missing,"Equity weight 92.60%, debt weight 7.40%"
+ETN-03,basic,3,25,step,Step 4. Discount to today,WACC,wacc,5,0,False,,missing,WACC = 11.48%
+ETN-03,basic,3,26,step,Step 4. Discount to today,Terminal value method,tv,5,0,False,,missing,"Terminal value = $45,432.6 million"
+ETN-03,basic,3,27,step,Step 4. Discount to today,Enterprise value,ev,5,0,False,,missing,"Enterprise value = $40,694.7 million"
+ETN-03,basic,3,28,middle,Step 5. Value and decide,Bridge to equity,equity,2,0,False,,missing,"Equity value = $32,747.7 million"
+ETN-03,basic,3,29,final,Step 5. Value and decide,Value per share,price_per_share,10,0,False,,missing,Value per share = $81.99
+ETN-03,basic,3,30,alternative,Step 5. Value and decide,Share count,alt: equity / inputs.shares_basic,0,0,False,,missing,"Alternative, not scored: value per share on the latest basic share count (392.000 million shares outstanding per the 10-K cover, as of 2025-01-31) = $83.54"
+ETN-03,basic,3,31,rounding,Step 5. Value and decide,Answer format,n/a,1,0,,rounding not auto-graded,missing,Follows the rounding instruction: WACC % to two decimals; dollar amounts in $ millions to one decimal; value per share to two decimals
+VZ-06,half,4,1,middle,Step 2. Project the future,Growth path,forecast.growth.1,2,0,,zero target not auto-graded,exact,Year-1 revenue growth = 0.00%
+VZ-06,half,4,2,middle,Step 2. Project the future,Operating margin,derived: forecast.ebit[1] / forecast.revenue[1],2,2,True,,exact,EBIT margin (mean of three ratios) = 20.21%
+VZ-06,half,4,3,middle,Step 2. Project the future,Reinvestment (D&A),derived: forecast.da[1] / forecast.revenue[1],2,2,True,,exact,D&A share of revenue = 12.98%
+VZ-06,half,4,4,middle,Step 2. Project the future,Reinvestment (capex),derived: forecast.capex[1] / forecast.revenue[1],2,2,True,,exact,Capex share of revenue = 14.52%
+VZ-06,half,4,5,middle,Step 2. Project the future,Working capital,derived: forecast.nwc[1] / forecast.revenue[1],2,2,True,,exact,NWC share of revenue = 13.11%
+VZ-06,half,4,6,step,Step 3. Compute free cash flow,FCFF build,fcff.1,5,5,True,,exact,"FCFF year 1 = $19,436.0 million"
+VZ-06,half,4,7,step,Step 3. Compute free cash flow,FCFF build,fcff.2,5,5,True,,exact,"FCFF year 2 = $19,444.8 million"
+VZ-06,half,4,8,step,Step 3. Compute free cash flow,FCFF build,fcff.3,5,5,True,,exact,"FCFF year 3 = $19,550.9 million"
+VZ-06,half,4,9,step,Step 3. Compute free cash flow,FCFF build,fcff.4,5,5,True,,exact,"FCFF year 4 = $19,755.3 million"
+VZ-06,half,4,10,final,Step 3. Compute free cash flow,FCFF build,fcff.5,10,10,True,,exact,"FCFF year 5 = $21,873.6 million"
+VZ-06,half,4,11,rounding,Step 3. Compute free cash flow,Answer format,n/a,1,0,,rounding not auto-graded,exact,Follows the rounding instruction: percentages to two decimals; FCFF in $ millions to one decimal
+CVX-07,half,5,1,middle,Step 4. Discount to today,Beta / Cost of equity model,beta_levered,2,2,True,,missing,Levered beta = 0.3015
+CVX-07,half,5,2,middle,Step 4. Discount to today,Beta / Cost of equity model,re,2,2,True,,missing,Cost of equity = 5.68%
+CVX-07,half,5,3,middle,Step 4. Discount to today,Cost of debt,rd,2,2,True,,missing,Pre-tax cost of debt = 4.58%
+CVX-07,half,5,4,step,Step 4. Discount to today,WACC,wacc,5,5,True,,missing,WACC = 5.43%
+CVX-07,half,5,5,step,Step 4. Discount to today,Terminal value method,tv,5,0,False,,missing,"Terminal value = $808,433.7 million"
+CVX-07,half,5,6,step,Step 4. Discount to today,Enterprise value,ev,5,0,False,,missing,"Enterprise value = $741,810.9 million"
+CVX-07,half,5,7,middle,Step 5. Value and decide,Bridge to equity,equity,2,0,False,,missing,"Equity value = $711,372.9 million"
+CVX-07,half,5,8,final,Step 5. Value and decide,Value per share,price_per_share,10,0,False,,missing,Value per share = $391.51
+CVX-07,half,5,9,alternative,Step 5. Value and decide,Share count,alt: equity / inputs.shares_basic,0,0,False,,missing,"Alternative, not scored: value per share on the latest basic share count (1,760.599 million shares outstanding per the 10-K cover, as of 2025-02-07) = $404.05"
+CVX-07,half,5,10,rounding,Step 5. Value and decide,Answer format,n/a,1,0,,rounding not auto-graded,missing,Follows the rounding instruction: beta to four decimals; rates in % to two decimals; dollar amounts in $ millions to one decimal; value per share to two decimals

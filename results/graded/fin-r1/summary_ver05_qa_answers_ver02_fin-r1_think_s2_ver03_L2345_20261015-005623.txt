@@ -1,0 +1,46 @@
+answers_ver02_fin-r1_think_s2_ver03_L2345_20261015-005623  [grade_ver05, tolerance=qa, include_thinking=False, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 21.1%
+Final answers correct: 4/104
+Final-answer marker: other case 44, exact 27, Final Response heading 13, boxed in thinking 10, boxed 6, missing 4 (missing = final scored zero)
+Hit the token limit: 14 ['CMCSA-2019-08', 'PM-2019-06', 'JNJ-2019-07', 'JNJ-2019-08', 'META-2019-05', 'META-2019-08', 'PEP-2019-07', 'MRK-2019-05', 'SHW-2019-05', 'CMCSA-2022-07', 'WMB-2022-06', 'MCD-2022-05', 'PEP-2022-07', 'CAT-2022-08']
+Thinking never finished: 14 ['CMCSA-2019-08', 'PM-2019-06', 'JNJ-2019-07', 'JNJ-2019-08', 'META-2019-05', 'META-2019-08', 'PEP-2019-07', 'MRK-2019-05', 'SHW-2019-05', 'CMCSA-2022-07', 'WMB-2022-06', 'MCD-2022-05', 'PEP-2022-07', 'CAT-2022-08']
+
+Final answers correct by tier and level:
+  basic@2019 L3    0/13  =   0.0%
+  basic@2022 L3    0/13  =   0.0%
+  complex@2019 L3    0/13  =   0.0%
+  complex@2022 L3    0/13  =   0.0%
+  half@2019 L4    0/13  =   0.0%
+  half@2019 L5    1/13  =   7.7%
+  half@2022 L4    3/13  =  23.1%
+  half@2022 L5    0/13  =   0.0%
+
+Used basic shares (final wrong AND matched the basic-share value): 3/78   (also matched but final correct, not counted: 1)
+   PPL-2019-07, MRK-2019-08, VZ-2022-07
+
+By tier:
+  basic@2019                                105/880  =  11.9%
+  basic@2022                                199/906  =  22.0%
+  complex@2019                              143/924  =  15.5%
+  complex@2022                              175/952  =  18.4%
+  half@2019                                 227/923  =  24.6%
+  half@2022                                 252/945  =  26.7%
+
+By level:
+  3                                         622/3662 =  17.0%
+  4                                         275/1021 =  26.9%
+  5                                         204/847  =  24.1%
+
+By step:
+  Step 2. Project the future                 76/768  =   9.9%
+  Step 3. Compute free cash flow            650/2070 =  31.4%
+  Step 4. Discount to today                 331/1712 =  19.3%
+  Step 5. Value and decide                   44/980  =   4.5%
+
+By kind:
+  final                                      40/1040 =   3.8%
+  middle                                    316/1520 =  20.8%
+  step                                      745/2970 =  25.1%
+
+Excluded items: {'target already in prompt': 41, 'rounding not auto-graded': 104, 'zero target not auto-graded': 9}

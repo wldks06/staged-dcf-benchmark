@@ -1,0 +1,45 @@
+answers_ver02_dianjin-32b_think_s0_v2_L2345_20261015-185513  [grade_ver05, tolerance=qa, include_thinking=False, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 82.0%
+Final answers correct: 142/184
+Final-answer marker: exact 167, answer tag 11, other case 4, missing 1, Final Response heading 1 (missing = final scored zero)
+Hit the token limit: 1 ['WEC-02']
+Thinking never finished: 1 ['WEC-02']
+
+Final answers correct by tier and level:
+  basic    L2   55/56  =  98.2%
+  basic    L3    7/28  =  25.0%
+  complex  L3    4/20  =  20.0%
+  half     L4   18/20  =  90.0%
+  half     L5   18/20  =  90.0%
+  trap     L2   40/40  = 100.0%
+
+Fell for the trap (final wrong AND matched the trap value): 0/42
+
+Used basic shares (final wrong AND matched the basic-share value): 1/74   (also matched but final correct, not counted: 15)
+   CAT-07
+
+By tier:
+  basic                                    1538/2640 =  58.3%
+  complex                                   610/1438 =  42.4%
+  half                                     1272/1442 =  88.2%
+  trap                                      492/492  = 100.0%
+
+By level:
+  2                                        1194/1210 =  98.7%
+  3                                        1446/3360 =  43.0%
+  4                                         668/782  =  85.4%
+  5                                         604/660  =  91.5%
+
+By step:
+  Step 2. Project the future                196/654  =  30.0%
+  Step 3. Compute free cash flow           1709/2084 =  82.0%
+  Step 4. Discount to today                1431/2222 =  64.4%
+  Step 5. Value and decide                  576/1052 =  54.8%
+
+By kind:
+  final                                    1420/1840 =  77.2%
+  middle                                    662/1572 =  42.1%
+  step                                     1830/2600 =  70.4%
+
+Excluded items: {'rounding not auto-graded': 184, 'input given in data table': 482, 'target already in prompt': 17, 'zero target not auto-graded': 26}

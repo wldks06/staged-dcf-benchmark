@@ -1,0 +1,12 @@
+# Only needed to rerun the models (pipeline/run_model.py, pipeline/compat_check.py).
+# Grading, the question builder, the audit and the tables use the Python standard library only;
+# the engine's dependencies are in engine/pyproject.toml.
+#
+# H100 environment of the paper (bfloat16):
+vllm==0.31.0
+torch==2.13.0
+huggingface_hub
+#
+# V100 environment of the paper (float16), installed separately:
+#   vllm==0.10.1.1  torch==2.7.1  transformers==5.19.0
+# pipeline/run_model.py patches the two incompatibilities of this combination (see its header).

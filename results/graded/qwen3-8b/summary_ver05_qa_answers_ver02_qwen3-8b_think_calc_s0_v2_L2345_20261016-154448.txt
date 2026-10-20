@@ -1,0 +1,36 @@
+answers_ver02_qwen3-8b_think_calc_s0_v2_L2345_20261016-154448  [grade_ver05, tolerance=qa, include_thinking=False, qa=QA_set_v2.json]
+
+Questions graded: 5   mean score per question: 49.6%
+Final answers correct: 2/5
+Final-answer marker: missing 3, exact 2 (missing = final scored zero)
+Hit the token limit: 1 ['ETN-03']
+Thinking never finished: 1 ['ETN-03']
+
+Final answers correct by tier and level:
+  basic    L3    1/3   =  33.3%
+  half     L4    1/1   = 100.0%
+  half     L5    0/1   =   0.0%
+
+Used basic shares (final wrong AND matched the basic-share value): 0/3
+
+By tier:
+  basic                                      78/206  =  37.9%
+  half                                       49/71   =  69.0%
+
+By level:
+  3                                          78/206  =  37.9%
+  4                                          38/38   = 100.0%
+  5                                          11/33   =  33.3%
+
+By step:
+  Step 2. Project the future                 14/34   =  41.2%
+  Step 3. Compute free cash flow             70/105  =  66.7%
+  Step 4. Discount to today                  31/90   =  34.4%
+  Step 5. Value and decide                   12/48   =  25.0%
+
+By kind:
+  final                                      20/50   =  40.0%
+  middle                                     22/72   =  30.6%
+  step                                       85/155  =  54.8%
+
+Excluded items: {'input given in data table': 28, 'target already in prompt': 1, 'rounding not auto-graded': 5, 'zero target not auto-graded': 2}

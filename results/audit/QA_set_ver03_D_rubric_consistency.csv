@@ -1,0 +1,449 @@
+question_id,tier,level,check,status,detail
+CMCSA-2019-05,basic@2019,3,total points = sum of rubric points,ok,71 vs 71
+CMCSA-2019-05,basic@2019,3,exactly one final item,ok,1
+CMCSA-2019-05,basic@2019,3,final_answer text shows the final target,ok,"WACC 6.80%; FCFF years 1-5 $17,375.3, $18,560.7, $19,539.9, $20,268.8, $19,474.8 | target 57.6584"
+CMCSA-2019-05,basic@2019,3,"target already printed in the prompt (item 13, grader skips it)",INFO,Pre-tax cost of debt = 3.00%
+CMCSA-2019-05,basic@2019,3,alternative value separated from the correct answer,CLOSE (within 2x tolerance),"gap 0.7043 vs tolerance 0.5766 | Alternative, not scored: value per share on the latest basic share cou"
+CMCSA-2019-06,half@2019,4,total points = sum of rubric points,ok,41 vs 41
+CMCSA-2019-06,half@2019,4,exactly one final item,ok,1
+CMCSA-2019-06,half@2019,4,final_answer text shows the final target,ok,"FCFF years 1-5 $17,375.3, $18,560.7, $19,539.9, $20,268.8, $19,474.8 million | target 19474.7604"
+CMCSA-2019-07,half@2019,5,total points = sum of rubric points,ok,34 vs 34
+CMCSA-2019-07,half@2019,5,exactly one final item,ok,1
+CMCSA-2019-07,half@2019,5,final_answer text shows the final target,ok,Beta 1.0969; cost of equity 9.20%; cost of debt 3.00%; WACC 6.80%; terminal valu | target 57.6584
+CMCSA-2019-07,half@2019,5,"target already printed in the prompt (item 3, grader skips it)",INFO,Pre-tax cost of debt = 3.00%
+CMCSA-2019-07,half@2019,5,alternative value separated from the correct answer,CLOSE (within 2x tolerance),"gap 0.7043 vs tolerance 0.5766 | Alternative, not scored: value per share on the latest basic share cou"
+CMCSA-2019-08,complex@2019,3,total points = sum of rubric points,ok,75 vs 75
+CMCSA-2019-08,complex@2019,3,exactly one final item,ok,1
+CMCSA-2019-08,complex@2019,3,final_answer text shows the final target,ok,"Tax 10.00%; WACC 5.53%; FCFF years 1-5 $19,705.5, $21,067.8, $22,224.8, $23,129. | target 108.4249"
+CMCSA-2019-08,complex@2019,3,"target already printed in the prompt (item 6, grader skips it)",INFO,Effective tax rate on EBIT (years 1-4) = 10.00%
+CMCSA-2019-08,complex@2019,3,"target already printed in the prompt (item 14, grader skips it)",INFO,Pre-tax cost of debt = 3.00%
+CMCSA-2019-08,complex@2019,3,"target already printed in the prompt (item 19, grader skips it)",INFO,"Excess cash = cash and short-term investments - 2% of FY2018 revenue = $2,017.9 million"
+CMCSA-2019-08,complex@2019,3,alternative value separated from the correct answer,CLOSE (within 2x tolerance),"gap 1.325 vs tolerance 1.084 | Alternative, not scored: value per share on the latest basic share cou"
+BKNG-2019-05,basic@2019,3,total points = sum of rubric points,ok,71 vs 71
+BKNG-2019-05,basic@2019,3,exactly one final item,ok,1
+BKNG-2019-05,basic@2019,3,final_answer text shows the final target,ok,"WACC 7.66%; FCFF years 1-5 $4,373.9, $4,905.4, $5,342.4, $5,645.4, $5,674.9 mill | target 1855.6148"
+BKNG-2019-05,basic@2019,3,"target already printed in the prompt (item 1, grader skips it)",INFO,Year-1 revenue growth = 15.00%
+BKNG-2019-05,basic@2019,3,"target already printed in the prompt (item 8, grader skips it)",INFO,"FCFF year 3 = $5,342.4 million"
+BKNG-2019-05,basic@2019,3,alternative value separated from the correct answer,ok,"gap 123.8 vs tolerance 18.56 | Alternative, not scored: value per share on the latest basic share cou"
+BKNG-2019-06,half@2019,4,total points = sum of rubric points,ok,41 vs 41
+BKNG-2019-06,half@2019,4,exactly one final item,ok,1
+BKNG-2019-06,half@2019,4,final_answer text shows the final target,ok,"FCFF years 1-5 $4,373.9, $4,905.4, $5,342.4, $5,645.4, $5,674.9 million | target 5674.8849"
+BKNG-2019-06,half@2019,4,"target already printed in the prompt (item 1, grader skips it)",INFO,Year-1 revenue growth = 15.00%
+BKNG-2019-06,half@2019,4,"target already printed in the prompt (item 8, grader skips it)",INFO,"FCFF year 3 = $5,342.4 million"
+BKNG-2019-07,half@2019,5,total points = sum of rubric points,ok,34 vs 34
+BKNG-2019-07,half@2019,5,exactly one final item,ok,1
+BKNG-2019-07,half@2019,5,final_answer text shows the final target,ok,Beta 0.9521; cost of equity 8.18%; cost of debt 2.55%; WACC 7.66%; terminal valu | target 1855.6148
+BKNG-2019-07,half@2019,5,alternative value separated from the correct answer,ok,"gap 123.8 vs tolerance 18.56 | Alternative, not scored: value per share on the latest basic share cou"
+BKNG-2019-08,complex@2019,3,total points = sum of rubric points,ok,75 vs 75
+BKNG-2019-08,complex@2019,3,exactly one final item,ok,1
+BKNG-2019-08,complex@2019,3,final_answer text shows the final target,ok,"Tax 28.47%; WACC 6.35%; FCFF years 1-5 $3,959.8, $4,446.8, $4,855.3, $5,150.0, $ | target 2780.7639"
+BKNG-2019-08,complex@2019,3,"target already printed in the prompt (item 1, grader skips it)",INFO,Year-1 revenue growth = 15.00%
+BKNG-2019-08,complex@2019,3,alternative value separated from the correct answer,ok,"gap 185.6 vs tolerance 27.81 | Alternative, not scored: value per share on the latest basic share cou"
+PM-2019-05,basic@2019,3,total points = sum of rubric points,ok,71 vs 71
+PM-2019-05,basic@2019,3,exactly one final item,ok,1
+PM-2019-05,basic@2019,3,final_answer text shows the final target,ok,"WACC 10.91%; FCFF years 1-5 $8,690.1, $9,172.4, $9,604.0, $9,975.1, $10,895.2 mi | target 53.2887"
+PM-2019-05,basic@2019,3,alternative value separated from the correct answer,OVERLAPS correct answer,"gap 0.0142 vs tolerance 0.5329 | Alternative, not scored: value per share on the latest basic share cou"
+PM-2019-06,half@2019,4,total points = sum of rubric points,ok,41 vs 41
+PM-2019-06,half@2019,4,exactly one final item,ok,1
+PM-2019-06,half@2019,4,final_answer text shows the final target,ok,"FCFF years 1-5 $8,690.1, $9,172.4, $9,604.0, $9,975.1, $10,895.2 million | target 10895.224"
+PM-2019-07,half@2019,5,total points = sum of rubric points,ok,34 vs 34
+PM-2019-07,half@2019,5,exactly one final item,ok,1
+PM-2019-07,half@2019,5,final_answer text shows the final target,ok,Beta 1.6463; cost of equity 13.04%; cost of debt 2.55%; WACC 10.91%; terminal va | target 53.2887
+PM-2019-07,half@2019,5,alternative value separated from the correct answer,OVERLAPS correct answer,"gap 0.0142 vs tolerance 0.5329 | Alternative, not scored: value per share on the latest basic share cou"
+PM-2019-08,complex@2019,3,total points = sum of rubric points,ok,75 vs 75
+PM-2019-08,complex@2019,3,exactly one final item,ok,1
+PM-2019-08,complex@2019,3,final_answer text shows the final target,ok,"Tax 30.49%; WACC 7.72%; FCFF years 1-5 $7,509.4, $7,934.3, $8,326.3, $8,677.8, $ | target 104.4488"
+PM-2019-08,complex@2019,3,alternative value separated from the correct answer,OVERLAPS correct answer,"gap 0.0279 vs tolerance 1.044 | Alternative, not scored: value per share on the latest basic share cou"
+JNJ-2019-05,basic@2019,3,total points = sum of rubric points,ok,71 vs 71
+JNJ-2019-05,basic@2019,3,exactly one final item,ok,1
+JNJ-2019-05,basic@2019,3,final_answer text shows the final target,ok,"WACC 10.00%; FCFF years 1-5 $18,705.6, $19,887.5, $20,919.4, $21,768.5, $19,638. | target 80.9915"
+JNJ-2019-05,basic@2019,3,"target already printed in the prompt (item 15, grader skips it)",INFO,WACC = 10.00%
+JNJ-2019-05,basic@2019,3,alternative value separated from the correct answer,ok,"gap 1.994 vs tolerance 0.8099 | Alternative, not scored: value per share on the latest basic share cou"
+JNJ-2019-06,half@2019,4,total points = sum of rubric points,ok,41 vs 41
+JNJ-2019-06,half@2019,4,exactly one final item,ok,1
+JNJ-2019-06,half@2019,4,final_answer text shows the final target,ok,"FCFF years 1-5 $18,705.6, $19,887.5, $20,919.4, $21,768.5, $19,638.6 million | target 19638.5986"
+JNJ-2019-07,half@2019,5,total points = sum of rubric points,ok,34 vs 34
+JNJ-2019-07,half@2019,5,exactly one final item,ok,1
+JNJ-2019-07,half@2019,5,final_answer text shows the final target,ok,Beta 1.3004; cost of equity 10.62%; cost of debt 2.55%; WACC 10.00%; terminal va | target 80.9915
+JNJ-2019-07,half@2019,5,"target already printed in the prompt (item 4, grader skips it)",INFO,WACC = 10.00%
+JNJ-2019-07,half@2019,5,alternative value separated from the correct answer,ok,"gap 1.994 vs tolerance 0.8099 | Alternative, not scored: value per share on the latest basic share cou"
+JNJ-2019-08,complex@2019,3,total points = sum of rubric points,ok,75 vs 75
+JNJ-2019-08,complex@2019,3,exactly one final item,ok,1
+JNJ-2019-08,complex@2019,3,final_answer text shows the final target,ok,"Tax 35.00%; WACC 7.50%; FCFF years 1-5 $15,615.7, $16,631.3, $17,545.6, $18,333. | target 129.4864"
+JNJ-2019-08,complex@2019,3,"target already printed in the prompt (item 6, grader skips it)",INFO,Effective tax rate on EBIT (years 1-4) = 35.00%
+JNJ-2019-08,complex@2019,3,alternative value separated from the correct answer,ok,"gap 3.188 vs tolerance 1.295 | Alternative, not scored: value per share on the latest basic share cou"
+UNP-2019-05,basic@2019,3,total points = sum of rubric points,ok,71 vs 71
+UNP-2019-05,basic@2019,3,exactly one final item,ok,1
+UNP-2019-05,basic@2019,3,final_answer text shows the final target,ok,"WACC 14.29%; FCFF years 1-5 $5,618.0, $5,958.3, $6,244.9, $6,467.3, $8,280.1 mil | target 47.2108"
+UNP-2019-05,basic@2019,3,"target already printed in the prompt (item 1, grader skips it)",INFO,Year-1 revenue growth = 7.00%
+UNP-2019-05,basic@2019,3,alternative value separated from the correct answer,ok,"gap 2.052 vs tolerance 0.4721 | Alternative, not scored: value per share on the latest basic share cou"
+UNP-2019-06,half@2019,4,total points = sum of rubric points,ok,41 vs 41
+UNP-2019-06,half@2019,4,exactly one final item,ok,1
+UNP-2019-06,half@2019,4,final_answer text shows the final target,ok,"FCFF years 1-5 $5,618.0, $5,958.3, $6,244.9, $6,467.3, $8,280.1 million | target 8280.0877"
+UNP-2019-06,half@2019,4,"target already printed in the prompt (item 1, grader skips it)",INFO,Year-1 revenue growth = 7.00%
+UNP-2019-07,half@2019,5,total points = sum of rubric points,ok,34 vs 34
+UNP-2019-07,half@2019,5,exactly one final item,ok,1
+UNP-2019-07,half@2019,5,final_answer text shows the final target,ok,Beta 2.1277; cost of equity 16.41%; cost of debt 2.55%; WACC 14.29%; terminal va | target 47.2108
+UNP-2019-07,half@2019,5,alternative value separated from the correct answer,ok,"gap 2.052 vs tolerance 0.4721 | Alternative, not scored: value per share on the latest basic share cou"
+UNP-2019-08,complex@2019,3,total points = sum of rubric points,ok,75 vs 75
+UNP-2019-08,complex@2019,3,exactly one final item,ok,1
+UNP-2019-08,complex@2019,3,final_answer text shows the final target,ok,"Tax 10.00%; WACC 9.42%; FCFF years 1-5 $6,619.4, $7,023.9, $7,374.2, $7,659.1, $ | target 119.7593"
+UNP-2019-08,complex@2019,3,"target already printed in the prompt (item 1, grader skips it)",INFO,Year-1 revenue growth = 7.00%
+UNP-2019-08,complex@2019,3,"target already printed in the prompt (item 6, grader skips it)",INFO,Effective tax rate on EBIT (years 1-4) = 10.00%
+UNP-2019-08,complex@2019,3,alternative value separated from the correct answer,ok,"gap 5.206 vs tolerance 1.198 | Alternative, not scored: value per share on the latest basic share cou"
+PPL-2019-05,basic@2019,3,total points = sum of rubric points,ok,71 vs 71
+PPL-2019-05,basic@2019,3,exactly one final item,ok,1
+PPL-2019-05,basic@2019,3,final_answer text shows the final target,ok,"WACC 4.44%; FCFF years 1-5 $297.9, $303.3, $308.9, $314.9, $2,553.6 million; ter | target 95.2451"
+PPL-2019-05,basic@2019,3,alternative value separated from the correct answer,CLOSE (within 2x tolerance),"gap 1.627 vs tolerance 0.9525 | Alternative, not scored: value per share on the latest basic share cou"
+PPL-2019-06,half@2019,4,total points = sum of rubric points,ok,41 vs 41
+PPL-2019-06,half@2019,4,exactly one final item,ok,1
+PPL-2019-06,half@2019,4,final_answer text shows the final target,ok,"FCFF years 1-5 $297.9, $303.3, $308.9, $314.9, $2,553.6 million | target 2553.569"
+PPL-2019-07,half@2019,5,total points = sum of rubric points,ok,34 vs 34
+PPL-2019-07,half@2019,5,exactly one final item,ok,1
+PPL-2019-07,half@2019,5,final_answer text shows the final target,ok,Beta 0.6239; cost of equity 5.89%; cost of debt 3.48%; WACC 4.44%; terminal valu | target 95.2451
+PPL-2019-07,half@2019,5,alternative value separated from the correct answer,CLOSE (within 2x tolerance),"gap 1.627 vs tolerance 0.9525 | Alternative, not scored: value per share on the latest basic share cou"
+PPL-2019-08,complex@2019,3,total points = sum of rubric points,ok,75 vs 75
+PPL-2019-08,complex@2019,3,exactly one final item,ok,1
+PPL-2019-08,complex@2019,3,final_answer text shows the final target,ok,"Tax 28.82%; WACC 4.32%; FCFF years 1-5 $61.1, $62.1, $63.3, $64.6, $2,578.3 mill | target 142.1737"
+PPL-2019-08,complex@2019,3,alternative value separated from the correct answer,CLOSE (within 2x tolerance),"gap 2.429 vs tolerance 1.422 | Alternative, not scored: value per share on the latest basic share cou"
+META-2019-05,basic@2019,3,total points = sum of rubric points,ok,71 vs 71
+META-2019-05,basic@2019,3,exactly one final item,ok,1
+META-2019-05,basic@2019,3,final_answer text shows the final target,ok,"WACC 10.29%; FCFF years 1-5 $15,170.7, $17,188.5, $18,920.0, $20,215.6, $30,307. | target 117.7377"
+META-2019-05,basic@2019,3,"target already printed in the prompt (item 1, grader skips it)",INFO,Year-1 revenue growth = 15.00%
+META-2019-05,basic@2019,3,"target already printed in the prompt (item 11, grader skips it)",INFO,Levered beta = 1.2526
+META-2019-05,basic@2019,3,alternative value separated from the correct answer,CLOSE (within 2x tolerance),"gap 1.263 vs tolerance 1.177 | Alternative, not scored: value per share on the latest basic share cou"
+META-2019-06,half@2019,4,total points = sum of rubric points,ok,41 vs 41
+META-2019-06,half@2019,4,exactly one final item,ok,1
+META-2019-06,half@2019,4,final_answer text shows the final target,ok,"FCFF years 1-5 $15,170.7, $17,188.5, $18,920.0, $20,215.6, $30,307.1 million | target 30307.1467"
+META-2019-06,half@2019,4,"target already printed in the prompt (item 1, grader skips it)",INFO,Year-1 revenue growth = 15.00%
+META-2019-07,half@2019,5,total points = sum of rubric points,ok,34 vs 34
+META-2019-07,half@2019,5,exactly one final item,ok,1
+META-2019-07,half@2019,5,final_answer text shows the final target,ok,Beta 1.2526; cost of equity 10.29%; cost of debt 2.55%; WACC 10.29%; terminal va | target 117.7377
+META-2019-07,half@2019,5,"target already printed in the prompt (item 1, grader skips it)",INFO,Levered beta = 1.2526
+META-2019-07,half@2019,5,alternative value separated from the correct answer,CLOSE (within 2x tolerance),"gap 1.263 vs tolerance 1.177 | Alternative, not scored: value per share on the latest basic share cou"
+META-2019-08,complex@2019,3,total points = sum of rubric points,ok,75 vs 75
+META-2019-08,complex@2019,3,exactly one final item,ok,1
+META-2019-08,complex@2019,3,final_answer text shows the final target,ok,"Tax 17.94%; WACC 7.77%; FCFF years 1-5 $16,082.9, $18,218.9, $20,073.2, $21,493. | target 188.9444"
+META-2019-08,complex@2019,3,"target already printed in the prompt (item 1, grader skips it)",INFO,Year-1 revenue growth = 15.00%
+META-2019-08,complex@2019,3,alternative value separated from the correct answer,CLOSE (within 2x tolerance),"gap 2.027 vs tolerance 1.889 | Alternative, not scored: value per share on the latest basic share cou"
+VZ-2019-05,basic@2019,3,total points = sum of rubric points,ok,71 vs 71
+VZ-2019-05,basic@2019,3,exactly one final item,ok,1
+VZ-2019-05,basic@2019,3,final_answer text shows the final target,ok,"WACC 6.09%; FCFF years 1-5 $21,210.5, $21,618.6, $22,038.9, $22,471.8, $22,801.5 | target 97.7909"
+VZ-2019-05,basic@2019,3,"target already printed in the prompt (item 1, grader skips it)",INFO,Year-1 revenue growth = 1.92%
+VZ-2019-05,basic@2019,3,"target already printed in the prompt (item 13, grader skips it)",INFO,Pre-tax cost of debt = 3.00%
+VZ-2019-05,basic@2019,3,alternative value separated from the correct answer,OVERLAPS correct answer,"gap 0.001 vs tolerance 0.9779 | Alternative, not scored: value per share on the latest basic share cou"
+VZ-2019-06,half@2019,4,total points = sum of rubric points,ok,41 vs 41
+VZ-2019-06,half@2019,4,exactly one final item,ok,1
+VZ-2019-06,half@2019,4,final_answer text shows the final target,ok,"FCFF years 1-5 $21,210.5, $21,618.6, $22,038.9, $22,471.8, $22,801.5 million | target 22801.5103"
+VZ-2019-07,half@2019,5,total points = sum of rubric points,ok,34 vs 34
+VZ-2019-07,half@2019,5,exactly one final item,ok,1
+VZ-2019-07,half@2019,5,final_answer text shows the final target,ok,Beta 0.8891; cost of equity 7.74%; cost of debt 3.00%; WACC 6.09%; terminal valu | target 97.7909
+VZ-2019-07,half@2019,5,"target already printed in the prompt (item 3, grader skips it)",INFO,Pre-tax cost of debt = 3.00%
+VZ-2019-07,half@2019,5,alternative value separated from the correct answer,OVERLAPS correct answer,"gap 0.001 vs tolerance 0.9779 | Alternative, not scored: value per share on the latest basic share cou"
+VZ-2019-08,complex@2019,3,total points = sum of rubric points,ok,75 vs 75
+VZ-2019-08,complex@2019,3,exactly one final item,ok,1
+VZ-2019-08,complex@2019,3,final_answer text shows the final target,ok,"Tax 10.00%; WACC 5.26%; FCFF years 1-5 $24,242.6, $24,719.2, $25,241.1, $25,810. | target 161.9535"
+VZ-2019-08,complex@2019,3,"target already printed in the prompt (item 1, grader skips it)",INFO,Year-1 revenue growth = 1.92%
+VZ-2019-08,complex@2019,3,"target already printed in the prompt (item 6, grader skips it)",INFO,Effective tax rate on EBIT (years 1-4) = 10.00%
+VZ-2019-08,complex@2019,3,"target already printed in the prompt (item 14, grader skips it)",INFO,Pre-tax cost of debt = 3.00%
+VZ-2019-08,complex@2019,3,alternative value separated from the correct answer,OVERLAPS correct answer,"gap 0.0018 vs tolerance 1.62 | Alternative, not scored: value per share on the latest basic share cou"
+MCD-2019-05,basic@2019,3,total points = sum of rubric points,ok,71 vs 71
+MCD-2019-05,basic@2019,3,exactly one final item,ok,1
+MCD-2019-05,basic@2019,3,final_answer text shows the final target,ok,"WACC 6.61%; FCFF years 1-5 $5,725.2, $5,748.9, $5,801.5, $5,883.5, $6,658.1 mill | target 129.099"
+MCD-2019-05,basic@2019,3,"scored item has zero target (item 1, grader skips it)",INFO,Year-1 revenue growth = 0.00%
+MCD-2019-05,basic@2019,3,"target already printed in the prompt (item 1, grader skips it)",INFO,Year-1 revenue growth = 0.00%
+MCD-2019-05,basic@2019,3,alternative value separated from the correct answer,ok,"gap 3.422 vs tolerance 1.291 | Alternative, not scored: value per share on the latest basic share cou"
+MCD-2019-06,half@2019,4,total points = sum of rubric points,ok,41 vs 41
+MCD-2019-06,half@2019,4,exactly one final item,ok,1
+MCD-2019-06,half@2019,4,final_answer text shows the final target,ok,"FCFF years 1-5 $5,725.2, $5,748.9, $5,801.5, $5,883.5, $6,658.1 million | target 6658.0923"
+MCD-2019-06,half@2019,4,"scored item has zero target (item 1, grader skips it)",INFO,Year-1 revenue growth = 0.00%
+MCD-2019-06,half@2019,4,"target already printed in the prompt (item 1, grader skips it)",INFO,Year-1 revenue growth = 0.00%
+MCD-2019-07,half@2019,5,total points = sum of rubric points,ok,34 vs 34
+MCD-2019-07,half@2019,5,exactly one final item,ok,1
+MCD-2019-07,half@2019,5,final_answer text shows the final target,ok,Beta 0.8617; cost of equity 7.55%; cost of debt 2.55%; WACC 6.61%; terminal valu | target 129.099
+MCD-2019-07,half@2019,5,alternative value separated from the correct answer,ok,"gap 3.422 vs tolerance 1.291 | Alternative, not scored: value per share on the latest basic share cou"
+MCD-2019-08,complex@2019,3,total points = sum of rubric points,ok,75 vs 75
+MCD-2019-08,complex@2019,3,exactly one final item,ok,1
+MCD-2019-08,complex@2019,3,final_answer text shows the final target,ok,"Tax 31.80%; WACC 5.70%; FCFF years 1-5 $4,853.1, $4,877.3, $4,932.0, $5,018.3, $ | target 203.926"
+MCD-2019-08,complex@2019,3,"scored item has zero target (item 1, grader skips it)",INFO,Year-1 revenue growth = 0.00%
+MCD-2019-08,complex@2019,3,"target already printed in the prompt (item 1, grader skips it)",INFO,Year-1 revenue growth = 0.00%
+MCD-2019-08,complex@2019,3,alternative value separated from the correct answer,ok,"gap 5.405 vs tolerance 2.039 | Alternative, not scored: value per share on the latest basic share cou"
+ORLY-2019-05,basic@2019,3,total points = sum of rubric points,ok,71 vs 71
+ORLY-2019-05,basic@2019,3,exactly one final item,ok,1
+ORLY-2019-05,basic@2019,3,final_answer text shows the final target,ok,"WACC 7.48%; FCFF years 1-5 $1,260.0, $1,317.1, $1,365.8, $1,404.8, $1,737.9 mill | target 301.8416"
+ORLY-2019-05,basic@2019,3,alternative value separated from the correct answer,ok,"gap 15.04 vs tolerance 3.018 | Alternative, not scored: value per share on the latest basic share cou"
+ORLY-2019-06,half@2019,4,total points = sum of rubric points,ok,41 vs 41
+ORLY-2019-06,half@2019,4,exactly one final item,ok,1
+ORLY-2019-06,half@2019,4,final_answer text shows the final target,ok,"FCFF years 1-5 $1,260.0, $1,317.1, $1,365.8, $1,404.8, $1,737.9 million | target 1737.9433"
+ORLY-2019-07,half@2019,5,total points = sum of rubric points,ok,34 vs 34
+ORLY-2019-07,half@2019,5,exactly one final item,ok,1
+ORLY-2019-07,half@2019,5,final_answer text shows the final target,ok,Beta 0.9294; cost of equity 8.03%; cost of debt 2.55%; WACC 7.48%; terminal valu | target 301.8416
+ORLY-2019-07,half@2019,5,alternative value separated from the correct answer,ok,"gap 15.04 vs tolerance 3.018 | Alternative, not scored: value per share on the latest basic share cou"
+ORLY-2019-08,complex@2019,3,total points = sum of rubric points,ok,75 vs 75
+ORLY-2019-08,complex@2019,3,exactly one final item,ok,1
+ORLY-2019-08,complex@2019,3,final_answer text shows the final target,ok,"Tax 29.74%; WACC 6.26%; FCFF years 1-5 $1,090.3, $1,141.0, $1,186.0, $1,224.3, $ | target 467.5819"
+ORLY-2019-08,complex@2019,3,"scored item has zero target (item 19, grader skips it)",INFO,Excess cash = cash and short-term investments - 2% of FY2018 revenue = $0.0 million
+ORLY-2019-08,complex@2019,3,"target already printed in the prompt (item 19, grader skips it)",INFO,Excess cash = cash and short-term investments - 2% of FY2018 revenue = $0.0 million
+ORLY-2019-08,complex@2019,3,alternative value separated from the correct answer,ok,"gap 23.29 vs tolerance 4.676 | Alternative, not scored: value per share on the latest basic share cou"
+PEP-2019-05,basic@2019,3,total points = sum of rubric points,ok,71 vs 71
+PEP-2019-05,basic@2019,3,exactly one final item,ok,1
+PEP-2019-05,basic@2019,3,final_answer text shows the final target,ok,"WACC 8.84%; FCFF years 1-5 $7,406.9, $7,521.4, $7,647.6, $7,786.1, $8,677.2 mill | target 64.3075"
+PEP-2019-05,basic@2019,3,alternative value separated from the correct answer,CLOSE (within 2x tolerance),"gap 0.93 vs tolerance 0.6431 | Alternative, not scored: value per share on the latest basic share cou"
+PEP-2019-06,half@2019,4,total points = sum of rubric points,ok,41 vs 41
+PEP-2019-06,half@2019,4,exactly one final item,ok,1
+PEP-2019-06,half@2019,4,final_answer text shows the final target,ok,"FCFF years 1-5 $7,406.9, $7,521.4, $7,647.6, $7,786.1, $8,677.2 million | target 8677.2493"
+PEP-2019-07,half@2019,5,total points = sum of rubric points,ok,34 vs 34
+PEP-2019-07,half@2019,5,exactly one final item,ok,1
+PEP-2019-07,half@2019,5,final_answer text shows the final target,ok,Beta 1.2069; cost of equity 9.97%; cost of debt 2.70%; WACC 8.84%; terminal valu | target 64.3075
+PEP-2019-07,half@2019,5,alternative value separated from the correct answer,CLOSE (within 2x tolerance),"gap 0.93 vs tolerance 0.6431 | Alternative, not scored: value per share on the latest basic share cou"
+PEP-2019-08,complex@2019,3,total points = sum of rubric points,ok,75 vs 75
+PEP-2019-08,complex@2019,3,exactly one final item,ok,1
+PEP-2019-08,complex@2019,3,final_answer text shows the final target,ok,"Tax 12.54%; WACC 6.82%; FCFF years 1-5 $8,284.0, $8,418.9, $8,577.6, $8,761.4, $ | target 116.3908"
+PEP-2019-08,complex@2019,3,alternative value separated from the correct answer,CLOSE (within 2x tolerance),"gap 1.683 vs tolerance 1.164 | Alternative, not scored: value per share on the latest basic share cou"
+MRK-2019-05,basic@2019,3,total points = sum of rubric points,ok,71 vs 71
+MRK-2019-05,basic@2019,3,exactly one final item,ok,1
+MRK-2019-05,basic@2019,3,final_answer text shows the final target,ok,"WACC 9.97%; FCFF years 1-5 $8,988.0, $9,265.6, $9,526.9, $9,769.8, $6,485.4 mill | target 25.731"
+MRK-2019-05,basic@2019,3,alternative value separated from the correct answer,ok,"gap 0.9747 vs tolerance 0.2573 | Alternative, not scored: value per share on the latest basic share cou"
+MRK-2019-06,half@2019,4,total points = sum of rubric points,ok,41 vs 41
+MRK-2019-06,half@2019,4,exactly one final item,ok,1
+MRK-2019-06,half@2019,4,final_answer text shows the final target,ok,"FCFF years 1-5 $8,988.0, $9,265.6, $9,526.9, $9,769.8, $6,485.4 million | target 6485.3575"
+MRK-2019-07,half@2019,5,total points = sum of rubric points,ok,34 vs 34
+MRK-2019-07,half@2019,5,exactly one final item,ok,1
+MRK-2019-07,half@2019,5,final_answer text shows the final target,ok,Beta 1.3280; cost of equity 10.82%; cost of debt 2.55%; WACC 9.97%; terminal val | target 25.731
+MRK-2019-07,half@2019,5,alternative value separated from the correct answer,ok,"gap 0.9747 vs tolerance 0.2573 | Alternative, not scored: value per share on the latest basic share cou"
+MRK-2019-08,complex@2019,3,total points = sum of rubric points,ok,75 vs 75
+MRK-2019-08,complex@2019,3,exactly one final item,ok,1
+MRK-2019-08,complex@2019,3,final_answer text shows the final target,ok,"Tax 35.00%; WACC 7.44%; FCFF years 1-5 $7,889.9, $8,134.8, $8,375.6, $8,611.4, $ | target 42.3461"
+MRK-2019-08,complex@2019,3,"target already printed in the prompt (item 6, grader skips it)",INFO,Effective tax rate on EBIT (years 1-4) = 35.00%
+MRK-2019-08,complex@2019,3,"target already printed in the prompt (item 12, grader skips it)",INFO,Levered beta = 1.2197
+MRK-2019-08,complex@2019,3,alternative value separated from the correct answer,ok,"gap 1.604 vs tolerance 0.4235 | Alternative, not scored: value per share on the latest basic share cou"
+SHW-2019-05,basic@2019,3,total points = sum of rubric points,ok,71 vs 71
+SHW-2019-05,basic@2019,3,exactly one final item,ok,1
+SHW-2019-05,basic@2019,3,final_answer text shows the final target,ok,"WACC 7.95%; FCFF years 1-5 $2,466.1, $2,824.2, $3,142.9, $3,395.7, $3,244.2 mill | target 427.8369"
+SHW-2019-05,basic@2019,3,"target already printed in the prompt (item 1, grader skips it)",INFO,Year-1 revenue growth = 15.00%
+SHW-2019-05,basic@2019,3,"target already printed in the prompt (item 5, grader skips it)",INFO,NWC share of revenue = 12.00%
+SHW-2019-05,basic@2019,3,alternative value separated from the correct answer,ok,"gap 10.47 vs tolerance 4.278 | Alternative, not scored: value per share on the latest basic share cou"
+SHW-2019-06,half@2019,4,total points = sum of rubric points,ok,41 vs 41
+SHW-2019-06,half@2019,4,exactly one final item,ok,1
+SHW-2019-06,half@2019,4,final_answer text shows the final target,ok,"FCFF years 1-5 $2,466.1, $2,824.2, $3,142.9, $3,395.7, $3,244.2 million | target 3244.2477"
+SHW-2019-06,half@2019,4,"target already printed in the prompt (item 1, grader skips it)",INFO,Year-1 revenue growth = 15.00%
+SHW-2019-07,half@2019,5,total points = sum of rubric points,ok,34 vs 34
+SHW-2019-07,half@2019,5,exactly one final item,ok,1
+SHW-2019-07,half@2019,5,final_answer text shows the final target,ok,Beta 1.0627; cost of equity 8.96%; cost of debt 2.70%; WACC 7.95%; terminal valu | target 427.8369
+SHW-2019-07,half@2019,5,alternative value separated from the correct answer,ok,"gap 10.47 vs tolerance 4.278 | Alternative, not scored: value per share on the latest basic share cou"
+SHW-2019-08,complex@2019,3,total points = sum of rubric points,ok,75 vs 75
+SHW-2019-08,complex@2019,3,exactly one final item,ok,1
+SHW-2019-08,complex@2019,3,final_answer text shows the final target,ok,"Tax 10.00%; WACC 6.39%; FCFF years 1-5 $2,821.4, $3,222.2, $3,579.7, $3,865.6, $ | target 736.5539"
+SHW-2019-08,complex@2019,3,"target already printed in the prompt (item 1, grader skips it)",INFO,Year-1 revenue growth = 15.00%
+SHW-2019-08,complex@2019,3,"target already printed in the prompt (item 5, grader skips it)",INFO,NWC share of revenue = 12.00%
+SHW-2019-08,complex@2019,3,"target already printed in the prompt (item 6, grader skips it)",INFO,Effective tax rate on EBIT (years 1-4) = 10.00%
+SHW-2019-08,complex@2019,3,"scored item has zero target (item 19, grader skips it)",INFO,Excess cash = cash and short-term investments - 2% of FY2018 revenue = $0.0 million
+SHW-2019-08,complex@2019,3,"target already printed in the prompt (item 19, grader skips it)",INFO,Excess cash = cash and short-term investments - 2% of FY2018 revenue = $0.0 million
+SHW-2019-08,complex@2019,3,alternative value separated from the correct answer,ok,"gap 18.03 vs tolerance 7.366 | Alternative, not scored: value per share on the latest basic share cou"
+CMCSA-2022-05,basic@2022,3,total points = sum of rubric points,ok,71 vs 71
+CMCSA-2022-05,basic@2022,3,exactly one final item,ok,1
+CMCSA-2022-05,basic@2022,3,final_answer text shows the final target,ok,"WACC 8.73%; FCFF years 1-5 $21,375.0, $22,020.6, $22,610.9, $23,140.2, $18,623.8 | target 37.8439"
+CMCSA-2022-05,basic@2022,3,alternative value separated from the correct answer,CLOSE (within 2x tolerance),"gap 0.5779 vs tolerance 0.3784 | Alternative, not scored: value per share on the latest basic share cou"
+CMCSA-2022-06,half@2022,4,total points = sum of rubric points,ok,41 vs 41
+CMCSA-2022-06,half@2022,4,exactly one final item,ok,1
+CMCSA-2022-06,half@2022,4,final_answer text shows the final target,ok,"FCFF years 1-5 $21,375.0, $22,020.6, $22,610.9, $23,140.2, $18,623.8 million | target 18623.826"
+CMCSA-2022-07,half@2022,5,total points = sum of rubric points,ok,34 vs 34
+CMCSA-2022-07,half@2022,5,exactly one final item,ok,1
+CMCSA-2022-07,half@2022,5,final_answer text shows the final target,ok,Beta 1.0455; cost of equity 11.62%; cost of debt 5.30%; WACC 8.73%; terminal val | target 37.8439
+CMCSA-2022-07,half@2022,5,alternative value separated from the correct answer,CLOSE (within 2x tolerance),"gap 0.5779 vs tolerance 0.3784 | Alternative, not scored: value per share on the latest basic share cou"
+CMCSA-2022-08,complex@2022,3,total points = sum of rubric points,ok,75 vs 75
+CMCSA-2022-08,complex@2022,3,exactly one final item,ok,1
+CMCSA-2022-08,complex@2022,3,final_answer text shows the final target,ok,"Tax 24.36%; WACC 7.15%; FCFF years 1-5 $20,645.7, $21,295.1, $21,919.1, $22,514. | target 63.5458"
+CMCSA-2022-08,complex@2022,3,alternative value separated from the correct answer,CLOSE (within 2x tolerance),"gap 0.9703 vs tolerance 0.6355 | Alternative, not scored: value per share on the latest basic share cou"
+PM-2022-05,basic@2022,3,total points = sum of rubric points,ok,71 vs 71
+PM-2022-05,basic@2022,3,exactly one final item,ok,1
+PM-2022-05,basic@2022,3,final_answer text shows the final target,ok,"WACC 15.68%; FCFF years 1-5 $9,964.3, $10,228.1, $10,482.3, $10,725.9, $10,637.6 | target 29.9664"
+PM-2022-05,basic@2022,3,alternative value separated from the correct answer,OVERLAPS correct answer,"gap 0.1773 vs tolerance 0.2997 | Alternative, not scored: value per share on the latest basic share cou"
+PM-2022-06,half@2022,4,total points = sum of rubric points,ok,41 vs 41
+PM-2022-06,half@2022,4,exactly one final item,ok,1
+PM-2022-06,half@2022,4,final_answer text shows the final target,ok,"FCFF years 1-5 $9,964.3, $10,228.1, $10,482.3, $10,725.9, $10,637.6 million | target 10637.5596"
+PM-2022-07,half@2022,5,total points = sum of rubric points,ok,34 vs 34
+PM-2022-07,half@2022,5,exactly one final item,ok,1
+PM-2022-07,half@2022,5,final_answer text shows the final target,ok,Beta 1.9366; cost of equity 17.86%; cost of debt 4.57%; WACC 15.68%; terminal va | target 29.9664
+PM-2022-07,half@2022,5,alternative value separated from the correct answer,OVERLAPS correct answer,"gap 0.1773 vs tolerance 0.2997 | Alternative, not scored: value per share on the latest basic share cou"
+PM-2022-08,complex@2022,3,total points = sum of rubric points,ok,75 vs 75
+PM-2022-08,complex@2022,3,exactly one final item,ok,1
+PM-2022-08,complex@2022,3,final_answer text shows the final target,ok,"Tax 22.26%; WACC 10.73%; FCFF years 1-5 $9,806.0, $10,065.8, $10,328.8, $10,594. | target 62.8914"
+PM-2022-08,complex@2022,3,alternative value separated from the correct answer,OVERLAPS correct answer,"gap 0.3722 vs tolerance 0.6289 | Alternative, not scored: value per share on the latest basic share cou"
+WMB-2022-05,basic@2022,3,total points = sum of rubric points,ok,71 vs 71
+WMB-2022-05,basic@2022,3,exactly one final item,ok,1
+WMB-2022-05,basic@2022,3,final_answer text shows the final target,ok,"WACC 8.93%; FCFF years 1-5 $2,626.4, $2,934.2, $3,191.7, $3,377.9, $3,045.9 mill | target 13.23"
+WMB-2022-05,basic@2022,3,alternative value separated from the correct answer,OVERLAPS correct answer,"gap 0.0285 vs tolerance 0.1323 | Alternative, not scored: value per share on the latest basic share cou"
+WMB-2022-06,half@2022,4,total points = sum of rubric points,ok,41 vs 41
+WMB-2022-06,half@2022,4,exactly one final item,ok,1
+WMB-2022-06,half@2022,4,final_answer text shows the final target,ok,"FCFF years 1-5 $2,626.4, $2,934.2, $3,191.7, $3,377.9, $3,045.9 million | target 3045.8508"
+WMB-2022-07,half@2022,5,total points = sum of rubric points,ok,34 vs 34
+WMB-2022-07,half@2022,5,exactly one final item,ok,1
+WMB-2022-07,half@2022,5,final_answer text shows the final target,ok,Beta 0.9495; cost of equity 10.95%; cost of debt 7.01%; WACC 8.93%; terminal val | target 13.23
+WMB-2022-07,half@2022,5,alternative value separated from the correct answer,OVERLAPS correct answer,"gap 0.0285 vs tolerance 0.1323 | Alternative, not scored: value per share on the latest basic share cou"
+WMB-2022-08,complex@2022,3,total points = sum of rubric points,ok,75 vs 75
+WMB-2022-08,complex@2022,3,exactly one final item,ok,1
+WMB-2022-08,complex@2022,3,final_answer text shows the final target,ok,"Tax 28.22%; WACC 7.53%; FCFF years 1-5 $2,403.1, $2,688.7, $2,932.4, $3,115.6, $ | target 26.0641"
+WMB-2022-08,complex@2022,3,alternative value separated from the correct answer,OVERLAPS correct answer,"gap 0.0562 vs tolerance 0.2606 | Alternative, not scored: value per share on the latest basic share cou"
+JNJ-2022-05,basic@2022,3,total points = sum of rubric points,ok,71 vs 71
+JNJ-2022-05,basic@2022,3,exactly one final item,ok,1
+JNJ-2022-05,basic@2022,3,final_answer text shows the final target,ok,"WACC 12.19%; FCFF years 1-5 $20,730.8, $22,099.1, $23,287.5, $24,255.1, $19,727. | target 69.8962"
+JNJ-2022-05,basic@2022,3,alternative value separated from the correct answer,CLOSE (within 2x tolerance),"gap 1.189 vs tolerance 0.699 | Alternative, not scored: value per share on the latest basic share cou"
+JNJ-2022-06,half@2022,4,total points = sum of rubric points,ok,41 vs 41
+JNJ-2022-06,half@2022,4,exactly one final item,ok,1
+JNJ-2022-06,half@2022,4,final_answer text shows the final target,ok,"FCFF years 1-5 $20,730.8, $22,099.1, $23,287.5, $24,255.1, $19,727.3 million | target 19727.2608"
+JNJ-2022-07,half@2022,5,total points = sum of rubric points,ok,34 vs 34
+JNJ-2022-07,half@2022,5,exactly one final item,ok,1
+JNJ-2022-07,half@2022,5,final_answer text shows the final target,ok,Beta 1.2186; cost of equity 12.83%; cost of debt 4.57%; WACC 12.19%; terminal va | target 69.8962
+JNJ-2022-07,half@2022,5,alternative value separated from the correct answer,CLOSE (within 2x tolerance),"gap 1.189 vs tolerance 0.699 | Alternative, not scored: value per share on the latest basic share cou"
+JNJ-2022-08,complex@2022,3,total points = sum of rubric points,ok,75 vs 75
+JNJ-2022-08,complex@2022,3,exactly one final item,ok,1
+JNJ-2022-08,complex@2022,3,final_answer text shows the final target,ok,"Tax 10.63%; WACC 9.19%; FCFF years 1-5 $23,025.0, $24,532.7, $25,869.9, $26,995. | target 110.9608"
+JNJ-2022-08,complex@2022,3,"target already printed in the prompt (item 12, grader skips it)",INFO,Levered beta = 1.1465
+JNJ-2022-08,complex@2022,3,alternative value separated from the correct answer,CLOSE (within 2x tolerance),"gap 1.888 vs tolerance 1.11 | Alternative, not scored: value per share on the latest basic share cou"
+UNP-2022-05,basic@2022,3,total points = sum of rubric points,ok,71 vs 71
+UNP-2022-05,basic@2022,3,exactly one final item,ok,1
+UNP-2022-05,basic@2022,3,final_answer text shows the final target,ok,"WACC 10.36%; FCFF years 1-5 $6,110.6, $6,144.0, $6,204.9, $6,294.1, $7,339.2 mil | target 72.8006"
+UNP-2022-05,basic@2022,3,alternative value separated from the correct answer,ok,"gap 2.115 vs tolerance 0.728 | Alternative, not scored: value per share on the latest basic share cou"
+UNP-2022-06,half@2022,4,total points = sum of rubric points,ok,41 vs 41
+UNP-2022-06,half@2022,4,exactly one final item,ok,1
+UNP-2022-06,half@2022,4,final_answer text shows the final target,ok,"FCFF years 1-5 $6,110.6, $6,144.0, $6,204.9, $6,294.1, $7,339.2 million | target 7339.2086"
+UNP-2022-07,half@2022,5,total points = sum of rubric points,ok,34 vs 34
+UNP-2022-07,half@2022,5,exactly one final item,ok,1
+UNP-2022-07,half@2022,5,final_answer text shows the final target,ok,Beta 1.0942; cost of equity 11.96%; cost of debt 4.73%; WACC 10.36%; terminal va | target 72.8006
+UNP-2022-07,half@2022,5,alternative value separated from the correct answer,ok,"gap 2.115 vs tolerance 0.728 | Alternative, not scored: value per share on the latest basic share cou"
+UNP-2022-08,complex@2022,3,total points = sum of rubric points,ok,75 vs 75
+UNP-2022-08,complex@2022,3,exactly one final item,ok,1
+UNP-2022-08,complex@2022,3,final_answer text shows the final target,ok,"Tax 23.34%; WACC 8.13%; FCFF years 1-5 $5,902.0, $5,939.3, $6,010.8, $6,117.4, $ | target 136.1542"
+UNP-2022-08,complex@2022,3,alternative value separated from the correct answer,ok,"gap 3.955 vs tolerance 1.362 | Alternative, not scored: value per share on the latest basic share cou"
+META-2022-05,basic@2022,3,total points = sum of rubric points,ok,71 vs 71
+META-2022-05,basic@2022,3,exactly one final item,ok,1
+META-2022-05,basic@2022,3,final_answer text shows the final target,ok,"WACC 13.41%; FCFF years 1-5 $23,555.8, $26,736.1, $29,483.1, $31,561.1, $51,219. | target 135.1291"
+META-2022-05,basic@2022,3,"target already printed in the prompt (item 1, grader skips it)",INFO,Year-1 revenue growth = 15.00%
+META-2022-05,basic@2022,3,alternative value separated from the correct answer,CLOSE (within 2x tolerance),"gap 2.112 vs tolerance 1.351 | Alternative, not scored: value per share on the latest basic share cou"
+META-2022-06,half@2022,4,total points = sum of rubric points,ok,41 vs 41
+META-2022-06,half@2022,4,exactly one final item,ok,1
+META-2022-06,half@2022,4,final_answer text shows the final target,ok,"FCFF years 1-5 $23,555.8, $26,736.1, $29,483.1, $31,561.1, $51,219.3 million | target 51219.266"
+META-2022-06,half@2022,4,"target already printed in the prompt (item 1, grader skips it)",INFO,Year-1 revenue growth = 15.00%
+META-2022-07,half@2022,5,total points = sum of rubric points,ok,34 vs 34
+META-2022-07,half@2022,5,exactly one final item,ok,1
+META-2022-07,half@2022,5,final_answer text shows the final target,ok,Beta 1.3588; cost of equity 13.81%; cost of debt 4.57%; WACC 13.41%; terminal va | target 135.1291
+META-2022-07,half@2022,5,alternative value separated from the correct answer,CLOSE (within 2x tolerance),"gap 2.112 vs tolerance 1.351 | Alternative, not scored: value per share on the latest basic share cou"
+META-2022-08,complex@2022,3,total points = sum of rubric points,ok,75 vs 75
+META-2022-08,complex@2022,3,exactly one final item,ok,1
+META-2022-08,complex@2022,3,final_answer text shows the final target,ok,"Tax 18.13%; WACC 9.83%; FCFF years 1-5 $25,002.6, $28,368.3, $31,306.7, $33,578. | target 222.8514"
+META-2022-08,complex@2022,3,"target already printed in the prompt (item 1, grader skips it)",INFO,Year-1 revenue growth = 15.00%
+META-2022-08,complex@2022,3,alternative value separated from the correct answer,CLOSE (within 2x tolerance),"gap 3.483 vs tolerance 2.229 | Alternative, not scored: value per share on the latest basic share cou"
+VZ-2022-05,basic@2022,3,total points = sum of rubric points,ok,71 vs 71
+VZ-2022-05,basic@2022,3,exactly one final item,ok,1
+VZ-2022-05,basic@2022,3,final_answer text shows the final target,ok,"WACC 6.87%; FCFF years 1-5 $22,271.6, $22,428.2, $22,661.1, $22,972.5, $25,449.3 | target 72.5985"
+VZ-2022-05,basic@2022,3,alternative value separated from the correct answer,CLOSE (within 2x tolerance),"gap 0.8271 vs tolerance 0.726 | Alternative, not scored: value per share on the latest basic share cou"
+VZ-2022-06,half@2022,4,total points = sum of rubric points,ok,41 vs 41
+VZ-2022-06,half@2022,4,exactly one final item,ok,1
+VZ-2022-06,half@2022,4,final_answer text shows the final target,ok,"FCFF years 1-5 $22,271.6, $22,428.2, $22,661.1, $22,972.5, $25,449.3 million | target 25449.3346"
+VZ-2022-07,half@2022,5,total points = sum of rubric points,ok,34 vs 34
+VZ-2022-07,half@2022,5,exactly one final item,ok,1
+VZ-2022-07,half@2022,5,final_answer text shows the final target,ok,Beta 0.8668; cost of equity 10.37%; cost of debt 4.57%; WACC 6.87%; terminal val | target 72.5985
+VZ-2022-07,half@2022,5,alternative value separated from the correct answer,CLOSE (within 2x tolerance),"gap 0.8271 vs tolerance 0.726 | Alternative, not scored: value per share on the latest basic share cou"
+VZ-2022-08,complex@2022,3,total points = sum of rubric points,ok,75 vs 75
+VZ-2022-08,complex@2022,3,exactly one final item,ok,1
+VZ-2022-08,complex@2022,3,final_answer text shows the final target,ok,"Tax 19.84%; WACC 5.93%; FCFF years 1-5 $22,634.4, $22,798.8, $23,069.3, $23,449. | target 123.2445"
+VZ-2022-08,complex@2022,3,alternative value separated from the correct answer,CLOSE (within 2x tolerance),"gap 1.404 vs tolerance 1.232 | Alternative, not scored: value per share on the latest basic share cou"
+MCD-2022-05,basic@2022,3,total points = sum of rubric points,ok,71 vs 71
+MCD-2022-05,basic@2022,3,exactly one final item,ok,1
+MCD-2022-05,basic@2022,3,final_answer text shows the final target,ok,"WACC 11.84%; FCFF years 1-5 $7,617.4, $7,906.4, $8,161.8, $8,379.3, $8,852.8 mil | target 49.4209"
+MCD-2022-05,basic@2022,3,alternative value separated from the correct answer,CLOSE (within 2x tolerance),"gap 0.5461 vs tolerance 0.4942 | Alternative, not scored: value per share on the latest basic share cou"
+MCD-2022-06,half@2022,4,total points = sum of rubric points,ok,41 vs 41
+MCD-2022-06,half@2022,4,exactly one final item,ok,1
+MCD-2022-06,half@2022,4,final_answer text shows the final target,ok,"FCFF years 1-5 $7,617.4, $7,906.4, $8,161.8, $8,379.3, $8,852.8 million | target 8852.7857"
+MCD-2022-07,half@2022,5,total points = sum of rubric points,ok,34 vs 34
+MCD-2022-07,half@2022,5,exactly one final item,ok,1
+MCD-2022-07,half@2022,5,final_answer text shows the final target,ok,Beta 1.3739; cost of equity 13.92%; cost of debt 4.57%; WACC 11.84%; terminal va | target 49.4209
+MCD-2022-07,half@2022,5,alternative value separated from the correct answer,CLOSE (within 2x tolerance),"gap 0.5461 vs tolerance 0.4942 | Alternative, not scored: value per share on the latest basic share cou"
+MCD-2022-08,complex@2022,3,total points = sum of rubric points,ok,75 vs 75
+MCD-2022-08,complex@2022,3,exactly one final item,ok,1
+MCD-2022-08,complex@2022,3,final_answer text shows the final target,ok,"Tax 21.72%; WACC 8.82%; FCFF years 1-5 $7,544.8, $7,838.9, $8,109.9, $8,354.7, $ | target 115.7993"
+MCD-2022-08,complex@2022,3,alternative value separated from the correct answer,CLOSE (within 2x tolerance),"gap 1.279 vs tolerance 1.158 | Alternative, not scored: value per share on the latest basic share cou"
+ORLY-2022-05,basic@2022,3,total points = sum of rubric points,ok,71 vs 71
+ORLY-2022-05,basic@2022,3,exactly one final item,ok,1
+ORLY-2022-05,basic@2022,3,final_answer text shows the final target,ok,"WACC 11.52%; FCFF years 1-5 $2,239.1, $2,484.9, $2,679.0, $2,803.5, $3,209.2 mil | target 345.2155"
+ORLY-2022-05,basic@2022,3,alternative value separated from the correct answer,ok,"gap 15.6 vs tolerance 3.452 | Alternative, not scored: value per share on the latest basic share cou"
+ORLY-2022-06,half@2022,4,total points = sum of rubric points,ok,41 vs 41
+ORLY-2022-06,half@2022,4,exactly one final item,ok,1
+ORLY-2022-06,half@2022,4,final_answer text shows the final target,ok,"FCFF years 1-5 $2,239.1, $2,484.9, $2,679.0, $2,803.5, $3,209.2 million | target 3209.1638"
+ORLY-2022-07,half@2022,5,total points = sum of rubric points,ok,34 vs 34
+ORLY-2022-07,half@2022,5,exactly one final item,ok,1
+ORLY-2022-07,half@2022,5,final_answer text shows the final target,ok,Beta 1.1498; cost of equity 12.35%; cost of debt 4.57%; WACC 11.52%; terminal va | target 345.2155
+ORLY-2022-07,half@2022,5,alternative value separated from the correct answer,ok,"gap 15.6 vs tolerance 3.452 | Alternative, not scored: value per share on the latest basic share cou"
+ORLY-2022-08,complex@2022,3,total points = sum of rubric points,ok,75 vs 75
+ORLY-2022-08,complex@2022,3,exactly one final item,ok,1
+ORLY-2022-08,complex@2022,3,final_answer text shows the final target,ok,"Tax 22.39%; WACC 8.84%; FCFF years 1-5 $2,195.5, $2,439.4, $2,636.3, $2,769.0, $ | target 585.8122"
+ORLY-2022-08,complex@2022,3,alternative value separated from the correct answer,ok,"gap 26.48 vs tolerance 5.858 | Alternative, not scored: value per share on the latest basic share cou"
+PEP-2022-05,basic@2022,3,total points = sum of rubric points,ok,71 vs 71
+PEP-2022-05,basic@2022,3,exactly one final item,ok,1
+PEP-2022-05,basic@2022,3,final_answer text shows the final target,ok,"WACC 12.20%; FCFF years 1-5 $7,461.6, $8,053.2, $8,555.7, $8,945.1, $11,703.9 mi | target 43.6734"
+PEP-2022-05,basic@2022,3,alternative value separated from the correct answer,OVERLAPS correct answer,"gap 0.1751 vs tolerance 0.4367 | Alternative, not scored: value per share on the latest basic share cou"
+PEP-2022-06,half@2022,4,total points = sum of rubric points,ok,41 vs 41
+PEP-2022-06,half@2022,4,exactly one final item,ok,1
+PEP-2022-06,half@2022,4,final_answer text shows the final target,ok,"FCFF years 1-5 $7,461.6, $8,053.2, $8,555.7, $8,945.1, $11,703.9 million | target 11703.8772"
+PEP-2022-07,half@2022,5,total points = sum of rubric points,ok,34 vs 34
+PEP-2022-07,half@2022,5,exactly one final item,ok,1
+PEP-2022-07,half@2022,5,final_answer text shows the final target,ok,Beta 1.3262; cost of equity 13.58%; cost of debt 5.11%; WACC 12.20%; terminal va | target 43.6734
+PEP-2022-07,half@2022,5,alternative value separated from the correct answer,OVERLAPS correct answer,"gap 0.1751 vs tolerance 0.4367 | Alternative, not scored: value per share on the latest basic share cou"
+PEP-2022-08,complex@2022,3,total points = sum of rubric points,ok,75 vs 75
+PEP-2022-08,complex@2022,3,exactly one final item,ok,1
+PEP-2022-08,complex@2022,3,final_answer text shows the final target,ok,"Tax 21.24%; WACC 9.11%; FCFF years 1-5 $7,430.9, $8,025.0, $8,540.9, $8,956.5, $ | target 87.1734"
+PEP-2022-08,complex@2022,3,alternative value separated from the correct answer,OVERLAPS correct answer,"gap 0.3496 vs tolerance 0.8717 | Alternative, not scored: value per share on the latest basic share cou"
+MRK-2022-05,basic@2022,3,total points = sum of rubric points,ok,71 vs 71
+MRK-2022-05,basic@2022,3,exactly one final item,ok,1
+MRK-2022-05,basic@2022,3,final_answer text shows the final target,ok,"WACC 12.09%; FCFF years 1-5 $7,627.6, $8,577.2, $9,437.5, $10,155.8, $11,486.0 m | target 28.4683"
+MRK-2022-05,basic@2022,3,alternative value separated from the correct answer,OVERLAPS correct answer,"gap 0.1156 vs tolerance 0.2847 | Alternative, not scored: value per share on the latest basic share cou"
+MRK-2022-06,half@2022,4,total points = sum of rubric points,ok,41 vs 41
+MRK-2022-06,half@2022,4,exactly one final item,ok,1
+MRK-2022-06,half@2022,4,final_answer text shows the final target,ok,"FCFF years 1-5 $7,627.6, $8,577.2, $9,437.5, $10,155.8, $11,486.0 million | target 11485.9689"
+MRK-2022-07,half@2022,5,total points = sum of rubric points,ok,34 vs 34
+MRK-2022-07,half@2022,5,exactly one final item,ok,1
+MRK-2022-07,half@2022,5,final_answer text shows the final target,ok,Beta 1.2627; cost of equity 13.14%; cost of debt 4.57%; WACC 12.09%; terminal va | target 28.4683
+MRK-2022-07,half@2022,5,alternative value separated from the correct answer,OVERLAPS correct answer,"gap 0.1156 vs tolerance 0.2847 | Alternative, not scored: value per share on the latest basic share cou"
+MRK-2022-08,complex@2022,3,total points = sum of rubric points,ok,75 vs 75
+MRK-2022-08,complex@2022,3,exactly one final item,ok,1
+MRK-2022-08,complex@2022,3,final_answer text shows the final target,ok,"Tax 18.55%; WACC 9.08%; FCFF years 1-5 $7,924.9, $8,898.7, $9,788.6, $10,543.5,  | target 52.2325"
+MRK-2022-08,complex@2022,3,alternative value separated from the correct answer,OVERLAPS correct answer,"gap 0.2121 vs tolerance 0.5223 | Alternative, not scored: value per share on the latest basic share cou"
+CAT-2022-05,basic@2022,3,total points = sum of rubric points,ok,71 vs 71
+CAT-2022-05,basic@2022,3,exactly one final item,ok,1
+CAT-2022-05,basic@2022,3,final_answer text shows the final target,ok,"WACC 11.10%; FCFF years 1-5 $6,835.4, $6,798.1, $6,794.7, $6,824.7, $5,260.3 mil | target 65.9183"
+CAT-2022-05,basic@2022,3,"scored item has zero target (item 1, grader skips it)",INFO,Year-1 revenue growth = 0.00%
+CAT-2022-05,basic@2022,3,"target already printed in the prompt (item 1, grader skips it)",INFO,Year-1 revenue growth = 0.00%
+CAT-2022-05,basic@2022,3,alternative value separated from the correct answer,ok,"gap 1.551 vs tolerance 0.6592 | Alternative, not scored: value per share on the latest basic share cou"
+CAT-2022-06,half@2022,4,total points = sum of rubric points,ok,41 vs 41
+CAT-2022-06,half@2022,4,exactly one final item,ok,1
+CAT-2022-06,half@2022,4,final_answer text shows the final target,ok,"FCFF years 1-5 $6,835.4, $6,798.1, $6,794.7, $6,824.7, $5,260.3 million | target 5260.3402"
+CAT-2022-06,half@2022,4,"scored item has zero target (item 1, grader skips it)",INFO,Year-1 revenue growth = 0.00%
+CAT-2022-06,half@2022,4,"target already printed in the prompt (item 1, grader skips it)",INFO,Year-1 revenue growth = 0.00%
+CAT-2022-07,half@2022,5,total points = sum of rubric points,ok,34 vs 34
+CAT-2022-07,half@2022,5,exactly one final item,ok,1
+CAT-2022-07,half@2022,5,final_answer text shows the final target,ok,Beta 1.2350; cost of equity 12.94%; cost of debt 4.73%; WACC 11.10%; terminal va | target 65.9183
+CAT-2022-07,half@2022,5,alternative value separated from the correct answer,ok,"gap 1.551 vs tolerance 0.6592 | Alternative, not scored: value per share on the latest basic share cou"
+CAT-2022-08,complex@2022,3,total points = sum of rubric points,ok,75 vs 75
+CAT-2022-08,complex@2022,3,exactly one final item,ok,1
+CAT-2022-08,complex@2022,3,final_answer text shows the final target,ok,"Tax 22.92%; WACC 8.48%; FCFF years 1-5 $6,705.5, $6,658.0, $6,651.9, $6,686.7, $ | target 118.0282"
+CAT-2022-08,complex@2022,3,"scored item has zero target (item 1, grader skips it)",INFO,Year-1 revenue growth = 0.00%
+CAT-2022-08,complex@2022,3,"target already printed in the prompt (item 1, grader skips it)",INFO,Year-1 revenue growth = 0.00%
+CAT-2022-08,complex@2022,3,alternative value separated from the correct answer,ok,"gap 2.778 vs tolerance 1.18 | Alternative, not scored: value per share on the latest basic share cou"
+SHW-2022-05,basic@2022,3,total points = sum of rubric points,ok,71 vs 71
+SHW-2022-05,basic@2022,3,exactly one final item,ok,1
+SHW-2022-05,basic@2022,3,final_answer text shows the final target,ok,"WACC 11.36%; FCFF years 1-5 $2,905.2, $3,058.9, $3,193.6, $3,305.9, $3,065.8 mil | target 72.9798"
+SHW-2022-05,basic@2022,3,alternative value separated from the correct answer,ok,"gap 1.885 vs tolerance 0.7298 | Alternative, not scored: value per share on the latest basic share cou"
+SHW-2022-06,half@2022,4,total points = sum of rubric points,ok,41 vs 41
+SHW-2022-06,half@2022,4,exactly one final item,ok,1
+SHW-2022-06,half@2022,4,final_answer text shows the final target,ok,"FCFF years 1-5 $2,905.2, $3,058.9, $3,193.6, $3,305.9, $3,065.8 million | target 3065.8009"
+SHW-2022-07,half@2022,5,total points = sum of rubric points,ok,34 vs 34
+SHW-2022-07,half@2022,5,exactly one final item,ok,1
+SHW-2022-07,half@2022,5,final_answer text shows the final target,ok,Beta 1.2152; cost of equity 12.81%; cost of debt 4.57%; WACC 11.36%; terminal va | target 72.9798
+SHW-2022-07,half@2022,5,alternative value separated from the correct answer,ok,"gap 1.885 vs tolerance 0.7298 | Alternative, not scored: value per share on the latest basic share cou"
+SHW-2022-08,complex@2022,3,total points = sum of rubric points,ok,75 vs 75
+SHW-2022-08,complex@2022,3,exactly one final item,ok,1
+SHW-2022-08,complex@2022,3,final_answer text shows the final target,ok,"Tax 19.57%; WACC 8.66%; FCFF years 1-5 $2,954.8, $3,112.0, $3,253.8, $3,377.2, $ | target 137.4681"
+SHW-2022-08,complex@2022,3,"scored item has zero target (item 19, grader skips it)",INFO,Excess cash = cash and short-term investments - 2% of FY2021 revenue = $0.0 million
+SHW-2022-08,complex@2022,3,"target already printed in the prompt (item 19, grader skips it)",INFO,Excess cash = cash and short-term investments - 2% of FY2021 revenue = $0.0 million
+SHW-2022-08,complex@2022,3,alternative value separated from the correct answer,ok,"gap 3.551 vs tolerance 1.375 | Alternative, not scored: value per share on the latest basic share cou"

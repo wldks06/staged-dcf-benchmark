@@ -1,0 +1,37 @@
+answers_ver02_qwen3-14b_think_calc_s0_v2_L2345_20261015-165853  [grade_ver05, tolerance=plan, include_thinking=False, qa=QA_set_v2.json]
+
+Questions graded: 34   mean score per question: 63.6%
+Final answers correct: 12/34
+Final-answer marker: exact 27, missing 7 (missing = final scored zero)
+Hit the token limit: 5 ['META-03', 'VZ-03', 'CAT-03', 'META-08', 'CEG-08']
+Thinking never finished: 3 ['META-03', 'CAT-03', 'CEG-08']
+
+Final answers correct by tier and level:
+  basic    L3    5/19  =  26.3%
+  complex  L3    6/13  =  46.2%
+  half     L4    1/2   =  50.0%
+
+Used basic shares (final wrong AND matched the basic-share value): 1/27   (also matched but final correct, not counted: 7)
+   SCCO-03
+
+By tier:
+  basic                                     726/1310 =  55.4%
+  complex                                   687/937  =  73.3%
+  half                                       63/78   =  80.8%
+
+By level:
+  3                                        1413/2247 =  62.9%
+  4                                          63/78   =  80.8%
+
+By step:
+  Step 2. Project the future                194/332  =  58.4%
+  Step 3. Compute free cash flow            700/855  =  81.9%
+  Step 4. Discount to today                 434/732  =  59.3%
+  Step 5. Value and decide                  148/406  =  36.5%
+
+By kind:
+  final                                     120/340  =  35.3%
+  middle                                    336/670  =  50.1%
+  step                                     1020/1315 =  77.6%
+
+Excluded items: {'input given in data table': 321, 'target already in prompt': 9, 'rounding not auto-graded': 34, 'zero target not auto-graded': 13}

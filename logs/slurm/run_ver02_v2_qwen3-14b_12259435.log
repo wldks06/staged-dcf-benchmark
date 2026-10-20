@@ -1,0 +1,812 @@
+[env_ver02] 2026-10-15 05:15:08 host=g88.quartz.uits.iu.edu job=12259435 partition=h100-single
+[env_ver02] GPUs: NVIDIA H100 80GB HBM3, 81559 MiB
+[env_ver02] env=$MODEL_STORE/conda-env python=$MODEL_STORE/conda-env/bin/python dtype=bfloat16 ngpu=1
+vllm 0.31.0 | torch 2.13.0+cu130 | cuda True
+(MainProcess pid=598433) INFO 10-15 05:22:41 [api_utils.py:286] non-default args: {'dtype': 'bfloat16', 'max_model_len': 32768, 'enable_prefix_caching': True, 'gpu_memory_utilization': 0.9, 'disable_log_stats': True, 'model': '$MODEL_STORE/hf_home/hub/models--Qwen--Qwen3-14B/snapshots/40c069824f4251a91eefaf281ebe4c544efd3e18'}
+(MainProcess pid=598433) WARNING 10-15 05:22:41 [interface.py:1355] Unknown vLLM environment variable detected: VLLM_USE_FLASHINFER_MOE_FP8
+(MainProcess pid=598433) WARNING 10-15 05:22:41 [interface.py:1355] Unknown vLLM environment variable detected: VLLM_USE_FLASHINFER_MOE_FP16
+(MainProcess pid=598433) INFO 10-15 05:22:41 [model.py:699] Resolved architecture: Qwen3ForCausalLM
+(MainProcess pid=598433) INFO 10-15 05:22:41 [model.py:2109] Using max model len 32768
+(MainProcess pid=598433) INFO 10-15 05:22:41 [scheduler.py:308] Chunked prefill is enabled with max_num_batched_tokens=16384.
+(MainProcess pid=598433) INFO 10-15 05:22:41 [kernel.py:408] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'], gelu_and_mul_sparse=['triton', 'native'])
+(EngineCore pid=598798) INFO 10-15 05:22:45 [core.py:129] Initializing a V1 LLM engine (v0.31.0) with config: model='$MODEL_STORE/hf_home/hub/models--Qwen--Qwen3-14B/snapshots/40c069824f4251a91eefaf281ebe4c544efd3e18', speculative_config=None, tokenizer='$MODEL_STORE/hf_home/hub/models--Qwen--Qwen3-14B/snapshots/40c069824f4251a91eefaf281ebe4c544efd3e18', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=32768, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=None, quantization_config=None, enforce_eager=False, aux_output_config=AuxOutputConfig(enable_return_routed_experts=False, max_bytes=None), kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, per_request_spec_decode_metrics='none', kv_cache_metrics=False, kv_cache_metrics_sample=0.01, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False, jit_monitor_mode='warn', jit_monitor_verbose=False), seed=0, served_model_name=$MODEL_STORE/hf_home/hub/models--Qwen--Qwen3-14B/snapshots/40c069824f4251a91eefaf281ebe4c544efd3e18, enable_prefix_caching=True, enable_chunked_prefill=True, pooler_config=None, compilation_config={'mode': <CompilationMode.VLLM_COMPILE: 3>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['none'], 'ir_enable_torch_wrap': True, 'splitting_ops': ['vllm::unified_attention_with_output', 'vllm::unified_mla_attention_with_output', 'vllm::mamba_mixer2', 'vllm::mamba_mixer', 'vllm::short_conv', 'vllm::qwen4_exp_ple_short_conv', 'vllm::qwen4_exp_qsa_with_output', 'vllm::linear_attention', 'vllm::qwen_gdn_attention_core', 'vllm::qwen_gdn_attention_core_fused_norm_packed', 'vllm::gdn_attention_core_xpu', 'vllm::olmo_hybrid_gdn_full_forward', 'vllm::sparse_attn_indexer', 'vllm::rocm_aiter_sparse_attn_indexer', 'vllm::deepseek_v4_attention', 'vllm::hpc_rope_norm_forward', 'vllm::unified_kv_cache_update', 'vllm::unified_mla_kv_cache_update'], 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'compile_sizes': [], 'compile_ranges_endpoints': [16384], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.FULL_AND_PIECEWISE: (2, 1)>, 'cudagraph_num_of_warmups': 1, 'cudagraph_capture_sizes': [1, 2, 4, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 120, 128, 136, 144, 152, 160, 168, 176, 184, 192, 200, 208, 216, 224, 232, 240, 248, 256, 272, 288, 304, 320, 336, 352, 368, 384, 400, 416, 432, 448, 464, 480, 496, 512], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': False, 'fuse_act_quant': False, 'fuse_attn_quant': False, 'enable_sp': False, 'fuse_gemm_comms': False, 'fuse_allreduce_rms': False, 'enable_qk_norm_rope_fusion': False, 'fuse_rope_kvcache_cat_mla': False, 'fuse_act_padding': False, 'fuse_qk_norm_rope_kvcache': False}, 'max_cudagraph_capture_size': 512, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': False, 'static_all_moe_layers': []}, kernel_config=KernelConfig(ir_op_priority=IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'], gelu_and_mul_sparse=['triton', 'native']), enable_flashinfer_autotune=True, enable_cutedsl_warmup=True, enable_jit_warmup=True, moe_backend='auto', sparse_indexer_topk_backend='auto', linear_backend='auto', linear_backend_per_quant=None)
+(EngineCore pid=598798) INFO 10-15 05:23:07 [parallel_state.py:1825] world_size=1 rank=0 local_rank=0 distributed_init_method=file:///tmp/vllm_dist_e27be64f17eb4511badc835f6335f124 backend=nccl
+(EngineCore pid=598798) INFO 10-15 05:23:08 [parallel_state.py:2269] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, ETP rank 0, EP rank N/A, EPLB rank N/A
+(EngineCore pid=598798) INFO 10-15 05:23:08 [gpu_worker.py:479] Using V2 Model Runner
+(EngineCore pid=598798) INFO 10-15 05:23:11 [model_runner.py:375] Loading model from scratch...
+(EngineCore pid=598798) INFO 10-15 05:23:14 [cuda.py:526] Using FLASH_ATTN attention backend out of potential backends: ['FLASH_ATTN', 'TRITON_ATTN', 'FLEX_ATTENTION'].
+(EngineCore pid=598798) INFO 10-15 05:23:14 [flash_attn.py:1167] Using FlashAttention version 3
+(EngineCore pid=598798) INFO 10-15 05:23:20 [weight_utils.py:1063] Filesystem type for checkpoints: LUSTRE. Checkpoint size: 27.51 GiB. Available RAM: 1469.52 GiB.
+(EngineCore pid=598798) INFO 10-15 05:23:20 [weight_utils.py:1025] Prefetching checkpoint files into page cache started (in background, num_threads=8, block_size=16777216 bytes)
+Loading safetensors checkpoint shards:   0% Completed | 0/8 [00:00<?, ?it/s]
+(EngineCore pid=598798) INFO 10-15 05:23:25 [weight_utils.py:997] Prefetching checkpoint files: 10% (1/8)
+(EngineCore pid=598798) INFO 10-15 05:23:28 [weight_utils.py:997] Prefetching checkpoint files: 20% (2/8)
+(EngineCore pid=598798) INFO 10-15 05:23:28 [weight_utils.py:997] Prefetching checkpoint files: 30% (3/8)
+(EngineCore pid=598798) INFO 10-15 05:23:29 [weight_utils.py:997] Prefetching checkpoint files: 40% (4/8)
+(EngineCore pid=598798) INFO 10-15 05:23:30 [weight_utils.py:997] Prefetching checkpoint files: 50% (5/8)
+Loading safetensors checkpoint shards:  12% Completed | 1/8 [00:10<01:12, 10.39s/it]
+(EngineCore pid=598798) INFO 10-15 05:23:30 [weight_utils.py:997] Prefetching checkpoint files: 60% (6/8)
+(EngineCore pid=598798) INFO 10-15 05:23:30 [weight_utils.py:997] Prefetching checkpoint files: 70% (7/8)
+(EngineCore pid=598798) INFO 10-15 05:23:30 [weight_utils.py:997] Prefetching checkpoint files: 80% (8/8)
+(EngineCore pid=598798) INFO 10-15 05:23:30 [weight_utils.py:1020] Prefetching checkpoint files into page cache finished in 10.42s
+Loading safetensors checkpoint shards:  25% Completed | 2/8 [00:12<00:31,  5.30s/it]
+Loading safetensors checkpoint shards:  38% Completed | 3/8 [00:14<00:18,  3.76s/it]
+Loading safetensors checkpoint shards:  50% Completed | 4/8 [00:15<00:11,  2.96s/it]
+Loading safetensors checkpoint shards:  62% Completed | 5/8 [00:17<00:07,  2.50s/it]
+Loading safetensors checkpoint shards:  75% Completed | 6/8 [00:19<00:04,  2.23s/it]
+Loading safetensors checkpoint shards:  88% Completed | 7/8 [00:20<00:02,  2.07s/it]
+Loading safetensors checkpoint shards: 100% Completed | 8/8 [00:21<00:00,  1.71s/it]
+Loading safetensors checkpoint shards: 100% Completed | 8/8 [00:21<00:00,  2.73s/it]
+
+(EngineCore pid=598798) INFO 10-15 05:23:42 [default_loader.py:484] Loading weights took 21.97 seconds
+(EngineCore pid=598798) INFO 10-15 05:23:42 [model_runner.py:407] Model loading took 27.52 GiB memory and 31.905466 seconds
+(EngineCore pid=598798) INFO 10-15 05:23:42 [topk_topp_sampler.py:96] FlashInfer top-p/top-k sampling disabled via VLLM_USE_FLASHINFER_SAMPLER=0.
+(EngineCore pid=598798) INFO 10-15 05:23:42 [torch_utils.py:286] Reducing Torch threads from 16 to 1 for serving. Set OMP_NUM_THREADS in the external environment to override.
+(EngineCore pid=598798) INFO 10-15 05:23:42 [utils.py:343] Using LBNHC KV cache layout.
+(EngineCore pid=598798) INFO 10-15 05:24:53 [backends.py:1090] Using cache directory: $MODEL_STORE/vllm_cache/torch_compile_cache/a848aed3c4/rank_0_0/backbone for vLLM's torch.compile
+(EngineCore pid=598798) INFO 10-15 05:24:53 [backends.py:1151] Dynamo bytecode transform time: 12.10 s
+(EngineCore pid=598798) INFO 10-15 05:25:25 [backends.py:391] Compiling a graph for compile range (1, 16384) takes 31.14 s
+(EngineCore pid=598798) INFO 10-15 05:25:29 [backends.py:916] collected artifacts: 41 entries, 3 artifacts, 6668904 bytes total
+(EngineCore pid=598798) INFO 10-15 05:25:29 [decorators.py:717] saved AOT compiled function to $MODEL_STORE/vllm_cache/torch_compile_cache/torch_aot_compile/5bac55381a894a2aab6555d317526daddd7ee48e6f2990e6c7da4ae901a99b13/rank_0_0/model
+(EngineCore pid=598798) INFO 10-15 05:25:29 [monitor.py:53] torch.compile took 47.85 s in total
+(EngineCore pid=598798) INFO 10-15 05:25:30 [monitor.py:81] Initial profiling/warmup run took 0.77 s
+Capturing CUDA graphs (PIECEWISE):   0%|          | 0/51 [00:00<?, ?it/s]Capturing CUDA graphs (PIECEWISE):   2%|▏         | 1/51 [00:01<01:08,  1.37s/it]Capturing CUDA graphs (PIECEWISE):   4%|▍         | 2/51 [00:01<00:33,  1.46it/s]Capturing CUDA graphs (PIECEWISE):   6%|▌         | 3/51 [00:01<00:22,  2.14it/s]Capturing CUDA graphs (PIECEWISE):   8%|▊         | 4/51 [00:01<00:16,  2.80it/s]Capturing CUDA graphs (PIECEWISE):  10%|▉         | 5/51 [00:02<00:13,  3.31it/s]Capturing CUDA graphs (PIECEWISE):  12%|█▏        | 6/51 [00:02<00:11,  3.82it/s]Capturing CUDA graphs (PIECEWISE):  14%|█▎        | 7/51 [00:02<00:10,  4.24it/s]Capturing CUDA graphs (PIECEWISE):  16%|█▌        | 8/51 [00:02<00:09,  4.62it/s]Capturing CUDA graphs (PIECEWISE):  18%|█▊        | 9/51 [00:02<00:08,  4.92it/s]Capturing CUDA graphs (PIECEWISE):  20%|█▉        | 10/51 [00:03<00:07,  5.25it/s]Capturing CUDA graphs (PIECEWISE):  22%|██▏       | 11/51 [00:03<00:07,  5.49it/s]Capturing CUDA graphs (PIECEWISE):  24%|██▎       | 12/51 [00:03<00:06,  5.74it/s]Capturing CUDA graphs (PIECEWISE):  25%|██▌       | 13/51 [00:03<00:06,  5.89it/s]Capturing CUDA graphs (PIECEWISE):  27%|██▋       | 14/51 [00:03<00:06,  6.13it/s]Capturing CUDA graphs (PIECEWISE):  29%|██▉       | 15/51 [00:03<00:05,  6.34it/s]Capturing CUDA graphs (PIECEWISE):  31%|███▏      | 16/51 [00:03<00:05,  6.62it/s]Capturing CUDA graphs (PIECEWISE):  33%|███▎      | 17/51 [00:04<00:04,  6.85it/s]Capturing CUDA graphs (PIECEWISE):  35%|███▌      | 18/51 [00:04<00:04,  7.07it/s]Capturing CUDA graphs (PIECEWISE):  37%|███▋      | 19/51 [00:04<00:04,  7.33it/s]Capturing CUDA graphs (PIECEWISE):  39%|███▉      | 20/51 [00:04<00:04,  7.56it/s]Capturing CUDA graphs (PIECEWISE):  41%|████      | 21/51 [00:04<00:03,  7.75it/s]Capturing CUDA graphs (PIECEWISE):  43%|████▎     | 22/51 [00:04<00:03,  7.79it/s]Capturing CUDA graphs (PIECEWISE):  45%|████▌     | 23/51 [00:04<00:03,  7.92it/s]Capturing CUDA graphs (PIECEWISE):  47%|████▋     | 24/51 [00:04<00:03,  8.12it/s]Capturing CUDA graphs (PIECEWISE):  49%|████▉     | 25/51 [00:05<00:03,  8.29it/s]Capturing CUDA graphs (PIECEWISE):  51%|█████     | 26/51 [00:05<00:02,  8.43it/s]Capturing CUDA graphs (PIECEWISE):  53%|█████▎    | 27/51 [00:05<00:02,  8.75it/s]Capturing CUDA graphs (PIECEWISE):  55%|█████▍    | 28/51 [00:05<00:02,  8.85it/s]Capturing CUDA graphs (PIECEWISE):  57%|█████▋    | 29/51 [00:05<00:02,  9.05it/s]Capturing CUDA graphs (PIECEWISE):  59%|█████▉    | 30/51 [00:05<00:02,  9.18it/s]Capturing CUDA graphs (PIECEWISE):  63%|██████▎   | 32/51 [00:05<00:01,  9.69it/s]Capturing CUDA graphs (PIECEWISE):  67%|██████▋   | 34/51 [00:05<00:01,  9.92it/s]Capturing CUDA graphs (PIECEWISE):  71%|███████   | 36/51 [00:06<00:01, 10.41it/s]Capturing CUDA graphs (PIECEWISE):  75%|███████▍  | 38/51 [00:06<00:01, 10.71it/s]Capturing CUDA graphs (PIECEWISE):  78%|███████▊  | 40/51 [00:06<00:00, 11.31it/s]Capturing CUDA graphs (PIECEWISE):  82%|████████▏ | 42/51 [00:06<00:00, 11.72it/s]Capturing CUDA graphs (PIECEWISE):  86%|████████▋ | 44/51 [00:06<00:00, 12.54it/s]Capturing CUDA graphs (PIECEWISE):  90%|█████████ | 46/51 [00:06<00:00, 13.26it/s]Capturing CUDA graphs (PIECEWISE):  94%|█████████▍| 48/51 [00:07<00:00, 14.46it/s]Capturing CUDA graphs (PIECEWISE):  98%|█████████▊| 50/51 [00:07<00:00, 15.77it/s]Capturing CUDA graphs (PIECEWISE): 100%|██████████| 51/51 [00:07<00:00,  7.09it/s]
+Capturing CUDA graphs (FULL):   0%|          | 0/2 [00:00<?, ?it/s]Capturing CUDA graphs (FULL): 100%|██████████| 2/2 [00:00<00:00, 21.57it/s]
+(EngineCore pid=598798) INFO 10-15 05:25:41 [model_runner.py:1087] Graph capturing finished in 8 secs, took 0.67 GiB
+(EngineCore pid=598798) INFO 10-15 05:25:42 [gpu_worker.py:692] Available KV cache memory: 39.7 GiB
+(EngineCore pid=598798) INFO 10-15 05:25:42 [gpu_worker.py:707] CUDA graph memory profiling is enabled (default since v0.21.0). The current --gpu-memory-utilization=0.9000 is equivalent to --gpu-memory-utilization=0.8868 without CUDA graph memory profiling. To maintain the same effective KV cache size as before, increase --gpu-memory-utilization to 0.9132. To disable, set VLLM_MEMORY_PROFILER_ESTIMATE_CUDAGRAPHS=0.
+(EngineCore pid=598798) INFO 10-15 05:25:42 [kv_cache_utils.py:2464] GPU KV cache size: 260,176 tokens, Maximum concurrency for 32,768 tokens per request: 7.94x
+(EngineCore pid=598798) INFO 10-15 05:25:44 [kernel_warmup.py:172] JIT kernel warmup starting.
+(EngineCore pid=598798) INFO 10-15 05:25:44 [kernel_warmup.py:185] JIT kernel warmup finished in 0.00s.
+Capturing CUDA graphs (PIECEWISE):   0%|          | 0/51 [00:00<?, ?it/s]Capturing CUDA graphs (PIECEWISE):   2%|▏         | 1/51 [00:00<00:15,  3.27it/s]Capturing CUDA graphs (PIECEWISE):   4%|▍         | 2/51 [00:00<00:13,  3.53it/s]Capturing CUDA graphs (PIECEWISE):   6%|▌         | 3/51 [00:00<00:13,  3.63it/s]Capturing CUDA graphs (PIECEWISE):   8%|▊         | 4/51 [00:01<00:12,  3.76it/s]Capturing CUDA graphs (PIECEWISE):  10%|▉         | 5/51 [00:01<00:12,  3.79it/s]Capturing CUDA graphs (PIECEWISE):  12%|█▏        | 6/51 [00:01<00:11,  3.93it/s]Capturing CUDA graphs (PIECEWISE):  14%|█▎        | 7/51 [00:01<00:10,  4.03it/s]Capturing CUDA graphs (PIECEWISE):  16%|█▌        | 8/51 [00:02<00:10,  4.18it/s]Capturing CUDA graphs (PIECEWISE):  18%|█▊        | 9/51 [00:02<00:09,  4.28it/s]Capturing CUDA graphs (PIECEWISE):  20%|█▉        | 10/51 [00:02<00:09,  4.44it/s]Capturing CUDA graphs (PIECEWISE):  22%|██▏       | 11/51 [00:02<00:08,  4.56it/s]Capturing CUDA graphs (PIECEWISE):  24%|██▎       | 12/51 [00:02<00:08,  4.75it/s]Capturing CUDA graphs (PIECEWISE):  25%|██▌       | 13/51 [00:03<00:07,  4.86it/s]Capturing CUDA graphs (PIECEWISE):  27%|██▋       | 14/51 [00:03<00:07,  5.07it/s]Capturing CUDA graphs (PIECEWISE):  29%|██▉       | 15/51 [00:03<00:06,  5.23it/s]Capturing CUDA graphs (PIECEWISE):  31%|███▏      | 16/51 [00:03<00:06,  5.48it/s]Capturing CUDA graphs (PIECEWISE):  33%|███▎      | 17/51 [00:03<00:05,  5.67it/s]Capturing CUDA graphs (PIECEWISE):  35%|███▌      | 18/51 [00:03<00:05,  5.81it/s]Capturing CUDA graphs (PIECEWISE):  37%|███▋      | 19/51 [00:04<00:05,  6.04it/s]Capturing CUDA graphs (PIECEWISE):  39%|███▉      | 20/51 [00:04<00:04,  6.23it/s]Capturing CUDA graphs (PIECEWISE):  41%|████      | 21/51 [00:04<00:04,  6.36it/s]Capturing CUDA graphs (PIECEWISE):  43%|████▎     | 22/51 [00:04<00:04,  6.46it/s]Capturing CUDA graphs (PIECEWISE):  45%|████▌     | 23/51 [00:04<00:04,  6.70it/s]Capturing CUDA graphs (PIECEWISE):  47%|████▋     | 24/51 [00:04<00:03,  6.89it/s]Capturing CUDA graphs (PIECEWISE):  49%|████▉     | 25/51 [00:04<00:03,  7.02it/s]Capturing CUDA graphs (PIECEWISE):  51%|█████     | 26/51 [00:05<00:03,  7.13it/s]Capturing CUDA graphs (PIECEWISE):  53%|█████▎    | 27/51 [00:05<00:03,  7.40it/s]Capturing CUDA graphs (PIECEWISE):  55%|█████▍    | 28/51 [00:05<00:03,  7.62it/s]Capturing CUDA graphs (PIECEWISE):  57%|█████▋    | 29/51 [00:05<00:02,  7.79it/s]Capturing CUDA graphs (PIECEWISE):  59%|█████▉    | 30/51 [00:05<00:02,  7.89it/s]Capturing CUDA graphs (PIECEWISE):  61%|██████    | 31/51 [00:05<00:02,  8.24it/s]Capturing CUDA graphs (PIECEWISE):  63%|██████▎   | 32/51 [00:05<00:02,  8.49it/s]Capturing CUDA graphs (PIECEWISE):  65%|██████▍   | 33/51 [00:05<00:02,  8.70it/s]Capturing CUDA graphs (PIECEWISE):  67%|██████▋   | 34/51 [00:05<00:01,  8.85it/s]Capturing CUDA graphs (PIECEWISE):  71%|███████   | 36/51 [00:06<00:01,  9.52it/s]Capturing CUDA graphs (PIECEWISE):  75%|███████▍  | 38/51 [00:06<00:01,  9.85it/s]Capturing CUDA graphs (PIECEWISE):  78%|███████▊  | 40/51 [00:06<00:01, 10.56it/s]Capturing CUDA graphs (PIECEWISE):  82%|████████▏ | 42/51 [00:06<00:00, 11.03it/s]Capturing CUDA graphs (PIECEWISE):  86%|████████▋ | 44/51 [00:06<00:00, 11.99it/s]Capturing CUDA graphs (PIECEWISE):  90%|█████████ | 46/51 [00:06<00:00, 12.62it/s]Capturing CUDA graphs (PIECEWISE):  94%|█████████▍| 48/51 [00:07<00:00, 14.13it/s]Capturing CUDA graphs (PIECEWISE):  98%|█████████▊| 50/51 [00:07<00:00, 15.31it/s]Capturing CUDA graphs (PIECEWISE): 100%|██████████| 51/51 [00:07<00:00,  7.06it/s]
+Capturing CUDA graphs (FULL):   0%|          | 0/51 [00:00<?, ?it/s]Capturing CUDA graphs (FULL):   6%|▌         | 3/51 [00:00<00:02, 21.01it/s]Capturing CUDA graphs (FULL):  12%|█▏        | 6/51 [00:00<00:02, 21.45it/s]Capturing CUDA graphs (FULL):  18%|█▊        | 9/51 [00:00<00:01, 23.15it/s]Capturing CUDA graphs (FULL):  24%|██▎       | 12/51 [00:00<00:01, 24.54it/s]Capturing CUDA graphs (FULL):  29%|██▉       | 15/51 [00:00<00:01, 25.45it/s]Capturing CUDA graphs (FULL):  37%|███▋      | 19/51 [00:00<00:01, 27.58it/s]Capturing CUDA graphs (FULL):  45%|████▌     | 23/51 [00:00<00:00, 29.11it/s]Capturing CUDA graphs (FULL):  53%|█████▎    | 27/51 [00:00<00:00, 30.38it/s]Capturing CUDA graphs (FULL):  61%|██████    | 31/51 [00:01<00:00, 31.51it/s]Capturing CUDA graphs (FULL):  69%|██████▊   | 35/51 [00:01<00:00, 32.80it/s]Capturing CUDA graphs (FULL):  76%|███████▋  | 39/51 [00:01<00:00, 33.94it/s]Capturing CUDA graphs (FULL):  84%|████████▍ | 43/51 [00:01<00:00, 34.98it/s]Capturing CUDA graphs (FULL):  92%|█████████▏| 47/51 [00:01<00:00, 36.33it/s]Capturing CUDA graphs (FULL): 100%|██████████| 51/51 [00:01<00:00, 31.19it/s]
+(EngineCore pid=598798) INFO 10-15 05:26:49 [model_runner.py:1087] Graph capturing finished in 10 secs, took 0.50 GiB
+(EngineCore pid=598798) INFO 10-15 05:26:49 [gpu_worker.py:892] CUDA graph pool memory: 0.5 GiB (actual), 1.05 GiB (estimated), difference: 0.55 GiB (111.4%).
+(EngineCore pid=598798) INFO 10-15 05:26:49 [gpu_worker.py:955] Free memory on device (78.66/79.18 GiB) on startup. Desired GPU memory utilization is (0.9, 71.26 GiB). Actual usage is 28.45 GiB for consumed memory (weights + non-torch), 3.11 GiB for peak activation, and 0.5 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=41939772519` (39.06 GiB) to fit into requested memory, or `--kv-cache-memory=49888017920` (46.46 GiB) to fully utilize gpu memory. Current kv cache memory in use is 39.7 GiB.
+(EngineCore pid=598798) INFO 10-15 05:27:19 [jit_monitor.py:84] Kernel JIT monitor activated; monitored JIT compilations during inference will use mode=warn.
+(EngineCore pid=598798) INFO 10-15 05:27:19 [core.py:373] init engine (profile, create kv cache, warmup model) took 216.94 s (compilation: 47.85 s)
+(EngineCore pid=598798) INFO 10-15 05:27:20 [kernel.py:408] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'], gelu_and_mul_sparse=['triton', 'native'])
+(MainProcess pid=598433) INFO 10-15 05:27:20 [hf.py:646] Detected the chat template content format to be 'string'. You can set `--chat-template-content-format` to override this.
+Loaded Qwen/Qwen3-14B (vLLM 0.31.0, tp=1); questions [('v2', 184), ('ver03', 104), ('ver03_newco', 20)]; tools ['none', 'calc']; seeds [0, 1, 2]
+(EngineCore pid=598798) WARNING 10-15 05:27:21 [jit_monitor.py:140] Triton kernel JIT compilation during inference: _topp_sb_stats_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
+(EngineCore pid=598798) WARNING 10-15 05:27:22 [jit_monitor.py:140] Triton kernel JIT compilation during inference: _topp_sb_step_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
+(EngineCore pid=598798) WARNING 10-15 05:27:23 [jit_monitor.py:140] Triton kernel JIT compilation during inference: _topp_sb_mask_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
+(EngineCore pid=598798) WARNING 10-15 05:27:29 [jit_monitor.py:140] Triton kernel JIT compilation during inference: _topk_topp_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
+Finished $REPO_ROOT/results/ver02_runs/qwen3-14b/answers_ver02_qwen3-14b_think_s0_v2_L2345_20261015-051808.jsonl: 184 answers in 1039.0s, 1 hit the token limit
+Finished $REPO_ROOT/results/ver02_runs/qwen3-14b/answers_ver02_qwen3-14b_think_s0_ver03_L2345_20261015-051808.jsonl: 104 answers in 1076.1s, 0 hit the token limit
+Finished $REPO_ROOT/results/ver02_runs/qwen3-14b/answers_ver02_qwen3-14b_think_s0_ver03_newco_L2345_20261015-051808.jsonl: 20 answers in 318.9s, 0 hit the token limit
+Finished $REPO_ROOT/results/ver02_runs/qwen3-14b/answers_ver02_qwen3-14b_think_s1_v2_L2345_20261015-051808.jsonl: 184 answers in 1023.8s, 2 hit the token limit
+Finished $REPO_ROOT/results/ver02_runs/qwen3-14b/answers_ver02_qwen3-14b_think_s1_ver03_L2345_20261015-051808.jsonl: 104 answers in 1104.1s, 0 hit the token limit
+Finished $REPO_ROOT/results/ver02_runs/qwen3-14b/answers_ver02_qwen3-14b_think_s1_ver03_newco_L2345_20261015-051808.jsonl: 20 answers in 328.4s, 0 hit the token limit
+Finished $REPO_ROOT/results/ver02_runs/qwen3-14b/answers_ver02_qwen3-14b_think_s2_v2_L2345_20261015-051808.jsonl: 184 answers in 1107.6s, 1 hit the token limit
+Finished $REPO_ROOT/results/ver02_runs/qwen3-14b/answers_ver02_qwen3-14b_think_s2_ver03_L2345_20261015-051808.jsonl: 104 answers in 1063.0s, 0 hit the token limit
+Finished $REPO_ROOT/results/ver02_runs/qwen3-14b/answers_ver02_qwen3-14b_think_s2_ver03_newco_L2345_20261015-051808.jsonl: 20 answers in 302.6s, 0 hit the token limit
+  [qwen3-14b_think_calc_s0] round 1: 180 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 2: 171 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 3: 159 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 4: 156 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 5: 148 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 6: 144 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 7: 137 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 8: 130 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 9: 120 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 10: 116 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 11: 98 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 12: 93 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 13: 87 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 14: 84 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 15: 81 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 16: 80 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 17: 79 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 18: 79 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 19: 78 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 20: 75 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 21: 72 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 22: 69 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 23: 67 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 24: 66 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 25: 64 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 26: 64 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 27: 62 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 28: 62 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 29: 61 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 30: 61 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 31: 60 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 32: 57 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 33: 57 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 34: 57 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 35: 57 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 36: 57 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 37: 57 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 38: 56 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 39: 56 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 40: 56 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 41: 56 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 42: 56 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 43: 52 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 44: 51 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 45: 49 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 46: 45 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 47: 41 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 48: 41 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 49: 41 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 50: 41 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 51: 40 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 52: 40 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 53: 38 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 54: 38 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 55: 37 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 56: 37 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 57: 37 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 58: 37 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 59: 35 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 60: 34 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 61: 0 questions still calling the calculator
+Finished $REPO_ROOT/results/ver02_runs/qwen3-14b/answers_ver02_qwen3-14b_think_calc_s0_v2_L2345_20261015-051808.jsonl: 184 answers in 4222.9s, 1 hit the token limit
+  [qwen3-14b_think_calc_s0] round 1: 100 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 2: 99 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 3: 99 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 4: 99 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 5: 99 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 6: 98 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 7: 98 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 8: 98 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 9: 98 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 10: 98 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 11: 96 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 12: 95 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 13: 95 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 14: 94 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 15: 92 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 16: 92 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 17: 91 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 18: 90 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 19: 89 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 20: 86 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 21: 80 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 22: 75 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 23: 75 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 24: 73 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 25: 71 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 26: 67 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 27: 67 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 28: 67 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 29: 65 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 30: 64 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 31: 62 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 32: 60 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 33: 57 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 34: 56 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 35: 56 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 36: 56 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 37: 54 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 38: 54 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 39: 54 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 40: 53 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 41: 53 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 42: 53 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 43: 52 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 44: 49 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 45: 46 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 46: 46 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 47: 44 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 48: 43 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 49: 43 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 50: 43 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 51: 42 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 52: 41 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 53: 39 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 54: 38 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 55: 38 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 56: 38 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 57: 38 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 58: 37 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 59: 35 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 60: 35 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 61: 0 questions still calling the calculator
+Finished $REPO_ROOT/results/ver02_runs/qwen3-14b/answers_ver02_qwen3-14b_think_calc_s0_ver03_L2345_20261015-051808.jsonl: 104 answers in 4499.2s, 0 hit the token limit
+  [qwen3-14b_think_calc_s0] round 1: 20 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 2: 20 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 3: 20 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 4: 20 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 5: 20 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 6: 19 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 7: 19 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 8: 19 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 9: 19 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 10: 19 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 11: 19 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 12: 19 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 13: 19 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 14: 19 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 15: 19 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 16: 19 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 17: 19 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 18: 18 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 19: 18 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 20: 17 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 21: 16 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 22: 16 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 23: 16 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 24: 16 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 25: 16 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 26: 15 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 27: 15 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 28: 15 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 29: 15 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 30: 15 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 31: 14 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 32: 14 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 33: 14 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 34: 14 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 35: 14 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 36: 14 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 37: 14 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 38: 14 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 39: 14 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 40: 13 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 41: 13 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 42: 13 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 43: 11 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 44: 11 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 45: 10 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 46: 10 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 47: 10 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 48: 10 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 49: 8 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 50: 8 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 51: 8 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 52: 8 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 53: 8 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 54: 8 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 55: 8 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 56: 8 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 57: 8 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 58: 8 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 59: 8 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 60: 8 questions still calling the calculator
+  [qwen3-14b_think_calc_s0] round 61: 0 questions still calling the calculator
+Finished $REPO_ROOT/results/ver02_runs/qwen3-14b/answers_ver02_qwen3-14b_think_calc_s0_ver03_newco_L2345_20261015-051808.jsonl: 20 answers in 1096.2s, 0 hit the token limit
+  [qwen3-14b_think_calc_s1] round 1: 181 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 2: 174 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 3: 162 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 4: 155 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 5: 144 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 6: 132 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 7: 124 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 8: 120 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 9: 114 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 10: 111 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 11: 97 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 12: 94 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 13: 90 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 14: 88 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 15: 84 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 16: 79 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 17: 77 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 18: 76 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 19: 75 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 20: 71 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 21: 69 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 22: 66 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 23: 65 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 24: 65 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 25: 65 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 26: 63 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 27: 63 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 28: 62 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 29: 61 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 30: 61 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 31: 59 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 32: 59 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 33: 59 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 34: 58 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 35: 57 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 36: 57 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 37: 56 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 38: 55 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 39: 55 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 40: 54 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 41: 51 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 42: 51 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 43: 48 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 44: 46 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 45: 42 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 46: 40 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 47: 39 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 48: 36 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 49: 36 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 50: 35 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 51: 35 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 52: 34 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 53: 34 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 54: 33 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 55: 33 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 56: 33 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 57: 33 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 58: 32 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 59: 32 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 60: 32 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 61: 0 questions still calling the calculator
+Finished $REPO_ROOT/results/ver02_runs/qwen3-14b/answers_ver02_qwen3-14b_think_calc_s1_v2_L2345_20261015-051808.jsonl: 184 answers in 3972.8s, 1 hit the token limit
+  [qwen3-14b_think_calc_s1] round 1: 102 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 2: 102 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 3: 102 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 4: 102 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 5: 102 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 6: 102 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 7: 102 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 8: 102 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 9: 102 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 10: 102 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 11: 101 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 12: 101 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 13: 100 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 14: 100 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 15: 98 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 16: 97 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 17: 97 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 18: 97 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 19: 95 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 20: 94 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 21: 91 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 22: 90 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 23: 90 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 24: 87 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 25: 85 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 26: 82 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 27: 79 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 28: 78 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 29: 78 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 30: 77 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 31: 76 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 32: 76 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 33: 74 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 34: 74 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 35: 74 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 36: 74 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 37: 74 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 38: 74 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 39: 72 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 40: 71 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 41: 70 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 42: 70 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 43: 69 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 44: 65 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 45: 60 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 46: 59 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 47: 58 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 48: 54 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 49: 53 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 50: 53 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 51: 51 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 52: 48 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 53: 47 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 54: 46 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 55: 46 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 56: 45 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 57: 45 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 58: 42 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 59: 42 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 60: 40 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 61: 0 questions still calling the calculator
+Finished $REPO_ROOT/results/ver02_runs/qwen3-14b/answers_ver02_qwen3-14b_think_calc_s1_ver03_L2345_20261015-051808.jsonl: 104 answers in 5131.8s, 0 hit the token limit
+  [qwen3-14b_think_calc_s1] round 1: 19 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 2: 19 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 3: 19 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 4: 19 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 5: 19 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 6: 19 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 7: 19 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 8: 19 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 9: 18 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 10: 18 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 11: 18 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 12: 17 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 13: 17 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 14: 17 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 15: 17 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 16: 17 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 17: 17 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 18: 17 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 19: 16 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 20: 16 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 21: 16 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 22: 15 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 23: 15 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 24: 15 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 25: 14 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 26: 13 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 27: 13 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 28: 13 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 29: 13 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 30: 13 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 31: 13 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 32: 12 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 33: 12 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 34: 12 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 35: 12 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 36: 12 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 37: 12 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 38: 12 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 39: 12 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 40: 12 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 41: 12 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 42: 11 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 43: 11 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 44: 11 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 45: 10 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 46: 9 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 47: 9 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 48: 9 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 49: 8 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 50: 8 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 51: 8 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 52: 8 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 53: 8 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 54: 7 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 55: 6 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 56: 6 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 57: 6 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 58: 6 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 59: 6 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 60: 6 questions still calling the calculator
+  [qwen3-14b_think_calc_s1] round 61: 0 questions still calling the calculator
+Finished $REPO_ROOT/results/ver02_runs/qwen3-14b/answers_ver02_qwen3-14b_think_calc_s1_ver03_newco_L2345_20261015-051808.jsonl: 20 answers in 769.1s, 0 hit the token limit
+  [qwen3-14b_think_calc_s2] round 1: 180 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 2: 176 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 3: 163 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 4: 156 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 5: 144 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 6: 137 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 7: 132 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 8: 128 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 9: 121 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 10: 116 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 11: 100 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 12: 91 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 13: 83 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 14: 80 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 15: 78 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 16: 77 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 17: 74 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 18: 74 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 19: 74 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 20: 71 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 21: 68 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 22: 66 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 23: 62 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 24: 61 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 25: 60 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 26: 59 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 27: 57 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 28: 56 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 29: 56 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 30: 55 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 31: 55 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 32: 53 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 33: 53 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 34: 53 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 35: 53 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 36: 52 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 37: 52 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 38: 52 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 39: 52 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 40: 51 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 41: 51 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 42: 51 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 43: 50 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 44: 46 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 45: 44 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 46: 43 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 47: 43 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 48: 43 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 49: 42 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 50: 41 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 51: 41 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 52: 40 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 53: 40 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 54: 40 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 55: 38 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 56: 38 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 57: 38 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 58: 38 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 59: 38 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 60: 38 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 61: 0 questions still calling the calculator
+Finished $REPO_ROOT/results/ver02_runs/qwen3-14b/answers_ver02_qwen3-14b_think_calc_s2_v2_L2345_20261015-051808.jsonl: 184 answers in 3973.4s, 0 hit the token limit
+  [qwen3-14b_think_calc_s2] round 1: 103 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 2: 103 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 3: 102 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 4: 101 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 5: 101 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 6: 100 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 7: 100 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 8: 99 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 9: 98 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 10: 98 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 11: 98 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 12: 98 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 13: 97 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 14: 97 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 15: 96 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 16: 96 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 17: 95 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 18: 95 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 19: 93 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 20: 93 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 21: 91 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 22: 89 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 23: 89 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 24: 86 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 25: 86 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 26: 81 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 27: 79 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 28: 79 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 29: 79 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 30: 78 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 31: 75 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 32: 74 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 33: 74 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 34: 72 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 35: 71 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 36: 70 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 37: 67 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 38: 67 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 39: 67 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 40: 66 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 41: 65 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 42: 64 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 43: 64 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 44: 62 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 45: 59 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 46: 56 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 47: 54 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 48: 53 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 49: 53 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 50: 52 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 51: 50 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 52: 48 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 53: 48 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 54: 48 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 55: 47 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 56: 46 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 57: 45 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 58: 45 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 59: 44 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 60: 44 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 61: 0 questions still calling the calculator
+Finished $REPO_ROOT/results/ver02_runs/qwen3-14b/answers_ver02_qwen3-14b_think_calc_s2_ver03_L2345_20261015-051808.jsonl: 104 answers in 4690.2s, 1 hit the token limit
+  [qwen3-14b_think_calc_s2] round 1: 20 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 2: 20 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 3: 20 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 4: 20 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 5: 20 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 6: 20 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 7: 20 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 8: 20 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 9: 20 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 10: 20 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 11: 20 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 12: 20 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 13: 20 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 14: 19 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 15: 19 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 16: 19 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 17: 19 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 18: 19 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 19: 18 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 20: 18 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 21: 18 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 22: 18 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 23: 18 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 24: 17 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 25: 17 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 26: 17 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 27: 16 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 28: 16 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 29: 16 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 30: 16 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 31: 16 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 32: 16 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 33: 16 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 34: 16 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 35: 16 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 36: 16 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 37: 16 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 38: 16 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 39: 16 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 40: 16 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 41: 16 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 42: 15 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 43: 14 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 44: 13 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 45: 11 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 46: 11 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 47: 10 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 48: 10 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 49: 10 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 50: 9 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 51: 8 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 52: 8 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 53: 8 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 54: 8 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 55: 8 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 56: 8 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 57: 8 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 58: 8 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 59: 7 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 60: 7 questions still calling the calculator
+  [qwen3-14b_think_calc_s2] round 61: 0 questions still calling the calculator
+Finished $REPO_ROOT/results/ver02_runs/qwen3-14b/answers_ver02_qwen3-14b_think_calc_s2_ver03_newco_L2345_20261015-051808.jsonl: 20 answers in 761.0s, 0 hit the token limit
+(MainProcess pid=598433) INFO 10-15 15:35:21 [utils.py:638] [shutdown] Process manager: send sigterm to process EngineCore
+(EngineCore pid=598798) INFO 10-15 15:35:25 [core.py:1409] [shutdown] EngineCore: trigger received signal=SIGTERM
+(EngineCore pid=598798) INFO 10-15 15:35:25 [core.py:1558] [shutdown] EngineCore: start mode=abort timeout=0s
+(EngineCore pid=598798) INFO 10-15 15:35:25 [core.py:1589] [shutdown] EngineCore: request processing complete; starting resource teardown
+(EngineCore pid=598798) INFO 10-15 15:35:25 [core.py:1422] [shutdown] EngineCore: exiting busy loop
+(MainProcess pid=598433) WARNING 10-15 15:35:26 [utils.py:658] [shutdown] Process manager: force killing remaining processes count=1
+(MainProcess pid=598433) WARNING 10-15 15:35:26 [utils.py:663] [shutdown] Process manager: force killing remaining process EngineCore pid 598798
+[sanity] 18 answer files, 1848 answers, 1602 with a FINAL ANSWER line, 28568 calculator calls
+answers_ver02_qwen3-14b_think_calc_s0_v2_L2345_20261015-051808  [grade_ver04, tolerance=qa, include_thinking=False, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 78.0%
+answers_ver02_qwen3-14b_think_calc_s0_v2_L2345_20261015-051808  [grade_ver04, tolerance=plan, include_thinking=False, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 81.2%
+answers_ver02_qwen3-14b_think_calc_s0_v2_L2345_20261015-051808  [grade_ver04, tolerance=plan, include_thinking=True, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 93.9%
+answers_ver02_qwen3-14b_think_calc_s0_ver03_L2345_20261015-051808  [grade_ver04, tolerance=qa, include_thinking=False, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 68.4%
+answers_ver02_qwen3-14b_think_calc_s0_ver03_L2345_20261015-051808  [grade_ver04, tolerance=plan, include_thinking=False, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 69.8%
+answers_ver02_qwen3-14b_think_calc_s0_ver03_L2345_20261015-051808  [grade_ver04, tolerance=plan, include_thinking=True, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 90.8%
+answers_ver02_qwen3-14b_think_calc_s0_ver03_newco_L2345_20261015-051808  [grade_ver04, tolerance=qa, include_thinking=False, qa=QA_set_ver03_newco.json]
+
+Questions graded: 20   mean score per question: 58.9%
+answers_ver02_qwen3-14b_think_calc_s0_ver03_newco_L2345_20261015-051808  [grade_ver04, tolerance=plan, include_thinking=False, qa=QA_set_ver03_newco.json]
+
+Questions graded: 20   mean score per question: 59.9%
+answers_ver02_qwen3-14b_think_calc_s0_ver03_newco_L2345_20261015-051808  [grade_ver04, tolerance=plan, include_thinking=True, qa=QA_set_ver03_newco.json]
+
+Questions graded: 20   mean score per question: 87.9%
+answers_ver02_qwen3-14b_think_calc_s1_v2_L2345_20261015-051808  [grade_ver04, tolerance=qa, include_thinking=False, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 77.3%
+answers_ver02_qwen3-14b_think_calc_s1_v2_L2345_20261015-051808  [grade_ver04, tolerance=plan, include_thinking=False, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 80.2%
+answers_ver02_qwen3-14b_think_calc_s1_v2_L2345_20261015-051808  [grade_ver04, tolerance=plan, include_thinking=True, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 91.6%
+answers_ver02_qwen3-14b_think_calc_s1_ver03_L2345_20261015-051808  [grade_ver04, tolerance=qa, include_thinking=False, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 67.0%
+answers_ver02_qwen3-14b_think_calc_s1_ver03_L2345_20261015-051808  [grade_ver04, tolerance=plan, include_thinking=False, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 68.0%
+answers_ver02_qwen3-14b_think_calc_s1_ver03_L2345_20261015-051808  [grade_ver04, tolerance=plan, include_thinking=True, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 87.9%
+answers_ver02_qwen3-14b_think_calc_s1_ver03_newco_L2345_20261015-051808  [grade_ver04, tolerance=qa, include_thinking=False, qa=QA_set_ver03_newco.json]
+
+Questions graded: 20   mean score per question: 66.8%
+answers_ver02_qwen3-14b_think_calc_s1_ver03_newco_L2345_20261015-051808  [grade_ver04, tolerance=plan, include_thinking=False, qa=QA_set_ver03_newco.json]
+
+Questions graded: 20   mean score per question: 68.2%
+answers_ver02_qwen3-14b_think_calc_s1_ver03_newco_L2345_20261015-051808  [grade_ver04, tolerance=plan, include_thinking=True, qa=QA_set_ver03_newco.json]
+
+Questions graded: 20   mean score per question: 92.5%
+answers_ver02_qwen3-14b_think_calc_s2_v2_L2345_20261015-051808  [grade_ver04, tolerance=qa, include_thinking=False, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 75.6%
+answers_ver02_qwen3-14b_think_calc_s2_v2_L2345_20261015-051808  [grade_ver04, tolerance=plan, include_thinking=False, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 78.6%
+answers_ver02_qwen3-14b_think_calc_s2_v2_L2345_20261015-051808  [grade_ver04, tolerance=plan, include_thinking=True, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 91.5%
+answers_ver02_qwen3-14b_think_calc_s2_ver03_L2345_20261015-051808  [grade_ver04, tolerance=qa, include_thinking=False, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 62.8%
+answers_ver02_qwen3-14b_think_calc_s2_ver03_L2345_20261015-051808  [grade_ver04, tolerance=plan, include_thinking=False, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 63.6%
+answers_ver02_qwen3-14b_think_calc_s2_ver03_L2345_20261015-051808  [grade_ver04, tolerance=plan, include_thinking=True, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 87.2%
+answers_ver02_qwen3-14b_think_calc_s2_ver03_newco_L2345_20261015-051808  [grade_ver04, tolerance=qa, include_thinking=False, qa=QA_set_ver03_newco.json]
+
+Questions graded: 20   mean score per question: 74.0%
+answers_ver02_qwen3-14b_think_calc_s2_ver03_newco_L2345_20261015-051808  [grade_ver04, tolerance=plan, include_thinking=False, qa=QA_set_ver03_newco.json]
+
+Questions graded: 20   mean score per question: 75.1%
+answers_ver02_qwen3-14b_think_calc_s2_ver03_newco_L2345_20261015-051808  [grade_ver04, tolerance=plan, include_thinking=True, qa=QA_set_ver03_newco.json]
+
+Questions graded: 20   mean score per question: 90.9%
+answers_ver02_qwen3-14b_think_s0_v2_L2345_20261015-051808  [grade_ver04, tolerance=qa, include_thinking=False, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 86.0%
+answers_ver02_qwen3-14b_think_s0_v2_L2345_20261015-051808  [grade_ver04, tolerance=plan, include_thinking=False, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 87.5%
+answers_ver02_qwen3-14b_think_s0_v2_L2345_20261015-051808  [grade_ver04, tolerance=plan, include_thinking=True, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 95.4%
+answers_ver02_qwen3-14b_think_s0_ver03_L2345_20261015-051808  [grade_ver04, tolerance=qa, include_thinking=False, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 78.4%
+answers_ver02_qwen3-14b_think_s0_ver03_L2345_20261015-051808  [grade_ver04, tolerance=plan, include_thinking=False, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 80.3%
+answers_ver02_qwen3-14b_think_s0_ver03_L2345_20261015-051808  [grade_ver04, tolerance=plan, include_thinking=True, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 93.5%
+answers_ver02_qwen3-14b_think_s0_ver03_newco_L2345_20261015-051808  [grade_ver04, tolerance=qa, include_thinking=False, qa=QA_set_ver03_newco.json]
+
+Questions graded: 20   mean score per question: 76.7%
+answers_ver02_qwen3-14b_think_s0_ver03_newco_L2345_20261015-051808  [grade_ver04, tolerance=plan, include_thinking=False, qa=QA_set_ver03_newco.json]
+
+Questions graded: 20   mean score per question: 77.1%
+answers_ver02_qwen3-14b_think_s0_ver03_newco_L2345_20261015-051808  [grade_ver04, tolerance=plan, include_thinking=True, qa=QA_set_ver03_newco.json]
+
+Questions graded: 20   mean score per question: 92.6%
+answers_ver02_qwen3-14b_think_s1_v2_L2345_20261015-051808  [grade_ver04, tolerance=qa, include_thinking=False, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 83.4%
+answers_ver02_qwen3-14b_think_s1_v2_L2345_20261015-051808  [grade_ver04, tolerance=plan, include_thinking=False, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 85.3%
+answers_ver02_qwen3-14b_think_s1_v2_L2345_20261015-051808  [grade_ver04, tolerance=plan, include_thinking=True, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 93.1%
+answers_ver02_qwen3-14b_think_s1_ver03_L2345_20261015-051808  [grade_ver04, tolerance=qa, include_thinking=False, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 75.7%
+answers_ver02_qwen3-14b_think_s1_ver03_L2345_20261015-051808  [grade_ver04, tolerance=plan, include_thinking=False, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 77.9%
+answers_ver02_qwen3-14b_think_s1_ver03_L2345_20261015-051808  [grade_ver04, tolerance=plan, include_thinking=True, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 91.7%
+answers_ver02_qwen3-14b_think_s1_ver03_newco_L2345_20261015-051808  [grade_ver04, tolerance=qa, include_thinking=False, qa=QA_set_ver03_newco.json]
+
+Questions graded: 20   mean score per question: 76.9%
+answers_ver02_qwen3-14b_think_s1_ver03_newco_L2345_20261015-051808  [grade_ver04, tolerance=plan, include_thinking=False, qa=QA_set_ver03_newco.json]
+
+Questions graded: 20   mean score per question: 78.0%
+answers_ver02_qwen3-14b_think_s1_ver03_newco_L2345_20261015-051808  [grade_ver04, tolerance=plan, include_thinking=True, qa=QA_set_ver03_newco.json]
+
+Questions graded: 20   mean score per question: 90.6%
+answers_ver02_qwen3-14b_think_s2_v2_L2345_20261015-051808  [grade_ver04, tolerance=qa, include_thinking=False, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 84.2%
+answers_ver02_qwen3-14b_think_s2_v2_L2345_20261015-051808  [grade_ver04, tolerance=plan, include_thinking=False, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 86.6%
+answers_ver02_qwen3-14b_think_s2_v2_L2345_20261015-051808  [grade_ver04, tolerance=plan, include_thinking=True, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 95.1%
+answers_ver02_qwen3-14b_think_s2_ver03_L2345_20261015-051808  [grade_ver04, tolerance=qa, include_thinking=False, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 76.4%
+answers_ver02_qwen3-14b_think_s2_ver03_L2345_20261015-051808  [grade_ver04, tolerance=plan, include_thinking=False, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 79.4%
+answers_ver02_qwen3-14b_think_s2_ver03_L2345_20261015-051808  [grade_ver04, tolerance=plan, include_thinking=True, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 92.8%
+answers_ver02_qwen3-14b_think_s2_ver03_newco_L2345_20261015-051808  [grade_ver04, tolerance=qa, include_thinking=False, qa=QA_set_ver03_newco.json]
+
+Questions graded: 20   mean score per question: 75.7%
+answers_ver02_qwen3-14b_think_s2_ver03_newco_L2345_20261015-051808  [grade_ver04, tolerance=plan, include_thinking=False, qa=QA_set_ver03_newco.json]
+
+Questions graded: 20   mean score per question: 79.1%
+answers_ver02_qwen3-14b_think_s2_ver03_newco_L2345_20261015-051808  [grade_ver04, tolerance=plan, include_thinking=True, qa=QA_set_ver03_newco.json]
+
+Questions graded: 20   mean score per question: 93.8%
+run_model_ver02 exit code 0  Thu Oct 15 15:37:06 EDT 2026

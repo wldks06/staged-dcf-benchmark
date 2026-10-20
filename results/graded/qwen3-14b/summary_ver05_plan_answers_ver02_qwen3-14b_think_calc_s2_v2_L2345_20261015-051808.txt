@@ -1,0 +1,45 @@
+answers_ver02_qwen3-14b_think_calc_s2_v2_L2345_20261015-051808  [grade_ver05, tolerance=plan, include_thinking=False, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 78.6%
+Final answers correct: 129/184
+Final-answer marker: exact 143, missing 37, other case 4 (missing = final scored zero)
+Hit the token limit: 0 []
+Thinking never finished: 8 ['ORLY-03', 'SHW-03', 'ETN-03', 'SCCO-03', 'PPL-08', 'VZ-08', 'MCD-08', 'MRK-08']
+
+Final answers correct by tier and level:
+  basic    L2   56/56  = 100.0%
+  basic    L3    3/28  =  10.7%
+  complex  L3    2/20  =  10.0%
+  half     L4   14/20  =  70.0%
+  half     L5   15/20  =  75.0%
+  trap     L2   39/40  =  97.5%
+
+Fell for the trap (final wrong AND matched the trap value): 1/42   (also matched but final correct, not counted: 1)
+   BKNG-10
+
+Used basic shares (final wrong AND matched the basic-share value): 0/74   (also matched but final correct, not counted: 21)
+
+By tier:
+  basic                                    1357/2640 =  51.4%
+  complex                                   514/1438 =  35.7%
+  half                                     1276/1442 =  88.5%
+  trap                                      472/492  =  95.9%
+
+By level:
+  2                                        1166/1210 =  96.4%
+  3                                        1177/3360 =  35.0%
+  4                                         690/782  =  88.2%
+  5                                         586/660  =  88.8%
+
+By step:
+  Step 2. Project the future                402/654  =  61.5%
+  Step 3. Compute free cash flow           1385/2084 =  66.5%
+  Step 4. Discount to today                1370/2222 =  61.7%
+  Step 5. Value and decide                  462/1052 =  43.9%
+
+By kind:
+  final                                    1290/1840 =  70.1%
+  middle                                    874/1572 =  55.6%
+  step                                     1455/2600 =  56.0%
+
+Excluded items: {'rounding not auto-graded': 184, 'input given in data table': 482, 'target already in prompt': 17, 'zero target not auto-graded': 26}

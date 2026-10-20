@@ -1,0 +1,59 @@
+Start Wed Oct 14 23:26:35 EDT 2026  host c85.quartz.uits.iu.edu  cli $MODEL_STORE/conda-env/bin/hf
+
+===== SUFE-AIFLM-Lab/Fin-R1  23:26:35
+Fetching 13 files:   0%|          | 0/13 [00:00<?, ?it/s]Fetching 13 files:  77%|███████▋  | 10/13 [00:13<00:04,  1.36s/it]Fetching 13 files:  85%|████████▍ | 11/13 [00:32<00:07,  3.58s/it]Fetching 13 files:  92%|█████████▏| 12/13 [00:34<00:03,  3.26s/it]Fetching 13 files: 100%|██████████| 13/13 [00:34<00:00,  2.72s/it]Fetching 13 files: 100%|██████████| 13/13 [00:34<00:00,  2.65s/it]
+[32m✓ Downloaded[0m
+  path: $MODEL_STORE/hf_home/hub/models--SUFE-AIFLM-Lab--Fin-R1/snapshots/026768c4a015b591b54b240743edeac1de0970fa
+
+===== DianJin/DianJin-R1-7B  23:27:18
+Fetching 13 files:   0%|          | 0/13 [00:00<?, ?it/s]Fetching 13 files:  77%|███████▋  | 10/13 [00:06<00:01,  1.64it/s]Fetching 13 files:  85%|████████▍ | 11/13 [00:13<00:02,  1.45s/it]Fetching 13 files:  92%|█████████▏| 12/13 [00:14<00:01,  1.42s/it]Fetching 13 files: 100%|██████████| 13/13 [00:21<00:00,  2.41s/it]Fetching 13 files: 100%|██████████| 13/13 [00:21<00:00,  1.67s/it]
+[32m✓ Downloaded[0m
+  path: $MODEL_STORE/hf_home/hub/models--DianJin--DianJin-R1-7B/snapshots/2c22344cec9f39e3cb134e3e419ab63b56720bfa
+
+===== Qwen/Qwen2.5-7B-Instruct  23:27:41
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Fetching 11 files:  73%|███████▎  | 8/11 [00:09<00:03,  1.21s/it]Fetching 11 files:  82%|████████▏ | 9/11 [00:11<00:02,  1.26s/it]Fetching 11 files:  91%|█████████ | 10/11 [00:11<00:01,  1.08s/it]Fetching 11 files: 100%|██████████| 11/11 [00:14<00:00,  1.50s/it]Fetching 11 files: 100%|██████████| 11/11 [00:14<00:00,  1.33s/it]
+[32m✓ Downloaded[0m
+  path: $MODEL_STORE/hf_home/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28
+
+===== TheFinAI/Fin-o1-8B  23:27:57
+Fetching 16 files:   0%|          | 0/16 [00:00<?, ?it/s]Fetching 16 files:  81%|████████▏ | 13/16 [00:08<00:01,  1.56it/s]Fetching 16 files:  88%|████████▊ | 14/16 [00:17<00:03,  1.53s/it]Fetching 16 files:  94%|█████████▍| 15/16 [00:18<00:01,  1.40s/it]Fetching 16 files: 100%|██████████| 16/16 [00:18<00:00,  1.24s/it]Fetching 16 files: 100%|██████████| 16/16 [00:18<00:00,  1.17s/it]
+[32m✓ Downloaded[0m
+  path: $MODEL_STORE/hf_home/hub/models--TheFinAI--Fin-o1-8B/snapshots/7de2133a2da6918a8371fb50a15d2649d19b0ef4
+
+===== TheFinAI/Fino1-8B  23:28:17
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Fetching 10 files:  70%|███████   | 7/10 [00:08<00:03,  1.21s/it]Fetching 10 files:  80%|████████  | 8/10 [00:13<00:03,  1.87s/it]Fetching 10 files:  90%|█████████ | 9/10 [00:14<00:01,  1.69s/it]Fetching 10 files: 100%|██████████| 10/10 [00:15<00:00,  1.46s/it]Fetching 10 files: 100%|██████████| 10/10 [00:15<00:00,  1.52s/it]
+[32m✓ Downloaded[0m
+  path: $MODEL_STORE/hf_home/hub/models--TheFinAI--Fino1-8B/snapshots/316e7d9798ce0d2f916fb155e06d6c5b67db2d95
+
+===== TheFinAI/Fin-o1-14B  23:28:37
+Fetching 15 files:   0%|          | 0/15 [00:00<?, ?it/s]Fetching 15 files:  67%|██████▋   | 10/15 [00:23<00:11,  2.37s/it]Fetching 15 files:  73%|███████▎  | 11/15 [00:24<00:08,  2.15s/it]Fetching 15 files:  80%|████████  | 12/15 [00:24<00:05,  1.90s/it]Fetching 15 files:  87%|████████▋ | 13/15 [00:25<00:03,  1.61s/it]Fetching 15 files:  93%|█████████▎| 14/15 [00:25<00:01,  1.45s/it]Fetching 15 files: 100%|██████████| 15/15 [00:25<00:00,  1.73s/it]
+[32m✓ Downloaded[0m
+  path: $MODEL_STORE/hf_home/hub/models--TheFinAI--Fin-o1-14B/snapshots/bd4b97b8e5f6954c2c6d92da75b6ba4cb948b56d
+
+===== DianJin/DianJin-R1-32B  23:29:05
+Fetching 23 files:   0%|          | 0/23 [00:00<?, ?it/s]Fetching 23 files:  22%|██▏       | 5/23 [00:28<01:44,  5.78s/it]Fetching 23 files:  26%|██▌       | 6/23 [00:31<01:26,  5.11s/it]Fetching 23 files:  30%|███       | 7/23 [00:32<01:04,  4.05s/it]Fetching 23 files:  35%|███▍      | 8/23 [00:32<00:45,  3.04s/it]Fetching 23 files:  43%|████▎     | 10/23 [00:32<00:23,  1.81s/it]Fetching 23 files:  48%|████▊     | 11/23 [00:33<00:17,  1.45s/it]Fetching 23 files:  78%|███████▊  | 18/23 [00:46<00:08,  1.73s/it]Fetching 23 files:  83%|████████▎ | 19/23 [00:47<00:06,  1.68s/it]Fetching 23 files:  87%|████████▋ | 20/23 [00:51<00:06,  2.04s/it]Fetching 23 files: 100%|██████████| 23/23 [00:51<00:00,  1.25s/it]Fetching 23 files: 100%|██████████| 23/23 [00:51<00:00,  2.24s/it]
+[32m✓ Downloaded[0m
+  path: $MODEL_STORE/hf_home/hub/models--DianJin--DianJin-R1-32B/snapshots/f2976414ec5a86b76418ff1716a816b70618792a
+
+===== Qwen/Qwen2.5-32B-Instruct  23:29:59
+Fetching 24 files:   0%|          | 0/24 [00:00<?, ?it/s]Fetching 24 files:  17%|█▋        | 4/24 [00:25<02:07,  6.37s/it]Fetching 24 files:  38%|███▊      | 9/24 [00:25<00:34,  2.30s/it]Fetching 24 files:  46%|████▌     | 11/24 [00:41<00:29,  2.30s/it]Fetching 24 files:  50%|█████     | 12/24 [00:43<00:43,  3.60s/it]Fetching 24 files:  96%|█████████▌| 23/24 [00:48<00:01,  1.58s/it]Fetching 24 files: 100%|██████████| 24/24 [00:52<00:00,  2.18s/it]
+[32m✓ Downloaded[0m
+  path: $MODEL_STORE/hf_home/hub/models--Qwen--Qwen2.5-32B-Instruct/snapshots/5ede1c97bbab6ce5cda5812749b4c0bdf79b18dd
+
+===== Summary Wed Oct 14 23:30:54 EDT 2026
+OK    SUFE-AIFLM-Lab/Fin-R1
+OK    DianJin/DianJin-R1-7B
+OK    Qwen/Qwen2.5-7B-Instruct
+OK    TheFinAI/Fin-o1-8B
+OK    TheFinAI/Fino1-8B
+OK    TheFinAI/Fin-o1-14B
+OK    DianJin/DianJin-R1-32B
+OK    Qwen/Qwen2.5-32B-Instruct
+SUFE-AIFLM-Lab/Fin-R1                         15G  5 safetensors
+DianJin/DianJin-R1-7B                         15G  5 safetensors
+Qwen/Qwen2.5-7B-Instruct                      15G  5 safetensors
+TheFinAI/Fin-o1-8B                            16G  5 safetensors
+TheFinAI/Fino1-8B                             15G  5 safetensors
+TheFinAI/Fin-o1-14B                           28G  7 safetensors
+DianJin/DianJin-R1-32B                        62G  15 safetensors
+Qwen/Qwen2.5-32B-Instruct                     62G  18 safetensors

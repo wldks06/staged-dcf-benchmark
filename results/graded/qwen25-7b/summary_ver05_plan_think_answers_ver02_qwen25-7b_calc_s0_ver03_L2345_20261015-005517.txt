@@ -1,0 +1,45 @@
+answers_ver02_qwen25-7b_calc_s0_ver03_L2345_20261015-005517  [grade_ver05, tolerance=plan, include_thinking=True, qa=QA_set_ver03.json]
+
+Questions graded: 104   mean score per question: 26.2%
+Final answers correct: 3/104
+Final-answer marker: exact 69, other case 18, missing 17 (missing = final scored zero)
+Hit the token limit: 4 ['PPL-2019-06', 'ORLY-2019-05', 'VZ-2022-05', 'CAT-2022-05']
+
+Final answers correct by tier and level:
+  basic@2019 L3    1/13  =   7.7%
+  basic@2022 L3    0/13  =   0.0%
+  complex@2019 L3    0/13  =   0.0%
+  complex@2022 L3    0/13  =   0.0%
+  half@2019 L4    0/13  =   0.0%
+  half@2019 L5    2/13  =  15.4%
+  half@2022 L4    0/13  =   0.0%
+  half@2022 L5    0/13  =   0.0%
+
+Used basic shares (final wrong AND matched the basic-share value): 1/78   (also matched but final correct, not counted: 3)
+   BKNG-2019-05
+
+By tier:
+  basic@2019                                162/880  =  18.4%
+  basic@2022                                195/906  =  21.5%
+  complex@2019                              153/924  =  16.6%
+  complex@2022                              241/952  =  25.3%
+  half@2019                                 379/923  =  41.1%
+  half@2022                                 191/945  =  20.2%
+
+By level:
+  3                                         751/3662 =  20.5%
+  4                                         186/1021 =  18.2%
+  5                                         384/847  =  45.3%
+
+By step:
+  Step 2. Project the future                238/768  =  31.0%
+  Step 3. Compute free cash flow            390/2070 =  18.8%
+  Step 4. Discount to today                 629/1712 =  36.7%
+  Step 5. Value and decide                   64/980  =   6.5%
+
+By kind:
+  final                                      30/1040 =   2.9%
+  middle                                    576/1520 =  37.9%
+  step                                      715/2970 =  24.1%
+
+Excluded items: {'target already in prompt': 41, 'rounding not auto-graded': 104, 'zero target not auto-graded': 9}

@@ -1,0 +1,45 @@
+answers_ver02_qwen3-8b_think_calc_s0_v2_L2345_20261015-005624  [grade_ver05, tolerance=qa, include_thinking=False, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 78.6%
+Final answers correct: 134/184
+Final-answer marker: exact 172, missing 9, other case 3 (missing = final scored zero)
+Hit the token limit: 2 ['CMCSA-05', 'META-08']
+Thinking never finished: 5 ['CMCSA-05', 'BKNG-05', 'CVX-03', 'ETN-03', 'META-08']
+
+Final answers correct by tier and level:
+  basic    L2   50/56  =  89.3%
+  basic    L3    7/28  =  25.0%
+  complex  L3    6/20  =  30.0%
+  half     L4   14/20  =  70.0%
+  half     L5   17/20  =  85.0%
+  trap     L2   40/40  = 100.0%
+
+Fell for the trap (final wrong AND matched the trap value): 0/42
+
+Used basic shares (final wrong AND matched the basic-share value): 1/74   (also matched but final correct, not counted: 22)
+   SCCO-03
+
+By tier:
+  basic                                    1447/2640 =  54.8%
+  complex                                   624/1438 =  43.4%
+  half                                     1303/1442 =  90.4%
+  trap                                      484/492  =  98.4%
+
+By level:
+  2                                        1110/1210 =  91.7%
+  3                                        1445/3360 =  43.0%
+  4                                         692/782  =  88.5%
+  5                                         611/660  =  92.6%
+
+By step:
+  Step 2. Project the future                214/654  =  32.7%
+  Step 3. Compute free cash flow           1654/2084 =  79.4%
+  Step 4. Discount to today                1392/2222 =  62.6%
+  Step 5. Value and decide                  598/1052 =  56.8%
+
+By kind:
+  final                                    1340/1840 =  72.8%
+  middle                                    638/1572 =  40.6%
+  step                                     1880/2600 =  72.3%
+
+Excluded items: {'rounding not auto-graded': 184, 'input given in data table': 482, 'target already in prompt': 17, 'zero target not auto-graded': 26}

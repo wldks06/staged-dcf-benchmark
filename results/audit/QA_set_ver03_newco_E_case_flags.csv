@@ -1,0 +1,11 @@
+case_id,model_price,market_price,model_over_market,tv_share,in_inspect_csv,warnings
+US-ECL-2025-12-31-practitioner,90.08,262.519989,0.34,0.752,,
+US-ECL-2025-12-31-textbook,67.09,262.519989,0.26,0.713,,
+US-KO-2025-12-31-practitioner,37.39,69.910004,0.53,0.799,,
+US-KO-2025-12-31-textbook,31.85,69.910004,0.46,0.787,,
+US-LIN-2025-12-31-practitioner,164.52,426.390015,0.39,0.759,,
+US-LIN-2025-12-31-textbook,125.03,426.390015,0.29,0.708,,
+US-NRG-2025-12-31-practitioner,97.93,159.240005,0.61,0.768,,
+US-NRG-2025-12-31-textbook,103.31,159.240005,0.65,0.77,,
+US-SLB-2025-12-31-practitioner,77.32,38.380001,2.01,0.778,,
+US-SLB-2025-12-31-textbook,60.03,38.380001,1.56,0.741,,

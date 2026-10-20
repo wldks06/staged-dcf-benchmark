@@ -1,0 +1,1811 @@
+[env_ver02] 2026-10-15 00:39:08 host=g1.quartz.uits.iu.edu job=12259627 partition=v100
+[env_ver02] GPUs: Tesla V100-PCIE-32GB, 32768 MiB;Tesla V100-PCIE-32GB, 32768 MiB
+[env_ver02] env=$MODEL_STORE/conda-env-v100 python=$MODEL_STORE/conda-env-v100/bin/python dtype=float16 ngpu=2
+vllm 0.10.1.1 | torch 2.7.1+cu126 | cuda True
+INFO 10-15 00:39:47 [__init__.py:241] Automatically detected platform cuda.
+compatibility patches applied: ['PreTrainedTokenizerBase.all_special_tokens_extended', 'vllm get_config -> RoPE fields restored']
+INFO 10-15 00:39:54 [utils.py:326] non-default args: {'model': 'Qwen/Qwen2.5-7B-Instruct', 'dtype': 'float16', 'seed': 0, 'max_model_len': 32768, 'tensor_parallel_size': 2, 'enable_prefix_caching': True, 'disable_log_stats': True, 'disable_custom_all_reduce': True}
+[compat] Qwen2Config: restored rope_theta=1000000.0, rope_scaling=None
+INFO 10-15 00:40:33 [__init__.py:711] Resolved architecture: Qwen2ForCausalLM
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+WARNING 10-15 00:40:33 [__init__.py:2819] Casting torch.bfloat16 to torch.float16.
+INFO 10-15 00:40:33 [__init__.py:1750] Using max model len 32768
+WARNING 10-15 00:40:35 [arg_utils.py:1770] Compute Capability < 8.0 is not supported by the V1 Engine. Falling back to V0. 
+[compat] Qwen2Config: restored rope_theta=1000000.0, rope_scaling=None
+INFO 10-15 00:40:37 [llm_engine.py:222] Initializing a V0 LLM engine (v0.10.1.1) with config: model='Qwen/Qwen2.5-7B-Instruct', speculative_config=None, tokenizer='Qwen/Qwen2.5-7B-Instruct', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config={}, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float16, max_seq_len=32768, download_dir=None, load_format=auto, tensor_parallel_size=2, pipeline_parallel_size=1, disable_custom_all_reduce=True, quantization=None, enforce_eager=False, kv_cache_dtype=auto, device_config=cuda, decoding_config=DecodingConfig(backend='auto', disable_fallback=False, disable_any_whitespace=False, disable_additional_properties=False, reasoning_backend=''), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None), seed=0, served_model_name=Qwen/Qwen2.5-7B-Instruct, enable_prefix_caching=True, chunked_prefill_enabled=False, use_async_output_proc=True, pooler_config=None, compilation_config={"level":0,"debug_dump_path":"","cache_dir":"","backend":"","custom_ops":[],"splitting_ops":null,"use_inductor":true,"compile_sizes":[],"inductor_compile_config":{"enable_auto_functionalized_v2":false},"inductor_passes":{},"cudagraph_mode":0,"use_cudagraph":true,"cudagraph_num_of_warmups":0,"cudagraph_capture_sizes":[256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"cudagraph_copy_inputs":false,"full_cuda_graph":false,"pass_config":{"enable_fusion":false,"enable_noop":false},"max_capture_size":256,"local_cache_dir":null}, use_cached_outputs=False, 
+WARNING 10-15 00:40:38 [multiproc_worker_utils.py:273] Reducing Torch parallelism from 16 threads to 1 to avoid unnecessary CPU contention. Set OMP_NUM_THREADS in the external environment to tune this value as needed.
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m INFO 10-15 00:40:38 [multiproc_worker_utils.py:219] Worker ready; awaiting tasks
+INFO 10-15 00:40:40 [cuda.py:384] Cannot use FlashAttention-2 backend for Volta and Turing GPUs.
+INFO 10-15 00:40:40 [cuda.py:433] Using XFormers backend.
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m INFO 10-15 00:40:41 [cuda.py:384] Cannot use FlashAttention-2 backend for Volta and Turing GPUs.
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m INFO 10-15 00:40:41 [cuda.py:433] Using XFormers backend.
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m INFO 10-15 00:40:42 [__init__.py:1418] Found nccl from library libnccl.so.2
+INFO 10-15 00:40:42 [__init__.py:1418] Found nccl from library libnccl.so.2
+INFO 10-15 00:40:42 [pynccl.py:70] vLLM is using nccl==2.26.2
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m INFO 10-15 00:40:42 [pynccl.py:70] vLLM is using nccl==2.26.2
+INFO 10-15 00:40:42 [shm_broadcast.py:289] vLLM message queue communication handle: Handle(local_reader_ranks=[1], buffer_handle=(1, 4194304, 6, 'psm_b61c382c'), local_subscribe_addr='ipc:///tmp/152d93aa-4a2a-42ad-a69e-44c730ed71a6', remote_subscribe_addr=None, remote_addr_ipv6=False)
+INFO 10-15 00:40:42 [parallel_state.py:1134] rank 0 in world size 2 is assigned as DP rank 0, PP rank 0, TP rank 0, EP rank 0
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m INFO 10-15 00:40:42 [parallel_state.py:1134] rank 1 in world size 2 is assigned as DP rank 0, PP rank 0, TP rank 1, EP rank 1
+INFO 10-15 00:40:42 [model_runner.py:1080] Starting to load model Qwen/Qwen2.5-7B-Instruct...
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m INFO 10-15 00:40:42 [model_runner.py:1080] Starting to load model Qwen/Qwen2.5-7B-Instruct...
+INFO 10-15 00:40:42 [weight_utils.py:296] Using model weights format ['*.safetensors', '*.bin', '*.pt']
+Loading safetensors checkpoint shards:   0% Completed | 0/4 [00:00<?, ?it/s]
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m INFO 10-15 00:40:43 [weight_utils.py:296] Using model weights format ['*.safetensors', '*.bin', '*.pt']
+Loading safetensors checkpoint shards:  25% Completed | 1/4 [00:02<00:06,  2.31s/it]
+Loading safetensors checkpoint shards:  50% Completed | 2/4 [00:04<00:04,  2.38s/it]
+Loading safetensors checkpoint shards:  75% Completed | 3/4 [00:06<00:02,  2.32s/it]
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:09<00:00,  2.35s/it]
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:09<00:00,  2.34s/it]
+
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m INFO 10-15 00:40:52 [default_loader.py:262] Loading weights took 9.26 seconds
+INFO 10-15 00:40:52 [default_loader.py:262] Loading weights took 9.49 seconds
+INFO 10-15 00:40:53 [model_runner.py:1112] Model loading took 7.1007 GiB and 9.635169 seconds
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m INFO 10-15 00:40:53 [model_runner.py:1112] Model loading took 7.1007 GiB and 9.415576 seconds
+INFO 10-15 00:41:02 [worker.py:295] Memory profiling takes 9.24 seconds
+INFO 10-15 00:41:02 [worker.py:295] the current vLLM instance can use total_gpu_memory (31.73GiB) x gpu_memory_utilization (0.90) = 28.56GiB
+INFO 10-15 00:41:02 [worker.py:295] model weights take 7.10GiB; non_torch_memory takes 0.16GiB; PyTorch activation peak memory takes 2.84GiB; the rest of the memory reserved for KV Cache is 18.46GiB.
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m INFO 10-15 00:41:02 [worker.py:295] Memory profiling takes 9.15 seconds
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m INFO 10-15 00:41:02 [worker.py:295] the current vLLM instance can use total_gpu_memory (31.73GiB) x gpu_memory_utilization (0.90) = 28.56GiB
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m INFO 10-15 00:41:02 [worker.py:295] model weights take 7.10GiB; non_torch_memory takes 0.16GiB; PyTorch activation peak memory takes 2.84GiB; the rest of the memory reserved for KV Cache is 18.46GiB.
+INFO 10-15 00:41:03 [executor_base.py:114] # cuda blocks: 43201, # CPU blocks: 9362
+INFO 10-15 00:41:03 [executor_base.py:119] Maximum concurrency for 32768 tokens per request: 21.09x
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m INFO 10-15 00:41:06 [model_runner.py:1383] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI. If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 10-15 00:41:06 [model_runner.py:1383] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI. If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+Capturing CUDA graph shapes:   0%|          | 0/35 [00:00<?, ?it/s]Capturing CUDA graph shapes:   3%|▎         | 1/35 [00:00<00:27,  1.23it/s]Capturing CUDA graph shapes:   6%|▌         | 2/35 [00:01<00:26,  1.22it/s]Capturing CUDA graph shapes:   9%|▊         | 3/35 [00:02<00:25,  1.24it/s]Capturing CUDA graph shapes:  11%|█▏        | 4/35 [00:03<00:24,  1.25it/s]Capturing CUDA graph shapes:  14%|█▍        | 5/35 [00:04<00:24,  1.24it/s]Capturing CUDA graph shapes:  17%|█▋        | 6/35 [00:04<00:23,  1.24it/s]Capturing CUDA graph shapes:  20%|██        | 7/35 [00:05<00:22,  1.27it/s]Capturing CUDA graph shapes:  23%|██▎       | 8/35 [00:06<00:21,  1.27it/s]Capturing CUDA graph shapes:  26%|██▌       | 9/35 [00:07<00:20,  1.27it/s]Capturing CUDA graph shapes:  29%|██▊       | 10/35 [00:07<00:19,  1.28it/s]Capturing CUDA graph shapes:  31%|███▏      | 11/35 [00:08<00:18,  1.28it/s]Capturing CUDA graph shapes:  34%|███▍      | 12/35 [00:09<00:17,  1.29it/s]Capturing CUDA graph shapes:  37%|███▋      | 13/35 [00:10<00:17,  1.28it/s]Capturing CUDA graph shapes:  40%|████      | 14/35 [00:11<00:16,  1.28it/s]Capturing CUDA graph shapes:  43%|████▎     | 15/35 [00:11<00:15,  1.28it/s]Capturing CUDA graph shapes:  46%|████▌     | 16/35 [00:12<00:14,  1.28it/s]Capturing CUDA graph shapes:  49%|████▊     | 17/35 [00:13<00:13,  1.29it/s]Capturing CUDA graph shapes:  51%|█████▏    | 18/35 [00:14<00:13,  1.30it/s]Capturing CUDA graph shapes:  54%|█████▍    | 19/35 [00:14<00:12,  1.30it/s]Capturing CUDA graph shapes:  57%|█████▋    | 20/35 [00:15<00:11,  1.31it/s]Capturing CUDA graph shapes:  60%|██████    | 21/35 [00:16<00:10,  1.31it/s]Capturing CUDA graph shapes:  63%|██████▎   | 22/35 [00:17<00:09,  1.32it/s]Capturing CUDA graph shapes:  66%|██████▌   | 23/35 [00:17<00:09,  1.32it/s]Capturing CUDA graph shapes:  69%|██████▊   | 24/35 [00:18<00:08,  1.32it/s]Capturing CUDA graph shapes:  71%|███████▏  | 25/35 [00:19<00:07,  1.33it/s]Capturing CUDA graph shapes:  74%|███████▍  | 26/35 [00:20<00:06,  1.34it/s]Capturing CUDA graph shapes:  77%|███████▋  | 27/35 [00:20<00:05,  1.33it/s]Capturing CUDA graph shapes:  80%|████████  | 28/35 [00:21<00:05,  1.34it/s]Capturing CUDA graph shapes:  83%|████████▎ | 29/35 [00:22<00:04,  1.31it/s]Capturing CUDA graph shapes:  86%|████████▌ | 30/35 [00:23<00:03,  1.34it/s]Capturing CUDA graph shapes:  89%|████████▊ | 31/35 [00:23<00:02,  1.35it/s]Capturing CUDA graph shapes:  91%|█████████▏| 32/35 [00:24<00:02,  1.36it/s]Capturing CUDA graph shapes:  94%|█████████▍| 33/35 [00:25<00:01,  1.36it/s]Capturing CUDA graph shapes:  97%|█████████▋| 34/35 [00:26<00:00,  1.38it/s]Capturing CUDA graph shapes: 100%|██████████| 35/35 [00:26<00:00,  1.36it/s]Capturing CUDA graph shapes: 100%|██████████| 35/35 [00:26<00:00,  1.31it/s]
+INFO 10-15 00:41:33 [model_runner.py:1535] Graph capturing finished in 27 secs, took 0.21 GiB
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m INFO 10-15 00:41:33 [model_runner.py:1535] Graph capturing finished in 27 secs, took 0.21 GiB
+INFO 10-15 00:41:33 [llm_engine.py:417] init engine (profile, create kv cache, warmup model) took 40.48 seconds
+INFO 10-15 00:41:35 [llm.py:298] Supported_tasks: ['generate']
+Loaded Qwen/Qwen2.5-7B-Instruct (vLLM 0.10.1.1, tp=2); questions [('v2', 3), ('ver03', 3), ('ver03_newco', 3)]; tools ['none', 'calc']; seeds [0]
+Finished $REPO_ROOT/results/ver02_smoke/v100_ver03/answers_ver02_qwen25-7b_s0_smoke_v2_L2345_20261015-003918.jsonl: 3 answers in 46.1s, 0 hit the token limit
+Unsupported conversion from f16 to f16
+LLVM ERROR: Unsupported rounding mode for conversion.
+#blocked = #ttg.blocked<{sizePerThread = [4, 4], threadsPerWarp = [8, 4], warpsPerCTA = [4, 1], order = [1, 0]}>
+#blocked1 = #ttg.blocked<{sizePerThread = [4, 4], threadsPerWarp = [2, 16], warpsPerCTA = [4, 1], order = [1, 0]}>
+#blocked2 = #ttg.blocked<{sizePerThread = [4, 4], threadsPerWarp = [1, 32], warpsPerCTA = [4, 1], order = [1, 0]}>
+#blocked3 = #ttg.blocked<{sizePerThread = [1, 8], threadsPerWarp = [2, 16], warpsPerCTA = [4, 1], order = [1, 0]}>
+#blocked4 = #ttg.blocked<{sizePerThread = [8, 1], threadsPerWarp = [16, 2], warpsPerCTA = [1, 4], order = [0, 1]}>
+#blocked5 = #ttg.blocked<{sizePerThread = [8, 1], threadsPerWarp = [2, 16], warpsPerCTA = [1, 4], order = [0, 1]}>
+#shared = #ttg.swizzled_shared<{vec = 1, perPhase = 1, maxPhase = 1, order = [1, 0]}>
+#shared1 = #ttg.swizzled_shared<{vec = 1, perPhase = 1, maxPhase = 1, order = [0, 1]}>
+#smem = #ttg.shared_memory
+module attributes {"ttg.num-ctas" = 1 : i32, "ttg.num-warps" = 4 : i32, ttg.target = "cuda:70", "ttg.threads-per-warp" = 32 : i32} {
+  tt.func public @_fwd_kernel(%arg0: !tt.ptr<f16> {tt.divisibility = 16 : i32}, %arg1: !tt.ptr<f16> {tt.divisibility = 16 : i32}, %arg2: !tt.ptr<f16> {tt.divisibility = 16 : i32}, %arg3: !tt.ptr<f16> {tt.divisibility = 16 : i32}, %arg4: !tt.ptr<f16> {tt.divisibility = 16 : i32}, %arg5: !tt.ptr<i32> {tt.divisibility = 16 : i32}, %arg6: f32, %arg7: !tt.ptr<f32> {tt.divisibility = 16 : i32}, %arg8: !tt.ptr<f32> {tt.divisibility = 16 : i32}, %arg9: !tt.ptr<i32> {tt.divisibility = 16 : i32}, %arg10: !tt.ptr<i32> {tt.divisibility = 16 : i32}, %arg11: !tt.ptr<f16> {tt.divisibility = 16 : i32}, %arg12: i32, %arg13: i32 {tt.divisibility = 16 : i32}, %arg14: i32 {tt.divisibility = 16 : i32}, %arg15: i32 {tt.divisibility = 16 : i32}, %arg16: i32 {tt.divisibility = 16 : i32}, %arg17: i32 {tt.divisibility = 16 : i32}, %arg18: i32 {tt.divisibility = 16 : i32}, %arg19: i32 {tt.divisibility = 16 : i32}, %arg20: i32 {tt.divisibility = 16 : i32}, %arg21: i32 {tt.divisibility = 16 : i32}, %arg22: i32 {tt.divisibility = 16 : i32}, %arg23: i32 {tt.divisibility = 16 : i32}, %arg24: i32 {tt.divisibility = 16 : i32}, %arg25: i32 {tt.divisibility = 16 : i32}, %arg26: i32 {tt.divisibility = 16 : i32}) attributes {noinline = false} {
+    %cst = arith.constant dense<0xFF800000> : tensor<128xf32, #ttg.slice<{dim = 1, parent = #blocked}>>
+    %cst_0 = arith.constant dense<1.000000e+00> : tensor<128xf32, #ttg.slice<{dim = 1, parent = #blocked}>>
+    %cst_1 = arith.constant dense<0xFF800000> : tensor<128x16xf32, #blocked>
+    %cst_2 = arith.constant dense<0xFF800000> : tensor<128x64xf32, #blocked1>
+    %cst_3 = arith.constant dense<0.000000e+00> : tensor<128x128xf32, #blocked2>
+    %c64_i32 = arith.constant 64 : i32
+    %c0_i32 = arith.constant 0 : i32
+    %c16_i32 = arith.constant 16 : i32
+    %cst_4 = arith.constant dense<0.000000e+00> : tensor<64x128xf16, #blocked3>
+    %cst_5 = arith.constant dense<0.000000e+00> : tensor<128x64xf32, #blocked1>
+    %cst_6 = arith.constant dense<0.000000e+00> : tensor<128x64xf16, #blocked4>
+    %c48_i32 = arith.constant 48 : i32
+    %c32_i32 = arith.constant 32 : i32
+    %cst_7 = arith.constant dense<0.000000e+00> : tensor<16x128xf16, #blocked5>
+    %cst_8 = arith.constant dense<0.000000e+00> : tensor<128x16xf32, #blocked>
+    %cst_9 = arith.constant dense<0.000000e+00> : tensor<128x16xf16, #blocked4>
+    %c15_i32 = arith.constant 15 : i32
+    %cst_10 = arith.constant dense<0.000000e+00> : tensor<128x128xf16, #blocked3>
+    %c4_i32 = arith.constant 4 : i32
+    %c7_i32 = arith.constant 7 : i32
+    %c1_i32 = arith.constant 1 : i32
+    %c128_i32 = arith.constant 128 : i32
+    %cst_11 = arith.constant dense<128> : tensor<128xi32, #ttg.slice<{dim = 0, parent = #blocked3}>>
+    %cst_12 = arith.constant dense<128> : tensor<128xi32, #ttg.slice<{dim = 0, parent = #blocked5}>>
+    %cst_13 = arith.constant dense<128> : tensor<128xi32, #ttg.slice<{dim = 1, parent = #blocked4}>>
+    %cst_14 = arith.constant dense<1> : tensor<128xi32, #ttg.slice<{dim = 0, parent = #blocked3}>>
+    %cst_15 = arith.constant dense<1> : tensor<128xi32, #ttg.slice<{dim = 0, parent = #blocked5}>>
+    %cst_16 = arith.constant dense<1> : tensor<128xi32, #ttg.slice<{dim = 1, parent = #blocked4}>>
+    %cst_17 = arith.constant dense<0> : tensor<128xi32, #ttg.slice<{dim = 0, parent = #blocked3}>>
+    %cst_18 = arith.constant dense<0> : tensor<128xi32, #ttg.slice<{dim = 0, parent = #blocked5}>>
+    %cst_19 = arith.constant dense<0> : tensor<128xi32, #ttg.slice<{dim = 1, parent = #blocked4}>>
+    %cst_20 = arith.constant dense<8> : tensor<128x1xi32, #blocked4>
+    %cst_21 = arith.constant dense<16> : tensor<1x16xi32, #blocked4>
+    %cst_22 = arith.constant dense<8> : tensor<1x16xi32, #blocked4>
+    %0 = tt.get_program_id x : i32
+    %1 = tt.get_program_id y : i32
+    %2 = tt.get_program_id z : i32
+    %3 = arith.divsi %1, %c7_i32 : i32
+    %4 = tt.addptr %arg10, %0 : !tt.ptr<i32>, i32
+    %5 = tt.load %4 : !tt.ptr<i32>
+    %6 = tt.addptr %arg9, %0 : !tt.ptr<i32>, i32
+    %7 = tt.load %6 : !tt.ptr<i32>
+    %8 = tt.addptr %6, %c1_i32 : !tt.ptr<i32>, i32
+    %9 = tt.load %8 : !tt.ptr<i32>
+    %10 = arith.subi %9, %7 : i32
+    %11 = arith.subi %5, %10 : i32
+    %12 = arith.muli %2, %c128_i32 : i32
+    %13 = tt.make_range {end = 128 : i32, start = 0 : i32} : tensor<128xi32, #ttg.slice<{dim = 1, parent = #blocked3}>>
+    %14 = tt.make_range {end = 128 : i32, start = 0 : i32} : tensor<128xi32, #ttg.slice<{dim = 1, parent = #blocked4}>>
+    %15 = tt.make_range {end = 128 : i32, start = 0 : i32} : tensor<128xi32, #ttg.slice<{dim = 1, parent = #blocked1}>>
+    %16 = tt.make_range {end = 128 : i32, start = 0 : i32} : tensor<128xi32, #ttg.slice<{dim = 0, parent = #blocked3}>>
+    %17 = tt.make_range {end = 128 : i32, start = 0 : i32} : tensor<128xi32, #ttg.slice<{dim = 0, parent = #blocked5}>>
+    %18 = tt.splat %12 : i32 -> tensor<128xi32, #ttg.slice<{dim = 1, parent = #blocked3}>>
+    %19 = tt.splat %12 : i32 -> tensor<128xi32, #ttg.slice<{dim = 1, parent = #blocked1}>>
+    %20 = arith.addi %18, %13 : tensor<128xi32, #ttg.slice<{dim = 1, parent = #blocked3}>>
+    %21 = arith.addi %19, %15 : tensor<128xi32, #ttg.slice<{dim = 1, parent = #blocked1}>>
+    %22 = tt.expand_dims %20 {axis = 1 : i32} : tensor<128xi32, #ttg.slice<{dim = 1, parent = #blocked3}>> -> tensor<128x1xi32, #blocked3>
+    %23 = tt.expand_dims %21 {axis = 1 : i32} : tensor<128xi32, #ttg.slice<{dim = 1, parent = #blocked1}>> -> tensor<128x1xi32, #blocked1>
+    %24 = tt.splat %7 : i32 -> tensor<128x1xi32, #blocked3>
+    %25 = arith.addi %24, %22 : tensor<128x1xi32, #blocked3>
+    %26 = tt.splat %arg13 : i32 -> tensor<128x1xi32, #blocked3>
+    %27 = arith.muli %25, %26 : tensor<128x1xi32, #blocked3>
+    %28 = arith.muli %1, %arg14 : i32
+    %29 = tt.splat %28 : i32 -> tensor<128x1xi32, #blocked3>
+    %30 = arith.addi %27, %29 : tensor<128x1xi32, #blocked3>
+    %31 = tt.expand_dims %16 {axis = 0 : i32} : tensor<128xi32, #ttg.slice<{dim = 0, parent = #blocked3}>> -> tensor<1x128xi32, #blocked3>
+    %32 = tt.expand_dims %17 {axis = 0 : i32} : tensor<128xi32, #ttg.slice<{dim = 0, parent = #blocked5}>> -> tensor<1x128xi32, #blocked5>
+    %33 = tt.broadcast %30 : tensor<128x1xi32, #blocked3> -> tensor<128x128xi32, #blocked3>
+    %34 = tt.broadcast %31 : tensor<1x128xi32, #blocked3> -> tensor<128x128xi32, #blocked3>
+    %35 = arith.addi %33, %34 : tensor<128x128xi32, #blocked3>
+    %36 = arith.cmpi slt, %16, %cst_11 : tensor<128xi32, #ttg.slice<{dim = 0, parent = #blocked3}>>
+    %37 = arith.cmpi slt, %17, %cst_12 : tensor<128xi32, #ttg.slice<{dim = 0, parent = #blocked5}>>
+    %38 = arith.cmpi slt, %14, %cst_13 : tensor<128xi32, #ttg.slice<{dim = 1, parent = #blocked4}>>
+    %39 = arith.select %36, %cst_14, %cst_17 : tensor<128xi1, #ttg.slice<{dim = 0, parent = #blocked3}>>, tensor<128xi32, #ttg.slice<{dim = 0, parent = #blocked3}>>
+    %40 = arith.select %37, %cst_15, %cst_18 : tensor<128xi1, #ttg.slice<{dim = 0, parent = #blocked5}>>, tensor<128xi32, #ttg.slice<{dim = 0, parent = #blocked5}>>
+    %41 = arith.select %38, %cst_16, %cst_19 : tensor<128xi1, #ttg.slice<{dim = 1, parent = #blocked4}>>, tensor<128xi32, #ttg.slice<{dim = 1, parent = #blocked4}>>
+    %42 = arith.cmpi ne, %39, %cst_17 : tensor<128xi32, #ttg.slice<{dim = 0, parent = #blocked3}>>
+    %43 = arith.cmpi ne, %40, %cst_18 : tensor<128xi32, #ttg.slice<{dim = 0, parent = #blocked5}>>
+    %44 = arith.cmpi ne, %41, %cst_19 : tensor<128xi32, #ttg.slice<{dim = 1, parent = #blocked4}>>
+    %45 = tt.expand_dims %42 {axis = 0 : i32} : tensor<128xi1, #ttg.slice<{dim = 0, parent = #blocked3}>> -> tensor<1x128xi1, #blocked3>
+    %46 = tt.expand_dims %43 {axis = 0 : i32} : tensor<128xi1, #ttg.slice<{dim = 0, parent = #blocked5}>> -> tensor<1x128xi1, #blocked5>
+    %47 = tt.splat %10 : i32 -> tensor<128x1xi32, #blocked3>
+    %48 = arith.cmpi slt, %22, %47 : tensor<128x1xi32, #blocked3>
+    %49 = tt.broadcast %45 : tensor<1x128xi1, #blocked3> -> tensor<128x128xi1, #blocked3>
+    %50 = tt.broadcast %48 : tensor<128x1xi1, #blocked3> -> tensor<128x128xi1, #blocked3>
+    %51 = arith.andi %49, %50 : tensor<128x128xi1, #blocked3>
+    %52 = tt.splat %arg0 : !tt.ptr<f16> -> tensor<128x128x!tt.ptr<f16>, #blocked3>
+    %53 = tt.addptr %52, %35 : tensor<128x128x!tt.ptr<f16>, #blocked3>, tensor<128x128xi32, #blocked3>
+    %54 = tt.load %53, %51, %cst_10 : tensor<128x128x!tt.ptr<f16>, #blocked3>
+    %55 = arith.addi %11, %c15_i32 : i32
+    %56 = arith.divui %55, %c16_i32 : i32
+    %57 = arith.remsi %56, %c4_i32 : i32
+    %58 = arith.subi %56, %57 : i32
+    %59 = arith.muli %58, %c16_i32 : i32
+    %60 = arith.muli %0, %arg12 : i32
+    %61 = tt.addptr %arg5, %60 : !tt.ptr<i32>, i32
+    %62 = arith.muli %3, %arg22 : i32
+    %63 = tt.expand_dims %14 {axis = 1 : i32} : tensor<128xi32, #ttg.slice<{dim = 1, parent = #blocked4}>> -> tensor<128x1xi32, #blocked4>
+    %64 = arith.divsi %63, %cst_20 : tensor<128x1xi32, #blocked4>
+    %65 = tt.splat %arg23 : i32 -> tensor<128x1xi32, #blocked4>
+    %66 = arith.muli %64, %65 : tensor<128x1xi32, #blocked4>
+    %67 = tt.make_range {end = 16 : i32, start = 0 : i32} : tensor<16xi32, #ttg.slice<{dim = 0, parent = #blocked4}>>
+    %68 = tt.make_range {end = 16 : i32, start = 0 : i32} : tensor<16xi32, #ttg.slice<{dim = 0, parent = #blocked}>>
+    %69 = tt.expand_dims %67 {axis = 0 : i32} : tensor<16xi32, #ttg.slice<{dim = 0, parent = #blocked4}>> -> tensor<1x16xi32, #blocked4>
+    %70 = tt.expand_dims %68 {axis = 0 : i32} : tensor<16xi32, #ttg.slice<{dim = 0, parent = #blocked}>> -> tensor<1x16xi32, #blocked>
+    %71 = arith.remsi %63, %cst_20 : tensor<128x1xi32, #blocked4>
+    %72 = tt.broadcast %71 : tensor<128x1xi32, #blocked4> -> tensor<128x16xi32, #blocked4>
+    %73 = arith.muli %3, %arg25 : i32
+    %74 = tt.splat %arg26 : i32 -> tensor<1x128xi32, #blocked5>
+    %75 = arith.muli %32, %74 : tensor<1x128xi32, #blocked5>
+    %76 = tt.make_range {end = 16 : i32, start = 0 : i32} : tensor<16xi32, #ttg.slice<{dim = 1, parent = #blocked5}>>
+    %77 = tt.expand_dims %76 {axis = 1 : i32} : tensor<16xi32, #ttg.slice<{dim = 1, parent = #blocked5}>> Unsupported conversion from ->f16  to tensor<f1616
+xLLVM ERROR: Unsupported rounding mode for conversion.
+1xi32, #blocked5>
+    %78 = tt.broadcast %77 : tensor<16x1xi32, #blocked5> -> tensor<16x128xi32, #blocked5>
+    %79 = tt.fp_to_fp %54 : tensor<128x128xf16, #blocked3> -> tensor<128x128xf32, #blocked3>
+    %80 = ttg.local_alloc %79 : (tensor<128x128xf32, #blocked3>) -> !ttg.memdesc<128x128xf32, #shared, #smem>
+    %81 = tt.splat %11 : i32 -> tensor<1x16xi32, #blocked>
+    %82 = tt.splat %arg6 : f32 -> tensor<128x16xf32, #blocked>
+    %83:3 = scf.for %arg27 = %c0_i32 to %59 step %c64_i32 iter_args(%arg28 = %cst_3, %arg29 = %cst_0, %arg30 = %cst) -> (tensor<128x128xf32, #blocked2>, tensor<128xf32, #ttg.slice<{dim = 1, parent = #blocked}>>, tensor<128xf32, #ttg.slice<{dim = 1, parent = #blocked}>>)  : i32# blocked{ = 
+#      ttg%.141blocked<{sizePerThread = [4, 4], threadsPerWarp = [8, 4], warpsPerCTA = [4, 1], order = [1, 0]}> = 
+arith.divsi# blocked%1arg27 = ,# ttg%.c16_i32blocked<{sizePerThread = [4, 4], threadsPerWarp = [2, 16], warpsPerCTA = [4, 1], order = [1, 0]}> 
+:# blockedi232 = 
+#      ttg%.142blocked<{sizePerThread = [4, 4], threadsPerWarp = [1, 32], warpsPerCTA = [4, 1], order = [1, 0]}> = 
+tt.addptr# blocked%613, =  #%ttg141. blocked<{sizePerThread = [1, 8], threadsPerWarp = [2, 16], warpsPerCTA = [4, 1], order = [1, 0]}>:
+ #!blockedtt.ptr<i32>,4  = i#32ttg
+.      blocked<{sizePerThread = [8, 1], threadsPerWarp = [16, 2], warpsPerCTA = [1, 4], order = [0, 1]}>%
+143# = blockedtt.load5  = %#142ttg .:blocked<{sizePerThread = [8, 1], threadsPerWarp = [2, 16], warpsPerCTA = [1, 4], order = [0, 1]}> 
+!#ttshared. = ptr<i32>#
+ttg      .%swizzled_shared<{vec = 1, perPhase = 1, maxPhase = 1, order = [1, 0]}>144
+ = #arith.mulishared 1% = 143#,ttg .%swizzled_shared<{vec = 1, perPhase = 1, maxPhase = 1, order = [0, 1]}>arg21
+ #:smem  = i#32ttg
+.      shared_memory%
+145module =  attributesarith.addi { "%t144t,g .%n62u m:- cit32a
+s      "% = 1461 =  : tt.splati 32%, 145" t:t gi.32n u->m -tensor<w128axr1pxsi"32 = , 4# : blockedi432>, 
+ttg.target       = %"147c = uarith.addid a%:1467,0 "%, 66" t:t gtensor<.128txh1rxeia32d, s#-blockedp4e>r
+-      w%a148r = ptt.splat"  = %32arg27 :  i:32 }i 32{ 
+->   tt.functensor< 1publicx 16@x_fwd_kerneli(32%, arg0#: blocked!4tt>.
+ptr<f16>       {%tt.divisibility149 =  = 16tt.splat :  i%32arg27} , :% arg1i: 32! tt->. ptr<f16>tensor< {1tt.divisibilityx = 1616x : ii3232, }#, blocked%>arg2
+:       !%tt150. = ptr<f16>arith.addi { tt.divisibility% = 14816, :  i%3269} , :% arg3tensor<: 1!xtt16.xptr<f16>i {32tt.divisibility,  = #16blocked : 4i>32
+}      , %%151arg4 = : arith.addi! tt%.149ptr<f16>, { tt.divisibility% = 7016  : :i 32tensor<}1, x%16arg5x: i!32tt, .#ptr<i32>blocked {>tt.divisibility
+ =       16% : 152i = 32arith.remsi} , %%150arg6,:  f32%, cst_21% arg7::  !tensor<tt1.xptr<f32>16 {xtt.divisibilityi = 3216,  : #iblocked324}>, 
+%      arg8%: 153! = ttarith.muli. ptr<f32>% {152tt.divisibility, =  16% : cst_22i 32:} , tensor<%1arg9x: 16!xtti.32ptr<i32>,  {#tt.divisibilityblocked = 416> : 
+i      32%}154,  = %tt.broadcastarg10 : %!147tt .:ptr<i32>  {tensor<tt.divisibility128 = x161 : xii3232}, , #%blockedarg114: >! tt->. ptr<f16>tensor< {128tt.divisibilityx = 1616x : ii3232, }#, blocked%4arg12>: 
+i      32%, 155% = arg13tt.broadcast:  i%32153 { tt.divisibility: =  16tensor< : 1ix3216}x, i%32arg14, : #iblocked324 {>tt.divisibility  = ->16  : tensor<i12832x}16, x%iarg1532: , i#32blocked {4tt.divisibility> = 
+16       : %i15632 = }arith.addi,  %%arg16154: ,i 32% {155tt.divisibility  = :16  : tensor<i12832x}16, x%iarg1732: , i#32blocked {4tt.divisibility> = 
+16       : %i15732 = }arith.addi,  %%arg18156: ,i 32% {72tt.divisibility  = :16  : tensor<i12832x}16, x%iarg1932: , i#32blocked {4tt.divisibility> = 
+16       : %i15832 = }arith.muli,  %%arg20143: ,i 32% {arg24tt.divisibility  = :16  : ii3232
+}      , %%159arg21 = : arith.addii 32% {158tt.divisibility, = 16  : %i7332 }:,  %iarg2232: 
+i      32% {160tt.divisibility =  = tt.splat16  : %i15932 }:,  %iarg2332:  i->32  {tensor<tt.divisibility1 = x16128 : xii3232}, , #%blockedarg245: >i
+32       {%tt.divisibility161 =  = 16arith.addi :  i%32160},,  %%arg2575:  i:32  {tensor<tt.divisibility1 = x16128 : xii3232}, , #%blockedarg265: >i
+32       {%tt.divisibility162 =  = 16tt.broadcast :  i%32161} ): attributes  {tensor<noinline1 = xfalse128}x i{32
+,     #%blockedcst5 = >arith.constant  ->dense< 0xFF800000tensor<>16 : x128tensor<x128ix32f32, , ##blockedttg5.>slice<{dim = 1, parent = #blocked}>
+>      
+%    163% = cst_0arith.addi =  arith.constant% 162dense<,1.000000e+00 >% : 78tensor< 128:x f32tensor<, 16#xttg128.xslice<{dim = 1, parent = #blocked}>i>32
+,     #%blockedcst_15 = >arith.constant
+       dense<%0xFF800000164> =  : arith.additensor< 128%xarg2716,x f32%, c16_i32# blocked:> 
+i    32%
+cst_2       = %arith.constant165  = dense<arith.cmpi0xFF800000 >sgt : ,tensor< 128%x16464,x f32%, 11# blocked:1 >i
+32    
+%      cst_3% = 166arith.constant =  scf.ifdense< 0.000000e+00%>165 :  -> (tensor<tensor<128128xx12816xxf32f16, , ##blockedblocked24>>
+)     %{c64_i32
+ =         arith.constant% 37464 =  : tt.expand_dimsi 32%
+44     {%axisc0_i32 =  = 1arith.constant :  i032 : }i 32:
+     tensor<%128c16_i32x = iarith.constant1 , 16# : ttgi.32slice<{dim = 1, parent = #blocked4}>
+>     %->cst_4  = tensor<arith.constant128 xdense<10.000000e+00x>i : 1tensor<, 64#xblocked1284x>f16
+,         #%blocked3753 = >tt.splat
+     %%11cst_5  = :arith.constant  idense<320.000000e+00 >-> :  tensor<tensor<1281xx6416xxf32i, 32#, blocked#1blocked>4
+>    
+%        cst_6% = 376arith.constant =  arith.cmpidense< 0.000000e+00slt>, :  tensor<%128150x,64 x%f16375,  #:blocked 4tensor<>1
+x    16%xc48_i32i = 32arith.constant,  #48blocked : 4i>32
+
+            %%377c32_i32 =  = tt.broadcastarith.constant  %32374 :  i:32 
+tensor<    128%xcst_71 = xarith.constanti 1dense<, 0.000000e+00#>blocked : 4tensor<>16 x->128 xtensor<f16128, x#16blockedx5i>1
+,     #%blockedcst_84 = >arith.constant
+         dense<%0.000000e+00378> =  : tt.broadcasttensor< 128%x37616 x:f32 , tensor<#1blockedx>16
+x    i%1cst_9,  = #arith.constantblocked 4dense<>0.000000e+00 >-> :  tensor<tensor<128128xx1616xxf16i, 1#, blocked#4blocked>4
+>    
+%        c15_i32% = 379arith.constant =  arith.andi15  : %i37732,
+     %%378cst_10  = :arith.constant  tensor<dense<1280.000000e+00x>16 : xtensor<i1281x, 128#xblockedf164, >#
+blocked        3%>380
+ =     tt.splat% c4_i32% = arg3arith.constant  :4  : !itt32.
+ptr<f16>     %->c7_i32  = tensor<arith.constant128 x716 : xi!32tt
+.    ptr<f16>%, c1_i32# = blockedarith.constant4 >1
+ :         i%32381
+ =     tt.addptr% c128_i32% = 380arith.constant,  128% : 157i 32:
+     tensor<%128cst_11x = 16arith.constantx !dense<tt128.>ptr<f16> : , tensor<#128blockedx4i>32,,  #tensor<ttg128.xslice<{dim = 0, parent = #blocked3}>16>x
+i    32%, cst_12# = blockedarith.constant4 >dense<
+128        >% : 382tensor< = 128tt.loadx i%32381, ,# ttg%.379slice<{dim = 0, parent = #blocked5}>,> 
+%    cst_9% cst_13: =  arith.constanttensor< 128dense<x12816>x : !tensor<tt128.xptr<f16>i, 32#, blocked#4ttg>.
+slice<{dim = 1, parent = #blocked4}>        >scf.yield
+     %%382cst_14  = :arith.constant  tensor<dense<1281x>16 : xtensor<f16128, x#iblocked324, >#
+ttg      .}slice<{dim = 0, parent = #blocked3}> else >{
+
+            %%cst_15374 =  = arith.constanttt.splat  dense<%1arg3>  : :tensor< 128!xtti.32ptr<f16>,  #->ttg .tensor<slice<{dim = 0, parent = #blocked5}>128>x
+16    x%!cst_16tt = .arith.constantptr<f16> , dense<#1blocked>4 : >tensor<
+128        x%i37532 = , tt.addptr# ttg%.374slice<{dim = 1, parent = #blocked4}>,> 
+%    157% cst_17: =  arith.constanttensor< 128dense<x016>x : !tensor<tt128.xptr<f16>i, 32#, blocked#4ttg>.,slice<{dim = 0, parent = #blocked3}> >tensor<
+128    x%16cst_18x = iarith.constant32 , dense<#0blocked>4 : >tensor<
+128        x%i37632 = , tt.load# ttg%.375slice<{dim = 0, parent = #blocked5}> >:
+     tensor<%128cst_19x = 16arith.constantx !dense<tt0.>ptr<f16> : , tensor<#128blockedx4i>32
+,         #scf.yieldttg .%slice<{dim = 1, parent = #blocked4}>376> :
+     tensor<%128cst_20x = 16arith.constantx f16dense<, 8#>blocked : 4tensor<>128
+x      1}x
+i      32%, 167# = blockedtt.fp_to_fp4 >%
+166     %:cst_21  = tensor<arith.constant128x16x f16dense<, 16#>blocked : 4tensor<>1 x->16 xtensor<i12832x, 16#xblockedf32, 4#>blocked
+4    >%
+cst_22       = %arith.constant168  = dense<ttg.local_alloc8 >% : 167tensor< 1:x 16(xtensor<i12832x, 16#xblockedf324, >#
+blocked    4%>0) =  -> tt.get_program_id! ttgx. memdesc<128x16xf32, #shared1, #smem>:
+       i%32169
+ =     ttg.local_load% 1% = 80tt.get_program_id  :y  !:ttg .imemdesc<128x128xf32, #shared, #smem>32 
+->     %tensor<2128 = xtt.get_program_id128 xzf32 , :# ttgi.32dot_op<{opIdx = 0, parent = #blocked}>
+>    
+%      3% = 170arith.divsi =  ttg.local_load% 1%,168  %:c7_i32  !:ttg .imemdesc<128x16xf32, #shared1, #smem>32 
+->     %tensor<4128 = xtt.addptr16 x%f32arg10, ,# ttg%.0dot_op<{opIdx = 1, parent = #blocked}> >:
+ !      tt%.171ptr<i32> = ,tt.dot  i%32169
+,     %%5170 = ,tt.load  %%cst_84,  :inputPrecision  !=tt .tf32ptr<i32> 
+:     %tensor<6128 = xtt.addptr128 x%f32arg9, ,# ttg%.0dot_op<{opIdx = 0, parent = #blocked}> >:  *! tttensor<.128ptr<i32>x,16 xif3232, 
+#    ttg%.7dot_op<{opIdx = 1, parent = #blocked}> = >tt.load  ->% 6tensor< 128:x 16!xttf32., ptr<i32>#
+blocked    >%
+8       = %tt.addptr172  = %arith.cmpi6 ,slt ,% c1_i32% 151:,  !%tt81. ptr<i32>:,  tensor<i132x
+16    x%i932 = , tt.load# blocked%>8
+       %:173  = !tt.broadcasttt .%ptr<i32>172
+     :% 10tensor< = 1arith.subix 16%x9i,1 , %#7blocked >:  ->i 32tensor<
+128    x%1611x = iarith.subi1 , %#5blocked,> 
+%      10% 174: =  arith.selecti 32%
+173    , %%12171 = , arith.muli% cst_1% : 2tensor<,128 x%16c128_i32x i:1 , i#32blocked
+>    , %tensor<13128 = xtt.make_range16 {xendf32 = , 128# : blockedi>32
+,       start% = 1750 =  : arith.mulfi 32%}174 ,:  %tensor<82128 x:i 32tensor<, 128#xttg16.xslice<{dim = 1, parent = #blocked3}>f32>, 
+#    blocked%>14
+ =       tt.make_range% {176end =  = "128t : ti.32r, estartd = u0c : ei"32(}% 175:)  <tensor<{128axisx = i132 : , i#32ttg}.>slice<{dim = 1, parent = #blocked4}> (>{
+
+          %^bb015( = %tt.make_rangearg31 {: endf32 = , 128% : arg32i: 32f32, )start: = 
+0         : %i37432 = }arith.maxnumf  :% arg31tensor<,128 x%iarg3232 , :# ttgf32.
+slice<{dim = 1, parent = #blocked1}>        >tt.reduce.return
+     %%37416  = :tt.make_range  {f32end
+ =       128} : )i : 32(, tensor<start128 = x016 : xif3232, }# blocked:> ) -> tensor<tensor<128128xxif3232, , ##ttgttg..slice<{dim = 1, parent = #blocked}>slice<{dim = 0, parent = #blocked3}>>>
+
+          %%17717 =  = arith.maxnumftt.make_range  {%endarg30 = ,128  : %i17632 , :start  = tensor<0128 : xif3232, }# ttg:. slice<{dim = 1, parent = #blocked}>tensor<>128
+x      i%32178,  = #tt.expand_dimsttg .%slice<{dim = 0, parent = #blocked5}>177> {
+axis     = %118 :  = itt.splat32 }% 12:  :tensor< 128ix32f32 , -># ttgtensor<.128slice<{dim = 1, parent = #blocked}>x>i 32->,  #tensor<ttg128.xslice<{dim = 1, parent = #blocked3}>1>x
+f32    , %#19blocked = >tt.splat
+       %%12179  = :tt.broadcast  i%32178  ->:  tensor<tensor<128128xxi132x, f32#, ttg#.blockedslice<{dim = 1, parent = #blocked1}>>> 
+->     %tensor<20128 = xarith.addi16 x%f3218, ,# blocked%>13
+       :% 180tensor< = 128arith.subfx i%32175, ,# ttg%.179slice<{dim = 1, parent = #blocked3}> >:
+     tensor<%12821x = 16arith.addix f32%, 19#,blocked >%
+15       %:181  = tensor<math.exp128 x%i18032 , :# ttgtensor<.128slice<{dim = 1, parent = #blocked1}>x>16
+x    f32%, 22# = blockedtt.expand_dims> 
+%      20% {182axis =  = "1t : ti.32r}e d:u ctensor<e128"x(i%32181, )# <ttg{.axisslice<{dim = 1, parent = #blocked3}> = >1  : ->i 32tensor<}128>x (1{x
+i      32^bb0, (#%blockedarg313: >f32
+,     %%arg3223:  = f32tt.expand_dims) :%
+21         {%axis374 =  = 1arith.addf :  i%32arg31},  :% arg32tensor< 128:x if3232
+,         #tt.reduce.returnttg .%slice<{dim = 1, parent = #blocked1}>374>  :->  f32tensor<
+128      x}1)x : i(32tensor<, 128#xblocked161x>f32
+,     #%blocked24> = ) -> tt.splattensor< 128%x7f32 , :# ttgi.32slice<{dim = 1, parent = #blocked}> >->
+       tensor<%128183x = 1arith.subfx i%32arg30, ,# blocked%3177> 
+:     %tensor<25128 = xarith.addif32 , %#24ttg,. slice<{dim = 1, parent = #blocked}>%>22
+       :% 184tensor< = 128math.expx 1%x183i 32:,  #tensor<blocked1283x>f32
+,     #%ttg26. = slice<{dim = 1, parent = #blocked}>tt.splat> 
+%      arg13% 185: =  tt.expand_dimsi 32% 184-> { axistensor< = 1281x : 1ix32i}32 , :# blockedtensor<3128>x
+f32    , %#27ttg = .arith.mulislice<{dim = 1, parent = #blocked}> >% 25->,  tensor<%12826x 1:x f32tensor<, 128#xblocked1>x
+i      32%, 186# = blockedttg.convert_layout3 >%
+185     %:28  = tensor<arith.muli128 x%11x,f32 , %#arg14blocked >:  ->i 32
+tensor<    128%x291 = xtt.splatf32 , %#28blocked 2:> 
+i      32% 187-> =  tt.broadcasttensor< 128%x1861 x:i 32tensor<, 128#xblocked13x>f32
+,     #%blocked302 = >arith.addi  ->% 27tensor<,128 x%12829x f32:,  #tensor<blocked1282x>1
+x      i%32188,  = #arith.mulfblocked 3%>arg28
+,     %%31187 =  tt.expand_dims:  %tensor<16128 {xaxis128 = x0f32 : , i#32blocked}2 >:
+       tensor<%128189x = iscf.if32 , %#165ttg -> (.tensor<slice<{dim = 0, parent = #blocked3}>16>x 128->x f16tensor<, 1#xblocked1285x>i)32 , {#
+blocked        3%>374
+ =     tt.splat% 32% = arg27tt.expand_dims  :% 17i {32axis  = ->0  : tensor<i1632x}1 x:i 32tensor<, 128#xblockedi532>, 
+#ttg.slice<{dim = 0, parent = #blocked5}>>         %->375  = tensor<arith.addi1 x%128374x,i 32%, #blocked775 >:
+     tensor<%1633x = 1tt.broadcastx i%3230,  #:blocked 5tensor<>128
+x        1%x376i = 32tt.splat,  #%blocked113 >:  ->i 32tensor< 128->x 128tensor<x16ix321, x#iblocked323, >#
+blocked    5%>34
+ =         tt.broadcast% 377% = 31arith.cmpi  :slt ,tensor< 1%x375128, %376 x:i 32tensor<, 16#xblocked13x>i32 , -># blockedtensor<5128>x
+128        x%i37832 = , tt.broadcast# blocked%346> 
+:     %tensor<351 = xarith.addi128 x%i331,,  #%blocked345 >:  ->tensor< 128tensor<x16128xx128ix32i, 1#, blocked#3blocked>5
+>    
+%        36% = 379arith.cmpi =  tt.broadcastslt ,% 377% 16:,  tensor<%16cst_11x 1:x itensor<1128, x#iblocked325, ># ttg->. slice<{dim = 0, parent = #blocked3}>tensor<>16
+x    128%x37i = 1arith.cmpi,  #sltblocked,5 >%
+17        ,% 380% = cst_12arith.andi  :% 378tensor<,128 x%i37932 , :# ttgtensor<.16slice<{dim = 0, parent = #blocked5}>x>128
+x    i%138,  = #arith.cmpiblocked 5slt>,
+         %%14381, =  tt.splat% cst_13% arg4:  :tensor< 128!xtti.32ptr<f16>,  #->ttg .tensor<slice<{dim = 1, parent = #blocked4}>16>x
+128    x%!39tt = .arith.selectptr<f16> , %#36blocked, 5%>cst_14
+,         %%cst_17382 :  = tensor<tt.addptr128 x%i3811,,  #%ttg163. slice<{dim = 0, parent = #blocked3}>:> , tensor<16x128tensor<x128!xtti.32ptr<f16>, , ##ttgblocked.5slice<{dim = 0, parent = #blocked3}>>>,
+     tensor<%1640x = 128arith.selectx i%3237, , #%blockedcst_155, >%
+cst_18         : %tensor<383128 = xtt.loadi 1%, 382#,ttg .%slice<{dim = 0, parent = #blocked5}>380>,,  tensor<%128cst_7x i:32 , tensor<#16ttgx.128slice<{dim = 0, parent = #blocked5}>x>!
+tt    .%ptr<f16>41,  = #arith.selectblocked 5%>38
+,         %scf.yieldcst_16 , %%383cst_19  : :tensor< 128tensor<x16ix1128, x#f16ttg, .#slice<{dim = 1, parent = #blocked4}>blocked>5, >tensor<
+128      x}i else 32{, 
+#        ttg%.374slice<{dim = 1, parent = #blocked4}> = >tt.splat
+     %%arg442  = :arith.cmpi  !nett,. ptr<f16>% 39->,  tensor<%16cst_17x 128:x !tensor<tt128.xptr<f16>i, 32#, blocked#5ttg>.
+slice<{dim = 0, parent = #blocked3}>        >%
+375     = %tt.addptr43  = %arith.cmpi374 ,ne ,% 163% 40:,  tensor<%16cst_18x 128:x !tensor<tt128.xptr<f16>i, 32#, blocked#5ttg>.,slice<{dim = 0, parent = #blocked5}> >tensor<
+16    x%12844x = iarith.cmpi32 , ne#,blocked 5%>41
+,         %%376cst_19 =  tt.load:  %tensor<375128 x:i 32tensor<, 16#xttg128.xslice<{dim = 1, parent = #blocked4}>!>tt
+.    ptr<f16>%, 45# = blockedtt.expand_dims5 >%
+42         {scf.yieldaxis  = %0376 :  i:32 }tensor< 16:x 128tensor<x128f16x, i#1blocked, 5#>ttg
+.      slice<{dim = 0, parent = #blocked3}>}>
+       ->% 190tensor< = 1arith.truncfx 128%x181i 1:,  #tensor<blocked1283x>16
+x    f32%, 46# = blockedtt.expand_dims>  %to43  {tensor<axis128 = x016 : xif1632, }#blocked>
+       :% 191tensor< = 128tt.fp_to_fpx i%1190,  #:ttg .tensor<slice<{dim = 0, parent = #blocked5}>128>x 16->x f16tensor<, 1#xblocked128>x i->1 , tensor<#128blockedx516>x
+f32    , %#47blocked = >tt.splat
+       %%10192  = :ttg.local_alloc  i%32191  ->:  tensor<(128tensor<x1281xx16ix32f32, , ##blockedblocked3>>)
+ ->     !%ttg48. = memdesc<128x16xf32, #shared, #smem>arith.cmpi
+       slt%,193  = %ttg.local_load22 ,% 192% 47:  :! ttgtensor<.128memdesc<128x16xf32, #shared, #smem>x 1->x itensor<32128, x#16blockedx3f32>, 
+#    ttg%.49dot_op<{opIdx = 0, parent = #blocked2}> = >tt.broadcast
+       %%45194  = :tt.fp_to_fp  tensor<%1189x 128:x itensor<116, x#128blockedx3f16>,  #->blocked 5tensor<>128 x->128 xtensor<i161x, 128#xblockedf323, >#
+blocked    5%>50
+ =       tt.broadcast% 195% = 48ttg.local_alloc  :% 194tensor< 128:x 1(xtensor<i161x, 128#xblockedf323, ># blocked->5 >tensor<)128 -> x!128ttgx.imemdesc<16x128xf32, #shared1, #smem>1
+,       #%blocked1963 = >ttg.local_load
+     %%19551  = :arith.andi  !%ttg49.,memdesc<16x128xf32, #shared1, #smem>  %->50  tensor<:16 xtensor<128128xxf32128, x#ittg1., dot_op<{opIdx = 1, parent = #blocked2}>#>blocked
+3      >%
+197     = %tt.dot52  = %tt.splat193 ,% arg0% 196:,  !%tt188.,ptr<f16>  inputPrecision->  =tensor< 128tf32x 128:x !tensor<tt128.xptr<f16>16, x#f32blocked, 3#>ttg
+.    dot_op<{opIdx = 0, parent = #blocked2}>> * %tensor<5316 = xtt.addptr128 x%f3252, ,# ttg%.35dot_op<{opIdx = 1, parent = #blocked2}> >:  ->tensor< 128tensor<x128128xx128!xttf32., ptr<f16>#, blocked#2blocked>3
+>      ,% 198tensor< = 128arith.mulfx 128%xarg29i,32 , %#184blocked 3:> 
+tensor<    128%x54f32 = , tt.load# ttg%.53slice<{dim = 1, parent = #blocked}>,> 
+%      51%,199  = %arith.addfcst_10  %:198 ,tensor< 128%x182128 x:! tttensor<.128ptr<f16>x, f32#, blocked#3ttg>.
+slice<{dim = 1, parent = #blocked}>    >%
+55       = %arith.addi200  = %arith.divsi11 ,% 164%,c15_i32  %:c16_i32  i:32 
+i    32%
+56       = %arith.divui201  = %tt.addptr55 ,% 61%,c16_i32  %:200  i:32 
+!    tt%.57ptr<i32> = ,arith.remsi  i%3256
+,       %%202c4_i32 =  tt.load:  %i20132 
+:     %!58tt = .arith.subiptr<i32> 
+%      56%,203  = %arith.muli57  %:202 ,i 32%
+arg21     %:59  = iarith.muli32 
+%      58%,204  = %arith.addic16_i32  %:203 ,i 32%
+62     %:60  = iarith.muli32 
+%      0%,205  = %tt.splatarg12  %:204  i:32 
+i    32% 61-> =  tt.addptrtensor< 128%xarg51,x i%3260,  #:blocked 4!>tt
+.      ptr<i32>%,206  = iarith.addi32 
+%    205%,62  = %arith.muli66  %:3 ,tensor< 128%xarg221 x:i 32i, 32#
+blocked    4%>63
+ =       tt.expand_dims% 207% = 14tt.splat { axis% = 1641  : :i 32i}32  :->  tensor<tensor<1281xxi1632x, i#32ttg, .#slice<{dim = 1, parent = #blocked4}>blocked>4 >->
+       tensor<%128208x = 1tt.splatx i%32164,  #:blocked 4i>32
+     ->% 64tensor< = 1arith.divsix 16%x63i,32 , %#cst_20blocked >:
+       tensor<%128209x = 1arith.addix i%32207, ,# blocked%469> 
+:     %tensor<651 = xtt.splat16 x%iarg2332 , :# blockedi432> 
+->       %tensor<210128 = xarith.addi1 x%i20832,,  #%blocked704 >:
+     tensor<%166x = 16arith.mulix i%3264, ,# blocked%>65
+       :% 211tensor< = 128arith.remsix 1%x209i,32 , %#cst_21blocked 4:> 
+tensor<    1%x6716 = xtt.make_rangei {32end,  = #16blocked : 4i>32
+,       start% = 2120 =  : arith.mulii 32%}211 ,:  %tensor<cst_2216 x:i 32tensor<, 1#xttg16.xslice<{dim = 0, parent = #blocked4}>i>32
+,     #%blocked684 = >tt.make_range
+ {      end% = 21316 =  : tt.broadcasti 32%, 206start  = :0  : tensor<i12832x}1 x:i 32tensor<, 16#xblockedi432>,  #->ttg .tensor<slice<{dim = 0, parent = #blocked}>128>x
+16    x%i6932 = , tt.expand_dims# blocked%467> {
+axis       = %0214 :  = itt.broadcast32 }% 212:  :tensor< 16tensor<x1ix3216, x#ittg32., slice<{dim = 0, parent = #blocked4}>#>blocked 4->>  tensor<->1 xtensor<16128xxi1632x, i#32blocked, 4#>blocked
+4    >%
+70       = %tt.expand_dims215  = %arith.addi68  {%axis213 = ,0  : %i21432 }:  :tensor< 128tensor<x1616xxii3232, , ##ttgblocked.4slice<{dim = 0, parent = #blocked}>>>
+       ->% 216tensor< = 1arith.addix 16%x215i,32 , %#72blocked >:
+     tensor<%12871x = 16arith.remsix i%3263, ,# blocked%4cst_20> 
+:       %tensor<217128 = xarith.muli1 x%i20232,,  #%blockedarg244 >:
+     i%3272
+ =       tt.broadcast% 218% = 71arith.addi  :% 217,tensor< 128%x731 x:i 32i, 32#
+blocked      4%>219  = ->tt.splat  tensor<%128218x 16:x ii3232,  #->blocked 4tensor<>1
+x    128%x73i = 32arith.muli,  #%blocked35,> 
+%      arg25% 220: =  arith.addii 32%
+219    ,% 74% = 75tt.splat  :% arg26tensor< 1:x 128ix32i 32->,  #tensor<blocked15x>128
+x      i%32221,  = #tt.broadcastblocked 5%>220
+     :% 75tensor< = 1arith.mulix 128%x32i,32 , %#74blocked 5:>  tensor<->1 xtensor<12816xxi12832x, i#32blocked, 5#>blocked
+5    >%
+76       = %tt.make_range222 { = endarith.addi =  16% : 221i,32 , %start78 =  0: :  itensor<3216}x 128:x itensor<3216, x#iblocked325, >#
+ttg      .%slice<{dim = 1, parent = #blocked5}>223> = 
+arith.addi     %%77arg27 = ,tt.expand_dims  %%c32_i3276  {:axis  = i132 : 
+i      32%}224  = :arith.cmpi  tensor<sgt16,x i%32223,,  #%ttg11. slice<{dim = 1, parent = #blocked5}>:>  i->32 
+tensor<      16%x2251 = xscf.ifi 32%, 224# -> (blockedtensor<5128>x
+16    x%f1678,  = #tt.broadcastblocked 4%>77)  :{ 
+tensor<        16%x3741 = xtt.expand_dimsi 32%, 44# {blockedaxis5 = >1  : ->i 32tensor<}16 x:128 xtensor<i12832x, i#1blocked, 5#>ttg
+.    slice<{dim = 1, parent = #blocked4}>%>79  = ->tt.fp_to_fp  tensor<%12854x 1:x itensor<1128, x#128blockedx4f16>, 
+#        blocked%3375> =  tt.splat->  %tensor<11128 x:128 xif3232,  #->blocked 3tensor<>1
+x    16%x80i = 32ttg.local_alloc,  #%blocked794 >:
+         (%tensor<376128 = xarith.cmpi128 xsltf32, , %#209blocked,3 >%)375 ->  !:ttg .tensor<memdesc<128x128xf32, #shared, #smem>1
+x    16%x81i = 32tt.splat,  #%blocked114 >:
+         i%32377  = ->tt.broadcast  tensor<%1374x 16:x itensor<32128, x#1blockedx>i
+1    , %#82blocked = 4tt.splat>  %->arg6  tensor<:128 xf3216 x->i 1tensor<, 128#xblocked164x>f32
+,         #%blocked378> = 
+tt.broadcast     %%83376: 3: =  scf.fortensor< 1x%16arg27x = i%1c0_i32,  to #%blocked594 step >% c64_i32-> iter_args (tensor<%128arg28x = 16%xcst_3i, 1%, arg29# = %blockedcst_04, >%
+arg30         = %%379cst = )arith.andi -> ( tensor<%128377x,128 x%f32378,  #:blocked 2tensor<>128, xtensor<16128xxif321, , ##ttgblocked.4slice<{dim = 1, parent = #blocked}>>>
+,         tensor<%128380x = f32tt.splat,  #%ttgarg3. slice<{dim = 1, parent = #blocked}>:> )! tt : .iptr<f16>32  ->{ 
+tensor<      128%x14116 = xarith.divsi! tt%.arg27ptr<f16>,,  #%blockedc16_i324 >:
+         i%32381
+ =       tt.addptr% 142% = 380tt.addptr,  %%61216,  :% 141tensor< 128:x 16!xtt!.ttptr<i32>.,ptr<f16> , i#32blocked
+4      >%143 = ,tt.load  tensor<%128142x 16:x i!32tt, .#ptr<i32>blocked
+4      >%
+144         = %arith.muli382  = %tt.load143 ,% 381%,arg21  %:379 ,i 32%
+cst_9       %:145  = tensor<arith.addi128 x%16144x,! tt%.62ptr<f16> , :# blockedi432>
+
+              %scf.yield146  = %tt.splat382  %:145  tensor<:128 xi1632x f16->,  #tensor<blocked1284x>1
+x      i}32 else , {#
+blocked        4%>374
+ =       tt.splat% 147% = arg3arith.addi  :% 146!,tt .%ptr<f16>66  ->:  tensor<tensor<128128xx161xx!itt32., ptr<f16>#, blocked#4blocked>4
+>      
+%        148% = 375tt.splat =  tt.addptr% arg27% 374:,  i%32216  ->:  tensor<tensor<1128xx1616xxi!32tt, .#ptr<f16>blocked, 4#>blocked
+4      >%,149  = tensor<tt.splat128 x%16arg27x i:32 , i#32blocked 4->> 
+tensor<        1%x37616 = xtt.loadi 32%, 375# blocked:> 
+tensor<      128%x15016 = xarith.addi! tt%.148ptr<f16>,,  #%blocked694 >:
+         tensor<scf.yield1 x%16376x i:32 , tensor<#128blockedx416>x
+f16      , %#151blocked = 4arith.addi> 
+%      149},
+       %%70226  = :tt.fp_to_fp  tensor<%1225x 16:x itensor<32128, x#16blockedx>f16
+,       #%blocked1524 = >arith.remsi  ->% 150tensor<,128 x%16cst_21x f32:,  #tensor<blocked14x>16
+x      i%32227,  = #ttg.local_allocblocked 4%>226
+       :% 153( = tensor<arith.muli128 x%16152x,f32 , %#cst_22blocked 4:> )tensor< -> 1!xttg16.xmemdesc<128x16xf32, #shared1, #smem>i
+32      , %#228blocked = 4ttg.local_load> 
+%      227% 154: =  tt.broadcast! ttg%.147memdesc<128x16xf32, #shared1, #smem>  :->  tensor<tensor<128128xx116xxif3232, , ##ttgblocked.4dot_op<{opIdx = 1, parent = #blocked}>>> 
+->       %tensor<229128 = xtt.dot16 x%i16932,,  #%blocked2284,> 
+%      cst_8%,155  = inputPrecisiontt.broadcast  =% 153tf32  ::  tensor<tensor<1128xx16128xxif3232, , ##ttgblocked.4dot_op<{opIdx = 0, parent = #blocked}>>>  ->*  tensor<tensor<128128xx1616xxif3232, , ##ttgblocked.4dot_op<{opIdx = 1, parent = #blocked}>>>
+       ->% 156tensor< = 128arith.addix 16%x154f32,,  #%blocked155> 
+:       %tensor<230128 = xarith.cmpi16 xslti,32 , %#210blocked,4 >%
+81       %:157  = tensor<arith.addi1 x%16156x,i 32%, 72# blocked:> 
+tensor<      128%x23116 = xtt.broadcasti 32%, 230# blocked:4 >tensor<
+1      x%16158x = iarith.muli1 , %#143blocked,>  %->arg24  tensor<:128 xi1632x
+i      1%, 159# = blockedarith.addi> 
+%      158%,232  = %arith.select73  %:231 , i%32229
+,       %%cst_1160 :  = tensor<tt.splat128 x%16159x i:1 , i#32blocked >->,  tensor<tensor<1281xx16128xxf32i, 32#, blocked#>blocked
+5      >%
+233       = %arith.mulf161  = %arith.addi232 ,% 160%,82  %:75  tensor<:128 xtensor<161xxf32128, x#iblocked32>, 
+#      blocked%5234> = 
+"      t%t162. = rtt.broadcaste d%u161c e:" (tensor<%1233x)128 <x{iaxis32 = , 1# : blockedi532>} >-> ({ 
+tensor<      16^bb0x(128%xarg31i: 32f32, , #%blockedarg325: >f32
+)      :%
+163         = %arith.addi374  = %arith.maxnumf162 ,% arg31%,78  %:arg32  tensor<:16 xf32128
+x        itt.reduce.return32 , %#374blocked 5:> 
+f32      
+%      164} = )arith.addi :  (%tensor<arg27128,x 16%xc16_i32f32 , :# blockedi>32) -> 
+tensor<      128%x165f32 = , arith.cmpi# ttgsgt.,slice<{dim = 1, parent = #blocked}> >%
+164      ,% 235% = 11arith.maxnumf  :% 177i,32 
+%      234% 166: =  scf.iftensor< 128%x165f32 -> (, tensor<#128ttgx.16slice<{dim = 1, parent = #blocked}>x>f16
+,       #%blocked2364 = >tt.expand_dims)  %{235
+ {        axis% = 3741 =  : tt.expand_dimsi 32%}44  {:axis  = tensor<1128 : xif3232, }# ttg:. slice<{dim = 1, parent = #blocked}>tensor<>128 x->i 1tensor<, 128#xttg1.xslice<{dim = 1, parent = #blocked4}>f32>,  #->blocked >tensor<
+128      x%1237x = itt.broadcast1 , %#236blocked : tensor<4128>x
+1        x%f32375,  = #tt.splatblocked >% 11->  :tensor< 128ix3216 x->f32 , tensor<#1blockedx>16
+x      i%32238,  = #arith.subfblocked 4%>233
+,         %%376237 =  arith.cmpi:  slttensor<,128 x%16150x,f32 , %#375blocked >:
+       tensor<%1239x = 16math.expx i%32238,  #:blocked 4tensor<>128
+x        16%x377f32 = , tt.broadcast# blocked%>374
+       :% 240tensor< = 128"xt1tx.ir1e, d#ublockedc4e>" (->% 239tensor<)128 <x{16axisx = i11 : , i#32blocked}4>> (
+{        
+%      378^bb0 = (tt.broadcast% arg31%: 376f32 , :% arg32tensor<: 1f32x)16:x
+i        1%, 374# = blockedarith.addf4 >% arg31->,  tensor<%128arg32x 16:x if321
+,         #tt.reduce.returnblocked 4%>374
+         :% 379f32 = 
+arith.andi       }%)377 : ,( tensor<%128378x 16:x f32tensor<, 128#xblocked16>x) -> itensor<1128, x#f32blocked, 4#>ttg
+.        slice<{dim = 1, parent = #blocked}>%>380
+ =       tt.splat% 241% = arg3arith.subf  :% 177!,tt .%ptr<f16>235  ->:  tensor<tensor<128128xx16f32x, !#ttttg..ptr<f16>slice<{dim = 1, parent = #blocked}>, >#
+blocked      4%>242
+ =         math.exp% 381% = 241tt.addptr  :% 380tensor<,128 x%f32157,  #:ttg .tensor<slice<{dim = 1, parent = #blocked}>128>x
+16      x%!243tt = .tt.expand_dimsptr<f16> , %#242blocked {4axis> = ,1  : tensor<i12832x}16 x:i 32tensor<128x, f32#, blocked#4ttg>.
+slice<{dim = 1, parent = #blocked}>        >% 382-> =  tt.loadtensor< 128%x3811,x f32%, 379#,blocked >%
+cst_9       %:244  = tensor<ttg.convert_layout128 x%16243x !:tt .tensor<ptr<f16>128, x#1blockedx4f32>, 
+#        blockedscf.yield>  %->382  tensor<:128 xtensor<1128xxf3216, x#f16blocked, 2>#
+blocked      4%>245
+ =       tt.broadcast}  else %{244
+         :% 374tensor< = 128tt.splatx 1%xarg3f32 , :# blocked!2tt>. ptr<f16>->  ->tensor< 128tensor<x128128xx16f32x, !#ttblocked.2ptr<f16>>, 
+#      blocked%4246> = 
+arith.mulf         %%375197 = ,tt.addptr  %%245374 ,:  %tensor<157128 x:128 xtensor<f32128, x#16blockedx2!>tt
+.      ptr<f16>%, 247# = blockedscf.if4 >%,224  -> (tensor<tensor<12816xx16128xxif1632, , ##blockedblocked54>>)
+         {%
+376         = %tt.load374  = %tt.splat375  %:164  tensor<:128 xi1632x !->tt .tensor<ptr<f16>16, x#1blockedx4i>32
+,         #scf.yieldblocked 5%>376
+         :% 375tensor< = 128arith.addix 16%x374f16,,  #%blocked774 >:
+       tensor<}16
+x      1%x167i = 32tt.fp_to_fp,  #%blocked1665 >:
+         tensor<%128376x = 16tt.splatx f16%, 11# blocked:4 >i 32->  ->tensor< 128tensor<x1616xx1f32x, i#32blocked, 4#>blocked
+5      >%
+168         = %ttg.local_alloc377  = %arith.cmpi167  slt:,  (%tensor<375128,x 16%x376f32 , :# blockedtensor<416>x)1 -> x!ittg32., memdesc<128x16xf32, #shared1, #smem>#
+blocked      5%>169
+ =         ttg.local_load% 378% = 80tt.broadcast  :% 46! ttg:. memdesc<128x128xf32, #shared, #smem>tensor< 1->x 128tensor<x128ix1128, x#f32blocked, 5#>ttg .->dot_op<{opIdx = 0, parent = #blocked}> >tensor<
+16      x%128170x = ittg.local_load1 , %#168blocked 5:> 
+!        ttg%.379memdesc<128x16xf32, #shared1, #smem> =  tt.broadcast->  %tensor<377128 x:16 xtensor<f3216, x#1ttgx.idot_op<{opIdx = 1, parent = #blocked}>1>, 
+#      blocked%5171> =  tt.dot->  %tensor<16916,x 128%x170i,1 , %#cst_8blocked,5 >inputPrecision
+         =% 380tf32 =  arith.andi:  %tensor<378128,x 128%x379f32 , :# ttgtensor<.16dot_op<{opIdx = 0, parent = #blocked}>x>128 x*i 1tensor<, 128#xblocked165x>f32
+,         #%ttg381. = dot_op<{opIdx = 1, parent = #blocked}>tt.splat>  %->arg4  tensor<:128 x!16ttx.f32ptr<f16>,  #->blocked >tensor<
+16      x%128172x = !arith.cmpitt .sltptr<f16>,,  #%blocked1515,> 
+%        81% 382: =  tt.addptrtensor< 1%x38116,x i%32222,  #:blocked >tensor<
+16      x%128173x = !tt.broadcasttt .%ptr<f16>172,  #:blocked 5tensor<>1,x 16tensor<x16ix1128, x#iblocked32>,  #->blocked 5tensor<>128
+x        16%x383i = 1tt.load,  #%blocked382>,
+       %%380174, =  arith.select% cst_7% 173:,  %tensor<17116, x%128cst_1x : !tensor<tt128.xptr<f16>16, x#iblocked15, >#
+blocked        >scf.yield,  tensor<%128383x 16:x f32tensor<, 16#xblocked128>x
+f16      , %#175blocked = 5arith.mulf> 
+%      174}, else  {%
+82         %:374  = tensor<tt.splat128 x%16arg4x f32:,  #!blockedtt>.
+ptr<f16>       %->176  = tensor<"16txt128.xr!ettd.uptr<f16>c, e#"blocked(5%>175
+)         <%{375axis =  = tt.addptr1  : %i37432,} >% (222{ 
+:       ^bb0tensor<(16%xarg31128: xf32!, tt%.arg32ptr<f16>: , f32#)blocked:5
+>        ,% 374tensor< = 16arith.maxnumfx 128%xarg31i,32 , %#arg32blocked 5:> 
+f32        
+%        376tt.reduce.return =  tt.load% 374% 375:  :f32 
+tensor<      16}x)128 : x(!tensor<tt128.xptr<f16>16, x#f32blocked, 5#>blocked
+>        ) -> scf.yieldtensor< 128%x376f32 , :# ttgtensor<.16slice<{dim = 1, parent = #blocked}>x>128
+x      f16%, 177# = blockedarith.maxnumf5 >%
+arg30      ,} 
+%      176% 248: =  arith.truncftensor< 128%x239f32 , :# ttgtensor<.128slice<{dim = 1, parent = #blocked}>x>16
+x      f32%, 178# = blockedtt.expand_dims>  %to177  {tensor<axis128 = x116 : xif1632, }# blocked:> 
+tensor<      128%x249f32 = , tt.fp_to_fp# ttg%.248slice<{dim = 1, parent = #blocked}> >:  ->tensor< 128tensor<x12816xx1f16x, f32#, blocked#>blocked >->
+       tensor<%128179x = 16tt.broadcastx f32%, 178# blocked:> 
+tensor<      128%x2501 = xttg.local_allocf32 , %#249blocked >:  ->( tensor<tensor<128128xx1616xxf32f32, , ##blockedblocked>>)
+ ->       !%ttg180. = memdesc<128x16xf32, #shared, #smem>arith.subf
+       %%175251, =  ttg.local_load% 179% 250:  :tensor< 128!xttg16.xmemdesc<128x16xf32, #shared, #smem>f32 , -># blockedtensor<>128
+x      16%x181f32 = , math.exp# ttg%.180dot_op<{opIdx = 0, parent = #blocked2}> >:
+       tensor<%128252x = 16tt.fp_to_fpx f32%, 247# blocked:> 
+tensor<      16%x182128 = x"f16t, #tblocked.5r>e d->u ctensor<e16"x(128%x181f32),  <#{blockedaxis5 = >1
+ :       i%32253} = >ttg.local_alloc ( {%
+252       ^bb0:( %(arg31tensor<: 16f32x, 128%xarg32f32: , f32#)blocked:5
+>        )% -> 374! = ttgarith.addf. memdesc<16x128xf32, #shared1, #smem>%
+arg31      ,% 254% = arg32ttg.local_load  :% 253f32 
+:         tt.reduce.return! ttg%.374memdesc<16x128xf32, #shared1, #smem>  :->  f32tensor<
+16      x}128)x : f32(, tensor<#128ttgx.16dot_op<{opIdx = 1, parent = #blocked2}>x>f32
+,       #%blocked255> = ) -> tt.dottensor< 128%x251f32,,  #%ttg254.,slice<{dim = 1, parent = #blocked}> >%
+246      ,% 183inputPrecision =  arith.subf=  %tf32arg30 ,:  %tensor<177128 x:16 xtensor<f32128, x#f32ttg, .#dot_op<{opIdx = 0, parent = #blocked2}>ttg>. slice<{dim = 1, parent = #blocked}>*> 
+tensor<      16%x184128 = xmath.expf32 , #ttg%.183dot_op<{opIdx = 1, parent = #blocked2}> >:  ->tensor< 128tensor<x128f32x, 128#xttgf32., slice<{dim = 1, parent = #blocked}>#>blocked
+2      >%
+185       = %tt.expand_dims256  = %arith.mulf184  {%axis199 = ,1  : %i24232 }:  :tensor< 128tensor<x128f32x, f32#, ttg#.ttgslice<{dim = 1, parent = #blocked}>.>slice<{dim = 1, parent = #blocked}>
+>       %->257  = tensor<arith.addf128 x%1256x,f32 , %#240blocked >:
+       tensor<%128186x = f32ttg.convert_layout,  #%ttg185. slice<{dim = 1, parent = #blocked}>:> 
+tensor<      128%x2581 = xarith.divsif32 , %#223blocked,>  %->c16_i32  tensor<:128 xi132x
+f32      , %#259blocked = 2tt.addptr> 
+%      61%,187  = %tt.broadcast258  %:186  !:tt .tensor<ptr<i32>128,x 1ix32f32
+,       #%blocked2602 = >tt.load  ->% 259tensor< 128:x 128!xttf32., ptr<i32>#
+blocked      2%>261
+ =       arith.muli% 188% = 260arith.mulf,  %%arg28arg21,  :% 187i 32:
+       tensor<%128262x = 128arith.addix f32%, 261#,blocked 2%>62
+       :% 189i = 32scf.if
+       %%165263 -> ( = tensor<tt.splat16 x%128262x f16:,  #iblocked325 >->)  tensor<{128
+x        1%x374i = 32tt.splat,  #%blockedarg274 >:
+       i%32264  = ->arith.addi  tensor<%16263x,1 x%i6632 , :# blockedtensor<5128>x
+1        x%i37532 = , arith.addi# blocked%4374>,
+       %%77265  = :tt.splat  tensor<%16223x 1:x ii3232,  #->blocked 5tensor<>1
+x        16%x376i = 32tt.splat,  #%blocked114 >:
+       i%32266  = ->tt.splat  tensor<%16223x 1:x ii3232,  #->blocked 5tensor<>1
+x        16%x377i = 32arith.cmpi,  #sltblocked,> 
+%      375%,267  = %arith.addi376  %:265 ,tensor< 16%x691 x:i 32tensor<, 1#xblocked165x>i
+32        , %#378blocked = 4tt.broadcast> 
+%      46% 268: =  arith.additensor< 1%x266128,x i%170,  #:blocked 5tensor<>1 x->16 tensor<x16ix32128, x#iblocked1>, 
+#      blocked%5269> = 
+arith.remsi         %%379267 = ,tt.broadcast  %%cst_21377  ::  tensor<tensor<116xx161xxii321, , ##blockedblocked45>>
+       ->% 270tensor< = 16arith.mulix 128%x269i,1 , %#cst_22blocked 5:> 
+tensor<        1%x38016 = xarith.andii 32%, 378#,blocked 4%>379
+       :% 271tensor< = 16tt.broadcastx 128%x264i 1:,  #tensor<blocked1285x>1
+x        i%32381,  = #tt.splatblocked 4%>arg4  ->:  tensor<!128ttx.16ptr<f16>x i->32 , tensor<#16blockedx4128>x
+!      tt%.272ptr<f16> = , tt.broadcast# blocked%5270> 
+:         %tensor<3821 = xtt.addptr16 x%i38132,,  #%blocked1634 >:  ->tensor< 16tensor<x128128xx16!xtti.32ptr<f16>, , ##blockedblocked45>>
+,       %tensor<27316 = xarith.addi128 x%i27132,,  #%blocked2725 >:
+         tensor<%128383x = 16tt.loadx i%32382, ,# blocked%4380>,
+       %%cst_7274  = :arith.addi  tensor<%16273x,128 x%!72tt .:ptr<f16> , tensor<#128blockedx516>x
+i        32scf.yield,  #%blocked3834 >:
+       tensor<%16275x = 128arith.mulix f16%, 260#,blocked 5%>arg24
+       :}  else i{32
+
+              %%374276 =  = tt.splatarith.addi  %%arg4275 ,:  %!73tt .:ptr<f16>  i->32 
+tensor<      16%x277128 = xtt.splat! tt%.276ptr<f16> , :# blockedi532> 
+->         %tensor<3751 = xtt.addptr128 x%i37432,,  #%blocked1635> 
+:       %tensor<27816 = xarith.addi128 x%!277tt,. ptr<f16>%, 75# blocked:5 >tensor<,1 xtensor<12816xxi12832x, i#32blocked, 5#>blocked
+5      >%
+279         = %tt.broadcast376  = %tt.load278  %:375  tensor<:1 xtensor<12816xxi12832x, !#ttblocked.5ptr<f16>>,  #->blocked 5tensor<>16
+x        128scf.yieldx i%32376,  #:blocked 5tensor<>16
+x      128%x280f16 = , arith.addi# blocked%5279>,
+       %}78
+       :% 190tensor< = 16arith.truncfx 128%x181i 32:,  #tensor<blocked1285x>16
+x      f32%, 281# = blockedarith.addi>  %toarg27 ,tensor< 128%xc48_i3216 x:f16 , i#32blocked
+>      
+%      282% = 191arith.cmpi =  tt.fp_to_fpsgt ,% 190% 281:,  tensor<%12811x 16:x f16i, 32#
+blocked      >% 283-> =  scf.iftensor< 128%x28216 -> (xtensor<f32128, x#16blockedx>f16
+,       #%blocked1924 = >ttg.local_alloc)  %{191
+         :% 374( = tensor<tt.expand_dims128 x%1644x {f32axis,  = #1blocked : >i)32 -> }! ttg:. memdesc<128x16xf32, #shared, #smem>tensor<
+128      x%i1931 = , ttg.local_load# ttg%.192slice<{dim = 1, parent = #blocked4}> >:  ->! ttgtensor<.128memdesc<128x16xf32, #shared, #smem>x 1->x itensor<1128, x#16blockedx4f32>, 
+#        ttg%.375dot_op<{opIdx = 0, parent = #blocked2}> = >tt.splat
+       %%11194  = :tt.fp_to_fp  i%32189  ->:  tensor<tensor<116xx16128xxif1632, , ##blockedblocked54>> 
+->         %tensor<37616 = xarith.cmpi128 xsltf32,,  #%blocked2675,> 
+%      375% 195: =  ttg.local_alloctensor< 1%x19416 x:i 32(, tensor<#16blockedx4128>x
+f32,         #%blocked3775 = >tt.broadcast)  -> %!374ttg .:memdesc<16x128xf32, #shared1, #smem> 
+tensor<      128%x1961 = xttg.local_loadi 1%, 195# blocked:4 >! ttg->. memdesc<16x128xf32, #shared1, #smem>tensor< 128->x 16tensor<x16ix1128, x#f32blocked, 4#>ttg
+.        dot_op<{opIdx = 1, parent = #blocked2}>%>378
+ =       tt.broadcast% 197% = 376tt.dot  :% 193tensor<,1 x%16196x,i 1%, 188#,blocked 4inputPrecision>  =->  tf32tensor< 128:x 16tensor<x128ix116, x#f32blocked, 4#>ttg
+.        dot_op<{opIdx = 0, parent = #blocked2}>%>379  = *arith.andi  tensor<%16377x,128 x%f32378,  #:ttg .tensor<dot_op<{opIdx = 1, parent = #blocked2}>128>x 16->x itensor<1128, x#128blockedx4f32>, 
+#        blocked%2380> = 
+tt.splat       %%198arg3 =  arith.mulf:  %!arg29tt,. ptr<f16>% 184->  :tensor< 128tensor<x12816xxf32!, tt#.ttgptr<f16>., slice<{dim = 1, parent = #blocked}>#>blocked
+4      >%
+199         = %arith.addf381  = %tt.addptr198 ,% 380%,182  %:274  tensor<:128 xtensor<f32128, x#16ttgx.!slice<{dim = 1, parent = #blocked}>tt>.
+ptr<f16>      , %#200blocked = 4arith.divsi> ,% 164tensor<,128 x%16c16_i32x i:32 , i#32blocked
+4      >%
+201         = %tt.addptr382  = %tt.load61 ,% 381%200, :  %!379tt,. ptr<i32>%,cst_9  i:32 
+tensor<      128%x20216 = xtt.load! tt%.201ptr<f16> , :# blocked!4tt>.
+ptr<i32>        
+scf.yield       %%203382 =  arith.muli:  %tensor<202128,x 16%xarg21f16 , :# blockedi432>
+
+            %}204 else  = {arith.addi
+         %%203374, =  tt.splat% 62% arg3:  :i 32!
+tt      .%ptr<f16>205  = ->tt.splat  tensor<%128204x 16:x !itt32. ptr<f16>->,  #tensor<blocked1284x>1
+x        i%32375,  = #tt.addptrblocked 4%>374
+,       %274% 206: =  arith.additensor< 128%x20516,x !%tt66. ptr<f16>:,  #tensor<blocked1284x>1,x itensor<32128, x#16blockedx4i>32
+,       #%blocked2074 = >tt.splat
+         %%164376  = :tt.load  i%32375  ->:  tensor<tensor<1128xx1616xxi!32tt, .#ptr<f16>blocked, 4#>blocked
+4      >%
+208         = scf.yieldtt.splat  %%376164  ::  tensor<i12832x 16->x f16tensor<, 1#xblocked164x>i
+32      , }#
+blocked      >%
+284       = %tt.fp_to_fp209  = %arith.addi283  %:207 ,tensor< 128%x6916 x:f16 , tensor<#1blockedx416>x i->32 , tensor<#128blockedx416>x
+f32      , %#210blocked = 4arith.addi> 
+%      208%,285  = %ttg.local_alloc70  %:284  tensor<:1 x(16tensor<x128ix3216, x#f32blocked, >#
+blocked      4%>211) =  -> arith.remsi! ttg%.209memdesc<128x16xf32, #shared1, #smem>,
+       %%cst_21286  = :ttg.local_load  tensor<%1285x 16:x i!32ttg, .#memdesc<128x16xf32, #shared1, #smem>blocked 4->> 
+tensor<      128%x21216 = xarith.mulif32 , %#211ttg,. dot_op<{opIdx = 1, parent = #blocked}>%>cst_22
+       :% 287tensor< = 1tt.dotx 16%x169i,32 , %#286blocked,4 >%
+cst_8      ,% 213inputPrecision =  tt.broadcast=  %tf32206  ::  tensor<tensor<128128xx1281xxf32i, 32#, ttg#.blockeddot_op<{opIdx = 0, parent = #blocked}>4>>  *->  tensor<tensor<128128xx1616xxf32i, 32#, ttg#.blockeddot_op<{opIdx = 1, parent = #blocked}>4>> 
+->       %tensor<214128 = xtt.broadcast16 x%f32212,  #:blocked >tensor<
+1      x%16288x = iarith.cmpi32 , slt#,blocked 4%>268 ,->  %tensor<81128 x:16 xtensor<i132x, 16#xblockedi432>, 
+#      blocked%>215
+ =       arith.addi% 289% = 213tt.broadcast,  %%288 214:  :tensor< 1tensor<x12816xx16ix1i, 32#, blocked#>blocked 4->> 
+tensor<      128%x21616 = xarith.addii 1%, 215#,blocked >%
+72       %:290  = tensor<arith.select128 x%16289x, i%32287, , #%blockedcst_14 : >tensor<
+128      x%16217x = iarith.muli1 , %#202blocked,> , %tensor<arg24128 x:16 xif3232, 
+#      blocked%>218
+ =       arith.addi% 291% = 217arith.mulf,  %%29073,  :% 82i 32:
+       tensor<%128219x = 16tt.splatx f32%, 218# blocked:> 
+i      32% 292-> =  "tensor<t1tx.128rxeid32u, #cblockede5">(
+%      291%)220 < = {arith.addiaxis  = %1219 : ,i 32%}75>  (:{ 
+tensor<      1^bb0x(128%xarg31i: 32f32, , #%blockedarg325: >f32
+)      :%
+221         = %tt.broadcast374  = %arith.maxnumf220  %:arg31 ,tensor< 1%xarg32128 x:i 32f32, 
+#        blockedtt.reduce.return5 >% 374->  :tensor< 16f32x
+128      x}i)32 : , (#tensor<blocked1285x>16
+x      f32%, 222# = blockedarith.addi> ) -> %tensor<221128,x f32%, 78# ttg:. slice<{dim = 1, parent = #blocked}>tensor<>16
+x      128%x293i = 32arith.maxnumf,  #%blocked2355,> 
+%      292% 223: =  arith.additensor< 128%xarg27f32,,  #%ttgc32_i32. slice<{dim = 1, parent = #blocked}>:> 
+i      32%
+294       = %tt.expand_dims224  = %arith.cmpi293  {sgtaxis, =  1% : 223i,32 }% 11:  :tensor< 128ix32f32
+,       #%ttg225. = slice<{dim = 1, parent = #blocked}>scf.if>  %->224  -> (tensor<tensor<128128xx116xxf32f16, , ##blockedblocked>4
+>      )% 295{ = 
+tt.broadcast         %%374294 =  tt.expand_dims:  %tensor<44128 {xaxis1 = x1f32 : , i#32blocked}>  :->  tensor<tensor<128128xxi161x, f32#, ttg#.blockedslice<{dim = 1, parent = #blocked4}>>>
+       ->% 296tensor< = 128arith.subfx 1%x291i,1 , %#295blocked 4:> 
+tensor<        128%x37516 = xtt.splatf32 , %#11blocked >:
+       i%32297  = ->math.exp  tensor<%1296x 16:x itensor<32128, x#16blockedx4f32>, 
+#        blocked%>376
+ =       arith.cmpi% 298slt = ," t%t209.,r e%d375u c:e "tensor<(1%x29716)x <i{32axis,  = #1blocked : 4i>32
+}        >% (377{ = 
+tt.broadcast       ^bb0%(374% arg31::  f32tensor<, 128%xarg321: xf32i)1:, 
+#        blocked%4374> =  arith.addf->  %tensor<arg31128,x 16%xarg32i 1:,  #f32blocked
+4        >tt.reduce.return
+         %%374378  = :tt.broadcast  f32%
+376       }:)  : tensor<(1tensor<x12816xx16ix1f32, , ##blockedblocked4>>) ->  tensor<->128 xtensor<f32128, x#16ttgx.islice<{dim = 1, parent = #blocked}>1>, 
+#      blocked%2994 = >arith.subf
+         %%235379, =  arith.andi% 293% 377:,  tensor<%128378x f32:,  #tensor<ttg128.xslice<{dim = 1, parent = #blocked}>16>x
+i      1%, 300# = blockedmath.exp4 >%
+299         %:380  = tensor<tt.splat128 x%f32arg3,  #:ttg .!slice<{dim = 1, parent = #blocked}>tt>.
+ptr<f16>       %->301  = tensor<tt.expand_dims128 x%16300x {!axistt = .1ptr<f16> : , i#32blocked}4 >:
+         tensor<%128381x = f32tt.addptr,  #%ttg380.,slice<{dim = 1, parent = #blocked}> >% 216->  :tensor< 128tensor<x1281xx16f32x, !#ttblocked.>ptr<f16>
+,       #%blocked3024 = >ttg.convert_layout,  %tensor<301128 x:16 xtensor<i12832x, 1#xblockedf324, >#
+blocked        >% 382-> =  tt.loadtensor< 128%x3811,x f32%, 379#,blocked 2%>cst_9
+       :% 303tensor< = 128tt.broadcastx 16%x302! tt:. ptr<f16>tensor<, 128#xblocked14x>f32
+,         #scf.yieldblocked 2%>382  ->:  tensor<tensor<128128xx12816xxf32f16, , ##blockedblocked24>>
+
+            %}304 else  = {arith.mulf
+         %%255374, =  tt.splat% 303% arg3:  :tensor< 128!xtt.128ptr<f16>x f32->,  #tensor<blocked1282x>16
+x      !%tt305. = ptr<f16>scf.if,  #blocked4%>282
+ -> (        tensor<%16375x = 128tt.addptrx f16%, 374#,blocked 5%>216)  :{ 
+tensor<        128%x37416 = xtt.splat! tt%.223ptr<f16> , :# blockedi432> ,->  tensor<tensor<12816xx161xxii3232, , ##blockedblocked45>>
+
+                %%376375 =  = tt.loadarith.addi  %%375374 ,:  %tensor<77128 x:16 xtensor<!16ttx.1ptr<f16>x, i#32blocked, 4#>blocked
+5        >scf.yield
+         %%376376  = :tt.splat  tensor<%12811x 16:x f16i, 32# blocked->4 >tensor<
+16      x}1
+x      i%32226,  = #tt.fp_to_fpblocked 5%>225
+         :% 377tensor< = 128arith.cmpix 16sltx,f16 , %#375blocked,4 >% 376->  :tensor< 128tensor<x1616xx1f32x, i#32blocked, 4#>blocked
+5      >%
+227         = %ttg.local_alloc378  = %tt.broadcast226  %:46  (:tensor< 128tensor<x116xx128f32x, i#1blocked, 4#>blocked)5 -> >! ttg->. memdesc<128x16xf32, #shared1, #smem>tensor<
+16      x%128228x = ittg.local_load1 , %#227blocked 5:> 
+!        ttg%.379memdesc<128x16xf32, #shared1, #smem> =  tt.broadcast->  %tensor<377128 x:16 xtensor<f3216, x#1ttgx.idot_op<{opIdx = 1, parent = #blocked}>1>, 
+#      blocked%5229> =  tt.dot->  %tensor<16916,x 128%x228i,1 , %#cst_8blocked,5 >inputPrecision
+         =% 380tf32 =  arith.andi:  %tensor<378128,x 128%x379f32 , :# ttgtensor<.16dot_op<{opIdx = 0, parent = #blocked}>x>128 x*i 1tensor<, 128#xblocked165x>f32
+,         #%ttg381. = dot_op<{opIdx = 1, parent = #blocked}>tt.splat>  %->arg4  tensor<:128 x!16ttx.f32ptr<f16>,  #->blocked >tensor<
+16      x%128230x = !arith.cmpitt .sltptr<f16>,,  #%blocked2105,> 
+%        81% 382: =  tt.addptrtensor< 1%x38116,x i%32280,  #:blocked >tensor<
+16      x%128231x = !tt.broadcasttt .%ptr<f16>230,  #:blocked 5tensor<>1,x 16tensor<x16ix1128, x#iblocked32>,  #->blocked 5tensor<>128
+x        16%x383i = 1tt.load,  #%blocked382>,
+       %%380232, =  arith.select% cst_7% 231:,  %tensor<22916, x%128cst_1x : !tensor<tt128.xptr<f16>16, x#iblocked15, >#
+blocked        >scf.yield,  tensor<%128383x 16:x f32tensor<, 16#xblocked128>x
+f16      , %#233blocked = 5arith.mulf> 
+%      232}, else  {%
+82         %:374  = tensor<tt.splat128 x%16arg4x f32:,  #!blockedtt>.
+ptr<f16>       %->234  = tensor<"16txt128.xr!ettd.uptr<f16>c, e#"blocked(5%>233
+)         <%{375axis =  = tt.addptr1  : %i37432,} >% (280{ 
+:       ^bb0tensor<(16%xarg31128: xf32!, tt%.arg32ptr<f16>: , f32#)blocked:5
+>        ,% 374tensor< = 16arith.maxnumfx 128%xarg31i,32 , %#arg32blocked 5:> 
+f32        
+%        376tt.reduce.return =  tt.load% 374% 375:  :f32 
+tensor<      16}x)128 : x(!tensor<tt128.xptr<f16>16, x#f32blocked, 5#>blocked
+>        ) -> scf.yieldtensor< 128%x376f32 , :# ttgtensor<.16slice<{dim = 1, parent = #blocked}>x>128
+x      f16%, 235# = blockedarith.maxnumf5 >%
+177      ,} 
+%      234% 306: =  arith.truncftensor< 128%x297f32 , :# ttgtensor<.128slice<{dim = 1, parent = #blocked}>x>16
+x      f32%, 236# = blockedtt.expand_dims>  %to235  {tensor<axis128 = x116 : xif1632, }# blocked:> 
+tensor<      128%x307f32 = , tt.fp_to_fp# ttg%.306slice<{dim = 1, parent = #blocked}> >:  ->tensor< 128tensor<x12816xx1f16x, f32#, blocked#>blocked >->
+       tensor<%128237x = 16tt.broadcastx f32%, 236# blocked:> 
+tensor<      128%x3081 = xttg.local_allocf32 , %#307blocked >:  ->( tensor<tensor<128128xx1616xxf32f32, , ##blockedblocked>>)
+ ->       !%ttg238. = memdesc<128x16xf32, #shared, #smem>arith.subf
+       %%233309, =  ttg.local_load% 237% 308:  :tensor< 128!xttg16.xmemdesc<128x16xf32, #shared, #smem>f32 , -># blockedtensor<>128
+x      16%x239f32 = , math.exp# ttg%.238dot_op<{opIdx = 0, parent = #blocked2}> >:
+       tensor<%128310x = 16tt.fp_to_fpx f32%, 305# blocked:> 
+tensor<      16%x240128 = x"f16t, t#.blockedr5e>d u->c etensor<"16(x%128239x)f32 <, {#axisblocked = 51> : 
+i      32%}311> =  (ttg.local_alloc{ 
+%      310^bb0 (:% arg31(: tensor<f3216, x%128arg32x: f32f32, )#:blocked
+5        >%)374 ->  = !arith.addfttg .%memdesc<16x128xf32, #shared1, #smem>arg31
+,       %%312arg32 =  ttg.local_load:  %f32311
+         :tt.reduce.return  !%ttg374. memdesc<16x128xf32, #shared1, #smem>:  ->f32 
+tensor<      16}x)128 : x(f32tensor<, 128#xttg16.xdot_op<{opIdx = 1, parent = #blocked2}>f32>, 
+#      blocked%>313) ->  = tensor<tt.dot128 x%f32309, ,# ttg%.312slice<{dim = 1, parent = #blocked}>,> 
+%      304%,241  = inputPrecisionarith.subf  =% 177tf32,  :% 235tensor< 128:x 16tensor<x128f32x, f32#, ttg#.ttgdot_op<{opIdx = 0, parent = #blocked2}>.>slice<{dim = 1, parent = #blocked}> >*
+       tensor<%16242x = 128math.expx f32%, 241# ttg:. dot_op<{opIdx = 1, parent = #blocked2}>tensor<>128 x->f32 , tensor<#128ttgx.128slice<{dim = 1, parent = #blocked}>x>f32
+,       #%blocked2432 = >tt.expand_dims
+       %%242314 { = axisarith.mulf =  1% : 257i,32 }% 300:  :tensor< 128tensor<x128f32x, f32#, ttg#.ttgslice<{dim = 1, parent = #blocked}>.>slice<{dim = 1, parent = #blocked}> >->
+       tensor<%128315x = 1arith.addfx f32%, 314#,blocked >%
+298       %:244  = tensor<ttg.convert_layout128 x%f32243,  #:ttg .tensor<slice<{dim = 1, parent = #blocked}>128>x
+1      x%f32316,  = #arith.divsiblocked >% 281->,  tensor<%128c16_i32x 1:x f32i, 32#
+blocked      2%>317
+ =       tt.addptr% 245% = 61tt.broadcast,  %%244316  ::  tensor<!128ttx.1ptr<i32>x,f32 , i#32blocked
+2      >% 318-> =  tt.loadtensor< 128%x317128 x:f32 , !#ttblocked.2ptr<i32>>
+
+            %%319246 =  = arith.muliarith.mulf  %%318197,,  %%arg21245  ::  itensor<32128
+x      128%x320f32 = , arith.addi# blocked%2319>,
+       %%62247  = :scf.if  i%32224
+ -> (tensor<16      x%128321x = f16tt.splat,  #%blocked3205 >:)  i{32
+         ->% 374tensor< = 128tt.splatx 1%164 :x ii3232,  #->blocked 4tensor<>16
+x      1%x322i = 32arith.addi,  #%blocked3215,> 
+%        66% 375: =  arith.additensor< 128%x3741,x i%3277,  #:blocked 4tensor<>16
+x      1%x323i = 32tt.splat,  #%blocked2815 >:
+         i%32376  = ->tt.splat  tensor<%111x 16:x ii3232,  #->blocked 4tensor<>16
+x      1%x324i = 32tt.splat,  #%blocked2815 >:
+         i%32377  = ->arith.cmpi  tensor<slt1,x 16%x375i,32 , %#376blocked >:
+       tensor<%16325x = 1arith.addix i%32323, ,# blocked%569> 
+:         %tensor<3781 = xtt.broadcast16 x%i4632 , :# blockedtensor<41>x
+128      x%i3261 = , arith.addi# blocked%5324>,  ->% 70tensor< 16:x 128tensor<x1ix116, x#iblocked325, >#
+blocked        >%
+379       = %tt.broadcast327  = %arith.remsi377  %:325 ,tensor< 16%xcst_211 x:i 1tensor<, 1#xblocked165x>i 32->,  #tensor<blocked164x>128
+x      i%1328,  = #arith.muliblocked 5%>327
+,         %%380cst_22 =  arith.andi:  %tensor<3781,x 16%x379i 32:,  #tensor<blocked164x>128
+x      i%1329,  = #tt.broadcastblocked 5%>322
+         :% 381tensor< = 128tt.splatx 1%xarg4i 32:,  #!blockedtt4.>ptr<f16>  ->->  tensor<tensor<12816xx16128xxi!32tt, .#ptr<f16>blocked, 4#>blocked
+5      >%
+330         = %tt.broadcast382  = %tt.addptr328  %:381 ,tensor< 1%x22216 x:i 32tensor<, 16#xblocked1284x>! tt->. ptr<f16>tensor<, 128#xblocked165x>i,32 , tensor<#16blockedx4128>x
+i      32%, 331# = blockedarith.addi5 >%
+329        ,% 383% = 330tt.load  :% 382tensor<,128 x%16380x,i 32%, cst_7# blocked:4 >tensor<
+16      x%128332x = !arith.additt .%ptr<f16>331, ,# blocked%572> 
+:         scf.yieldtensor< 128%x38316 x:i 32tensor<, 16#xblocked1284x>f16
+,       #%blocked3335 = >arith.muli
+       %}318 else ,{ 
+%        arg24% 374: =  tt.splati 32%
+arg4       %:334  = !arith.additt .%ptr<f16>333 ,->  %tensor<7316 x:128 xi!32tt
+.      ptr<f16>%, 335# = blockedtt.splat5 >%
+334         %:375  = itt.addptr32  %->374 ,tensor< 1%x222128 x:i 32tensor<, 16#xblocked1285x>!
+tt      .%ptr<f16>336,  = #arith.addiblocked 5%>335,,  tensor<%1675x 128:x itensor<321, x#128blockedx5i>32
+,         #%blocked3765 = >tt.load
+       %%375337  = :tt.broadcast  tensor<%16336x 128:x !tensor<tt1.xptr<f16>128, x#iblocked325, >#
+blocked        5scf.yield>  %->376  tensor<:16 xtensor<12816xxi12832x, f16#, blocked#5blocked>5
+>      
+%      338} = 
+arith.addi       %%248337 = ,arith.truncf  %%78239  ::  tensor<tensor<16128xx12816xxif3232, , ##blockedblocked>5 >to
+       tensor<%128339x = 16arith.addix f16%, arg27#,blocked >%
+c64_i32       %:249  = itt.fp_to_fp32 
+%      248% 340: =  arith.cmpitensor< 128sgtx,16 x%f16339, ,# blocked%>11  ->:  tensor<i12832x
+16      x%f32341,  = #scf.ifblocked >%
+340       -> (%tensor<250128 = xttg.local_alloc16 x%f16249,  #:blocked 4(>tensor<)128 x{16
+x        f32%, 374# = blockedtt.expand_dims> )% -> 44! {ttgaxis. = memdesc<128x16xf32, #shared, #smem>1
+ :       i%32251} =  ttg.local_load:  %tensor<250128 x:i 1!, ttg#.ttgmemdesc<128x16xf32, #shared, #smem>. slice<{dim = 1, parent = #blocked4}>->>  tensor<->128 xtensor<16128xxf321, x#ittg1., dot_op<{opIdx = 0, parent = #blocked2}>#>blocked
+4      >%
+252         = %tt.fp_to_fp375  = %tt.splat247  %:11  tensor<:16 xi12832x f16->,  #tensor<blocked15x>16 x->i 32tensor<, 16#xblocked1284x>f32
+,         #%blocked3765 = >arith.cmpi
+       slt%,253  = %ttg.local_alloc325 ,% 252% 375:  :( tensor<tensor<161xx12816xxf32i, 32#, blocked#5blocked>4)> -> 
+!        ttg%.377memdesc<16x128xf32, #shared1, #smem> = 
+tt.broadcast       %%254374 =  ttg.local_load:  %tensor<253128 x:1 x!ittg1., memdesc<16x128xf32, #shared1, #smem># blocked->4 >tensor< 16->x 128tensor<x128f32x, 16#xttgi.1dot_op<{opIdx = 1, parent = #blocked2}>, >#
+blocked      4%>255
+ =         tt.dot% 378% = 251tt.broadcast,  %%376254 ,:  %tensor<2461,x 16inputPrecisionx i=1 , tf32# blocked:4 >tensor< 128->x 16tensor<x128f32x, 16#xttgi.1dot_op<{opIdx = 0, parent = #blocked2}>, ># blocked*4 >tensor<
+16        x%128379x = f32arith.andi,  #%ttg377.,dot_op<{opIdx = 1, parent = #blocked2}> >% 378->  :tensor< 128tensor<x128128xx16f32x, i#1blocked, 2#>blocked
+4      >%
+256         = %arith.mulf380  = %tt.splat199 ,% arg3% 242:  :! tttensor<.128ptr<f16>x f32->,  #tensor<ttg128.xslice<{dim = 1, parent = #blocked}>16>x
+!      tt%.257ptr<f16> = , arith.addf# blocked%4256>,
+         %%240381  = :tt.addptr  tensor<%128380x,f32 , %#332ttg .:slice<{dim = 1, parent = #blocked}> >tensor<
+128      x%16258x = !arith.divsitt .%ptr<f16>223, ,# blocked%4c16_i32> ,:  tensor<i12832x
+16      x%i25932 = , tt.addptr# blocked%461>,
+         %%258382  = :tt.load  !%tt381.,ptr<i32> ,% 379i,32 
+%      cst_9% 260: =  tt.loadtensor< 128%x25916 x:! tt!.ttptr<f16>., ptr<i32>#blocked
+4      >%
+261         = scf.yieldarith.muli  %%382260 ,:  %tensor<arg21128 x:16 xif1632, 
+#      blocked%4262> = 
+arith.addi       }% else 261{,
+         %%62374  = :tt.splat  i%32arg3
+       :% 263! = tttt.splat. ptr<f16>% 262->  :tensor< 128ix3216 x->! tttensor<.128ptr<f16>x, 1#xblockedi432>, 
+#        blocked%4375> = 
+tt.addptr       %%264374 = ,arith.addi  %%332263 ,:  %tensor<66128 x:16 xtensor<!128ttx.1ptr<f16>x, i#32blocked, 4#>blocked,4 >tensor<
+128      x%16265x = itt.splat32 , %#223blocked 4:> 
+i        32% 376-> =  tt.loadtensor< 1%x37516 x:i 32tensor<, 128#xblocked164x>!
+tt      .%ptr<f16>266,  = #tt.splatblocked 4%>223
+         :scf.yield  i%32376  ->:  tensor<tensor<1128xx1616xxif1632, , ##blockedblocked4>>
+
+            %}267
+ =       arith.addi% 342% = 265tt.fp_to_fp ,% 341% 69:  :tensor< 128tensor<x116xx16f16x, i#32blocked, 4#>blocked 4->> 
+tensor<      128%x26816 = xarith.addif32 , %#266blocked,4 >%
+70       %:343  = tensor<ttg.local_alloc1 x%16342x i:32 , (#tensor<blocked128>x
+16      x%f32269,  = #arith.remsiblocked 4%>267), ->  !%ttgcst_21. memdesc<128x16xf32, #shared1, #smem>:
+       tensor<%1344x = 16ttg.local_loadx i%32343,  #:blocked 4!>ttg
+.      memdesc<128x16xf32, #shared1, #smem>% 270-> =  arith.mulitensor< 128%x26916,x f32%, cst_22# ttg:. dot_op<{opIdx = 1, parent = #blocked}>tensor<>1
+x      16%x345i = 32tt.dot,  #%blocked1694,> 
+%      344%,271  = %tt.broadcastcst_8 ,% 264inputPrecision  :=  tensor<tf32128 x:1 xtensor<i12832x, 128#xblockedf324, ># ttg->. dot_op<{opIdx = 0, parent = #blocked}>tensor<>128 x*16 xtensor<i12832x, 16#xblockedf324, >#
+ttg      .%dot_op<{opIdx = 1, parent = #blocked}>272> =  tt.broadcast->  %tensor<270128 x:16 xtensor<f321, x#16blockedx>i
+32      , %#346blocked = 4arith.cmpi>  slt->,  tensor<%128326x,16 x%i8132,  #:blocked 4tensor<>1
+x      16%x273i = 32arith.addi,  #%blocked271>,
+       %%272347  = :tt.broadcast  tensor<%128346x 16:x itensor<321, x#16blockedx4i>1
+,       #%blocked274> =  arith.addi->  %tensor<273128,x 16%x72i 1:,  #tensor<blocked128>x
+16      x%i34832 = , arith.select# blocked%4347>, 
+%      345%, 275% = cst_1arith.muli :  tensor<%128260x,16 x%iarg241 , :# blockedi>32, 
+tensor<      128%x27616 = xarith.addif32 , %#275blocked,> 
+%      73% 349: =  arith.mulfi 32%
+348      ,% 277% = 82tt.splat  :% 276tensor< 128:x 16ix32f32 , -># blockedtensor<>1
+x      128%x350i = 32", t#tblocked.5r>e
+d      u%c278e = "arith.addi( %%349277), < {%axis75 =  1: :  itensor<321}x>128 (x{i
+32      ^bb0(%, arg31#: blockedf325, >%
+arg32      : %f32279) = :tt.broadcast
+         %%278374  = :arith.maxnumf  tensor<%1arg31x,128 x%iarg3232 , :# blockedf325
+>         tt.reduce.return->  %tensor<37416 x:128 xf32i
+32      , }#)blocked : 5(>tensor<
+128      x%16280x = f32arith.addi,  #%blocked279>,) ->  tensor<%12878x f32:,  #tensor<ttg16.xslice<{dim = 1, parent = #blocked}>128>x
+i      32%, 351# = blockedarith.maxnumf5 >%
+293      ,% 281% = 350arith.addi  :% arg27tensor<,128 x%f32c48_i32,  #:ttg .islice<{dim = 1, parent = #blocked}>32>
+
+            %%282352 =  = arith.cmpitt.expand_dims  sgt%,351  {%axis281 = ,1  : %i1132 }:  :i 32tensor<
+128      x%f32283,  = #scf.ifttg .%slice<{dim = 1, parent = #blocked}>282> -> ( tensor<->128 xtensor<16128xxf161, x#f32blocked, 4#>blocked)> 
+{      
+%        353% = 374tt.broadcast =  tt.expand_dims% 352% 44: { axistensor< = 1281x : 1ix32f32},  #:blocked >tensor< 128->x itensor<1128, x#16ttgx.f32slice<{dim = 1, parent = #blocked4}>, ># blocked->> 
+tensor<      128%x3541 = xarith.subfi 1%, 349#,blocked 4%>353
+         :% 375tensor< = 128tt.splatx 16%x11f32 , :# blockedi>32
+       ->% 355tensor< = 1math.expx 16%x354i 32:,  #tensor<blocked1284x>16
+x        f32%, 376# = blockedarith.cmpi> 
+slt      ,% 356% = 267",t t%.375r e:d utensor<c1ex"16(x%i35532),  <#{blockedaxis4 = >1
+ :         i%32377} = >tt.broadcast ( {%
+374       ^bb0:( %tensor<arg31128: xf321, x%iarg321: , f32#)blocked:4
+>         %->374  = tensor<arith.addf128 x%16arg31x,i 1%, arg32# blocked:4 >f32
+
+                %tt.reduce.return378  = %tt.broadcast374  %:376  f32:
+       tensor<}1)x : 16(xtensor<i1281x, 16#xblockedf324, ># blocked->> ) -> tensor<tensor<128128xx16f32x, i#1ttg, .#slice<{dim = 1, parent = #blocked}>blocked>4
+>      
+%        357% = 379arith.subf =  arith.andi% 293%,377 ,% 351% 378:  :tensor< 128tensor<x128f32x, 16#xttgi.1slice<{dim = 1, parent = #blocked}>, >#
+blocked      4%>358
+ =         math.exp% 380% = 357tt.splat  :% arg3tensor< 128:x f32!, tt#.ttgptr<f16>. slice<{dim = 1, parent = #blocked}>->> 
+tensor<      128%x35916 = xtt.expand_dims! tt%.358ptr<f16> {, axis#blocked = 41> : 
+i        32%}381  = :tt.addptr tensor< 128%x380f32,,  #%ttg274. slice<{dim = 1, parent = #blocked}>:>  tensor<->128 xtensor<16128xx!1ttx.f32ptr<f16>, , ##blockedblocked>4
+>      ,% 360tensor< = 128ttg.convert_layoutx 16%x359i 32:,  #tensor<blocked1284x>1
+x        f32%, 382# = blockedtt.load>  %->381 ,tensor< 128%x3791,x f32%, cst_9# blocked:2 >tensor<
+128      x%16361x = tt.broadcast! tt%.360ptr<f16> , :# blockedtensor<4128>x
+1        xscf.yieldf32 , %#382blocked 2:>  tensor<->128 xtensor<16128xxf16128, x#f32blocked, 4#>blocked
+2      >
+}       else %{362
+ =         arith.mulf% 374% = 313tt.splat,  %%arg3361  ::  !tensor<tt128.xptr<f16>128 x->f32 , tensor<#128blockedx216>x
+!      tt%.363ptr<f16> = , scf.if# blocked%4340> -> (
+tensor<        16%x375128 = xtt.addptrf16 , %#374blocked,5 >%)274  {:
+         tensor<%128374x = 16tt.splatx !%tt281. ptr<f16>:,  #iblocked324 >->,  tensor<tensor<16128xx116xxii3232, , ##blockedblocked54>>
+
+                %%375376 =  = arith.additt.load  %%374375,  :% tensor<77128 x:16 xtensor<!16ttx.1ptr<f16>x, i#32blocked, 4#>blocked
+5        >scf.yield
+         %%376376  = :tt.splat  tensor<%12811x 16:x f16i, 32# blocked->4 >tensor<
+16      x}1
+x      i%32284,  = #tt.fp_to_fpblocked 5%>283
+         :% 377tensor< = 128arith.cmpix 16sltx,f16 , %#375blocked,4 >% 376->  :tensor< 128tensor<x1616xx1f32x, i#32blocked, 4#>blocked
+5      >%
+285         = %ttg.local_alloc378  = %tt.broadcast284  %:46  (:tensor< 128tensor<x116xx128f32x, i#1blocked, 4#>blocked)5 -> >! ttg->. memdesc<128x16xf32, #shared1, #smem>tensor<
+16      x%128286x = ittg.local_load1 , %#285blocked 5:> 
+!        ttg%.379memdesc<128x16xf32, #shared1, #smem> =  tt.broadcast->  %tensor<377128 x:16 xtensor<f3216, x#1ttgx.idot_op<{opIdx = 1, parent = #blocked}>1>, 
+#      blocked%5287> =  tt.dot->  %tensor<16916,x 128%x286i,1 , %#cst_8blocked,5 >inputPrecision
+         =% 380tf32 =  arith.andi:  %tensor<378128,x 128%x379f32 , :# ttgtensor<.16dot_op<{opIdx = 0, parent = #blocked}>x>128 x*i 1tensor<, 128#xblocked165x>f32
+,         #%ttg381. = dot_op<{opIdx = 1, parent = #blocked}>tt.splat>  %->arg4  tensor<:128 x!16ttx.f32ptr<f16>,  #->blocked >tensor<
+16      x%128288x = !arith.cmpitt .sltptr<f16>,,  #%blocked2685,> 
+%        81% 382: =  tt.addptrtensor< 1%x38116,x i%32338,  #:blocked >tensor<
+16      x%128289x = !tt.broadcasttt .%ptr<f16>288,  #:blocked 5tensor<>1,x 16tensor<x16ix1128, x#iblocked32>,  #->blocked 5tensor<>128
+x        16%x383i = 1tt.load,  #%blocked382>,
+       %%380290, =  arith.select% cst_7% 289:,  %tensor<28716, x%128cst_1x : !tensor<tt128.xptr<f16>16, x#iblocked15, >#
+blocked        >scf.yield,  tensor<%128383x 16:x f32tensor<, 16#xblocked128>x
+f16      , %#291blocked = 5arith.mulf> 
+%      290}, else  {%
+82         %:374  = tensor<tt.splat128 x%16arg4x f32:,  #!blockedtt>.
+ptr<f16>       %->292  = tensor<"16txt128.xr!ett.dptr<f16>u, c#eblocked"5(>%
+291        )% <375{ = axistt.addptr =  1% : 374i,32 }%>338 ( {:
+       tensor<^bb016(x%128arg31x: !f32tt, .%ptr<f16>arg32, : #f32blocked)5:>
+,         %tensor<37416 = xarith.maxnumf128 x%iarg3132,,  #%blockedarg325 >:
+         f32%
+376         = tt.reduce.returntt.load  %%374375  ::  f32tensor<
+16      x}128)x : !(tttensor<.128ptr<f16>x, 16#xblockedf325, >#
+blocked        >scf.yield) ->  tensor<%128376x f32:,  #tensor<ttg16.xslice<{dim = 1, parent = #blocked}>128>x
+f16      , %#293blocked = 5arith.maxnumf> 
+%      235},
+       %%292364  = :arith.truncf  tensor<%128355x f32:,  #tensor<ttg128.xslice<{dim = 1, parent = #blocked}>16x>f32
+,       #%blocked294> =  tt.expand_dimsto  %tensor<293128 {xaxis16 = x1f16 : , i#32blocked}> 
+:       %tensor<365128 = xtt.fp_to_fpf32 , %#364ttg .:slice<{dim = 1, parent = #blocked}> >tensor< 128->x 16tensor<x128f16x, 1#xblockedf32>,  #->blocked >tensor<
+128      x%16295x = f32tt.broadcast,  #%blocked294> 
+:       %tensor<366128 = xttg.local_alloc1 x%f32365,  #:blocked >( tensor<->128 xtensor<16128xxf3216, x#f32blocked, >#)blocked -> >!
+ttg      .%memdesc<128x16xf32, #shared, #smem>296
+ =       arith.subf% 367% = 291ttg.local_load,  %%366295  ::  !tensor<ttg128.xmemdesc<128x16xf32, #shared, #smem>16 x->f32 , tensor<#128blockedx>16
+x      f32%, 297# = ttgmath.exp. dot_op<{opIdx = 0, parent = #blocked2}>%>296
+       :% 368tensor< = 128tt.fp_to_fpx 16%x363f32 , :# blockedtensor<>16
+x      128%x298f16 = , "#tblockedt5.>r e->d utensor<c16ex"128(x%f32297, )# <blocked{5axis> = 
+1       : %i36932 = }ttg.local_alloc>  (%{368
+       :^bb0 ((%tensor<arg3116: xf32128, x%f32arg32, : #f32blocked)5:>
+)         -> %!374ttg = .arith.addfmemdesc<16x128xf32, #shared1, #smem> 
+%      arg31%,370  = %ttg.local_loadarg32  %:369  f32:
+         !tt.reduce.returnttg .%memdesc<16x128xf32, #shared1, #smem>374  ->:  tensor<f3216
+x      128}x)f32 : , (#tensor<ttg128.xdot_op<{opIdx = 1, parent = #blocked2}>16>x
+f32      , %#371blocked = >tt.dot) ->  tensor<%128367x,f32 , %#370ttg,. slice<{dim = 1, parent = #blocked}>%>362
+,       %inputPrecision299  = =arith.subf  tf32% 235:,  tensor<%128293x 16:x f32tensor<, 128#xttgf32., dot_op<{opIdx = 0, parent = #blocked2}>#>ttg .*slice<{dim = 1, parent = #blocked}> >tensor<
+16      x%128300x = f32math.exp,  #%ttg299. dot_op<{opIdx = 1, parent = #blocked2}>:>  tensor<->128 xtensor<f32128, x#128ttgx.f32slice<{dim = 1, parent = #blocked}>, >#
+blocked      2%>301
+ =       tt.expand_dims% 372% = 300arith.mulf { axis% = 3151, :  i%32358}  ::  tensor<tensor<128128xxf32, f32#, ttg#.ttgslice<{dim = 1, parent = #blocked}>.>slice<{dim = 1, parent = #blocked}>
+>       %->373  = tensor<arith.addf128 x%1372x,f32 , %#356blocked >:
+       tensor<%128302x = f32ttg.convert_layout,  #%ttg301. slice<{dim = 1, parent = #blocked}>:> 
+tensor<      128scf.yieldx 1%x371f32, , %#373blocked, >% 351->  :tensor< 128tensor<x1281xx128f32x, f32#, blocked#2blocked>2
+>      , %tensor<303128 = xtt.broadcastf32 , %#302ttg .:slice<{dim = 1, parent = #blocked}> >tensor<, 128tensor<x1281xxf32f32, , ##ttgblocked.2slice<{dim = 1, parent = #blocked}>>> 
+->     }tensor< {128tt.divisibility_arg1x = 128dense<x16f32>,  : #tensor<blocked12x>i
+32      >%}304
+ =     arith.mulf% 84%:2553, =  scf.for% 303% arg27: =  %tensor<59128 to x%12811x step f32%, c16_i32# iter_argsblocked(2%>arg28
+ =       %%83305# = 0scf.if,  %%arg29282 =  -> (%tensor<8316#x1128, x%f16arg30,  = #%blocked835#>2))  -> ({tensor<
+128        x%128374x = f32tt.splat,  #%blocked2232 >:,  tensor<i12832x f32->,  #tensor<ttg16.xslice<{dim = 1, parent = #blocked}>1>x, itensor<32128, x#f32blocked, 5#>ttg
+.        slice<{dim = 1, parent = #blocked}>%>375) =  arith.addi :  i%32374 ,{ 
+%      77% 141: =  arith.divsitensor< 16%xarg271,x i%32c16_i32,  #:blocked 5i>32
+
+              %%376142 =  = tt.splattt.addptr  %%1161 ,:  %i14132  :->  !tensor<tt16.xptr<i32>1,x ii3232, 
+#      blocked%5143> = 
+tt.load         %%377142 =  arith.cmpi:  slt!,tt .%ptr<i32>375
+,       %%144376 =  arith.muli:  %tensor<14316,x 1%xarg21i 32:,  #iblocked325
+>      
+%        145% = 378arith.addi =  tt.broadcast% 144%,46  %:62  tensor<:1 xi12832x
+i      1%, 146# = blockedtt.splat5 >% 145->  :tensor< 16ix32128 x->i 1tensor<, 128#xblocked15x>i
+32        , %#379blocked = 4tt.broadcast> 
+%      377% 147: =  arith.additensor< 16%x1461,x i%166,  #:blocked 5tensor<>128 x->1 xtensor<i1632x, 128#xblockedi41>, 
+#      blocked%5148> = 
+tt.splat         %%380arg27 =  arith.andi:  %i37832,  ->% 379tensor< 1:x 16tensor<x16ix32128, x#iblocked14, >#
+blocked      5%>149
+ =         tt.splat% 381% = arg27tt.splat  :% arg4i 32:  ->! tttensor<.1ptr<f16>x 16->x itensor<3216, x#128blockedx>!
+tt      .%ptr<f16>150,  = #arith.addiblocked 5%>148
+,         %%38269 =  tt.addptr:  %tensor<3811,x 16%xi28032 , :# blockedtensor<416>x
+128      x%!151tt = .arith.addiptr<f16> , %#149blocked,5 >%,70  tensor<:16 xtensor<1281xxi1632x, i#32blocked, 5#>blocked
+>        
+%      383% = 152tt.load =  arith.remsi% 382%,150 ,% 380%,cst_21  %:cst_7  tensor<:1 xtensor<1616xxi12832x, !#ttblocked.4ptr<f16>>, 
+#      blocked%5153> = 
+arith.muli         scf.yield% 152%,383  %:cst_22  tensor<:16 xtensor<1281xxf1616, x#iblocked325, >#
+blocked      4}> else 
+{      
+%        154% = 374tt.broadcast =  tt.splat% 147% arg4:  :tensor< 128!xtt1.xptr<f16>i 32->,  #tensor<blocked164x>128 x->! tttensor<.128ptr<f16>x, 16#xblockedi532>, 
+#        blocked%4375> = 
+tt.addptr       %%155374 = ,tt.broadcast  %%280153  ::  tensor<tensor<161xx12816xx!itt32., ptr<f16>#, blocked#4blocked>5 >->,  tensor<tensor<12816xx16128xxii3232, , ##blockedblocked45>>
+
+              %%156376 =  = arith.additt.load  %%154375,  :% 155tensor< 16:x 128tensor<x128!xtt16.xptr<f16>i, 32#, blocked#5blocked>4
+>        
+scf.yield       %%157376 =  arith.addi:  %tensor<15616,x 128%x72f16 , :# blockedtensor<5128>x
+16      x}i
+32      , %#306blocked = 4arith.truncf> 
+%      297% 158: =  arith.mulitensor< 128%x14316,x f32%, arg24# blocked:>  ito32 
+tensor<      128%x15916 = xarith.addif16 , %#158blocked,> 
+%      73% 307: =  tt.fp_to_fpi 32%
+306       %:160  = tensor<tt.splat128 x%16159x f16, #:blocked >i 32->  ->tensor< 128tensor<x116xx128f32, x#iblocked32>, 
+#      blocked%5308> = 
+ttg.local_alloc       %%161307 =  arith.addi:  %(160tensor<,128 x%1675x f32:,  #tensor<blocked1>x)128 -> x!ittg32., memdesc<128x16xf32, #shared, #smem>#
+blocked      5%>309
+ =       ttg.local_load% 162% = 308tt.broadcast  :% 161! ttg:. memdesc<128x16xf32, #shared, #smem>tensor< 1->x 128tensor<x128ix3216, x#f32blocked, 5#>ttg .->dot_op<{opIdx = 0, parent = #blocked2}> >tensor<
+16      x%128310x = itt.fp_to_fp32 , %#305blocked 5:> 
+tensor<      16%x163128 = xarith.addif16 , %#162blocked,5 >% 78->  :tensor< 16tensor<x16128xx128f32x, i#32blocked, 5#>blocked
+5      >%
+311       = %ttg.local_alloc164  = %arith.addi310  %:arg27 ,( tensor<%16c16_i32x 128:x f32i, 32#
+blocked      5%>165) =  -> arith.cmpi! ttgsgt.,memdesc<16x128xf32, #shared1, #smem> 
+%      164%,312  = %ttg.local_load11  %:311  i:32 
+!      ttg%.166memdesc<16x128xf32, #shared1, #smem> =  scf.if->  %tensor<16516 -> (xtensor<128128xxf3216, x#f16ttg, .#dot_op<{opIdx = 1, parent = #blocked2}>blocked>4
+>      )% 313{ = 
+tt.dot         %%200309 = ,tt.expand_dims  %%44312 {,axis  = %1304 : ,i 32inputPrecision}  =:  tf32tensor< 128:x itensor<1128, x#16ttgx.f32slice<{dim = 1, parent = #blocked4}>, ># ttg->. dot_op<{opIdx = 0, parent = #blocked2}>tensor<>128 x*1 xtensor<i161x, 128#xblockedf324, >#
+ttg        .%dot_op<{opIdx = 1, parent = #blocked2}>201> =  tt.splat->  %tensor<11128 x:128 xif3232,  #->blocked 2tensor<>1
+x      16%x314i = 32arith.mulf,  #%blocked2574,> 
+%        300% 202: =  arith.cmpitensor< 128sltx,f32 , %#150ttg,. slice<{dim = 1, parent = #blocked}>%>201
+       :% 315tensor< = 1arith.addfx 16%x314i,32 , %#298blocked 4:> 
+tensor<        128%x203f32 = , tt.broadcast# ttg%.200slice<{dim = 1, parent = #blocked}> >:
+       tensor<%128316x = 1arith.divsix i%1281, ,# blocked%4c16_i32>  :->  itensor<32128
+x      16%x317i = 1tt.addptr,  #%blocked614,> 
+%        316% 204: =  tt.broadcast! tt%.202ptr<i32> ,:  itensor<321
+x      16%x318i = 1tt.load,  #%blocked3174 >:  ->! tttensor<.128ptr<i32>x
+16      x%i3191 = , arith.muli# blocked%4318>,
+         %%arg21205  = :arith.andi  i%32203
+,       %%320204 =  arith.addi:  %tensor<319128,x 16%x62i 1:,  #iblocked324
+>      
+%        321% = 206tt.splat =  tt.splat% 320% arg3:  :i 32! tt->. ptr<f16>tensor< 128->x 1tensor<x128ix3216, x#!blockedtt4.>ptr<f16>
+,       #%blocked3224 = >arith.addi
+         %%321207, =  tt.addptr% 66% 206:,  tensor<%128157x 1:x itensor<32128, x#16blockedx4!>tt
+.      ptr<f16>%, 323# = blockedtt.splat4 >%,281  tensor<:128 xi1632x i->32 , tensor<#1blockedx416>x
+i        32%, 208# = blockedtt.load4 >%
+207      ,% 324% = 205tt.splat,  %%281cst_9  ::  itensor<32128 x->16 xtensor<!1ttx.16ptr<f16>x, i#32blocked, 4#>blocked
+>        
+scf.yield       %%325208 =  arith.addi:  %tensor<323128,x 16%x69f16 , :# blockedtensor<41>x
+16      x}i else 32{, 
+#        blocked%4200> = 
+tt.splat       %%326arg3 =  arith.addi:  %!324tt,. ptr<f16>% 70->  :tensor< 128tensor<x116xx16!xtti.32ptr<f16>, , ##blockedblocked>4
+>      
+%        327% = 201arith.remsi =  tt.addptr% 325%,200 ,% cst_21% 157:  :tensor< 1tensor<x12816xx16ix32!, tt#.blockedptr<f16>4, >#
+blocked      4%>328, =  arith.mulitensor< 128%x32716,x i%32cst_22,  #:blocked 4tensor<>1
+x        16%x202i = 32tt.load,  #%blocked2014 >:
+       tensor<%128329x = 16tt.broadcastx !%tt322. ptr<f16>:,  #tensor<blocked1284x>1
+x        iscf.yield32 , %#202blocked 4:>  tensor<->128 xtensor<16128xxf1616, x#iblocked324, >#
+blocked      4}>
+
+            %%167330 =  = tt.fp_to_fptt.broadcast  %%166328  ::  tensor<tensor<1281xx1616xxf16i, 32#, blocked#4blocked>4 >->  ->tensor< 128tensor<x12816xx16f32x, i#32blocked, 4#>blocked
+4      >%
+168       = %ttg.local_alloc331  = %arith.addi167  %:329 ,( tensor<%128330x 16:x f32tensor<, 128#xblocked164x>i)32 -> , !#ttgblocked.4memdesc<128x16xf32, #shared1, #smem>>
+
+            %%169332 =  = ttg.local_loadarith.addi  %%80331 ,:  %!72ttg .:memdesc<128x128xf32, #shared, #smem>  tensor<->128 xtensor<16128xxi12832x, f32#, blocked#4ttg>.
+dot_op<{opIdx = 0, parent = #blocked}>      >%
+333       = %arith.muli170  = %ttg.local_load318 ,% 168% arg24:  :! ttgi.32memdesc<128x16xf32, #shared1, #smem>
+       ->% 334tensor< = 128arith.addix 16%x333f32,,  #%ttg73. dot_op<{opIdx = 1, parent = #blocked}>:> 
+i      32%
+171       = %tt.dot335  = %tt.splat169 ,% 334% 170:,  i%32cst_8 ,->  inputPrecisiontensor< 1=x 128tf32x i:32 , tensor<128#xblocked1285x>f32
+,       #%ttg336. = dot_op<{opIdx = 0, parent = #blocked}>arith.addi>  %*335 ,tensor< 128%x7516 x:f32 , tensor<#1ttgx.128dot_op<{opIdx = 1, parent = #blocked}>x>i 32->,  #tensor<blocked1285x>16
+x      f32%, 337# = blockedtt.broadcast> 
+%      336% 172: =  arith.cmpitensor< 1sltx,128 x%i15132,,  #%blocked815 : >tensor< 1->x 16tensor<x16ix32128, x#iblocked32>, 
+#      blocked%5173> = 
+tt.broadcast       %%338172 =  arith.addi:  %tensor<3371,x16xi1 , %#78blocked >:  ->tensor< 16tensor<x128128xx16ix32i, 1#, blocked#5blocked>>
+
+            %%339174 =  = arith.addiarith.select  %%arg27173,,  %%171c64_i32,  %:cst_1  : itensor<32128
+x      16%x340i = 1arith.cmpi,  #sgtblocked,> , %tensor<339128,x 16%x11f32 , :# blockedi>32
+
+            %%175341 =  = arith.mulfscf.if  %%174340, -> ( tensor<%12882x 16:x f16tensor<, 128#xblocked164x>f32),  #{blocked
+>        
+%      374% = 176tt.expand_dims =  "%t44t {.axisr = e1d : uic32e}" (:% 175tensor<)128 <x{iaxis1 = , 1# : ttgi.32slice<{dim = 1, parent = #blocked4}>}>>  (->{ 
+tensor<      128^bb0x(1%xarg31i: 1f32, , #%blockedarg324: >f32
+)        :%
+375         = %tt.splat200  = %arith.maxnumf11  %:arg31 ,i 32% arg32->  :tensor< 1f32x
+16        xtt.reduce.returni 32%, 200# blocked:4 >f32
+
+              %}376) =  : arith.cmpi( tensor<slt128,x 16%x325f32,,  #%blocked375> ) -> :tensor< 128tensor<x1f32x, 16#xttgi.32slice<{dim = 1, parent = #blocked}>, >#
+blocked      4%>177
+ =         arith.maxnumf %arg30,% 377% = 176tt.broadcast  :% 374tensor< 128:x f32tensor<, 128#xttg1.xslice<{dim = 1, parent = #blocked}>i>1
+,       #%blocked1784 = >tt.expand_dims  ->% 177tensor< {128axisx = 161x : ii132, }# blocked:4 >tensor<
+128        x%f32378,  = #tt.broadcastttg .%slice<{dim = 1, parent = #blocked}>376>  :->  tensor<tensor<1128xx161xxif321, , ##blockedblocked>4
+>       %->179  = tensor<tt.broadcast128 x%16178x i:1 , tensor<#128blockedx41>x
+f32        , %#379blocked = >arith.andi  ->% 377tensor<,128 x%16378x f32:,  #tensor<blocked128>x
+16      x%i1801 = , arith.subf# blocked%4175>,
+         %%179380  = :tt.splat tensor<128 x%16arg3x f32:,  #!blockedtt>.
+ptr<f16>       %->181  = tensor<math.exp128 x%16180x !:tt .tensor<ptr<f16>128, x#16blockedx4f32>, 
+#        blocked%>381
+ =       tt.addptr% 182% = 380",t t%.332r e:d utensor<c128ex16"x(!%tt181.)ptr<f16> <, {#axisblocked = 41> : ,i 32tensor<}128>x (16{x
+i      32^bb0, (#%blockedarg314: >f32
+,         %%arg32382:  = f32tt.load) :%
+381        ,% 200% = 379arith.addf,  %%arg31cst_9,  :% arg32tensor< 128:x 16f32x
+!        tttt.reduce.return. ptr<f16>%, 200# blocked:4 >f32
+
+              scf.yield} )% : 382( tensor<:128 xtensor<16128xxf3216, x#f16blocked, >#) -> blockedtensor<4128>x
+f32      , }# else ttg{.
+slice<{dim = 1, parent = #blocked}>        >%
+374       = %tt.splat183  = %arith.subfarg3  %:arg30 ,! tt%.177ptr<f16>  :->  tensor<tensor<128x128f32x, 16#xttg!.ttslice<{dim = 1, parent = #blocked}>.>ptr<f16>
+,       #%blocked1844 = >math.exp
+         %%183375  = :tt.addptr  tensor<%128374x,f32 , %#332ttg .:slice<{dim = 1, parent = #blocked}> >tensor<
+128      x%16185x = !tt.expand_dimstt .%ptr<f16>184,  {#axisblocked = 41> : ,i 32tensor<}128 x:16 xtensor<i12832x, f32#, blocked#4ttg>.
+slice<{dim = 1, parent = #blocked}>        >% 376-> =  tt.loadtensor< 128%x3751 x:f32 , tensor<#128blockedx>16
+x      !%tt186. = ptr<f16>ttg.convert_layout,  #%blocked1854 >:
+         tensor<scf.yield128 x%1376x : tensor<128f32x, 16#xblockedf16>,  #->blocked 4tensor<>128
+x      1}x
+f32      , %#342blocked = 2tt.fp_to_fp> 
+%      341% 187: =  tt.broadcasttensor< 128%x18616 x:f16 , tensor<#128blockedx41>x f32->,  #tensor<blocked1282x>16 x->f32 , tensor<#128blockedx4128>x
+f32      , %#343blocked = 2ttg.local_alloc> 
+%      342% 188: =  arith.mulf( tensor<%128arg28x,16 x%f32187,  #:blocked 4tensor<>128)x -> 128!xttgf32., memdesc<128x16xf32, #shared1, #smem>#
+blocked      2%>344
+ =       ttg.local_load% 189% = 343scf.if  :% 165! -> (ttgtensor<.16memdesc<128x16xf32, #shared1, #smem>x 128->x f16tensor<, 128#xblocked165x>f32),  #{ttg
+.        dot_op<{opIdx = 1, parent = #blocked}>%>200
+ =       tt.splat% 345% = arg27 : tt.doti 32% 169->,  tensor<%16344x,1 x%icst_832,,  #inputPrecisionblocked 5=> 
+tf32         %:201  = tensor<arith.addi128 x%128200x,f32 , %#77ttg .:dot_op<{opIdx = 0, parent = #blocked}> >tensor< 16*x 1tensor<x128ix3216, x#f32blocked, 5#>ttg
+.        dot_op<{opIdx = 1, parent = #blocked}>%>202  = ->tt.splat  tensor<%12811x 16:x f32i, 32# blocked->> 
+tensor<      16%x3461 = xarith.cmpii 32slt, ,# blocked%5326>,
+         %%81203  = :arith.cmpi  tensor<slt1,x 16%x201i,32 , %#202blocked >:
+       tensor<%16347x = 1tt.broadcastx i%32346,  #:blocked 5tensor<>1
+x        16%x204i = 1tt.broadcast,  #%blocked46>  :->  tensor<tensor<1128xx12816xxii11, , ##blockedblocked5>>
+       ->% 348tensor< = 16arith.selectx 128%x347i, 1%, #345blocked, 5%>cst_1
+ :         tensor<%128205x = 16tt.broadcastx i%1203,  #:blocked >tensor<, 16tensor<x1281xx16ix1f32, , ##blockedblocked5>>
+       ->% 349tensor< = 16arith.mulfx 128%x348i,1 , %#82blocked 5:> 
+tensor<        128%x20616 = xarith.andif32 , %#204blocked,> 
+%      205% 350: =  "tensor<t16tx.128rxeid1u, c#eblocked"5(>%
+349        )% <207{ = axistt.splat =  1% : arg4i 32:} >! (tt{.
+ptr<f16>       ^bb0->( %tensor<arg3116: xf32128, x%!arg32tt: .f32ptr<f16>), :#
+blocked        5%>374
+ =         arith.maxnumf% 208% = arg31tt.addptr,  %%207arg32,  :% 163f32 
+:         tt.reduce.returntensor< 16%x374128 x:! ttf32.
+ptr<f16>      , }#)blocked : 5(>tensor<,128 xtensor<1616xxf32128, x#iblocked32>, ) -> #tensor<blocked1285x>f32
+,         #%ttg209. = slice<{dim = 1, parent = #blocked}>tt.load> 
+%      208%,351  = %arith.maxnumf206 ,% 293%,cst_7  %:350  tensor<:16 xtensor<128128xx!f32tt, .#ptr<f16>ttg, .#slice<{dim = 1, parent = #blocked}>blocked>5
+>      
+%        352scf.yield =  tt.expand_dims% 209% 351: { axistensor< = 161x : 128ix32f16},  #:blocked 5tensor<>128
+x      f32},  else #{ttg
+.        slice<{dim = 1, parent = #blocked}>%>200  = ->tt.splat  tensor<%128arg4x 1:x f32!, tt#.blockedptr<f16>> 
+->       %tensor<35316 = xtt.broadcast 128%x352! tt:. ptr<f16>tensor<, 128#xblocked15x>f32
+,         #%blocked201> =  tt.addptr->  %tensor<200128,x 16%x163f32 , :# blockedtensor<>16
+x      128%x354! = ttarith.subf. ptr<f16>%, 349#,blocked 5%>353,  :tensor< 16tensor<x128128xx16ix32f32, , ##blockedblocked5>>
+
+              %%355202 =  = math.exptt.load  %%354201  ::  tensor<tensor<12816xx16128xxf32!, tt#.blockedptr<f16>>, 
+#      blocked%5356> = 
+"        tscf.yieldt .%r202e d:u ctensor<e16"x(128%x355f16),  <#{blockedaxis5 = >1
+ :       i}32
+}      >% (190{ = 
+arith.truncf       ^bb0%(181% arg31::  f32tensor<, 128%xarg3216: xf32f32), :#
+blocked        >% 374to =  arith.addftensor< 128%xarg3116,x f16%, arg32# blocked:> 
+f32      
+%        191tt.reduce.return =  tt.fp_to_fp% 374% 190:  :f32 
+tensor<      128}x)16 : x(f16tensor<, 128#xblocked16>x f32->,  #tensor<blocked128>x) -> 16tensor<x128f32x, f32#, blocked#>ttg
+.      slice<{dim = 1, parent = #blocked}>%>192
+ =       ttg.local_alloc% 357% = 191arith.subf  :% 293(,tensor< 128%x35116 x:f32 , tensor<#128blockedx>f32),  -> #!ttgttg..slice<{dim = 1, parent = #blocked}>memdesc<128x16xf32, #shared, #smem>>
+
+            %%193358 =  = ttg.local_loadmath.exp  %%192357  ::  !tensor<ttg128.xmemdesc<128x16xf32, #shared, #smem>f32 , -># ttgtensor<.128slice<{dim = 1, parent = #blocked}>x>16
+x      f32%, 359# = ttgtt.expand_dims. dot_op<{opIdx = 0, parent = #blocked2}>%>358
+ {      axis% = 1941 =  : tt.fp_to_fpi 32%}189  ::  tensor<tensor<12816xxf32128, x#f16ttg, .#slice<{dim = 1, parent = #blocked}>blocked>5 >->  ->tensor< 128tensor<x161xx128f32x, f32#, blocked#>blocked
+5      >%
+360       = %ttg.convert_layout195  = %ttg.local_alloc359  %:194  tensor<:128 x(1tensor<x16f32x, 128#xblockedf32>,  #->blocked 5tensor<>128)x -> 1!xttgf32., memdesc<16x128xf32, #shared1, #smem>#
+blocked      2%>196
+ =       ttg.local_load% 361% = 195tt.broadcast  :% 360! ttg:. memdesc<16x128xf32, #shared1, #smem>tensor< 128->x 1tensor<x16f32x, 128#xblockedf322, ># ttg->. dot_op<{opIdx = 1, parent = #blocked2}>tensor<>128
+x      128%x197f32 = , tt.dot# blocked%2193>,
+       %%196362, =  arith.mulf% 188%,313 ,inputPrecision  %=361  tf32:  :tensor< 128tensor<x128128xx16f32x, f32#, blocked#2ttg>.
+dot_op<{opIdx = 0, parent = #blocked2}>      >% 363* =  scf.iftensor< 16%x340128 -> (xtensor<f3216, x#128ttgx.f16dot_op<{opIdx = 1, parent = #blocked2}>, ># blocked->5 >tensor<)128 x{128
+x        f32%, 374# = blockedtt.splat2 >%
+281       %:198  = iarith.mulf32  %->arg29 ,tensor< 16%x1841 x:i 32tensor<, 128#xblockedf325, >#
+ttg        .%slice<{dim = 1, parent = #blocked}>375> = 
+arith.addi       %%199374 = ,arith.addf  %%77198 ,:  %tensor<18216 x:1 xtensor<i12832x, f32#, blocked#5ttg>.
+slice<{dim = 1, parent = #blocked}>        >%
+376       = scf.yieldtt.splat  %%19711,  %:199 , i%32177  ->:  tensor<tensor<16128xx1128xxif3232, , ##blockedblocked25>>, 
+tensor<        128%377 = arith.cmpi xsltf32,,  #%ttg.375slice<{dim = 1, parent = #blocked}>,> , %tensor<376128 x:f32 , tensor<#16ttgx.1slice<{dim = 1, parent = #blocked}>x>i
+32    , }# {blockedtt.divisibility_arg15 = >dense<
+16        >% : 378tensor< = 1tt.broadcastx i%3246> , :tt.num_stages  = tensor<11 : xi12832x}i
+1    , %#85blocked = 5ttg.convert_layout>  %->84 #tensor<216 x:128 xtensor<i1281x, f32#, blocked#5ttg>.
+slice<{dim = 1, parent = #blocked}>        >% 379-> =  tt.broadcasttensor< 128%x377f32 , :# ttgtensor<.16slice<{dim = 1, parent = #blocked1}>x>1
+x    i%186,  = #ttg.convert_layoutblocked 5%>84 #->1  tensor<:16 xtensor<128128xxif321, , ##ttgblocked.5slice<{dim = 1, parent = #blocked}>>>
+         ->% 380tensor< = 128arith.andix f32%, 378#,ttg .%slice<{dim = 1, parent = #blocked1}>>
+    379% 87: =  tt.make_rangetensor< {16endx = 12864x : ii132, , #startblocked = 50> : 
+i        32%}381  = :tt.splat  tensor<%64arg4x i:32 , !#ttttg..ptr<f16>slice<{dim = 0, parent = #blocked4}> >->
+     tensor<%1688x = 128tt.make_rangex {!endtt = .64ptr<f16> : , i#32blocked, 5start> = 
+0         : %i38232 = }tt.addptr  :% 381tensor<,64 x%i33832 , :# ttgtensor<.16slice<{dim = 0, parent = #blocked1}>x>128
+x    !%tt89. = ptr<f16>tt.expand_dims,  #%blocked875 {>axis, =  0tensor< : 16ix32128}x i:32 , tensor<#64blockedx5i>32
+,         #%ttg383. = slice<{dim = 0, parent = #blocked4}>tt.load>  %->382 ,tensor< 1%x38064,x i%32cst_7,  #:blocked 4tensor<>16
+x    128%x90! = tttt.expand_dims. ptr<f16>%, 88# {blockedaxis5 = >0
+ :         iscf.yield32 }% 383:  :tensor< 64tensor<x16ix32128, x#f16ttg, .#slice<{dim = 0, parent = #blocked1}>blocked>5 >->
+       tensor<}1 else x{64
+x        i%32374,  = #tt.splatblocked 1%>arg4
+     :% 91! = tttt.splat. ptr<f16>% arg15->  :tensor< 16ix32128 x->! tttensor<.1ptr<f16>x, 64#xblockedi532>, 
+#        blocked%4375> = 
+tt.addptr     %%92374 = arith.muli,  %%89338,  :% 91tensor< 16:x 128tensor<x1!xtt64.xptr<f16>i, 32#, blocked#5blocked>4,> 
+tensor<    16%x93128 = xarith.mulii 32%, 3#,blocked 5%>arg16
+         :% 376i = 32tt.load
+     %%37594  = :tt.splat  tensor<%1693x 128:x !itt32. ptr<f16>->,  #tensor<blocked15x>64
+x        iscf.yield32,  #%blocked3764 >:
+     tensor<%1695x = 128arith.addix f16%, 92#,blocked 5%>94
+       :} 
+tensor<      1%x36464 = xarith.truncfi 32%, 355# blocked:4 >tensor<
+128    x%1696x = f32tt.broadcast,  #%blocked95>  :to  tensor<tensor<1128xx6416xxif1632, , ##blockedblocked>4
+>       %->365  = tensor<tt.fp_to_fp128 x%64364x i:32 , tensor<#128blockedx416>x
+f16    , %#97blocked = >tt.broadcast  ->% 63tensor< 128:x 16tensor<x128f32x, 1#xblockedi>32
+,       #%blocked3664 = >ttg.local_alloc  ->% 365tensor< 128:x 64(xtensor<i12832x, 16#xblockedf324, >#
+blocked    >%)98 ->  = !arith.addittg .%memdesc<128x16xf32, #shared, #smem>96
+,       %%36797 =  ttg.local_load:  %tensor<366128 x:64 x!ittg32., memdesc<128x16xf32, #shared, #smem># blocked->4 >tensor<
+128    x%1699x = f32tt.make_range,  {#endttg = .64dot_op<{opIdx = 0, parent = #blocked2}> : >i
+32      , %start368 =  = 0tt.fp_to_fp :  i%32363}  ::  tensor<tensor<1664xx128ix32f16, , ##ttgblocked.5slice<{dim = 1, parent = #blocked3}>>> 
+->     %tensor<10016 = xtt.expand_dims128 x%f3299,  {#axisblocked = 51> : 
+i      32%}369  = :ttg.local_alloc  tensor<%64368x i:32 , (#tensor<ttg16.xslice<{dim = 1, parent = #blocked3}>128>x f32->,  #tensor<blocked645x>1)x -> i!32ttg, .#memdesc<16x128xf32, #shared1, #smem>blocked
+3      >%
+370     = %ttg.local_load101  = %tt.splat369  %:arg17  !:ttg .imemdesc<16x128xf32, #shared1, #smem>32  ->->  tensor<tensor<1664xx1281xxf32i, 32#, ttg#.blockeddot_op<{opIdx = 1, parent = #blocked2}>3>>
+
+          %%371102 =  = tt.dotarith.muli  %%367100,,  %%370101,  :% 362tensor<,64 xinputPrecision1 x=i 32tf32,  #:blocked 3tensor<>128
+x    16%x103f32 = , arith.muli# ttg%.3dot_op<{opIdx = 0, parent = #blocked2}>,>  %*arg18  tensor<:16 xi12832x
+f32    , %#104ttg = .tt.splatdot_op<{opIdx = 1, parent = #blocked2}> >% 103->  :tensor< 128ix32128 x->f32 , tensor<#64blockedx21>x
+i      32%, 372# = blockedarith.mulf3 >%
+315    ,% 105% = 358arith.addi  :% 102tensor<,128 x%f32104,  #:ttg .tensor<slice<{dim = 1, parent = #blocked}>64>x
+1      x%i37332 = , arith.addf# blocked%3372>,
+     %%356106  = :tt.broadcast  tensor<%128105x f32:,  #tensor<ttg64.xslice<{dim = 1, parent = #blocked}>1>x
+i      32scf.yield,  #%blocked3713, >% 373->,  %tensor<35164 x:128 xtensor<i12832x, 128#xblockedf323, >#
+blocked    2%>107,  = tt.broadcasttensor< 128%x31f32 , :# ttgtensor<.1slice<{dim = 1, parent = #blocked}>x>128, xtensor<i12832x, f32#, blocked#3ttg>. slice<{dim = 1, parent = #blocked}>->> 
+tensor<    64}x {128tt.divisibility_arg1x = idense<3216, ># : blockedtensor<31>x
+i    32%>108} = 
+arith.addi     %%84106:,3  = %scf.for107  %:arg27  = tensor<%6459x to 128%x11i step 32%, c16_i32# iter_argsblocked(3%>arg28
+ =     %%83109# = 0tt.splat,  %%arg29arg1 =  %:83 #!1tt, .%ptr<f16>arg30  = ->% 83tensor<#1282x)64 -> (xtensor<!128ttx.128ptr<f16>x, f32#, blocked#4blocked>2
+>    , %tensor<110128 = xtt.addptrf32 , %#109ttg,. slice<{dim = 1, parent = #blocked}>%>98,  tensor<:128 xtensor<f32128, x#64ttgx.!slice<{dim = 1, parent = #blocked}>tt>.)ptr<f16> ,  : #iblocked324 >{,
+       tensor<%128141x = 64arith.divsix i%32arg27, ,# blocked%4c16_i32> 
+:     %i11132 = 
+tt.splat       %%142arg2 =  tt.addptr:  %!61tt.,ptr<f16>  %->141  tensor<:64 x!128ttx.!ptr<i32>tt,. ptr<f16>i, 32#
+blocked      3%>143
+ =     tt.load% 112% = 142tt.addptr  :% 111!,tt .%108 :ptr<i32> 
+tensor<      64%x144128 = xarith.muli! tt%.143ptr<f16>,,  #%blockedarg213 >:,  itensor<3264
+x      128%x145i = 32arith.addi,  #%blocked1443,> 
+%    62% 113: =  arith.cmpii 32slt
+,       %%14612 = ,tt.splat  %%10145  ::  ii3232
+     ->% 114tensor< = 128arith.extuix 1%x113i 32:,  #iblocked14 >to
+       i%32147
+ =     arith.addi% 115% = 146arith.addi,  %%266,  :% c1_i32tensor< 128:x 1ix32i
+32    , %#116blocked = 4arith.muli> 
+%      114%,148  = %tt.splat115  %:arg27  i:32 
+i    32% 117-> =  arith.mulitensor< 1%x11616,x i%32c128_i32,  #:blocked 4i>32
+
+          %%149118 =  = tt.splattt.expand_dims  %%arg2744  {:axis  = i132 :  i->32 }tensor< 1:x 16tensor<x128ix32i, 1#, blocked#>ttg
+.      slice<{dim = 1, parent = #blocked4}>%>150  = ->arith.addi  tensor<%128148x,1 x%i691 , :# blockedtensor<41>x
+16    x%i11932 = , tt.splat# blocked%410> 
+:       %i15132 =  arith.addi->  %tensor<1491,x 64%xi7032 , :# blockedtensor<41>x
+16    x%i12032 = , tt.broadcast# blocked%>118
+       :% 152tensor< = 128arith.remsix 1%x150i,1 , %#cst_21blocked 4:>  tensor<->1 xtensor<16128xxi6432x, i#1blocked, 4#>blocked
+4      >%
+153     = %arith.muli121  = %tt.splat152 ,% arg6% cst_22:  :f32  tensor<->1 xtensor<16128xxi6432x, f32#, blocked#4blocked>1
+>      
+%    154% = 122tt.broadcast =  tt.broadcast% 147% 23:  :tensor< 128tensor<x1281xx1ix32i, 32#, blocked#4blocked>1 >->  ->tensor< 128tensor<x12816xx64ix32i, 32#, blocked#4blocked>1
+>      
+%    155% = 123tt.broadcast =  tt.splat% 153% 10:  :tensor< 1ix3216 x->i 32tensor<, 64#xblocked14x>i 32->,  #tensor<blocked1283x>16
+x    i%32124,  = #tt.broadcastblocked 4%>45
+       :% 156tensor< = 1arith.addix 128%x154i,1 , %#155blocked 3:>  tensor<->128 xtensor<1664xxi12832x, i#1blocked, 4#>blocked
+3      >%
+157     = %arith.addi125 :%3156 = ,scf.for  %%72arg27  = :% c0_i32tensor< to 128%x11716 step x%ic64_i3232 iter_args, (#%blockedarg284 = >%
+84      #%0158,  = %arith.muliarg29  = %%14386,,  %%arg30arg24 =  %:85 )i -> (32tensor<
+128      x%128159x = f32arith.addi,  #%blocked1582,> , %tensor<73128 x:f32 , i#32ttg
+.      slice<{dim = 1, parent = #blocked1}>%>160,  = tensor<tt.splat128 x%f32159,  #:ttg .islice<{dim = 1, parent = #blocked1}>32> )->   : tensor<i132x 128{x
+i      32%, 141# = blockedtt.splat5 >%
+arg27       %:161  = iarith.addi32  %->160 ,tensor< 1%x7564 x:i 32tensor<, 1#xblocked1284x>i
+32      , %#142blocked = 5tt.splat> 
+%      arg27% 162: =  tt.broadcasti 32% 161->  :tensor< 1tensor<x164xx128ix32i, 32#, blocked#1blocked>5
+>       %->143  = tensor<arith.addi16 x%128141x,i 32%, 89# blocked:5 >tensor<
+1      x%64163x = iarith.addi32 , %#162blocked,4 >%
+78       %:144  = tensor<arith.addi16 x%128142x,i 32%, 90# blocked:5 >tensor<
+1      x%64164x = iarith.addi32 , %#arg27blocked,1 >%
+c16_i32       %:145  = iarith.cmpi32 
+slt      ,% 165% = 143arith.cmpi,  sgt%,119  %:164 ,tensor< 1%x1164 x:i 32i, 32#
+blocked      4%>166
+ =       scf.if% 146% = 165tt.broadcast -> ( tensor<%128145x 16:x f16tensor<, 1#xblocked644x>i)1 , {#
+blocked        4%>200  = ->tt.expand_dims  tensor<%12844x {64axisx = i11 : , i#32blocked}4 >:
+       tensor<%128147x = iarith.andi1 , %#120ttg,. slice<{dim = 1, parent = #blocked4}>%>146  ->:  tensor<tensor<128128xx164xxii11, , ##blockedblocked44>>
+
+              %%201148 =  = tt.splatarith.addi  %%117 ,:  %iarg2732  :->  itensor<321
+x      16%x149i = 32arith.muli,  #%blocked1484,> 
+%        arg15% 202: =  arith.cmpii 32slt
+,       %%150150 = ,tt.splat  %%201149  ::  tensor<i132x 16->x itensor<32128, x#64blockedx4i>32
+,         #%blocked2034 = >tt.broadcast
+       %%200151  = :tt.addptr  tensor<%128110x,1 x%i1501 , :# blockedtensor<4128>x 64->x !tensor<tt128.xptr<f16>16, x#blockedi41>, ,# blockedtensor<4128>x
+64        x%i20432 = , tt.broadcast# blocked%4202> 
+:       %tensor<1521 = xtt.load16 x%i1511,,  #%blocked147,4 >% cst_6->  :tensor< 128tensor<x12816xx64ix1!, tt#.blockedptr<f16>4, >#
+blocked        4%>205
+ =       arith.andi% 153% = 203tt.fp_to_fp,  %%152204  ::  tensor<tensor<128128xx6416xxf16i, 1#, blocked#4blocked>4 >->
+         tensor<%128206x = 64tt.splatx f32%, arg3# blocked:4 >!
+tt      .%ptr<f16>154  = ->ttg.local_alloc  tensor<%128153x 16:x !(tttensor<.128ptr<f16>x, 64#xblockedf324, >#
+blocked        4%>207) =  -> tt.addptr! ttg%.206memdesc<128x64xf32, #shared1, #smem>,
+       %%157155  = :ttg.local_load  tensor<%12880x 16:x !!ttttg..ptr<f16>memdesc<128x128xf32, #shared, #smem>,  #->blocked 4tensor<>128,x 128tensor<x128f32x, 16#xttgi.32dot_op<{opIdx = 0, parent = #blocked1}>, >#
+blocked      4%>156
+ =         ttg.local_load% 208% = 154tt.load  :% 207!,ttg .%memdesc<128x64xf32, #shared1, #smem>205 ,->  %tensor<cst_9128 x:64 xtensor<f32128, x#16ttgx.!dot_op<{opIdx = 1, parent = #blocked1}>tt>.
+ptr<f16>      , %#157blocked = 4tt.dot> 
+%        155scf.yield,  %%208156 ,:  %tensor<cst_5128,x 16inputPrecisionx f16=,  #tf32blocked 4:> 
+tensor<      128}x else 128{x
+f32        , %#200ttg = .tt.splatdot_op<{opIdx = 0, parent = #blocked1}> >% arg3*  :tensor< 128!xtt64.xptr<f16>f32 , -># ttgtensor<.128dot_op<{opIdx = 1, parent = #blocked1}>x>16x !->tt .tensor<ptr<f16>128, x#64blockedx4f32>, 
+#        blocked%1201> = 
+tt.addptr       %%158200 = ,arith.mulf  %%157157 ,:  %tensor<121128 x:16 xtensor<!128ttx.64ptr<f16>x, f32#, blocked#4blocked>1,> 
+tensor<      128%x15916 = xtt.broadcasti 32%, 144# blocked:4 >tensor<
+1        x%64202x = itt.load32 , %#201blocked 1:>  tensor<->128 xtensor<16128xx!64ttx.iptr<f16>32, , ##blockedblocked41>>
+
+              scf.yield% 160% = 202arith.cmpi  :sge ,tensor< 128%x12216,x f16%, 159# blocked:4 >tensor<
+128      x}64
+x      i%32167,  = #tt.fp_to_fpblocked 1%>166
+       :% 161tensor< = 128arith.selectx 16%x160f16, , %#158blocked, 4%>cst_2  : ->tensor< 128tensor<x12864xx16ix1f32, , ##blockedblocked14>>, 
+tensor<      128%x16864 = xttg.local_allocf32 , %#167blocked 1:> 
+(      tensor<%128162x = 16"xtf32t, .#rblockede4d>u)c -> e!"ttg(.%memdesc<128x16xf32, #shared1, #smem>161
+)       <%{169axis =  = ttg.local_load1  : %i8032 }:>  (!{ttg
+.      memdesc<128x128xf32, #shared, #smem>^bb0 (->% arg31tensor<: 128f32x, 128%xarg32f32: , f32#)ttg:.
+dot_op<{opIdx = 0, parent = #blocked}>        >%
+194       = %arith.maxnumf170  = %ttg.local_loadarg31 ,% 168% arg32:  :! ttgf32.
+memdesc<128x16xf32, #shared1, #smem>         tt.reduce.return->  %tensor<194128 x:16 xf32f32
+,       #}ttg). : dot_op<{opIdx = 1, parent = #blocked}>(>tensor<
+128      x%64171x = f32tt.dot,  #%blocked1691,> ) -> %tensor<170128,x f32%, cst_8#,ttg .inputPrecisionslice<{dim = 1, parent = #blocked1}> >=
+       tf32% 163: =  arith.maxnumftensor< 128%xarg30128,x f32%, 162# ttg:. dot_op<{opIdx = 0, parent = #blocked}>tensor<>128 x*f32 , tensor<#128ttgx.16slice<{dim = 1, parent = #blocked1}>x>f32
+,       #%ttg164. = dot_op<{opIdx = 1, parent = #blocked}>tt.expand_dims>  %->163  {tensor<axis128 = x116 : xif3232, }# blocked:> 
+tensor<      128%x172f32 = , arith.cmpi# ttgslt.,slice<{dim = 1, parent = #blocked1}> >% 151->,  tensor<%12881x 1:x f32tensor<, 1#xblocked161x>i
+32      , %#165blocked = >tt.broadcast
+       %%164173  = :tt.broadcast  tensor<%128172x 1:x f32tensor<, 1#xblocked161x>i 1->,  #tensor<blocked128>x 64->x f32tensor<, 128#xblocked161x>i
+1      , %#166blocked = >arith.subf
+       %%161174, =  arith.select% 165% 173:,  %tensor<171128, x%64cst_1x : f32tensor<, 128#xblocked161x>i
+1      , %#167blocked = >math.exp,  tensor<%128166x 16:x f32tensor<, 128#xblocked64>x
+f32      , %#175blocked = 1arith.mulf> 
+%      174%,168  = %"82t t:. rtensor<e128dxu16cxef32", (#%blocked167>)
+ <      {%axis176 =  = 1" : tit32.}r>e (d{u
+c      e^bb0"((%%arg31175: )f32 <, {%axisarg32 = : 1f32 : )i:32
+}        >% (194{ = 
+arith.addf       ^bb0%(arg31%,arg31 : %f32arg32,  %:arg32 : f32f32
+)        :tt.reduce.return
+         %%194200  = :arith.maxnumf  f32%
+arg31      ,} )% : arg32( tensor<:128 xf3264
+x        f32tt.reduce.return,  #%blocked2001 >:) ->  tensor<f32128
+x      f32}, )# : ttg(.tensor<slice<{dim = 1, parent = #blocked1}>128>x
+16      x%f32169,  = #arith.subfblocked >%) -> arg30tensor<,128 x%f32163,  #:ttg .tensor<slice<{dim = 1, parent = #blocked}>128>x
+f32      , %#177ttg = .arith.maxnumfslice<{dim = 1, parent = #blocked1}> >%
+arg30      ,% 170% = 176math.exp  :% 169tensor< 128:x f32tensor<, 128#xttgf32., slice<{dim = 1, parent = #blocked}>#>ttg
+.      slice<{dim = 1, parent = #blocked1}>%>178
+ =       tt.expand_dims% 171% = 177tt.expand_dims { axis% = 1701 { : axisi = 321} :  i:32 }tensor< 128:x f32tensor<, 128#xttgf32., slice<{dim = 1, parent = #blocked}>#>ttg .->slice<{dim = 1, parent = #blocked1}> >tensor< 128->x 1tensor<x128f32x, 1#xblockedf32>, 
+#      blocked%1179> = 
+tt.broadcast       %%172178 =  ttg.convert_layout:  %tensor<171128 x:1 xtensor<f32128, x#1blockedx>f32 , -># blockedtensor<1128>x 16->x f32tensor<, 128#xblocked1>x
+f32      , %#180blocked = 2arith.subf> 
+%      175%,173  = %tt.broadcast179  %:172  tensor<:128 xtensor<16128xxf321, x#f32blocked, >#
+blocked      2%>181  = ->math.exp  tensor<%128180x 128:x f32tensor<, 128#xblocked162x>f32
+,       #%blocked174> = 
+arith.mulf       %%182arg28 = ," t%t173. r:e dtensor<u128cxe128"x(f32%, 181#)blocked <2{>axis
+ =       1% : 175i = 32tt.splat} >% (arg27{ 
+:       ^bb0i(32% arg31->:  f32tensor<, 64%xarg321: xf32i)32:, 
+#        blocked%3200> = 
+arith.addf       %%176arg31 = ,arith.addi  %%arg32175 ,:  %f32100
+         :tt.reduce.return  tensor<%64200x 1:x if3232
+,       #}blocked)3 : >(
+tensor<      128%x17716 = xarith.cmpif32 , slt#,blocked >%) -> 176tensor<,128 x%f32123,  #:ttg .tensor<slice<{dim = 1, parent = #blocked}>64>x
+1      x%i18332 = , arith.subf# blocked%3arg30>,
+       %%177178  = :tt.broadcast  tensor<%128177x f32:,  #tensor<ttg64.xslice<{dim = 1, parent = #blocked}>1>x
+i      1%, 184# = blockedmath.exp3 >% 183->  :tensor< 64tensor<x128128xxf32i, 1#, ttg#.blockedslice<{dim = 1, parent = #blocked}>3>>
+
+            %%185179 =  = tt.expand_dimsarith.andi  %%184124 {,axis  = %1178 :  i:32 }tensor< 64:x 128tensor<x128ix1f32, , ##blockedttg3.>slice<{dim = 1, parent = #blocked}>
+>       %->180  = tensor<arith.muli128 x%1148x,f32 , %#arg17blocked >:
+       i%32186
+ =       ttg.convert_layout% 181% = 185tt.splat  :% 180tensor< 128:x 1ix32f32 , -># blockedtensor<>64 x->128 xtensor<i12832x, 1#xblockedf323, >#
+blocked      2%>182
+ =       tt.addptr% 187% = 112tt.broadcast,  %%186181  ::  tensor<tensor<12864xx1128xxf32!, tt#.blockedptr<f16>2, ># blocked->3 >tensor<,128 xtensor<12864xxf32128, x#iblocked322, >#
+blocked      3%>188
+ =       arith.mulf% 183% = arg28tt.load,  %%182187,  :% 179tensor<,128 x%128cst_4x f32:,  #tensor<blocked642x>128
+x      !%tt189. = ptr<f16>scf.if,  #%blocked1653 -> (>tensor<
+16      x%128184x = f16arith.truncf,  #%blocked1675 >:)  tensor<{128
+x        64%x200f32 = , tt.splat# blocked%1arg27>  :to  itensor<32128 x->64 xtensor<f1616, x#1blockedx1i>32
+,       #%blocked1855 = >tt.fp_to_fp
+         %%184201  = :arith.addi  tensor<%128200x,64 x%f1677,  #:blocked 1tensor<>16 x->1 xtensor<i12832x, 64#xblockedf325, >#
+blocked        1%>202
+ =       tt.splat% 186% = 11ttg.local_alloc  :% 185i 32:  ->( tensor<tensor<12816xx641xxf32i, 32#, blocked#1blocked>5)> -> 
+!        ttg%.203memdesc<128x64xf32, #shared, #smem> = 
+arith.cmpi       %slt187, =  ttg.local_load% 201%,186  %:202  !:ttg .tensor<memdesc<128x64xf32, #shared, #smem>16 x->1 xtensor<i12832x, 64#xblockedf325, >#
+ttg        .%dot_op<{opIdx = 0, parent = #blocked2}>204> = 
+tt.broadcast       %%18846 =  tt.fp_to_fp:  %tensor<1831 x:128 xtensor<i641x, 128#xblockedf165, ># blocked->3 >tensor< 16->x 128tensor<x64ix1128, x#f32blocked, 5#>blocked
+3        >%
+205       = %tt.broadcast189  = %ttg.local_alloc203  %:188  tensor<:16 x(1tensor<x64ix1128, x#f32blocked, 5#>blocked 3->> )tensor< -> 16!xttg128.xmemdesc<64x128xf32, #shared, #smem>i
+1      , %#190blocked = 5ttg.local_load> 
+%        189% 206: =  arith.andi! ttg%.204memdesc<64x128xf32, #shared, #smem>,  ->% 205tensor< 64:x 128tensor<x16f32x, 128#xttgi.1dot_op<{opIdx = 1, parent = #blocked2}>, >#
+blocked      5%>191
+ =         tt.dot% 207% = 187tt.splat,  %%arg4190 ,:  %!174tt,. ptr<f16>inputPrecision  ->=  tensor<tf3216 x:128 xtensor<!128ttx.64ptr<f16>x, f32#, blocked#5ttg>.
+dot_op<{opIdx = 0, parent = #blocked2}>        >% 208* =  tt.addptrtensor< 64%x207128,x f32%, 163# ttg:. dot_op<{opIdx = 1, parent = #blocked2}>tensor<>16 x->128 xtensor<!128ttx.128ptr<f16>x, f32#, blocked#5blocked>2,> 
+tensor<      16%x192128 = xarith.mulfi 32%, arg29#,blocked 5%>170
+         :% 209tensor< = 128tt.loadx f32%, 208#,ttg .%slice<{dim = 1, parent = #blocked1}>206>,
+       %%cst_7193  = :arith.addf  tensor<%16192x,128 x%!168tt .:ptr<f16> , tensor<#128blockedx5f32>, 
+#        ttgscf.yield. slice<{dim = 1, parent = #blocked1}>%>209
+       :scf.yield  tensor<%16191x, 128%x193f16, , %#163blocked 5:> 
+tensor<      128}x else 128{x
+f32        , %#200blocked = 2tt.splat> , %tensor<arg4128 x:f32 , !#ttttg..ptr<f16>slice<{dim = 1, parent = #blocked1}> >->,  tensor<tensor<12816xxf32128, x#!ttgtt..slice<{dim = 1, parent = #blocked1}>ptr<f16>>, 
+#    blocked}5 {>tt.divisibility_arg1
+ =         dense<%64201> =  : tt.addptrtensor< 1%x200i,32 >%, 163tt.loop_unroll_factor  = :1  : tensor<i1632x}128
+x    !%tt126. = ptr<f16>tt.expand_dims,  #%blocked1255#>1, { axistensor< = 161x : 128ix32i}32 , :# blockedtensor<5128>x
+f32        , %#202ttg = .tt.loadslice<{dim = 1, parent = #blocked1}> >% 201->  :tensor< 128tensor<x161xx128f32x, !#ttblocked.1ptr<f16>>, 
+#    blocked%5127> = 
+ttg.convert_layout         scf.yield% 126% 202:  :tensor< 128tensor<x161xx128f32x, f16#, blocked#1blocked>5 >->
+       tensor<}128
+x      1%x190f32 = , arith.truncf# blocked%2181> 
+:     %tensor<128128 = xtt.broadcast16 x%f32127 , :# blockedtensor<>128 xto1 xtensor<f32128, x#16blockedx2f16>,  #->blocked >tensor<
+128      x%128191x = f32tt.fp_to_fp,  #%blocked1902 >:
+     tensor<%128129x = 16arith.divfx f16%, 125##blocked0>,  ->% 128tensor< 128:x 16tensor<x128f32x, 128#blockedx>f32
+,       #%blocked2192> = 
+ttg.local_alloc     %%130191 =  tt.splat:  %(arg19tensor< 128:x 16ix32f32 , -># blockedtensor<>128)x -> 1!xttgi.32memdesc<128x16xf32, #shared, #smem>, 
+#      blocked%3193> = 
+ttg.local_load     %%131192 =  arith.muli:  %!25ttg,. memdesc<128x16xf32, #shared, #smem>% 130->  :tensor< 128tensor<x12816xx1f32x, i#32ttg, .#dot_op<{opIdx = 0, parent = #blocked2}>blocked>3
+>      
+%    194% = 132tt.fp_to_fp =  arith.muli% 189% 1:,  tensor<%16arg20x 128:x f16i, 32#
+blocked    5%>133  = ->tt.splat  tensor<%16132x 128:x f32i, 32# blocked->5 >tensor<
+128      x%1195x = ittg.local_alloc32 , %#194blocked 3:> 
+(    tensor<%16134x = 128arith.addix f32%, 131#,blocked 5%>133)  -> :! ttgtensor<.128memdesc<16x128xf32, #shared1, #smem>x
+1      x%i19632 = , ttg.local_load# blocked%3195> 
+:     %!135ttg = .tt.broadcastmemdesc<16x128xf32, #shared1, #smem>  %->134  tensor<:16 xtensor<128128xxf321, x#ittg32., dot_op<{opIdx = 1, parent = #blocked2}>#>blocked
+3      >% 197-> =  tt.dottensor< 128%x193128,x i%32196, ,# blocked%3188>,
+     inputPrecision% 136= =  arith.additf32  %:135 ,tensor< 128%x3416 x:f32 , tensor<#128x128xittg32., dot_op<{opIdx = 0, parent = #blocked2}>#>blocked 3*> 
+tensor<    16%x137128 = xtt.splatf32 , %#arg11ttg .:dot_op<{opIdx = 1, parent = #blocked2}> >! tt->. ptr<f16>tensor< 128->x 128tensor<x128f32x, 128#xblocked!2tt>.
+ptr<f16>      , %#198blocked = 3arith.mulf> 
+%    arg29%,138  = %tt.addptr184  %:137 ,tensor< 128%x136f32 , :# ttgtensor<.128slice<{dim = 1, parent = #blocked}>x>128
+x      !%tt199. = ptr<f16>arith.addf,  #%blocked1983,> ,% 182tensor< 128:x 128tensor<x128ix32f32, , ##blockedttg3.>slice<{dim = 1, parent = #blocked}>
+>    
+%      139scf.yield =  arith.truncf% 197%, 129% 199:,  %tensor<177128 x:128 xtensor<f32128, x#128blockedx2f32>,  #toblocked 2tensor<>128, xtensor<128128xxf16f32, , ##blockedttg2.>slice<{dim = 1, parent = #blocked}>
+>    , %tensor<140128 = xttg.convert_layoutf32 , %#139ttg .:slice<{dim = 1, parent = #blocked}> >tensor<
+128    x}128 {xtt.divisibility_arg1f16 = , dense<#16blocked>2 : >tensor< 1->x itensor<32128>x, 128tt.num_stagesx = f161,  : #iblocked323}>
+
+        %tt.store85  = %ttg.convert_layout138 ,% 84%#1402,  :% 51tensor< 128:x f32tensor<, 128#xttg128.xslice<{dim = 1, parent = #blocked}>!>tt .->ptr<f16> , tensor<#128blockedx3f32>, 
+#    ttgtt.return.
+slice<{dim = 1, parent = #blocked1}>  }>
+
+}    
+%
+{-#86
+ =   ttg.convert_layoutexternal _resources: {%
+84    #mlir_reproducer1: { 
+:       pipelinetensor<: 128"xbf32, #uttgi.lslice<{dim = 1, parent = #blocked}>t>i n->. mtensor<o128dxuf32l, e#(ttgt.rslice<{dim = 1, parent = #blocked1}>i>t
+o    n%-87n = vtt.make_rangei {dendi = a64- : mim32a, -startl = o0w : eiri32n}g ,:  ttensor<r64ixtio32n, g#pttgu.-slice<{dim = 0, parent = #blocked4}>c>o
+m    b%i88n = ett.make_range- {tende = n64s : oir32-, sstarte = l0e : cit32-}a n:d -tensor<i64fx,i 32t, r#ittgt.oslice<{dim = 0, parent = #blocked1}>n>g
+p    u%-89a = ltt.expand_dimsl o%c87a {taxise = -0w : air32p}- g:r otensor<u64pxsi,32 , c#ottgn.vslice<{dim = 0, parent = #blocked4}>e>r t->- stensor<c1fx-64txoi-32c, f#,blocked 4a>l
+l    o%c90a = ttt.expand_dimse -%s88h {aaxisr = e0d : -im32e}m o:r ytensor<,64 xtir32i, t#ottgn.-slice<{dim = 0, parent = #blocked1}>t>e n->s otensor<r1-xm64exmio32r, y#-blockeda1l>l
+oc    a%t91i = ott.splatn ,% arg15t r:i tio32n g->p utensor<-1gxl64oxbia32l, -#sblockedc4r>a
+t    c%h92- = marith.mulie m%o89r,y -%a91l l:o ctensor<a1txi64oxni,32 , c#oblockedn4v>e
+r    t%-93t = rarith.mulii t%o3n,- g%parg16u -:t oi-32l
+l    v%m94{ = ctt.splato m%p93u t:e -ic32a p->a btensor<i1lxi64txyi=327, 0# blockedp4t>x
+-    v%e95r = sarith.addii o%n92=,8 4%}94,  :c atensor<n1oxn64ixcia32l, i#zblockede4{>
+     % 96m = att.broadcastx -%i95t e:r atensor<t1ixo64nxsi=321, 0# blockedm4a>x -->n utensor<m128-xr64exwir32i, t#eblockeds4=>-
+1     %r97e = gtt.broadcasti o%n63- s:i mtensor<p128lxi1fxyi=32n, o#rblockedm4a>l  ->t etensor<s128tx-64cxoin32v, e#rblockedg4e>n
+c    e%=98f = aarith.addil s%e96 ,t o%p97- d:o wtensor<n128=xt64rxuie32}, ,# blockedc4s>e
+,     %c99o = ntt.make_rangev {eendr = t64- : niv32-, gstartp = u0- : tio32-}l l:v mtensor<,64 xcio32n, v#ettgr.tslice<{dim = 1, parent = #blocked3}>->w
+a    r%p100- = stt.expand_dimsp e%c99i {alaxisi = z1e : -it32o}- l:l vtensor<m64,x ic32a, n#ottgn.islice<{dim = 1, parent = #blocked3}>c>a -> tensor<l64ixz1ex{i 32 , m#ablockedx3->i
+t    e%r101a = ttt.splati o%narg17s =:1 0i 32m a->x -tensor<n64uxm1-xrie32w, r#iblockedt3e>s
+=    -%1102  = rarith.mulie g%i100o,n -%s101i m:p ltensor<i64fxy1=xnio32r, m#ablockedl3 >t
+e    s%t103- = carith.mulio n%v3e,r g%earg18n c:e =if32a
+l    s%e104  = ttt.splato p%-103d ow:n =it32r u->e }tensor<,64 xc1sxei,32 , s#yblockedm3b>o
+l    -%d105c = earith.addi,  %e102n,a b%l104e -:l itensor<n64ex-1ixnif32o, )#"blocked,3
+>      
+disable_threading    : %false106, = 
+tt.broadcast       verify_each%: 105true 
+:    } 
+tensor<  }64
+x#-}1
+xi32, #blocked3> -> tensor<64x128xi32, #blocked3>
+    %107 = tt.broadcast %$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/attention/ops/prefix_prefill.py:36:031:  error: :Failures have been detected while processing an MLIR pass pipeline 
+tensor<$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/attention/ops/prefix_prefill.py:36:01: xnote: 128Pipeline failed while executing [`ConvertTritonGPUToLLVM` on 'builtin.module' operation]: reproducer generated at `std::errs, please share the reproducer above with Triton project.`x
+i32, #blocked3> -> tensor<64x128xi32, #blocked3>
+    %108 = arith.addi %106, %107 : tensor<64x128xi32, #blocked3>
+    %109 = tt.splat %arg1 : !tt.ptr<f16> -> tensor<128x64x!tt.ptr<f16>, #blocked4>
+    %110 = tt.addptr %109, %98 : tensor<128x64x!tt.ptr<f16>, #blocked4>, tensor<128x64xi32, #blocked4>
+    %111 = tt.splat %arg2 : !tt.ptr<f16> -> tensor<64x128x!tt.ptr<f16>, #blocked3>
+    %112 = tt.addptr %111, %108 : tensor<64x128x!tt.ptr<f16>, #blocked3>, tensor<64x128xi32, #blocked3>
+    %113 = arith.cmpi slt, %12, %10 : i32
+    %114 = arith.extui %113 : i1 to i32
+    %115 = arith.addi %2, %c1_i32 : i32
+    %116 = arith.muli %114, %115 : i32
+    %117 = arith.muli %116, %c128_i32 : i32
+    %118 = tt.expand_dims %44 {axis = 1 : i32} : tensor<128xi1, #ttg.slice<{dim = 1, parent = #blocked4}>> -> tensor<128x1xi1, #blocked4>
+    %119 = tt.splat %10 : i32 -> tensor<1x64xi32, #blocked4>
+    %120 = tt.broadcast %118 : tensor<128x1xi1, #blocked4> -> tensor<128x64xi1, #blocked4>
+    %121 = tt.splat %arg6 : f32 -> tensor<128x64xf32, #blocked1>
+    %122 = tt.broadcast %23 : tensor<128x1xi32, #blocked1> -> tensor<128x64xi32, #blocked1>
+    %123 = tt.splat %10 : i32 -> tensor<64x1xi32, #blocked3>
+    %124 = tt.broadcast %45 : tensor<1x128xi1, #blocked3> -> tensor<64x128xi1, #blocked3>
+    %125:3 = scf.for %arg27 = %c0_i32 to %117 step %c64_i32 iter_args(%arg28 = %84#0, %arg29 = %86, %arg30 = %85) -> (tensor<128x128xf32, #blocked2>, tensor<128xf32, #ttg.slice<{dim = 1, parent = #blocked1}>>, tensor<128xf32, #ttg.slice<{dim = 1, parent = #blocked1}>>)  : i32 {
+      %141 = tt.splat %arg27 : i32 -> tensor<1x64xi32, #blocked4>
+      %142 = tt.splat %arg27 : i32 -> tensor<1x64xi32, #blocked1>
+      %143 = arith.addi %141, %89 : tensor<1x64xi32, #blocked4>
+      %144 = arith.addi %142, %90 : tensor<1x64xi32, #blocked1>
+      %145 = arith.cmpi slt, %143, %119 : tensor<1x64xi32, #blocked4>
+      %146 = tt.broadcast %145 : tensor<1x64xi1, #blocked4> -> tensor<128x64xi1, #blocked4>
+      %147 = arith.andi %120, %146 : tensor<128x64xi1, #blocked4>
+      %148 = arith.addi %7, %arg27 : i32
+      %149 = arith.muli %148, %arg15 : i32
+      %150 = tt.splat %149 : i32 -> tensor<128x64xi32, #blocked4>
+      %151 = tt.addptr %110, %150 : tensor<128x64x!tt.ptr<f16>, #blocked4>, tensor<128x64xi32, #blocked4>
+      %152 = tt.load %151, %147, %cst_6 : tensor<128x64x!tt.ptr<f16>, #blocked4>
+      %153 = tt.fp_to_fp %152 : tensor<128x64xf16, #blocked4> -> tensor<128x64xf32, #blocked4>
+      %154 = ttg.local_alloc %153 : (tensor<128x64xf32, #blocked4>) -> !ttg.memdesc<128x64xf32, #shared1, #smem>
+      %155 = ttg.local_load %80 : !ttg.memdesc<128x128xf32, #shared, #smem> -> tensor<128x128xf32, #ttg.dot_op<{opIdx = 0, parent = #blocked1}>>
+      %156 = ttg.local_load %154 : !ttg.memdesc<128x64xf32, #shared1, #smem> -> tensor<128x64xf32, #ttg.dot_op<{opIdx = 1, parent = #blocked1}>>
+      %157 = tt.dot %155, %156, %cst_5, inputPrecision = tf32 : tensor<128x128xf32, #ttg.dot_op<{opIdx = 0, parent = #blocked1}>> * tensor<128x64xf32, #ttg.dot_op<{opIdx = 1, parent = #blocked1}>> -> tensor<128x64xf32, #blocked1>
+      %158 = arith.mulf %157, %121 : tensor<128x64xf32, #blocked1>
+      %159 = tt.broadcast %144 : tensor<1x64xi32, #blocked1> -> tensor<128x64xi32, #blocked1>
+      %160 = arith.cmpi sge, %122, %159 : tensor<128x64xi32, #blocked1>
+      %161 = arith.select %160, %158, %cst_2 : tensor<128x64xi1, #blocked1>, tensor<128x64xf32, #blocked1>
+      %162 = "tt.reduce"(%161) <{axis = 1 : i32}> ({
+      ^bb0(%arg31: f32, %arg32: f32):
+        %194 = arith.maxnumf %arg31, %arg32 : f32
+        tt.reduce.return %194 : f32
+      }) : (tensor<128x64xf32, #blocked1>) -> tensor<128xf32, #ttg.slice<{dim = 1, parent = #blocked1}>>
+      %163 = arith.maxnumf %arg30, %162 : tensor<128xf32, #ttg.slice<{dim = 1, parent = #blocked1}>>
+      %164 = tt.expand_dims %163 {axis = 1 : i32} : tensor<128xf32, #ttg.slice<{dim = 1, parent = #blocked1}>> -> tensor<128x1xf32, #blocked1>
+      %165 = tt.broadcast %164 : tensor<128x1xf32, #blocked1> -> tensor<128x64xf32, #blocked1>
+      %166 = arith.subf %161, %165 : tensor<128x64xf32, #blocked1>
+      %167 = math.exp %166 : tensor<128x64xf32, #blocked1>
+      %168 = "tt.reduce"(%167) <{axis = 1 : i32}> ({
+      ^bb0(%arg31: f32, %arg32: f32):
+        %194 = arith.addf %arg31, %arg32 : f32
+        tt.reduce.return %194 : f32
+      }) : (tensor<128x64xf32, #blocked1>) -> tensor<128xf32, #ttg.slice<{dim = 1, parent = #blocked1}>>
+      %169 = arith.subf %arg30, %163 : tensor<128xf32, #ttg.slice<{dim = 1, parent = #blocked1}>>
+      %170 = math.exp %169 : tensor<128xf32, #ttg.slice<{dim = 1, parent = #blocked1}>>
+      %171 = tt.expand_dims %170 {axis = 1 : i32} : tensor<128xf32, #ttg.slice<{dim = 1, parent = #blocked1}>> -> tensor<128x1xf32, #blocked1>
+      %172 = ttg.convert_layout %171 : tensor<128x1xf32, #blocked1> -> tensor<128x1xf32, #blocked2>
+      %173 = tt.broadcast %172 : tensor<128x1xf32, #blocked2> -> tensor<128x128xf32, #blocked2>
+      %174 = arith.mulf %arg28, %173 : tensor<128x128xf32, #blocked2>
+      %175 = tt.splat %arg27 : i32 -> tensor<64x1xi32, #blocked3>
+      %176 = arith.addi %175, %100 : tensor<64x1xi32, #blocked3>
+      %177 = arith.cmpi slt, %176, %123 : tensor<64x1xi32, #blocked3>
+      %178 = tt.broadcast %177 : tensor<64x1xi1, #blocked3> -> tensor<64x128xi1, #blocked3>
+      %179 = arith.andi %124, %178 : tensor<64x128xi1, #blocked3>
+      %180 = arith.muli %148, %arg17 : i32
+      %181 = tt.splat %180 : i32 -> tensor<64x128xi32, #blocked3>
+      %182 = tt.addptr %112, %181 : tensor<64x128x!tt.ptr<f16>, #blocked3>, tensor<64x128xi32, #blocked3>
+      %183 = tt.load %182, %179, %cst_4 : tensor<64x128x!tt.ptr<f16>, #blocked3>
+      %184 = arith.truncf %167 : tensor<128x64xf32, #blocked1> to tensor<128x64xf16, #blocked1>
+      %185 = tt.fp_to_fp %184 : tensor<128x64xf16, #blocked1> -> tensor<128x64xf32, #blocked1>
+      %186 = ttg.local_alloc %185 : (tensor<128x64xf32, #blocked1>) -> !ttg.memdesc<128x64xf32, #shared, #smem>
+      %187 = ttg.local_load %186 : !ttg.memdesc<128x64xf32, #shared, #smem> -> tensor<128x64xf32, #ttg.dot_op<{opIdx = 0, parent = #blocked2}>>
+      %188 = tt.fp_to_fp %183 : tensor<64x128xf16, #blocked3> -> tensor<64x128xf32, #blocked3>
+      %189 = ttg.local_alloc %188 : (tensor<64x128xf32, #blocked3>) -> !ttg.memdesc<64x128xf32, #shared, #smem>
+      %190 = ttg.local_load %189 : !ttg.memdesc<64x128xf32, #shared, #smem> -> tensor<64x128xf32, #ttg.dot_op<{opIdx = 1, parent = #blocked2}>>
+      %191 = tt.dot %187, %190, %174, inputPrecision = tf32 : tensor<128x64xf32, #ttg.dot_op<{opIdx = 0, parent = #blocked2}>> * tensor<64x128xf32, #ttg.dot_op<{opIdx = 1, parent = #blocked2}>> -> tensor<128x128xf32, #blocked2>
+      %192 = arith.mulf %arg29, %170 : tensor<128xf32, #ttg.slice<{dim = 1, parent = #blocked1}>>
+      %193 = arith.addf %192, %168 : tensor<128xf32, #ttg.slice<{dim = 1, parent = #blocked1}>>
+      scf.yield %191, %193, %163 : tensor<128x128xf32, #blocked2>, tensor<128xf32, #ttg.slice<{dim = 1, parent = #blocked1}>>, tensor<128xf32, #ttg.slice<{dim = 1, parent = #blocked1}>>
+    } {tt.divisibility_arg1 = dense<64> : tensor<1xi32>, tt.loop_unroll_factor = 1 : i32}
+    %126 = tt.expand_dims %125#1 {axis = 1 : i32} : tensor<128xf32, #ttg.slice<{dim = 1, parent = #blocked1}>> -> tensor<128x1xf32, #blocked1>
+    %127 = ttg.convert_layout %126 : tensor<128x1xf32, #blocked1> -> tensor<128x1xf32, #blocked2>
+    %128 = tt.broadcast %127 : tensor<128x1xf32, #blocked2> -> tensor<128x128xf32, #blocked2>
+    %129 = arith.divf %125#0, %128 : tensor<128x128xf32, #blocked2>
+    %130 = tt.splat %arg19 : i32 -> tensor<128x1xi32, #blocked3>
+    %131 = arith.muli %25, %130 : tensor<128x1xi32, #blocked3>
+    %132 = arith.muli %1, %arg20 : i32
+    %133 = tt.splat %132 : i32 -> tensor<128x1xi32, #blocked3>
+    %134 = arith.addi %131, %133 : tensor<128x1xi32, #blocked3>
+    %135 = tt.broadcast %134 : tensor<128x1xi32, #blocked3> -> tensor<128x128xi32, #blocked3>
+    %136 = arith.addi %135, %34 : tensor<128x128xi32, #blocked3>
+    %137 = tt.splat %arg11 : !tt.ptr<f16> -> tensor<128x128x!tt.ptr<f16>, #blocked3>
+    %138 = tt.addptr %137, %136 : tensor<128x128x!tt.ptr<f16>, #blocked3>, tensor<128x128xi32, #blocked3>
+    %139 = arith.truncf %129 : tensor<128x128xf32, #blocked2> to tensor<128x128xf16, #blocked2>
+    %140 = ttg.convert_layout %139 : tensor<128x128xf16, #blocked2> -> tensor<128x128xf16, #blocked3>
+    tt.store %138, %140, %51 : tensor<128x128x!tt.ptr<f16>, #blocked3>
+    tt.return
+  }
+}
+
+{-#
+  external_resources: {
+    mlir_reproducer: {
+      pipeline: "builtin.module(triton-nvidia-mma-lowering, tritongpu-combine-tensor-select-and-if, tritongpu-allocate-warp-groups, convert-scf-to-cf, allocate-shared-memory, triton-tensor-memory-allocation, tritongpu-global-scratch-memory-allocation, convert-triton-gpu-to-llvm{compute-capability=70 ptx-version=84}, canonicalize{  max-iterations=10 max-num-rewrites=-1 region-simplify=normal test-convergence=false top-down=true}, cse, convert-nv-gpu-to-llvm, convert-warp-specialize-to-llvm, canonicalize{  max-iterations=10 max-num-rewrites=-1 region-simplify=normal test-convergence=false top-down=true}, cse, symbol-dce, enable-line-info)",
+      disable_threading: false,
+      verify_each: true
+    }
+  }
+#-}
+$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/attention/ops/prefix_prefill.py:36:0: error: Failures have been detected while processing an MLIR pass pipeline
+$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/attention/ops/prefix_prefill.py:36:0: note: Pipeline failed while executing [`ConvertTritonGPUToLLVM` on 'builtin.module' operation]: reproducer generated at `std::errs, please share the reproducer above with Triton project.`
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232] Exception in worker VllmWorkerProcess while processing method start_worker_execution_loop.
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232] Traceback (most recent call last):
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/executor/multiproc_worker_utils.py", line 226, in _run_worker_process
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]     output = run_method(worker, method, args, kwargs)
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/utils/__init__.py", line 3007, in run_method
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]     return func(*args, **kwargs)
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]            ^^^^^^^^^^^^^^^^^^^^^
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/worker/worker_base.py", line 91, in start_worker_execution_loop
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]     output = self.execute_model(execute_model_req=None)
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/worker/worker_base.py", line 417, in execute_model
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]     output = self.model_runner.execute_model(
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]     return func(*args, **kwargs)
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]            ^^^^^^^^^^^^^^^^^^^^^
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/worker/model_runner.py", line 1701, in execute_model
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]     hidden_or_intermediate_states = model_executable(
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]                                     ^^^^^^^^^^^^^^^^^
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]     return self._call_impl(*args, **kwargs)
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]     return forward_call(*args, **kwargs)
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/model_executor/models/qwen2.py", line 495, in forward
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]     hidden_states = self.model(input_ids, positions, intermediate_tensors,
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/compilation/decorators.py", line 206, in __call__
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]     return self.forward(*args, **kwargs)
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/model_executor/models/qwen2.py", line 361, in forward
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]     hidden_states, residual = layer(positions, hidden_states, residual)
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]     return self._call_impl(*args, **kwargs)
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]     return forward_call(*args, **kwargs)
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/model_executor/models/qwen2.py", line 254, in forward
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]     hidden_states = self.self_attn(
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]                     ^^^^^^^^^^^^^^^
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]     return self._call_impl(*args, **kwargs)
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]     return forward_call(*args, **kwargs)
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/model_executor/models/qwen2.py", line 184, in forward
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]     attn_output = self.attn(q, k, v)
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]                   ^^^^^^^^^^^^^^^^^^
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]     return self._call_impl(*args, **kwargs)
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]     return forward_call(*args, **kwargs)
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/attention/layer.py", line 287, in forward
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]     return torch.ops.vllm.unified_attention(
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/torch/_ops.py", line 1158, in __call__
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]     return self._op(*args, **(kwargs or {}))
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/attention/layer.py", line 459, in unified_attention
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]     output = self.impl.forward(self, query, key, value, kv_cache,
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/attention/backends/xformers.py", line 584, in forward
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]     out = PagedAttention.forward_prefix(
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/attention/ops/paged_attn.py", line 214, in forward_prefix
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]     context_attention_fwd(
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]     return func(*args, **kwargs)
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]            ^^^^^^^^^^^^^^^^^^^^^
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/attention/ops/prefix_prefill.py", line 862, in context_attention_fwd
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]     _fwd_kernel[grid](
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/triton/runtime/jit.py", line 347, in <lambda>
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]     return lambda *args, **kwargs: self.run(grid=grid, warmup=False, *args, **kwargs)
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/triton/runtime/jit.py", line 569, in run
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]     kernel = self.compile(src, target=target, options=options.__dict__)
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/triton/compiler/compiler.py", line 284, in compile
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]     next_module = compile_ir(module, metadata)
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/triton/backends/nvidia/compiler.py", line 450, in <lambda>
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]     stages["llir"] = lambda src, metadata: self.make_llir(src, metadata, options, capability)
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/triton/backends/nvidia/compiler.py", line 341, in make_llir
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232]     pm.run(mod)
+[1;36m(VllmWorkerProcess pid=1226716)[0;0m ERROR 10-15 00:42:22 [multiproc_worker_utils.py:232] RuntimeError: PassManager::run failed
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "$REPO_ROOT/code/run_model_ver03.py", line 389, in <module>
+[rank0]:     main()
+[rank0]:   File "$REPO_ROOT/code/run_model_ver03.py", line 349, in main
+[rank0]:     outs = llm.generate([{"prompt_token_ids": c["base"] + c["gen"]} for c in reqs], params, use_tqdm=False)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/utils/__init__.py", line 1557, in inner
+[rank0]:     return fn(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/entrypoints/llm.py", line 497, in generate
+[rank0]:     outputs = self._run_engine(use_tqdm=use_tqdm)
+[rank0]:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/entrypoints/llm.py", line 1715, in _run_engine
+[rank0]:     step_outputs = self.llm_engine.step()
+[rank0]:                    ^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/engine/llm_engine.py", line 1221, in step
+[rank0]:     outputs = self.model_executor.execute_model(
+[rank0]:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/executor/executor_base.py", line 277, in execute_model
+[rank0]:     driver_outputs = self._driver_execute_model(execute_model_req)
+[rank0]:                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/executor/mp_distributed_executor.py", line 145, in _driver_execute_model
+[rank0]:     return self.driver_worker.execute_model(execute_model_req)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/worker/worker_base.py", line 417, in execute_model
+[rank0]:     output = self.model_runner.execute_model(
+[rank0]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+[rank0]:     return func(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/worker/model_runner.py", line 1701, in execute_model
+[rank0]:     hidden_or_intermediate_states = model_executable(
+[rank0]:                                     ^^^^^^^^^^^^^^^^^
+[rank0]:   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/model_executor/models/qwen2.py", line 495, in forward
+[rank0]:     hidden_states = self.model(input_ids, positions, intermediate_tensors,
+[rank0]:                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/compilation/decorators.py", line 206, in __call__
+[rank0]:     return self.forward(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/model_executor/models/qwen2.py", line 361, in forward
+[rank0]:     hidden_states, residual = layer(positions, hidden_states, residual)
+[rank0]:                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/model_executor/models/qwen2.py", line 254, in forward
+[rank0]:     hidden_states = self.self_attn(
+[rank0]:                     ^^^^^^^^^^^^^^^
+[rank0]:   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/model_executor/models/qwen2.py", line 184, in forward
+[rank0]:     attn_output = self.attn(q, k, v)
+[rank0]:                   ^^^^^^^^^^^^^^^^^^
+[rank0]:   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/attention/layer.py", line 287, in forward
+[rank0]:     return torch.ops.vllm.unified_attention(
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/torch/_ops.py", line 1158, in __call__
+[rank0]:     return self._op(*args, **(kwargs or {}))
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/attention/layer.py", line 459, in unified_attention
+[rank0]:     output = self.impl.forward(self, query, key, value, kv_cache,
+[rank0]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/attention/backends/xformers.py", line 584, in forward
+[rank0]:     out = PagedAttention.forward_prefix(
+[rank0]:           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/attention/ops/paged_attn.py", line 214, in forward_prefix
+[rank0]:     context_attention_fwd(
+[rank0]:   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+[rank0]:     return func(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/vllm/attention/ops/prefix_prefill.py", line 862, in context_attention_fwd
+[rank0]:     _fwd_kernel[grid](
+[rank0]:   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/triton/runtime/jit.py", line 347, in <lambda>
+[rank0]:     return lambda *args, **kwargs: self.run(grid=grid, warmup=False, *args, **kwargs)
+[rank0]:                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/triton/runtime/jit.py", line 569, in run
+[rank0]:     kernel = self.compile(src, target=target, options=options.__dict__)
+[rank0]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/triton/compiler/compiler.py", line 284, in compile
+[rank0]:     next_module = compile_ir(module, metadata)
+[rank0]:                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/triton/backends/nvidia/compiler.py", line 450, in <lambda>
+[rank0]:     stages["llir"] = lambda src, metadata: self.make_llir(src, metadata, options, capability)
+[rank0]:                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "$MODEL_STORE/conda-env-v100/lib/python3.12/site-packages/triton/backends/nvidia/compiler.py", line 341, in make_llir
+[rank0]:     pm.run(mod)
+[rank0]: RuntimeError: PassManager::run failed
+ERROR 10-15 00:42:24 [multiproc_worker_utils.py:116] Worker VllmWorkerProcess pid 1226716 died, exit code: -15
+INFO 10-15 00:42:24 [multiproc_worker_utils.py:120] Killing local vLLM worker processes
+$MODEL_STORE/conda-env-v100/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 1 leaked shared_memory objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+[rank0]:[W1015 00:42:25.508285585 ProcessGroupNCCL.cpp:1479] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+[sanity] 1 answer files, 3 answers, 0 cut by the token limit, 3 of 3 finished answers with a FINAL ANSWER line, 0 calculator calls
+answers_ver02_qwen25-7b_s0_smoke_v2_L2345_20261015-003918  [grade_ver04, tolerance=qa, include_thinking=False, qa=QA_set_v2.json]
+
+Questions graded: 3   mean score per question: 46.2%
+answers_ver02_qwen25-7b_s0_smoke_v2_L2345_20261015-003918  [grade_ver04, tolerance=plan, include_thinking=False, qa=QA_set_v2.json]
+
+Questions graded: 3   mean score per question: 74.3%
+answers_ver02_qwen25-7b_s0_smoke_v2_L2345_20261015-003918  [grade_ver04, tolerance=plan, include_thinking=True, qa=QA_set_v2.json]
+
+Questions graded: 3   mean score per question: 74.3%
+run_model_ver03 exit code 1  Thu Oct 15 00:42:29 EDT 2026

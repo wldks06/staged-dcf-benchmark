@@ -1,0 +1,44 @@
+answers_ver02_qwen3-8b_think_s0_v2_L2345_20261015-005624  [grade_ver05, tolerance=plan, include_thinking=False, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 82.3%
+Final answers correct: 141/184
+Final-answer marker: exact 172, other case 5, Final Response heading 4, missing 2, boxed 1 (missing = final scored zero)
+Hit the token limit: 2 ['BKNG-05', 'MRK-08']
+Thinking never finished: 2 ['BKNG-05', 'MRK-08']
+
+Final answers correct by tier and level:
+  basic    L2   56/56  = 100.0%
+  basic    L3    8/28  =  28.6%
+  complex  L3    6/20  =  30.0%
+  half     L4   15/20  =  75.0%
+  half     L5   16/20  =  80.0%
+  trap     L2   40/40  = 100.0%
+
+Fell for the trap (final wrong AND matched the trap value): 0/42   (also matched but final correct, not counted: 1)
+
+Used basic shares (final wrong AND matched the basic-share value): 0/74   (also matched but final correct, not counted: 24)
+
+By tier:
+  basic                                    1577/2640 =  59.7%
+  complex                                   678/1438 =  47.1%
+  half                                     1263/1442 =  87.6%
+  trap                                      492/492  = 100.0%
+
+By level:
+  2                                        1186/1210 =  98.0%
+  3                                        1561/3360 =  46.5%
+  4                                         662/782  =  84.7%
+  5                                         601/660  =  91.1%
+
+By step:
+  Step 2. Project the future                236/654  =  36.1%
+  Step 3. Compute free cash flow           1669/2084 =  80.1%
+  Step 4. Discount to today                1505/2222 =  67.7%
+  Step 5. Value and decide                  600/1052 =  57.0%
+
+By kind:
+  final                                    1410/1840 =  76.6%
+  middle                                    690/1572 =  43.9%
+  step                                     1910/2600 =  73.5%
+
+Excluded items: {'rounding not auto-graded': 184, 'input given in data table': 482, 'target already in prompt': 17, 'zero target not auto-graded': 26}

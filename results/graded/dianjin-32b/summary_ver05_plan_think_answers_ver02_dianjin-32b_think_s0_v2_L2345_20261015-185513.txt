@@ -1,0 +1,44 @@
+answers_ver02_dianjin-32b_think_s0_v2_L2345_20261015-185513  [grade_ver05, tolerance=plan, include_thinking=True, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 92.7%
+Final answers correct: 147/184
+Final-answer marker: exact 167, answer tag 11, other case 4, missing 1, Final Response heading 1 (missing = final scored zero)
+Hit the token limit: 1 ['WEC-02']
+Thinking never finished: 1 ['WEC-02']
+
+Final answers correct by tier and level:
+  basic    L2   55/56  =  98.2%
+  basic    L3    8/28  =  28.6%
+  complex  L3    7/20  =  35.0%
+  half     L4   18/20  =  90.0%
+  half     L5   19/20  =  95.0%
+  trap     L2   40/40  = 100.0%
+
+Fell for the trap (final wrong AND matched the trap value): 0/42   (also matched but final correct, not counted: 1)
+
+Used basic shares (final wrong AND matched the basic-share value): 0/74   (also matched but final correct, not counted: 29)
+
+By tier:
+  basic                                    2184/2640 =  82.7%
+  complex                                  1124/1438 =  78.2%
+  half                                     1376/1442 =  95.4%
+  trap                                      492/492  = 100.0%
+
+By level:
+  2                                        1200/1210 =  99.2%
+  3                                        2600/3360 =  77.4%
+  4                                         733/782  =  93.7%
+  5                                         643/660  =  97.4%
+
+By step:
+  Step 2. Project the future                632/654  =  96.6%
+  Step 3. Compute free cash flow           1944/2084 =  93.3%
+  Step 4. Discount to today                1952/2222 =  87.8%
+  Step 5. Value and decide                  648/1052 =  61.6%
+
+By kind:
+  final                                    1470/1840 =  79.9%
+  middle                                   1486/1572 =  94.5%
+  step                                     2220/2600 =  85.4%
+
+Excluded items: {'rounding not auto-graded': 184, 'input given in data table': 482, 'target already in prompt': 17, 'zero target not auto-graded': 26}

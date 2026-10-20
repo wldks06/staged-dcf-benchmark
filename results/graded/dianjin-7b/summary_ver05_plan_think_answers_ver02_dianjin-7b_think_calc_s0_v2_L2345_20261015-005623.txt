@@ -1,0 +1,45 @@
+answers_ver02_dianjin-7b_think_calc_s0_v2_L2345_20261015-005623  [grade_ver05, tolerance=plan, include_thinking=True, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 68.5%
+Final answers correct: 91/184
+Final-answer marker: answer tag 100, missing 34, other case 20, Final Response heading 11, answer tag in thinking 11, boxed 6, exact 2 (missing = final scored zero)
+Hit the token limit: 32 ['CMCSA-05', 'BKNG-05', 'PM-05', 'WMB-05', 'META-03', 'VZ-03', 'MCD-03', 'MRK-02', 'CEG-03', 'WEC-03', 'MAR-03', 'JNJ-06', 'VZ-06', 'MCD-06', 'MCD-07', 'EOG-06', 'CAT-06', 'WEC-06', 'WEC-07', 'EOG-11']
+Thinking never finished: 42 ['CMCSA-05', 'BKNG-05', 'PM-05', 'WMB-05', 'CRH-03', 'PPL-03', 'PPL-05', 'META-01', 'META-03', 'VZ-03', 'MCD-01', 'MCD-03', 'PEP-01', 'MRK-02', 'CAT-02', 'CEG-03', 'WEC-03', 'MAR-03', 'JNJ-06', 'VZ-06']
+
+Final answers correct by tier and level:
+  basic    L2   54/56  =  96.4%
+  basic    L3    1/28  =   3.6%
+  complex  L3    0/20  =   0.0%
+  half     L4    2/20  =  10.0%
+  half     L5    3/20  =  15.0%
+  trap     L2   31/40  =  77.5%
+
+Fell for the trap (final wrong AND matched the trap value): 3/42   (also matched but final correct, not counted: 3)
+   BKNG-10, BKNG-11, META-11
+
+Used basic shares (final wrong AND matched the basic-share value): 0/74   (also matched but final correct, not counted: 10)
+
+By tier:
+  basic                                    1474/2640 =  55.8%
+  complex                                   600/1438 =  41.7%
+  half                                      749/1442 =  51.9%
+  trap                                      390/492  =  79.3%
+
+By level:
+  2                                        1080/1210 =  89.3%
+  3                                        1384/3360 =  41.2%
+  4                                         439/782  =  56.1%
+  5                                         310/660  =  47.0%
+
+By step:
+  Step 2. Project the future                400/654  =  61.2%
+  Step 3. Compute free cash flow           1188/2084 =  57.0%
+  Step 4. Discount to today                1357/2222 =  61.1%
+  Step 5. Value and decide                  268/1052 =  25.5%
+
+By kind:
+  final                                     910/1840 =  49.5%
+  middle                                   1058/1572 =  67.3%
+  step                                     1245/2600 =  47.9%
+
+Excluded items: {'rounding not auto-graded': 184, 'input given in data table': 482, 'target already in prompt': 17, 'zero target not auto-graded': 26}

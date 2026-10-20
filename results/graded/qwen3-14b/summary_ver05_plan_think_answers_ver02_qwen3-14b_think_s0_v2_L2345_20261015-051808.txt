@@ -1,0 +1,46 @@
+answers_ver02_qwen3-14b_think_s0_v2_L2345_20261015-051808  [grade_ver05, tolerance=plan, include_thinking=True, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 95.4%
+Final answers correct: 156/184
+Final-answer marker: exact 168, other case 15, missing 1 (missing = final scored zero)
+Hit the token limit: 1 ['JNJ-05']
+Thinking never finished: 1 ['JNJ-05']
+
+Final answers correct by tier and level:
+  basic    L2   56/56  = 100.0%
+  basic    L3   12/28  =  42.9%
+  complex  L3   16/20  =  80.0%
+  half     L4   19/20  =  95.0%
+  half     L5   14/20  =  70.0%
+  trap     L2   39/40  =  97.5%
+
+Fell for the trap (final wrong AND matched the trap value): 1/42   (also matched but final correct, not counted: 1)
+   CEG-11
+
+Used basic shares (final wrong AND matched the basic-share value): 1/74   (also matched but final correct, not counted: 40)
+   XOM-03
+
+By tier:
+  basic                                    2365/2640 =  89.6%
+  complex                                  1372/1438 =  95.4%
+  half                                     1362/1442 =  94.5%
+  trap                                      480/492  =  97.6%
+
+By level:
+  2                                        1194/1210 =  98.7%
+  3                                        3023/3360 =  90.0%
+  4                                         762/782  =  97.4%
+  5                                         600/660  =  90.9%
+
+By step:
+  Step 2. Project the future                654/654  = 100.0%
+  Step 3. Compute free cash flow           2044/2084 =  98.1%
+  Step 4. Discount to today                2123/2222 =  95.5%
+  Step 5. Value and decide                  758/1052 =  72.1%
+
+By kind:
+  final                                    1560/1840 =  84.8%
+  middle                                   1524/1572 =  96.9%
+  step                                     2495/2600 =  96.0%
+
+Excluded items: {'rounding not auto-graded': 184, 'input given in data table': 482, 'target already in prompt': 17, 'zero target not auto-graded': 26}

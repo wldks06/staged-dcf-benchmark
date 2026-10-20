@@ -1,0 +1,41 @@
+answers_ver02_qwen25-7b_calc_s0_ver03_L2345_20261015-151136  [grade_ver05, tolerance=plan, include_thinking=True, qa=QA_set_ver03.json]
+
+Questions graded: 13   mean score per question: 10.1%
+Final answers correct: 0/13
+Final-answer marker: missing 13 (missing = final scored zero)
+Hit the token limit: 3 ['JNJ-2022-05', 'UNP-2022-06', 'CAT-2022-08']
+
+Final answers correct by tier and level:
+  basic@2019 L3    0/1   =   0.0%
+  basic@2022 L3    0/1   =   0.0%
+  complex@2019 L3    0/5   =   0.0%
+  complex@2022 L3    0/2   =   0.0%
+  half@2019 L4    0/2   =   0.0%
+  half@2022 L4    0/2   =   0.0%
+
+Used basic shares (final wrong AND matched the basic-share value): 0/9
+
+By tier:
+  basic@2019                                  4/70   =   5.7%
+  basic@2022                                 19/70   =  27.1%
+  complex@2019                               56/352  =  15.9%
+  complex@2022                                6/146  =   4.1%
+  half@2019                                   2/78   =   2.6%
+  half@2022                                   2/80   =   2.5%
+
+By level:
+  3                                          85/638  =  13.3%
+  4                                           4/158  =   2.5%
+
+By step:
+  Step 2. Project the future                 32/128  =  25.0%
+  Step 3. Compute free cash flow             10/345  =   2.9%
+  Step 4. Discount to today                  47/203  =  23.2%
+  Step 5. Value and decide                    0/120  =   0.0%
+
+By kind:
+  final                                       0/130  =   0.0%
+  middle                                     64/226  =  28.3%
+  step                                       25/440  =   5.7%
+
+Excluded items: {'target already in prompt': 9, 'rounding not auto-graded': 13, 'zero target not auto-graded': 2}

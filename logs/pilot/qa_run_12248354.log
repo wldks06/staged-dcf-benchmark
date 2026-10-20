@@ -1,0 +1,184 @@
+Model: Qwen/Qwen2.5-32B-Instruct  Extra options: --qa QA_set_v2.json --exclude-qa QA_set_v1.json --levels 2,3,4,5
+Wed Oct 14 06:42:29 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 595.91.07              Driver Version: 595.91.07      CUDA Version: 13.2     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA H100 80GB HBM3          On  |   00000000:26:00.0 Off |                    0 |
+| N/A   39C    P0             71W /  550W |       0MiB /  81559MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+Loading weights:   0%|          | 0/771 [00:00<?, ?it/s]Loading weights:   0%|          | 1/771 [00:01<16:13,  1.26s/it]Loading weights:   0%|          | 2/771 [00:02<15:08,  1.18s/it]Loading weights:   1%|          | 4/771 [00:02<06:10,  2.07it/s]Loading weights:   1%|          | 5/771 [00:02<05:12,  2.45it/s]Loading weights:   1%|          | 6/771 [00:02<04:28,  2.85it/s]Loading weights:   2%|▏         | 12/771 [00:03<01:23,  9.10it/s]Loading weights:   2%|▏         | 16/771 [00:03<01:03, 11.87it/s]Loading weights:   2%|▏         | 19/771 [00:03<01:09, 10.85it/s]Loading weights:   3%|▎         | 23/771 [00:03<00:51, 14.57it/s]Loading weights:   4%|▎         | 28/771 [00:04<00:53, 13.78it/s]Loading weights:   4%|▍         | 31/771 [00:04<00:58, 12.59it/s]Loading weights:   5%|▍         | 36/771 [00:04<00:43, 16.81it/s]Loading weights:   5%|▌         | 40/771 [00:05<01:05, 11.20it/s]Loading weights:   5%|▌         | 42/771 [00:05<01:02, 11.66it/s]Loading weights:   6%|▌         | 48/771 [00:05<00:42, 16.93it/s]Loading weights:   7%|▋         | 52/771 [00:05<00:39, 18.40it/s]Loading weights:   7%|▋         | 55/771 [00:06<01:09, 10.32it/s]Loading weights:   8%|▊         | 60/771 [00:06<00:49, 14.26it/s]Loading weights:   8%|▊         | 64/771 [00:06<01:02, 11.37it/s]Loading weights:   9%|▊         | 67/771 [00:07<00:56, 12.51it/s]Loading weights:   9%|▉         | 72/771 [00:07<00:41, 17.03it/s]Loading weights:  10%|▉         | 76/771 [00:08<01:37,  7.10it/s]Loading weights:  10%|█         | 79/771 [00:08<01:22,  8.38it/s]Loading weights:  11%|█         | 84/771 [00:08<00:57, 11.96it/s]Loading weights:  11%|█▏        | 88/771 [00:09<00:49, 13.86it/s]Loading weights:  12%|█▏        | 91/771 [00:09<01:08,  9.93it/s]Loading weights:  12%|█▏        | 95/771 [00:09<00:52, 12.88it/s]Loading weights:  13%|█▎        | 100/771 [00:09<00:42, 15.93it/s]Loading weights:  13%|█▎        | 103/771 [00:10<00:47, 13.92it/s]Loading weights:  14%|█▍        | 108/771 [00:10<00:35, 18.44it/s]Loading weights:  15%|█▍        | 112/771 [00:10<00:52, 12.51it/s]Loading weights:  15%|█▍        | 115/771 [00:11<00:48, 13.46it/s]Loading weights:  15%|█▌        | 119/771 [00:11<00:39, 16.43it/s]Loading weights:  16%|█▌        | 124/771 [00:11<00:52, 12.25it/s]Loading weights:  16%|█▋        | 126/771 [00:12<01:17,  8.33it/s]Loading weights:  17%|█▋        | 133/771 [00:12<00:47, 13.54it/s]Loading weights:  18%|█▊        | 136/771 [00:12<00:45, 14.04it/s]Loading weights:  18%|█▊        | 139/771 [00:13<00:57, 11.09it/s]Loading weights:  19%|█▊        | 143/771 [00:13<00:43, 14.29it/s]Loading weights:  19%|█▉        | 148/771 [00:13<00:38, 16.32it/s]Loading weights:  20%|█▉        | 151/771 [00:13<00:49, 12.57it/s]Loading weights:  20%|██        | 155/771 [00:14<00:39, 15.76it/s]Loading weights:  21%|██        | 160/771 [00:14<00:32, 18.57it/s]Loading weights:  21%|██        | 163/771 [00:14<00:40, 15.07it/s]Loading weights:  22%|██▏       | 168/771 [00:14<00:32, 18.65it/s]Loading weights:  22%|██▏       | 172/771 [00:16<01:22,  7.29it/s]Loading weights:  23%|██▎       | 179/771 [00:16<00:54, 10.78it/s]Loading weights:  24%|██▍       | 184/771 [00:16<00:41, 14.09it/s]Loading weights:  24%|██▍       | 188/771 [00:16<00:41, 14.01it/s]Loading weights:  25%|██▍       | 192/771 [00:16<00:34, 16.60it/s]Loading weights:  25%|██▌       | 196/771 [00:17<00:45, 12.53it/s]Loading weights:  26%|██▌       | 199/771 [00:17<00:41, 13.69it/s]Loading weights:  26%|██▋       | 204/771 [00:17<00:31, 17.87it/s]Loading weights:  27%|██▋       | 208/771 [00:17<00:29, 18.91it/s]Loading weights:  27%|██▋       | 211/771 [00:18<00:46, 12.15it/s]Loading weights:  28%|██▊       | 217/771 [00:18<00:31, 17.54it/s]Loading weights:  29%|██▊       | 220/771 [00:19<01:00,  9.11it/s]Loading weights:  29%|██▉       | 223/771 [00:19<00:58,  9.42it/s]Loading weights:  30%|██▉       | 228/771 [00:19<00:40, 13.36it/s]Loading weights:  30%|███       | 232/771 [00:20<00:51, 10.40it/s]Loading weights:  30%|███       | 235/771 [00:20<00:45, 11.72it/s]Loading weights:  31%|███       | 240/771 [00:20<00:33, 15.93it/s]Loading weights:  32%|███▏      | 244/771 [00:20<00:31, 16.95it/s]Loading weights:  32%|███▏      | 247/771 [00:21<00:36, 14.28it/s]Loading weights:  33%|███▎      | 251/771 [00:21<00:32, 16.06it/s]Loading weights:  33%|███▎      | 254/771 [00:21<00:29, 17.57it/s]Loading weights:  33%|███▎      | 257/771 [00:21<00:31, 16.40it/s]Loading weights:  34%|███▎      | 259/771 [00:21<00:39, 12.97it/s]Loading weights:  34%|███▍      | 262/771 [00:22<00:44, 11.37it/s]Loading weights:  35%|███▍      | 267/771 [00:22<00:43, 11.58it/s]Loading weights:  35%|███▍      | 269/771 [00:22<00:49, 10.23it/s]Loading weights:  36%|███▌      | 276/771 [00:23<00:28, 17.57it/s]Loading weights:  36%|███▋      | 280/771 [00:23<00:42, 11.56it/s]Loading weights:  37%|███▋      | 283/771 [00:23<00:41, 11.84it/s]Loading weights:  37%|███▋      | 288/771 [00:24<00:32, 14.90it/s]Loading weights:  38%|███▊      | 292/771 [00:24<00:27, 17.49it/s]Loading weights:  38%|███▊      | 295/771 [00:24<00:43, 10.83it/s]Loading weights:  39%|███▉      | 300/771 [00:24<00:31, 14.82it/s]Loading weights:  39%|███▉      | 304/771 [00:25<00:50,  9.33it/s]Loading weights:  40%|███▉      | 306/771 [00:26<00:55,  8.33it/s]Loading weights:  40%|████      | 312/771 [00:26<00:35, 12.93it/s]Loading weights:  41%|████      | 316/771 [00:26<00:40, 11.37it/s]Loading weights:  41%|████▏     | 319/771 [00:26<00:39, 11.30it/s]Loading weights:  42%|████▏     | 323/771 [00:27<00:30, 14.49it/s]Loading weights:  43%|████▎     | 328/771 [00:27<00:32, 13.75it/s]Loading weights:  43%|████▎     | 331/771 [00:27<00:34, 12.75it/s]Loading weights:  43%|████▎     | 335/771 [00:28<00:33, 13.13it/s]Loading weights:  44%|████▍     | 341/771 [00:28<00:25, 17.00it/s]Loading weights:  45%|████▍     | 344/771 [00:28<00:24, 17.53it/s]Loading weights:  45%|████▌     | 348/771 [00:28<00:20, 20.23it/s]Loading weights:  46%|████▌     | 352/771 [00:28<00:26, 16.06it/s]Loading weights:  46%|████▌     | 354/771 [00:29<00:41, 10.03it/s]Loading weights:  47%|████▋     | 360/771 [00:29<00:26, 15.49it/s]Loading weights:  47%|████▋     | 364/771 [00:29<00:31, 12.74it/s]Loading weights:  48%|████▊     | 367/771 [00:30<00:33, 11.97it/s]Loading weights:  48%|████▊     | 373/771 [00:30<00:22, 17.60it/s]Loading weights:  49%|████▉     | 377/771 [00:30<00:24, 15.92it/s]Loading weights:  49%|████▉     | 380/771 [00:30<00:23, 16.94it/s]Loading weights:  50%|████▉     | 383/771 [00:30<00:20, 18.83it/s]Loading weights:  50%|█████     | 386/771 [00:31<00:25, 15.08it/s]Loading weights:  50%|█████     | 389/771 [00:31<00:40,  9.54it/s]Loading weights:  51%|█████     | 391/771 [00:32<00:39,  9.73it/s]Loading weights:  51%|█████▏    | 397/771 [00:32<00:24, 15.12it/s]Loading weights:  52%|█████▏    | 400/771 [00:32<00:23, 16.03it/s]Loading weights:  52%|█████▏    | 403/771 [00:32<00:26, 13.69it/s]Loading weights:  53%|█████▎    | 408/771 [00:32<00:20, 18.07it/s]Loading weights:  53%|█████▎    | 412/771 [00:33<00:24, 14.64it/s]Loading weights:  54%|█████▎    | 414/771 [00:33<00:30, 11.77it/s]Loading weights:  54%|█████▍    | 420/771 [00:33<00:24, 14.37it/s]Loading weights:  55%|█████▌    | 425/771 [00:34<00:29, 11.57it/s]Loading weights:  55%|█████▌    | 427/771 [00:34<00:31, 10.87it/s]Loading weights:  56%|█████▌    | 431/771 [00:34<00:25, 13.47it/s]Loading weights:  57%|█████▋    | 436/771 [00:35<00:40,  8.20it/s]Loading weights:  58%|█████▊    | 444/771 [00:35<00:23, 13.73it/s]Loading weights:  58%|█████▊    | 448/771 [00:36<00:28, 11.18it/s]Loading weights:  58%|█████▊    | 451/771 [00:36<00:31, 10.19it/s]Loading weights:  59%|█████▉    | 456/771 [00:37<00:23, 13.18it/s]Loading weights:  60%|█████▉    | 460/771 [00:37<00:26, 11.73it/s]Loading weights:  60%|█████▉    | 462/771 [00:37<00:30, 10.07it/s]Loading weights:  61%|██████    | 468/771 [00:37<00:19, 15.16it/s]Loading weights:  61%|██████    | 472/771 [00:38<00:17, 16.76it/s]Loading weights:  62%|██████▏   | 475/771 [00:38<00:24, 11.95it/s]Loading weights:  63%|██████▎   | 483/771 [00:38<00:14, 19.76it/s]Loading weights:  63%|██████▎   | 487/771 [00:39<00:20, 13.95it/s]Loading weights:  64%|██████▎   | 490/771 [00:39<00:18, 15.28it/s]Loading weights:  64%|██████▍   | 496/771 [00:39<00:14, 18.93it/s]Loading weights:  65%|██████▍   | 499/771 [00:40<00:20, 13.57it/s]Loading weights:  65%|██████▌   | 504/771 [00:40<00:16, 16.58it/s]Loading weights:  66%|██████▌   | 508/771 [00:40<00:19, 13.26it/s]Loading weights:  66%|██████▌   | 510/771 [00:40<00:20, 12.91it/s]Loading weights:  67%|██████▋   | 516/771 [00:40<00:13, 18.81it/s]Loading weights:  67%|██████▋   | 520/771 [00:41<00:18, 13.51it/s]Loading weights:  68%|██████▊   | 523/771 [00:41<00:17, 14.21it/s]Loading weights:  68%|██████▊   | 528/771 [00:41<00:13, 18.11it/s]Loading weights:  69%|██████▉   | 532/771 [00:41<00:12, 18.50it/s]Loading weights:  69%|██████▉   | 535/771 [00:42<00:16, 14.70it/s]Loading weights:  70%|███████   | 540/771 [00:42<00:12, 19.13it/s]Loading weights:  71%|███████   | 544/771 [00:42<00:11, 19.18it/s]Loading weights:  71%|███████   | 547/771 [00:42<00:14, 14.95it/s]Loading weights:  72%|███████▏  | 552/771 [00:43<00:11, 19.07it/s]Loading weights:  72%|███████▏  | 556/771 [00:43<00:14, 15.19it/s]Loading weights:  73%|███████▎  | 559/771 [00:43<00:18, 11.27it/s]Loading weights:  73%|███████▎  | 562/771 [00:44<00:15, 13.34it/s]Loading weights:  74%|███████▎  | 568/771 [00:44<00:20, 10.02it/s]Loading weights:  74%|███████▍  | 570/771 [00:45<00:19, 10.48it/s]Loading weights:  75%|███████▍  | 576/771 [00:45<00:12, 15.14it/s]Loading weights:  75%|███████▌  | 580/771 [00:46<00:23,  8.02it/s]Loading weights:  76%|███████▌  | 586/771 [00:46<00:15, 11.79it/s]Loading weights:  77%|███████▋  | 592/771 [00:46<00:12, 14.70it/s]Loading weights:  77%|███████▋  | 595/771 [00:47<00:14, 12.09it/s]Loading weights:  78%|███████▊  | 600/771 [00:47<00:10, 15.61it/s]Loading weights:  78%|███████▊  | 604/771 [00:48<00:19,  8.38it/s]Loading weights:  79%|███████▉  | 612/771 [00:48<00:12, 12.83it/s]Loading weights:  80%|███████▉  | 616/771 [00:48<00:12, 12.88it/s]Loading weights:  80%|████████  | 619/771 [00:49<00:14, 10.33it/s]Loading weights:  81%|████████  | 624/771 [00:49<00:10, 13.77it/s]Loading weights:  81%|████████▏ | 628/771 [00:49<00:09, 14.76it/s]Loading weights:  82%|████████▏ | 631/771 [00:49<00:10, 12.92it/s]Loading weights:  82%|████████▏ | 636/771 [00:50<00:09, 13.80it/s]Loading weights:  83%|████████▎ | 640/771 [00:50<00:10, 12.02it/s]Loading weights:  83%|████████▎ | 642/771 [00:51<00:15,  8.56it/s]Loading weights:  84%|████████▍ | 648/771 [00:51<00:09, 13.16it/s]Loading weights:  85%|████████▍ | 652/771 [00:51<00:09, 11.96it/s]Loading weights:  85%|████████▍ | 654/771 [00:52<00:11, 10.28it/s]Loading weights:  85%|████████▌ | 659/771 [00:52<00:07, 14.65it/s]Loading weights:  86%|████████▌ | 664/771 [00:53<00:11,  9.06it/s]Loading weights:  86%|████████▋ | 666/771 [00:53<00:10,  9.60it/s]Loading weights:  87%|████████▋ | 672/771 [00:53<00:06, 14.35it/s]Loading weights:  88%|████████▊ | 676/771 [00:54<00:09, 10.26it/s]Loading weights:  88%|████████▊ | 679/771 [00:54<00:08, 10.79it/s]Loading weights:  89%|████████▊ | 684/771 [00:54<00:05, 14.64it/s]Loading weights:  89%|████████▉ | 688/771 [00:54<00:05, 16.54it/s]Loading weights:  90%|████████▉ | 691/771 [00:55<00:08,  9.22it/s]Loading weights:  90%|█████████ | 695/771 [00:55<00:06, 11.92it/s]Loading weights:  91%|█████████ | 699/771 [00:56<00:06, 10.35it/s]Loading weights:  91%|█████████ | 701/771 [00:56<00:06, 10.33it/s]Loading weights:  92%|█████████▏| 708/771 [00:56<00:03, 16.26it/s]Loading weights:  92%|█████████▏| 712/771 [00:56<00:03, 16.78it/s]Loading weights:  93%|█████████▎| 715/771 [00:56<00:03, 14.28it/s]Loading weights:  93%|█████████▎| 720/771 [00:57<00:02, 17.94it/s]Loading weights:  94%|█████████▍| 724/771 [00:57<00:02, 18.14it/s]Loading weights:  94%|█████████▍| 727/771 [00:57<00:03, 12.30it/s]Loading weights:  95%|█████████▍| 732/771 [00:57<00:02, 16.34it/s]Loading weights:  95%|█████████▌| 736/771 [00:58<00:03, 10.20it/s]Loading weights:  96%|█████████▌| 738/771 [00:58<00:03, 10.83it/s]Loading weights:  96%|█████████▋| 743/771 [00:58<00:01, 15.04it/s]Loading weights:  97%|█████████▋| 748/771 [00:59<00:01, 18.35it/s]Loading weights:  97%|█████████▋| 751/771 [00:59<00:01, 15.70it/s]Loading weights:  98%|█████████▊| 756/771 [00:59<00:00, 20.35it/s]Loading weights:  99%|█████████▊| 760/771 [00:59<00:00, 20.07it/s]Loading weights:  99%|█████████▉| 763/771 [01:00<00:00, 10.90it/s]Loading weights: 100%|█████████▉| 770/771 [01:00<00:00, 17.31it/s]Loading weights: 100%|██████████| 771/771 [01:00<00:00, 12.76it/s]
+Model Qwen/Qwen2.5-32B-Instruct on NVIDIA H100 80GB HBM3. Writing answers_Qwen2.5-32B-Instruct_v2_L2345_20261014-064230.jsonl
+[1/160] META-01 done in 47.1s, 729 tokens
+[2/160] META-02 done in 17.2s, 480 tokens
+[3/160] META-03 done in 223.0s, 3233 tokens
+[4/160] VZ-01 done in 16.8s, 487 tokens
+[5/160] VZ-02 done in 17.0s, 518 tokens
+[6/160] VZ-03 done in 83.0s, 2490 tokens
+[7/160] MCD-01 done in 20.6s, 553 tokens
+[8/160] MCD-02 done in 24.1s, 726 tokens
+[9/160] MCD-03 done in 71.5s, 2157 tokens
+[10/160] ORLY-01 done in 18.8s, 566 tokens
+[11/160] ORLY-02 done in 15.1s, 457 tokens
+[12/160] ORLY-03 done in 167.4s, 4096 tokens
+[13/160] PEP-01 done in 15.3s, 462 tokens
+[14/160] PEP-02 done in 28.2s, 768 tokens
+[15/160] PEP-03 done in 88.9s, 2681 tokens
+[16/160] EOG-01 done in 23.2s, 700 tokens
+[17/160] EOG-02 done in 17.5s, 531 tokens
+[18/160] EOG-03 done in 119.3s, 3573 tokens
+[19/160] CVX-01 done in 15.4s, 465 tokens
+[20/160] CVX-02 done in 20.1s, 608 tokens
+[21/160] CVX-03 done in 71.6s, 2158 tokens
+[22/160] MRK-01 done in 35.6s, 913 tokens
+[23/160] MRK-02 done in 23.5s, 712 tokens
+[24/160] MRK-03 done in 69.8s, 2107 tokens
+[25/160] CAT-01 done in 12.0s, 345 tokens
+[26/160] CAT-02 done in 15.3s, 465 tokens
+[27/160] CAT-03 done in 99.1s, 2994 tokens
+[28/160] SHW-01 done in 18.0s, 544 tokens
+[29/160] SHW-02 done in 20.6s, 626 tokens
+[30/160] SHW-03 done in 98.1s, 2959 tokens
+[31/160] CEG-01 done in 24.9s, 756 tokens
+[32/160] CEG-02 done in 12.2s, 371 tokens
+[33/160] CEG-03 done in 64.7s, 1961 tokens
+[34/160] WEC-01 done in 15.0s, 456 tokens
+[35/160] WEC-02 done in 13.6s, 414 tokens
+[36/160] WEC-03 done in 75.7s, 2286 tokens
+[37/160] XOM-01 done in 16.7s, 507 tokens
+[38/160] XOM-02 done in 23.3s, 709 tokens
+[39/160] XOM-03 done in 140.5s, 4096 tokens
+[40/160] TMUS-01 done in 14.9s, 452 tokens
+[41/160] TMUS-02 done in 15.3s, 466 tokens
+[42/160] TMUS-03 done in 83.0s, 2508 tokens
+[43/160] MAR-01 done in 15.3s, 465 tokens
+[44/160] MAR-02 done in 18.6s, 563 tokens
+[45/160] MAR-03 done in 69.7s, 2107 tokens
+[46/160] MELI-01 done in 23.3s, 706 tokens
+[47/160] MELI-02 done in 18.2s, 551 tokens
+[48/160] MELI-03 done in 126.7s, 3810 tokens
+[49/160] MNST-01 done in 15.2s, 459 tokens
+[50/160] MNST-02 done in 12.9s, 393 tokens
+[51/160] MNST-03 done in 91.5s, 2744 tokens
+[52/160] ETN-01 done in 18.2s, 551 tokens
+[53/160] ETN-02 done in 23.5s, 714 tokens
+[54/160] ETN-03 done in 136.1s, 4096 tokens
+[55/160] GE-01 done in 19.3s, 585 tokens
+[56/160] GE-02 done in 16.8s, 510 tokens
+[57/160] GE-03 done in 73.5s, 2222 tokens
+[58/160] SCCO-01 done in 13.8s, 420 tokens
+[59/160] SCCO-02 done in 27.7s, 842 tokens
+[60/160] SCCO-03 done in 86.1s, 2600 tokens
+[61/160] CMCSA-06 done in 145.7s, 4096 tokens
+[62/160] CMCSA-07 done in 65.3s, 1978 tokens
+[63/160] BKNG-06 done in 135.5s, 4096 tokens
+[64/160] BKNG-07 done in 71.7s, 2165 tokens
+[65/160] PM-06 done in 122.8s, 3701 tokens
+[66/160] PM-07 done in 66.3s, 2009 tokens
+[67/160] WMB-06 done in 115.0s, 3484 tokens
+[68/160] WMB-07 done in 70.8s, 2135 tokens
+[69/160] JNJ-06 done in 110.7s, 3357 tokens
+[70/160] JNJ-07 done in 70.6s, 2130 tokens
+[71/160] UNP-06 done in 102.2s, 3074 tokens
+[72/160] UNP-07 done in 73.9s, 1985 tokens
+[73/160] CRH-06 done in 72.1s, 2053 tokens
+[74/160] CRH-07 done in 83.1s, 2526 tokens
+[75/160] PPL-06 done in 108.3s, 3282 tokens
+[76/160] PPL-07 done in 71.8s, 2182 tokens
+[77/160] META-06 done in 135.5s, 4096 tokens
+[78/160] META-07 done in 70.3s, 2129 tokens
+[79/160] VZ-06 done in 72.1s, 2194 tokens
+[80/160] VZ-07 done in 62.3s, 1891 tokens
+[81/160] MCD-06 done in 110.9s, 3365 tokens
+[82/160] MCD-07 done in 84.3s, 2559 tokens
+[83/160] ORLY-06 done in 66.3s, 2016 tokens
+[84/160] ORLY-07 done in 80.7s, 2457 tokens
+[85/160] PEP-06 done in 82.8s, 2515 tokens
+[86/160] PEP-07 done in 72.6s, 2202 tokens
+[87/160] EOG-06 done in 105.0s, 3159 tokens
+[88/160] EOG-07 done in 70.9s, 2145 tokens
+[89/160] CVX-06 done in 135.7s, 4096 tokens
+[90/160] CVX-07 done in 72.9s, 2204 tokens
+[91/160] MRK-06 done in 116.2s, 3518 tokens
+[92/160] MRK-07 done in 70.9s, 2144 tokens
+[93/160] CAT-06 done in 110.8s, 3354 tokens
+[94/160] CAT-07 done in 70.6s, 2143 tokens
+[95/160] SHW-06 done in 102.0s, 3094 tokens
+[96/160] SHW-07 done in 70.5s, 2139 tokens
+[97/160] CEG-06 done in 128.6s, 3895 tokens
+[98/160] CEG-07 done in 73.6s, 2235 tokens
+[99/160] WEC-06 done in 76.4s, 2323 tokens
+[100/160] WEC-07 done in 65.5s, 1983 tokens
+[101/160] CMCSA-10 done in 17.2s, 520 tokens
+[102/160] CMCSA-11 done in 19.9s, 603 tokens
+[103/160] BKNG-10 done in 15.6s, 473 tokens
+[104/160] BKNG-11 done in 24.7s, 749 tokens
+[105/160] PM-10 done in 22.4s, 682 tokens
+[106/160] PM-11 done in 19.9s, 604 tokens
+[107/160] WMB-10 done in 20.7s, 628 tokens
+[108/160] WMB-11 done in 20.1s, 612 tokens
+[109/160] JNJ-10 done in 17.1s, 518 tokens
+[110/160] JNJ-11 done in 12.0s, 364 tokens
+[111/160] UNP-10 done in 19.6s, 596 tokens
+[112/160] UNP-11 done in 20.7s, 627 tokens
+[113/160] CRH-10 done in 23.0s, 700 tokens
+[114/160] CRH-11 done in 16.9s, 512 tokens
+[115/160] PPL-10 done in 17.8s, 541 tokens
+[116/160] PPL-11 done in 16.4s, 496 tokens
+[117/160] META-10 done in 33.1s, 1007 tokens
+[118/160] META-11 done in 25.0s, 758 tokens
+[119/160] VZ-10 done in 20.9s, 636 tokens
+[120/160] VZ-11 done in 18.7s, 567 tokens
+[121/160] MCD-10 done in 18.6s, 565 tokens
+[122/160] MCD-11 done in 22.8s, 695 tokens
+[123/160] ORLY-10 done in 10.9s, 332 tokens
+[124/160] ORLY-11 done in 19.1s, 574 tokens
+[125/160] PEP-10 done in 21.0s, 632 tokens
+[126/160] PEP-11 done in 13.8s, 418 tokens
+[127/160] EOG-10 done in 19.5s, 591 tokens
+[128/160] EOG-11 done in 27.2s, 820 tokens
+[129/160] CVX-10 done in 19.5s, 591 tokens
+[130/160] CVX-11 done in 15.6s, 474 tokens
+[131/160] MRK-10 done in 20.1s, 609 tokens
+[132/160] MRK-11 done in 20.8s, 632 tokens
+[133/160] CAT-10 done in 20.8s, 631 tokens
+[134/160] CAT-11 done in 32.5s, 986 tokens
+[135/160] SHW-10 done in 20.2s, 612 tokens
+[136/160] SHW-11 done in 17.3s, 523 tokens
+[137/160] CEG-10 done in 18.5s, 561 tokens
+[138/160] CEG-11 done in 18.5s, 558 tokens
+[139/160] WEC-10 done in 27.6s, 836 tokens
+[140/160] WEC-11 done in 19.4s, 589 tokens
+[141/160] CMCSA-08 done in 66.2s, 1993 tokens
+[142/160] BKNG-08 done in 71.8s, 2161 tokens
+[143/160] PM-08 done in 121.4s, 3647 tokens
+[144/160] WMB-08 done in 60.1s, 1811 tokens
+[145/160] JNJ-08 done in 107.3s, 3226 tokens
+[146/160] UNP-08 done in 121.4s, 3630 tokens
+[147/160] CRH-08 done in 98.7s, 2836 tokens
+[148/160] PPL-08 done in 68.8s, 2055 tokens
+[149/160] META-08 done in 80.0s, 2389 tokens
+[150/160] VZ-08 done in 112.9s, 3396 tokens
+[151/160] MCD-08 done in 143.1s, 4096 tokens
+[152/160] ORLY-08 done in 108.2s, 3258 tokens
+[153/160] PEP-08 done in 114.4s, 3443 tokens
+[154/160] EOG-08 done in 50.4s, 1520 tokens
+[155/160] CVX-08 done in 107.2s, 3226 tokens
+[156/160] MRK-08 done in 103.0s, 3073 tokens
+[157/160] CAT-08 done in 133.7s, 4014 tokens
+[158/160] SHW-08 done in 65.7s, 1981 tokens
+[159/160] CEG-08 done in 100.5s, 3029 tokens
+[160/160] WEC-08 done in 70.4s, 2117 tokens
+Finished: answers_Qwen2.5-32B-Instruct_v2_L2345_20261014-064230.jsonl

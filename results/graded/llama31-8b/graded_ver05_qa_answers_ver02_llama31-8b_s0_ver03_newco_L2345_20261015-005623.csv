@@ -1,0 +1,326 @@
+question_id,tier,level,item,kind,step,component,checkpoint,points,earned,correct,excluded,marker,criterion
+ECL-2025-05,basic@2025,3,1,middle,Step 2. Project the future,Growth path,forecast.growth.1,2,0,False,,exact,Year-1 revenue growth = 5.33%
+ECL-2025-05,basic@2025,3,2,middle,Step 2. Project the future,Operating margin,derived: forecast.ebit[1] / forecast.revenue[1],2,0,False,,exact,EBIT margin (mean of three ratios) = 13.94%
+ECL-2025-05,basic@2025,3,3,middle,Step 2. Project the future,Reinvestment (D&A),derived: forecast.da[1] / forecast.revenue[1],2,0,False,,exact,D&A share of revenue = 6.20%
+ECL-2025-05,basic@2025,3,4,middle,Step 2. Project the future,Reinvestment (capex),derived: forecast.capex[1] / forecast.revenue[1],2,0,False,,exact,Capex share of revenue = 5.47%
+ECL-2025-05,basic@2025,3,5,middle,Step 2. Project the future,Working capital,derived: forecast.nwc[1] / forecast.revenue[1],2,0,False,,exact,NWC share of revenue = 17.84%
+ECL-2025-05,basic@2025,3,6,step,Step 3. Compute free cash flow,FCFF build,fcff.1,5,5,True,,exact,"FCFF year 1 = $1,797.3 million"
+ECL-2025-05,basic@2025,3,7,step,Step 3. Compute free cash flow,FCFF build,fcff.2,5,5,True,,exact,"FCFF year 2 = $1,901.6 million"
+ECL-2025-05,basic@2025,3,8,step,Step 3. Compute free cash flow,FCFF build,fcff.3,5,5,True,,exact,"FCFF year 3 = $1,996.0 million"
+ECL-2025-05,basic@2025,3,9,step,Step 3. Compute free cash flow,FCFF build,fcff.4,5,0,False,,exact,"FCFF year 4 = $2,078.3 million"
+ECL-2025-05,basic@2025,3,10,step,Step 3. Compute free cash flow,FCFF build,fcff.5,5,5,True,,exact,"FCFF year 5 = $1,984.3 million"
+ECL-2025-05,basic@2025,3,11,middle,Step 4. Discount to today,Beta / Cost of equity model,beta_levered,2,0,False,,exact,Levered beta = 0.8620
+ECL-2025-05,basic@2025,3,12,middle,Step 4. Discount to today,Beta / Cost of equity model,re,2,0,False,,exact,Cost of equity = 9.60%
+ECL-2025-05,basic@2025,3,13,middle,Step 4. Discount to today,Cost of debt,rd,2,2,True,,exact,Pre-tax cost of debt = 4.73%
+ECL-2025-05,basic@2025,3,14,middle,Step 4. Discount to today,Capital structure weights,weights.E,2,0,False,,exact,"Equity weight 89.97%, debt weight 10.03%"
+ECL-2025-05,basic@2025,3,15,step,Step 4. Discount to today,WACC,wacc,5,0,False,,exact,WACC = 9.02%
+ECL-2025-05,basic@2025,3,16,step,Step 4. Discount to today,Terminal value method,tv,5,0,False,,exact,"Terminal value = $28,849.6 million"
+ECL-2025-05,basic@2025,3,17,step,Step 4. Discount to today,Enterprise value,ev,5,0,False,,exact,"Enterprise value = $26,286.6 million"
+ECL-2025-05,basic@2025,3,18,middle,Step 5. Value and decide,Bridge to equity,equity,2,0,False,,exact,"Equity value = $19,228.6 million"
+ECL-2025-05,basic@2025,3,19,final,Step 5. Value and decide,Value per share,price_per_share,10,0,False,,exact,Value per share = $67.09
+ECL-2025-05,basic@2025,3,20,alternative,Step 5. Value and decide,Share count,alt: equity / inputs.shares_basic,0,0,False,,exact,"Alternative, not scored: value per share on the latest basic share count (282.997 million shares) = $67.95"
+ECL-2025-05,basic@2025,3,21,rounding,Step 5. Value and decide,Answer format,n/a,1,0,,rounding not auto-graded,exact,Follows the rounding instruction: WACC % to two decimals; dollar amounts in $ millions to one decimal; value per share to two decimals
+ECL-2025-06,half@2025,4,1,middle,Step 2. Project the future,Growth path,forecast.growth.1,2,0,False,,exact,Year-1 revenue growth = 5.33%
+ECL-2025-06,half@2025,4,2,middle,Step 2. Project the future,Operating margin,derived: forecast.ebit[1] / forecast.revenue[1],2,0,False,,exact,EBIT margin (mean of three ratios) = 13.94%
+ECL-2025-06,half@2025,4,3,middle,Step 2. Project the future,Reinvestment (D&A),derived: forecast.da[1] / forecast.revenue[1],2,0,False,,exact,D&A share of revenue = 6.20%
+ECL-2025-06,half@2025,4,4,middle,Step 2. Project the future,Reinvestment (capex),derived: forecast.capex[1] / forecast.revenue[1],2,0,False,,exact,Capex share of revenue = 5.47%
+ECL-2025-06,half@2025,4,5,middle,Step 2. Project the future,Working capital,derived: forecast.nwc[1] / forecast.revenue[1],2,0,False,,exact,NWC share of revenue = 17.84%
+ECL-2025-06,half@2025,4,6,step,Step 3. Compute free cash flow,FCFF build,fcff.1,5,5,True,,exact,"FCFF year 1 = $1,797.3 million"
+ECL-2025-06,half@2025,4,7,step,Step 3. Compute free cash flow,FCFF build,fcff.2,5,0,False,,exact,"FCFF year 2 = $1,901.6 million"
+ECL-2025-06,half@2025,4,8,step,Step 3. Compute free cash flow,FCFF build,fcff.3,5,5,True,,exact,"FCFF year 3 = $1,996.0 million"
+ECL-2025-06,half@2025,4,9,step,Step 3. Compute free cash flow,FCFF build,fcff.4,5,5,True,,exact,"FCFF year 4 = $2,078.3 million"
+ECL-2025-06,half@2025,4,10,final,Step 3. Compute free cash flow,FCFF build,fcff.5,10,0,False,,exact,"FCFF year 5 = $1,984.3 million"
+ECL-2025-06,half@2025,4,11,rounding,Step 3. Compute free cash flow,Answer format,n/a,1,0,,rounding not auto-graded,exact,Follows the rounding instruction: percentages to two decimals; FCFF in $ millions to one decimal
+ECL-2025-07,half@2025,5,1,middle,Step 4. Discount to today,Beta / Cost of equity model,beta_levered,2,2,True,,exact,Levered beta = 0.8620
+ECL-2025-07,half@2025,5,2,middle,Step 4. Discount to today,Beta / Cost of equity model,re,2,0,False,,exact,Cost of equity = 9.60%
+ECL-2025-07,half@2025,5,3,middle,Step 4. Discount to today,Cost of debt,rd,2,2,True,,exact,Pre-tax cost of debt = 4.73%
+ECL-2025-07,half@2025,5,4,step,Step 4. Discount to today,WACC,wacc,5,0,False,,exact,WACC = 9.02%
+ECL-2025-07,half@2025,5,5,step,Step 4. Discount to today,Terminal value method,tv,5,0,False,,exact,"Terminal value = $28,849.6 million"
+ECL-2025-07,half@2025,5,6,step,Step 4. Discount to today,Enterprise value,ev,5,0,False,,exact,"Enterprise value = $26,286.6 million"
+ECL-2025-07,half@2025,5,7,middle,Step 5. Value and decide,Bridge to equity,equity,2,0,False,,exact,"Equity value = $19,228.6 million"
+ECL-2025-07,half@2025,5,8,final,Step 5. Value and decide,Value per share,price_per_share,10,0,False,,exact,Value per share = $67.09
+ECL-2025-07,half@2025,5,9,alternative,Step 5. Value and decide,Share count,alt: equity / inputs.shares_basic,0,0,False,,exact,"Alternative, not scored: value per share on the latest basic share count (282.997 million shares) = $67.95"
+ECL-2025-07,half@2025,5,10,rounding,Step 5. Value and decide,Answer format,n/a,1,0,,rounding not auto-graded,exact,Follows the rounding instruction: beta to four decimals; rates in % to two decimals; dollar amounts in $ millions to one decimal; value per share to two decimals
+ECL-2025-08,complex@2025,3,1,middle,Step 2. Project the future,Growth path,forecast.growth.1,2,0,False,,exact,Year-1 revenue growth = 5.33%
+ECL-2025-08,complex@2025,3,2,middle,Step 2. Project the future,Operating margin,derived: forecast.ebit[1] / forecast.revenue[1],2,0,False,,exact,EBIT margin (mean of three ratios) = 13.94%
+ECL-2025-08,complex@2025,3,3,middle,Step 2. Project the future,Reinvestment (D&A),derived: forecast.da[1] / forecast.revenue[1],2,0,False,,exact,D&A share of revenue = 6.20%
+ECL-2025-08,complex@2025,3,4,middle,Step 2. Project the future,Reinvestment (capex),derived: forecast.capex[1] / forecast.revenue[1],2,0,False,,exact,Capex share of revenue = 5.47%
+ECL-2025-08,complex@2025,3,5,middle,Step 2. Project the future,Working capital,derived: forecast.nwc[1] / forecast.revenue[1],2,0,False,,exact,NWC share of revenue = 17.84%
+ECL-2025-08,complex@2025,3,6,middle,Step 2. Project the future,Tax applied,tax_rate,2,0,False,,exact,Effective tax rate on EBIT (years 1-4) = 18.40%
+ECL-2025-08,complex@2025,3,7,step,Step 3. Compute free cash flow,FCFF build,fcff.1,5,0,False,,exact,"FCFF year 1 = $1,857.5 million"
+ECL-2025-08,complex@2025,3,8,step,Step 3. Compute free cash flow,FCFF build,fcff.2,5,5,True,,exact,"FCFF year 2 = $1,963.3 million"
+ECL-2025-08,complex@2025,3,9,step,Step 3. Compute free cash flow,FCFF build,fcff.3,5,0,False,,exact,"FCFF year 3 = $2,061.2 million"
+ECL-2025-08,complex@2025,3,10,step,Step 3. Compute free cash flow,FCFF build,fcff.4,5,0,False,,exact,"FCFF year 4 = $2,149.2 million"
+ECL-2025-08,complex@2025,3,11,step,Step 3. Compute free cash flow,FCFF build,fcff.5,5,5,True,,exact,"FCFF year 5 = $1,985.6 million"
+ECL-2025-08,complex@2025,3,12,middle,Step 4. Discount to today,Beta / Cost of equity model,beta_levered,2,0,False,,exact,Levered beta = 0.9075
+ECL-2025-08,complex@2025,3,13,middle,Step 4. Discount to today,Beta / Cost of equity model,re,2,0,False,,exact,Cost of equity = 8.72%
+ECL-2025-08,complex@2025,3,14,middle,Step 4. Discount to today,Cost of debt,rd,2,2,True,,exact,Pre-tax cost of debt = 4.73%
+ECL-2025-08,complex@2025,3,15,middle,Step 4. Discount to today,Capital structure weights,weights.E,2,0,False,,exact,"Equity weight 89.97%, debt weight 10.03%"
+ECL-2025-08,complex@2025,3,16,step,Step 4. Discount to today,WACC,wacc,5,0,False,,exact,WACC = 8.22%
+ECL-2025-08,complex@2025,3,17,step,Step 4. Discount to today,Terminal value method,tv,5,0,False,,exact,"Terminal value = $35,592.3 million"
+ECL-2025-08,complex@2025,3,18,step,Step 4. Discount to today,Enterprise value,ev,5,0,False,,exact,"Enterprise value = $33,189.6 million"
+ECL-2025-08,complex@2025,3,19,middle,Step 5. Value and decide,Cash,cash_excess,2,2,True,,exact,Excess cash = cash and short-term investments - 2% of FY2024 revenue = $942.0 million
+ECL-2025-08,complex@2025,3,20,middle,Step 5. Value and decide,Bridge to equity,equity,2,0,False,,exact,"Equity value = $25,816.8 million"
+ECL-2025-08,complex@2025,3,21,final,Step 5. Value and decide,Value per share,price_per_share,10,0,False,,exact,Value per share = $90.08
+ECL-2025-08,complex@2025,3,22,alternative,Step 5. Value and decide,Share count,alt: equity / inputs.shares_basic,0,0,False,,exact,"Alternative, not scored: value per share on the latest basic share count (282.997 million shares) = $91.23"
+ECL-2025-08,complex@2025,3,23,rounding,Step 5. Value and decide,Answer format,n/a,1,0,,rounding not auto-graded,exact,Follows the rounding instruction: rates in % to two decimals; dollar amounts in $ millions to one decimal; value per share to two decimals
+KO-2025-05,basic@2025,3,1,middle,Step 2. Project the future,Growth path,forecast.growth.1,2,0,False,,exact,Year-1 revenue growth = 4.61%
+KO-2025-05,basic@2025,3,2,middle,Step 2. Project the future,Operating margin,derived: forecast.ebit[1] / forecast.revenue[1],2,0,False,,exact,EBIT margin (mean of three ratios) = 23.77%
+KO-2025-05,basic@2025,3,3,middle,Step 2. Project the future,Reinvestment (D&A),derived: forecast.da[1] / forecast.revenue[1],2,0,False,,exact,D&A share of revenue = 2.56%
+KO-2025-05,basic@2025,3,4,middle,Step 2. Project the future,Reinvestment (capex),derived: forecast.capex[1] / forecast.revenue[1],2,0,False,,exact,Capex share of revenue = 3.96%
+KO-2025-05,basic@2025,3,5,middle,Step 2. Project the future,Working capital,derived: forecast.nwc[1] / forecast.revenue[1],2,0,False,,exact,NWC share of revenue = 5.51%
+KO-2025-05,basic@2025,3,6,step,Step 3. Compute free cash flow,FCFF build,fcff.1,5,0,False,,exact,"FCFF year 1 = $8,436.6 million"
+KO-2025-05,basic@2025,3,7,step,Step 3. Compute free cash flow,FCFF build,fcff.2,5,5,True,,exact,"FCFF year 2 = $8,787.4 million"
+KO-2025-05,basic@2025,3,8,step,Step 3. Compute free cash flow,FCFF build,fcff.3,5,5,True,,exact,"FCFF year 3 = $9,095.6 million"
+KO-2025-05,basic@2025,3,9,step,Step 3. Compute free cash flow,FCFF build,fcff.4,5,5,True,,exact,"FCFF year 4 = $9,355.2 million"
+KO-2025-05,basic@2025,3,10,step,Step 3. Compute free cash flow,FCFF build,fcff.5,5,5,True,,exact,"FCFF year 5 = $10,307.7 million"
+KO-2025-05,basic@2025,3,11,middle,Step 4. Discount to today,Beta / Cost of equity model,beta_levered,2,2,True,,exact,Levered beta = 0.6219
+KO-2025-05,basic@2025,3,12,middle,Step 4. Discount to today,Beta / Cost of equity model,re,2,0,False,,exact,Cost of equity = 7.92%
+KO-2025-05,basic@2025,3,13,middle,Step 4. Discount to today,Cost of debt,rd,2,2,True,,exact,Pre-tax cost of debt = 4.88%
+KO-2025-05,basic@2025,3,14,middle,Step 4. Discount to today,Capital structure weights,weights.E,2,0,False,,exact,"Equity weight 86.89%, debt weight 13.11%"
+KO-2025-05,basic@2025,3,15,step,Step 4. Discount to today,WACC,wacc,5,0,False,,exact,WACC = 7.39%
+KO-2025-05,basic@2025,3,16,step,Step 4. Discount to today,Terminal value method,tv,5,0,False,,exact,"Terminal value = $195,063.0 million"
+KO-2025-05,basic@2025,3,17,step,Step 4. Discount to today,Enterprise value,ev,5,0,False,,exact,"Enterprise value = $173,640.6 million"
+KO-2025-05,basic@2025,3,18,middle,Step 5. Value and decide,Bridge to equity,equity,2,0,False,,exact,"Equity value = $137,577.6 million"
+KO-2025-05,basic@2025,3,19,final,Step 5. Value and decide,Value per share,price_per_share,10,0,False,,exact,Value per share = $31.85
+KO-2025-05,basic@2025,3,20,alternative,Step 5. Value and decide,Share count,alt: equity / inputs.shares_basic,0,0,False,,exact,"Alternative, not scored: value per share on the latest basic share count (4,301.000 million shares) = $31.99"
+KO-2025-05,basic@2025,3,21,rounding,Step 5. Value and decide,Answer format,n/a,1,0,,rounding not auto-graded,exact,Follows the rounding instruction: WACC % to two decimals; dollar amounts in $ millions to one decimal; value per share to two decimals
+KO-2025-06,half@2025,4,1,middle,Step 2. Project the future,Growth path,forecast.growth.1,2,0,False,,exact,Year-1 revenue growth = 4.61%
+KO-2025-06,half@2025,4,2,middle,Step 2. Project the future,Operating margin,derived: forecast.ebit[1] / forecast.revenue[1],2,0,False,,exact,EBIT margin (mean of three ratios) = 23.77%
+KO-2025-06,half@2025,4,3,middle,Step 2. Project the future,Reinvestment (D&A),derived: forecast.da[1] / forecast.revenue[1],2,2,True,,exact,D&A share of revenue = 2.56%
+KO-2025-06,half@2025,4,4,middle,Step 2. Project the future,Reinvestment (capex),derived: forecast.capex[1] / forecast.revenue[1],2,2,True,,exact,Capex share of revenue = 3.96%
+KO-2025-06,half@2025,4,5,middle,Step 2. Project the future,Working capital,derived: forecast.nwc[1] / forecast.revenue[1],2,2,True,,exact,NWC share of revenue = 5.51%
+KO-2025-06,half@2025,4,6,step,Step 3. Compute free cash flow,FCFF build,fcff.1,5,0,False,,exact,"FCFF year 1 = $8,436.6 million"
+KO-2025-06,half@2025,4,7,step,Step 3. Compute free cash flow,FCFF build,fcff.2,5,0,False,,exact,"FCFF year 2 = $8,787.4 million"
+KO-2025-06,half@2025,4,8,step,Step 3. Compute free cash flow,FCFF build,fcff.3,5,0,False,,exact,"FCFF year 3 = $9,095.6 million"
+KO-2025-06,half@2025,4,9,step,Step 3. Compute free cash flow,FCFF build,fcff.4,5,0,False,,exact,"FCFF year 4 = $9,355.2 million"
+KO-2025-06,half@2025,4,10,final,Step 3. Compute free cash flow,FCFF build,fcff.5,10,0,False,,exact,"FCFF year 5 = $10,307.7 million"
+KO-2025-06,half@2025,4,11,rounding,Step 3. Compute free cash flow,Answer format,n/a,1,0,,rounding not auto-graded,exact,Follows the rounding instruction: percentages to two decimals; FCFF in $ millions to one decimal
+KO-2025-07,half@2025,5,1,middle,Step 4. Discount to today,Beta / Cost of equity model,beta_levered,2,2,True,,exact,Levered beta = 0.6219
+KO-2025-07,half@2025,5,2,middle,Step 4. Discount to today,Beta / Cost of equity model,re,2,0,False,,exact,Cost of equity = 7.92%
+KO-2025-07,half@2025,5,3,middle,Step 4. Discount to today,Cost of debt,rd,2,2,True,,exact,Pre-tax cost of debt = 4.88%
+KO-2025-07,half@2025,5,4,step,Step 4. Discount to today,WACC,wacc,5,0,False,,exact,WACC = 7.39%
+KO-2025-07,half@2025,5,5,step,Step 4. Discount to today,Terminal value method,tv,5,0,False,,exact,"Terminal value = $195,063.0 million"
+KO-2025-07,half@2025,5,6,step,Step 4. Discount to today,Enterprise value,ev,5,0,False,,exact,"Enterprise value = $173,640.6 million"
+KO-2025-07,half@2025,5,7,middle,Step 5. Value and decide,Bridge to equity,equity,2,0,False,,exact,"Equity value = $137,577.6 million"
+KO-2025-07,half@2025,5,8,final,Step 5. Value and decide,Value per share,price_per_share,10,0,False,,exact,Value per share = $31.85
+KO-2025-07,half@2025,5,9,alternative,Step 5. Value and decide,Share count,alt: equity / inputs.shares_basic,0,0,False,,exact,"Alternative, not scored: value per share on the latest basic share count (4,301.000 million shares) = $31.99"
+KO-2025-07,half@2025,5,10,rounding,Step 5. Value and decide,Answer format,n/a,1,0,,rounding not auto-graded,exact,Follows the rounding instruction: beta to four decimals; rates in % to two decimals; dollar amounts in $ millions to one decimal; value per share to two decimals
+KO-2025-08,complex@2025,3,1,middle,Step 2. Project the future,Growth path,forecast.growth.1,2,0,False,,exact,Year-1 revenue growth = 4.61%
+KO-2025-08,complex@2025,3,2,middle,Step 2. Project the future,Operating margin,derived: forecast.ebit[1] / forecast.revenue[1],2,0,False,,exact,EBIT margin (mean of three ratios) = 23.77%
+KO-2025-08,complex@2025,3,3,middle,Step 2. Project the future,Reinvestment (D&A),derived: forecast.da[1] / forecast.revenue[1],2,0,False,,exact,D&A share of revenue = 2.56%
+KO-2025-08,complex@2025,3,4,middle,Step 2. Project the future,Reinvestment (capex),derived: forecast.capex[1] / forecast.revenue[1],2,0,False,,exact,Capex share of revenue = 3.96%
+KO-2025-08,complex@2025,3,5,middle,Step 2. Project the future,Working capital,derived: forecast.nwc[1] / forecast.revenue[1],2,0,False,,exact,NWC share of revenue = 5.51%
+KO-2025-08,complex@2025,3,6,middle,Step 2. Project the future,Tax applied,tax_rate,2,0,False,,exact,Effective tax rate on EBIT (years 1-4) = 18.03%
+KO-2025-08,complex@2025,3,7,step,Step 3. Compute free cash flow,FCFF build,fcff.1,5,0,False,,exact,"FCFF year 1 = $8,784.3 million"
+KO-2025-08,complex@2025,3,8,step,Step 3. Compute free cash flow,FCFF build,fcff.2,5,0,False,,exact,"FCFF year 2 = $9,156.7 million"
+KO-2025-08,complex@2025,3,9,step,Step 3. Compute free cash flow,FCFF build,fcff.3,5,0,False,,exact,"FCFF year 3 = $9,496.5 million"
+KO-2025-08,complex@2025,3,10,step,Step 3. Compute free cash flow,FCFF build,fcff.4,5,5,True,,exact,"FCFF year 4 = $9,799.0 million"
+KO-2025-08,complex@2025,3,11,step,Step 3. Compute free cash flow,FCFF build,fcff.5,5,5,True,,exact,"FCFF year 5 = $10,411.2 million"
+KO-2025-08,complex@2025,3,12,middle,Step 4. Discount to today,Beta / Cost of equity model,beta_levered,2,2,True,,exact,Levered beta = 0.7467
+KO-2025-08,complex@2025,3,13,middle,Step 4. Discount to today,Beta / Cost of equity model,re,2,2,True,,exact,Cost of equity = 7.91%
+KO-2025-08,complex@2025,3,14,middle,Step 4. Discount to today,Cost of debt,rd,2,2,True,,exact,Pre-tax cost of debt = 4.88%
+KO-2025-08,complex@2025,3,15,middle,Step 4. Discount to today,Capital structure weights,weights.E,2,0,False,,exact,"Equity weight 86.89%, debt weight 13.11%"
+KO-2025-08,complex@2025,3,16,step,Step 4. Discount to today,WACC,wacc,5,5,True,,exact,WACC = 7.38%
+KO-2025-08,complex@2025,3,17,step,Step 4. Discount to today,Terminal value method,tv,5,0,False,,exact,"Terminal value = $218,618.7 million"
+KO-2025-08,complex@2025,3,18,step,Step 4. Discount to today,Enterprise value,ev,5,0,False,,exact,"Enterprise value = $198,522.3 million"
+KO-2025-08,complex@2025,3,19,middle,Step 5. Value and decide,Cash,cash_excess,2,2,True,,exact,"Excess cash = cash and short-term investments - 2% of FY2024 revenue = $9,886.8 million"
+KO-2025-08,complex@2025,3,20,middle,Step 5. Value and decide,Bridge to equity,equity,2,0,False,,exact,"Equity value = $161,518.1 million"
+KO-2025-08,complex@2025,3,21,final,Step 5. Value and decide,Value per share,price_per_share,10,0,False,,exact,Value per share = $37.39
+KO-2025-08,complex@2025,3,22,alternative,Step 5. Value and decide,Share count,alt: equity / inputs.shares_basic,0,0,False,,exact,"Alternative, not scored: value per share on the latest basic share count (4,301.000 million shares) = $37.55"
+KO-2025-08,complex@2025,3,23,rounding,Step 5. Value and decide,Answer format,n/a,1,0,,rounding not auto-graded,exact,Follows the rounding instruction: rates in % to two decimals; dollar amounts in $ millions to one decimal; value per share to two decimals
+LIN-2025-05,basic@2025,3,1,middle,Step 2. Project the future,Growth path,forecast.growth.1,2,0,,zero target not auto-graded,exact,Year-1 revenue growth = 0.00%
+LIN-2025-05,basic@2025,3,2,middle,Step 2. Project the future,Operating margin,derived: forecast.ebit[1] / forecast.revenue[1],2,0,False,,exact,EBIT margin (mean of three ratios) = 22.23%
+LIN-2025-05,basic@2025,3,3,middle,Step 2. Project the future,Reinvestment (D&A),derived: forecast.da[1] / forecast.revenue[1],2,0,False,,exact,D&A share of revenue = 11.89%
+LIN-2025-05,basic@2025,3,4,middle,Step 2. Project the future,Reinvestment (capex),derived: forecast.capex[1] / forecast.revenue[1],2,0,False,,exact,Capex share of revenue = 11.55%
+LIN-2025-05,basic@2025,3,5,middle,Step 2. Project the future,Working capital,derived: forecast.nwc[1] / forecast.revenue[1],2,0,False,,exact,NWC share of revenue = 11.51%
+LIN-2025-05,basic@2025,3,6,step,Step 3. Compute free cash flow,FCFF build,fcff.1,5,5,True,,exact,"FCFF year 1 = $5,905.9 million"
+LIN-2025-05,basic@2025,3,7,step,Step 3. Compute free cash flow,FCFF build,fcff.2,5,5,True,,exact,"FCFF year 2 = $5,916.4 million"
+LIN-2025-05,basic@2025,3,8,step,Step 3. Compute free cash flow,FCFF build,fcff.3,5,5,True,,exact,"FCFF year 3 = $5,956.6 million"
+LIN-2025-05,basic@2025,3,9,step,Step 3. Compute free cash flow,FCFF build,fcff.4,5,5,True,,exact,"FCFF year 4 = $6,026.9 million"
+LIN-2025-05,basic@2025,3,10,step,Step 3. Compute free cash flow,FCFF build,fcff.5,5,5,True,,exact,"FCFF year 5 = $5,927.8 million"
+LIN-2025-05,basic@2025,3,11,middle,Step 4. Discount to today,Beta / Cost of equity model,beta_levered,2,2,True,,exact,Levered beta = 0.8618
+LIN-2025-05,basic@2025,3,12,middle,Step 4. Discount to today,Beta / Cost of equity model,re,2,0,False,,exact,Cost of equity = 9.60%
+LIN-2025-05,basic@2025,3,13,middle,Step 4. Discount to today,Cost of debt,rd,2,2,True,,exact,Pre-tax cost of debt = 4.58%
+LIN-2025-05,basic@2025,3,14,middle,Step 4. Discount to today,Capital structure weights,weights.E,2,2,True,,exact,"Equity weight 90.00%, debt weight 10.00%"
+LIN-2025-05,basic@2025,3,15,step,Step 4. Discount to today,WACC,wacc,5,0,,target already in prompt,exact,WACC = 9.00%
+LIN-2025-05,basic@2025,3,16,step,Step 4. Discount to today,Terminal value method,tv,5,0,False,,exact,"Terminal value = $86,327.2 million"
+LIN-2025-05,basic@2025,3,17,step,Step 4. Discount to today,Enterprise value,ev,5,0,False,,exact,"Enterprise value = $79,214.0 million"
+LIN-2025-05,basic@2025,3,18,middle,Step 5. Value and decide,Bridge to equity,equity,2,0,False,,exact,"Equity value = $60,276.0 million"
+LIN-2025-05,basic@2025,3,19,final,Step 5. Value and decide,Value per share,price_per_share,10,0,False,,exact,Value per share = $125.03
+LIN-2025-05,basic@2025,3,20,alternative,Step 5. Value and decide,Share count,alt: equity / inputs.shares_basic,0,0,False,,exact,"Alternative, not scored: value per share on the latest basic share count (472.912 million shares) = $127.46"
+LIN-2025-05,basic@2025,3,21,rounding,Step 5. Value and decide,Answer format,n/a,1,0,,rounding not auto-graded,exact,Follows the rounding instruction: WACC % to two decimals; dollar amounts in $ millions to one decimal; value per share to two decimals
+LIN-2025-06,half@2025,4,1,middle,Step 2. Project the future,Growth path,forecast.growth.1,2,0,,zero target not auto-graded,exact,Year-1 revenue growth = 0.00%
+LIN-2025-06,half@2025,4,2,middle,Step 2. Project the future,Operating margin,derived: forecast.ebit[1] / forecast.revenue[1],2,0,False,,exact,EBIT margin (mean of three ratios) = 22.23%
+LIN-2025-06,half@2025,4,3,middle,Step 2. Project the future,Reinvestment (D&A),derived: forecast.da[1] / forecast.revenue[1],2,0,False,,exact,D&A share of revenue = 11.89%
+LIN-2025-06,half@2025,4,4,middle,Step 2. Project the future,Reinvestment (capex),derived: forecast.capex[1] / forecast.revenue[1],2,0,False,,exact,Capex share of revenue = 11.55%
+LIN-2025-06,half@2025,4,5,middle,Step 2. Project the future,Working capital,derived: forecast.nwc[1] / forecast.revenue[1],2,2,True,,exact,NWC share of revenue = 11.51%
+LIN-2025-06,half@2025,4,6,step,Step 3. Compute free cash flow,FCFF build,fcff.1,5,0,False,,exact,"FCFF year 1 = $5,905.9 million"
+LIN-2025-06,half@2025,4,7,step,Step 3. Compute free cash flow,FCFF build,fcff.2,5,0,False,,exact,"FCFF year 2 = $5,916.4 million"
+LIN-2025-06,half@2025,4,8,step,Step 3. Compute free cash flow,FCFF build,fcff.3,5,0,False,,exact,"FCFF year 3 = $5,956.6 million"
+LIN-2025-06,half@2025,4,9,step,Step 3. Compute free cash flow,FCFF build,fcff.4,5,5,True,,exact,"FCFF year 4 = $6,026.9 million"
+LIN-2025-06,half@2025,4,10,final,Step 3. Compute free cash flow,FCFF build,fcff.5,10,0,False,,exact,"FCFF year 5 = $5,927.8 million"
+LIN-2025-06,half@2025,4,11,rounding,Step 3. Compute free cash flow,Answer format,n/a,1,0,,rounding not auto-graded,exact,Follows the rounding instruction: percentages to two decimals; FCFF in $ millions to one decimal
+LIN-2025-07,half@2025,5,1,middle,Step 4. Discount to today,Beta / Cost of equity model,beta_levered,2,2,True,,exact,Levered beta = 0.8618
+LIN-2025-07,half@2025,5,2,middle,Step 4. Discount to today,Beta / Cost of equity model,re,2,0,False,,exact,Cost of equity = 9.60%
+LIN-2025-07,half@2025,5,3,middle,Step 4. Discount to today,Cost of debt,rd,2,2,True,,exact,Pre-tax cost of debt = 4.58%
+LIN-2025-07,half@2025,5,4,step,Step 4. Discount to today,WACC,wacc,5,0,,target already in prompt,exact,WACC = 9.00%
+LIN-2025-07,half@2025,5,5,step,Step 4. Discount to today,Terminal value method,tv,5,0,False,,exact,"Terminal value = $86,327.2 million"
+LIN-2025-07,half@2025,5,6,step,Step 4. Discount to today,Enterprise value,ev,5,0,False,,exact,"Enterprise value = $79,214.0 million"
+LIN-2025-07,half@2025,5,7,middle,Step 5. Value and decide,Bridge to equity,equity,2,2,True,,exact,"Equity value = $60,276.0 million"
+LIN-2025-07,half@2025,5,8,final,Step 5. Value and decide,Value per share,price_per_share,10,0,False,,exact,Value per share = $125.03
+LIN-2025-07,half@2025,5,9,alternative,Step 5. Value and decide,Share count,alt: equity / inputs.shares_basic,0,0,False,,exact,"Alternative, not scored: value per share on the latest basic share count (472.912 million shares) = $127.46"
+LIN-2025-07,half@2025,5,10,rounding,Step 5. Value and decide,Answer format,n/a,1,0,,rounding not auto-graded,exact,Follows the rounding instruction: beta to four decimals; rates in % to two decimals; dollar amounts in $ millions to one decimal; value per share to two decimals
+LIN-2025-08,complex@2025,3,1,middle,Step 2. Project the future,Growth path,forecast.growth.1,2,0,,zero target not auto-graded,missing,Year-1 revenue growth = 0.00%
+LIN-2025-08,complex@2025,3,2,middle,Step 2. Project the future,Operating margin,derived: forecast.ebit[1] / forecast.revenue[1],2,0,False,,missing,EBIT margin (mean of three ratios) = 22.23%
+LIN-2025-08,complex@2025,3,3,middle,Step 2. Project the future,Reinvestment (D&A),derived: forecast.da[1] / forecast.revenue[1],2,0,False,,missing,D&A share of revenue = 11.89%
+LIN-2025-08,complex@2025,3,4,middle,Step 2. Project the future,Reinvestment (capex),derived: forecast.capex[1] / forecast.revenue[1],2,0,False,,missing,Capex share of revenue = 11.55%
+LIN-2025-08,complex@2025,3,5,middle,Step 2. Project the future,Working capital,derived: forecast.nwc[1] / forecast.revenue[1],2,0,False,,missing,NWC share of revenue = 11.51%
+LIN-2025-08,complex@2025,3,6,middle,Step 2. Project the future,Tax applied,tax_rate,2,0,False,,missing,Effective tax rate on EBIT (years 1-4) = 23.98%
+LIN-2025-08,complex@2025,3,7,step,Step 3. Compute free cash flow,FCFF build,fcff.1,5,0,False,,missing,"FCFF year 1 = $5,687.2 million"
+LIN-2025-08,complex@2025,3,8,step,Step 3. Compute free cash flow,FCFF build,fcff.2,5,0,False,,missing,"FCFF year 2 = $5,699.0 million"
+LIN-2025-08,complex@2025,3,9,step,Step 3. Compute free cash flow,FCFF build,fcff.3,5,0,False,,missing,"FCFF year 3 = $5,746.5 million"
+LIN-2025-08,complex@2025,3,10,step,Step 3. Compute free cash flow,FCFF build,fcff.4,5,0,False,,missing,"FCFF year 4 = $5,830.4 million"
+LIN-2025-08,complex@2025,3,11,step,Step 3. Compute free cash flow,FCFF build,fcff.5,5,5,True,,missing,"FCFF year 5 = $5,960.0 million"
+LIN-2025-08,complex@2025,3,12,middle,Step 4. Discount to today,Beta / Cost of equity model,beta_levered,2,2,True,,missing,Levered beta = 0.9074
+LIN-2025-08,complex@2025,3,13,middle,Step 4. Discount to today,Beta / Cost of equity model,re,2,0,False,,missing,Cost of equity = 8.72%
+LIN-2025-08,complex@2025,3,14,middle,Step 4. Discount to today,Cost of debt,rd,2,2,True,,missing,Pre-tax cost of debt = 4.58%
+LIN-2025-08,complex@2025,3,15,middle,Step 4. Discount to today,Capital structure weights,weights.E,2,0,False,,missing,"Equity weight 90.00%, debt weight 10.00%"
+LIN-2025-08,complex@2025,3,16,step,Step 4. Discount to today,WACC,wacc,5,0,False,,missing,WACC = 8.21%
+LIN-2025-08,complex@2025,3,17,step,Step 4. Discount to today,Terminal value method,tv,5,0,False,,missing,"Terminal value = $107,043.1 million"
+LIN-2025-08,complex@2025,3,18,step,Step 4. Discount to today,Enterprise value,ev,5,0,False,,missing,"Enterprise value = $98,911.6 million"
+LIN-2025-08,complex@2025,3,19,middle,Step 5. Value and decide,Cash,cash_excess,2,2,True,,missing,"Excess cash = cash and short-term investments - 2% of FY2024 revenue = $4,189.9 million"
+LIN-2025-08,complex@2025,3,20,middle,Step 5. Value and decide,Bridge to equity,equity,2,0,False,,missing,"Equity value = $79,313.5 million"
+LIN-2025-08,complex@2025,3,21,final,Step 5. Value and decide,Value per share,price_per_share,10,0,False,,missing,Value per share = $164.52
+LIN-2025-08,complex@2025,3,22,alternative,Step 5. Value and decide,Share count,alt: equity / inputs.shares_basic,0,0,False,,missing,"Alternative, not scored: value per share on the latest basic share count (472.912 million shares) = $167.71"
+LIN-2025-08,complex@2025,3,23,rounding,Step 5. Value and decide,Answer format,n/a,1,0,,rounding not auto-graded,missing,Follows the rounding instruction: rates in % to two decimals; dollar amounts in $ millions to one decimal; value per share to two decimals
+NRG-2025-05,basic@2025,3,1,middle,Step 2. Project the future,Growth path,forecast.growth.1,2,0,,zero target not auto-graded,exact,Year-1 revenue growth = 0.00%
+NRG-2025-05,basic@2025,3,2,middle,Step 2. Project the future,Operating margin,derived: forecast.ebit[1] / forecast.revenue[1],2,0,False,,exact,EBIT margin (mean of three ratios) = 5.45%
+NRG-2025-05,basic@2025,3,3,middle,Step 2. Project the future,Reinvestment (D&A),derived: forecast.da[1] / forecast.revenue[1],2,2,True,,exact,D&A share of revenue = 3.99%
+NRG-2025-05,basic@2025,3,4,middle,Step 2. Project the future,Reinvestment (capex),derived: forecast.capex[1] / forecast.revenue[1],2,0,False,,exact,Capex share of revenue = 1.64%
+NRG-2025-05,basic@2025,3,5,middle,Step 2. Project the future,Working capital,derived: forecast.nwc[1] / forecast.revenue[1],2,0,False,,exact,NWC share of revenue = 5.82%
+NRG-2025-05,basic@2025,3,6,step,Step 3. Compute free cash flow,FCFF build,fcff.1,5,0,False,,exact,"FCFF year 1 = $1,871.1 million"
+NRG-2025-05,basic@2025,3,7,step,Step 3. Compute free cash flow,FCFF build,fcff.2,5,0,False,,exact,"FCFF year 2 = $1,872.2 million"
+NRG-2025-05,basic@2025,3,8,step,Step 3. Compute free cash flow,FCFF build,fcff.3,5,0,False,,exact,"FCFF year 3 = $1,882.8 million"
+NRG-2025-05,basic@2025,3,9,step,Step 3. Compute free cash flow,FCFF build,fcff.4,5,0,False,,exact,"FCFF year 4 = $1,902.8 million"
+NRG-2025-05,basic@2025,3,10,step,Step 3. Compute free cash flow,FCFF build,fcff.5,5,5,True,,exact,"FCFF year 5 = $1,214.6 million"
+NRG-2025-05,basic@2025,3,11,middle,Step 4. Discount to today,Beta / Cost of equity model,beta_levered,2,0,False,,exact,Levered beta = 0.3954
+NRG-2025-05,basic@2025,3,12,middle,Step 4. Discount to today,Beta / Cost of equity model,re,2,0,False,,exact,Cost of equity = 6.34%
+NRG-2025-05,basic@2025,3,13,middle,Step 4. Discount to today,Cost of debt,rd,2,2,True,,exact,Pre-tax cost of debt = 5.07%
+NRG-2025-05,basic@2025,3,14,middle,Step 4. Discount to today,Capital structure weights,weights.E,2,0,False,,exact,"Equity weight 74.16%, debt weight 25.84%"
+NRG-2025-05,basic@2025,3,15,step,Step 4. Discount to today,WACC,wacc,5,0,False,,exact,WACC = 5.73%
+NRG-2025-05,basic@2025,3,16,step,Step 4. Discount to today,Terminal value method,tv,5,0,False,,exact,"Terminal value = $33,169.8 million"
+NRG-2025-05,basic@2025,3,17,step,Step 4. Discount to today,Enterprise value,ev,5,0,False,,exact,"Enterprise value = $32,577.1 million"
+NRG-2025-05,basic@2025,3,18,middle,Step 5. Value and decide,Bridge to equity,equity,2,0,False,,exact,"Equity value = $21,902.1 million"
+NRG-2025-05,basic@2025,3,19,final,Step 5. Value and decide,Value per share,price_per_share,10,0,False,,exact,Value per share = $103.31
+NRG-2025-05,basic@2025,3,20,alternative,Step 5. Value and decide,Share count,alt: equity / inputs.shares_basic,0,0,False,,exact,"Alternative, not scored: value per share on the latest basic share count (198.069 million shares) = $110.58"
+NRG-2025-05,basic@2025,3,21,rounding,Step 5. Value and decide,Answer format,n/a,1,0,,rounding not auto-graded,exact,Follows the rounding instruction: WACC % to two decimals; dollar amounts in $ millions to one decimal; value per share to two decimals
+NRG-2025-06,half@2025,4,1,middle,Step 2. Project the future,Growth path,forecast.growth.1,2,0,,zero target not auto-graded,exact,Year-1 revenue growth = 0.00%
+NRG-2025-06,half@2025,4,2,middle,Step 2. Project the future,Operating margin,derived: forecast.ebit[1] / forecast.revenue[1],2,2,True,,exact,EBIT margin (mean of three ratios) = 5.45%
+NRG-2025-06,half@2025,4,3,middle,Step 2. Project the future,Reinvestment (D&A),derived: forecast.da[1] / forecast.revenue[1],2,2,True,,exact,D&A share of revenue = 3.99%
+NRG-2025-06,half@2025,4,4,middle,Step 2. Project the future,Reinvestment (capex),derived: forecast.capex[1] / forecast.revenue[1],2,2,True,,exact,Capex share of revenue = 1.64%
+NRG-2025-06,half@2025,4,5,middle,Step 2. Project the future,Working capital,derived: forecast.nwc[1] / forecast.revenue[1],2,0,False,,exact,NWC share of revenue = 5.82%
+NRG-2025-06,half@2025,4,6,step,Step 3. Compute free cash flow,FCFF build,fcff.1,5,0,False,,exact,"FCFF year 1 = $1,871.1 million"
+NRG-2025-06,half@2025,4,7,step,Step 3. Compute free cash flow,FCFF build,fcff.2,5,0,False,,exact,"FCFF year 2 = $1,872.2 million"
+NRG-2025-06,half@2025,4,8,step,Step 3. Compute free cash flow,FCFF build,fcff.3,5,0,False,,exact,"FCFF year 3 = $1,882.8 million"
+NRG-2025-06,half@2025,4,9,step,Step 3. Compute free cash flow,FCFF build,fcff.4,5,5,True,,exact,"FCFF year 4 = $1,902.8 million"
+NRG-2025-06,half@2025,4,10,final,Step 3. Compute free cash flow,FCFF build,fcff.5,10,0,False,,exact,"FCFF year 5 = $1,214.6 million"
+NRG-2025-06,half@2025,4,11,rounding,Step 3. Compute free cash flow,Answer format,n/a,1,0,,rounding not auto-graded,exact,Follows the rounding instruction: percentages to two decimals; FCFF in $ millions to one decimal
+NRG-2025-07,half@2025,5,1,middle,Step 4. Discount to today,Beta / Cost of equity model,beta_levered,2,2,True,,exact,Levered beta = 0.3954
+NRG-2025-07,half@2025,5,2,middle,Step 4. Discount to today,Beta / Cost of equity model,re,2,0,False,,exact,Cost of equity = 6.34%
+NRG-2025-07,half@2025,5,3,middle,Step 4. Discount to today,Cost of debt,rd,2,2,True,,exact,Pre-tax cost of debt = 5.07%
+NRG-2025-07,half@2025,5,4,step,Step 4. Discount to today,WACC,wacc,5,0,False,,exact,WACC = 5.73%
+NRG-2025-07,half@2025,5,5,step,Step 4. Discount to today,Terminal value method,tv,5,0,False,,exact,"Terminal value = $33,169.8 million"
+NRG-2025-07,half@2025,5,6,step,Step 4. Discount to today,Enterprise value,ev,5,0,False,,exact,"Enterprise value = $32,577.1 million"
+NRG-2025-07,half@2025,5,7,middle,Step 5. Value and decide,Bridge to equity,equity,2,0,False,,exact,"Equity value = $21,902.1 million"
+NRG-2025-07,half@2025,5,8,final,Step 5. Value and decide,Value per share,price_per_share,10,0,False,,exact,Value per share = $103.31
+NRG-2025-07,half@2025,5,9,alternative,Step 5. Value and decide,Share count,alt: equity / inputs.shares_basic,0,0,False,,exact,"Alternative, not scored: value per share on the latest basic share count (198.069 million shares) = $110.58"
+NRG-2025-07,half@2025,5,10,rounding,Step 5. Value and decide,Answer format,n/a,1,0,,rounding not auto-graded,exact,Follows the rounding instruction: beta to four decimals; rates in % to two decimals; dollar amounts in $ millions to one decimal; value per share to two decimals
+NRG-2025-08,complex@2025,3,1,middle,Step 2. Project the future,Growth path,forecast.growth.1,2,0,,zero target not auto-graded,exact,Year-1 revenue growth = 0.00%
+NRG-2025-08,complex@2025,3,2,middle,Step 2. Project the future,Operating margin,derived: forecast.ebit[1] / forecast.revenue[1],2,0,False,,exact,EBIT margin (mean of three ratios) = 5.45%
+NRG-2025-08,complex@2025,3,3,middle,Step 2. Project the future,Reinvestment (D&A),derived: forecast.da[1] / forecast.revenue[1],2,2,True,,exact,D&A share of revenue = 3.99%
+NRG-2025-08,complex@2025,3,4,middle,Step 2. Project the future,Reinvestment (capex),derived: forecast.capex[1] / forecast.revenue[1],2,2,True,,exact,Capex share of revenue = 1.64%
+NRG-2025-08,complex@2025,3,5,middle,Step 2. Project the future,Working capital,derived: forecast.nwc[1] / forecast.revenue[1],2,0,False,,exact,NWC share of revenue = 5.82%
+NRG-2025-08,complex@2025,3,6,middle,Step 2. Project the future,Tax applied,tax_rate,2,0,False,,exact,Effective tax rate on EBIT (years 1-4) = 24.44%
+NRG-2025-08,complex@2025,3,7,step,Step 3. Compute free cash flow,FCFF build,fcff.1,5,0,False,,exact,"FCFF year 1 = $1,818.3 million"
+NRG-2025-08,complex@2025,3,8,step,Step 3. Compute free cash flow,FCFF build,fcff.2,5,0,False,,exact,"FCFF year 2 = $1,819.4 million"
+NRG-2025-08,complex@2025,3,9,step,Step 3. Compute free cash flow,FCFF build,fcff.3,5,0,False,,exact,"FCFF year 3 = $1,831.9 million"
+NRG-2025-08,complex@2025,3,10,step,Step 3. Compute free cash flow,FCFF build,fcff.4,5,5,True,,exact,"FCFF year 4 = $1,856.0 million"
+NRG-2025-08,complex@2025,3,11,step,Step 3. Compute free cash flow,FCFF build,fcff.5,5,5,True,,exact,"FCFF year 5 = $1,214.9 million"
+NRG-2025-08,complex@2025,3,12,middle,Step 4. Discount to today,Beta / Cost of equity model,beta_levered,2,2,True,,exact,Levered beta = 0.5949
+NRG-2025-08,complex@2025,3,13,middle,Step 4. Discount to today,Beta / Cost of equity model,re,2,0,False,,exact,Cost of equity = 7.15%
+NRG-2025-08,complex@2025,3,14,middle,Step 4. Discount to today,Cost of debt,rd,2,2,True,,exact,Pre-tax cost of debt = 5.07%
+NRG-2025-08,complex@2025,3,15,middle,Step 4. Discount to today,Capital structure weights,weights.E,2,2,True,,exact,"Equity weight 74.16%, debt weight 25.84%"
+NRG-2025-08,complex@2025,3,16,step,Step 4. Discount to today,WACC,wacc,5,0,False,,exact,WACC = 6.34%
+NRG-2025-08,complex@2025,3,17,step,Step 4. Discount to today,Terminal value method,tv,5,0,False,,exact,"Terminal value = $32,423.6 million"
+NRG-2025-08,complex@2025,3,18,step,Step 4. Discount to today,Enterprise value,ev,5,0,False,,exact,"Enterprise value = $31,998.8 million"
+NRG-2025-08,complex@2025,3,19,middle,Step 5. Value and decide,Cash,cash_excess,2,2,True,,exact,Excess cash = cash and short-term investments - 2% of FY2024 revenue = $403.4 million
+NRG-2025-08,complex@2025,3,20,middle,Step 5. Value and decide,Bridge to equity,equity,2,0,False,,exact,"Equity value = $20,761.2 million"
+NRG-2025-08,complex@2025,3,21,final,Step 5. Value and decide,Value per share,price_per_share,10,0,False,,exact,Value per share = $97.93
+NRG-2025-08,complex@2025,3,22,alternative,Step 5. Value and decide,Share count,alt: equity / inputs.shares_basic,0,0,False,,exact,"Alternative, not scored: value per share on the latest basic share count (198.069 million shares) = $104.82"
+NRG-2025-08,complex@2025,3,23,rounding,Step 5. Value and decide,Answer format,n/a,1,0,,rounding not auto-graded,exact,Follows the rounding instruction: rates in % to two decimals; dollar amounts in $ millions to one decimal; value per share to two decimals
+SLB-2025-05,basic@2025,3,1,middle,Step 2. Project the future,Growth path,forecast.growth.1,2,0,False,,exact,Year-1 revenue growth = 13.66%
+SLB-2025-05,basic@2025,3,2,middle,Step 2. Project the future,Operating margin,derived: forecast.ebit[1] / forecast.revenue[1],2,0,False,,exact,EBIT margin (mean of three ratios) = 17.15%
+SLB-2025-05,basic@2025,3,3,middle,Step 2. Project the future,Reinvestment (D&A),derived: forecast.da[1] / forecast.revenue[1],2,0,False,,exact,D&A share of revenue = 7.19%
+SLB-2025-05,basic@2025,3,4,middle,Step 2. Project the future,Reinvestment (capex),derived: forecast.capex[1] / forecast.revenue[1],2,0,False,,exact,Capex share of revenue = 5.64%
+SLB-2025-05,basic@2025,3,5,middle,Step 2. Project the future,Working capital,derived: forecast.nwc[1] / forecast.revenue[1],2,0,False,,exact,NWC share of revenue = 23.24%
+SLB-2025-05,basic@2025,3,6,step,Step 3. Compute free cash flow,FCFF build,fcff.1,5,0,False,,exact,"FCFF year 1 = $5,072.3 million"
+SLB-2025-05,basic@2025,3,7,step,Step 3. Compute free cash flow,FCFF build,fcff.2,5,0,False,,exact,"FCFF year 2 = $5,863.1 million"
+SLB-2025-05,basic@2025,3,8,step,Step 3. Compute free cash flow,FCFF build,fcff.3,5,0,False,,exact,"FCFF year 3 = $6,601.6 million"
+SLB-2025-05,basic@2025,3,9,step,Step 3. Compute free cash flow,FCFF build,fcff.4,5,0,False,,exact,"FCFF year 4 = $7,235.6 million"
+SLB-2025-05,basic@2025,3,10,step,Step 3. Compute free cash flow,FCFF build,fcff.5,5,5,True,,exact,"FCFF year 5 = $6,820.1 million"
+SLB-2025-05,basic@2025,3,11,middle,Step 4. Discount to today,Beta / Cost of equity model,beta_levered,2,2,True,,exact,Levered beta = 0.8715
+SLB-2025-05,basic@2025,3,12,middle,Step 4. Discount to today,Beta / Cost of equity model,re,2,0,False,,exact,Cost of equity = 9.67%
+SLB-2025-05,basic@2025,3,13,middle,Step 4. Discount to today,Cost of debt,rd,2,2,True,,exact,Pre-tax cost of debt = 4.58%
+SLB-2025-05,basic@2025,3,14,middle,Step 4. Discount to today,Capital structure weights,weights.E,2,0,False,,exact,"Equity weight 82.05%, debt weight 17.95%"
+SLB-2025-05,basic@2025,3,15,step,Step 4. Discount to today,WACC,wacc,5,0,False,,exact,WACC = 8.58%
+SLB-2025-05,basic@2025,3,16,step,Step 4. Discount to today,Terminal value method,tv,5,0,False,,exact,"Terminal value = $105,660.3 million"
+SLB-2025-05,basic@2025,3,17,step,Step 4. Discount to today,Enterprise value,ev,5,0,False,,exact,"Enterprise value = $94,521.7 million"
+SLB-2025-05,basic@2025,3,18,middle,Step 5. Value and decide,Bridge to equity,equity,2,0,False,,exact,"Equity value = $86,205.7 million"
+SLB-2025-05,basic@2025,3,19,final,Step 5. Value and decide,Value per share,price_per_share,10,0,False,,exact,Value per share = $60.03
+SLB-2025-05,basic@2025,3,20,alternative,Step 5. Value and decide,Share count,alt: equity / inputs.shares_basic,0,0,False,,exact,"Alternative, not scored: value per share on the latest basic share count (1,400.850 million shares) = $61.54"
+SLB-2025-05,basic@2025,3,21,rounding,Step 5. Value and decide,Answer format,n/a,1,0,,rounding not auto-graded,exact,Follows the rounding instruction: WACC % to two decimals; dollar amounts in $ millions to one decimal; value per share to two decimals
+SLB-2025-06,half@2025,4,1,middle,Step 2. Project the future,Growth path,forecast.growth.1,2,0,False,,exact,Year-1 revenue growth = 13.66%
+SLB-2025-06,half@2025,4,2,middle,Step 2. Project the future,Operating margin,derived: forecast.ebit[1] / forecast.revenue[1],2,0,False,,exact,EBIT margin (mean of three ratios) = 17.15%
+SLB-2025-06,half@2025,4,3,middle,Step 2. Project the future,Reinvestment (D&A),derived: forecast.da[1] / forecast.revenue[1],2,0,False,,exact,D&A share of revenue = 7.19%
+SLB-2025-06,half@2025,4,4,middle,Step 2. Project the future,Reinvestment (capex),derived: forecast.capex[1] / forecast.revenue[1],2,2,True,,exact,Capex share of revenue = 5.64%
+SLB-2025-06,half@2025,4,5,middle,Step 2. Project the future,Working capital,derived: forecast.nwc[1] / forecast.revenue[1],2,0,False,,exact,NWC share of revenue = 23.24%
+SLB-2025-06,half@2025,4,6,step,Step 3. Compute free cash flow,FCFF build,fcff.1,5,0,False,,exact,"FCFF year 1 = $5,072.3 million"
+SLB-2025-06,half@2025,4,7,step,Step 3. Compute free cash flow,FCFF build,fcff.2,5,0,False,,exact,"FCFF year 2 = $5,863.1 million"
+SLB-2025-06,half@2025,4,8,step,Step 3. Compute free cash flow,FCFF build,fcff.3,5,0,False,,exact,"FCFF year 3 = $6,601.6 million"
+SLB-2025-06,half@2025,4,9,step,Step 3. Compute free cash flow,FCFF build,fcff.4,5,0,False,,exact,"FCFF year 4 = $7,235.6 million"
+SLB-2025-06,half@2025,4,10,final,Step 3. Compute free cash flow,FCFF build,fcff.5,10,0,False,,exact,"FCFF year 5 = $6,820.1 million"
+SLB-2025-06,half@2025,4,11,rounding,Step 3. Compute free cash flow,Answer format,n/a,1,0,,rounding not auto-graded,exact,Follows the rounding instruction: percentages to two decimals; FCFF in $ millions to one decimal
+SLB-2025-07,half@2025,5,1,middle,Step 4. Discount to today,Beta / Cost of equity model,beta_levered,2,2,True,,exact,Levered beta = 0.8715
+SLB-2025-07,half@2025,5,2,middle,Step 4. Discount to today,Beta / Cost of equity model,re,2,0,False,,exact,Cost of equity = 9.67%
+SLB-2025-07,half@2025,5,3,middle,Step 4. Discount to today,Cost of debt,rd,2,2,True,,exact,Pre-tax cost of debt = 4.58%
+SLB-2025-07,half@2025,5,4,step,Step 4. Discount to today,WACC,wacc,5,0,False,,exact,WACC = 8.58%
+SLB-2025-07,half@2025,5,5,step,Step 4. Discount to today,Terminal value method,tv,5,0,False,,exact,"Terminal value = $105,660.3 million"
+SLB-2025-07,half@2025,5,6,step,Step 4. Discount to today,Enterprise value,ev,5,0,False,,exact,"Enterprise value = $94,521.7 million"
+SLB-2025-07,half@2025,5,7,middle,Step 5. Value and decide,Bridge to equity,equity,2,0,False,,exact,"Equity value = $86,205.7 million"
+SLB-2025-07,half@2025,5,8,final,Step 5. Value and decide,Value per share,price_per_share,10,0,False,,exact,Value per share = $60.03
+SLB-2025-07,half@2025,5,9,alternative,Step 5. Value and decide,Share count,alt: equity / inputs.shares_basic,0,0,False,,exact,"Alternative, not scored: value per share on the latest basic share count (1,400.850 million shares) = $61.54"
+SLB-2025-07,half@2025,5,10,rounding,Step 5. Value and decide,Answer format,n/a,1,0,,rounding not auto-graded,exact,Follows the rounding instruction: beta to four decimals; rates in % to two decimals; dollar amounts in $ millions to one decimal; value per share to two decimals
+SLB-2025-08,complex@2025,3,1,middle,Step 2. Project the future,Growth path,forecast.growth.1,2,0,False,,exact,Year-1 revenue growth = 13.66%
+SLB-2025-08,complex@2025,3,2,middle,Step 2. Project the future,Operating margin,derived: forecast.ebit[1] / forecast.revenue[1],2,0,False,,exact,EBIT margin (mean of three ratios) = 17.15%
+SLB-2025-08,complex@2025,3,3,middle,Step 2. Project the future,Reinvestment (D&A),derived: forecast.da[1] / forecast.revenue[1],2,0,False,,exact,D&A share of revenue = 7.19%
+SLB-2025-08,complex@2025,3,4,middle,Step 2. Project the future,Reinvestment (capex),derived: forecast.capex[1] / forecast.revenue[1],2,0,False,,exact,Capex share of revenue = 5.64%
+SLB-2025-08,complex@2025,3,5,middle,Step 2. Project the future,Working capital,derived: forecast.nwc[1] / forecast.revenue[1],2,0,False,,exact,NWC share of revenue = 23.24%
+SLB-2025-08,complex@2025,3,6,middle,Step 2. Project the future,Tax applied,tax_rate,2,0,False,,exact,Effective tax rate on EBIT (years 1-4) = 18.86%
+SLB-2025-08,complex@2025,3,7,step,Step 3. Compute free cash flow,FCFF build,fcff.1,5,0,False,,exact,"FCFF year 1 = $5,223.8 million"
+SLB-2025-08,complex@2025,3,8,step,Step 3. Compute free cash flow,FCFF build,fcff.2,5,0,False,,exact,"FCFF year 2 = $6,026.9 million"
+SLB-2025-08,complex@2025,3,9,step,Step 3. Compute free cash flow,FCFF build,fcff.3,5,5,True,,exact,"FCFF year 3 = $6,781.3 million"
+SLB-2025-08,complex@2025,3,10,step,Step 3. Compute free cash flow,FCFF build,fcff.4,5,0,False,,exact,"FCFF year 4 = $7,436.6 million"
+SLB-2025-08,complex@2025,3,11,step,Step 3. Compute free cash flow,FCFF build,fcff.5,5,5,True,,exact,"FCFF year 5 = $6,820.6 million"
+SLB-2025-08,complex@2025,3,12,middle,Step 4. Discount to today,Beta / Cost of equity model,beta_levered,2,0,False,,exact,Levered beta = 0.9139
+SLB-2025-08,complex@2025,3,13,middle,Step 4. Discount to today,Beta / Cost of equity model,re,2,0,False,,exact,Cost of equity = 8.75%
+SLB-2025-08,complex@2025,3,14,middle,Step 4. Discount to today,Cost of debt,rd,2,2,True,,exact,Pre-tax cost of debt = 4.58%
+SLB-2025-08,complex@2025,3,15,middle,Step 4. Discount to today,Capital structure weights,weights.E,2,0,False,,exact,"Equity weight 82.05%, debt weight 17.95%"
+SLB-2025-08,complex@2025,3,16,step,Step 4. Discount to today,WACC,wacc,5,0,False,,exact,WACC = 7.83%
+SLB-2025-08,complex@2025,3,17,step,Step 4. Discount to today,Terminal value method,tv,5,0,False,,exact,"Terminal value = $131,208.5 million"
+SLB-2025-08,complex@2025,3,18,step,Step 4. Discount to today,Enterprise value,ev,5,0,False,,exact,"Enterprise value = $120,069.6 million"
+SLB-2025-08,complex@2025,3,19,middle,Step 5. Value and decide,Cash,cash_excess,2,2,True,,exact,"Excess cash = cash and short-term investments - 2% of FY2024 revenue = $3,943.2 million"
+SLB-2025-08,complex@2025,3,20,middle,Step 5. Value and decide,Bridge to equity,equity,2,0,False,,exact,"Equity value = $111,027.9 million"
+SLB-2025-08,complex@2025,3,21,final,Step 5. Value and decide,Value per share,price_per_share,10,0,False,,exact,Value per share = $77.32
+SLB-2025-08,complex@2025,3,22,alternative,Step 5. Value and decide,Share count,alt: equity / inputs.shares_basic,0,0,False,,exact,"Alternative, not scored: value per share on the latest basic share count (1,400.850 million shares) = $79.26"
+SLB-2025-08,complex@2025,3,23,rounding,Step 5. Value and decide,Answer format,n/a,1,0,,rounding not auto-graded,exact,Follows the rounding instruction: rates in % to two decimals; dollar amounts in $ millions to one decimal; value per share to two decimals

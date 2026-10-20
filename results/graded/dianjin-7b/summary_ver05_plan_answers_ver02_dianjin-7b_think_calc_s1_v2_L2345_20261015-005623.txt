@@ -1,0 +1,46 @@
+answers_ver02_dianjin-7b_think_calc_s1_v2_L2345_20261015-005623  [grade_ver05, tolerance=plan, include_thinking=False, qa=QA_set_v2.json]
+
+Questions graded: 184   mean score per question: 53.3%
+Final answers correct: 94/184
+Final-answer marker: answer tag 113, missing 27, other case 19, Final Response heading 10, answer tag in thinking 7, boxed 5, exact 2, boxed in thinking 1 (missing = final scored zero)
+Hit the token limit: 25 ['CMCSA-05', 'WMB-05', 'META-03', 'ORLY-03', 'EOG-03', 'CVX-03', 'WEC-02', 'TMUS-03', 'ETN-01', 'ETN-03', 'CMCSA-06', 'WMB-06', 'JNJ-06', 'UNP-06', 'VZ-06', 'PEP-06', 'EOG-06', 'CVX-06', 'CEG-06', 'META-10']
+Thinking never finished: 32 ['CMCSA-05', 'WMB-05', 'JNJ-04', 'META-03', 'ORLY-03', 'EOG-03', 'CVX-03', 'WEC-02', 'TMUS-03', 'MAR-03', 'MELI-03', 'MNST-02', 'ETN-01', 'ETN-03', 'CMCSA-06', 'WMB-06', 'JNJ-06', 'UNP-06', 'VZ-06', 'PEP-06']
+
+Final answers correct by tier and level:
+  basic    L2   52/56  =  92.9%
+  basic    L3    2/28  =   7.1%
+  complex  L3    0/20  =   0.0%
+  half     L4    5/20  =  25.0%
+  half     L5    3/20  =  15.0%
+  trap     L2   32/40  =  80.0%
+
+Fell for the trap (final wrong AND matched the trap value): 4/42   (also matched but final correct, not counted: 1)
+   BKNG-10, BKNG-11, PPL-11, CEG-11
+
+Used basic shares (final wrong AND matched the basic-share value): 2/74   (also matched but final correct, not counted: 9)
+   PEP-07, PEP-08
+
+By tier:
+  basic                                     839/2640 =  31.8%
+  complex                                   143/1438 =   9.9%
+  half                                      464/1442 =  32.2%
+  trap                                      388/492  =  78.9%
+
+By level:
+  2                                        1008/1210 =  83.3%
+  3                                         362/3360 =  10.8%
+  4                                         198/782  =  25.3%
+  5                                         266/660  =  40.3%
+
+By step:
+  Step 2. Project the future                110/654  =  16.8%
+  Step 3. Compute free cash flow            537/2084 =  25.8%
+  Step 4. Discount to today                 923/2222 =  41.5%
+  Step 5. Value and decide                  264/1052 =  25.1%
+
+By kind:
+  final                                     940/1840 =  51.1%
+  middle                                    424/1572 =  27.0%
+  step                                      470/2600 =  18.1%
+
+Excluded items: {'rounding not auto-graded': 184, 'input given in data table': 482, 'target already in prompt': 17, 'zero target not auto-graded': 26}

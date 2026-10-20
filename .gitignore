@@ -1,0 +1,37 @@
+# secrets: never commit them (engine/.env.example shows the names)
+.env
+.env.*
+!.env.example
+
+# python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# LaTeX build output
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.pdf
+paper/*.synctex.gz
+
+# cluster run artefacts
+cache/
+logs/slurm/*.out
+results/smoke/
+
+# engine: a rebuilt snapshot and the licensed seed files stay local
+engine/data/snapshots/
+engine/data/universe/
+engine/data/cases/
+
+# macOS, editors
+.DS_Store
+._*
+.idea/
+.vscode/
